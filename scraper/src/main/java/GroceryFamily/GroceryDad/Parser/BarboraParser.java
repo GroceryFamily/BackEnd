@@ -38,13 +38,11 @@ public class BarboraParser extends WebParser {
                 System.out.println("getProductsFromPage"+product);
             }
 
-            System.out.println("scrapeWebSite"+products);
             //// TODO: 21-Jul-23 add price to the DB
             Product product = getCheapestProduct(products);
             System.out.println(product);
 
         }
-
     }
 
 
@@ -70,16 +68,13 @@ public class BarboraParser extends WebParser {
         }
 
 
-        nameFilter(products, "piim");
-        for (Product product: products) {
-            if (product != null){
-                System.out.println("nameFilter" + product);
-            }else{
-                System.out.println("nameFilter don`t work");
-            }
+        for (int i=0; i<namesFromDB.size();i++){
+            nameFilter(products, namesFromDB.get(i));
         }
 
         setOnThePage(products);
+
+        //should be removed
 
         for (Product product: onThePage) {
                 if (product != null){
@@ -94,8 +89,7 @@ public class BarboraParser extends WebParser {
 
     @Override
     public Product getCheapestProduct(List<Product> products) {
-        System.out.println(ProductFilter.cheaperPrice(products));
-        return super.getCheapestProduct(products);
+                return super.getCheapestProduct(products);
     }
 
     //Searching all price per unit on the page

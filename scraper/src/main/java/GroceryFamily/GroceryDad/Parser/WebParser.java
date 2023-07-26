@@ -17,7 +17,6 @@ import java.util.List;
 abstract class WebParser {
 
     protected String url;
-    protected String addToCardLinktext;
     protected WebDriver driver;
     protected List<Product> onThePage;
     protected List<String> namesFromDB;
@@ -128,7 +127,7 @@ abstract class WebParser {
         element.sendKeys(Keys.ENTER);
 //        waiting(5);
     }
-
+//
     public void addToCard(Product product) {
 
         WebElement productDiv = driver.findElement(By.linkText(product.getName()));
