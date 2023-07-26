@@ -1,13 +1,8 @@
-# BackEnd
+# Maven
 target
 
-# FrontEnd
-node_modules
-.angular
-dist
-
 # IDEA
-../.idea
+.idea
 *.iml
 out
 
