@@ -23,19 +23,18 @@ public class ProductFilter {
 
             if (Arrays.asList(strWords).containsAll(Arrays.asList(subWords))) {
                 filteredProducts.add(product);
-                // todo must be deleted
-                System.out.println("Added product: " + product.getName() + ", price: " + product.getPricePerUnit());
+
             }
         }
 
-        return filteredProducts;    }
+        return filteredProducts;
+    }
 
-    //gives the cheapest product
-    // TODO: 27-Jul-23 Look mb better use pricePerUnit
-    public static Product cheaperPrice(List<Product> products){
+    //gives the cheapest product. Use price per unit
+    public static Product cheaperPrice(List<Product> products) {
         return products.stream()
                 .min(Comparator.comparing(product -> {
-                    BigDecimal price = product.getPrice();
+                    BigDecimal price = product.getPricePerUnit().getValue();
                     return price != null ? price : BigDecimal.ZERO;
                 }))
                 .orElse(null);

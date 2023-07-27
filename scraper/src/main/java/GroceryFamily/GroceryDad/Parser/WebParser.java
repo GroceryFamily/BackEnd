@@ -11,7 +11,6 @@ import org.openqa.selenium.WebElement;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import java.math.BigDecimal;
 import java.util.List;
 
 @Component
@@ -23,7 +22,6 @@ abstract class WebParser {
     protected List<String> namesFromDB;
     protected List<String> quantityFromDB;
 
-
     @Autowired
     protected GroceryInfoService groceryInfoService;
 
@@ -31,9 +29,8 @@ abstract class WebParser {
         this.driver = driver;
         this.groceryInfoService = groceryInfoService;
     }
+
     //Setters/Getters
-
-
     public List<String> getNamesFromDB() {
         return namesFromDB = groceryInfoService.getProductName();
     }
@@ -74,10 +71,6 @@ abstract class WebParser {
         driver.get(url);
     }
 
-    void searchGrocery(List<String> namesFromDB) {
-
-    }
-
     //for work for Rimi and Barbora it is good.
     // For Prisma I don't need consent to save cookie
     public void removeCookiePopup() {
@@ -85,18 +78,15 @@ abstract class WebParser {
                 driver.findElement(By
                         .id("CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll"));
 
-
         element.click();
     }
 
-
-    // Filter
+    // Filter for price
     public Product getCheapestProduct(List<Product> products) {
         return ProductFilter.cheaperPrice(products);
-
     }
 
-    // изменить метот в фильтре чтоб работал с арей листами
+    //Filter product products, by product name from the database
     public List<Product> nameFilter(List<Product> products, String nameFromDB) {
         ProductFilter.containsAllWords(products, nameFromDB);
 
@@ -115,8 +105,7 @@ abstract class WebParser {
     abstract public List<String> getGroceriesJsonInfoOnThePage(String cssSelector);
 
     //Searching all price per unit on the page
-//    abstract public BigDecimal getUnitPrice(int numberOfElement);
-
+    abstract public Measurement getUnitPrice(int numberOfElement, List<String[]> measurement);
 
     //Sort for getting Product obj
     abstract public List<Product> getProductsFromPage(List<String> info);
@@ -126,23 +115,13 @@ abstract class WebParser {
         WebElement element = driver.findElement(By.id("fti-search"));
         element.sendKeys(name);
         element.sendKeys(Keys.ENTER);
-//        waiting(5);
     }
-//
+
+    // to enter the Barbora, you need to log in.
     public void addToCard(Product product) {
 
         WebElement productDiv = driver.findElement(By.linkText(product.getName()));
-//        waiting(15);
         WebElement button = driver.findElement(By.xpath("//button[normalize-space()='" + "Ostukorvi" + "']"));
         button.click();
     }
-//Wait method
-// TODO: 21-Jul-23 in future remove static
-
-
-//    public static void waiting(int seconds) {
-//        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(seconds));
-//    }
-
-
 }

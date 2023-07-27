@@ -12,10 +12,14 @@ public class Measurement {
     public Measurement() {
     }
 
-
     public Measurement(String value, String unit) {
         this.value = new BigDecimal(value);
         this.unit = unit;
+    }
+
+    //Getters/Setters
+    public BigDecimal getValue() {
+        return value;
     }
 
     public void setValue(String value) {
@@ -26,44 +30,24 @@ public class Measurement {
         this.unit = unit;
     }
 
-//    public static Measurement setValueUnit(String product) {
-//        Measurement measurement = new Measurement();
-//
-//        Pattern pattern = Pattern.compile("((?:\\d+x)?\\d+)(g|kg|L|ml|tk)(?:[,\\s]*(\\d+)k)?");
-//        Matcher matcher = pattern.matcher(product);
-//
-//        if (matcher.find()) {
-//            String unit = matcher.group(2);
-//            String value = matcher.group(1).replaceAll(",", ".");
-//            if (matcher.group(3) != null) {
-//                value = value + "x" + matcher.group(3);
-//            }
-//            measurement.setUnit(unit);
-//            measurement.setValue(value);
-//        }
-//
-//        return measurement;
-//    }
-public static Measurement setValueUnit(String product) {
-    Measurement measurement = new Measurement();
+    public static Measurement setValueUnit(String product) {
+        Measurement measurement = new Measurement();
 
-    Pattern pattern = Pattern.compile("((?:\\d+x)?\\d+)(g|kg|L|ml|tk)(?:[,\\s]*(\\d+)k)?");
-    Matcher matcher = pattern.matcher(product);
+        Pattern pattern = Pattern.compile("((?:\\d+x)?\\d+)(g|kg|L|ml|tk)(?:[,\\s]*(\\d+)k)?");
+        Matcher matcher = pattern.matcher(product);
 
-    if (matcher.find()) {
-        String unit = matcher.group(2);
-        String value = matcher.group(1).replaceAll(",", ".");
-        if (matcher.group(3) != null) {
-            value = value + "x" + matcher.group(3);
+        if (matcher.find()) {
+            String unit = matcher.group(2);
+            String value = matcher.group(1).replaceAll(",", ".");
+
+            measurement.setUnit(unit);
+            measurement.setValue(value);
+        } else {
+            System.out.println("SetValueUnit");
         }
-        measurement.setUnit(unit);
-        measurement.setValue(value);
-    } else {
-        System.out.println("SetValueUnit");  // or throw an exception, or return a default value
-    }
 
-    return measurement;
-}
+        return measurement;
+    }
 
 
     @Override
