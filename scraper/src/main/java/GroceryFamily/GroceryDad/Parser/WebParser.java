@@ -1,6 +1,7 @@
 package GroceryFamily.GroceryDad.Parser;
 
 import GroceryFamily.GroceryDad.similarity.ProductFilter;
+import GroceryFamily.GroceryElders.model.Measurement;
 import GroceryFamily.GroceryElders.model.Product;
 import GroceryFamily.GroceryElders.service.GroceryInfoService;
 import org.openqa.selenium.By;
@@ -79,7 +80,7 @@ abstract class WebParser {
 
     //for work for Rimi and Barbora it is good.
     // For Prisma I don't need consent to save cookie
-    void removeCookiePopup() {
+    public void removeCookiePopup() {
         WebElement element =
                 driver.findElement(By
                         .id("CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll"));
@@ -111,10 +112,10 @@ abstract class WebParser {
 
     //get List of product on the page. Parsing for getting all information
     // about product on the searching page
-    abstract public List<String> getGroceriesInfoOnThePage(String cssSelector);
+    abstract public List<String> getGroceriesJsonInfoOnThePage(String cssSelector);
 
     //Searching all price per unit on the page
-    abstract public BigDecimal getUnitPrice(int numberOfElement);
+//    abstract public BigDecimal getUnitPrice(int numberOfElement);
 
 
     //Sort for getting Product obj

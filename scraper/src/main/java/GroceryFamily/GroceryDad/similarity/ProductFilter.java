@@ -31,10 +31,11 @@ public class ProductFilter {
         return filteredProducts;    }
 
     //gives the cheapest product
+    // TODO: 27-Jul-23 Look mb better use pricePerUnit
     public static Product cheaperPrice(List<Product> products){
         return products.stream()
                 .min(Comparator.comparing(product -> {
-                    BigDecimal price = product.getPricePerUnit();
+                    BigDecimal price = product.getPrice();
                     return price != null ? price : BigDecimal.ZERO;
                 }))
                 .orElse(null);

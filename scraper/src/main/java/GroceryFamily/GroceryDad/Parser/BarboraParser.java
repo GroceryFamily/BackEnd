@@ -1,6 +1,7 @@
 package GroceryFamily.GroceryDad.Parser;
 
 import GroceryFamily.GroceryDad.similarity.ProductFilter;
+import GroceryFamily.GroceryElders.model.Measurement;
 import GroceryFamily.GroceryElders.model.Product;
 import GroceryFamily.GroceryElders.service.GroceryInfoService;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -30,12 +31,12 @@ public class BarboraParser extends WebParser {
         removeCookiePopup();
         List<String> namesFromDB1 = getNamesFromDB();
 
-        for (String grocery: namesFromDB1) {
+        for (String grocery : namesFromDB1) {
             System.out.println(grocery);
             searching(grocery);
-            List<Product> products = getProductsFromPage(getGroceriesInfoOnThePage("data-b-for-cart"));
-            for (Product product: products) {
-                System.out.println("getProductsFromPage"+product);
+            List<Product> products = getProductsFromPage(getGroceriesJsonInfoOnThePage("data-b-for-cart"));
+            for (Product product : products) {
+                System.out.println("getProductsFromPage" + product);
             }
 
             //// TODO: 21-Jul-23 add price to the DB
@@ -46,29 +47,29 @@ public class BarboraParser extends WebParser {
     }
 
 
-
-
     //get products from Json
 
     @Override
     public List<Product> getProductsFromPage(List<String> info) {
-        List<Product> products=new ArrayList<>();
+        List<Product> products = new ArrayList<>();
         ObjectMapper mapper = new ObjectMapper();
-
-
+        List<String[]> listPricesPerUnit= getPricesPerUnit();
+        int index =0;
         for (String jsonString : info) {
 
             try {
                 Product product = mapper.readValue(jsonString, Product.class);
                 product.setMeasurement(product.getName());
+                product.setPricePerUnit(getUnitPrice(index,listPricesPerUnit));
                 products.add(product);
+                index++;
             } catch (Exception e) {
                 e.printStackTrace();
             }
         }
 
 
-        for (int i=0; i<namesFromDB.size();i++){
+        for (int i = 0; i < namesFromDB.size(); i++) {
             nameFilter(products, namesFromDB.get(i));
         }
 
@@ -76,33 +77,66 @@ public class BarboraParser extends WebParser {
 
         //should be removed
 
-        for (Product product: onThePage) {
-                if (product != null){
-                    System.out.println("setOnThePage" + product);
-                }else{
-                    System.out.println("setOnThePage don`t work");
-                }
+        for (Product product : onThePage) {
+            if (product != null) {
+                System.out.println("setOnThePage" + product);
+            } else {
+                System.out.println("setOnThePage don`t work");
+            }
         }
 
         return products;
     }
 
+
     @Override
     public Product getCheapestProduct(List<Product> products) {
-                return super.getCheapestProduct(products);
+        return super.getCheapestProduct(products);
     }
 
-    //Searching all price per unit on the page
-    public BigDecimal getUnitPrice(int numberOfElement) {
-        List<BigDecimal> elements = driver.findElements(By.className("b-product-price--extra"))
+    //    Searching all price per unit on the page
+//    public Measurement getUnitPrice(int numberOfElement) {
+//        List<Measurement> elements = driver.findElements(By.className("b-product-price--extra"))
+//                .stream()
+//                .map(e -> Measurement.setValueUnit(e.getText()
+//                        .replace("€", "")
+//                        .replaceAll("/", " ")))
+//                .toList();
+//
+//
+//        return elements.get(numberOfElement);
+//    }
+    //test
+    public List<String[]> getPricesPerUnit(){
+
+        List<String[]> elements = driver.findElements(By.className("b-product-price--extra"))
                 .stream()
-                .map(e -> new BigDecimal(e.getText()
+                .map(e -> e.getText()
                         .replace("€", "")
-                        .replaceAll("/.*", "")))
+                        .replaceAll("/", " ")
+                        .split(" "))
                 .toList();
 
+        return elements;
+    }
+    public Measurement getUnitPrice(int numberOfElement, List<String[]> elements) {
 
-        return elements.get(numberOfElement);
+        List<Measurement> measurements = new ArrayList<>();
+        Measurement measurement = new Measurement();
+
+        for (String[] element : elements) {
+
+            if (element.length >= 2) {
+                measurement.setValue(element[0]);
+                measurement.setUnit(element[1]);
+                measurements.add(measurement);
+
+            }
+
+        }
+
+
+        return measurements.get(numberOfElement);
     }
 
     @Override
@@ -110,17 +144,13 @@ public class BarboraParser extends WebParser {
         super.addToCard(product);
     }
 
-        @Override
-    public List<String> getGroceriesInfoOnThePage(String pageSelector) {
+    @Override
+    public List<String> getGroceriesJsonInfoOnThePage(String pageSelector) {
         //work
         List<String> elements = driver.findElements(By.cssSelector("[" + pageSelector + "]"))
                 .stream()
                 .map(e -> e.getAttribute(pageSelector))
                 .collect(Collectors.toList());
-
-//            for (String product: elements) {
-//                System.out.println(product+"getGroceriesInfoOnThePage");
-//            }
 
         return elements;
     }

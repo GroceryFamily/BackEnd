@@ -15,7 +15,7 @@ public class Product {
     @JsonProperty("price")//barbora
     private BigDecimal price;
 
-    private BigDecimal pricePerUnit;
+    private Measurement pricePerUnit;
 
     private Measurement measurement;
     //mb good plan to not create 2 path, and just create which number of li that product is.
@@ -26,11 +26,11 @@ public class Product {
     private String addToCard = "Lisa ostukorvi";
 
     @JsonIgnore
-    public BigDecimal getPricePerUnit() {
+    public Measurement getPricePerUnit() {
         return pricePerUnit;
     }
 
-    public void setPricePerUnit(BigDecimal pricePerUnit) {
+    public void setPricePerUnit(Measurement pricePerUnit) {
         this.pricePerUnit = pricePerUnit;
     }
 
@@ -40,7 +40,7 @@ public class Product {
 
     ;
 
-    public Product(String name, BigDecimal pricePerUnit, BigDecimal price) {
+    public Product(String name, Measurement pricePerUnit, BigDecimal price) {
         this.name = name;
         this.pricePerUnit = pricePerUnit;
         this.price = price;
@@ -93,7 +93,7 @@ public class Product {
     }
 
     public BigDecimal getPrice() {
-        return pricePerUnit;
+        return price;
     }
 
     public Measurement getMeasurement() {

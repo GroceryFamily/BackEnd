@@ -21,15 +21,20 @@ public class Scraper {
         WebDriver driver = context.getBean(WebDriver.class);
 //  Barbora scarper
         BarboraParser barboraParser = new BarboraParser(driver, groceryInfoService);
-//        barboraParser.scrapeWebSite();
+        barboraParser.scrapeWebSite();
+//        driver.get("https://barbora.ee/otsing?q=piim");
+//        barboraParser.removeCookiePopup();
 
-        driver.get("https://barbora.ee/otsing?q=piim");
-        WebElement cookie =
-                driver.findElement(By
-                        .id("CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll"));
-        WebElement element= driver.findElement(By.className("b-product-price--extra"));
-        String price=element.getText();
-        System.out.println(price);
+//        System.out.println(barboraParser.getUnitPrice(3));
+
+        //test for product for unit
+//        driver.get("https://barbora.ee/otsing?q=piim");
+//        WebElement cookie =
+//                driver.findElement(By
+//                        .id("CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll"));
+//        WebElement element= driver.findElement(By.className("b-product-price--extra"));
+//        String price=element.getText();
+//        System.out.println(price);
 
 //        driver.get("https://barbora.ee/otsing?q=piim");
 ////        https://barbora.ee/otsing?q=piim
