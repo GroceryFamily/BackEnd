@@ -9,3 +9,6 @@ out
 # Visual Studio Code
 .vscode
 .editorconfig
+
+# ChromeDriver
+build

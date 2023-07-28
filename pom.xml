@@ -21,10 +21,12 @@
 
         <java.version>17</java.version>
 
-        <spring-boot.version>3.1.1</spring-boot.version>
+        <spring-boot.version>3.1.2</spring-boot.version>
+        <simple-file-cache.version>0.1.1-SNAPSHOT</simple-file-cache.version>
         <selenium.version>4.10.0</selenium.version>
         <selenide.version>6.16.0</selenide.version>
         <jsoup.version>1.16.1</jsoup.version>
+        <lombok.version>1.18.28</lombok.version>
 
         <maven-compiler-plugin.version>3.11.0</maven-compiler-plugin.version>
         <maven-surefire-plugin.version>3.1.2</maven-surefire-plugin.version>
@@ -48,6 +50,7 @@
                 </dependency>
             </dependencies>
         </profile>
+
         <profile>
             <id>mysql</id>
             <properties>
@@ -81,6 +84,13 @@
                 <scope>import</scope>
             </dependency>
 
+            <!-- https://github.com/antivoland/simple-file-cache -->
+            <dependency>
+                <groupId>io.github.antivoland</groupId>
+                <artifactId>simple-file-cache</artifactId>
+                <version>${simple-file-cache.version}</version>
+            </dependency>
+
             <!-- https://github.com/SeleniumHQ/selenium -->
             <dependency>
                 <groupId>org.seleniumhq.selenium</groupId>
@@ -103,6 +113,16 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
+
+    <dependencies>
+        <!-- https://github.com/projectlombok/lombok -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>${lombok.version}</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
 
     <build>
         <pluginManagement>
@@ -130,4 +150,11 @@
             </plugins>
         </pluginManagement>
     </build>
+
+    <repositories>
+        <repository>
+            <id>ossrh</id>
+            <url>https://s01.oss.sonatype.org/content/repositories/snapshots</url>
+        </repository>
+    </repositories>
 </project>

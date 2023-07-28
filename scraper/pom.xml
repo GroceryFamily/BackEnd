@@ -24,6 +24,12 @@
             <artifactId>spring-boot-starter-data-jpa</artifactId>
         </dependency>
 
+        <!-- https://github.com/antivoland/simple-file-cache -->
+        <dependency>
+            <groupId>io.github.antivoland</groupId>
+            <artifactId>simple-file-cache</artifactId>
+        </dependency>
+
         <!-- https://github.com/SeleniumHQ/selenium -->
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
