@@ -6,6 +6,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import static com.codeborne.selenide.Condition.text;
+import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.*;
 
 @SpringBootApplication
@@ -30,7 +31,7 @@ public class RimiScraper implements CommandLineRunner {
     }
 
     static void useOnlyStrictlyNecessaryCookies() {
-        $("#CybotCookiebotDialogBodyLevelButtonLevelOptinDeclineAll").click();
+        $("#CybotCookiebotDialogBodyLevelButtonLevelOptinDeclineAll").shouldBe(visible).click();
     }
 
     static void category(String... names) {
