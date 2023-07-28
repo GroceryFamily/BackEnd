@@ -1,22 +1,30 @@
 package GroceryFamily.GroceryDad.rimi;
 
+import GroceryFamily.GroceryDad.cache.Cache;
+import GroceryFamily.GroceryDad.domain.Currency;
+import GroceryFamily.GroceryDad.domain.Price;
+import GroceryFamily.GroceryDad.domain.PriceUnit;
+import GroceryFamily.GroceryDad.domain.Product;
 import com.codeborne.selenide.SelenideElement;
-import lombok.Builder;
-import lombok.EqualsAndHashCode;
-import lombok.ToString;
+import io.github.antivoland.sfc.FileCache;
 import lombok.extern.slf4j.Slf4j;
+import org.openqa.selenium.InvalidArgumentException;
 import org.openqa.selenium.WebDriver;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import java.math.BigDecimal;
+import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Set;
 
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.*;
+import static java.lang.String.format;
 
 @Slf4j
 @SpringBootApplication
@@ -26,19 +34,25 @@ public class RimiScraper implements CommandLineRunner {
     }
 
     final WebDriver driver;
+    final Cache.Factory cacheFactory;
 
-    RimiScraper(WebDriver driver) {
+    RimiScraper(WebDriver driver, @Value("${scraper.rimi.cache.directory}") Path cacheDirectory) {
         this.driver = driver;
+        this.cacheFactory = Cache.factory(cacheDirectory);
     }
 
     @Override
     public void run(String... args) {
+        scrap("Groceries", "All category products");
+    }
+
+    void scrap(String... categories) {
+        FileCache<Product> cache = cacheFactory.get(categories);
         using(driver, () -> {
             open("https://rimi.ee/epood/en");
             useOnlyStrictlyNecessaryCookies();
-            category("Groceries", "All category products");
-            var products = products();
-            log.info("Products: {}", products);
+            category(categories);
+            products().forEach(product -> cache.save(product.code, product));
             // todo: implement further
         });
     }
@@ -65,56 +79,48 @@ public class RimiScraper implements CommandLineRunner {
     static Collection<Product> products() {
         Collection<Product> products = new ArrayList<>();
         for (var e : $$("*[class='product-grid__item'] > div")) {
-            products.add(new Product(e));
+            products.add(product(e));
         }
         return products;
     }
 
-    @ToString
-    @EqualsAndHashCode
-    static class Product {
-        final String code;
-        final String name;
-        final Price pcPrice;
-        final Price kgPrice;
-
-        Product(SelenideElement e) {
-            code = e.attr("data-product-code");
-            name = e.$("*[class='card__name']").text();
-            pcPrice = Price.pc(e.$("*[class*='price-tag']").text());
-            kgPrice = Price.kg(e.$("*[class='card__price-per']").text());
-        }
+    static Product product(SelenideElement e) {
+        return Product
+                .builder()
+                .code(e.attr("data-product-code"))
+                .name(e.$("*[class='card__name']").text())
+                .prices(Set.of(
+                        pcPrice(e.$("*[class*='price-tag']").text()),
+                        price(e.$("*[class='card__price-per']").text())))
+                .build();
     }
 
-    @Builder
-    @ToString
-    @EqualsAndHashCode
-    static class Price {
-        final String type;
-        final BigDecimal value;
-        final String currency;
+    // 4\n29\n€/pcs.
+    static Price pcPrice(String text) {
+        var fragments = text.split("\n");
+        return Price
+                .builder()
+                .unit(PriceUnit.PC)
+                .value(new BigDecimal(fragments[0] + '.' + fragments[1]))
+                .currency(currency(fragments[2].substring(0, 1)))
+                .build();
+    }
 
-        // 4\n29\n€/pcs.
-        static Price pc(String text) {
-            var fragments = text.split("\n");
-            return Price
-                    .builder()
-                    .type("pc")
-                    .value(new BigDecimal(fragments[0] + '.' + fragments[1]))
-                    .currency(fragments[2].substring(0, 1))
-                    .build();
-        }
+    // 8,09 € /kg
+    static Price price(String text) {
+        var fragments = text.split(" ");
+        var value = fragments[0].split(",");
+        return Price
+                .builder()
+                .unit(PriceUnit.get(fragments[2].substring(1)))
+                .value(new BigDecimal(value[0] + '.' + value[1]))
+                .currency(currency(fragments[1]))
+                .build();
+    }
 
-        // 8,09 € /kg
-        static Price kg(String text) {
-            var fragments = text.split(" ");
-            var value = fragments[0].split(",");
-            return Price
-                    .builder()
-                    .type("kg")
-                    .value(new BigDecimal(value[0] + '.' + value[1]))
-                    .currency(fragments[1])
-                    .build();
-        }
+    static Currency currency(String symbol) {
+        if (symbol == null) throw new InvalidArgumentException("Currency is missing");
+        if (symbol.equals("€")) return Currency.EUR;
+        throw new UnsupportedOperationException(format("Currency '%s' is not supported", symbol));
     }
 }

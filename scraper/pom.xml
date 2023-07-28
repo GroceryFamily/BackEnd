@@ -20,4 +20,15 @@
         <module>prisma</module>
         <module>rimi</module>
     </modules>
+
+    <dependencyManagement>
+        <dependencies>
+            <!-- https://github.com/GroceryFamily -->
+            <dependency>
+                <groupId>GroceryFamily.GroceryDad</groupId>
+                <artifactId>core</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 </project>

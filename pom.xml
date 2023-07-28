@@ -69,6 +69,7 @@
 
     <dependencyManagement>
         <dependencies>
+            <!-- https://github.com/GroceryFamily -->
             <dependency>
                 <groupId>GroceryFamily</groupId>
                 <artifactId>GroceryElders</artifactId>

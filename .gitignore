@@ -4,11 +4,14 @@ target
 # IDEA
 .idea
 *.iml
-out
+/out
 
 # Visual Studio Code
 .vscode
 .editorconfig
 
 # ChromeDriver
-build
+/build
+
+# Cache
+/cache

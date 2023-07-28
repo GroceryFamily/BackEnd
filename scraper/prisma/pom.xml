@@ -13,9 +13,14 @@
     <artifactId>prisma</artifactId>
 
     <dependencies>
+        <!-- https://github.com/GroceryFamily -->
         <dependency>
             <groupId>GroceryFamily</groupId>
             <artifactId>GroceryElders</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>GroceryFamily.GroceryDad</groupId>
+            <artifactId>core</artifactId>
         </dependency>
 
         <!-- https://github.com/spring-projects -->
@@ -30,12 +35,6 @@
             <artifactId>selenide</artifactId>
         </dependency>
 
-        <!-- https://github.com/antivoland/simple-file-cache -->
-        <dependency>
-            <groupId>io.github.antivoland</groupId>
-            <artifactId>simple-file-cache</artifactId>
-        </dependency>
-
         <!-- https://github.com/spring-projects :: test -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -47,7 +46,7 @@
     <build>
         <resources>
             <resource>
-                <directory>core/src/main/resources</directory>
+                <directory>src/main/resources</directory>
                 <filtering>true</filtering>
             </resource>
         </resources>
