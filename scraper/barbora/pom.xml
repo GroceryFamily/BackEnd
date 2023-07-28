@@ -35,12 +35,6 @@
             <artifactId>selenide</artifactId>
         </dependency>
 
-        <!-- https://github.com/antivoland/simple-file-cache -->
-        <dependency>
-            <groupId>io.github.antivoland</groupId>
-            <artifactId>simple-file-cache</artifactId>
-        </dependency>
-
         <!-- https://github.com/jhy/jsoup -->
         <dependency>
             <groupId>org.jsoup</groupId>
