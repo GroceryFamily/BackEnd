@@ -1,12 +1,12 @@
-package GroceryFamily.GroceryDad;
+package GroceryFamily.GroceryDad.barbora;
 
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
-@Disabled("Multiple Spring Boot applications, some of them utilize ChromeDriver")
-@SpringBootTest(classes = Scraper.class)
-class ScraperTest {
+@Disabled
+@SpringBootTest(classes = BarboraScraper.class)
+class BarboraScraperTest {
     @Test
     void test() {
         // todo: implement some better test

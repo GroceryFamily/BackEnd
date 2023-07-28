@@ -1,4 +1,4 @@
-package GroceryFamily.GroceryDad;
+package GroceryFamily.GroceryDad.barbora;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;

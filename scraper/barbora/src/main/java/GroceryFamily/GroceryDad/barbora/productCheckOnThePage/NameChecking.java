@@ -1,4 +1,4 @@
-package GroceryFamily.GroceryDad.productCheckOnThePage;
+package GroceryFamily.GroceryDad.barbora.productCheckOnThePage;
 
 import GroceryFamily.GroceryElders.model.Product;
 

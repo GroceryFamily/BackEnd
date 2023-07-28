@@ -1,4 +1,4 @@
-package GroceryFamily.GroceryDad;
+package GroceryFamily.GroceryDad.barbora;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
