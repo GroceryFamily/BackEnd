@@ -16,5 +16,7 @@
 
     <modules>
         <module>core</module>
+        <module>prisma</module>
+        <module>rimi</module>
     </modules>
 </project>
