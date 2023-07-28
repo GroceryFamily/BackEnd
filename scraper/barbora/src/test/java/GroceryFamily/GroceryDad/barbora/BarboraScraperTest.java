@@ -1,4 +1,4 @@
-package GroceryFamily.GroceryDad;
+package GroceryFamily.GroceryDad.barbora;
 
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;

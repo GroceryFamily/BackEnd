@@ -1,6 +1,6 @@
-package GroceryFamily.GroceryDad.Parser;
+package GroceryFamily.GroceryDad.barbora.Parser;
 
-import GroceryFamily.GroceryDad.similarity.ProductFilter;
+import GroceryFamily.GroceryDad.barbora.similarity.ProductFilter;
 import GroceryFamily.GroceryElders.model.Measurement;
 import GroceryFamily.GroceryElders.model.Product;
 import GroceryFamily.GroceryElders.service.GroceryInfoService;

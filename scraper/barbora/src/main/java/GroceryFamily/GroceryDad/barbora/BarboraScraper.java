@@ -1,6 +1,6 @@
-package GroceryFamily.GroceryDad;
+package GroceryFamily.GroceryDad.barbora;
 
-import GroceryFamily.GroceryDad.Parser.BarboraParser;
+import GroceryFamily.GroceryDad.barbora.Parser.BarboraParser;
 import GroceryFamily.GroceryElders.service.GroceryInfoService;
 import org.openqa.selenium.WebDriver;
 import org.springframework.boot.SpringApplication;

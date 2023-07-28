@@ -1,4 +1,4 @@
-package GroceryFamily.GroceryDad.Parser;
+package GroceryFamily.GroceryDad.barbora.Parser;
 
 public class RimiParser {
     private final String rimiUrl = "rimi.ee";

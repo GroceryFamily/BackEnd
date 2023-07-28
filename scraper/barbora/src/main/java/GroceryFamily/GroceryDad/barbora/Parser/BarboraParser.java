@@ -1,4 +1,4 @@
-package GroceryFamily.GroceryDad.Parser;
+package GroceryFamily.GroceryDad.barbora.Parser;
 
 import GroceryFamily.GroceryElders.model.Measurement;
 import GroceryFamily.GroceryElders.model.Product;
