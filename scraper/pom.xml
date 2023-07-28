@@ -15,6 +15,7 @@
     <packaging>pom</packaging>
 
     <modules>
+        <module>barbora</module>
         <module>core</module>
         <module>prisma</module>
         <module>rimi</module>

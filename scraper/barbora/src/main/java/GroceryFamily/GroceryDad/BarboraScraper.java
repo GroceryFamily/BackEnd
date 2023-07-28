@@ -2,19 +2,17 @@ package GroceryFamily.GroceryDad;
 
 import GroceryFamily.GroceryDad.Parser.BarboraParser;
 import GroceryFamily.GroceryElders.service.GroceryInfoService;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
 
 @SpringBootApplication
-public class Scraper {
+public class BarboraScraper {
 
     public static void main(String[] args) {
 
-        ConfigurableApplicationContext context = SpringApplication.run(Scraper.class, args);
+        ConfigurableApplicationContext context = SpringApplication.run(BarboraScraper.class, args);
         GroceryInfoService groceryInfoService = context.getBean(GroceryInfoService.class);
 
 
