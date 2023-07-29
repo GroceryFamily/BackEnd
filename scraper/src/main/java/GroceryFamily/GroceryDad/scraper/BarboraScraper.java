@@ -32,11 +32,17 @@ class BarboraScraper extends Scraper {
         FileCache<Product> cache = cache(categories);
         open(config.uri);
         waitUntilPageLoads();
-        switchToEnglish();
         declineAllCookies();
+        switchToEnglish();
         category(categories);
         products().forEach(product -> cache.save(product.code, product));
         // todo: finalize
+    }
+
+    static void declineAllCookies() {
+        $("#CybotCookiebotDialogBodyLevelButtonLevelOptinDeclineAll")
+                .shouldBe(visible)
+                .click();
     }
 
     static void switchToEnglish() {
@@ -52,12 +58,6 @@ class BarboraScraper extends Scraper {
                 .shouldHave(itemWithText("Products"))
                 .findBy(text("Products"))
                 .shouldBe(visible);
-    }
-
-    static void declineAllCookies() {
-        $("#CybotCookiebotDialogBodyLevelButtonLevelOptinDeclineAll")
-                .shouldBe(visible)
-                .click();
     }
 
     static void category(List<String> categories) {

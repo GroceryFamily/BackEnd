@@ -34,21 +34,21 @@ class PrismaScraper extends Scraper {
         FileCache<Product> cache = cache(categories);
         open(config.uri);
         waitUntilPageLoads();
-        switchToEnglish();
         closeCookieNotice();
+        switchToEnglish();
         category(categories);
         products().forEach(product -> cache.save(product.code, product));
         // todo: finalize
     }
 
-    static void switchToEnglish() {
-        $("*[data-language='en']")
+    static void closeCookieNotice() {
+        $("*[class*='js-cookie-notice'] *[class='close-icon']")
                 .shouldBe(visible)
                 .click();
     }
 
-    static void closeCookieNotice() {
-        $("*[class*='js-cookie-notice'] *[class='close-icon']")
+    static void switchToEnglish() {
+        $("*[data-language='en']")
                 .shouldBe(visible)
                 .click();
     }

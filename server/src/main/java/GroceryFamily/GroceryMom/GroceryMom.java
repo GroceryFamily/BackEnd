@@ -10,9 +10,9 @@ import org.springframework.web.filter.CorsFilter;
 import java.util.Arrays;
 
 @SpringBootApplication
-public class Server {
+public class GroceryMom {
     public static void main(String[] args) {
-        SpringApplication.run(Server.class, args);
+        SpringApplication.run(GroceryMom.class, args);
     }
 
     @Bean

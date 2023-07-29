@@ -11,4 +11,4 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 @EnableJpaRepositories(basePackages = {"GroceryFamily"})
 @EntityScan(basePackages = {"GroceryFamily"})
 @ConfigurationPropertiesScan(basePackages = "GroceryFamily")
-public class Config {}
+public class GroceryEldersApplicationConfig {}
