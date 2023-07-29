@@ -34,7 +34,7 @@ class RimiScraper extends Scraper {
         useOnlyStrictlyNecessaryCookies();
         category(categories);
         products().forEach(product -> cache.save(product.code, product));
-        // todo: implement further
+        // todo: finalize
     }
 
     static void useOnlyStrictlyNecessaryCookies() {
