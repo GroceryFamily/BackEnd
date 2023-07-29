@@ -1,0 +1,38 @@
+spring.profiles.active: @spring.profiles.active@
+
+GroceryDad:
+  enabled:
+    - barbora
+    - prisma
+    - rimi
+
+  scrapers:
+    barbora:
+      source: BARBORA
+      uri: https://barbora.ee
+      cache:
+        directory: cache/barbora
+      categories:
+        - [ "Dairy and eggs", "Milk", "Pasteurised milk" ]
+        - [ "Vegetables and fruits", "Fruits and berries", "Bananas" ]
+      timeout: 30s
+
+    prisma:
+      source: PRISMA
+      uri: https://prismamarket.ee
+      cache:
+        directory: cache/prisma
+      categories:
+        - [ "Groceries", "Pets", "Toys for pets" ]
+        - [ "Groceries", "Drinks", "Water" ]
+      timeout: 10s
+
+    rimi:
+      source: RIMI
+      uri: https://rimi.ee/epood/en
+      cache:
+        directory: cache/rimi
+      categories:
+        - [ "Groceries", "Canned products", "Mushrooms" ]
+        - [ "Bread, pastry, confectionery", "Rimi bakeries" ]
+      timeout: 10s

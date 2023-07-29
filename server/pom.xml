@@ -10,12 +10,14 @@
         <version>0.1.0-SNAPSHOT</version>
     </parent>
 
+    <groupId>GroceryFamily.GroceryMom</groupId>
     <artifactId>GroceryMom</artifactId>
 
     <dependencies>
         <dependency>
-            <groupId>GroceryFamily</groupId>
+            <groupId>GroceryFamily.GroceryElders</groupId>
             <artifactId>GroceryElders</artifactId>
+            <version>0.1.0-SNAPSHOT</version>
         </dependency>
 
         <!-- https://github.com/spring-projects -->

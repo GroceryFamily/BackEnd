@@ -12,23 +12,66 @@
 
     <groupId>GroceryFamily.GroceryDad</groupId>
     <artifactId>GroceryDad</artifactId>
-    <packaging>pom</packaging>
 
-    <modules>
-        <module>barbora</module>
-        <module>core</module>
-        <module>prisma</module>
-        <module>rimi</module>
-    </modules>
+    <dependencies>
+        <!-- https://github.com/GroceryFamily -->
+        <dependency>
+            <groupId>GroceryFamily.GroceryElders</groupId>
+            <artifactId>GroceryElders</artifactId>
+            <version>0.1.0-SNAPSHOT</version>
+        </dependency>
 
-    <dependencyManagement>
-        <dependencies>
-            <!-- https://github.com/GroceryFamily -->
-            <dependency>
-                <groupId>GroceryFamily.GroceryDad</groupId>
-                <artifactId>core</artifactId>
-                <version>${project.version}</version>
-            </dependency>
-        </dependencies>
-    </dependencyManagement>
+        <!-- https://github.com/spring-projects -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
+        </dependency>
+
+        <!-- https://github.com/selenide/selenide -->
+        <dependency>
+            <groupId>com.codeborne</groupId>
+            <artifactId>selenide</artifactId>
+        </dependency>
+
+        <!-- https://github.com/antivoland/simple-file-cache -->
+        <dependency>
+            <groupId>io.github.antivoland</groupId>
+            <artifactId>simple-file-cache</artifactId>
+        </dependency>
+
+        <!-- https://github.com/jhy/jsoup -->
+        <dependency>
+            <groupId>org.jsoup</groupId>
+            <artifactId>jsoup</artifactId>
+        </dependency>
+
+        <!-- https://github.com/FasterXML/jackson-databind -->
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+        </dependency>
+
+        <!-- https://github.com/spring-projects :: test -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+            </resource>
+        </resources>
+
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
 </project>
