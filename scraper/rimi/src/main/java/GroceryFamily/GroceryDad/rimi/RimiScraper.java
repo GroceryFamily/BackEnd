@@ -1,5 +1,6 @@
 package GroceryFamily.GroceryDad.rimi;
 
+import GroceryFamily.GroceryDad.GroceryDadConfig;
 import GroceryFamily.GroceryDad.cache.Cache;
 import GroceryFamily.GroceryElders.domain.Currency;
 import GroceryFamily.GroceryElders.domain.Price;
@@ -9,13 +10,11 @@ import com.codeborne.selenide.SelenideElement;
 import io.github.antivoland.sfc.FileCache;
 import lombok.extern.slf4j.Slf4j;
 import org.openqa.selenium.WebDriver;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import java.math.BigDecimal;
-import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Set;
@@ -33,11 +32,11 @@ public class RimiScraper implements CommandLineRunner {
     }
 
     final WebDriver driver;
-    final Cache.Factory cacheFactory;
+    final GroceryDadConfig.Scraper config;
 
-    RimiScraper(WebDriver driver, @Value("${scraper.rimi.cache.directory}") Path cacheDirectory) {
+    RimiScraper(WebDriver driver, GroceryDadConfig config) {
         this.driver = driver;
-        this.cacheFactory = Cache.factory(cacheDirectory);
+        this.config = config.scrapers.get("rimi");
     }
 
     @Override
@@ -46,7 +45,7 @@ public class RimiScraper implements CommandLineRunner {
     }
 
     void scrap(String... categories) {
-        FileCache<Product> cache = cacheFactory.get(categories);
+        FileCache<Product> cache = Cache.factory(config.cache.directory).get(categories);
         using(driver, () -> {
             open("https://rimi.ee/epood/en");
             useOnlyStrictlyNecessaryCookies();

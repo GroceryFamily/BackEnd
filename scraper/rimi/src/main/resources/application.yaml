@@ -1,0 +1,8 @@
+spring.profiles.active: @spring.profiles.active@
+
+GroceryDad:
+  scrapers:
+    rimi:
+      uri: https://rimi.ee/epood/en
+      cache:
+        directory: cache/rimi
