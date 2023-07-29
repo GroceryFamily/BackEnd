@@ -19,7 +19,8 @@ import static com.codeborne.selenide.CollectionCondition.itemWithText;
 import static com.codeborne.selenide.CollectionCondition.sizeGreaterThan;
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Condition.visible;
-import static com.codeborne.selenide.Selenide.*;
+import static com.codeborne.selenide.Selenide.$;
+import static com.codeborne.selenide.Selenide.$$;
 import static java.lang.String.format;
 
 class BarboraScraper extends Scraper {
@@ -28,24 +29,14 @@ class BarboraScraper extends Scraper {
     }
 
     @Override
-    void scrap(List<String> categories) {
-        FileCache<Product> cache = cache(categories);
-        open(config.uri);
-        waitUntilPageLoads();
-        declineAllCookies();
-        switchToEnglish();
-        category(categories);
-        products().forEach(product -> cache.save(product.code, product));
-        // todo: finalize
-    }
-
-    static void declineAllCookies() {
+    void acceptOrRejectCookies() {
         $("#CybotCookiebotDialogBodyLevelButtonLevelOptinDeclineAll")
                 .shouldBe(visible)
                 .click();
     }
 
-    static void switchToEnglish() {
+    @Override
+    void switchToEnglish() {
         $("#fti-header-language-dropdown")
                 .shouldBe(visible)
                 .hover();
@@ -58,6 +49,13 @@ class BarboraScraper extends Scraper {
                 .shouldHave(itemWithText("Products"))
                 .findBy(text("Products"))
                 .shouldBe(visible);
+    }
+
+    @Override
+    void scrap(List<String> categories, FileCache<Product> cache) {
+        category(categories);
+        products().forEach(product -> cache.save(product.code, product));
+        // todo: finalize
     }
 
     static void category(List<String> categories) {

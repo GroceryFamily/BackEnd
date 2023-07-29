@@ -14,6 +14,7 @@ GroceryDad:
         directory: cache/barbora
       categories:
         - [ "Dairy and eggs", "Milk", "Pasteurised milk" ]
+        - [ "Vegetables and fruits", "Fruits and berries", "Bananas" ]
       timeout: 30s
 
     prisma:
@@ -23,6 +24,7 @@ GroceryDad:
         directory: cache/prisma
       categories:
         - [ "Groceries", "Pets", "Toys for pets" ]
+        - [ "Groceries", "Drinks", "Water" ]
       timeout: 10s
 
     rimi:
@@ -32,4 +34,5 @@ GroceryDad:
         directory: cache/rimi
       categories:
         - [ "Groceries", "Canned products", "Mushrooms" ]
+        - [ "Bread, pastry, confectionery", "Rimi bakeries" ]
       timeout: 10s

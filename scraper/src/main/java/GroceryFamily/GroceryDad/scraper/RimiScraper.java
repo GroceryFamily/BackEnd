@@ -18,7 +18,8 @@ import java.util.Set;
 import static com.codeborne.selenide.CollectionCondition.sizeGreaterThan;
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Condition.visible;
-import static com.codeborne.selenide.Selenide.*;
+import static com.codeborne.selenide.Selenide.$;
+import static com.codeborne.selenide.Selenide.$$;
 import static java.lang.String.format;
 
 class RimiScraper extends Scraper {
@@ -27,11 +28,19 @@ class RimiScraper extends Scraper {
     }
 
     @Override
-    void scrap(List<String> categories) {
-        FileCache<Product> cache = cache(categories);
-        open(config.uri);
-        waitUntilPageLoads();
-        useOnlyStrictlyNecessaryCookies();
+    void acceptOrRejectCookies() {
+        $("#CybotCookiebotDialogBodyLevelButtonLevelOptinDeclineAll")
+                .shouldBe(visible)
+                .click();
+    }
+
+    @Override
+    void switchToEnglish() {
+        // do nothing
+    }
+
+    @Override
+    void scrap(List<String> categories, FileCache<Product> cache) {
         category(categories);
         products().forEach(product -> cache.save(product.code, product));
         // todo: finalize

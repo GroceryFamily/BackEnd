@@ -11,6 +11,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.List;
 
+import static com.codeborne.selenide.Selenide.open;
 import static com.codeborne.selenide.Selenide.using;
 
 public abstract class Scraper {
@@ -24,10 +25,23 @@ public abstract class Scraper {
 
     public final void scrap() {
         Configuration.timeout = config.timeout.toMillis();
-        using(driver, () -> config.categories.forEach(this::scrap));
+        using(driver, () -> {
+            open(config.uri);
+            waitUntilPageLoads();
+            acceptOrRejectCookies();
+            switchToEnglish();
+            config.categories.forEach(categories -> {
+                FileCache<Product> cache = cache(categories);
+                scrap(categories, cache);
+            });
+        });
     }
 
-    abstract void scrap(List<String> categories);
+    abstract void acceptOrRejectCookies();
+
+    abstract void switchToEnglish();
+
+    abstract void scrap(List<String> categories, FileCache<Product> cache);
 
     protected final FileCache<Product> cache(List<String> categories) {
         return Cache.factory(config.cache.directory).get(categories);
