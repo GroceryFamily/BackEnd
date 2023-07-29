@@ -1,4 +1,4 @@
-package GroceryFamily.scraper;
+package GroceryFamily.GroceryDad;
 
 import GroceryFamily.GroceryElders.domain.Source;
 import lombok.Data;

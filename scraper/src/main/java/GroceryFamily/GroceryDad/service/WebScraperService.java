@@ -1,4 +1,4 @@
-package GroceryFamily.scraper.service;
+package GroceryFamily.GroceryDad.service;
 //
 //import com.example.FinalProject.model.Grocery;
 //import com.example.FinalProject.model.Measurement;

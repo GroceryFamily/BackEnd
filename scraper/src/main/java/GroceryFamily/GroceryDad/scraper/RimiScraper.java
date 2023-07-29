@@ -1,5 +1,6 @@
-package GroceryFamily.scraper;
+package GroceryFamily.GroceryDad.scraper;
 
+import GroceryFamily.GroceryDad.GroceryDadConfig;
 import GroceryFamily.GroceryElders.domain.Currency;
 import GroceryFamily.GroceryElders.domain.Price;
 import GroceryFamily.GroceryElders.domain.PriceUnit;
@@ -26,7 +27,7 @@ class RimiScraper extends Scraper {
     }
 
     @Override
-    protected void scrap(List<String> categories) {
+    void scrap(List<String> categories) {
         FileCache<Product> cache = cache(categories);
         open(config.uri);
         waitUntilPageLoads();

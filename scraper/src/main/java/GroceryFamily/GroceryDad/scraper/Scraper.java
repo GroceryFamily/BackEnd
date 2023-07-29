@@ -1,7 +1,8 @@
-package GroceryFamily.scraper;
+package GroceryFamily.GroceryDad.scraper;
 
+import GroceryFamily.GroceryDad.GroceryDadConfig;
 import GroceryFamily.GroceryElders.domain.Product;
-import GroceryFamily.scraper.cache.Cache;
+import GroceryFamily.GroceryDad.scraper.cache.Cache;
 import com.codeborne.selenide.Configuration;
 import io.github.antivoland.sfc.FileCache;
 import org.openqa.selenium.JavascriptExecutor;
@@ -12,21 +13,21 @@ import java.util.List;
 
 import static com.codeborne.selenide.Selenide.using;
 
-abstract class Scraper {
-    protected final GroceryDadConfig.Scraper config;
+public abstract class Scraper {
+    final GroceryDadConfig.Scraper config;
     private final WebDriver driver;
 
-    protected Scraper(GroceryDadConfig.Scraper config, WebDriver driver) {
+    Scraper(GroceryDadConfig.Scraper config, WebDriver driver) {
         this.config = config;
         this.driver = driver;
     }
 
-    final void scrap() {
+    public final void scrap() {
         Configuration.timeout = config.timeout.toMillis();
         using(driver, () -> config.categories.forEach(this::scrap));
     }
 
-    protected abstract void scrap(List<String> categories);
+    abstract void scrap(List<String> categories);
 
     protected final FileCache<Product> cache(List<String> categories) {
         return Cache.factory(config.cache.directory).get(categories);
@@ -40,7 +41,7 @@ abstract class Scraper {
         return ((JavascriptExecutor) driver).executeScript("return document.readyState").equals("complete");
     }
 
-    static Scraper create(GroceryDadConfig.Scraper config, WebDriver driver) {
+    public static Scraper create(GroceryDadConfig.Scraper config, WebDriver driver) {
         return switch (config.source) {
             case BARBORA -> new BarboraScraper(config, driver);
             case PRISMA -> new PrismaScraper(config, driver);

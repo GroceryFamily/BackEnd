@@ -10,6 +10,7 @@
         <version>0.1.0-SNAPSHOT</version>
     </parent>
 
+    <groupId>GroceryFamily.GroceryDad</groupId>
     <artifactId>scraper</artifactId>
 
     <dependencies>

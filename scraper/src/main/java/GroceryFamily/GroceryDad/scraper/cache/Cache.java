@@ -1,4 +1,4 @@
-package GroceryFamily.scraper.cache;
+package GroceryFamily.GroceryDad.scraper.cache;
 
 import GroceryFamily.GroceryElders.domain.Product;
 import io.github.antivoland.sfc.FileCache;

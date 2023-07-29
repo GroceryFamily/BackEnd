@@ -1,4 +1,4 @@
-package GroceryFamily.scraper.productCheckOnThePage;
+package GroceryFamily.GroceryDad.productCheckOnThePage;
 
 import GroceryFamily.GroceryElders.model.Product;
 

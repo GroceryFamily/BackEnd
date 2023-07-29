@@ -1,5 +1,6 @@
-package GroceryFamily.scraper;
+package GroceryFamily.GroceryDad;
 
+import GroceryFamily.GroceryDad.scraper.Scraper;
 import org.openqa.selenium.WebDriver;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;

@@ -1,5 +1,6 @@
-package GroceryFamily.scraper;
+package GroceryFamily.GroceryDad.scraper;
 
+import GroceryFamily.GroceryDad.GroceryDadConfig;
 import GroceryFamily.GroceryElders.domain.Currency;
 import GroceryFamily.GroceryElders.domain.Price;
 import GroceryFamily.GroceryElders.domain.PriceUnit;
@@ -9,7 +10,6 @@ import io.github.antivoland.sfc.FileCache;
 import org.openqa.selenium.WebDriver;
 
 import java.math.BigDecimal;
-import java.time.Duration;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
@@ -28,7 +28,7 @@ class BarboraScraper extends Scraper {
     }
 
     @Override
-    protected void scrap(List<String> categories) {
+    void scrap(List<String> categories) {
         FileCache<Product> cache = cache(categories);
         open(config.uri);
         waitUntilPageLoads();

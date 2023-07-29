@@ -1,4 +1,4 @@
-package GroceryFamily.scraper.similarity;
+package GroceryFamily.GroceryDad.similarity;
 
 import GroceryFamily.GroceryElders.model.Product;
 
