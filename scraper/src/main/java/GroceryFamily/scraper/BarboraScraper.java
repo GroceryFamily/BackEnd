@@ -4,22 +4,15 @@ import GroceryFamily.GroceryElders.domain.Currency;
 import GroceryFamily.GroceryElders.domain.Price;
 import GroceryFamily.GroceryElders.domain.PriceUnit;
 import GroceryFamily.GroceryElders.domain.Product;
-import GroceryFamily.scraper.cache.Cache;
 import com.codeborne.selenide.SelenideElement;
 import io.github.antivoland.sfc.FileCache;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.boot.CommandLineRunner;
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import java.math.BigDecimal;
-import java.nio.file.Path;
 import java.time.Duration;
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.List;
 import java.util.Set;
 
 import static com.codeborne.selenide.CollectionCondition.itemWithText;
@@ -29,44 +22,21 @@ import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.*;
 import static java.lang.String.format;
 
-@SpringBootApplication
-public class BarboraScraper implements CommandLineRunner {
-    public static void main(String... args) {
-        SpringApplication.run(BarboraScraper.class, args);
-    }
-
-    final WebDriver driver;
-    final Cache.Factory cacheFactory;
-
-    BarboraScraper(WebDriver driver, @Value("${scraper.barbora.cache.directory}") Path cacheDirectory) {
-        this.driver = driver;
-        this.cacheFactory = Cache.factory(cacheDirectory);
+class BarboraScraper extends Scraper {
+    BarboraScraper(GroceryDadConfig.Scraper config, WebDriver driver) {
+        super(config, driver);
     }
 
     @Override
-    public void run(String... args) {
-        scrap("Dairy and eggs", "Milk", "Pasteurised milk");
-    }
-
-    void scrap(String... categories) {
-        FileCache<Product> cache = cacheFactory.get(categories);
-        using(driver, () -> {
-            waitUntilPageLoads(driver);
-            open("https://barbora.ee");
-            switchToEnglish();
-            declineAllCookies();
-            category(categories);
-            products().forEach(product -> cache.save(product.code, product));
-            // todo: implement further
-        });
-    }
-
-    static void waitUntilPageLoads(WebDriver driver) {
-        new WebDriverWait(driver, Duration.ofSeconds(10)).until(BarboraScraper::pageIsReady);
-    }
-
-    static boolean pageIsReady(WebDriver driver) {
-        return ((JavascriptExecutor) driver).executeScript("return document.readyState").equals("complete");
+    protected void scrap(List<String> categories) {
+        FileCache<Product> cache = cache(categories);
+        open(config.uri);
+        waitUntilPageLoads();
+        switchToEnglish();
+        declineAllCookies();
+        category(categories);
+        products().forEach(product -> cache.save(product.code, product));
+        // todo: finalize
     }
 
     static void switchToEnglish() {
@@ -90,28 +60,31 @@ public class BarboraScraper implements CommandLineRunner {
                 .click();
     }
 
-    static void category(String... names) {
-        if (names.length == 0) return;
+    static void category(List<String> categories) {
+        if (categories.size() < 2) throw new IllegalArgumentException("Requires at least two categories");
+
         var firstCategory = $$("*[id*='fti-desktop-category']")
                 .shouldHave(sizeGreaterThan(0))
-                .findBy(text(names[0]))
+                .findBy(text(categories.get(0)))
                 .shouldBe(visible);
         firstCategory.hover();
-        if (names.length == 1) throw new IllegalArgumentException("Requires at least two categories");
+
         var secondCategory = $$("*[id*='fti-category-tree-child'] > div")
                 .shouldHave(sizeGreaterThan(0))
-                .findBy(text(names[1]))
+                .findBy(text(categories.get(1)))
                 .shouldBe(visible);
-        if (names.length == 2) {
+        if (categories.size() == 2) {
             secondCategory.click();
             return;
         }
+
         var thirdCategory = $$("*[id*='fti-category-tree-grand-child']")
                 .shouldHave(sizeGreaterThan(0))
-                .findBy(text(names[2]))
+                .findBy(text(categories.get(2)))
                 .shouldBe(visible);
         thirdCategory.click();
-        if (names.length > 3) throw new IllegalArgumentException("Requires no more than three categories");
+
+        if (categories.size() > 3) throw new IllegalArgumentException("Requires no more than three categories");
     }
 
     static Collection<Product> products() {

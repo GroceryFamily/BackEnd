@@ -5,6 +5,7 @@ import io.github.antivoland.sfc.FileCache;
 import io.github.antivoland.sfc.FileType;
 
 import java.nio.file.Path;
+import java.util.List;
 
 public class Cache {
     public static Factory factory(Path directory) {
@@ -18,7 +19,7 @@ public class Cache {
             this.directory = directory;
         }
 
-        public FileCache<Product> get(String... categories) {
+        public FileCache<Product> get(List<String> categories) {
             Path subdirectory = directory;
             for (String category : categories) {
                 subdirectory = subdirectory.resolve(category);

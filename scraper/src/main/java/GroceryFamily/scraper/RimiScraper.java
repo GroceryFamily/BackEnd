@@ -4,70 +4,58 @@ import GroceryFamily.GroceryElders.domain.Currency;
 import GroceryFamily.GroceryElders.domain.Price;
 import GroceryFamily.GroceryElders.domain.PriceUnit;
 import GroceryFamily.GroceryElders.domain.Product;
-import GroceryFamily.scraper.cache.Cache;
 import com.codeborne.selenide.SelenideElement;
 import io.github.antivoland.sfc.FileCache;
-import lombok.extern.slf4j.Slf4j;
 import org.openqa.selenium.WebDriver;
-import org.springframework.boot.CommandLineRunner;
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.List;
 import java.util.Set;
 
+import static com.codeborne.selenide.CollectionCondition.sizeGreaterThan;
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.*;
 import static java.lang.String.format;
 
-@Slf4j
-@SpringBootApplication
-public class RimiScraper implements CommandLineRunner {
-    public static void main(String... args) {
-        SpringApplication.run(RimiScraper.class, args);
-    }
-
-    final WebDriver driver;
-    final GroceryDadConfig.Scraper config;
-
-    RimiScraper(WebDriver driver, GroceryDadConfig config) {
-        this.driver = driver;
-        this.config = config.scrapers.get("rimi");
+class RimiScraper extends Scraper {
+    RimiScraper(GroceryDadConfig.Scraper config, WebDriver driver) {
+        super(config, driver);
     }
 
     @Override
-    public void run(String... args) {
-        scrap("Groceries", "All category products");
-    }
-
-    void scrap(String... categories) {
-        FileCache<Product> cache = Cache.factory(config.cache.directory).get(categories);
-        using(driver, () -> {
-            open("https://rimi.ee/epood/en");
-            useOnlyStrictlyNecessaryCookies();
-            category(categories);
-            products().forEach(product -> cache.save(product.code, product));
-            // todo: implement further
-        });
+    protected void scrap(List<String> categories) {
+        FileCache<Product> cache = cache(categories);
+        open(config.uri);
+        waitUntilPageLoads();
+        useOnlyStrictlyNecessaryCookies();
+        category(categories);
+        products().forEach(product -> cache.save(product.code, product));
+        // todo: implement further
     }
 
     static void useOnlyStrictlyNecessaryCookies() {
         $("#CybotCookiebotDialogBodyLevelButtonLevelOptinDeclineAll").shouldBe(visible).click();
     }
 
-    static void category(String... names) {
-        if (names.length == 0) return;
-        $("#desktop_category_menu_button").shouldBe(visible).click();
-        var name = names[0];
-        var button = $$("#desktop_category_menu button").findBy(text(name));
+    static void category(List<String> categories) {
+        if (categories.size() < 2) throw new IllegalArgumentException("Requires at least two categories");
+
+        var name = categories.get(0);
+        var button = $$("#desktop_category_menu button")
+                .shouldHave(sizeGreaterThan(0))
+                .findBy(text(name))
+                .shouldBe(visible);
         var submenu = button.attr("aria-owns");
         button.click();
-        for (int idx = 1; idx < names.length; ++idx) {
-            name = names[idx];
-            button = $$("#" + submenu + " a").findBy(text(name));
+        for (int idx = 1; idx < categories.size(); ++idx) {
+            name = categories.get(idx);
+            button = $$("#" + submenu + " a")
+                    .shouldHave(sizeGreaterThan(0))
+                    .findBy(text(name))
+                    .shouldBe(visible);
             submenu = button.attr("aria-owns");
             button.click();
         }
@@ -75,7 +63,7 @@ public class RimiScraper implements CommandLineRunner {
 
     static Collection<Product> products() {
         Collection<Product> products = new ArrayList<>();
-        for (var e : $$("*[class='product-grid__item'] > div")) {
+        for (var e : $$("*[class='product-grid__item'] > div").shouldHave(sizeGreaterThan(0))) {
             products.add(product(e));
         }
         return products;

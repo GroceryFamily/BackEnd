@@ -4,84 +4,79 @@ import GroceryFamily.GroceryElders.domain.Currency;
 import GroceryFamily.GroceryElders.domain.Price;
 import GroceryFamily.GroceryElders.domain.PriceUnit;
 import GroceryFamily.GroceryElders.domain.Product;
-import GroceryFamily.scraper.cache.Cache;
 import com.codeborne.selenide.SelenideElement;
 import io.github.antivoland.sfc.FileCache;
-import lombok.extern.slf4j.Slf4j;
 import org.openqa.selenium.WebDriver;
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.boot.CommandLineRunner;
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import java.math.BigDecimal;
 import java.net.URLDecoder;
 import java.nio.charset.StandardCharsets;
-import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.List;
 import java.util.Set;
 
+import static com.codeborne.selenide.CollectionCondition.sizeGreaterThan;
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.*;
 import static java.lang.String.format;
 import static org.apache.commons.lang3.StringUtils.substringAfterLast;
 
-@Slf4j
-@SpringBootApplication
-public class PrismaScraper implements CommandLineRunner {
-    public static void main(String... args) {
-        SpringApplication.run(PrismaScraper.class, args);
-    }
-
-    final WebDriver driver;
-    final Cache.Factory cacheFactory;
-
-    PrismaScraper(WebDriver driver, @Value("${scraper.prisma.cache.directory}") Path cacheDirectory) {
-        this.driver = driver;
-        this.cacheFactory = Cache.factory(cacheDirectory);
+class PrismaScraper extends Scraper {
+    PrismaScraper(GroceryDadConfig.Scraper config, WebDriver driver) {
+        super(config, driver);
     }
 
     @Override
-    public void run(String... args) {
-        scrap("Groceries", "Pets", "Toys for pets");
-    }
-
-    void scrap(String... categories) {
-        FileCache<Product> cache = cacheFactory.get(categories);
-        using(driver, () -> {
-            open("https://prismamarket.ee");
-            switchToEnglish();
-            closeCookieNotice();
-            category(categories);
-            products().forEach(product -> cache.save(product.code, product));
-            // todo: implement further
-        });
+    protected void scrap(List<String> categories) {
+        FileCache<Product> cache = cache(categories);
+        open(config.uri);
+        waitUntilPageLoads();
+        switchToEnglish();
+        closeCookieNotice();
+        category(categories);
+        products().forEach(product -> cache.save(product.code, product));
+        // todo: finalize
     }
 
     static void switchToEnglish() {
-        $("*[data-language='en']").shouldBe(visible).click();
+        $("*[data-language='en']")
+                .shouldBe(visible)
+                .click();
     }
 
     static void closeCookieNotice() {
-        $("*[class*='js-cookie-notice'] *[class='close-icon']").shouldBe(visible).click();
+        $("*[class*='js-cookie-notice'] *[class='close-icon']")
+                .shouldBe(visible)
+                .click();
     }
 
-    static void category(String... names) {
-        if (names.length == 0) return;
-        $$("*[class='main-navigation-items'] a").findBy(text(names[0])).click();
-        if (names.length == 1) return;
-        $$("*[class*='left-navigation'] a").findBy(text(names[1])).click();
-        if (names.length == 2) return;
-        $$("*[class*='categories-shelf'] a").findBy(text(names[2])).click();
-        if (names.length > 3) throw new IllegalArgumentException("Too many categories");
+    static void category(List<String> categories) {
+        if (categories.size() != 3) throw new IllegalArgumentException("Requires exactly three categories");
+
+        $$("*[class='main-navigation-items'] a")
+                .shouldHave(sizeGreaterThan(0))
+                .findBy(text(categories.get(0)))
+                .shouldBe(visible)
+                .click();
+
+        $$("*[class*='left-navigation'] a")
+                .shouldHave(sizeGreaterThan(0))
+                .findBy(text(categories.get(1)))
+                .shouldBe(visible)
+                .click();
+
+        $$("*[class*='categories-shelf'] a")
+                .shouldHave(sizeGreaterThan(0))
+                .findBy(text(categories.get(2)))
+                .shouldBe(visible)
+                .click();
     }
 
     static Collection<Product> products() {
-        $("*[class*='js-products-shelf']").shouldBe(visible);
         Collection<Product> products = new ArrayList<>();
-        for (var e : $$("*[class*='js-shelf-item']")) {
+        for (var e : $$("*[class*='js-shelf-item']").shouldHave(sizeGreaterThan(0))) {
             products.add(product(e));
         }
         return products;
