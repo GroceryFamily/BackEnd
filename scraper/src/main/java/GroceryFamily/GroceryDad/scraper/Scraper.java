@@ -1,8 +1,8 @@
 package GroceryFamily.GroceryDad.scraper;
 
 import GroceryFamily.GroceryDad.GroceryDadConfig;
-import GroceryFamily.GroceryElders.domain.Product;
 import GroceryFamily.GroceryDad.scraper.cache.Cache;
+import GroceryFamily.GroceryElders.domain.Product;
 import com.codeborne.selenide.Configuration;
 import io.github.antivoland.sfc.FileCache;
 import org.openqa.selenium.JavascriptExecutor;
