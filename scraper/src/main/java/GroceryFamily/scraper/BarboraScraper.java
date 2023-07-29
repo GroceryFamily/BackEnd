@@ -49,7 +49,7 @@ class BarboraScraper extends Scraper {
                 .shouldBe(visible)
                 .click();
         $$("*[id*='fti-desktop-menu-item']")
-                .shouldHave(itemWithText("Products"), Duration.ofSeconds(10))
+                .shouldHave(itemWithText("Products"))
                 .findBy(text("Products"))
                 .shouldBe(visible);
     }

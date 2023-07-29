@@ -43,28 +43,25 @@ class RimiScraper extends Scraper {
     static void category(List<String> categories) {
         if (categories.size() < 2) throw new IllegalArgumentException("Requires at least two categories");
 
-        var name = categories.get(0);
-        var button = $$("#desktop_category_menu button")
-                .shouldHave(sizeGreaterThan(0))
-                .findBy(text(name))
-                .shouldBe(visible);
-        var submenu = button.attr("aria-owns");
+        var button = $("#desktop_category_menu_button").shouldBe(visible);
         button.click();
-        for (int idx = 1; idx < categories.size(); ++idx) {
-            name = categories.get(idx);
-            button = $$("#" + submenu + " a")
+        int dataLevel = 1;
+        for (String category : categories) {
+            button = $$("*[data-level='" + dataLevel + "'] li")
                     .shouldHave(sizeGreaterThan(0))
-                    .findBy(text(name))
+                    .findBy(text(category))
                     .shouldBe(visible);
-            submenu = button.attr("aria-owns");
             button.click();
+            ++dataLevel;
         }
     }
 
     static Collection<Product> products() {
         Collection<Product> products = new ArrayList<>();
         for (var e : $$("*[class='product-grid__item'] > div").shouldHave(sizeGreaterThan(0))) {
-            products.add(product(e));
+            if (e.$("*[class*='price-tag']").exists()) {
+                products.add(product(e));
+            }
         }
         return products;
     }
