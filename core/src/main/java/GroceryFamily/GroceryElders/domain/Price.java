@@ -1,4 +1,4 @@
-package GroceryFamily.GroceryDad.domain;
+package GroceryFamily.GroceryElders.domain;
 
 import lombok.Builder;
 import lombok.EqualsAndHashCode;

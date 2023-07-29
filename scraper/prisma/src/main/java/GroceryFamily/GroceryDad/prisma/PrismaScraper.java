@@ -1,14 +1,13 @@
 package GroceryFamily.GroceryDad.prisma;
 
 import GroceryFamily.GroceryDad.cache.Cache;
-import GroceryFamily.GroceryDad.domain.Currency;
-import GroceryFamily.GroceryDad.domain.Price;
-import GroceryFamily.GroceryDad.domain.PriceUnit;
-import GroceryFamily.GroceryDad.domain.Product;
+import GroceryFamily.GroceryElders.domain.Currency;
+import GroceryFamily.GroceryElders.domain.Price;
+import GroceryFamily.GroceryElders.domain.PriceUnit;
+import GroceryFamily.GroceryElders.domain.Product;
 import com.codeborne.selenide.SelenideElement;
 import io.github.antivoland.sfc.FileCache;
 import lombok.extern.slf4j.Slf4j;
-import org.openqa.selenium.InvalidArgumentException;
 import org.openqa.selenium.WebDriver;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.CommandLineRunner;
@@ -118,7 +117,7 @@ public class PrismaScraper implements CommandLineRunner {
     }
 
     static Currency currency(String symbol) {
-        if (symbol == null) throw new InvalidArgumentException("Currency is missing");
+        if (symbol == null) throw new IllegalArgumentException("Currency is missing");
         if (symbol.equals("€")) return Currency.EUR;
         throw new UnsupportedOperationException(format("Currency '%s' is not supported", symbol));
     }

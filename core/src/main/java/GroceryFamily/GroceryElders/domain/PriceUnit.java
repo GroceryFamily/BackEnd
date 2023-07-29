@@ -1,8 +1,7 @@
-package GroceryFamily.GroceryDad.domain;
+package GroceryFamily.GroceryElders.domain;
 
 import lombok.EqualsAndHashCode;
 import lombok.ToString;
-import org.openqa.selenium.InvalidArgumentException;
 
 @ToString
 @EqualsAndHashCode
@@ -16,7 +15,7 @@ public class PriceUnit {
     }
 
     public static PriceUnit get(String name) {
-        if (name == null) throw new InvalidArgumentException("Price unit name is missing");
+        if (name == null) throw new IllegalArgumentException("Price unit name is missing");
         return new PriceUnit(name);
     }
 }

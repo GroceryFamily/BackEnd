@@ -1,6 +1,6 @@
 package GroceryFamily.GroceryDad.cache;
 
-import GroceryFamily.GroceryDad.domain.Product;
+import GroceryFamily.GroceryElders.domain.Product;
 import io.github.antivoland.sfc.FileCache;
 import io.github.antivoland.sfc.FileType;
 
