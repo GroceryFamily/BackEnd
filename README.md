@@ -4,7 +4,7 @@
 
 ## Secrets
 
-Create `secrets/application-secrets.yaml` in the project's root directory:
+Create `secrets/application-secrets.yaml` in the project's root directory with the following content::
 
 ```yaml
 spring.datasource:
