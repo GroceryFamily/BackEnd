@@ -1,7 +1,7 @@
 package GroceryFamily.GroceryElders.service;
 
 import GroceryFamily.GroceryElders.domain.Product;
-import GroceryFamily.GroceryElders.repo.ProductRepository;
+import GroceryFamily.GroceryElders.repository.ProductRepository;
 import GroceryFamily.GroceryElders.service.exception.ProductNotFound;
 import GroceryFamily.GroceryElders.service.mapper.DomainMapper;
 import GroceryFamily.GroceryElders.service.mapper.ModelMapper;
