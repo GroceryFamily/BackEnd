@@ -11,6 +11,10 @@ import java.math.BigDecimal;
 @EqualsAndHashCode
 public class Price {
     public final PriceUnit unit;
-    public final BigDecimal amount;
     public final Currency currency;
+    public final BigDecimal amount;
+
+    public String id(String productId) {
+        return productId + "::" + unit.name + "::" + currency.name;
+    }
 }

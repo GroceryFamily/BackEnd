@@ -15,11 +15,15 @@ public class Price {
     @Id
     private String id;
     private String unit;
-    private BigDecimal amount;
     private String currency;
+    private BigDecimal amount;
     private Instant ts;
     @ManyToOne
     private Product product;
     @Version
     private int version;
+
+    Price patch(GroceryFamily.GroceryElders.domain.Price price, Instant ts) {
+        return this.setAmount(price.amount).setTs(ts);
+    }
 }

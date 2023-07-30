@@ -4,7 +4,11 @@ import lombok.Builder;
 import lombok.EqualsAndHashCode;
 import lombok.ToString;
 
+import java.util.Map;
 import java.util.Set;
+
+import static java.util.function.Function.identity;
+import static java.util.stream.Collectors.toMap;
 
 @Builder
 @ToString
@@ -15,11 +19,11 @@ public class Product {
     public final String name;
     public final Set<Price> prices;
 
-    public Price price(PriceUnit unit) {
-        if (unit == null) throw new NullPointerException("Missing price unit");
-        for (Price price : prices) {
-            if (unit.equals(price.unit)) return price;
-        }
-        return null;
+    public String id() {
+        return namespace + "::" + code;
+    }
+
+    public Map<String, Price> identifiablePrices() {
+        return prices.stream().collect(toMap(price -> price.id(id()), identity()));
     }
 }
