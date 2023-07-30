@@ -11,6 +11,6 @@ import java.math.BigDecimal;
 @EqualsAndHashCode
 public class Price {
     public final PriceUnit unit;
-    public final BigDecimal value;
+    public final BigDecimal amount;
     public final Currency currency;
 }

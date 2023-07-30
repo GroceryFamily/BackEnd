@@ -103,7 +103,7 @@ class PrismaScraper extends Scraper {
         return Price
                 .builder()
                 .unit(PriceUnit.PC)
-                .value(new BigDecimal(value[0] + '.' + value[1]))
+                .amount(new BigDecimal(value[0] + '.' + value[1]))
                 .currency(currency(fragments[1].substring(0, 1)))
                 .build();
     }

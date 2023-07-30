@@ -109,7 +109,7 @@ class BarboraScraper extends Scraper {
         return Price
                 .builder()
                 .unit(PriceUnit.PC)
-                .value(new BigDecimal(text.substring(1)))
+                .amount(new BigDecimal(text.substring(1)))
                 .currency(currency(text.substring(0, 1)))
                 .build();
     }
@@ -120,7 +120,7 @@ class BarboraScraper extends Scraper {
         return Price
                 .builder()
                 .unit(PriceUnit.get(fragments[1]))
-                .value(new BigDecimal(fragments[0]))
+                .amount(new BigDecimal(fragments[0]))
                 .currency(currency(text.substring(0, 1)))
                 .build();
     }
