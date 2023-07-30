@@ -84,7 +84,7 @@ class PrismaScraper extends Scraper {
                 .namespace(Namespace.PRISMA)
                 .code(productCode(e))
                 .name(e.$("*[class='name']").text())
-                .prices(Set.of(pcPrice(e.$("*[class*='js-comp-price']").text())))
+                .prices(List.of(pcPrice(e.$("*[class*='js-comp-price']").text())))
                 .build();
     }
 
@@ -103,15 +103,15 @@ class PrismaScraper extends Scraper {
         return Price
                 .builder()
                 .unit(PriceUnit.PC)
-                .amount(new BigDecimal(value[0] + '.' + value[1]))
                 .currency(currency(fragments[1].substring(0, 1)))
+                .amount(new BigDecimal(value[0] + '.' + value[1]))
                 .build();
     }
 
-    static Currency currency(String symbol) {
-        if (symbol == null) throw new IllegalArgumentException("Currency is missing");
+    static String currency(String symbol) {
+        if (symbol == null) throw new IllegalArgumentException("Currency symbol is missing");
         if (symbol.equals("€")) return Currency.EUR;
-        throw new UnsupportedOperationException(format("Currency '%s' is not supported", symbol));
+        throw new UnsupportedOperationException(format("Currency symbol '%s' is not recognized", symbol));
     }
 
     static String decode(String url) {

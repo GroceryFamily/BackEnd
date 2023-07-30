@@ -1,9 +1,6 @@
 package GroceryFamily.GroceryElders.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.ManyToOne;
-import jakarta.persistence.Version;
+import jakarta.persistence.*;
 import lombok.Data;
 
 import java.math.BigDecimal;
@@ -18,7 +15,7 @@ public class Price {
     private String currency;
     private BigDecimal amount;
     private Instant ts;
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     private Product product;
     @Version
     private int version;

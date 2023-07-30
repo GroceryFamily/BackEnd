@@ -1,5 +1,6 @@
 package GroceryFamily.GroceryElders.model;
 
+import GroceryFamily.GroceryElders.service.mapper.ModelMapper;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.OneToMany;
@@ -28,8 +29,11 @@ public class Product {
     @Version
     private int version;
 
-    public Product patch(GroceryFamily.GroceryElders.domain.Product product, Instant ts) {
-        return setName(product.name).setTs(ts).setPrices(patchPrices(product.identifiablePrices(), ts));
+    public Product patch(GroceryFamily.GroceryElders.domain.Product patch, Instant ts) {
+        setName(patch.name);
+        setTs(ts);
+        setPrices(patchPrices(patch.identifiablePrices(), ts));
+        return this;
     }
 
     private List<Price> patchPrices(Map<String, GroceryFamily.GroceryElders.domain.Price> patch, Instant ts) {
@@ -38,36 +42,11 @@ public class Product {
         patch.forEach((id, price) -> {
             var oldPrice = oldPrices.get(id);
             if (oldPrice != null) newPrices.add(oldPrice.patch(price, ts));
-            else prices.add(mapPrice(id, price, ts));
+            else prices.add(ModelMapper.price(id, price, ts));
         });
         oldPrices.forEach((id, price) -> {
             if (!patch.containsKey(id)) newPrices.add(price);
         });
         return newPrices;
-    }
-
-    public static Product map(GroceryFamily.GroceryElders.domain.Product product, Instant ts) {
-        return new Product()
-                .setId(product.id())
-                .setCode(product.code)
-                .setName(product.name)
-                .setTs(ts)
-                .setPrices(mapPrices(product, ts));
-    }
-
-    private static List<Price> mapPrices(GroceryFamily.GroceryElders.domain.Product product, Instant ts) {
-        return product.prices
-                .stream()
-                .map(price -> mapPrice(price.id(product.id()), price, ts))
-                .toList();
-    }
-
-    private static Price mapPrice(String id, GroceryFamily.GroceryElders.domain.Price price, Instant ts) {
-        return new Price()
-                .setId(id)
-                .setUnit(price.unit.name)
-                .setAmount(price.amount)
-                .setCurrency(price.currency.name)
-                .setTs(ts);
     }
 }
