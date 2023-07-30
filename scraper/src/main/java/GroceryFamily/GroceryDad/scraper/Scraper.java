@@ -2,6 +2,7 @@ package GroceryFamily.GroceryDad.scraper;
 
 import GroceryFamily.GroceryDad.GroceryDadConfig;
 import GroceryFamily.GroceryDad.scraper.cache.Cache;
+import GroceryFamily.GroceryElders.domain.Namespace;
 import GroceryFamily.GroceryElders.domain.Product;
 import com.codeborne.selenide.Configuration;
 import io.github.antivoland.sfc.FileCache;
@@ -13,6 +14,7 @@ import java.util.List;
 
 import static com.codeborne.selenide.Selenide.open;
 import static com.codeborne.selenide.Selenide.using;
+import static java.lang.String.format;
 
 public abstract class Scraper { // todo: think about robots.txt
     final GroceryDadConfig.Scraper config;
@@ -58,9 +60,10 @@ public abstract class Scraper { // todo: think about robots.txt
 
     public static Scraper create(GroceryDadConfig.Scraper config, WebDriver driver) {
         return switch (config.namespace) {
-            case BARBORA -> new BarboraScraper(config, driver);
-            case PRISMA -> new PrismaScraper(config, driver);
-            case RIMI -> new RimiScraper(config, driver);
+            case Namespace.BARBORA -> new BarboraScraper(config, driver);
+            case Namespace.PRISMA -> new PrismaScraper(config, driver);
+            case Namespace.RIMI -> new RimiScraper(config, driver);
+            default -> throw new UnsupportedOperationException(format("Unrecognized namespace '%s'", config.namespace));
         };
     }
 }

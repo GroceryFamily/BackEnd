@@ -10,13 +10,13 @@ import java.util.Set;
 @ToString
 @EqualsAndHashCode
 public class Product {
-    public final Namespace namespace;
+    public final String namespace;
     public final String code;
     public final String name;
     public final Set<Price> prices;
 
     public Price price(PriceUnit unit) {
-        if (unit == null) throw new NullPointerException("Price unit is missing");
+        if (unit == null) throw new NullPointerException("Missing price unit");
         for (Price price : prices) {
             if (unit.equals(price.unit)) return price;
         }
