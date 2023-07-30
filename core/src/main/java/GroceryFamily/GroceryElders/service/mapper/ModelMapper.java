@@ -9,12 +9,16 @@ import java.util.List;
 
 public class ModelMapper {
     public static Product product(GroceryFamily.GroceryElders.domain.Product product, Instant ts) {
-        return new Product()
+        var modelProduct = new Product();
+        var modelPrices = prices(product, ts);
+        modelPrices.forEach(modelPrice -> modelPrice.setProduct(modelProduct));
+        return modelProduct
                 .setId(product.id())
+                .setNamespace(product.namespace)
                 .setCode(product.code)
                 .setName(product.name)
                 .setTs(ts)
-                .setPrices(prices(product, ts));
+                .setPrices(modelPrices);
     }
 
     private static List<Price> prices(GroceryFamily.GroceryElders.domain.Product product, Instant ts) {

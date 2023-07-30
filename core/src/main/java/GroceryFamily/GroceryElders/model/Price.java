@@ -21,6 +21,6 @@ public class Price {
     private int version;
 
     Price patch(GroceryFamily.GroceryElders.domain.Price price, Instant ts) {
-        return this.setAmount(price.amount).setTs(ts);
+        return setAmount(price.amount).setTs(ts);
     }
 }

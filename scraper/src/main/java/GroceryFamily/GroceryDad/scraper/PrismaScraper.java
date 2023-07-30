@@ -1,6 +1,7 @@
 package GroceryFamily.GroceryDad.scraper;
 
 import GroceryFamily.GroceryDad.GroceryDadConfig;
+import GroceryFamily.GroceryElders.api.client.ProductAPIClient;
 import GroceryFamily.GroceryElders.domain.*;
 import com.codeborne.selenide.SelenideElement;
 import org.openqa.selenium.WebDriver;
@@ -11,7 +12,6 @@ import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
-import java.util.Set;
 import java.util.function.Consumer;
 
 import static com.codeborne.selenide.CollectionCondition.sizeGreaterThan;
@@ -23,8 +23,8 @@ import static java.lang.String.format;
 import static org.apache.commons.lang3.StringUtils.substringAfterLast;
 
 class PrismaScraper extends Scraper {
-    PrismaScraper(GroceryDadConfig.Scraper config, WebDriver driver) {
-        super(config, driver);
+    PrismaScraper(GroceryDadConfig.Scraper config, WebDriver driver, ProductAPIClient client) {
+        super(config, driver, client);
     }
 
     @Override

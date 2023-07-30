@@ -18,8 +18,8 @@ public class ProductAPI {
     }
 
     @ResponseStatus(OK)
-    @PatchMapping("{id}")
+    @PostMapping("{id}") // todo: PATCH method
     Product patch(@PathVariable String id, @RequestBody Product patch) {
-        return service.patch(id, patch, Instant.now());
+        return service.update(id, patch, Instant.now());
     }
 }

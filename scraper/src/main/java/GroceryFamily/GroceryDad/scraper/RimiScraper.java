@@ -1,6 +1,7 @@
 package GroceryFamily.GroceryDad.scraper;
 
 import GroceryFamily.GroceryDad.GroceryDadConfig;
+import GroceryFamily.GroceryElders.api.client.ProductAPIClient;
 import GroceryFamily.GroceryElders.domain.*;
 import com.codeborne.selenide.SelenideElement;
 import org.openqa.selenium.WebDriver;
@@ -19,8 +20,8 @@ import static com.codeborne.selenide.Selenide.$$;
 import static java.lang.String.format;
 
 class RimiScraper extends Scraper {
-    RimiScraper(GroceryDadConfig.Scraper config, WebDriver driver) {
-        super(config, driver);
+    RimiScraper(GroceryDadConfig.Scraper config, WebDriver driver, ProductAPIClient client) {
+        super(config, driver, client);
     }
 
     @Override

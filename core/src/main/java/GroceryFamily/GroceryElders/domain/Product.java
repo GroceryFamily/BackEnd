@@ -2,6 +2,7 @@ package GroceryFamily.GroceryElders.domain;
 
 import lombok.Builder;
 import lombok.ToString;
+import lombok.extern.jackson.Jacksonized;
 
 import java.util.List;
 import java.util.Map;
@@ -11,6 +12,7 @@ import static java.util.stream.Collectors.toMap;
 
 @Builder
 @ToString
+@Jacksonized
 public class Product {
     public final String namespace;
     public final String code;
