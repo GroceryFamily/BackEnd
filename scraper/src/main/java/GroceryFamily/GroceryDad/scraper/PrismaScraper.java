@@ -1,10 +1,7 @@
 package GroceryFamily.GroceryDad.scraper;
 
 import GroceryFamily.GroceryDad.GroceryDadConfig;
-import GroceryFamily.GroceryElders.domain.Currency;
-import GroceryFamily.GroceryElders.domain.Price;
-import GroceryFamily.GroceryElders.domain.PriceUnit;
-import GroceryFamily.GroceryElders.domain.Product;
+import GroceryFamily.GroceryElders.domain.*;
 import com.codeborne.selenide.SelenideElement;
 import io.github.antivoland.sfc.FileCache;
 import org.openqa.selenium.WebDriver;
@@ -84,6 +81,7 @@ class PrismaScraper extends Scraper {
     static Product product(SelenideElement e) {
         return Product
                 .builder()
+                .source(Source.PRISMA)
                 .code(productCode(e))
                 .name(e.$("*[class='name']").text())
                 .prices(Set.of(pcPrice(e.$("*[class*='js-comp-price']").text())))

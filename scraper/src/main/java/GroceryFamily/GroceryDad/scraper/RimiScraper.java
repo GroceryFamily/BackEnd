@@ -1,10 +1,7 @@
 package GroceryFamily.GroceryDad.scraper;
 
 import GroceryFamily.GroceryDad.GroceryDadConfig;
-import GroceryFamily.GroceryElders.domain.Currency;
-import GroceryFamily.GroceryElders.domain.Price;
-import GroceryFamily.GroceryElders.domain.PriceUnit;
-import GroceryFamily.GroceryElders.domain.Product;
+import GroceryFamily.GroceryElders.domain.*;
 import com.codeborne.selenide.SelenideElement;
 import io.github.antivoland.sfc.FileCache;
 import org.openqa.selenium.WebDriver;
@@ -46,10 +43,6 @@ class RimiScraper extends Scraper {
         // todo: finalize
     }
 
-    static void useOnlyStrictlyNecessaryCookies() {
-        $("#CybotCookiebotDialogBodyLevelButtonLevelOptinDeclineAll").shouldBe(visible).click();
-    }
-
     static void category(List<String> categories) {
         if (categories.size() < 2) throw new IllegalArgumentException("Requires at least two categories");
 
@@ -79,6 +72,7 @@ class RimiScraper extends Scraper {
     static Product product(SelenideElement e) {
         return Product
                 .builder()
+                .source(Source.RIMI)
                 .code(e.attr("data-product-code"))
                 .name(e.$("*[class='card__name']").text())
                 .prices(Set.of(

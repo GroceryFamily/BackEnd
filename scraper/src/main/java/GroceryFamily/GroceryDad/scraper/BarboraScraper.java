@@ -1,10 +1,7 @@
 package GroceryFamily.GroceryDad.scraper;
 
 import GroceryFamily.GroceryDad.GroceryDadConfig;
-import GroceryFamily.GroceryElders.domain.Currency;
-import GroceryFamily.GroceryElders.domain.Price;
-import GroceryFamily.GroceryElders.domain.PriceUnit;
-import GroceryFamily.GroceryElders.domain.Product;
+import GroceryFamily.GroceryElders.domain.*;
 import com.codeborne.selenide.SelenideElement;
 import io.github.antivoland.sfc.FileCache;
 import org.openqa.selenium.WebDriver;
@@ -98,6 +95,7 @@ class BarboraScraper extends Scraper {
     static Product product(SelenideElement e) {
         return Product
                 .builder()
+                .source(Source.BARBORA)
                 .code(e.$("div").attr("data-b-item-id"))
                 .name(e.$("*[itemprop='name']").text())
                 .prices(Set.of(

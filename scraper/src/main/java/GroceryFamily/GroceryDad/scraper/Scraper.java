@@ -14,7 +14,7 @@ import java.util.List;
 import static com.codeborne.selenide.Selenide.open;
 import static com.codeborne.selenide.Selenide.using;
 
-public abstract class Scraper {
+public abstract class Scraper { // todo: think about robots.txt
     final GroceryDadConfig.Scraper config;
     private final WebDriver driver;
 
@@ -31,8 +31,9 @@ public abstract class Scraper {
             acceptOrRejectCookies();
             switchToEnglish();
             config.categories.forEach(categories -> {
-                FileCache<Product> cache = cache(categories);
-                scrap(categories, cache);
+                FileCache<Product> cache = cache(categories); // todo: enable/disable cache
+                scrap(categories, cache); // todo: use product handler
+                // todo: do something with cache
             });
         });
     }
