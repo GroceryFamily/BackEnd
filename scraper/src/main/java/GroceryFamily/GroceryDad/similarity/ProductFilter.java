@@ -34,8 +34,11 @@ public class ProductFilter {
     public static Product cheaperPrice(List<Product> products) {
         return products.stream()
                 .min(Comparator.comparing(product -> {
+                    /* todo: fix
                     BigDecimal price = product.getPricePerUnit().getValue();
                     return price != null ? price : BigDecimal.ZERO;
+                     */
+                    return BigDecimal.ZERO;
                 }))
                 .orElse(null);
     }
