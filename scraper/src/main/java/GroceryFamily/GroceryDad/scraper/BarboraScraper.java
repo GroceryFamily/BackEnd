@@ -3,7 +3,6 @@ package GroceryFamily.GroceryDad.scraper;
 import GroceryFamily.GroceryDad.GroceryDadConfig;
 import GroceryFamily.GroceryElders.domain.*;
 import com.codeborne.selenide.SelenideElement;
-import io.github.antivoland.sfc.FileCache;
 import org.openqa.selenium.WebDriver;
 
 import java.math.BigDecimal;
@@ -11,13 +10,13 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 import java.util.Set;
+import java.util.function.Consumer;
 
 import static com.codeborne.selenide.CollectionCondition.itemWithText;
 import static com.codeborne.selenide.CollectionCondition.sizeGreaterThan;
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Condition.visible;
-import static com.codeborne.selenide.Selenide.$;
-import static com.codeborne.selenide.Selenide.$$;
+import static com.codeborne.selenide.Selenide.*;
 import static java.lang.String.format;
 
 class BarboraScraper extends Scraper {
@@ -26,17 +25,18 @@ class BarboraScraper extends Scraper {
     }
 
     @Override
-    void acceptOrRejectCookies() {
+    protected void acceptOrRejectCookies() {
         $("#CybotCookiebotDialogBodyLevelButtonLevelOptinDeclineAll")
                 .shouldBe(visible)
                 .click();
     }
 
     @Override
-    void switchToEnglish() {
+    protected void switchToEnglish() {
         $("#fti-header-language-dropdown")
                 .shouldBe(visible)
                 .hover();
+        sleep(500);
         $$("#fti-header-language-dropdown li")
                 .shouldHave(sizeGreaterThan(0))
                 .findBy(text("English"))
@@ -49,9 +49,9 @@ class BarboraScraper extends Scraper {
     }
 
     @Override
-    void scrap(List<String> categories, FileCache<Product> cache) {
+    protected void scrap(List<String> categories, Consumer<Product> handler) {
         category(categories);
-        products().forEach(product -> cache.save(product.code, product));
+        products().forEach(handler);
         // todo: finalize
     }
 

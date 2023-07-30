@@ -15,7 +15,7 @@ GroceryDad:
       categories:
         - [ "Dairy and eggs", "Milk", "Pasteurised milk" ]
         - [ "Vegetables and fruits", "Fruits and berries", "Bananas" ]
-      timeout: 30s
+      timeout: 10s
 
     prisma:
       namespace: prismamarket.ee

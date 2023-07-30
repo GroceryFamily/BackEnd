@@ -11,16 +11,17 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.List;
+import java.util.function.Consumer;
 
 import static com.codeborne.selenide.Selenide.open;
 import static com.codeborne.selenide.Selenide.using;
 import static java.lang.String.format;
 
 public abstract class Scraper { // todo: think about robots.txt
-    final GroceryDadConfig.Scraper config;
+    private final GroceryDadConfig.Scraper config;
     private final WebDriver driver;
 
-    Scraper(GroceryDadConfig.Scraper config, WebDriver driver) {
+    protected Scraper(GroceryDadConfig.Scraper config, WebDriver driver) {
         this.config = config;
         this.driver = driver;
     }
@@ -34,27 +35,27 @@ public abstract class Scraper { // todo: think about robots.txt
             switchToEnglish();
             config.categories.forEach(categories -> {
                 FileCache<Product> cache = cache(categories); // todo: enable/disable cache
-                scrap(categories, cache); // todo: use product handler
+                scrap(categories, product -> cache.save(product.code, product));
                 // todo: do something with cache
             });
         });
     }
 
-    abstract void acceptOrRejectCookies();
+    protected abstract void acceptOrRejectCookies();
 
-    abstract void switchToEnglish();
+    protected abstract void switchToEnglish();
 
-    abstract void scrap(List<String> categories, FileCache<Product> cache);
+    protected abstract void scrap(List<String> categories, Consumer<Product> handler);
 
-    protected final FileCache<Product> cache(List<String> categories) {
+    private FileCache<Product> cache(List<String> categories) {
         return Cache.factory(config.cache.directory).get(categories);
     }
 
-    protected final void waitUntilPageLoads() {
+    private void waitUntilPageLoads() {
         new WebDriverWait(driver, config.timeout).until(Scraper::pageIsReady);
     }
 
-    static boolean pageIsReady(WebDriver driver) {
+    private static boolean pageIsReady(WebDriver driver) {
         return ((JavascriptExecutor) driver).executeScript("return document.readyState").equals("complete");
     }
 
