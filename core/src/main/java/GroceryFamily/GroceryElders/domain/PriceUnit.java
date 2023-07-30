@@ -15,7 +15,7 @@ public class PriceUnit {
     }
 
     public static PriceUnit get(String name) {
-        if (name == null) throw new IllegalArgumentException("Price unit name is missing");
+        if (name == null) throw new NullPointerException("Missing price unit name");
         return new PriceUnit(name);
     }
 }

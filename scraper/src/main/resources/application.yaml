@@ -8,17 +8,17 @@ GroceryDad:
 
   scrapers:
     barbora:
-      source: BARBORA
+      namespace: barbora.ee
       uri: https://barbora.ee
       cache:
         directory: cache/barbora
       categories:
         - [ "Dairy and eggs", "Milk", "Pasteurised milk" ]
         - [ "Vegetables and fruits", "Fruits and berries", "Bananas" ]
-      timeout: 30s
+      timeout: 10s
 
     prisma:
-      source: PRISMA
+      namespace: prismamarket.ee
       uri: https://prismamarket.ee
       cache:
         directory: cache/prisma
@@ -28,7 +28,7 @@ GroceryDad:
       timeout: 10s
 
     rimi:
-      source: RIMI
+      namespace: rimi.ee
       uri: https://rimi.ee/epood/en
       cache:
         directory: cache/rimi
