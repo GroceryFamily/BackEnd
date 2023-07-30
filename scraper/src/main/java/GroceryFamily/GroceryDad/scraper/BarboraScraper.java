@@ -95,7 +95,7 @@ class BarboraScraper extends Scraper {
     static Product product(SelenideElement e) {
         return Product
                 .builder()
-                .source(Source.BARBORA)
+                .namespace(Namespace.BARBORA)
                 .code(e.$("div").attr("data-b-item-id"))
                 .name(e.$("*[itemprop='name']").text())
                 .prices(Set.of(

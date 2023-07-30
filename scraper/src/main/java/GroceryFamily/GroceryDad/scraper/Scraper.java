@@ -57,7 +57,7 @@ public abstract class Scraper { // todo: think about robots.txt
     }
 
     public static Scraper create(GroceryDadConfig.Scraper config, WebDriver driver) {
-        return switch (config.source) {
+        return switch (config.namespace) {
             case BARBORA -> new BarboraScraper(config, driver);
             case PRISMA -> new PrismaScraper(config, driver);
             case RIMI -> new RimiScraper(config, driver);

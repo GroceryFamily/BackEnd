@@ -81,7 +81,7 @@ class PrismaScraper extends Scraper {
     static Product product(SelenideElement e) {
         return Product
                 .builder()
-                .source(Source.PRISMA)
+                .namespace(Namespace.PRISMA)
                 .code(productCode(e))
                 .name(e.$("*[class='name']").text())
                 .prices(Set.of(pcPrice(e.$("*[class*='js-comp-price']").text())))

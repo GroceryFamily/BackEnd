@@ -72,7 +72,7 @@ class RimiScraper extends Scraper {
     static Product product(SelenideElement e) {
         return Product
                 .builder()
-                .source(Source.RIMI)
+                .namespace(Namespace.RIMI)
                 .code(e.attr("data-product-code"))
                 .name(e.$("*[class='card__name']").text())
                 .prices(Set.of(

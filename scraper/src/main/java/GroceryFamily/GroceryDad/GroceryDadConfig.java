@@ -1,6 +1,6 @@
 package GroceryFamily.GroceryDad;
 
-import GroceryFamily.GroceryElders.domain.Source;
+import GroceryFamily.GroceryElders.domain.Namespace;
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
@@ -17,7 +17,7 @@ public class GroceryDadConfig {
 
     @Data
     public static class Scraper {
-        public final Source source;
+        public final Namespace namespace;
         public final String uri;
         public final List<List<String>> categories;
         public final Cache cache;

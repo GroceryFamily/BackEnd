@@ -10,7 +10,7 @@ import java.util.Set;
 @ToString
 @EqualsAndHashCode
 public class Product {
-    public final Source source;
+    public final Namespace namespace;
     public final String code;
     public final String name;
     public final Set<Price> prices;
