@@ -13,5 +13,6 @@ target
 # ChromeDriver
 /build
 
-# Cache
+# GroceryFamily
+/secrets
 /cache
