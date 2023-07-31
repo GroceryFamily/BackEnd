@@ -1,4 +1,4 @@
-package GroceryFamily.GroceryMom.resource;
+package GroceryFamily.GroceryMom.api;
 
 import GroceryFamily.GroceryElders.model.Grocery;
 import GroceryFamily.GroceryElders.repository.GroceryRepo;

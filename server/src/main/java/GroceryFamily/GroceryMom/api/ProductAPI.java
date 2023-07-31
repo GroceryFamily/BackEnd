@@ -1,4 +1,4 @@
-package GroceryFamily.GroceryMom.resource;
+package GroceryFamily.GroceryMom.api;
 
 import GroceryFamily.GroceryElders.domain.Product;
 import GroceryFamily.GroceryElders.service.ProductService;
@@ -17,9 +17,17 @@ public class ProductAPI {
         this.service = service;
     }
 
+    // todo: list methods
+
     @ResponseStatus(OK)
-    @PostMapping("{id}") // todo: PATCH method
-    Product patch(@PathVariable String id, @RequestBody Product patch) {
-        return service.update(id, patch, Instant.now());
+    @GetMapping("{id}")
+    Product get(@PathVariable String id) {
+        return service.get(id);
+    }
+
+    @ResponseStatus(OK)
+    @PostMapping("{id}")
+    Product update(@PathVariable String id, @RequestBody Product product) {
+        return service.update(id, product, Instant.now());
     }
 }

@@ -14,13 +14,9 @@ public class Price {
     private String unit;
     private String currency;
     private BigDecimal amount;
-    private Instant ts;
     @ManyToOne(fetch = FetchType.LAZY)
     private Product product;
+    private Instant ts;
     @Version
     private int version;
-
-    Price patch(GroceryFamily.GroceryElders.domain.Price price, Instant ts) {
-        return setAmount(price.amount).setTs(ts);
-    }
 }

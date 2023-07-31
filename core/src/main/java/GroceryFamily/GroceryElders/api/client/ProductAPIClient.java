@@ -3,24 +3,32 @@ package GroceryFamily.GroceryElders.api.client;
 import GroceryFamily.GroceryElders.domain.Product;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
-import org.springframework.http.HttpMethod;
 import org.springframework.web.client.RestTemplate;
 
 import static java.lang.String.format;
+import static org.springframework.http.HttpMethod.GET;
+import static org.springframework.http.HttpMethod.POST;
 
 public class ProductAPIClient {
     private final String uri;
     private final RestTemplate api = new RestTemplate();
 
-
     public ProductAPIClient(String uri) {
         this.uri = uri;
     }
 
-    public Product patch(Product patch) {
-        var url = format("%s/products/%s", uri, patch.id());
-        var request = new HttpEntity<>(patch, headers());
-        return api.exchange(url, HttpMethod.POST, request, Product.class).getBody();
+    // todo: list methods
+
+    public Product get(String id) {
+        var url = format("%s/products/%s", uri, id);
+        var request = new HttpEntity<>(headers());
+        return api.exchange(url, GET, request, Product.class).getBody();
+    }
+
+    public Product update(Product product) {
+        var url = format("%s/products/%s", uri, product.id());
+        var request = new HttpEntity<>(product, headers());
+        return api.exchange(url, POST, request, Product.class).getBody();
     }
 
     private static HttpHeaders headers() {
