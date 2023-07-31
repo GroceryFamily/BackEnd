@@ -20,7 +20,7 @@ public class PriceMapper {
     modelPrices(Map<String, GroceryFamily.GroceryElders.domain.Price> domainPrices,
                 Instant ts) {
         List<GroceryFamily.GroceryElders.model.Price> modelPrices = new ArrayList<>();
-        domainPrices.forEach((id, price) -> modelPrices.add(modelPrice(id, price, ts)));
+        domainPrices.forEach((id, domainPrice) -> modelPrices.add(modelPrice(id, domainPrice, ts)));
         return modelPrices;
     }
 
