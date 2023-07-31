@@ -90,13 +90,6 @@ abstract class WebParser {
     public List<Product> nameFilter(List<Product> products, String nameFromDB) {
         ProductFilter.containsAllWords(products, nameFromDB);
 
-        for (Product product : products)
-            if (product != null) {
-                System.out.println("nameFilter" + product);
-            } else {
-                System.out.println("nameFilter don`t work");
-            }
-
         return products;
     }
 

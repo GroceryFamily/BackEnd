@@ -6,6 +6,7 @@ import GroceryFamily.GroceryElders.service.GroceryInfoService;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -43,6 +44,10 @@ public class BarboraParser extends WebParser {
         List<Product> products = new ArrayList<>();
         ObjectMapper mapper = new ObjectMapper();
         List<String[]> listPricesPerUnit = getPricesPerUnit();
+
+        //size check *******************
+        System.out.println("listPricesPerUnit- " + listPricesPerUnit.size());
+
         int index = 0;
         for (String jsonString : info) {
 
@@ -53,6 +58,11 @@ public class BarboraParser extends WebParser {
                 product.setPricePerUnit(getUnitPrice(index, listPricesPerUnit));
                  */
                 products.add(product);
+                //size check ***************
+                System.out.println("products size- "+ products.size());
+                //index  *******************
+                System.out.println("Index - " + index);
+
                 index++;
             } catch (Exception e) {
                 e.printStackTrace();
@@ -73,30 +83,50 @@ public class BarboraParser extends WebParser {
     public Product getCheapestProduct(List<Product> products) {
         return super.getCheapestProduct(products);
     }
-
+    //copy all main product tags -div
+    private List<WebElement> copyDivTags(){
+        return  driver.findElements(By.className("b-product--wrap2 " +
+                "b-product--desktop-grid"));
+    }
+    // Create
     //All prices per unit on the page
     public List<String[]> getPricesPerUnit() {
 
-        List<String[]> elements = driver.findElements(By.className("b-product-price--extra"))
-                .stream()
-                .map(e -> e.getText()
-                        .replace("€", "")
-                        .replaceAll("/", " ")
-                        .split(" "))
-                .toList();
+//        List<String[]> elements = driver.findElements(By.className("b-product-price--extra"))
+//                .stream()
+//                .map(e -> e.getText()
+//                        .replace("€", "")
+//                        .replaceAll("/", " ")
+//                        .split(" "))
+//                .toList();
+//
+//        return elements;
 
-        return elements;
+//        WebElement innerProductName= headDivElements.findElement(By.cssSelector("[itemprop='name']"));
+//        // take name of product
+//        String productName= innerProductName.getText();
+//
+//                List<String[]> elements = headDivElement.findElements(By.className("b-product-price--extra"))
+//                .stream()
+//                .map(e -> e.getText()
+//                        .replace("€", "")
+//                        .replaceAll("/", " ")
+//                        .split(" "))
+//                .toList();
+//
+        return null;
+
     }
 
     //Create price per unit (need method getPricesPerUnit- that is list of all prices per unit on the page)
     public Measurement getUnitPrice(int numberOfElement, List<String[]> elements) {
 
         List<Measurement> measurements = new ArrayList<>();
-        Measurement measurement = new Measurement();
+
 
         for (String[] element : elements) {
-
             if (element.length >= 2) {
+                Measurement measurement = new Measurement();
                 measurement.setValue(element[0]);
                 measurement.setUnit(element[1]);
                 measurements.add(measurement);
