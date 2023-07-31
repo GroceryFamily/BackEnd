@@ -87,8 +87,8 @@ class RimiScraper extends Scraper {
         return Price
                 .builder()
                 .unit(PriceUnit.PC)
-                .amount(new BigDecimal(fragments[0] + '.' + fragments[1]))
                 .currency(currency(fragments[2].substring(0, 1)))
+                .amount(new BigDecimal(fragments[0] + '.' + fragments[1]))
                 .build();
     }
 
