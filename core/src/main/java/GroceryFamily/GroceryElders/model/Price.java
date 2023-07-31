@@ -3,19 +3,19 @@ package GroceryFamily.GroceryElders.model;
 import jakarta.persistence.*;
 import lombok.Data;
 
+import java.math.BigDecimal;
 import java.time.Instant;
-import java.util.List;
 
 @Data
 @Entity
-public class Product {
+public class Price {
     @Id
     private String id;
-    private String namespace;
-    private String code;
-    private String name;
-    @OneToMany(mappedBy = "product", cascade = CascadeType.ALL)
-    List<Price> prices;
+    private String unit;
+    private String currency;
+    private BigDecimal amount;
+    @ManyToOne(fetch = FetchType.LAZY)
+    private Product product;
     private Instant ts;
     @Version
     private int version;

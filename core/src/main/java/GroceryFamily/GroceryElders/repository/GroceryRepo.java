@@ -1,4 +1,4 @@
-package GroceryFamily.GroceryElders.repo;
+package GroceryFamily.GroceryElders.repository;
 
 import GroceryFamily.GroceryElders.model.Grocery;
 import org.springframework.data.jpa.repository.JpaRepository;

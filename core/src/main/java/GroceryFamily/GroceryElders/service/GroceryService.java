@@ -1,7 +1,7 @@
 package GroceryFamily.GroceryElders.service;
 
 import GroceryFamily.GroceryElders.model.Grocery;
-import GroceryFamily.GroceryElders.repo.GroceryRepo;
+import GroceryFamily.GroceryElders.repository.GroceryRepo;
 import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

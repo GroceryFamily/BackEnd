@@ -1,3 +1,5 @@
 package GroceryFamily.GroceryElders.domain;
 
-public enum Currency {EUR}
+public interface Currency {
+    String EUR = "eur";
+}

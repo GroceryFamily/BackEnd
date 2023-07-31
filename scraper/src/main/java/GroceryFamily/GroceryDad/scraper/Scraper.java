@@ -2,6 +2,7 @@ package GroceryFamily.GroceryDad.scraper;
 
 import GroceryFamily.GroceryDad.GroceryDadConfig;
 import GroceryFamily.GroceryDad.scraper.cache.Cache;
+import GroceryFamily.GroceryElders.api.client.ProductAPIClient;
 import GroceryFamily.GroceryElders.domain.Namespace;
 import GroceryFamily.GroceryElders.domain.Product;
 import com.codeborne.selenide.Configuration;
@@ -17,13 +18,19 @@ import static com.codeborne.selenide.Selenide.open;
 import static com.codeborne.selenide.Selenide.using;
 import static java.lang.String.format;
 
-public abstract class Scraper { // todo: think about robots.txt
+// todo: think about robots.txt
+//  https://en.wikipedia.org/wiki/Robots.txt
+//  https://github.com/google/robotstxt-java
+//  https://developers.google.com/search/docs/crawling-indexing/robots/robots_txt
+public abstract class Scraper {
     private final GroceryDadConfig.Scraper config;
     private final WebDriver driver;
+    private final ProductAPIClient client;
 
-    protected Scraper(GroceryDadConfig.Scraper config, WebDriver driver) {
+    protected Scraper(GroceryDadConfig.Scraper config, WebDriver driver, ProductAPIClient client) {
         this.config = config;
         this.driver = driver;
+        this.client = client;
     }
 
     public final void scrap() {
@@ -34,9 +41,9 @@ public abstract class Scraper { // todo: think about robots.txt
             acceptOrRejectCookies();
             switchToEnglish();
             config.categories.forEach(categories -> {
-                FileCache<Product> cache = cache(categories); // todo: enable/disable cache
+                FileCache<Product> cache = cache(categories); // todo: do we need cache at all?
                 scrap(categories, product -> cache.save(product.code, product));
-                // todo: do something with cache
+                cache.list().forEach(client::update);
             });
         });
     }
@@ -59,11 +66,11 @@ public abstract class Scraper { // todo: think about robots.txt
         return ((JavascriptExecutor) driver).executeScript("return document.readyState").equals("complete");
     }
 
-    public static Scraper create(GroceryDadConfig.Scraper config, WebDriver driver) {
+    public static Scraper create(GroceryDadConfig.Scraper config, WebDriver driver, ProductAPIClient client) {
         return switch (config.namespace) {
-            case Namespace.BARBORA -> new BarboraScraper(config, driver);
-            case Namespace.PRISMA -> new PrismaScraper(config, driver);
-            case Namespace.RIMI -> new RimiScraper(config, driver);
+            case Namespace.BARBORA -> new BarboraScraper(config, driver, client);
+            case Namespace.PRISMA -> new PrismaScraper(config, driver, client);
+            case Namespace.RIMI -> new RimiScraper(config, driver, client);
             default -> throw new UnsupportedOperationException(format("Unrecognized namespace '%s'", config.namespace));
         };
     }

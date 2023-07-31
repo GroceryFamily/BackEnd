@@ -11,8 +11,14 @@ import java.util.Map;
 @Data
 @ConfigurationProperties("grocery-dad")
 public class GroceryDadConfig {
+    public final Api api;
     public final List<String> enabled;
     public final Map<String, Scraper> scrapers;
+
+    @Data
+    public static class Api {
+        public final String uri;
+    }
 
     @Data
     public static class Scraper {

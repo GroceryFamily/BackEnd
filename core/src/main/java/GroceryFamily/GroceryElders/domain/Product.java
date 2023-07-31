@@ -1,25 +1,29 @@
 package GroceryFamily.GroceryElders.domain;
 
 import lombok.Builder;
-import lombok.EqualsAndHashCode;
 import lombok.ToString;
+import lombok.extern.jackson.Jacksonized;
 
-import java.util.Set;
+import java.util.List;
+import java.util.Map;
+
+import static java.util.function.Function.identity;
+import static java.util.stream.Collectors.toMap;
 
 @Builder
 @ToString
-@EqualsAndHashCode
+@Jacksonized
 public class Product {
     public final String namespace;
     public final String code;
     public final String name;
-    public final Set<Price> prices;
+    public final List<Price> prices;
 
-    public Price price(PriceUnit unit) {
-        if (unit == null) throw new NullPointerException("Missing price unit");
-        for (Price price : prices) {
-            if (unit.equals(price.unit)) return price;
-        }
-        return null;
+    public String id() {
+        return namespace + "::" + code;
+    }
+
+    public Map<String, Price> identifiablePrices() {
+        return prices.stream().collect(toMap(price -> price.id(id()), identity()));
     }
 }

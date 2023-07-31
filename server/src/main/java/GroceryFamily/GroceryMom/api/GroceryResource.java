@@ -1,7 +1,7 @@
-package GroceryFamily.GroceryMom.resource;
+package GroceryFamily.GroceryMom.api;
 
 import GroceryFamily.GroceryElders.model.Grocery;
-import GroceryFamily.GroceryElders.repo.GroceryRepo;
+import GroceryFamily.GroceryElders.repository.GroceryRepo;
 import GroceryFamily.GroceryElders.service.GroceryService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

@@ -48,8 +48,10 @@ public class BarboraParser extends WebParser {
 
             try {
                 Product product = mapper.readValue(jsonString, Product.class);
+                /* todo: fix
                 product.setMeasurement(product.getName());
                 product.setPricePerUnit(getUnitPrice(index, listPricesPerUnit));
+                 */
                 products.add(product);
                 index++;
             } catch (Exception e) {

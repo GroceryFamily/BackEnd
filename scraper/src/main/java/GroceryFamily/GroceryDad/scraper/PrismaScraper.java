@@ -1,6 +1,7 @@
 package GroceryFamily.GroceryDad.scraper;
 
 import GroceryFamily.GroceryDad.GroceryDadConfig;
+import GroceryFamily.GroceryElders.api.client.ProductAPIClient;
 import GroceryFamily.GroceryElders.domain.*;
 import com.codeborne.selenide.SelenideElement;
 import org.openqa.selenium.WebDriver;
@@ -11,7 +12,6 @@ import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
-import java.util.Set;
 import java.util.function.Consumer;
 
 import static com.codeborne.selenide.CollectionCondition.sizeGreaterThan;
@@ -23,8 +23,8 @@ import static java.lang.String.format;
 import static org.apache.commons.lang3.StringUtils.substringAfterLast;
 
 class PrismaScraper extends Scraper {
-    PrismaScraper(GroceryDadConfig.Scraper config, WebDriver driver) {
-        super(config, driver);
+    PrismaScraper(GroceryDadConfig.Scraper config, WebDriver driver, ProductAPIClient client) {
+        super(config, driver, client);
     }
 
     @Override
@@ -84,7 +84,7 @@ class PrismaScraper extends Scraper {
                 .namespace(Namespace.PRISMA)
                 .code(productCode(e))
                 .name(e.$("*[class='name']").text())
-                .prices(Set.of(pcPrice(e.$("*[class*='js-comp-price']").text())))
+                .prices(List.of(pcPrice(e.$("*[class*='js-comp-price']").text())))
                 .build();
     }
 
@@ -103,15 +103,15 @@ class PrismaScraper extends Scraper {
         return Price
                 .builder()
                 .unit(PriceUnit.PC)
-                .value(new BigDecimal(value[0] + '.' + value[1]))
                 .currency(currency(fragments[1].substring(0, 1)))
+                .amount(new BigDecimal(value[0] + '.' + value[1]))
                 .build();
     }
 
-    static Currency currency(String symbol) {
-        if (symbol == null) throw new IllegalArgumentException("Currency is missing");
+    static String currency(String symbol) {
+        if (symbol == null) throw new IllegalArgumentException("Currency symbol is missing");
         if (symbol.equals("€")) return Currency.EUR;
-        throw new UnsupportedOperationException(format("Currency '%s' is not supported", symbol));
+        throw new UnsupportedOperationException(format("Currency symbol '%s' is not recognized", symbol));
     }
 
     static String decode(String url) {

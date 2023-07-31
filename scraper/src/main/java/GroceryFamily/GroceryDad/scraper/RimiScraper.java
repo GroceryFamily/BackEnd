@@ -1,6 +1,7 @@
 package GroceryFamily.GroceryDad.scraper;
 
 import GroceryFamily.GroceryDad.GroceryDadConfig;
+import GroceryFamily.GroceryElders.api.client.ProductAPIClient;
 import GroceryFamily.GroceryElders.domain.*;
 import com.codeborne.selenide.SelenideElement;
 import org.openqa.selenium.WebDriver;
@@ -9,7 +10,6 @@ import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
-import java.util.Set;
 import java.util.function.Consumer;
 
 import static com.codeborne.selenide.CollectionCondition.sizeGreaterThan;
@@ -20,8 +20,8 @@ import static com.codeborne.selenide.Selenide.$$;
 import static java.lang.String.format;
 
 class RimiScraper extends Scraper {
-    RimiScraper(GroceryDadConfig.Scraper config, WebDriver driver) {
-        super(config, driver);
+    RimiScraper(GroceryDadConfig.Scraper config, WebDriver driver, ProductAPIClient client) {
+        super(config, driver, client);
     }
 
     @Override
@@ -75,7 +75,7 @@ class RimiScraper extends Scraper {
                 .namespace(Namespace.RIMI)
                 .code(e.attr("data-product-code"))
                 .name(e.$("*[class='card__name']").text())
-                .prices(Set.of(
+                .prices(List.of(
                         pcPrice(e.$("*[class*='price-tag']").text()),
                         price(e.$("*[class='card__price-per']").text())))
                 .build();
@@ -87,8 +87,8 @@ class RimiScraper extends Scraper {
         return Price
                 .builder()
                 .unit(PriceUnit.PC)
-                .value(new BigDecimal(fragments[0] + '.' + fragments[1]))
                 .currency(currency(fragments[2].substring(0, 1)))
+                .amount(new BigDecimal(fragments[0] + '.' + fragments[1]))
                 .build();
     }
 
@@ -98,15 +98,15 @@ class RimiScraper extends Scraper {
         var value = fragments[0].split(",");
         return Price
                 .builder()
-                .unit(PriceUnit.get(fragments[2].substring(1)))
-                .value(new BigDecimal(value[0] + '.' + value[1]))
+                .unit(PriceUnit.normalize(fragments[2].substring(1)))
                 .currency(currency(fragments[1]))
+                .amount(new BigDecimal(value[0] + '.' + value[1]))
                 .build();
     }
 
-    static Currency currency(String symbol) {
-        if (symbol == null) throw new IllegalArgumentException("Currency is missing");
+    static String currency(String symbol) {
+        if (symbol == null) throw new IllegalArgumentException("Currency symbol is missing");
         if (symbol.equals("€")) return Currency.EUR;
-        throw new UnsupportedOperationException(format("Currency '%s' is not supported", symbol));
+        throw new UnsupportedOperationException(format("Currency symbol '%s' is not recognized", symbol));
     }
 }
