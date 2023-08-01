@@ -2,6 +2,8 @@ package GroceryFamily.GroceryElders.service.mapper;
 
 import java.time.Instant;
 
+import static GroceryFamily.GroceryElders.service.mapper.PriceMapper.modelPrices;
+
 public class ProductMapper {
     public static GroceryFamily.GroceryElders.model.Product
     modelProduct(GroceryFamily.GroceryElders.domain.Product domainProduct,
@@ -12,8 +14,9 @@ public class ProductMapper {
                 .setNamespace(domainProduct.namespace)
                 .setCode(domainProduct.code)
                 .setName(domainProduct.name)
-                .setPrices(PriceMapper.modelPrices(domainProduct, ts, modelProduct))
-                .setTs(ts);
+                .setPrices(modelPrices(domainProduct, ts, modelProduct))
+                .setTs(ts)
+                .setVersion(0);
     }
 
     public static GroceryFamily.GroceryElders.domain.Product
@@ -22,6 +25,7 @@ public class ProductMapper {
                 .builder()
                 .namespace(modelProduct.getNamespace())
                 .code(modelProduct.getCode())
+                .name(modelProduct.getName())
                 .prices(PriceMapper.domainPrices(modelProduct.getPrices()))
                 .build();
     }

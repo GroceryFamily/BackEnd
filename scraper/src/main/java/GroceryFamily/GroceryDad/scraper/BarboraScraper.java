@@ -10,6 +10,7 @@ import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
+import java.util.Set;
 import java.util.function.Consumer;
 
 import static com.codeborne.selenide.CollectionCondition.itemWithText;
@@ -98,7 +99,7 @@ class BarboraScraper extends Scraper {
                 .namespace(Namespace.BARBORA)
                 .code(e.$("div").attr("data-b-item-id"))
                 .name(e.$("*[itemprop='name']").text())
-                .prices(List.of(
+                .prices(Set.of(
                         pcPrice(e.$("*[itemprop='price']").text()),
                         price(e.$("*[class='b-product-price--extra']").text())))
                 .build();

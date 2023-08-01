@@ -9,4 +9,4 @@ spring.jpa:
   # schema migration scripts
   hibernate.ddl-auto: update
   # Log Hibernate/JPA SQL queries
-  show-sql: true
+  show-sql: false

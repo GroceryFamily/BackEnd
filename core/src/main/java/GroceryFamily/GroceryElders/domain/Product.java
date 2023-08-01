@@ -1,23 +1,25 @@
 package GroceryFamily.GroceryElders.domain;
 
 import lombok.Builder;
+import lombok.EqualsAndHashCode;
 import lombok.ToString;
 import lombok.extern.jackson.Jacksonized;
 
-import java.util.List;
 import java.util.Map;
+import java.util.Set;
 
 import static java.util.function.Function.identity;
 import static java.util.stream.Collectors.toMap;
 
-@Builder
+@Builder(toBuilder = true)
 @ToString
 @Jacksonized
+@EqualsAndHashCode
 public class Product {
     public final String namespace;
     public final String code;
     public final String name;
-    public final List<Price> prices;
+    public final Set<Price> prices;
 
     public String id() {
         return namespace + "::" + code;
