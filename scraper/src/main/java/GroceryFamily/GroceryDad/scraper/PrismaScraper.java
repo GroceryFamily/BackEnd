@@ -12,6 +12,7 @@ import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
+import java.util.Set;
 import java.util.function.Consumer;
 
 import static com.codeborne.selenide.CollectionCondition.sizeGreaterThan;
@@ -84,7 +85,7 @@ class PrismaScraper extends Scraper {
                 .namespace(Namespace.PRISMA)
                 .code(productCode(e))
                 .name(e.$("*[class='name']").text())
-                .prices(List.of(pcPrice(e.$("*[class*='js-comp-price']").text())))
+                .prices(Set.of(pcPrice(e.$("*[class*='js-comp-price']").text())))
                 .build();
     }
 

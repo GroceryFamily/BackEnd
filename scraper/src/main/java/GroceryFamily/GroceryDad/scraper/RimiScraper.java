@@ -10,6 +10,7 @@ import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
+import java.util.Set;
 import java.util.function.Consumer;
 
 import static com.codeborne.selenide.CollectionCondition.sizeGreaterThan;
@@ -75,7 +76,7 @@ class RimiScraper extends Scraper {
                 .namespace(Namespace.RIMI)
                 .code(e.attr("data-product-code"))
                 .name(e.$("*[class='card__name']").text())
-                .prices(List.of(
+                .prices(Set.of(
                         pcPrice(e.$("*[class*='price-tag']").text()),
                         price(e.$("*[class='card__price-per']").text())))
                 .build();
