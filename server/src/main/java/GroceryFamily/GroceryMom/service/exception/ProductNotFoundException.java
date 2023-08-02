@@ -1,4 +1,4 @@
-package GroceryFamily.GroceryElders.service.exception;
+package GroceryFamily.GroceryMom.service.exception;
 
 import static java.lang.String.format;
 

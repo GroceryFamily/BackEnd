@@ -1,8 +1,8 @@
 package GroceryFamily.GroceryMom.api;
 
 import GroceryFamily.GroceryElders.domain.Product;
-import GroceryFamily.GroceryElders.service.ProductService;
-import GroceryFamily.GroceryElders.service.exception.ProductNotFoundException;
+import GroceryFamily.GroceryMom.service.ProductService;
+import GroceryFamily.GroceryMom.service.exception.ProductNotFoundException;
 import org.springframework.web.bind.annotation.*;
 
 import java.time.Instant;

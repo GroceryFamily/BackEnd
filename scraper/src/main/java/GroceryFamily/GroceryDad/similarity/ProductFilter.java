@@ -1,7 +1,5 @@
 package GroceryFamily.GroceryDad.similarity;
 
-import GroceryFamily.GroceryElders.model.Product;
-
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -9,7 +7,7 @@ import java.util.Comparator;
 import java.util.List;
 
 public class ProductFilter {
-
+    /* todo: fix
     public static List<Product> containsAllWords(List<Product> products, String substring) {
 
         String[] subWords = substring.toLowerCase().split("\\s+");
@@ -34,12 +32,10 @@ public class ProductFilter {
     public static Product cheaperPrice(List<Product> products) {
         return products.stream()
                 .min(Comparator.comparing(product -> {
-                    /* todo: fix
                     BigDecimal price = product.getPricePerUnit().getValue();
                     return price != null ? price : BigDecimal.ZERO;
-                     */
-                    return BigDecimal.ZERO;
                 }))
                 .orElse(null);
     }
+    */
 }
