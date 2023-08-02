@@ -1,9 +1,9 @@
-package GroceryFamily.GroceryElders.service;
+package GroceryFamily.GroceryMom.service;
 
 import GroceryFamily.GroceryElders.domain.Product;
 import GroceryFamily.GroceryElders.model.Price;
 import GroceryFamily.GroceryElders.repository.ProductRepository;
-import GroceryFamily.GroceryElders.service.exception.ProductNotFoundException;
+import GroceryFamily.GroceryMom.service.exception.ProductNotFoundException;
 import jakarta.transaction.Transactional;
 import org.hibernate.StaleObjectStateException;
 import org.springframework.retry.annotation.Backoff;
@@ -17,9 +17,9 @@ import java.util.Optional;
 import java.util.function.Supplier;
 import java.util.function.UnaryOperator;
 
-import static GroceryFamily.GroceryElders.service.mapper.PriceMapper.modelPrice;
-import static GroceryFamily.GroceryElders.service.mapper.ProductMapper.domainProduct;
-import static GroceryFamily.GroceryElders.service.mapper.ProductMapper.modelProduct;
+import static GroceryFamily.GroceryMom.service.mapper.PriceMapper.modelPrice;
+import static GroceryFamily.GroceryMom.service.mapper.ProductMapper.domainProduct;
+import static GroceryFamily.GroceryMom.service.mapper.ProductMapper.modelProduct;
 import static jakarta.transaction.Transactional.TxType.REQUIRED;
 import static jakarta.transaction.Transactional.TxType.SUPPORTS;
 

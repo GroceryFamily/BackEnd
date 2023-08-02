@@ -1,8 +1,8 @@
-package GroceryFamily.GroceryElders.service.mapper;
+package GroceryFamily.GroceryMom.service.mapper;
 
 import java.time.Instant;
 
-import static GroceryFamily.GroceryElders.service.mapper.PriceMapper.modelPrices;
+import static GroceryFamily.GroceryMom.service.mapper.PriceMapper.modelPrices;
 
 public class ProductMapper {
     public static GroceryFamily.GroceryElders.model.Product
