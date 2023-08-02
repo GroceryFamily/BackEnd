@@ -18,7 +18,7 @@ public class Price {
     public final BigDecimal amount;
 
     public String id(String productId) {
-        return productId + "::" + unit + "::" + currency;
+        return Id.build(productId, unit, currency);
     }
 
     @EqualsAndHashCode.Include

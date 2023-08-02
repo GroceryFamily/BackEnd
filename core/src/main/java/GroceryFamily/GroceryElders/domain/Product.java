@@ -22,7 +22,7 @@ public class Product {
     public final Set<Price> prices;
 
     public String id() {
-        return namespace + "::" + code;
+        return Id.build(namespace, code);
     }
 
     public Map<String, Price> identifiablePrices() {

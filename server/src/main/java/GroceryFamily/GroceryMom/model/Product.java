@@ -16,10 +16,10 @@ public class Product {
     private String namespace;
     private String code;
     private String name;
-    @ToString.Exclude
-    @OneToMany(mappedBy = "product", cascade = CascadeType.ALL)
-    List<Price> prices;
     private Instant ts;
     @Version
     private int version;
+    @ToString.Exclude
+    @OneToMany(mappedBy = "product", cascade = CascadeType.ALL)
+    List<Price> prices;
 }
