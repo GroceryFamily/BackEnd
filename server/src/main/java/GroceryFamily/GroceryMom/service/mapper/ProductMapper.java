@@ -5,10 +5,10 @@ import java.time.Instant;
 import static GroceryFamily.GroceryMom.service.mapper.PriceMapper.modelPrices;
 
 public class ProductMapper {
-    public static GroceryFamily.GroceryElders.model.Product
+    public static GroceryFamily.GroceryMom.model.Product
     modelProduct(GroceryFamily.GroceryElders.domain.Product domainProduct,
                  Instant ts) {
-        var modelProduct = new GroceryFamily.GroceryElders.model.Product();
+        var modelProduct = new GroceryFamily.GroceryMom.model.Product();
         return modelProduct
                 .setId(domainProduct.id())
                 .setNamespace(domainProduct.namespace)
@@ -20,7 +20,7 @@ public class ProductMapper {
     }
 
     public static GroceryFamily.GroceryElders.domain.Product
-    domainProduct(GroceryFamily.GroceryElders.model.Product modelProduct) {
+    domainProduct(GroceryFamily.GroceryMom.model.Product modelProduct) {
         return GroceryFamily.GroceryElders.domain.Product
                 .builder()
                 .namespace(modelProduct.getNamespace())

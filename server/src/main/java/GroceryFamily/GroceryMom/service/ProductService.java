@@ -1,7 +1,7 @@
 package GroceryFamily.GroceryMom.service;
 
 import GroceryFamily.GroceryElders.domain.Product;
-import GroceryFamily.GroceryElders.model.Price;
+import GroceryFamily.GroceryMom.model.Price;
 import GroceryFamily.GroceryMom.repository.ProductRepository;
 import GroceryFamily.GroceryMom.service.exception.ProductNotFoundException;
 import jakarta.transaction.Transactional;
@@ -47,9 +47,9 @@ public class ProductService {
         return get(id);
     }
 
-    private static UnaryOperator<GroceryFamily.GroceryElders.model.Product> update(Product domainProduct, Instant ts) {
+    private static UnaryOperator<GroceryFamily.GroceryMom.model.Product> update(Product domainProduct, Instant ts) {
         return modelProduct -> {
-            var modelPrices = new HashMap<String, GroceryFamily.GroceryElders.model.Price>();
+            var modelPrices = new HashMap<String, GroceryFamily.GroceryMom.model.Price>();
             modelProduct.getPrices().forEach(modelPrice -> modelPrices.put(modelPrice.getId(), modelPrice));
             domainProduct.identifiablePrices().forEach((id, domainPrice) -> {
                 int version = Optional

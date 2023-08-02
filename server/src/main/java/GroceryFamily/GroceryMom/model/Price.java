@@ -1,4 +1,4 @@
-package GroceryFamily.GroceryElders.model;
+package GroceryFamily.GroceryMom.model;
 
 import jakarta.persistence.*;
 import lombok.Data;
