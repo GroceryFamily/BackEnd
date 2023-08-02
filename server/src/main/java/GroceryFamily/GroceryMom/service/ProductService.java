@@ -2,7 +2,7 @@ package GroceryFamily.GroceryMom.service;
 
 import GroceryFamily.GroceryElders.domain.Product;
 import GroceryFamily.GroceryElders.model.Price;
-import GroceryFamily.GroceryElders.repository.ProductRepository;
+import GroceryFamily.GroceryMom.repository.ProductRepository;
 import GroceryFamily.GroceryMom.service.exception.ProductNotFoundException;
 import jakarta.transaction.Transactional;
 import org.hibernate.StaleObjectStateException;
