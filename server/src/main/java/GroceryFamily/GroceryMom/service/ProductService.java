@@ -5,6 +5,7 @@ import GroceryFamily.GroceryMom.model.Price;
 import GroceryFamily.GroceryMom.repository.ProductRepository;
 import GroceryFamily.GroceryMom.service.exception.ProductNotFoundException;
 import org.hibernate.StaleObjectStateException;
+import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.retry.annotation.Backoff;
 import org.springframework.retry.annotation.Retryable;
 import org.springframework.stereotype.Service;
@@ -36,7 +37,10 @@ public class ProductService {
     }
 
     @Transactional(propagation = REQUIRES_NEW, isolation = READ_UNCOMMITTED)
-    @Retryable(retryFor = StaleObjectStateException.class, maxAttempts = 10, backoff = @Backoff(delay = 100))
+    @Retryable(retryFor = {
+            StaleObjectStateException.class,
+            DataIntegrityViolationException.class
+    }, maxAttempts = 10, backoff = @Backoff(delay = 100))
     public void update(String id, Product domainProduct, Instant ts) {
         var modelProduct = repository
                 .findById(id)
