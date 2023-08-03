@@ -11,6 +11,7 @@
 
     <modules>
         <module>core</module>
+        <module>sandbox</module>
         <module>scraper</module>
         <module>server</module>
     </modules>

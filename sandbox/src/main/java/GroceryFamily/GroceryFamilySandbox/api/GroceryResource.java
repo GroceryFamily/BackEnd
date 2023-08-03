@@ -1,8 +1,8 @@
-package GroceryFamily.GroceryMom.api;
+package GroceryFamily.GroceryFamilySandbox.api;
 
-import GroceryFamily.GroceryElders.model.Grocery;
-import GroceryFamily.GroceryElders.repository.GroceryRepo;
-import GroceryFamily.GroceryElders.service.GroceryService;
+import GroceryFamily.GroceryFamilySandbox.model.Grocery;
+import GroceryFamily.GroceryFamilySandbox.repository.GroceryRepo;
+import GroceryFamily.GroceryFamilySandbox.service.GroceryService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
