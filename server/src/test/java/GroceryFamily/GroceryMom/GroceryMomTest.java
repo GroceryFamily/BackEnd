@@ -23,6 +23,12 @@ import static java.lang.String.format;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.springframework.boot.test.context.SpringBootTest.WebEnvironment.RANDOM_PORT;
 
+/*
+ This is the main integration test that confirms the correctness of the
+ implementation of the optimistic locking approach for the product update
+ method. It uses 10 parallel threads, each doing 99 consecutive updates of the
+ same product. Each update uses unique markers for the product and its prices.
+ */
 @SpringBootTest(webEnvironment = RANDOM_PORT)
 class GroceryMomTest {
     static final int NUMBER_OF_THREADS = 10;
