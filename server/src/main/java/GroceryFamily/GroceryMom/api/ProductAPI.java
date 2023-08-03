@@ -28,8 +28,8 @@ public class ProductAPI {
 
     @ResponseStatus(OK)
     @PostMapping("{id}")
-    Product update(@PathVariable String id, @RequestBody Product product) {
-        return service.update(id, product, Instant.now());
+    void update(@PathVariable String id, @RequestBody Product product) {
+        service.update(id, product, Instant.now());
     }
 
     @ResponseStatus(NOT_FOUND)

@@ -49,18 +49,12 @@ class ProductServiceTest {
                 .hasMessage("Product 'futurama::slurmesso' not found");
 
         { // create new product
-            assertThat(service.update("futurama::slurmesso", product(
+            service.update("futurama::slurmesso", product(
                     "futurama",
                     "slurmesso",
                     "Slurmesso 360ml",
                     price("pc", "5.49"),
-                    price("ml", "0.1525")), NOW))
-                    .isEqualTo(product(
-                            "futurama",
-                            "slurmesso",
-                            "Slurmesso 360ml",
-                            price("pc", "5.49"),
-                            price("ml", "0.1525")));
+                    price("ml", "0.1525")), NOW);
 
             assertThat(service.get("futurama::slurmesso"))
                     .isEqualTo(product(
@@ -76,16 +70,10 @@ class ProductServiceTest {
         }
 
         { // namespace and code cannot be changed
-            assertThat(service.update("futurama::slurmesso", product(
+            service.update("futurama::slurmesso", product(
                     "x",
                     "y",
-                    "Slurmesso 0.36l"), NOW))
-                    .isEqualTo(product(
-                            "futurama",
-                            "slurmesso",
-                            "Slurmesso 0.36l",
-                            price("pc", "5.49"),
-                            price("ml", "0.1525")));
+                    "Slurmesso 0.36l"), NOW);
 
             assertThat(service.get("futurama::slurmesso"))
                     .isEqualTo(product(
@@ -101,18 +89,11 @@ class ProductServiceTest {
         }
 
         { // update product name and add new price
-            assertThat(service.update("futurama::slurmesso", product(
+            service.update("futurama::slurmesso", product(
                     "futurama",
                     "slurmesso",
                     "Slurmesso 0.36l",
-                    price("l", "15.25")), NOW))
-                    .isEqualTo(product(
-                            "futurama",
-                            "slurmesso",
-                            "Slurmesso 0.36l",
-                            price("pc", "5.49"),
-                            price("ml", "0.1525"),
-                            price("l", "15.25")));
+                    price("l", "15.25")), NOW);
 
             assertThat(service.get("futurama::slurmesso"))
                     .isEqualTo(product(
@@ -130,18 +111,11 @@ class ProductServiceTest {
         }
 
         { // update product name and one price
-            assertThat(service.update("futurama::slurmesso", product(
+            service.update("futurama::slurmesso", product(
                     "futurama",
                     "slurmesso",
                     "Slurmesso 0.13l",
-                    price("pc", "1.83")), NOW))
-                    .isEqualTo(product(
-                            "futurama",
-                            "slurmesso",
-                            "Slurmesso 0.13l",
-                            price("pc", "1.83"),
-                            price("ml", "0.1525"),
-                            price("l", "15.25")));
+                    price("pc", "1.83")), NOW);
 
             assertThat(service.get("futurama::slurmesso"))
                     .isEqualTo(product(
