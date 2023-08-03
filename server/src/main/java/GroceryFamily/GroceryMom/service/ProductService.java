@@ -4,11 +4,11 @@ import GroceryFamily.GroceryElders.domain.Product;
 import GroceryFamily.GroceryMom.model.Price;
 import GroceryFamily.GroceryMom.repository.ProductRepository;
 import GroceryFamily.GroceryMom.service.exception.ProductNotFoundException;
-import jakarta.transaction.Transactional;
 import org.hibernate.StaleObjectStateException;
 import org.springframework.retry.annotation.Backoff;
 import org.springframework.retry.annotation.Retryable;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.time.Instant;
 import java.util.ArrayList;
@@ -20,8 +20,8 @@ import java.util.function.UnaryOperator;
 import static GroceryFamily.GroceryMom.service.mapper.PriceMapper.modelPrice;
 import static GroceryFamily.GroceryMom.service.mapper.ProductMapper.domainProduct;
 import static GroceryFamily.GroceryMom.service.mapper.ProductMapper.modelProduct;
-import static jakarta.transaction.Transactional.TxType.REQUIRED;
-import static jakarta.transaction.Transactional.TxType.SUPPORTS;
+import static org.springframework.transaction.annotation.Isolation.READ_UNCOMMITTED;
+import static org.springframework.transaction.annotation.Propagation.REQUIRES_NEW;
 
 @Service
 public class ProductService {
@@ -31,20 +31,18 @@ public class ProductService {
         this.repository = repository;
     }
 
-    @Transactional(SUPPORTS)
     public Product get(String id) {
         return domainProduct(repository.findById(id).orElseThrow(notFound(id)));
     }
 
-    @Transactional(REQUIRED)
+    @Transactional(propagation = REQUIRES_NEW, isolation = READ_UNCOMMITTED)
     @Retryable(retryFor = StaleObjectStateException.class, maxAttempts = 10, backoff = @Backoff(delay = 100))
-    public Product update(String id, Product domainProduct, Instant ts) {
+    public void update(String id, Product domainProduct, Instant ts) {
         var modelProduct = repository
                 .findById(id)
                 .map(update(domainProduct, ts))
                 .orElseGet(() -> modelProduct(domainProduct, ts));
         repository.save(modelProduct);
-        return get(id);
     }
 
     private static UnaryOperator<GroceryFamily.GroceryMom.model.Product> update(Product domainProduct, Instant ts) {

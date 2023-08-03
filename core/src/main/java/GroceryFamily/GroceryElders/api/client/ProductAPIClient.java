@@ -47,10 +47,10 @@ public class ProductAPIClient {
         return body(api.exchange(url, GET, request, Product.class));
     }
 
-    public Product update(Product product) {
+    public void update(Product product) {
         var url = format("%s/products/%s", uri, product.id());
         var request = new HttpEntity<>(product, headers());
-        return body(api.exchange(url, POST, request, Product.class));
+        api.exchange(url, POST, request, Product.class);
     }
 
     private static HttpHeaders headers() {
