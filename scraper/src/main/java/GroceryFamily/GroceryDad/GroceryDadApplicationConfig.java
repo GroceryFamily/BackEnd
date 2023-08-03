@@ -14,7 +14,7 @@ public class GroceryDadApplicationConfig {
     @Bean
     WebDriver webDriver() {
         ChromeOptions options = new ChromeOptions();
-        options.addArguments("--start-maximized");
+        options.addArguments("--window-size=1920,1080");
         return new ChromeDriver(options);
     }
 }
