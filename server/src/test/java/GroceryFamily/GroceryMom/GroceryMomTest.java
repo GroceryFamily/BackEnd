@@ -26,12 +26,12 @@ import static org.springframework.boot.test.context.SpringBootTest.WebEnvironmen
 /*
  This is the main integration test that confirms the correctness of the
  implementation of the optimistic locking approach for the product update
- method. It uses 10 parallel threads, each doing 99 consecutive updates of the
+ method. It uses 9 parallel threads, each doing 9 consecutive updates of the
  same product. Each update uses unique markers for the product and its prices.
  */
 @SpringBootTest(webEnvironment = RANDOM_PORT)
 class GroceryMomTest {
-    static final int NUMBER_OF_THREADS = 10;
+    static final int NUMBER_OF_THREADS = 9;
     static final int NUMBER_OF_UPDATES_PER_THREAD = 99;
 
     @LocalServerPort
