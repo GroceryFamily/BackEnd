@@ -11,10 +11,10 @@ import org.springframework.context.annotation.Import;
 @Configuration
 @Import(value = {GroceryEldersApplicationConfig.class})
 public class GroceryDadApplicationConfig {
-    @Bean
+    @Bean(destroyMethod = "close")
     WebDriver webDriver() {
         ChromeOptions options = new ChromeOptions();
-        options.addArguments("--start-maximized");
+        options.addArguments("--window-size=1920,1080");
         return new ChromeDriver(options);
     }
 }
