@@ -40,7 +40,7 @@ public class ProductService {
     @Retryable(retryFor = {
             StaleObjectStateException.class,
             DataIntegrityViolationException.class
-    }, maxAttempts = 10, backoff = @Backoff(delay = 100))
+    }, maxAttempts = 5, backoff = @Backoff(delay = 100, multiplier = 2))
     public void update(String id, Product domainProduct, Instant ts) {
         var modelProduct = repository
                 .findById(id)
