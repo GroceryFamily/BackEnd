@@ -1,6 +1,6 @@
-package GroceryFamily.GroceryElders.service;
+package GroceryFamily.GroceryFamilySandbox.service;
 
-import GroceryFamily.GroceryElders.model.Grocery;
+import GroceryFamily.GroceryFamilySandbox.model.Grocery;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

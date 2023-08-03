@@ -1,4 +1,4 @@
-package GroceryFamily.GroceryElders.model;
+package GroceryFamily.GroceryFamilySandbox.model;
 
 import java.math.BigDecimal;
 import java.util.regex.Matcher;

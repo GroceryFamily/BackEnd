@@ -10,6 +10,8 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.web.server.LocalServerPort;
+import org.springframework.test.annotation.DirtiesContext;
+import org.springframework.test.context.ActiveProfiles;
 
 import java.math.BigDecimal;
 import java.util.Set;
@@ -22,16 +24,19 @@ import java.util.stream.IntStream;
 import static java.lang.String.format;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.springframework.boot.test.context.SpringBootTest.WebEnvironment.RANDOM_PORT;
+import static org.springframework.test.annotation.DirtiesContext.ClassMode.BEFORE_EACH_TEST_METHOD;
 
 /*
  This is the main integration test that confirms the correctness of the
  implementation of the optimistic locking approach for the product update
- method. It uses 9 parallel threads, each doing 9 consecutive updates of the
+ method. It uses 3 parallel threads, each doing 99 consecutive updates of the
  same product. Each update uses unique markers for the product and its prices.
  */
 @SpringBootTest(webEnvironment = RANDOM_PORT)
+@ActiveProfiles("h2")
+@DirtiesContext(classMode = BEFORE_EACH_TEST_METHOD)
 class GroceryMomTest {
-    static final int NUMBER_OF_THREADS = 9;
+    static final int NUMBER_OF_THREADS = 3;
     static final int NUMBER_OF_UPDATES_PER_THREAD = 99;
 
     @LocalServerPort

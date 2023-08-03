@@ -1,4 +1,4 @@
-package GroceryFamily.GroceryElders.model;
+package GroceryFamily.GroceryFamilySandbox.model;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
