@@ -29,7 +29,7 @@ import static org.springframework.test.annotation.DirtiesContext.ClassMode.BEFOR
 /*
  This is the main integration test that confirms the correctness of the
  implementation of the optimistic locking approach for the product update
- method. It uses 3 parallel threads, each doing 9 consecutive updates of the
+ method. It uses 3 parallel threads, each doing 99 consecutive updates of the
  same product. Each update uses unique markers for the product and its prices.
  */
 @SpringBootTest(webEnvironment = RANDOM_PORT)
