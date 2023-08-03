@@ -1,5 +1,3 @@
-spring.profiles.active: @spring.profiles.active@
-
 GroceryDad:
   api.uri: http://localhost:8080
 
