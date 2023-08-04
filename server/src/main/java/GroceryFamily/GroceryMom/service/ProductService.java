@@ -33,7 +33,7 @@ public class ProductService {
         this.repository = repository;
     }
 
-    public Page<Product> list() {
+    public Page<Product> list(int pageSize) {
         throw new UnsupportedOperationException("Not implemented yet");
     }
 

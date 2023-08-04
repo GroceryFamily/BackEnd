@@ -20,9 +20,15 @@ public class ProductAPI {
     }
 
     @ResponseStatus(OK)
-    @GetMapping
-    Page<Product> list(String pageToken, Integer pageSize) {
-        throw new UnsupportedOperationException("Not implemented yet");
+    @GetMapping(params = "!pageToken")
+    Page<Product> list(@RequestParam int pageSize) {
+        return service.list(pageSize);
+    }
+
+    @ResponseStatus(OK)
+    @GetMapping(params = "!pageSize")
+    Page<Product> list(@RequestParam String pageToken) {
+        return service.list(pageToken);
     }
 
     @ResponseStatus(OK)

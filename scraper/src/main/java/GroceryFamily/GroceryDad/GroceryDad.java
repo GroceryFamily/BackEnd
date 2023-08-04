@@ -21,14 +21,13 @@ class GroceryDad implements CommandLineRunner {
     private final Collection<Scraper> scrapers = new ArrayList<>();
 
     GroceryDad(GroceryDadConfig dadConfig, WebDriver driver) {
-        ProductAPIClient client = new ProductAPIClient(dadConfig.api.uri);
-        for (String name : dadConfig.enabled) {
-            GroceryDadConfig.Scraper config = dadConfig.scrapers.get(name);
+        var client = new ProductAPIClient(dadConfig.api.uri);
+        for (var name : dadConfig.enabled) {
+            var config = dadConfig.scrapers.get(name);
             if (config == null) {
                 throw new IllegalArgumentException(format("Scraper config for '%s' is missing", name));
             }
-            Scraper scraper = Scraper.create(config, driver, client);
-            scrapers.add(scraper);
+            scrapers.add(Scraper.create(config, driver, client));
         }
     }
 
