@@ -1,5 +1,6 @@
 package GroceryFamily.GroceryMom.service;
 
+import GroceryFamily.GroceryElders.domain.Page;
 import GroceryFamily.GroceryElders.domain.Product;
 import GroceryFamily.GroceryMom.model.Price;
 import GroceryFamily.GroceryMom.repository.ProductRepository;
@@ -30,6 +31,14 @@ public class ProductService {
 
     ProductService(ProductRepository repository) {
         this.repository = repository;
+    }
+
+    public Page<Product> list() {
+        throw new UnsupportedOperationException("Not implemented yet");
+    }
+
+    public Page<Product> list(String pageToken) {
+        throw new UnsupportedOperationException("Not implemented yet");
     }
 
     public Product get(String id) {
