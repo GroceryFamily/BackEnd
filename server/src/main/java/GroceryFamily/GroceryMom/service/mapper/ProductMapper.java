@@ -1,11 +1,14 @@
 package GroceryFamily.GroceryMom.service.mapper;
 
 
-import GroceryFamily.GroceryMom.model.ProductPageToken;
-import GroceryFamily.GroceryMom.service.TokenTransformer;
+import GroceryFamily.GroceryMom.model.PageToken;
+import GroceryFamily.GroceryMom.model.PageTokenIO;
+import GroceryFamily.GroceryMom.model.PageTokenKeysExtractor;
+import GroceryFamily.GroceryMom.model.Product;
 
 import java.time.Instant;
 import java.util.List;
+import java.util.Optional;
 
 import static GroceryFamily.GroceryMom.service.mapper.PriceMapper.modelPrices;
 
@@ -23,14 +26,21 @@ public class ProductMapper {
                 .setVersion(0);
     }
 
-    public static GroceryFamily.GroceryElders.domain.Page<GroceryFamily.GroceryElders.domain.Product>
-    domainProductPage(List<GroceryFamily.GroceryMom.model.Product> modelProducts, int pageSize) {
+    public static <KEYS> GroceryFamily.GroceryElders.domain.Page<GroceryFamily.GroceryElders.domain.Product>
+    domainProductPage(List<GroceryFamily.GroceryMom.model.Product> modelProducts,
+                      int pageSize,
+                      PageTokenIO<KEYS> pageTokenIO,
+                      PageTokenKeysExtractor<Product, KEYS> pageTokenKeysExtractor) {
         if (modelProducts.isEmpty()) return GroceryFamily.GroceryElders.domain.Page.empty();
-        var lastModelProduct = modelProducts.get(modelProducts.size() - 1);
-        var nextPageToken = TokenTransformer.encode(new ProductPageToken.OrderedById(lastModelProduct.getId(), pageSize));
+        var nextPageToken = Optional
+                .ofNullable(modelProducts.size() > pageSize ? modelProducts.get(modelProducts.size() - 1) : null)
+                .map(pageTokenKeysExtractor::extract)
+                .map(nextPageHead -> new PageToken<>(nextPageHead, pageSize))
+                .map(pageTokenIO::encode)
+                .orElse(null);
         return GroceryFamily.GroceryElders.domain.Page
                 .<GroceryFamily.GroceryElders.domain.Product>builder()
-                .content(modelProducts.stream().map(ProductMapper::domainProduct).toList())
+                .content(modelProducts.stream().limit(pageSize).map(ProductMapper::domainProduct).toList())
                 .nextPageToken(nextPageToken)
                 .build();
     }

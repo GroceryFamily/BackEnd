@@ -4,12 +4,14 @@ import GroceryFamily.GroceryElders.domain.Page;
 import GroceryFamily.GroceryElders.domain.Product;
 import GroceryFamily.GroceryMom.service.ProductService;
 import GroceryFamily.GroceryMom.service.exception.ProductNotFoundException;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;
 
 import java.time.Instant;
 
 import static org.springframework.http.HttpStatus.*;
 
+@Slf4j
 @RestController
 @RequestMapping("products")
 public class ProductAPI {
@@ -52,6 +54,7 @@ public class ProductAPI {
     @ResponseStatus(INTERNAL_SERVER_ERROR)
     @ExceptionHandler(Exception.class)
     String error(Exception e) {
+        log.error("Internal server error", e);
         return e.getMessage();
     }
 }

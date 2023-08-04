@@ -3,7 +3,7 @@ package GroceryFamily.GroceryMom.service;
 import GroceryFamily.GroceryElders.domain.Page;
 import GroceryFamily.GroceryElders.domain.Product;
 import GroceryFamily.GroceryMom.model.Price;
-import GroceryFamily.GroceryMom.model.ProductPageToken;
+import GroceryFamily.GroceryMom.model.ProductKeys;
 import GroceryFamily.GroceryMom.repository.ProductRepository;
 import GroceryFamily.GroceryMom.service.exception.ProductNotFoundException;
 import org.hibernate.StaleObjectStateException;
@@ -34,12 +34,14 @@ public class ProductService {
     }
 
     public Page<Product> list(int pageSize) {
-        return domainProductPage(repository.list(pageSize), pageSize);
+        var modelProducts = repository.list(pageSize + 1);
+        return domainProductPage(modelProducts, pageSize, ProductKeys.Id.IO, ProductKeys.Id.EXTRACTOR);
     }
 
-    public Page<Product> list(String pageToken) {
-        var nextPage = TokenTransformer.decode(pageToken, ProductPageToken.OrderedById.class);
-        return domainProductPage(repository.list(nextPage.id(), nextPage.pageSize()), nextPage.pageSize());
+    public Page<Product> list(String domainPageToken) {
+        var modelPageToken = ProductKeys.Id.IO.decode(domainPageToken);
+        var modelProducts = repository.list(modelPageToken.pageHead.id(), modelPageToken.pageSize + 1);
+        return domainProductPage(modelProducts, modelPageToken.pageSize, ProductKeys.Id.IO, ProductKeys.Id.EXTRACTOR);
     }
 
     public Product get(String id) {
