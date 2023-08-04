@@ -1,13 +1,13 @@
 package GroceryFamily.GroceryElders.domain;
 
-import lombok.Builder;
 import lombok.EqualsAndHashCode;
 import lombok.ToString;
+import lombok.experimental.SuperBuilder;
 import lombok.extern.jackson.Jacksonized;
 
 import java.util.List;
 
-@Builder(toBuilder = true)
+@SuperBuilder(toBuilder = true)
 @ToString
 @Jacksonized
 @EqualsAndHashCode

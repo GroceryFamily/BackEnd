@@ -19,6 +19,7 @@ class GrocerySis implements CommandLineRunner {
 
     @Override
     public void run(String... args) {
-        // todo: list products
+        var page = client.list(10);
+        System.out.println(page);
     }
 }
