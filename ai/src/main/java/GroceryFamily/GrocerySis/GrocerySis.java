@@ -1,6 +1,8 @@
 package GroceryFamily.GrocerySis;
 
 import GroceryFamily.GroceryElders.api.client.ProductAPIClient;
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -18,8 +20,8 @@ class GrocerySis implements CommandLineRunner {
     }
 
     @Override
-    public void run(String... args) {
-        var page = client.list(10);
-        System.out.println(page);
+    public void run(String... args) throws JsonProcessingException {
+        var page = client.list(2);
+        System.out.println(new ObjectMapper().writerWithDefaultPrettyPrinter().writeValueAsString(page));
     }
 }

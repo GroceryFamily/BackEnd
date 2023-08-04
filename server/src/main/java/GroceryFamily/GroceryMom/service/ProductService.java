@@ -19,9 +19,9 @@ import java.util.Optional;
 import java.util.function.Supplier;
 import java.util.function.UnaryOperator;
 
+import static GroceryFamily.GroceryMom.model.Product.sortById;
 import static GroceryFamily.GroceryMom.service.mapper.PriceMapper.modelPrice;
-import static GroceryFamily.GroceryMom.service.mapper.ProductMapper.domainProduct;
-import static GroceryFamily.GroceryMom.service.mapper.ProductMapper.modelProduct;
+import static GroceryFamily.GroceryMom.service.mapper.ProductMapper.*;
 import static org.springframework.transaction.annotation.Isolation.READ_UNCOMMITTED;
 import static org.springframework.transaction.annotation.Propagation.REQUIRES_NEW;
 
@@ -34,7 +34,7 @@ public class ProductService {
     }
 
     public Page<Product> list(int pageSize) {
-        throw new UnsupportedOperationException("Not implemented yet");
+        return domainProductPage(repository.list(sortById(pageSize)));
     }
 
     public Page<Product> list(String pageToken) {

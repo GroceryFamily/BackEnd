@@ -19,6 +19,15 @@ public class ProductMapper {
                 .setVersion(0);
     }
 
+    public static GroceryFamily.GroceryElders.domain.Page<GroceryFamily.GroceryElders.domain.Product>
+    domainProductPage(org.springframework.data.domain.Page<GroceryFamily.GroceryMom.model.Product> modelProductPage) {
+        return GroceryFamily.GroceryElders.domain.Page
+                .<GroceryFamily.GroceryElders.domain.Product>builder()
+                .content(modelProductPage.stream().map(ProductMapper::domainProduct).toList())
+                .nextPageToken(null) // todo: set the next page token
+                .build();
+    }
+
     public static GroceryFamily.GroceryElders.domain.Product
     domainProduct(GroceryFamily.GroceryMom.model.Product modelProduct) {
         return GroceryFamily.GroceryElders.domain.Product
