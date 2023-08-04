@@ -1,5 +1,6 @@
 package GroceryFamily.GroceryMom.api;
 
+import GroceryFamily.GroceryElders.domain.Page;
 import GroceryFamily.GroceryElders.domain.Product;
 import GroceryFamily.GroceryMom.service.ProductService;
 import GroceryFamily.GroceryMom.service.exception.ProductNotFoundException;
@@ -18,7 +19,11 @@ public class ProductAPI {
         this.service = service;
     }
 
-    // todo: list methods
+    @ResponseStatus(OK)
+    @GetMapping
+    Page<Product> list() {
+        throw new UnsupportedOperationException("Not implemented yet");
+    }
 
     @ResponseStatus(OK)
     @GetMapping("{id}")
