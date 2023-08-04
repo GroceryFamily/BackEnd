@@ -1,13 +1,17 @@
 package GroceryFamily.GroceryMom.service.mapper;
 
+
+import GroceryFamily.GroceryMom.model.ProductPageToken;
+import GroceryFamily.GroceryMom.service.TokenTransformer;
+
 import java.time.Instant;
+import java.util.List;
 
 import static GroceryFamily.GroceryMom.service.mapper.PriceMapper.modelPrices;
 
 public class ProductMapper {
     public static GroceryFamily.GroceryMom.model.Product
-    modelProduct(GroceryFamily.GroceryElders.domain.Product domainProduct,
-                 Instant ts) {
+    modelProduct(GroceryFamily.GroceryElders.domain.Product domainProduct, Instant ts) {
         var modelProduct = new GroceryFamily.GroceryMom.model.Product();
         return modelProduct
                 .setId(domainProduct.id())
@@ -20,11 +24,14 @@ public class ProductMapper {
     }
 
     public static GroceryFamily.GroceryElders.domain.Page<GroceryFamily.GroceryElders.domain.Product>
-    domainProductPage(org.springframework.data.domain.Page<GroceryFamily.GroceryMom.model.Product> modelProductPage) {
+    domainProductPage(List<GroceryFamily.GroceryMom.model.Product> modelProducts, int pageSize) {
+        if (modelProducts.isEmpty()) return GroceryFamily.GroceryElders.domain.Page.empty();
+        var lastModelProduct = modelProducts.get(modelProducts.size() - 1);
+        var nextPageToken = TokenTransformer.encode(new ProductPageToken.OrderedById(lastModelProduct.getId(), pageSize));
         return GroceryFamily.GroceryElders.domain.Page
                 .<GroceryFamily.GroceryElders.domain.Product>builder()
-                .content(modelProductPage.stream().map(ProductMapper::domainProduct).toList())
-                .nextPageToken(null) // todo: set the next page token
+                .content(modelProducts.stream().map(ProductMapper::domainProduct).toList())
+                .nextPageToken(nextPageToken)
                 .build();
     }
 

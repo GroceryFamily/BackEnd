@@ -14,4 +14,8 @@ import java.util.List;
 public class Page<DATA> {
     public final List<DATA> content;
     public final String nextPageToken;
+
+    public static <DATA> Page<DATA> empty() {
+        return Page.<DATA>builder().content(List.of()).build();
+    }
 }

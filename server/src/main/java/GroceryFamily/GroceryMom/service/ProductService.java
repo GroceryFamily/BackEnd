@@ -3,6 +3,7 @@ package GroceryFamily.GroceryMom.service;
 import GroceryFamily.GroceryElders.domain.Page;
 import GroceryFamily.GroceryElders.domain.Product;
 import GroceryFamily.GroceryMom.model.Price;
+import GroceryFamily.GroceryMom.model.ProductPageToken;
 import GroceryFamily.GroceryMom.repository.ProductRepository;
 import GroceryFamily.GroceryMom.service.exception.ProductNotFoundException;
 import org.hibernate.StaleObjectStateException;
@@ -19,7 +20,6 @@ import java.util.Optional;
 import java.util.function.Supplier;
 import java.util.function.UnaryOperator;
 
-import static GroceryFamily.GroceryMom.model.Product.sortById;
 import static GroceryFamily.GroceryMom.service.mapper.PriceMapper.modelPrice;
 import static GroceryFamily.GroceryMom.service.mapper.ProductMapper.*;
 import static org.springframework.transaction.annotation.Isolation.READ_UNCOMMITTED;
@@ -34,11 +34,12 @@ public class ProductService {
     }
 
     public Page<Product> list(int pageSize) {
-        return domainProductPage(repository.list(sortById(pageSize)));
+        return domainProductPage(repository.list(pageSize), pageSize);
     }
 
     public Page<Product> list(String pageToken) {
-        throw new UnsupportedOperationException("Not implemented yet");
+        var nextPage = TokenTransformer.decode(pageToken, ProductPageToken.OrderedById.class);
+        return domainProductPage(repository.list(nextPage.id(), nextPage.pageSize()), nextPage.pageSize());
     }
 
     public Product get(String id) {
