@@ -2,7 +2,6 @@ package GroceryFamily.GroceryElders.api.client;
 
 import GroceryFamily.GroceryElders.domain.Page;
 import GroceryFamily.GroceryElders.domain.Product;
-import io.micrometer.common.lang.NonNullApi;
 import lombok.experimental.SuperBuilder;
 import lombok.extern.jackson.Jacksonized;
 import org.springframework.http.HttpEntity;
@@ -23,7 +22,6 @@ import static java.util.stream.StreamSupport.stream;
 import static org.springframework.http.HttpMethod.GET;
 import static org.springframework.http.HttpMethod.POST;
 
-@NonNullApi
 public class ProductAPIClient {
     private static final int DEFAULT_PAGE_SIZE = 100;
 
