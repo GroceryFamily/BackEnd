@@ -14,13 +14,19 @@ import org.springframework.web.client.RestTemplate;
 
 import java.io.IOException;
 import java.util.Optional;
+import java.util.stream.Stream;
 
 import static java.lang.String.format;
+import static java.util.Spliterator.ORDERED;
+import static java.util.Spliterators.spliteratorUnknownSize;
+import static java.util.stream.StreamSupport.stream;
 import static org.springframework.http.HttpMethod.GET;
 import static org.springframework.http.HttpMethod.POST;
 
 @NonNullApi
 public class ProductAPIClient {
+    private static final int DEFAULT_PAGE_SIZE = 100;
+
     private static final ResponseErrorHandler ERROR_HANDLER = new ResponseErrorHandler() {
         @Override
         public boolean hasError(ClientHttpResponse response) throws IOException {
@@ -43,6 +49,16 @@ public class ProductAPIClient {
     public ProductAPIClient(String uri) {
         this.uri = uri;
         api.setErrorHandler(ERROR_HANDLER);
+    }
+
+    public Stream<Product> listAll() {
+        var iterator = new PageIterator<>(this::list, this::list);
+        return stream(spliteratorUnknownSize(iterator, ORDERED), false)
+                .flatMap(page -> page.content.stream());
+    }
+
+    public Page<Product> list() {
+        return list(DEFAULT_PAGE_SIZE);
     }
 
     public Page<Product> list(int pageSize) {
