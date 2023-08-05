@@ -2,8 +2,8 @@ package GroceryFamily.GroceryMom.service;
 
 import GroceryFamily.GroceryElders.domain.Page;
 import GroceryFamily.GroceryElders.domain.Product;
+import GroceryFamily.GroceryMom.model.PageToken;
 import GroceryFamily.GroceryMom.model.Price;
-import GroceryFamily.GroceryMom.model.ProductKeys;
 import GroceryFamily.GroceryMom.repository.ProductRepository;
 import GroceryFamily.GroceryMom.service.exception.ProductNotFoundException;
 import org.hibernate.StaleObjectStateException;
@@ -39,8 +39,8 @@ public class ProductService {
     }
 
     public Page<Product> list(String domainPageToken) {
-        var modelPageToken = ProductKeys.Id.IO.decode(domainPageToken);
-        var modelProducts = repository.list(modelPageToken.pageHead.id(), modelPageToken.pageSize + 1);
+        var modelPageToken = PageToken.decode(domainPageToken);
+        var modelProducts = repository.list(modelPageToken.pageHeadId.id(), modelPageToken.pageSize + 1);
         return domainProductPage(modelProducts, modelPageToken.pageSize, ProductKeys.Id.IO, ProductKeys.Id.EXTRACTOR);
     }
 
