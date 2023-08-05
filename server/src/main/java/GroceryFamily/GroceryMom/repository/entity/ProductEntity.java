@@ -2,11 +2,13 @@ package GroceryFamily.GroceryMom.repository.entity;
 
 import jakarta.persistence.*;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 import java.time.Instant;
 import java.util.List;
 
 @Data
+@EqualsAndHashCode
 @Entity(name = "product")
 public class ProductEntity {
     @Id
@@ -18,5 +20,6 @@ public class ProductEntity {
     @Version
     private int version;
     @OneToMany(mappedBy = "product", cascade = CascadeType.ALL)
+    @EqualsAndHashCode.Exclude
     private List<PriceEntity> prices;
 }
