@@ -1,6 +1,6 @@
 package GroceryFamily.GroceryDad;
 
-import GroceryFamily.GroceryElders.api.client.ProductAPIClientConfig;
+import GroceryFamily.GroceryElders.api.client.APIClientConfig;
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.boot.context.properties.NestedConfigurationProperty;
@@ -14,7 +14,7 @@ import java.util.Map;
 @ConfigurationProperties("grocery-dad")
 public class GroceryDadConfig {
     @NestedConfigurationProperty
-    public final ProductAPIClientConfig api;
+    public final APIClientConfig api;
     public final List<String> enabled;
     public final Map<String, Scraper> scrapers;
 

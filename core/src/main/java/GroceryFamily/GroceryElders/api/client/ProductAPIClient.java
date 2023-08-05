@@ -33,8 +33,8 @@ public class ProductAPIClient {
         }
     };
 
-    @SuperBuilder(toBuilder = true)
     @Jacksonized
+    @SuperBuilder(toBuilder = true)
     private static final class ProductPage extends Page<Product> {}
 
     private final String uri;
