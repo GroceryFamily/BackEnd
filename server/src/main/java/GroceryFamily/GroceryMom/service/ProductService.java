@@ -21,8 +21,6 @@ import java.util.Optional;
 import java.util.function.Supplier;
 import java.util.function.UnaryOperator;
 
-import static GroceryFamily.GroceryMom.service.mapper.PriceMapper.modelPrice;
-import static GroceryFamily.GroceryMom.service.mapper.ProductMapper.*;
 import static org.springframework.transaction.annotation.Isolation.READ_UNCOMMITTED;
 import static org.springframework.transaction.annotation.Propagation.REQUIRES_NEW;
 
@@ -35,18 +33,18 @@ public class ProductService {
     }
 
     public Page<Product> list(int pageSize) {
-        var modelProducts = repository.list(pageSize + 1);
-        return domainProductPage(modelProducts, pageSize);
+        var entities = repository.list(pageSize + 1);
+        return ProductEntity.toDomainProductPage(entities, pageSize);
     }
 
-    public Page<Product> list(String domainPageToken) {
-        var modelPageToken = PageToken.decode(domainPageToken);
-        var modelProducts = repository.list(modelPageToken.pageHeadId, modelPageToken.pageSize + 1);
-        return domainProductPage(modelProducts, modelPageToken.pageSize);
+    public Page<Product> list(String pageToken) {
+        var token = PageToken.decode(pageToken);
+        var entities = repository.list(token.pageHeadId, token.pageSize + 1);
+        return ProductEntity.toDomainProductPage(entities, token.pageSize);
     }
 
     public Product get(String id) {
-        return domainProduct(repository.findById(id).orElseThrow(notFound(id)));
+        return repository.findById(id).map(ProductEntity::toDomainProduct).orElseThrow(notFound(id));
     }
 
     @Transactional(propagation = REQUIRES_NEW, isolation = READ_UNCOMMITTED)
@@ -54,29 +52,29 @@ public class ProductService {
             StaleObjectStateException.class,
             DataIntegrityViolationException.class
     }, maxAttempts = 5, backoff = @Backoff(delay = 100, multiplier = 2))
-    public void update(String id, Product domainProduct, Instant ts) {
-        var modelProduct = repository
+    public void update(String id, Product product, Instant ts) {
+        var entity = repository
                 .findById(id)
-                .map(update(domainProduct, ts))
-                .orElseGet(() -> modelProduct(domainProduct, ts));
-        repository.save(modelProduct);
+                .map(update(product, ts))
+                .orElseGet(() -> ProductEntity.fromDomainProduct(product, ts));
+        repository.save(entity);
     }
 
-    private static UnaryOperator<ProductEntity> update(Product domainProduct, Instant ts) {
-        return modelProduct -> {
-            var modelPrices = new HashMap<String, PriceEntity>();
-            modelProduct.getPrices().forEach(modelPrice -> modelPrices.put(modelPrice.getId(), modelPrice));
-            domainProduct.identifiablePrices().forEach((id, domainPrice) -> {
+    private static UnaryOperator<ProductEntity> update(Product product, Instant ts) {
+        return productEntity -> {
+            var priceEntities = new HashMap<String, PriceEntity>();
+            productEntity.getPrices().forEach(priceEntity -> priceEntities.put(priceEntity.getId(), priceEntity));
+            product.identifiablePrices().forEach((id, price) -> {
                 int version = Optional
-                        .ofNullable(modelPrices.get(id))
+                        .ofNullable(priceEntities.get(id))
                         .map(PriceEntity::getVersion)
                         .orElse(0);
-                modelPrices.put(id, modelPrice(id, domainPrice, ts, modelProduct, version));
+                priceEntities.put(id, PriceEntity.fromDomainPrice(id, price, ts, version, productEntity));
             });
-            return modelProduct
-                    .setName(domainProduct.name)
-                    .setPrices(new ArrayList<>(modelPrices.values()))
-                    .setTs(ts);
+            return productEntity
+                    .setName(product.name)
+                    .setTs(ts)
+                    .setPrices(new ArrayList<>(priceEntities.values()));
         };
     }
 
