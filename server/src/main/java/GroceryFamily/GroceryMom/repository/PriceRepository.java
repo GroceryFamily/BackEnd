@@ -1,6 +1,6 @@
 package GroceryFamily.GroceryMom.repository;
 
-import GroceryFamily.GroceryMom.model.Price;
+import GroceryFamily.GroceryMom.repository.entity.PriceEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface PriceRepository extends JpaRepository<Price, String> {}
+public interface PriceRepository extends JpaRepository<PriceEntity, String> {}
