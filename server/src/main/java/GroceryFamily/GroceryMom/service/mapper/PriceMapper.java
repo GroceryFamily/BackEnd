@@ -1,5 +1,8 @@
 package GroceryFamily.GroceryMom.service.mapper;
 
+import GroceryFamily.GroceryMom.repository.entity.PriceEntity;
+import GroceryFamily.GroceryMom.repository.entity.ProductEntity;
+
 import java.time.Instant;
 import java.util.ArrayList;
 import java.util.List;
@@ -8,11 +11,11 @@ import java.util.Set;
 import static java.util.stream.Collectors.toSet;
 
 public class PriceMapper {
-    static List<GroceryFamily.GroceryMom.model.Price>
+    static List<PriceEntity>
     modelPrices(GroceryFamily.GroceryElders.domain.Product domainProduct,
                 Instant ts,
-                GroceryFamily.GroceryMom.model.Product modelProduct) {
-        var modelPrices = new ArrayList<GroceryFamily.GroceryMom.model.Price>();
+                ProductEntity modelProduct) {
+        var modelPrices = new ArrayList<PriceEntity>();
         domainProduct.identifiablePrices().forEach((id, domainPrice) -> {
             var modelPrice = modelPrice(id, domainPrice, ts, modelProduct, 0);
             modelPrices.add(modelPrice);
@@ -20,13 +23,13 @@ public class PriceMapper {
         return modelPrices;
     }
 
-    public static GroceryFamily.GroceryMom.model.Price
+    public static PriceEntity
     modelPrice(String id,
                GroceryFamily.GroceryElders.domain.Price domainPrice,
                Instant ts,
-               GroceryFamily.GroceryMom.model.Product modelProduct,
+               ProductEntity modelProduct,
                int version) {
-        return new GroceryFamily.GroceryMom.model.Price()
+        return new PriceEntity()
                 .setId(id)
                 .setUnit(domainPrice.unit)
                 .setCurrency(domainPrice.currency)
@@ -37,12 +40,12 @@ public class PriceMapper {
     }
 
     static Set<GroceryFamily.GroceryElders.domain.Price>
-    domainPrices(List<GroceryFamily.GroceryMom.model.Price> modelPrices) {
+    domainPrices(List<PriceEntity> modelPrices) {
         return modelPrices.stream().map(PriceMapper::domainPrice).collect(toSet());
     }
 
     static GroceryFamily.GroceryElders.domain.Price
-    domainPrice(GroceryFamily.GroceryMom.model.Price modelPrice) {
+    domainPrice(PriceEntity modelPrice) {
         return GroceryFamily.GroceryElders.domain.Price
                 .builder()
                 .unit(modelPrice.getUnit())

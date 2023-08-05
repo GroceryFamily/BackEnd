@@ -3,8 +3,9 @@ package GroceryFamily.GroceryMom.service;
 import GroceryFamily.GroceryElders.domain.Page;
 import GroceryFamily.GroceryElders.domain.Product;
 import GroceryFamily.GroceryMom.model.PageToken;
-import GroceryFamily.GroceryMom.model.Price;
 import GroceryFamily.GroceryMom.repository.ProductRepository;
+import GroceryFamily.GroceryMom.repository.entity.PriceEntity;
+import GroceryFamily.GroceryMom.repository.entity.ProductEntity;
 import GroceryFamily.GroceryMom.service.exception.ProductNotFoundException;
 import org.hibernate.StaleObjectStateException;
 import org.springframework.dao.DataIntegrityViolationException;
@@ -35,13 +36,13 @@ public class ProductService {
 
     public Page<Product> list(int pageSize) {
         var modelProducts = repository.list(pageSize + 1);
-        return domainProductPage(modelProducts, pageSize, ProductKeys.Id.IO, ProductKeys.Id.EXTRACTOR);
+        return domainProductPage(modelProducts, pageSize);
     }
 
     public Page<Product> list(String domainPageToken) {
         var modelPageToken = PageToken.decode(domainPageToken);
-        var modelProducts = repository.list(modelPageToken.pageHeadId.id(), modelPageToken.pageSize + 1);
-        return domainProductPage(modelProducts, modelPageToken.pageSize, ProductKeys.Id.IO, ProductKeys.Id.EXTRACTOR);
+        var modelProducts = repository.list(modelPageToken.pageHeadId, modelPageToken.pageSize + 1);
+        return domainProductPage(modelProducts, modelPageToken.pageSize);
     }
 
     public Product get(String id) {
@@ -61,14 +62,14 @@ public class ProductService {
         repository.save(modelProduct);
     }
 
-    private static UnaryOperator<GroceryFamily.GroceryMom.model.Product> update(Product domainProduct, Instant ts) {
+    private static UnaryOperator<ProductEntity> update(Product domainProduct, Instant ts) {
         return modelProduct -> {
-            var modelPrices = new HashMap<String, GroceryFamily.GroceryMom.model.Price>();
+            var modelPrices = new HashMap<String, PriceEntity>();
             modelProduct.getPrices().forEach(modelPrice -> modelPrices.put(modelPrice.getId(), modelPrice));
             domainProduct.identifiablePrices().forEach((id, domainPrice) -> {
                 int version = Optional
                         .ofNullable(modelPrices.get(id))
-                        .map(Price::getVersion)
+                        .map(PriceEntity::getVersion)
                         .orElse(0);
                 modelPrices.put(id, modelPrice(id, domainPrice, ts, modelProduct, version));
             });

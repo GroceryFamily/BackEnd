@@ -2,7 +2,7 @@ package GroceryFamily.GroceryMom.service.mapper;
 
 
 import GroceryFamily.GroceryMom.model.PageToken;
-import GroceryFamily.GroceryMom.model.Product;
+import GroceryFamily.GroceryMom.repository.entity.ProductEntity;
 
 import java.time.Instant;
 import java.util.List;
@@ -11,9 +11,9 @@ import java.util.Optional;
 import static GroceryFamily.GroceryMom.service.mapper.PriceMapper.modelPrices;
 
 public class ProductMapper {
-    public static GroceryFamily.GroceryMom.model.Product
+    public static ProductEntity
     modelProduct(GroceryFamily.GroceryElders.domain.Product domainProduct, Instant ts) {
-        var modelProduct = new GroceryFamily.GroceryMom.model.Product();
+        var modelProduct = new ProductEntity();
         return modelProduct
                 .setId(domainProduct.id())
                 .setNamespace(domainProduct.namespace)
@@ -24,17 +24,13 @@ public class ProductMapper {
                 .setVersion(0);
     }
 
-    public static <KEYS> GroceryFamily.GroceryElders.domain.Page<GroceryFamily.GroceryElders.domain.Product>
-    domainProductPage(List<GroceryFamily.GroceryMom.model.Product> modelProducts,
-                      int pageSize,
-                      PageTokenIO<KEYS> pageTokenIO,
-                      PageTokenKeysExtractor<Product, KEYS> pageTokenKeysExtractor) {
+    public static GroceryFamily.GroceryElders.domain.Page<GroceryFamily.GroceryElders.domain.Product>
+    domainProductPage(List<ProductEntity> modelProducts, int pageSize) {
         if (modelProducts.isEmpty()) return GroceryFamily.GroceryElders.domain.Page.empty();
         var nextPageToken = Optional
                 .ofNullable(modelProducts.size() > pageSize ? modelProducts.get(modelProducts.size() - 1) : null)
-                .map(pageTokenKeysExtractor::extract)
-                .map(nextPageHead -> new PageToken<>(nextPageHead, pageSize))
-                .map(pageTokenIO::encode)
+                .map(nextPageHead -> PageToken.builder().pageHeadId(nextPageHead.getId()).pageSize(pageSize).build())
+                .map(PageToken::encode)
                 .orElse(null);
         return GroceryFamily.GroceryElders.domain.Page
                 .<GroceryFamily.GroceryElders.domain.Product>builder()
@@ -44,7 +40,7 @@ public class ProductMapper {
     }
 
     public static GroceryFamily.GroceryElders.domain.Product
-    domainProduct(GroceryFamily.GroceryMom.model.Product modelProduct) {
+    domainProduct(ProductEntity modelProduct) {
         return GroceryFamily.GroceryElders.domain.Product
                 .builder()
                 .namespace(modelProduct.getNamespace())

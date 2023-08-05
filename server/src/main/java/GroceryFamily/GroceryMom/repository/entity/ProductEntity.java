@@ -1,16 +1,14 @@
-package GroceryFamily.GroceryMom.model;
+package GroceryFamily.GroceryMom.repository.entity;
 
 import jakarta.persistence.*;
 import lombok.Data;
-import lombok.ToString;
 
 import java.time.Instant;
 import java.util.List;
 
 @Data
-@Entity
-@ToString
-public class Product {
+@Entity(name = "product")
+public class ProductEntity {
     @Id
     private String id;
     private String namespace;
@@ -19,7 +17,6 @@ public class Product {
     private Instant ts;
     @Version
     private int version;
-    @ToString.Exclude
     @OneToMany(mappedBy = "product", cascade = CascadeType.ALL)
-    private List<Price> prices;
+    private List<PriceEntity> prices;
 }

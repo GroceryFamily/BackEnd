@@ -1,18 +1,20 @@
 package GroceryFamily.GroceryMom.model;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import lombok.Builder;
 import lombok.EqualsAndHashCode;
-import lombok.RequiredArgsConstructor;
 import lombok.SneakyThrows;
 import lombok.ToString;
+import lombok.extern.jackson.Jacksonized;
 
 import java.util.Base64;
 
 import static java.nio.charset.StandardCharsets.UTF_8;
 
-@RequiredArgsConstructor
 @ToString
+@Jacksonized
 @EqualsAndHashCode
+@Builder(toBuilder = true)
 public class PageToken {
     private static final ObjectMapper MAPPER = new ObjectMapper();
 
