@@ -12,8 +12,4 @@ import lombok.extern.jackson.Jacksonized;
 public class Category {
     public final String code;
     public final String name;
-
-    public String id(String productId) {
-        return Id.build(productId, code);
-    }
 }

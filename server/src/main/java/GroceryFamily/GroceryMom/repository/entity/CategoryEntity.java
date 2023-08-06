@@ -1,6 +1,7 @@
 package GroceryFamily.GroceryMom.repository.entity;
 
 import GroceryFamily.GroceryElders.domain.Category;
+import GroceryFamily.GroceryElders.domain.Identifiable;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.ManyToOne;
@@ -9,9 +10,7 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 
 import java.time.Instant;
-import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
 import java.util.Set;
 
 import static java.util.stream.Collectors.toSet;
@@ -58,9 +57,7 @@ public class CategoryEntity {
                 .setProduct(productEntity);
     }
 
-    static List<CategoryEntity> fromDomainCategories(Map<String, Category> categories, Instant ts, ProductEntity productEntity) {
-        var entities = new ArrayList<CategoryEntity>();
-        categories.forEach((id, category) -> entities.add(fromDomainCategory(id, category, ts, 0, productEntity)));
-        return entities;
+    static List<CategoryEntity> fromDomainCategories(Set<Identifiable<Category>> categories, Instant ts, ProductEntity productEntity) {
+        return categories.stream().map(category -> fromDomainCategory(category.id, category.data, ts, 0, productEntity)).toList();
     }
 }

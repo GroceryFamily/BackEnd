@@ -1,6 +1,7 @@
 package GroceryFamily.GroceryMom;
 
 import GroceryFamily.GroceryElders.api.client.ProductAPIClient;
+import GroceryFamily.GroceryElders.domain.Identifiable;
 import GroceryFamily.GroceryElders.domain.Price;
 import GroceryFamily.GroceryElders.domain.Product;
 import GroceryFamily.GroceryMom.repository.PriceRepository;
@@ -76,40 +77,43 @@ class GroceryMomTest {
 
         var expectedProductNameRegex = "GroceryMom test product \\(threadNo=[0-9]+, updateNo=" + NUMBER_OF_UPDATES_PER_THREAD + "\\)";
 
-        var domainProduct = client.get("grocery-mom-test::product");
-        assertThat(domainProduct.namespace).isEqualTo("grocery-mom-test");
-        assertThat(domainProduct.code).isEqualTo("product");
-        assertThat(domainProduct.name).matches(Pattern.compile(expectedProductNameRegex));
-        assertThat(domainProduct.prices).hasSize(2);
+        var product = client.get("grocery-mom-test::product");
+        assertThat(product.namespace).isEqualTo("grocery-mom-test");
+        assertThat(product.code).isEqualTo("product");
+        assertThat(product.name).matches(Pattern.compile(expectedProductNameRegex));
+        assertThat(product.prices).hasSize(2);
 
-        var expectedThreadNo = threadNo(domainProduct);
+        var expectedThreadNo = threadNo(product);
         var expectedPriceAmount = expectedThreadNo + "." + NUMBER_OF_UPDATES_PER_THREAD;
 
-        var pcDomainPrice = domainProduct.identifiablePrices().get("grocery-mom-test::product::pc::usd");
-        assertThat(pcDomainPrice.unit).isEqualTo("pc");
-        assertThat(pcDomainPrice.currency).isEqualTo("usd");
-        assertThat(pcDomainPrice.amount).isEqualByComparingTo(expectedPriceAmount);
-
-        var mlDomainPrice = domainProduct.identifiablePrices().get("grocery-mom-test::product::ml::usd");
-        assertThat(mlDomainPrice.unit).isEqualTo("ml");
-        assertThat(mlDomainPrice.currency).isEqualTo("usd");
-        assertThat(mlDomainPrice.amount).isEqualByComparingTo(expectedPriceAmount);
+        assertThat(product.identifiablePrices()).isEqualTo(Set.of(
+                Identifiable.identify(Price.builder()
+                        .unit("pc")
+                        .currency("usd")
+                        .amount(new BigDecimal(expectedPriceAmount))
+                        .build(), "grocery-mom-test::product::pc::usd"),
+                Identifiable.identify(Price.builder()
+                        .unit("ml")
+                        .currency("usd")
+                        .amount(new BigDecimal(expectedPriceAmount))
+                        .build(), "grocery-mom-test::product::ml::usd")
+        ));
 
         var expectedProductName = "GroceryMom test product (threadNo=" + expectedThreadNo + ", updateNo=" + NUMBER_OF_UPDATES_PER_THREAD + ")";
         var expectedVersion = NUMBER_OF_THREADS * NUMBER_OF_UPDATES_PER_THREAD - 1;
 
-        assertModelProduct("grocery-mom-test::product", expectedProductName, expectedVersion);
-        assertModelPrice("grocery-mom-test::product::pc::usd", expectedPriceAmount, expectedVersion);
-        assertModelPrice("grocery-mom-test::product::ml::usd", expectedPriceAmount, expectedVersion);
+        assertProductEntity("grocery-mom-test::product", expectedProductName, expectedVersion);
+        assertPriceEntity("grocery-mom-test::product::pc::usd", expectedPriceAmount, expectedVersion);
+        assertPriceEntity("grocery-mom-test::product::ml::usd", expectedPriceAmount, expectedVersion);
     }
 
-    void assertModelProduct(String id, String expectedName, int expectedVersion) {
+    void assertProductEntity(String id, String expectedName, int expectedVersion) {
         var modelProduct = productRepository.findById(id).orElseThrow();
         assertThat(modelProduct.getName()).isEqualTo(expectedName);
         assertThat(modelProduct.getVersion()).isEqualTo(expectedVersion);
     }
 
-    void assertModelPrice(String id, String expectedAmount, int expectedVersion) {
+    void assertPriceEntity(String id, String expectedAmount, int expectedVersion) {
         var modelPrice = priceRepository.findById(id).orElseThrow();
         assertThat(modelPrice.getId()).isEqualTo(id);
         assertThat(modelPrice.getAmount()).isEqualByComparingTo(expectedAmount);
