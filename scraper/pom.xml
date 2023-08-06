@@ -39,6 +39,12 @@
             <artifactId>simple-file-cache</artifactId>
         </dependency>
 
+        <!-- https://github.com/apache/commons-lang -->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+        </dependency>
+
         <!-- https://github.com/spring-projects :: test -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
