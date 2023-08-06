@@ -3,8 +3,8 @@ GroceryDad:
 
   enabled:
     - barbora
-    - prisma
-    - rimi
+#    - prisma
+#    - rimi
 
   scrapers:
     barbora:
@@ -17,6 +17,7 @@ GroceryDad:
         - [ "Household and pets", "Pets", "Dry dog food" ]
         - [ "Dairy and eggs", "Milk", "Pasteurised milk" ]
       timeout: 10s
+      sleepDelay: 100ms
 
     prisma:
       namespace: prismamarket.ee
@@ -29,6 +30,7 @@ GroceryDad:
         - [ "Groceries", "Pets", "Toys for pets" ]
         - [ "Groceries", "Drinks", "Water" ]
       timeout: 10s
+      sleepDelay: 100ms
 
     rimi:
       namespace: rimi.ee
@@ -41,3 +43,4 @@ GroceryDad:
         - [ "Groceries", "Canned products", "Mushrooms" ]
         - [ "Bread, pastry, confectionery", "Rimi bakeries" ]
       timeout: 10s
+      sleepDelay: 100ms

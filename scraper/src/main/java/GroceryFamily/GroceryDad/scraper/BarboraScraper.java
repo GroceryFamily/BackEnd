@@ -2,23 +2,23 @@ package GroceryFamily.GroceryDad.scraper;
 
 import GroceryFamily.GroceryDad.GroceryDadConfig;
 import GroceryFamily.GroceryElders.api.client.ProductAPIClient;
+import GroceryFamily.GroceryElders.domain.Currency;
 import GroceryFamily.GroceryElders.domain.*;
 import com.codeborne.selenide.SelenideElement;
 import org.openqa.selenium.WebDriver;
 
 import java.math.BigDecimal;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 import java.util.function.Consumer;
 
 import static com.codeborne.selenide.CollectionCondition.itemWithText;
 import static com.codeborne.selenide.CollectionCondition.sizeGreaterThan;
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Condition.visible;
-import static com.codeborne.selenide.Selenide.*;
+import static com.codeborne.selenide.Selenide.$;
+import static com.codeborne.selenide.Selenide.$$;
 import static java.lang.String.format;
+import static org.apache.commons.lang3.StringUtils.substringAfterLast;
 
 class BarboraScraper extends Scraper {
     BarboraScraper(GroceryDadConfig.Scraper config, WebDriver driver, ProductAPIClient client) {
@@ -37,7 +37,7 @@ class BarboraScraper extends Scraper {
         $("#fti-header-language-dropdown")
                 .shouldBe(visible)
                 .hover();
-        sleep(500);
+        sleep();
         $$("#fti-header-language-dropdown li")
                 .shouldHave(sizeGreaterThan(0))
                 .findBy(text("English"))
@@ -47,6 +47,41 @@ class BarboraScraper extends Scraper {
                 .shouldHave(itemWithText("Products"))
                 .findBy(text("Products"))
                 .shouldBe(visible);
+    }
+
+    @Override
+    protected CategoryTree buildCategoryTree() {
+        var tree = new CategoryTree();
+        var stack = new Stack<Category>();
+        for (var lvl1 : $$("*[id*='fti-desktop-category']").shouldHave(sizeGreaterThan(0))) {
+            stack.push(Category
+                    .builder()
+                    .code(substringAfterLast(lvl1.attr("href"), "/"))
+                    .name(lvl1.text())
+                    .build());
+            lvl1.hover();
+
+            for (var lvl2 : $$("*[id*='fti-category-tree-child']").shouldHave(sizeGreaterThan(0))) {
+                stack.push(Category
+                        .builder()
+                        .code(substringAfterLast(lvl2.attr("href"), "/"))
+                        .name(lvl2.$("div").text())
+                        .build());
+
+                for (var lvl3 : lvl2.$$("*[id*='fti-category-tree-grand-child']").shouldHave(sizeGreaterThan(0))) {
+                    stack.push(Category
+                            .builder()
+                            .code(substringAfterLast(lvl3.attr("href"), "/"))
+                            .name(lvl3.text())
+                            .build());
+                    tree.add(stack);
+                    stack.pop();
+                }
+                stack.pop();
+            }
+            stack.pop();
+        }
+        return tree;
     }
 
     @Override

@@ -25,6 +25,7 @@ public class GroceryDadConfig {
         public final List<List<String>> categories;
         public final Cache cache;
         public final Duration timeout;
+        public final Duration sleepDelay;
 
         @Data
         public static class Cache {

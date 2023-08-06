@@ -6,6 +6,7 @@ import GroceryFamily.GroceryElders.api.client.ProductAPIClient;
 import GroceryFamily.GroceryElders.domain.Namespace;
 import GroceryFamily.GroceryElders.domain.Product;
 import com.codeborne.selenide.Configuration;
+import com.codeborne.selenide.Selenide;
 import io.github.antivoland.sfc.FileCache;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -33,6 +34,10 @@ public abstract class Scraper {
         this.client = client;
     }
 
+    protected final void sleep() {
+        Selenide.sleep((long) (config.sleepDelay.toMillis() * (1 + Math.random())));
+    }
+
     public final void scrap() {
         Configuration.timeout = config.timeout.toMillis();
         using(driver, () -> {
@@ -40,6 +45,8 @@ public abstract class Scraper {
             waitUntilPageLoads();
             acceptOrRejectCookies();
             switchToEnglish();
+            var categoryTree = buildCategoryTree();
+            categoryTree.print();
             config.categories.forEach(categories -> {
                 FileCache<Product> cache = cache(categories); // todo: do we need cache at all?
                 scrap(categories, product -> cache.save(product.code, product));
@@ -51,6 +58,8 @@ public abstract class Scraper {
     protected abstract void acceptOrRejectCookies();
 
     protected abstract void switchToEnglish();
+
+    protected abstract CategoryTree buildCategoryTree();
 
     protected abstract void scrap(List<String> categories, Consumer<Product> handler);
 
