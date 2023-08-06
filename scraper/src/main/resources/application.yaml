@@ -13,8 +13,9 @@ GroceryDad:
       cache:
         directory: cache/barbora
       categories:
-        - [ "Dairy and eggs", "Milk", "Pasteurised milk" ]
         - [ "Vegetables and fruits", "Fruits and berries", "Bananas" ]
+        - [ "Household and pets", "Pets", "Dry dog food" ]
+        - [ "Dairy and eggs", "Milk", "Pasteurised milk" ]
       timeout: 10s
 
     prisma:
@@ -23,6 +24,8 @@ GroceryDad:
       cache:
         directory: cache/prisma
       categories:
+#        - [ "Groceries", "Fruits and vegetables", "Fruit", "Bananas" ]
+#        - [ "Groceries", "Pets", "Dog food", "Dry food for dogs" ]
         - [ "Groceries", "Pets", "Toys for pets" ]
         - [ "Groceries", "Drinks", "Water" ]
       timeout: 10s
@@ -33,6 +36,8 @@ GroceryDad:
       cache:
         directory: cache/rimi
       categories:
+        - [ "Fruits, vegetables, flowers", "Fruits", "Bananas" ]
+        - [ "Pet goods", "Dog food", "Dry food for dogs" ]
         - [ "Groceries", "Canned products", "Mushrooms" ]
         - [ "Bread, pastry, confectionery", "Rimi bakeries" ]
       timeout: 10s
