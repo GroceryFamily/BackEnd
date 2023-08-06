@@ -26,6 +26,9 @@ public class ProductEntity {
     @OneToMany(mappedBy = "product", cascade = CascadeType.ALL)
     @EqualsAndHashCode.Exclude
     private List<PriceEntity> prices;
+    @OneToMany(mappedBy = "product", cascade = CascadeType.ALL)
+    @EqualsAndHashCode.Exclude
+    private List<CategoryEntity> categories;
 
     public Product toDomainProduct() {
         return Product
@@ -34,6 +37,7 @@ public class ProductEntity {
                 .code(getCode())
                 .name(getName())
                 .prices(PriceEntity.toDomainPrices(getPrices()))
+                .categories(CategoryEntity.toDomainCategories(getCategories()))
                 .build();
     }
 
@@ -59,6 +63,7 @@ public class ProductEntity {
                 .setCode(product.code)
                 .setName(product.name)
                 .setPrices(PriceEntity.fromDomainPrices(product.identifiablePrices(), ts, entity))
+                .setCategories(CategoryEntity.fromDomainCategories(product.identifiableCategories(), ts, entity))
                 .setTs(ts)
                 .setVersion(0);
     }

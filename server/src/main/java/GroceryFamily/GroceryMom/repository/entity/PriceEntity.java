@@ -1,5 +1,6 @@
 package GroceryFamily.GroceryMom.repository.entity;
 
+import GroceryFamily.GroceryElders.domain.Identifiable;
 import GroceryFamily.GroceryElders.domain.Price;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
@@ -10,9 +11,7 @@ import lombok.EqualsAndHashCode;
 
 import java.math.BigDecimal;
 import java.time.Instant;
-import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
 import java.util.Set;
 
 import static java.util.stream.Collectors.toSet;
@@ -47,8 +46,8 @@ public class PriceEntity {
                 .build();
     }
 
-    static Set<Price> toDomainPrices(List<PriceEntity> prices) {
-        return prices.stream().map(PriceEntity::toDomainPrice).collect(toSet());
+    static Set<Price> toDomainPrices(List<PriceEntity> priceEntities) {
+        return priceEntities.stream().map(PriceEntity::toDomainPrice).collect(toSet());
     }
 
     public static PriceEntity fromDomainPrice(String id, Price price, Instant ts, int version, ProductEntity productEntity) {
@@ -62,9 +61,7 @@ public class PriceEntity {
                 .setProduct(productEntity);
     }
 
-    static List<PriceEntity> fromDomainPrices(Map<String, Price> prices, Instant ts, ProductEntity productEntity) {
-        var entities = new ArrayList<PriceEntity>();
-        prices.forEach((id, price) -> entities.add(fromDomainPrice(id, price, ts, 0, productEntity)));
-        return entities;
+    static List<PriceEntity> fromDomainPrices(Set<Identifiable<Price>> prices, Instant ts, ProductEntity productEntity) {
+        return prices.stream().map(price -> fromDomainPrice(price.id, price.data, ts, 0, productEntity)).toList();
     }
 }
