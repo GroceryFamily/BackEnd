@@ -47,8 +47,8 @@ public class PriceEntity {
                 .build();
     }
 
-    static Set<Price> toDomainPrices(List<PriceEntity> prices) {
-        return prices.stream().map(PriceEntity::toDomainPrice).collect(toSet());
+    static Set<Price> toDomainPrices(List<PriceEntity> priceEntities) {
+        return priceEntities.stream().map(PriceEntity::toDomainPrice).collect(toSet());
     }
 
     public static PriceEntity fromDomainPrice(String id, Price price, Instant ts, int version, ProductEntity productEntity) {

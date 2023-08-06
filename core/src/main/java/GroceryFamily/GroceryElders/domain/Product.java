@@ -19,7 +19,10 @@ public class Product {
     public final String namespace;
     public final String code;
     public final String name;
-    public final Set<Price> prices;
+    @Builder.Default
+    public final Set<Price> prices = Set.of();
+    @Builder.Default
+    public final Set<Category> categories = Set.of();
 
     public String id() {
         return Id.build(namespace, code);
@@ -27,5 +30,9 @@ public class Product {
 
     public Map<String, Price> identifiablePrices() {
         return prices.stream().collect(toMap(price -> price.id(id()), identity()));
+    }
+
+    public Map<String, Category> identifiableCategories() {
+        return categories.stream().collect(toMap(category -> category.id(id()), identity()));
     }
 }
