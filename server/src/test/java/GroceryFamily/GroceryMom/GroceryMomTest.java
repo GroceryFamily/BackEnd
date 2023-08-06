@@ -1,9 +1,11 @@
 package GroceryFamily.GroceryMom;
 
 import GroceryFamily.GroceryElders.api.client.ProductAPIClient;
+import GroceryFamily.GroceryElders.domain.Category;
 import GroceryFamily.GroceryElders.domain.Identifiable;
 import GroceryFamily.GroceryElders.domain.Price;
 import GroceryFamily.GroceryElders.domain.Product;
+import GroceryFamily.GroceryMom.repository.CategoryRepository;
 import GroceryFamily.GroceryMom.repository.PriceRepository;
 import GroceryFamily.GroceryMom.repository.ProductRepository;
 import org.junit.jupiter.api.BeforeEach;
@@ -26,12 +28,13 @@ import static java.lang.String.format;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.springframework.boot.test.context.SpringBootTest.WebEnvironment.RANDOM_PORT;
 import static org.springframework.test.annotation.DirtiesContext.ClassMode.BEFORE_EACH_TEST_METHOD;
+import static org.springframework.util.StringUtils.capitalize;
 
 /*
  This is the main integration test that confirms the correctness of the
  implementation of the optimistic locking approach for the product update
  method. It uses 3 parallel threads, each doing 99 consecutive updates of the
- same product. Each update uses unique markers for the product and its prices.
+ same product. Each update uses unique markers for the product and its parts.
  */
 @SpringBootTest(webEnvironment = RANDOM_PORT)
 @ActiveProfiles("h2")
@@ -46,6 +49,8 @@ class GroceryMomTest {
     ProductRepository productRepository;
     @Autowired
     PriceRepository priceRepository;
+    @Autowired
+    CategoryRepository categoryRepository;
 
     ProductAPIClient client;
 
@@ -99,12 +104,27 @@ class GroceryMomTest {
                         .build(), "grocery-mom-test::product::ml::usd")
         ));
 
+        var expectedCategoryNameMarker = " (threadNo=" + expectedThreadNo + ", updateNo=" + NUMBER_OF_UPDATES_PER_THREAD + ")";
+
+        assertThat(product.identifiableCategories()).isEqualTo(Set.of(
+                Identifiable.identify(Category.builder()
+                        .code("first")
+                        .name("First" + expectedCategoryNameMarker)
+                        .build(), "grocery-mom-test::first"),
+                Identifiable.identify(Category.builder()
+                        .code("second")
+                        .name("Second" + expectedCategoryNameMarker)
+                        .build(), "grocery-mom-test::second")
+        ));
+
         var expectedProductName = "GroceryMom test product (threadNo=" + expectedThreadNo + ", updateNo=" + NUMBER_OF_UPDATES_PER_THREAD + ")";
         var expectedVersion = NUMBER_OF_THREADS * NUMBER_OF_UPDATES_PER_THREAD - 1;
 
         assertProductEntity("grocery-mom-test::product", expectedProductName, expectedVersion);
         assertPriceEntity("grocery-mom-test::product::pc::usd", expectedPriceAmount, expectedVersion);
         assertPriceEntity("grocery-mom-test::product::ml::usd", expectedPriceAmount, expectedVersion);
+        assertCategoryEntity("grocery-mom-test::first", "First" + expectedCategoryNameMarker, expectedVersion);
+        assertCategoryEntity("grocery-mom-test::second", "Second" + expectedCategoryNameMarker, expectedVersion);
     }
 
     void assertProductEntity(String id, String expectedName, int expectedVersion) {
@@ -117,6 +137,13 @@ class GroceryMomTest {
         var modelPrice = priceRepository.findById(id).orElseThrow();
         assertThat(modelPrice.getId()).isEqualTo(id);
         assertThat(modelPrice.getAmount()).isEqualByComparingTo(expectedAmount);
+        assertThat(modelPrice.getVersion()).isEqualTo(expectedVersion);
+    }
+
+    void assertCategoryEntity(String id, String expectedName, int expectedVersion) {
+        var modelPrice = categoryRepository.findById(id).orElseThrow();
+        assertThat(modelPrice.getId()).isEqualTo(id);
+        assertThat(modelPrice.getName()).isEqualTo(expectedName);
         assertThat(modelPrice.getVersion()).isEqualTo(expectedVersion);
     }
 
@@ -149,12 +176,15 @@ class GroceryMomTest {
                 .code("product")
                 .name(format("GroceryMom test product (threadNo=%s, updateNo=%s)", threadNo, updateNo))
                 .prices(prices(threadNo, updateNo))
+                .categories(categories(threadNo, updateNo))
                 .build();
     }
 
     static Set<Price> prices(int threadNo, int updateNo) {
         var amount = threadNo + "." + updateNo;
-        return Set.of(price("pc", amount), price("ml", amount));
+        return Set.of(
+                price("pc", amount),
+                price("ml", amount));
     }
 
     static Price price(String unit, String amount) {
@@ -163,6 +193,21 @@ class GroceryMomTest {
                 .unit(unit)
                 .currency("usd")
                 .amount(new BigDecimal(amount))
+                .build();
+    }
+
+    static Set<Category> categories(int threadNo, int updateNo) {
+        return Set.of(
+                category("first", threadNo, updateNo),
+                category("second", threadNo, updateNo));
+    }
+
+    static Category category(String code, int threadNo, int updateNo) {
+        String name = capitalize(format("%s (threadNo=%s, updateNo=%s)", code, threadNo, updateNo));
+        return Category
+                .builder()
+                .code(code)
+                .name(name)
                 .build();
     }
 }
