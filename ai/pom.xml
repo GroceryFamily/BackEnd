@@ -26,6 +26,20 @@
             <artifactId>spring-boot-starter</artifactId>
         </dependency>
 
+        <!-- https://github.com/deeplearning4j -->
+        <dependency>
+            <groupId>org.deeplearning4j</groupId>
+            <artifactId>deeplearning4j-core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.nd4j</groupId>
+            <artifactId>nd4j-native</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.deeplearning4j</groupId>
+            <artifactId>deeplearning4j-nlp</artifactId>
+        </dependency>
+
         <!-- https://github.com/spring-projects :: test -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
