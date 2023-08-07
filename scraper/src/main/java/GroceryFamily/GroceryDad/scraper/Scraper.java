@@ -4,6 +4,7 @@ import GroceryFamily.GroceryDad.GroceryDadConfig;
 import GroceryFamily.GroceryDad.scraper.cache.Cache;
 import GroceryFamily.GroceryDad.scraper.tree.CategoryPermissionTree;
 import GroceryFamily.GroceryDad.scraper.tree.CategoryTree;
+import GroceryFamily.GroceryDad.scraper.tree.CategoryTreePath;
 import GroceryFamily.GroceryElders.api.client.ProductAPIClient;
 import GroceryFamily.GroceryElders.domain.Category;
 import GroceryFamily.GroceryElders.domain.Namespace;
@@ -31,21 +32,21 @@ public abstract class Scraper {
     private final GroceryDadConfig.Scraper config;
     private final WebDriver driver;
     private final ProductAPIClient client;
-    private final CategoryPermissionTree categoryPermissionTree;
+    private final CategoryPermissionTree categoryPermissions;
 
     protected Scraper(GroceryDadConfig.Scraper config, WebDriver driver, ProductAPIClient client) {
         this.config = config;
         this.driver = driver;
         this.client = client;
-        this.categoryPermissionTree = buildCategoryPermissionTree(config);
+        this.categoryPermissions = buildCategoryPermissionTree(config);
     }
 
     protected final void sleep() {
         Selenide.sleep((long) (config.sleepDelay.toMillis() * (1 + Math.random())));
     }
 
-    protected final boolean categoryAllowed(Stack<Category> path) {
-        return categoryPermissionTree.allowed(path);
+    protected final boolean categoryAllowed(CategoryTreePath path) {
+        return categoryPermissions.allowed(path);
     }
 
     public final void scrap() {

@@ -1,30 +1,23 @@
 package GroceryFamily.GroceryDad.scraper.view;
 
-import GroceryFamily.GroceryElders.domain.Category;
+import GroceryFamily.GroceryDad.scraper.tree.CategoryTreePath;
 import lombok.Builder;
-import lombok.ToString;
 
 import java.util.function.Supplier;
 
 @Builder
-@ToString
 public class CategoryView {
-    public final Category category;
-    @ToString.Exclude
-    private final Supplier<Boolean> selected;
-    @ToString.Exclude
+    public final CategoryTreePath path;
     private final Runnable select;
-    @ToString.Exclude
+    private final Supplier<Boolean> leaf;
     private final Runnable deselect;
-
-    // todo: remove
-    @Deprecated
-    public boolean isSelected() {
-        return selected.get();
-    }
 
     public void select() {
         select.run();
+    }
+
+    public boolean isLeaf() {
+        return leaf.get();
     }
 
     public void deselect() {

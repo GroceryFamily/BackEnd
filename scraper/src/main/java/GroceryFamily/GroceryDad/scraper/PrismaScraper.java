@@ -2,6 +2,7 @@ package GroceryFamily.GroceryDad.scraper;
 
 import GroceryFamily.GroceryDad.GroceryDadConfig;
 import GroceryFamily.GroceryDad.scraper.tree.CategoryTree;
+import GroceryFamily.GroceryDad.scraper.tree.CategoryTreePath;
 import GroceryFamily.GroceryDad.scraper.view.CategoryView;
 import GroceryFamily.GroceryElders.api.client.ProductAPIClient;
 import GroceryFamily.GroceryElders.domain.Currency;
@@ -36,40 +37,39 @@ class PrismaScraper extends Scraper {
         $("*[class*='js-cookie-notice'] *[class='close-icon']")
                 .shouldBe(visible)
                 .click();
+        sleep();
     }
 
     @Override
     protected void switchToEnglish() {
         $("*[data-language='en']").shouldBe(visible).click();
         $$("*[id='main-navigation'] li").shouldHave(itemWithText("Groceries"));
+        sleep();
     }
 
     @Override
     protected void scrap(Consumer<Product> handler) {
         var categories = new CategoryTree();
-        var path = new Stack<Category>();
-        topCategoryViews().forEach(topCategoryView -> {
-            path.push(topCategoryView.category);
-            topCategoryView.select();
-
-            leftCategoryViews().forEach(leftCategoryView -> {
-                path.push(leftCategoryView.category);
-                leftCategoryView.select();
-
-                categories.add(path);
-
-                leftCategoryView.deselect();
-                path.pop();
-            });
-
-            topCategoryView.deselect();
-            path.pop();
-        });
+        topCategoryViews().forEach(view -> scrap(view, handler, categories));
         categories.print();
+    }
+
+    private void scrap(CategoryView view, Consumer<Product> handler, CategoryTree categories) {
+        if (categoryAllowed(view.path)) {
+            view.select();
+            if (view.isLeaf()) {
+                categories.add(view.path);
+                // todo: scrap products
+            } else {
+                leftCategoryViews(view).forEach(child -> scrap(child, handler, categories));
+            }
+            view.deselect();
+        }
     }
 
     private List<CategoryView> topCategoryViews() {
         return topCategoryElements()
+                .shouldHave(sizeGreaterThan(0))
                 .asFixedIterable()
                 .stream()
                 .map(e -> Category
@@ -79,28 +79,21 @@ class PrismaScraper extends Scraper {
                         .build())
                 .map(category -> CategoryView
                         .builder()
-                        .category(category)
+                        .path(new CategoryTreePath(category))
                         .select(() -> {
-                            mainCategoryElement(category).shouldBe(visible).click();
+                            topCategoryElement(category).shouldBe(visible).click();
                             breadcrumbElement(category).shouldBe(visible);
+                            sleep();
                         })
+                        .leaf(() -> false)
                         .deselect(() -> {})
                         .build())
                 .toList();
     }
 
-    private SelenideElement mainCategoryElement(Category category) {
-        return topCategoryElements()
-                .findBy(text(category.name));
-    }
-
-    private ElementsCollection topCategoryElements() {
-        return $$("*[id='main-navigation'] a[href*='selection']")
-                .shouldHave(sizeGreaterThan(0));
-    }
-
-    private List<CategoryView> leftCategoryViews() {
-        return categoryElements()
+    private List<CategoryView> leftCategoryViews(CategoryView parent) {
+        return leftCategoryElements()
+                .shouldHave(sizeGreaterThan(0))
                 .asFixedIterable()
                 .stream()
                 .map(e -> Category
@@ -110,28 +103,34 @@ class PrismaScraper extends Scraper {
                         .build())
                 .map(category -> CategoryView
                         .builder()
-                        .category(category)
+                        .path(parent.path.add(category))
                         .select(() -> {
-                            categoryElement(category).shouldBe(visible).click();
+                            leftCategoryElement(category).shouldBe(visible).click();
                             breadcrumbElement(category).shouldBe(visible);
+                            sleep();
                         })
-                        .deselect(() -> assortmentElement().shouldBe(visible).click())
+                        .leaf(() -> leftCategoryElements().isEmpty())
+                        .deselect(() -> breadcrumbElement(parent.path.last()).shouldBe(visible).click())
                         .build())
                 .toList();
     }
 
-    private SelenideElement categoryElement(Category category) {
-        return categoryElements()
-                .findBy(text(category.name));
+    private SelenideElement topCategoryElement(Category category) {
+        return topCategoryElements()
+                .findBy(attributeMatching("href", format(".*%s.*", category.code)));
     }
 
-    private ElementsCollection categoryElements() {
-        return $$("*[role='navigation'] a[data-category-id]")
-                .shouldHave(sizeGreaterThan(0));
+    private ElementsCollection topCategoryElements() {
+        return $$("*[id='main-navigation'] a[href*='selection']");
     }
 
-    private SelenideElement assortmentElement() {
-        return $("*[data-section='assortments']");
+    private SelenideElement leftCategoryElement(Category category) {
+        return leftCategoryElements()
+                .findBy(attributeMatching("href", format(".*%s.*", category.code)));
+    }
+
+    private ElementsCollection leftCategoryElements() {
+        return $$("*[role='navigation'] a[data-category-id]");
     }
 
     private SelenideElement breadcrumbElement(Category category) {
@@ -140,8 +139,7 @@ class PrismaScraper extends Scraper {
     }
 
     private ElementsCollection breadcrumbElements() {
-        return $$("*[class='breadcrumb-item'] *[class=name] a")
-                .shouldHave(sizeGreaterThan(0));
+        return $$("*[class='breadcrumb-item'] *[class=name] a");
     }
 
     @Override
