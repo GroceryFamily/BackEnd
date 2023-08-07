@@ -16,7 +16,7 @@ class Tree<KEY, VALUE> {
 
         void print(String indent, StringBuilder sb) {
             for (var child : children.values()) {
-                sb.append(indent).append(child.value).append("\n");
+                sb.append(indent).append(child.value);
                 child.print(indent + "  ", sb);
             }
         }
@@ -42,9 +42,10 @@ class Tree<KEY, VALUE> {
         }
     }
 
-    public final void print() {
+    @Override
+    public String toString() {
         var sb = new StringBuilder();
-        root.print("", sb);
-        System.out.println(sb);
+        root.print("\n", sb);
+        return sb.toString();
     }
 }

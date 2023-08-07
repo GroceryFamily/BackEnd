@@ -1,7 +1,7 @@
 package GroceryFamily.GroceryDad.scraper;
 
 import GroceryFamily.GroceryDad.GroceryDadConfig;
-import GroceryFamily.GroceryDad.scraper.cache.Cache;
+import GroceryFamily.GroceryDad.scraper.page.Page;
 import GroceryFamily.GroceryDad.scraper.tree.CategoryPermissionTree;
 import GroceryFamily.GroceryDad.scraper.tree.CategoryTree;
 import GroceryFamily.GroceryDad.scraper.tree.CategoryTreePath;
@@ -9,8 +9,6 @@ import GroceryFamily.GroceryElders.api.client.ProductAPIClient;
 import GroceryFamily.GroceryElders.domain.Namespace;
 import GroceryFamily.GroceryElders.domain.Product;
 import com.codeborne.selenide.Configuration;
-import com.codeborne.selenide.Selenide;
-import io.github.antivoland.sfc.FileCache;
 import lombok.experimental.SuperBuilder;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -36,6 +34,7 @@ public abstract class Scraper {
 
     public final void scrap() {
         Configuration.timeout = config.timeout.toMillis();
+        Page.sleepDelay = config.sleepDelay;
         using(driver, () -> {
             open(config.uri);
             waitUntilPageLoads();
@@ -62,10 +61,6 @@ public abstract class Scraper {
 
     protected abstract void scrap(Consumer<Product> handler);
 
-    protected final void sleep() {
-        Selenide.sleep((long) (config.sleepDelay.toMillis() * (1 + Math.random())));
-    }
-
     protected final boolean categoryAllowed(CategoryTreePath path) {
         return categoryPermissions.allowed(path);
     }
@@ -80,10 +75,6 @@ public abstract class Scraper {
     @Deprecated
     protected void scrap(List<String> categories, Consumer<Product> handler) {
         throw new UnsupportedOperationException("Method not supported");
-    }
-
-    private FileCache<Product> cache(List<String> categories) {
-        return Cache.factory(config.cache.directory).get(categories);
     }
 
     private void waitUntilPageLoads() {

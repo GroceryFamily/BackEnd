@@ -10,6 +10,7 @@ import java.math.BigDecimal;
 import java.util.*;
 import java.util.function.Consumer;
 
+import static GroceryFamily.GroceryDad.scraper.page.Page.sleep;
 import static com.codeborne.selenide.CollectionCondition.itemWithText;
 import static com.codeborne.selenide.CollectionCondition.sizeGreaterThan;
 import static com.codeborne.selenide.Condition.text;

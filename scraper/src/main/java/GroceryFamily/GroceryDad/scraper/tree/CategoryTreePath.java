@@ -2,6 +2,8 @@ package GroceryFamily.GroceryDad.scraper.tree;
 
 import GroceryFamily.GroceryElders.domain.Category;
 
+import java.util.Set;
+
 public class CategoryTreePath {
     final Category[] categories;
 
@@ -22,5 +24,9 @@ public class CategoryTreePath {
         System.arraycopy(this.categories, 0, categories, 0, this.categories.length);
         categories[this.categories.length] = category;
         return new CategoryTreePath(categories);
+    }
+
+    public Set<Category> categories() {
+        return Set.of(categories);
     }
 }
