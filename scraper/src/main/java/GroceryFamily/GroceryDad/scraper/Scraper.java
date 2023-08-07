@@ -34,14 +34,6 @@ public abstract class Scraper {
     private final ProductAPIClient client;
     private final CategoryPermissionTree categoryPermissions;
 
-    protected final void sleep() {
-        Selenide.sleep((long) (config.sleepDelay.toMillis() * (1 + Math.random())));
-    }
-
-    protected final boolean categoryAllowed(CategoryTreePath path) {
-        return categoryPermissions.allowed(path);
-    }
-
     public final void scrap() {
         Configuration.timeout = config.timeout.toMillis();
         using(driver, () -> {
@@ -68,16 +60,27 @@ public abstract class Scraper {
 
     protected abstract void switchToEnglish();
 
+    protected abstract void scrap(Consumer<Product> handler);
+
+    protected final void sleep() {
+        Selenide.sleep((long) (config.sleepDelay.toMillis() * (1 + Math.random())));
+    }
+
+    protected final boolean categoryAllowed(CategoryTreePath path) {
+        return categoryPermissions.allowed(path);
+    }
+
     // todo: remove
+    @Deprecated
     protected CategoryTree buildCategoryTree() {
         throw new UnsupportedOperationException("Method not supported");
     }
 
-    ;
-
-    protected abstract void scrap(Consumer<Product> handler);
-
-    protected abstract void scrap(List<String> categories, Consumer<Product> handler);
+    // todo: remove
+    @Deprecated
+    protected void scrap(List<String> categories, Consumer<Product> handler) {
+        throw new UnsupportedOperationException("Method not supported");
+    }
 
     private FileCache<Product> cache(List<String> categories) {
         return Cache.factory(config.cache.directory).get(categories);
@@ -92,7 +95,7 @@ public abstract class Scraper {
     }
 
     public static Scraper create(GroceryDadConfig.Scraper config, WebDriver driver, ProductAPIClient client) {
-        return builder(config.namespace)
+        return builder(config)
                 .config(config)
                 .driver(driver)
                 .client(client)
@@ -100,12 +103,12 @@ public abstract class Scraper {
                 .build();
     }
 
-    private static ScraperBuilder<?, ?> builder(String namespace) {
-        return switch (namespace) {
+    private static ScraperBuilder<?, ?> builder(GroceryDadConfig.Scraper config) {
+        return switch (config.namespace) {
             case Namespace.BARBORA -> BarboraScraper.builder();
             case Namespace.PRISMA -> PrismaScraper.builder();
             case Namespace.RIMI -> RimiScraper.builder();
-            default -> throw new UnsupportedOperationException(format("Unrecognized namespace '%s'", namespace));
+            default -> throw new UnsupportedOperationException(format("Unrecognized namespace '%s'", config.namespace));
         };
     }
 

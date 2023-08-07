@@ -3,8 +3,8 @@ package GroceryFamily.GroceryDad.scraper;
 import GroceryFamily.GroceryDad.scraper.tree.CategoryTree;
 import GroceryFamily.GroceryDad.scraper.tree.CategoryTreePath;
 import GroceryFamily.GroceryDad.scraper.view.CategoryView;
-import GroceryFamily.GroceryElders.domain.Currency;
 import GroceryFamily.GroceryElders.domain.*;
+import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
 import lombok.experimental.SuperBuilder;
@@ -12,12 +12,16 @@ import lombok.experimental.SuperBuilder;
 import java.math.BigDecimal;
 import java.net.URLDecoder;
 import java.nio.charset.StandardCharsets;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
+import java.util.Set;
 import java.util.function.Consumer;
 
 import static com.codeborne.selenide.CollectionCondition.itemWithText;
 import static com.codeborne.selenide.CollectionCondition.sizeGreaterThan;
-import static com.codeborne.selenide.Condition.*;
+import static com.codeborne.selenide.Condition.attributeMatching;
+import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.$$;
 import static java.lang.String.format;
@@ -28,16 +32,14 @@ import static org.apache.commons.lang3.StringUtils.substringBeforeLast;
 class PrismaScraper extends Scraper {
     @Override
     protected void acceptOrRejectCookies() {
-        $("*[class*='js-cookie-notice'] *[class='close-icon']")
-                .shouldBe(visible)
-                .click();
+        $("*[class*='js-cookie-notice'] *[class='close-icon']").shouldBe(visible).click();
         sleep();
     }
 
     @Override
     protected void switchToEnglish() {
         $("*[data-language='en']").shouldBe(visible).click();
-        $$("*[id='main-navigation'] li").shouldHave(itemWithText("Groceries"));
+        topCategoryElements().shouldHave(itemWithText("Groceries"));
         sleep();
     }
 
@@ -53,7 +55,8 @@ class PrismaScraper extends Scraper {
             view.select();
             if (view.isLeaf()) {
                 categories.add(view.path);
-                // todo: scrap products
+                products().forEach(handler);
+                // todo: scrap other product pages
             } else {
                 leftCategoryViews(view).forEach(child -> scrap(child, handler, categories));
             }
@@ -110,8 +113,7 @@ class PrismaScraper extends Scraper {
     }
 
     private SelenideElement topCategoryElement(Category category) {
-        return topCategoryElements()
-                .findBy(attributeMatching("href", format(".*%s.*", category.code)));
+        return topCategoryElements().findBy(hrefContains(category.code));
     }
 
     private ElementsCollection topCategoryElements() {
@@ -119,8 +121,7 @@ class PrismaScraper extends Scraper {
     }
 
     private SelenideElement leftCategoryElement(Category category) {
-        return leftCategoryElements()
-                .findBy(attributeMatching("href", format(".*%s.*", category.code)));
+        return leftCategoryElements().findBy(hrefContains(category.code));
     }
 
     private ElementsCollection leftCategoryElements() {
@@ -128,43 +129,15 @@ class PrismaScraper extends Scraper {
     }
 
     private SelenideElement breadcrumbElement(Category category) {
-        return breadcrumbElements()
-                .findBy(attributeMatching("href", format(".*%s.*", category.code)));
+        return breadcrumbElements().findBy(hrefContains(category.code));
     }
 
     private ElementsCollection breadcrumbElements() {
         return $$("*[class='breadcrumb-item'] *[class=name] a");
     }
 
-    @Override
-    protected void scrap(List<String> categories, Consumer<Product> handler) {
-        /* todo: remove
-        category(categories);
-        products().forEach(handler);
-        // todo: finalize
-         */
-    }
-
-    static void category(Stack<String> categories) {
-        if (categories.size() != 3) throw new IllegalArgumentException("Requires exactly three categories");
-
-        $$("*[class='main-navigation-items'] a")
-                .shouldHave(sizeGreaterThan(0))
-                .findBy(text(categories.get(0)))
-                .shouldBe(visible)
-                .click();
-
-        $$("*[class*='left-navigation'] a")
-                .shouldHave(sizeGreaterThan(0))
-                .findBy(text(categories.get(1)))
-                .shouldBe(visible)
-                .click();
-
-        $$("*[class*='categories-shelf'] a")
-                .shouldHave(sizeGreaterThan(0))
-                .findBy(text(categories.get(2)))
-                .shouldBe(visible)
-                .click();
+    private static Condition hrefContains(String value) {
+        return attributeMatching("href", format(".*%s.*", value));
     }
 
     static Collection<Product> products() {
