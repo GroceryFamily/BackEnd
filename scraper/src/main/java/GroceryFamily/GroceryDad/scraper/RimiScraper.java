@@ -43,6 +43,11 @@ class RimiScraper extends Scraper {
     }
 
     @Override
+    protected void scrap(Consumer<Product> handler) {
+        throw new UnsupportedOperationException("Not implemented yet");
+    }
+
+    @Override
     protected void scrap(List<String> categories, Consumer<Product> handler) {
         category(categories);
         products().forEach(handler);

@@ -45,13 +45,18 @@ public abstract class Scraper {
             waitUntilPageLoads();
             acceptOrRejectCookies();
             switchToEnglish();
+            /* todo: remove
             var categoryTree = buildCategoryTree();
             categoryTree.print();
+             */
+            scrap(client::update);
+            /* todo: remove
             config.categories.forEach(categories -> {
                 FileCache<Product> cache = cache(categories); // todo: do we need cache at all?
                 scrap(categories, product -> cache.save(product.code, product));
                 cache.list().forEach(client::update);
             });
+             */
         });
     }
 
@@ -60,6 +65,8 @@ public abstract class Scraper {
     protected abstract void switchToEnglish();
 
     protected abstract CategoryTree buildCategoryTree();
+
+    protected abstract void scrap(Consumer<Product> handler);
 
     protected abstract void scrap(List<String> categories, Consumer<Product> handler);
 
