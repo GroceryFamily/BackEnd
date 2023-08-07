@@ -2,7 +2,10 @@ package GroceryFamily.GroceryDad.scraper;
 
 import GroceryFamily.GroceryDad.GroceryDadConfig;
 import GroceryFamily.GroceryDad.scraper.cache.Cache;
+import GroceryFamily.GroceryDad.scraper.tree.CategoryPermissionTree;
+import GroceryFamily.GroceryDad.scraper.tree.CategoryTree;
 import GroceryFamily.GroceryElders.api.client.ProductAPIClient;
+import GroceryFamily.GroceryElders.domain.Category;
 import GroceryFamily.GroceryElders.domain.Namespace;
 import GroceryFamily.GroceryElders.domain.Product;
 import com.codeborne.selenide.Configuration;
@@ -13,6 +16,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.List;
+import java.util.Stack;
 import java.util.function.Consumer;
 
 import static com.codeborne.selenide.Selenide.open;
@@ -27,15 +31,21 @@ public abstract class Scraper {
     private final GroceryDadConfig.Scraper config;
     private final WebDriver driver;
     private final ProductAPIClient client;
+    private final CategoryPermissionTree categoryPermissionTree;
 
     protected Scraper(GroceryDadConfig.Scraper config, WebDriver driver, ProductAPIClient client) {
         this.config = config;
         this.driver = driver;
         this.client = client;
+        this.categoryPermissionTree = buildCategoryPermissionTree(config);
     }
 
     protected final void sleep() {
         Selenide.sleep((long) (config.sleepDelay.toMillis() * (1 + Math.random())));
+    }
+
+    protected final boolean categoryAllowed(Stack<Category> path) {
+        return categoryPermissionTree.allowed(path);
     }
 
     public final void scrap() {
@@ -64,7 +74,12 @@ public abstract class Scraper {
 
     protected abstract void switchToEnglish();
 
-    protected abstract CategoryTree buildCategoryTree();
+    // todo: remove
+    protected CategoryTree buildCategoryTree() {
+        throw new UnsupportedOperationException("Method not supported");
+    }
+
+    ;
 
     protected abstract void scrap(Consumer<Product> handler);
 
@@ -80,6 +95,12 @@ public abstract class Scraper {
 
     private static boolean pageIsReady(WebDriver driver) {
         return ((JavascriptExecutor) driver).executeScript("return document.readyState").equals("complete");
+    }
+
+    private static CategoryPermissionTree buildCategoryPermissionTree(GroceryDadConfig.Scraper config) {
+        var tree = new CategoryPermissionTree();
+        config.categories.forEach(tree::add);
+        return tree;
     }
 
     public static Scraper create(GroceryDadConfig.Scraper config, WebDriver driver, ProductAPIClient client) {

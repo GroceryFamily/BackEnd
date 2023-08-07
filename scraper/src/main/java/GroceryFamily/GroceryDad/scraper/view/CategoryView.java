@@ -1,4 +1,4 @@
-package GroceryFamily.GroceryDad.scraper;
+package GroceryFamily.GroceryDad.scraper.view;
 
 import GroceryFamily.GroceryElders.domain.Category;
 import lombok.Builder;
@@ -8,7 +8,7 @@ import java.util.function.Supplier;
 
 @Builder
 @ToString
-class CategoryView {
+public class CategoryView {
     public final Category category;
     @ToString.Exclude
     private final Supplier<Boolean> selected;
@@ -17,15 +17,17 @@ class CategoryView {
     @ToString.Exclude
     private final Runnable deselect;
 
-    boolean isSelected() {
+    // todo: remove
+    @Deprecated
+    public boolean isSelected() {
         return selected.get();
     }
 
-    void select() {
+    public void select() {
         select.run();
     }
 
-    void deselect() {
+    public void deselect() {
         deselect.run();
     }
 }

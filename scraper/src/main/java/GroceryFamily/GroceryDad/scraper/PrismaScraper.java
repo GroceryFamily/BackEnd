@@ -1,6 +1,8 @@
 package GroceryFamily.GroceryDad.scraper;
 
 import GroceryFamily.GroceryDad.GroceryDadConfig;
+import GroceryFamily.GroceryDad.scraper.tree.CategoryTree;
+import GroceryFamily.GroceryDad.scraper.view.CategoryView;
 import GroceryFamily.GroceryElders.api.client.ProductAPIClient;
 import GroceryFamily.GroceryElders.domain.Currency;
 import GroceryFamily.GroceryElders.domain.*;
@@ -24,6 +26,7 @@ import static org.apache.commons.lang3.StringUtils.substringAfterLast;
 import static org.apache.commons.lang3.StringUtils.substringBeforeLast;
 
 class PrismaScraper extends Scraper {
+    // todo: replace with super builder
     PrismaScraper(GroceryDadConfig.Scraper config, WebDriver driver, ProductAPIClient client) {
         super(config, driver, client);
     }
@@ -42,36 +45,31 @@ class PrismaScraper extends Scraper {
     }
 
     @Override
-    protected CategoryTree buildCategoryTree() {
-        throw new UnsupportedOperationException("Not implemented yet");
-    }
-
-    @Override
     protected void scrap(Consumer<Product> handler) {
-        var tree = new CategoryTree();
-        var stack = new Stack<Category>();
-        mainCategoryViews().forEach(rootCategoryView -> {
-            stack.push(rootCategoryView.category);
-            rootCategoryView.select();
+        var categories = new CategoryTree();
+        var path = new Stack<Category>();
+        topCategoryViews().forEach(topCategoryView -> {
+            path.push(topCategoryView.category);
+            topCategoryView.select();
 
-            categoryViews().forEach(categoryView -> {
-                stack.push(categoryView.category);
-                categoryView.select();
+            leftCategoryViews().forEach(leftCategoryView -> {
+                path.push(leftCategoryView.category);
+                leftCategoryView.select();
 
-                tree.add(stack);
+                categories.add(path);
 
-                categoryView.deselect();
-                stack.pop();
+                leftCategoryView.deselect();
+                path.pop();
             });
 
-            rootCategoryView.deselect();
-            stack.pop();
+            topCategoryView.deselect();
+            path.pop();
         });
-        tree.print();
+        categories.print();
     }
 
-    private List<CategoryView> mainCategoryViews() {
-        return mainCategoryElements()
+    private List<CategoryView> topCategoryViews() {
+        return topCategoryElements()
                 .asFixedIterable()
                 .stream()
                 .map(e -> Category
@@ -92,16 +90,16 @@ class PrismaScraper extends Scraper {
     }
 
     private SelenideElement mainCategoryElement(Category category) {
-        return mainCategoryElements()
+        return topCategoryElements()
                 .findBy(text(category.name));
     }
 
-    private ElementsCollection mainCategoryElements() {
+    private ElementsCollection topCategoryElements() {
         return $$("*[id='main-navigation'] a[href*='selection']")
                 .shouldHave(sizeGreaterThan(0));
     }
 
-    private List<CategoryView> categoryViews() {
+    private List<CategoryView> leftCategoryViews() {
         return categoryElements()
                 .asFixedIterable()
                 .stream()
