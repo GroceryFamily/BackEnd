@@ -1,6 +1,5 @@
 package GroceryFamily.GroceryDad.scraper;
 
-import GroceryFamily.GroceryDad.scraper.tree.CategoryTree;
 import GroceryFamily.GroceryElders.domain.*;
 import com.codeborne.selenide.SelenideElement;
 import lombok.experimental.SuperBuilder;
@@ -31,11 +30,6 @@ class RimiScraper extends Scraper {
     @Override
     protected void switchToEnglish() {
         // do nothing
-    }
-
-    @Override
-    protected CategoryTree buildCategoryTree() {
-        throw new UnsupportedOperationException("Not implemented yet");
     }
 
     @Override

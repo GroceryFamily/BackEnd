@@ -9,7 +9,7 @@ public class CategoryTree extends Tree<String, Category> {
         super(category -> category.name);
     }
 
-    public void add(CategoryTreePath path) {
+    public void add(CategoryTreePath path) { // todo: value as second argument
         add(List.of(path.categories));
     }
 }

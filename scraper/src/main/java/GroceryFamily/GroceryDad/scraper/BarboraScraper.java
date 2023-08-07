@@ -1,17 +1,22 @@
 package GroceryFamily.GroceryDad.scraper;
 
 import GroceryFamily.GroceryDad.scraper.tree.CategoryTree;
-import GroceryFamily.GroceryElders.domain.Currency;
+import GroceryFamily.GroceryDad.scraper.tree.CategoryTreePath;
+import GroceryFamily.GroceryDad.scraper.view.CategoryView;
 import GroceryFamily.GroceryElders.domain.*;
 import com.codeborne.selenide.SelenideElement;
 import lombok.experimental.SuperBuilder;
+import lombok.extern.slf4j.Slf4j;
 
 import java.math.BigDecimal;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
+import java.util.Set;
 import java.util.function.Consumer;
 
+import static GroceryFamily.GroceryDad.scraper.BarboraPage.*;
 import static GroceryFamily.GroceryDad.scraper.page.Page.sleep;
-import static com.codeborne.selenide.CollectionCondition.itemWithText;
 import static com.codeborne.selenide.CollectionCondition.sizeGreaterThan;
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Condition.visible;
@@ -20,6 +25,7 @@ import static com.codeborne.selenide.Selenide.$$;
 import static java.lang.String.format;
 import static org.apache.commons.lang3.StringUtils.substringAfterLast;
 
+@Slf4j
 @SuperBuilder
 class BarboraScraper extends Scraper {
     @Override
@@ -27,6 +33,7 @@ class BarboraScraper extends Scraper {
         $("#CybotCookiebotDialogBodyLevelButtonLevelOptinDeclineAll")
                 .shouldBe(visible)
                 .click();
+        sleep();
     }
 
     @Override
@@ -36,54 +43,108 @@ class BarboraScraper extends Scraper {
                 .hover();
         sleep();
         $$("#fti-header-language-dropdown li")
-                .shouldHave(sizeGreaterThan(0))
                 .findBy(text("English"))
                 .shouldBe(visible)
                 .click();
         $$("*[id*='fti-desktop-menu-item']")
-                .shouldHave(itemWithText("Products"))
                 .findBy(text("Products"))
                 .shouldBe(visible);
     }
 
     @Override
-    protected CategoryTree buildCategoryTree() {
-        var tree = new CategoryTree();
-        var stack = new Stack<Category>();
-        for (var lvl1 : $$("*[id*='fti-desktop-category']").shouldHave(sizeGreaterThan(0))) {
-            stack.push(Category
-                    .builder()
-                    .code(substringAfterLast(lvl1.attr("href"), "/"))
-                    .name(lvl1.text())
-                    .build());
-            lvl1.hover();
-
-            for (var lvl2 : $$("*[id*='fti-category-tree-child']").shouldHave(sizeGreaterThan(0))) {
-                stack.push(Category
-                        .builder()
-                        .code(substringAfterLast(lvl2.attr("href"), "/"))
-                        .name(lvl2.$("div").text())
-                        .build());
-
-                for (var lvl3 : lvl2.$$("*[id*='fti-category-tree-grand-child']").shouldHave(sizeGreaterThan(0))) {
-                    stack.push(Category
-                            .builder()
-                            .code(substringAfterLast(lvl3.attr("href"), "/"))
-                            .name(lvl3.text())
-                            .build());
-                    tree.add(stack);
-                    stack.pop();
-                }
-                stack.pop();
-            }
-            stack.pop();
-        }
-        return tree;
+    protected void scrap(Consumer<Product> handler) {
+        var categories = buildCategoryTree();
+        log.info("[BARBORA] Categories: {}", categories);
+        // todo: scrap
     }
 
-    @Override
-    protected void scrap(Consumer<Product> handler) {
-        throw new UnsupportedOperationException("Not implemented yet");
+    private static CategoryTree buildCategoryTree() {
+        var categories = new CategoryTree();
+        categoryViews().forEach(view -> {
+            view.e().hover();
+            childCategoryViews(view).forEach(child -> {
+                grandchildCategoryViews(view, child).forEach(grandchild -> {
+                    categories.add(child.path);
+                });
+            });
+        });
+        return categories;
+    }
+
+    private static List<CategoryView> categoryViews() {
+        return categoryElements()
+                .shouldHave(sizeGreaterThan(0))
+                .asFixedIterable()
+                .stream()
+                .map(e -> Category
+                        .builder()
+                        .code(substringAfterLast(e.attr("href"), "/"))
+                        .name(e.text())
+                        .build())
+                .map(category -> CategoryView
+                        .builder()
+                        .path(new CategoryTreePath(category))
+                        .select(() -> categoryElement(category).click())
+                        .leaf(() -> false)
+                        .deselect(() -> {})
+                        .e(() -> categoryElement(category))
+                        .build())
+                .toList();
+    }
+
+    private static List<CategoryView> childCategoryViews(CategoryView parent) {
+        return childCategoryElements()
+                .shouldHave(sizeGreaterThan(0))
+                .asFixedIterable()
+                .stream()
+                .map(e -> Category
+                        .builder()
+                        .code(substringAfterLast(e.attr("href"), "/"))
+                        .name(e.$("div").text())
+                        .build())
+                .map(category -> CategoryView
+                        .builder()
+                        .path(parent.path.add(category))
+                        .select(() -> {
+                            parent.e().hover();
+                            childCategoryElement(category).click();
+
+                        })
+                        .leaf(() -> false)
+                        .deselect(() -> {})
+                        .e(() -> {
+                            parent.e().hover();
+                            return childCategoryElement(category);
+                        })
+                        .build())
+                .toList();
+    }
+
+    private static List<CategoryView> grandchildCategoryViews(CategoryView grandparent, CategoryView parent) {
+        return grandchildCategoryElements(parent.e())
+                .shouldHave(sizeGreaterThan(0))
+                .asFixedIterable()
+                .stream()
+                .map(e -> Category
+                        .builder()
+                        .code(substringAfterLast(e.attr("href"), "/"))
+                        .name(e.text())
+                        .build())
+                .map(category -> CategoryView
+                        .builder()
+                        .path(parent.path.add(category))
+                        .select(() -> {
+                            grandparent.e().hover();
+                            grandchildCategoryElement(category).click();
+                        })
+                        .leaf(() -> true)
+                        .deselect(() -> {})
+                        .e(() -> {
+                            grandparent.e().hover();
+                            return grandchildCategoryElement(category);
+                        })
+                        .build())
+                .toList();
     }
 
     @Override

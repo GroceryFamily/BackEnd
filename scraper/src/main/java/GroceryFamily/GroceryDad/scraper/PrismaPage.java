@@ -1,18 +1,14 @@
 package GroceryFamily.GroceryDad.scraper;
 
 import GroceryFamily.GroceryElders.domain.Category;
-import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
 
-import static GroceryFamily.GroceryDad.scraper.page.Page.scrollDown;
-import static GroceryFamily.GroceryDad.scraper.page.Page.sleep;
+import static GroceryFamily.GroceryDad.scraper.page.Page.*;
 import static com.codeborne.selenide.CollectionCondition.sizeGreaterThan;
-import static com.codeborne.selenide.Condition.attributeMatching;
 import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.$$;
-import static java.lang.String.format;
 
 class PrismaPage {
     static SelenideElement topCategoryElement(Category category) {
@@ -37,10 +33,6 @@ class PrismaPage {
 
     static ElementsCollection breadcrumbElements() {
         return $$("*[class='breadcrumb-item'] *[class='name'] a");
-    }
-
-    static Condition hrefContains(String value) {
-        return attributeMatching("href", format(".*%s.*", value));
     }
 
     static ElementsCollection productElements() {

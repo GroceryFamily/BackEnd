@@ -1,12 +1,15 @@
 package GroceryFamily.GroceryDad.scraper.page;
 
+import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.Selenide;
 
 import java.net.URLDecoder;
 import java.nio.charset.StandardCharsets;
 import java.time.Duration;
 
+import static com.codeborne.selenide.Condition.attributeMatching;
 import static com.codeborne.selenide.Selenide.executeJavaScript;
+import static java.lang.String.format;
 
 public class Page {
     public static Duration sleepDelay = Duration.ofSeconds(1);
@@ -25,5 +28,9 @@ public class Page {
 
     public static String decodeUrl(String url) {
         return URLDecoder.decode(url, StandardCharsets.UTF_8);
+    }
+
+    public static Condition hrefContains(String value) {
+        return attributeMatching("href", format(".*%s.*", value));
     }
 }

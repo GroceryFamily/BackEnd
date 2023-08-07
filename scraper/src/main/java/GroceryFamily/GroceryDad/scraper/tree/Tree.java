@@ -1,6 +1,6 @@
 package GroceryFamily.GroceryDad.scraper.tree;
 
-import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.function.Function;
@@ -8,10 +8,15 @@ import java.util.function.Function;
 class Tree<KEY, VALUE> {
     static class Node<KEY, VALUE> {
         final VALUE value;
-        final Map<KEY, Node<KEY, VALUE>> children = new HashMap<>();
+        final Map<KEY, Node<KEY, VALUE>> children = new LinkedHashMap<>();
 
         Node(VALUE value) {
             this.value = value;
+        }
+
+        public List<VALUE> leaves() {
+            if (children.isEmpty()) return List.of(value);
+            return children.values().stream().flatMap(child -> child.leaves().stream()).toList();
         }
 
         void print(String indent, StringBuilder sb) {
@@ -40,6 +45,10 @@ class Tree<KEY, VALUE> {
             }
             node = child;
         }
+    }
+
+    public List<VALUE> leaves() {
+        return root.leaves();
     }
 
     @Override

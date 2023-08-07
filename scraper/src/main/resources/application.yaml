@@ -2,8 +2,8 @@ GroceryDad:
   api.uri: http://localhost:8080
 
   enabled:
-    #    - barbora
-    - prisma
+    - barbora
+  #    - prisma
   #    - rimi
 
   scrapers:
@@ -14,8 +14,8 @@ GroceryDad:
         directory: cache/barbora
       categories:
         - [ "Vegetables and fruits", "Fruits and berries", "Bananas" ]
-        - [ "Household and pets", "Pets", "Dry dog food" ]
-        - [ "Dairy and eggs", "Milk", "Pasteurised milk" ]
+#        - [ "Household and pets", "Pets", "Dry dog food" ]
+#        - [ "Dairy and eggs", "Milk", "Pasteurised milk" ]
       timeout: 10s
       sleepDelay: 100ms
 

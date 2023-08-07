@@ -3,7 +3,6 @@ package GroceryFamily.GroceryDad.scraper;
 import GroceryFamily.GroceryDad.GroceryDadConfig;
 import GroceryFamily.GroceryDad.scraper.page.Page;
 import GroceryFamily.GroceryDad.scraper.tree.CategoryPermissionTree;
-import GroceryFamily.GroceryDad.scraper.tree.CategoryTree;
 import GroceryFamily.GroceryDad.scraper.tree.CategoryTreePath;
 import GroceryFamily.GroceryElders.api.client.ProductAPIClient;
 import GroceryFamily.GroceryElders.domain.Namespace;
@@ -63,12 +62,6 @@ public abstract class Scraper {
 
     protected final boolean categoryAllowed(CategoryTreePath path) {
         return categoryPermissions.allowed(path);
-    }
-
-    // todo: remove
-    @Deprecated
-    protected CategoryTree buildCategoryTree() {
-        throw new UnsupportedOperationException("Method not supported");
     }
 
     // todo: remove

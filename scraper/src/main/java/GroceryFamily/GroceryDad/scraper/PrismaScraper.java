@@ -77,6 +77,7 @@ class PrismaScraper extends Scraper {
                         })
                         .leaf(() -> false)
                         .deselect(() -> {})
+                        .e(() -> topCategoryElement(category))
                         .build())
                 .toList();
     }
@@ -102,8 +103,9 @@ class PrismaScraper extends Scraper {
                         .leaf(() -> leftCategoryElements().isEmpty())
                         .deselect(() -> {
                             scrollUp();
-                            breadcrumbElement(parent.path.last()).shouldBe(visible).click();
+                            breadcrumbElement(parent.category()).shouldBe(visible).click();
                         })
+                        .e(() -> leftCategoryElement(category))
                         .build())
                 .toList();
     }
