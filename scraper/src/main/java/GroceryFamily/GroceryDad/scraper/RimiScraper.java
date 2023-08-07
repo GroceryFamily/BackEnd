@@ -1,11 +1,9 @@
 package GroceryFamily.GroceryDad.scraper;
 
-import GroceryFamily.GroceryDad.GroceryDadConfig;
 import GroceryFamily.GroceryDad.scraper.tree.CategoryTree;
-import GroceryFamily.GroceryElders.api.client.ProductAPIClient;
 import GroceryFamily.GroceryElders.domain.*;
 import com.codeborne.selenide.SelenideElement;
-import org.openqa.selenium.WebDriver;
+import lombok.experimental.SuperBuilder;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
@@ -21,11 +19,8 @@ import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.$$;
 import static java.lang.String.format;
 
+@SuperBuilder
 class RimiScraper extends Scraper {
-    RimiScraper(GroceryDadConfig.Scraper config, WebDriver driver, ProductAPIClient client) {
-        super(config, driver, client);
-    }
-
     @Override
     protected void acceptOrRejectCookies() {
         $("#CybotCookiebotDialogBodyLevelButtonLevelOptinDeclineAll")

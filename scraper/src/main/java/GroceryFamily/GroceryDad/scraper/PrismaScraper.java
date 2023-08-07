@@ -1,15 +1,13 @@
 package GroceryFamily.GroceryDad.scraper;
 
-import GroceryFamily.GroceryDad.GroceryDadConfig;
 import GroceryFamily.GroceryDad.scraper.tree.CategoryTree;
 import GroceryFamily.GroceryDad.scraper.tree.CategoryTreePath;
 import GroceryFamily.GroceryDad.scraper.view.CategoryView;
-import GroceryFamily.GroceryElders.api.client.ProductAPIClient;
 import GroceryFamily.GroceryElders.domain.Currency;
 import GroceryFamily.GroceryElders.domain.*;
 import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
-import org.openqa.selenium.WebDriver;
+import lombok.experimental.SuperBuilder;
 
 import java.math.BigDecimal;
 import java.net.URLDecoder;
@@ -26,12 +24,8 @@ import static java.lang.String.format;
 import static org.apache.commons.lang3.StringUtils.substringAfterLast;
 import static org.apache.commons.lang3.StringUtils.substringBeforeLast;
 
+@SuperBuilder
 class PrismaScraper extends Scraper {
-    // todo: replace with super builder
-    PrismaScraper(GroceryDadConfig.Scraper config, WebDriver driver, ProductAPIClient client) {
-        super(config, driver, client);
-    }
-
     @Override
     protected void acceptOrRejectCookies() {
         $("*[class*='js-cookie-notice'] *[class='close-icon']")

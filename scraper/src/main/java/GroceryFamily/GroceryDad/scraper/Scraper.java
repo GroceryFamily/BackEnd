@@ -6,18 +6,17 @@ import GroceryFamily.GroceryDad.scraper.tree.CategoryPermissionTree;
 import GroceryFamily.GroceryDad.scraper.tree.CategoryTree;
 import GroceryFamily.GroceryDad.scraper.tree.CategoryTreePath;
 import GroceryFamily.GroceryElders.api.client.ProductAPIClient;
-import GroceryFamily.GroceryElders.domain.Category;
 import GroceryFamily.GroceryElders.domain.Namespace;
 import GroceryFamily.GroceryElders.domain.Product;
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.Selenide;
 import io.github.antivoland.sfc.FileCache;
+import lombok.experimental.SuperBuilder;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.List;
-import java.util.Stack;
 import java.util.function.Consumer;
 
 import static com.codeborne.selenide.Selenide.open;
@@ -28,18 +27,12 @@ import static java.lang.String.format;
 //  https://en.wikipedia.org/wiki/Robots.txt
 //  https://github.com/google/robotstxt-java
 //  https://developers.google.com/search/docs/crawling-indexing/robots/robots_txt
+@SuperBuilder()
 public abstract class Scraper {
     private final GroceryDadConfig.Scraper config;
     private final WebDriver driver;
     private final ProductAPIClient client;
     private final CategoryPermissionTree categoryPermissions;
-
-    protected Scraper(GroceryDadConfig.Scraper config, WebDriver driver, ProductAPIClient client) {
-        this.config = config;
-        this.driver = driver;
-        this.client = client;
-        this.categoryPermissions = buildCategoryPermissionTree(config);
-    }
 
     protected final void sleep() {
         Selenide.sleep((long) (config.sleepDelay.toMillis() * (1 + Math.random())));
@@ -98,18 +91,27 @@ public abstract class Scraper {
         return ((JavascriptExecutor) driver).executeScript("return document.readyState").equals("complete");
     }
 
+    public static Scraper create(GroceryDadConfig.Scraper config, WebDriver driver, ProductAPIClient client) {
+        return builder(config.namespace)
+                .config(config)
+                .driver(driver)
+                .client(client)
+                .categoryPermissions(buildCategoryPermissionTree(config))
+                .build();
+    }
+
+    private static ScraperBuilder<?, ?> builder(String namespace) {
+        return switch (namespace) {
+            case Namespace.BARBORA -> BarboraScraper.builder();
+            case Namespace.PRISMA -> PrismaScraper.builder();
+            case Namespace.RIMI -> RimiScraper.builder();
+            default -> throw new UnsupportedOperationException(format("Unrecognized namespace '%s'", namespace));
+        };
+    }
+
     private static CategoryPermissionTree buildCategoryPermissionTree(GroceryDadConfig.Scraper config) {
         var tree = new CategoryPermissionTree();
         config.categories.forEach(tree::add);
         return tree;
-    }
-
-    public static Scraper create(GroceryDadConfig.Scraper config, WebDriver driver, ProductAPIClient client) {
-        return switch (config.namespace) {
-            case Namespace.BARBORA -> new BarboraScraper(config, driver, client);
-            case Namespace.PRISMA -> new PrismaScraper(config, driver, client);
-            case Namespace.RIMI -> new RimiScraper(config, driver, client);
-            default -> throw new UnsupportedOperationException(format("Unrecognized namespace '%s'", config.namespace));
-        };
     }
 }
