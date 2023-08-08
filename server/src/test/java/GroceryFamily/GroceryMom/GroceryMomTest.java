@@ -110,11 +110,11 @@ class GroceryMomTest {
                 Identifiable.identify(Category.builder()
                         .code("first")
                         .name("First" + expectedCategoryNameMarker)
-                        .build(), "grocery-mom-test::first"),
+                        .build(), "grocery-mom-test::product::first"),
                 Identifiable.identify(Category.builder()
                         .code("second")
                         .name("Second" + expectedCategoryNameMarker)
-                        .build(), "grocery-mom-test::second")
+                        .build(), "grocery-mom-test::product::second")
         ));
 
         var expectedProductName = "GroceryMom test product (threadNo=" + expectedThreadNo + ", updateNo=" + NUMBER_OF_UPDATES_PER_THREAD + ")";
@@ -123,8 +123,8 @@ class GroceryMomTest {
         assertProductEntity("grocery-mom-test::product", expectedProductName, expectedVersion);
         assertPriceEntity("grocery-mom-test::product::pc::usd", expectedPriceAmount, expectedVersion);
         assertPriceEntity("grocery-mom-test::product::ml::usd", expectedPriceAmount, expectedVersion);
-        assertCategoryEntity("grocery-mom-test::first", "First" + expectedCategoryNameMarker, expectedVersion);
-        assertCategoryEntity("grocery-mom-test::second", "Second" + expectedCategoryNameMarker, expectedVersion);
+        assertCategoryEntity("grocery-mom-test::product::first", "First" + expectedCategoryNameMarker, expectedVersion);
+        assertCategoryEntity("grocery-mom-test::product::second", "Second" + expectedCategoryNameMarker, expectedVersion);
     }
 
     void assertProductEntity(String id, String expectedName, int expectedVersion) {

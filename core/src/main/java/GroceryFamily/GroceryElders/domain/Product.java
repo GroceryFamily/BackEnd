@@ -36,7 +36,7 @@ public class Product {
     public Set<Identifiable<Category>> identifiableCategories() {
         return categories
                 .stream()
-                .map(category -> Identifiable.identify(category, namespace, category.code))
+                .map(category -> Identifiable.identify(category, id(), category.code))
                 .collect(toSet());
     }
 }
