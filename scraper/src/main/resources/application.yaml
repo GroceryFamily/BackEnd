@@ -14,10 +14,10 @@ GroceryDad:
         directory: cache/barbora
       categories:
         - [ "Vegetables and fruits", "Fruits and berries", "Bananas" ]
-#        - [ "Household and pets", "Pets", "Dry dog food" ]
+        - [ "Household and pets", "Pets", "Dry dog food" ]
 #        - [ "Dairy and eggs", "Milk", "Pasteurised milk" ]
-      timeout: 10s
-      sleepDelay: 100ms
+      timeout: 15s
+      sleepDelay: 500ms
 
     prisma:
       namespace: prismamarket.ee

@@ -30,45 +30,73 @@ import static org.apache.commons.lang3.StringUtils.substringAfterLast;
 class BarboraScraper extends Scraper {
     @Override
     protected void acceptOrRejectCookies() {
-        $("#CybotCookiebotDialogBodyLevelButtonLevelOptinDeclineAll")
-                .shouldBe(visible)
-                .click();
         sleep();
+        $("#CybotCookiebotDialogBodyLevelButtonLevelOptinDeclineAll").shouldBe(visible).click();
     }
 
     @Override
     protected void switchToEnglish() {
-        $("#fti-header-language-dropdown")
-                .shouldBe(visible)
-                .hover();
         sleep();
-        $$("#fti-header-language-dropdown li")
-                .findBy(text("English"))
-                .shouldBe(visible)
-                .click();
-        $$("*[id*='fti-desktop-menu-item']")
-                .findBy(text("Products"))
-                .shouldBe(visible);
+        languageSelectElement().shouldBe(visible).hover();
+        sleep();
+        englishLanguageElement().shouldBe(visible).hover();
+        sleep();
+        englishLanguageElement().shouldBe(visible).click();
+        topMenuItemElement("Products").shouldBe(visible);
     }
 
     @Override
     protected void scrap(Consumer<Product> handler) {
+        /* todo: remove
         var categories = buildCategoryTree();
         log.info("[BARBORA] Categories: {}", categories);
         // todo: scrap
+         */
+
+        var categories = new CategoryTree();
+        rootCategoryViews().forEach(view -> traverse(view, handler, categories));
+        log.info("[BARBORA] Traversed categories: {}", categories);
     }
 
-    private static CategoryTree buildCategoryTree() {
-        var categories = new CategoryTree();
-        categoryViews().forEach(view -> {
-            view.e().hover();
-            childCategoryViews(view).forEach(child -> {
-                grandchildCategoryViews(view, child).forEach(grandchild -> {
-                    categories.add(child.path);
-                });
-            });
-        });
-        return categories;
+
+    private void traverse(CategoryView view, Consumer<Product> handler, CategoryTree categories) {
+        if (categoryAllowed(view.path)) {
+            view.select();
+            /* todo: fix
+            if (view.isLeaf()) {
+                products(view.path).forEach(handler);
+                categories.add(view.path);
+            } else {
+                leftCategoryViews(view).forEach(child -> traverse(child, handler, categories));
+            }
+             */
+            categories.add(view.path);
+            view.deselect();
+        }
+    }
+
+    private List<CategoryView> rootCategoryViews() {
+        return rootCategoryElements()
+                .shouldHave(sizeGreaterThan(0))
+                .asDynamicIterable()
+                .stream()
+                .map(e -> Category
+                        .builder()
+                        .code(substringAfterLast(e.attr("href"), "/"))
+                        .name(e.text())
+                        .build())
+                .map(category -> CategoryView
+                        .builder()
+                        .path(new CategoryTreePath(category))
+                        .select(() -> {
+                            rootCategoryElement(category).shouldBe(visible).click();
+                            breadcrumbElement(category).shouldBe(visible);
+                            sleep();
+                        })
+                        .leaf(() -> false)
+                        .deselect(() -> {})
+                        .build())
+                .toList();
     }
 
     private static List<CategoryView> categoryViews() {

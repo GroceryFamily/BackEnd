@@ -5,6 +5,8 @@ import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
 
 import static GroceryFamily.GroceryDad.scraper.page.Page.hrefContains;
+import static com.codeborne.selenide.Condition.text;
+import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.$$;
 
 class BarboraPage {
@@ -34,5 +36,39 @@ class BarboraPage {
 
     static ElementsCollection grandchildCategoryElements(SelenideElement e) {
         return e.$$("*[id*='fti-category-tree-grand-child']");
+    }
+
+    // ************************************************************************
+
+    static SelenideElement languageSelectElement() {
+        return $("#fti-header-language-dropdown");
+    }
+
+    static SelenideElement englishLanguageElement() {
+        return languageSelectElement().$$("li").findBy(text("English"));
+    }
+
+    static SelenideElement topMenuItemElement(String name) {
+        return topMenuElement().$$("li[id*=fti-desktop-menu-item]").findBy(text(name));
+    }
+
+    static SelenideElement topMenuElement() {
+        return $("#desktop-menu-placeholder");
+    }
+
+    static SelenideElement rootCategoryElement(Category category) {
+        return rootCategoryElements().findBy(hrefContains(category.code));
+    }
+
+    static ElementsCollection rootCategoryElements() {
+        return topMenuElement().$$("a[id*=fti-desktop-category]");
+    }
+
+    static SelenideElement breadcrumbElement(Category category) {
+        return breadcrumbElements().findBy(hrefContains(category.code));
+    }
+
+    static ElementsCollection breadcrumbElements() {
+        return $$("ol[class=breadcrumb] a");
     }
 }
