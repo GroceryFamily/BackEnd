@@ -3,8 +3,8 @@ GroceryDad:
 
   enabled:
     - barbora
-  #    - prisma
-  #    - rimi
+#    - prisma
+#    - rimi
 
   scrapers:
     barbora:

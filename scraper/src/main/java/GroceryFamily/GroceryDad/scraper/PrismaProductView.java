@@ -22,9 +22,7 @@ record PrismaProductView(SelenideElement e) {
                 .code(code())
                 .name(name())
                 .prices(prices())
-                /* todo: #38 Switch to JOOQ
                 .categories(path.categories())
-                 */
                 .build();
     }
 
