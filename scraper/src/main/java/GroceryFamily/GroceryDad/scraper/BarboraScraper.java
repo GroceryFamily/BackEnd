@@ -54,7 +54,7 @@ class BarboraScraper extends Scraper {
          */
 
         var categories = new CategoryTree();
-        rootCategoryViews().forEach(view -> traverse(view, handler, categories));
+        mainCategoryViews().forEach(view -> traverse(view, handler, categories));
         log.info("[BARBORA] Traversed categories: {}", categories);
     }
 
@@ -62,21 +62,28 @@ class BarboraScraper extends Scraper {
     private void traverse(CategoryView view, Consumer<Product> handler, CategoryTree categories) {
         if (categoryAllowed(view.path)) {
             view.select();
-            /* todo: fix
-            if (view.isLeaf()) {
-                products(view.path).forEach(handler);
+            var children = view.children();
+            if (children.isEmpty()) {
                 categories.add(view.path);
             } else {
-                leftCategoryViews(view).forEach(child -> traverse(child, handler, categories));
+                view.children().forEach(child -> traverse(child, handler, categories));
             }
-             */
+//            if (view.isLeaf()) {
+                /* todo: scrap products
+                products(view.path).forEach(handler);
+                 */
+//            categories.add(view.path);
+//            } else {
+//                categoryViews(view).forEach(child -> traverse(child, handler, categories));
+//            }
             categories.add(view.path);
             view.deselect();
         }
     }
 
+    /* todo: remove
     private List<CategoryView> rootCategoryViews() {
-        return rootCategoryElements()
+        return mainCategoryElements()
                 .shouldHave(sizeGreaterThan(0))
                 .asDynamicIterable()
                 .stream()
@@ -99,8 +106,8 @@ class BarboraScraper extends Scraper {
                 .toList();
     }
 
-    private static List<CategoryView> categoryViews() {
-        return categoryElements()
+    private static List<CategoryView> categoryViews(CategoryView parent) {
+        return contextCategoryElements()
                 .shouldHave(sizeGreaterThan(0))
                 .asFixedIterable()
                 .stream()
@@ -111,15 +118,16 @@ class BarboraScraper extends Scraper {
                         .build())
                 .map(category -> CategoryView
                         .builder()
-                        .path(new CategoryTreePath(category))
-                        .select(() -> categoryElement(category).click())
+                        .path(parent.path.add(category))
+                        .select(() -> categoryElement(category).shouldBe(visible).click())
                         .leaf(() -> false)
-                        .deselect(() -> {})
-                        .e(() -> categoryElement(category))
+                        .deselect(() -> breadcrumbElement(parent.category()).shouldBe(visible).click())
                         .build())
                 .toList();
     }
+     */
 
+    /* todo: remove
     private static List<CategoryView> childCategoryViews(CategoryView parent) {
         return childCategoryElements()
                 .shouldHave(sizeGreaterThan(0))
@@ -174,6 +182,7 @@ class BarboraScraper extends Scraper {
                         .build())
                 .toList();
     }
+     */
 
     @Override
     protected void scrap(List<String> categories, Consumer<Product> handler) {

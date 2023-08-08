@@ -8,6 +8,7 @@ import java.nio.charset.StandardCharsets;
 import java.time.Duration;
 
 import static com.codeborne.selenide.Condition.attributeMatching;
+import static com.codeborne.selenide.Condition.matchText;
 import static com.codeborne.selenide.Selenide.executeJavaScript;
 import static java.lang.String.format;
 
@@ -32,5 +33,9 @@ public class Page {
 
     public static Condition hrefContains(String value) {
         return attributeMatching("href", format(".*%s.*", value));
+    }
+
+    public static Condition textContains(String value) {
+        return matchText(format(".*%s.*", value));
     }
 }
