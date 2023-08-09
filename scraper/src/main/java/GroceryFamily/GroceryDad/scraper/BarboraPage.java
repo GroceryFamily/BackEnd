@@ -8,8 +8,7 @@ import com.codeborne.selenide.SelenideElement;
 
 import java.util.List;
 
-import static GroceryFamily.GroceryDad.scraper.page.Page.hrefContains;
-import static GroceryFamily.GroceryDad.scraper.page.Page.textContains;
+import static GroceryFamily.GroceryDad.scraper.page.Page.*;
 import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.$$;
@@ -17,38 +16,6 @@ import static org.apache.commons.lang3.StringUtils.substringAfterLast;
 import static org.apache.commons.lang3.StringUtils.substringBeforeLast;
 
 class BarboraPage {
-    /* todo: remove
-    static SelenideElement categoryElement(Category category) {
-        return categoryElements().findBy(hrefContains(category.code));
-    }
-
-    static ElementsCollection categoryElements() {
-        return $$("*[id*='fti-desktop-category']");
-    }
-
-    static SelenideElement childCategoryElement(Category category) {
-        return childCategoryElements().findBy(hrefContains(category.code));
-    }
-
-    static ElementsCollection childCategoryElements() {
-        return $$("*[id*='fti-category-tree-child']");
-    }
-
-    static SelenideElement grandchildCategoryElement(Category category) {
-        return grandchildCategoryElements().findBy(hrefContains(category.code));
-    }
-
-    private static ElementsCollection grandchildCategoryElements() {
-        return $$("*[id*='fti-category-tree-grand-child']");
-    }
-
-    static ElementsCollection grandchildCategoryElements(SelenideElement e) {
-        return e.$$("*[id*='fti-category-tree-grand-child']");
-    }
-     */
-
-    // ************************************************************************
-
     static List<CategoryView> mainCategoryViews() {
         return mainCategoryElements()
                 .asDynamicIterable()
@@ -152,7 +119,7 @@ class BarboraPage {
         return breadcrumbElements().findBy(hrefContains(category.code));
     }
 
-    static ElementsCollection breadcrumbElements() {
+    private static ElementsCollection breadcrumbElements() {
         return $$("ol[class=breadcrumb] a");
     }
 
@@ -160,7 +127,7 @@ class BarboraPage {
         return topMenuElement().$$("li[id*=fti-desktop-menu-item]").findBy(text(name));
     }
 
-    static SelenideElement topMenuElement() {
+    private static SelenideElement topMenuElement() {
         return $("#desktop-menu-placeholder");
     }
 
@@ -170,5 +137,39 @@ class BarboraPage {
 
     static SelenideElement languageSelectElement() {
         return $("#fti-header-language-dropdown");
+    }
+
+    static ElementsCollection productPageElements() {
+        return productPageElement().$$("*[itemtype*=Product]");
+    }
+
+    static SelenideElement productPageElement() {
+        return $("*[class*=products-list]");
+    }
+
+    static boolean nextProductPageExists() {
+        return selectedProductPageNumber() < lastProductPageNumber();
+    }
+
+    static void nextProductPage() {
+        var nextPageNumber = selectedProductPageNumber() + 1;
+        productPageNumberElement(nextPageNumber).$("a").click();
+        productPageNumberElement(nextPageNumber).shouldHave(cssClass("active"));
+    }
+
+    static SelenideElement productPageNumberElement(int pageNumber) {
+        return productPageNumberElements().findBy(number(pageNumber));
+    }
+
+    static int lastProductPageNumber() {
+        return Integer.parseInt(productPageNumberElements().last().text());
+    }
+
+    static int selectedProductPageNumber() {
+        return Integer.parseInt(productPageNumberElements().findBy(cssClass("active")).text());
+    }
+
+    static ElementsCollection productPageNumberElements() {
+        return $("ul[class=pagination]").$$("li").filter(number());
     }
 }

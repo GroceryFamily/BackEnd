@@ -13,10 +13,11 @@ GroceryDad:
       cache:
         directory: cache/barbora
       categories:
-        - [ "Vegetables and fruits", "Fruits and berries", "Bananas" ]
+        - [ "Dairy and eggs", "Yoghurts and desserts", "Flavored yoghurts" ]
+#        - [ "Vegetables and fruits", "Fruits and berries", "Bananas" ]
         - [ "Household and pets", "Pets", "Dry dog food" ]
 #        - [ "Dairy and eggs", "Milk", "Pasteurised milk" ]
-      timeout: 15s
+      timeout: 30s
       sleepDelay: 500ms
 
     prisma:

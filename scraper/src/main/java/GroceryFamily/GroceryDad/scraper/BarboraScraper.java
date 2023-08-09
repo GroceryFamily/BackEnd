@@ -18,25 +18,21 @@ import java.util.function.Consumer;
 import static GroceryFamily.GroceryDad.scraper.BarboraPage.*;
 import static GroceryFamily.GroceryDad.scraper.page.Page.sleep;
 import static com.codeborne.selenide.CollectionCondition.sizeGreaterThan;
-import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.$;
-import static com.codeborne.selenide.Selenide.$$;
 import static java.lang.String.format;
-import static org.apache.commons.lang3.StringUtils.substringAfterLast;
 
 @Slf4j
 @SuperBuilder
 class BarboraScraper extends Scraper {
     @Override
     protected void acceptOrRejectCookies() {
-        sleep();
         $("#CybotCookiebotDialogBodyLevelButtonLevelOptinDeclineAll").shouldBe(visible).click();
     }
 
     @Override
     protected void switchToEnglish() {
-        sleep();
+        topMenuItemElement("Kaubavalik").shouldBe(visible);
         languageSelectElement().shouldBe(visible).hover();
         sleep();
         englishLanguageElement().shouldBe(visible).hover();
@@ -47,12 +43,6 @@ class BarboraScraper extends Scraper {
 
     @Override
     protected void scrap(Consumer<Product> handler) {
-        /* todo: remove
-        var categories = buildCategoryTree();
-        log.info("[BARBORA] Categories: {}", categories);
-        // todo: scrap
-         */
-
         var categories = new CategoryTree();
         mainCategoryViews().forEach(view -> traverse(view, handler, categories));
         log.info("[BARBORA] Traversed categories: {}", categories);
@@ -64,6 +54,7 @@ class BarboraScraper extends Scraper {
             view.select();
             var children = view.children();
             if (children.isEmpty()) {
+                products(view.path).forEach(handler);
                 categories.add(view.path);
             } else {
                 view.children().forEach(child -> traverse(child, handler, categories));
@@ -81,151 +72,43 @@ class BarboraScraper extends Scraper {
         }
     }
 
-    /* todo: remove
-    private List<CategoryView> rootCategoryViews() {
-        return mainCategoryElements()
+    static List<Product> products(CategoryTreePath path) {
+        return productPages(path).stream().flatMap(Collection::stream).toList();
+    }
+
+    static List<List<Product>> productPages(CategoryTreePath path) {
+        List<List<Product>> pages = new ArrayList<>();
+        pages.add(productPage(path));
+        while (nextProductPageExists()) {
+            nextProductPage();
+            pages.add(productPage(path));
+        }
+        return pages;
+    }
+
+    static List<Product> productPage(CategoryTreePath path) {
+        return productPageElements()
                 .shouldHave(sizeGreaterThan(0))
                 .asDynamicIterable()
                 .stream()
-                .map(e -> Category
-                        .builder()
-                        .code(substringAfterLast(e.attr("href"), "/"))
-                        .name(e.text())
-                        .build())
-                .map(category -> CategoryView
-                        .builder()
-                        .path(new CategoryTreePath(category))
-                        .select(() -> {
-                            rootCategoryElement(category).shouldBe(visible).click();
-                            breadcrumbElement(category).shouldBe(visible);
-                            sleep();
-                        })
-                        .leaf(() -> false)
-                        .deselect(() -> {})
-                        .build())
+                .map(BarboraProductView::new)
+                .map(view -> view.product(path))
                 .toList();
-    }
-
-    private static List<CategoryView> categoryViews(CategoryView parent) {
-        return contextCategoryElements()
-                .shouldHave(sizeGreaterThan(0))
-                .asFixedIterable()
-                .stream()
-                .map(e -> Category
-                        .builder()
-                        .code(substringAfterLast(e.attr("href"), "/"))
-                        .name(e.text())
-                        .build())
-                .map(category -> CategoryView
-                        .builder()
-                        .path(parent.path.add(category))
-                        .select(() -> categoryElement(category).shouldBe(visible).click())
-                        .leaf(() -> false)
-                        .deselect(() -> breadcrumbElement(parent.category()).shouldBe(visible).click())
-                        .build())
-                .toList();
-    }
-     */
-
-    /* todo: remove
-    private static List<CategoryView> childCategoryViews(CategoryView parent) {
-        return childCategoryElements()
-                .shouldHave(sizeGreaterThan(0))
-                .asFixedIterable()
-                .stream()
-                .map(e -> Category
-                        .builder()
-                        .code(substringAfterLast(e.attr("href"), "/"))
-                        .name(e.$("div").text())
-                        .build())
-                .map(category -> CategoryView
-                        .builder()
-                        .path(parent.path.add(category))
-                        .select(() -> {
-                            parent.e().hover();
-                            childCategoryElement(category).click();
-
-                        })
-                        .leaf(() -> false)
-                        .deselect(() -> {})
-                        .e(() -> {
-                            parent.e().hover();
-                            return childCategoryElement(category);
-                        })
-                        .build())
-                .toList();
-    }
-
-    private static List<CategoryView> grandchildCategoryViews(CategoryView grandparent, CategoryView parent) {
-        return grandchildCategoryElements(parent.e())
-                .shouldHave(sizeGreaterThan(0))
-                .asFixedIterable()
-                .stream()
-                .map(e -> Category
-                        .builder()
-                        .code(substringAfterLast(e.attr("href"), "/"))
-                        .name(e.text())
-                        .build())
-                .map(category -> CategoryView
-                        .builder()
-                        .path(parent.path.add(category))
-                        .select(() -> {
-                            grandparent.e().hover();
-                            grandchildCategoryElement(category).click();
-                        })
-                        .leaf(() -> true)
-                        .deselect(() -> {})
-                        .e(() -> {
-                            grandparent.e().hover();
-                            return grandchildCategoryElement(category);
-                        })
-                        .build())
-                .toList();
-    }
-     */
-
-    @Override
-    protected void scrap(List<String> categories, Consumer<Product> handler) {
-        category(categories);
-        products().forEach(handler);
-        // todo: finalize
-    }
-
-    static void category(List<String> categories) {
-        if (categories.size() < 2) throw new IllegalArgumentException("Requires at least two categories");
-
-        var firstCategory = $$("*[id*='fti-desktop-category']")
-                .shouldHave(sizeGreaterThan(0))
-                .findBy(text(categories.get(0)))
-                .shouldBe(visible);
-        firstCategory.hover();
-
-        var secondCategory = $$("*[id*='fti-category-tree-child'] > div")
-                .shouldHave(sizeGreaterThan(0))
-                .findBy(text(categories.get(1)))
-                .shouldBe(visible);
-        if (categories.size() == 2) {
-            secondCategory.click();
-            return;
-        }
-
-        var thirdCategory = $$("*[id*='fti-category-tree-grand-child']")
-                .shouldHave(sizeGreaterThan(0))
-                .findBy(text(categories.get(2)))
-                .shouldBe(visible);
-        thirdCategory.click();
-
-        if (categories.size() > 3) throw new IllegalArgumentException("Requires no more than three categories");
-    }
-
-    static Collection<Product> products() {
-        Collection<Product> products = new ArrayList<>();
-        for (var e : $$("*[itemtype*='Product']").shouldHave(sizeGreaterThan(0))) {
-            if (e.$("*[itemprop='price']").exists()) {
-                products.add(product(e));
-            }
-        }
-        return products;
+//
+//
+//        boolean nextPageExists;
+//        do {
+//            nextPageExists = nextProductPageExists();
+//
+//        } while (nextPageExists);
+//
+//        Collection<Product> products = new ArrayList<>();
+//        for (var e : $$("*[itemtype*='Product']").shouldHave(sizeGreaterThan(0))) {
+//            if (e.$("*[itemprop='price']").exists()) {
+//                products.add(product(e));
+//            }
+//        }
+//        return products;
     }
 
     static Product product(SelenideElement e) {
