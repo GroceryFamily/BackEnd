@@ -2,9 +2,9 @@ GroceryDad:
   api.uri: http://localhost:8080
 
   enabled:
-    - barbora
+#    - barbora
 #    - prisma
-#    - rimi
+    - rimi
 
   scrapers:
     barbora:
@@ -37,9 +37,10 @@ GroceryDad:
       cache:
         directory: cache/rimi
       categories:
-        - [ "Fruits, vegetables, flowers", "Fruits", "Bananas" ]
-        - [ "Pet goods", "Dog food", "Dry food for dogs" ]
-        - [ "Groceries", "Canned products", "Mushrooms" ]
-        - [ "Bread, pastry, confectionery", "Rimi bakeries" ]
+        - [ "Pre-order festivity meals", "Pre-order appetizers and selection plates" ]
+#        - [ "Fruits, vegetables, flowers", "Fruits", "Bananas" ]
+#        - [ "Pet goods", "Dog food", "Dry food for dogs" ]
+#        - [ "Groceries", "Canned products", "Mushrooms" ]
+#        - [ "Bread, pastry, confectionery", "Rimi bakeries" ]
       timeout: 10s
       sleepDelay: 100ms

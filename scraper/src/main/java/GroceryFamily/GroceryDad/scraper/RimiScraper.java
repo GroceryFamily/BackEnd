@@ -1,8 +1,11 @@
 package GroceryFamily.GroceryDad.scraper;
 
+import GroceryFamily.GroceryDad.scraper.tree.CategoryTree;
+import GroceryFamily.GroceryDad.scraper.view.CategoryView;
 import GroceryFamily.GroceryElders.domain.*;
 import com.codeborne.selenide.SelenideElement;
 import lombok.experimental.SuperBuilder;
+import lombok.extern.slf4j.Slf4j;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
@@ -11,13 +14,15 @@ import java.util.List;
 import java.util.Set;
 import java.util.function.Consumer;
 
+import static GroceryFamily.GroceryDad.scraper.RimiPage.mainCategoryViews;
+import static GroceryFamily.GroceryDad.scraper.page.Page.hrefContains;
 import static com.codeborne.selenide.CollectionCondition.sizeGreaterThan;
-import static com.codeborne.selenide.Condition.text;
-import static com.codeborne.selenide.Condition.visible;
+import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.$$;
 import static java.lang.String.format;
 
+@Slf4j
 @SuperBuilder
 class RimiScraper extends Scraper {
     @Override
@@ -34,7 +39,39 @@ class RimiScraper extends Scraper {
 
     @Override
     protected void scrap(Consumer<Product> handler) {
-        throw new UnsupportedOperationException("Not implemented yet");
+//        var categories = new CategoryTree();
+//        mainCategoryViews().forEach(view -> traverse(view, handler, categories));
+//        log.info("[RIMI] Traversed categories: {}", categories);
+        var startMillis = System.currentTimeMillis();
+//        var cnt = $$("nav[data-category-menu-container]")
+//                .asDynamicIterable()
+//                .stream()
+//                .count();
+//        System.out.println(cnt);
+
+
+        $("nav[data-category-menu-container]")
+                .$$("a")
+                .filter(hrefContains("/products/"))
+                .asDynamicIterable()
+//                .asFixedIterable()
+                .stream()
+                .forEach(e -> System.out.println(e.text()));
+        System.out.println(System.currentTimeMillis() - startMillis);
+    }
+
+    private void traverse(CategoryView view, Consumer<Product> handler, CategoryTree categories) {
+        if (categoryAllowed(view.path)) {
+            view.select();
+            var children = view.children();
+            if (children.isEmpty()) {
+//                products(view.path).forEach(handler);
+                categories.add(view.path);
+            } else {
+                view.children().forEach(child -> traverse(child, handler, categories));
+            }
+            view.deselect();
+        }
     }
 
     @Override

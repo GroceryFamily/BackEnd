@@ -59,15 +59,6 @@ class BarboraScraper extends Scraper {
             } else {
                 view.children().forEach(child -> traverse(child, handler, categories));
             }
-//            if (view.isLeaf()) {
-                /* todo: scrap products
-                products(view.path).forEach(handler);
-                 */
-//            categories.add(view.path);
-//            } else {
-//                categoryViews(view).forEach(child -> traverse(child, handler, categories));
-//            }
-            categories.add(view.path);
             view.deselect();
         }
     }
