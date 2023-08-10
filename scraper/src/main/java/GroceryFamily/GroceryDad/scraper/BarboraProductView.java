@@ -20,7 +20,7 @@ record BarboraProductView(SelenideElement e) {
                 .code(code())
                 .name(name())
                 .prices(prices())
-                .categories(path.categories())
+//                .categories(path.categories())
                 .build();
     }
 

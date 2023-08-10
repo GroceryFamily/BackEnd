@@ -6,10 +6,11 @@ import java.util.List;
 
 public class CategoryTree extends Tree<String, Category> {
     public CategoryTree() {
-        super(category -> category.name);
+        // super(category -> category.name);
     }
 
     public void add(CategoryTreePath path) { // todo: value as second argument
-        add(List.of(path.categories));
+        // add(List.of(path.categories));
+        throw new UnsupportedOperationException("Method not supported");
     }
 }

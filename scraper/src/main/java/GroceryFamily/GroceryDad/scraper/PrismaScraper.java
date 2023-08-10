@@ -2,7 +2,10 @@ package GroceryFamily.GroceryDad.scraper;
 
 import GroceryFamily.GroceryDad.scraper.tree.CategoryTree;
 import GroceryFamily.GroceryDad.scraper.tree.CategoryTreePath;
+import GroceryFamily.GroceryDad.scraper.tree.CategoryViewTree;
+import GroceryFamily.GroceryDad.scraper.tree.Tree;
 import GroceryFamily.GroceryDad.scraper.view.CategoryView;
+import GroceryFamily.GroceryDad.scraper.view.NewCategoryView;
 import GroceryFamily.GroceryElders.domain.Category;
 import GroceryFamily.GroceryElders.domain.Product;
 import lombok.experimental.SuperBuilder;
@@ -18,6 +21,7 @@ import static com.codeborne.selenide.CollectionCondition.itemWithText;
 import static com.codeborne.selenide.CollectionCondition.sizeGreaterThan;
 import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.$;
+import static com.codeborne.selenide.Selenide.open;
 import static org.apache.commons.lang3.StringUtils.substringAfterLast;
 import static org.apache.commons.lang3.StringUtils.substringBeforeLast;
 
@@ -39,9 +43,37 @@ class PrismaScraper extends Scraper {
 
     @Override
     protected void scrap(Consumer<Product> handler) {
+        /*
         var categories = new CategoryTree();
         topCategoryViews().forEach(view -> traverse(view, handler, categories));
         log.info("[PRISMA] Traversed categories: {}", categories);
+         */
+
+        var seen = new CategoryViewTree();
+        NewPrismaPage
+                .runtime()
+                .categoryViewTree()
+                .leaves()
+                .forEach(node -> scrap(node.value, handler, seen));
+        log.info("[PRISMA] Traversed categories: {}", seen);
+
+    }
+
+    private void scrap(NewCategoryView parent, Consumer<Product> handler, CategoryViewTree seen) {
+        if (seen.exists(parent)) return;
+        seen.add(parent);
+        open(parent.url);
+        waitUntilPageLoads();
+
+        var subcategories = NewPrismaPage
+                .runtime()
+                .subcategoryViewTree(parent.path)
+                .leaves();
+        if (subcategories.isEmpty()) {
+            // todo: scrap products
+        } else {
+            subcategories.forEach(leaf -> scrap(leaf.value, handler, seen));
+        }
     }
 
     private void traverse(CategoryView view, Consumer<Product> handler, CategoryTree categories) {

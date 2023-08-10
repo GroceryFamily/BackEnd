@@ -64,13 +64,17 @@ public abstract class Scraper {
         return categoryPermissions.allowed(path);
     }
 
+    protected final boolean categoryAllowed(List<String> path) {
+        return categoryPermissions.allowed(path);
+    }
+
     // todo: remove
     @Deprecated
     protected void scrap(List<String> categories, Consumer<Product> handler) {
         throw new UnsupportedOperationException("Method not supported");
     }
 
-    private void waitUntilPageLoads() {
+    void waitUntilPageLoads() {
         new WebDriverWait(driver, config.timeout).until(Scraper::pageIsReady);
     }
 

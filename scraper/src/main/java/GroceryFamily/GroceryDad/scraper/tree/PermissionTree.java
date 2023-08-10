@@ -2,14 +2,8 @@ package GroceryFamily.GroceryDad.scraper.tree;
 
 import java.util.List;
 
-import static java.util.function.Function.identity;
-
 class PermissionTree extends Tree<String, String> {
     private static final String ANY = "*";
-
-    PermissionTree() {
-        super(identity());
-    }
 
     public boolean allowed(List<String> path) {
         var node = root;
@@ -21,5 +15,9 @@ class PermissionTree extends Tree<String, String> {
             ++i;
         }
         return node != null;
+    }
+
+    public void add(List<String> path) {
+        add(path, "");
     }
 }

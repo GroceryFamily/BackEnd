@@ -8,6 +8,7 @@ import java.nio.charset.StandardCharsets;
 import java.time.Duration;
 
 import static com.codeborne.selenide.Condition.*;
+import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.executeJavaScript;
 import static java.lang.String.format;
 
@@ -44,5 +45,9 @@ public class Page {
 
     public static Condition number(Number number) {
         return text(number.toString());
+    }
+
+    public static String html() {
+        return $("html").innerHtml();
     }
 }

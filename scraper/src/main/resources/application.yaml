@@ -9,6 +9,7 @@ GroceryDad:
   scrapers:
     barbora:
       namespace: barbora.ee
+#      uri: https://barbora.ee/koogiviljad-puuviljad
       uri: https://barbora.ee
       cache:
         directory: cache/barbora

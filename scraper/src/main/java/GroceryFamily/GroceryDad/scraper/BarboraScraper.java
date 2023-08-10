@@ -2,7 +2,10 @@ package GroceryFamily.GroceryDad.scraper;
 
 import GroceryFamily.GroceryDad.scraper.tree.CategoryTree;
 import GroceryFamily.GroceryDad.scraper.tree.CategoryTreePath;
+import GroceryFamily.GroceryDad.scraper.tree.CategoryViewTree;
+import GroceryFamily.GroceryDad.scraper.tree.Tree;
 import GroceryFamily.GroceryDad.scraper.view.CategoryView;
+import GroceryFamily.GroceryDad.scraper.view.NewCategoryView;
 import GroceryFamily.GroceryElders.domain.*;
 import com.codeborne.selenide.SelenideElement;
 import lombok.experimental.SuperBuilder;
@@ -16,10 +19,12 @@ import java.util.Set;
 import java.util.function.Consumer;
 
 import static GroceryFamily.GroceryDad.scraper.BarboraPage.*;
+import static GroceryFamily.GroceryDad.scraper.page.Page.html;
 import static GroceryFamily.GroceryDad.scraper.page.Page.sleep;
 import static com.codeborne.selenide.CollectionCondition.sizeGreaterThan;
 import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.$;
+import static com.codeborne.selenide.Selenide.open;
 import static java.lang.String.format;
 
 @Slf4j
@@ -43,10 +48,83 @@ class BarboraScraper extends Scraper {
 
     @Override
     protected void scrap(Consumer<Product> handler) {
+        var seen = new CategoryViewTree();
+        NewBarboraPage
+                .runtime()
+                .categoryViewTree()
+                .leaves()
+                .forEach(node -> scrap(node, handler, seen));
+        log.info("[BARBORA] Traversed categories: {}", seen);
+
+
+//        var views = categoryViews();
+//        var seen = new CategoryViewTree();
+//        views.forEach(seen::add);
+//        views.forEach(view -> scrap(view, handler, seen));
+//        log.info("[BARBORA] Traversed categories: {}", seen);
+
+        /*
         var categories = new CategoryTree();
         mainCategoryViews().forEach(view -> traverse(view, handler, categories));
         log.info("[BARBORA] Traversed categories: {}", categories);
+         */
     }
+
+
+    private void scrap(Tree.Node<String, NewCategoryView> node, Consumer<Product> handler, CategoryViewTree seen) {
+        if (seen.exists(node.path)) return;
+        seen.add(node.path, node.value);
+        open(node.value.url);
+        waitUntilPageLoads();
+
+        var page = NewBarboraPage.runtime();
+        var unseen = page.categoryViewTree().leaves().stream().filter(leaf -> !seen.exists(leaf.path)).toList();
+        if (unseen.isEmpty()) {
+            // todo: scrap products
+        } else {
+            unseen.forEach(leaf -> scrap(leaf, handler, seen));
+        }
+
+//        var unseen = new CategoryViewTree();
+//        unseenCategoryViews(seen).forEach(unseenView -> {
+//            unseen.add(unseenView);
+//            seen.add(unseenView);
+//        });
+//        if (unseen.isEmpty()) {
+//            // todo: scrap products
+//        } else {
+//            unseen.leaves().forEach(unseenView -> scrap(unseenView, handler, seen));
+//        }
+    }
+
+//    private List<? extends NewCategoryView> unseenCategoryViews(CategoryViewTree seen) {
+//        return categoryViews()
+//                .stream()
+////                .filter(view -> !seen.exists(view.codePath))
+//                .toList();
+//    }
+
+//    private List<? extends NewCategoryView> categoryViews() {
+//        return Jsoup
+//                .parse(html())
+//                .select("a[id*=category]")
+//                .stream()
+//                .map(BarboraCategoryView::new)
+////                .filter(view -> categoryAllowed(view.codePath))
+//                .toList();
+//    }
+
+//    private CategoryViewTree categoryViewTree() {
+//        var document = Jsoup.parse(html());
+//        var mainCategories = document.select("a[id*=fti-desktop-category]");
+//        Jsoup
+//                .parse(html())
+//                .select("a[id*=category]")
+//                .stream()
+//                .map(BarboraCategoryView::new)
+////                .filter(view -> categoryAllowed(view.codePath))
+//                .toList();
+//    }
 
 
     private void traverse(CategoryView view, Consumer<Product> handler, CategoryTree categories) {
