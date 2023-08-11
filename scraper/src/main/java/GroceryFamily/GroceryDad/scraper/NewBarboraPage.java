@@ -32,7 +32,7 @@ class NewBarboraPage {
     List<NewCategoryView> childCategoryViews(Path<String> parentCodePath) {
         var views = new HashMap<Path<String>, NewCategoryView>();
         views.put(parentCodePath, NewCategoryView.root());
-        categoryViewsSortedByCodePath(parentCodePath).forEach(view -> {
+        childCategoryViewsSortedByCodePath(parentCodePath).forEach(view -> {
             var parent = views.get(view.codePath.parent());
             parent.addChild(view);
             views.put(view.codePath, view);
@@ -40,7 +40,7 @@ class NewBarboraPage {
         return views.get(parentCodePath).detachChildren();
     }
 
-    private Stream<NewCategoryView> categoryViewsSortedByCodePath(Path<String> parentCodePath) {
+    private Stream<NewCategoryView> childCategoryViewsSortedByCodePath(Path<String> parentCodePath) {
         return categoryLinks()
                 .map(link -> {
                     var codePath = categoryCodePath(link);

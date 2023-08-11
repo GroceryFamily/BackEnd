@@ -48,9 +48,9 @@ class BarboraScraper extends Scraper {
         NewBarboraPage.runtime().rootCategoryView().leaves().forEach(leaf -> scrap(leaf, handler));
     }
 
-
     private void scrap(NewCategoryView view, Consumer<Product> handler) {
         if (view.isVisited()) return;
+        // if (!categoryAllowed(view.namePath())) return; // todo: move on
         view.markVisited();
         open(view.url);
         waitUntilPageLoads();
@@ -63,56 +63,7 @@ class BarboraScraper extends Scraper {
             children.forEach(view::addChild);
             view.leaves().forEach(leaf -> scrap(leaf, handler));
         }
-
-//        var page = NewBarboraPage.runtime();
-//        var unseen = page.categoryViewTree().leaves().stream().filter(leaf -> !seen.exists(leaf.path)).toList();
-//        if (unseen.isEmpty()) {
-//            // todo: scrap products
-//        } else {
-//            unseen.forEach(leaf -> scrap(leaf, handler, seen));
-//        }
-
-//        var unseen = new CategoryViewTree();
-//        unseenCategoryViews(seen).forEach(unseenView -> {
-//            unseen.add(unseenView);
-//            seen.add(unseenView);
-//        });
-//        if (unseen.isEmpty()) {
-//            // todo: scrap products
-//        } else {
-//            unseen.leaves().forEach(unseenView -> scrap(unseenView, handler, seen));
-//        }
     }
-
-//    private List<? extends NewCategoryView> unseenCategoryViews(CategoryViewTree seen) {
-//        return categoryViews()
-//                .stream()
-////                .filter(view -> !seen.exists(view.codePath))
-//                .toList();
-//    }
-
-//    private List<? extends NewCategoryView> categoryViews() {
-//        return Jsoup
-//                .parse(html())
-//                .select("a[id*=category]")
-//                .stream()
-//                .map(BarboraCategoryView::new)
-////                .filter(view -> categoryAllowed(view.codePath))
-//                .toList();
-//    }
-
-//    private CategoryViewTree categoryViewTree() {
-//        var document = Jsoup.parse(html());
-//        var mainCategories = document.select("a[id*=fti-desktop-category]");
-//        Jsoup
-//                .parse(html())
-//                .select("a[id*=category]")
-//                .stream()
-//                .map(BarboraCategoryView::new)
-////                .filter(view -> categoryAllowed(view.codePath))
-//                .toList();
-//    }
-
 
     private void traverse(CategoryView view, Consumer<Product> handler, CategoryTree categories) {
         if (categoryAllowed(view.path)) {
