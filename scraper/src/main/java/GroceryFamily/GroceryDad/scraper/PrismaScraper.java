@@ -3,7 +3,6 @@ package GroceryFamily.GroceryDad.scraper;
 import GroceryFamily.GroceryDad.scraper.tree.CategoryTree;
 import GroceryFamily.GroceryDad.scraper.tree.CategoryTreePath;
 import GroceryFamily.GroceryDad.scraper.tree.CategoryViewTree;
-import GroceryFamily.GroceryDad.scraper.tree.Tree;
 import GroceryFamily.GroceryDad.scraper.view.CategoryView;
 import GroceryFamily.GroceryDad.scraper.view.NewCategoryView;
 import GroceryFamily.GroceryElders.domain.Category;
@@ -49,32 +48,32 @@ class PrismaScraper extends Scraper {
         log.info("[PRISMA] Traversed categories: {}", categories);
          */
 
-        var seen = new CategoryViewTree();
-        NewPrismaPage
-                .runtime()
-                .categoryViewTree()
-                .leaves()
-                .forEach(node -> scrap(node.value, handler, seen));
-        log.info("[PRISMA] Traversed categories: {}", seen);
+//        var seen = new CategoryViewTree();
+//        NewPrismaPage
+//                .runtime()
+//                .categoryViewTree()
+//                .leaves()
+//                .forEach(node -> scrap(node.value, handler, seen));
+//        log.info("[PRISMA] Traversed categories: {}", seen);
 
     }
 
-    private void scrap(NewCategoryView parent, Consumer<Product> handler, CategoryViewTree seen) {
-        if (seen.exists(parent)) return;
-        seen.add(parent);
-        open(parent.url);
-        waitUntilPageLoads();
-
-        var subcategories = NewPrismaPage
-                .runtime()
-                .subcategoryViewTree(parent.path)
-                .leaves();
-        if (subcategories.isEmpty()) {
-            // todo: scrap products
-        } else {
-            subcategories.forEach(leaf -> scrap(leaf.value, handler, seen));
-        }
-    }
+//    private void scrap(NewCategoryView parent, Consumer<Product> handler, CategoryViewTree seen) {
+//        if (seen.exists(parent)) return;
+//        seen.add(parent);
+//        open(parent.url);
+//        waitUntilPageLoads();
+//
+//        var subcategories = NewPrismaPage
+//                .runtime()
+//                .subcategoryViewTree(parent.oldPath)
+//                .leaves();
+//        if (subcategories.isEmpty()) {
+//            // todo: scrap products
+//        } else {
+//            subcategories.forEach(leaf -> scrap(leaf.value, handler, seen));
+//        }
+//    }
 
     private void traverse(CategoryView view, Consumer<Product> handler, CategoryTree categories) {
         if (categoryAllowed(view.path)) {

@@ -44,7 +44,7 @@ class NewPrismaPage {
                             .build();
                     return NewCategoryView
                             .builder()
-                            .path(new CategoryTreePath(category))
+                            .oldPath(new CategoryTreePath(category))
                             .category(category)
                             .url(e.absUrl("href"))
                             .build();
@@ -63,7 +63,7 @@ class NewPrismaPage {
                             .build();
                     return NewCategoryView
                             .builder()
-                            .path(path.add(category))
+                            .oldPath(path.add(category))
                             .category(category)
                             .url(e.absUrl("href"))
                             .build();

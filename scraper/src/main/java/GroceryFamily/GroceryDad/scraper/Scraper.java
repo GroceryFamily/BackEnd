@@ -68,12 +68,6 @@ public abstract class Scraper {
         return categoryPermissions.allowed(path);
     }
 
-    // todo: remove
-    @Deprecated
-    protected void scrap(List<String> categories, Consumer<Product> handler) {
-        throw new UnsupportedOperationException("Method not supported");
-    }
-
     void waitUntilPageLoads() {
         new WebDriverWait(driver, config.timeout).until(Scraper::pageIsReady);
     }

@@ -58,7 +58,7 @@ class NewRimiPage {
             }
             var view = NewCategoryView
                     .builder()
-                    .path(path)
+                    .oldPath(path)
                     .category(category)
                     .url(urls.get(codePath))
                     .build();
