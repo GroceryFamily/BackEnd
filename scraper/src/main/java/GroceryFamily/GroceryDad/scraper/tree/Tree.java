@@ -42,7 +42,14 @@ public class Tree<KEY, VALUE> {
 
         @Override
         public String toString() {
-            return format("Node(value=" + value + ", children=" + children.size() + "))");
+            return format("Node(" +
+                    "value=" + value +
+                    ", children=" + children.size() +
+                    ", size=" + size() + "))");
+        }
+
+        public int size() {
+            return children.size() + children.values().stream().mapToInt(Node::size).sum();
         }
     }
 
@@ -64,17 +71,21 @@ public class Tree<KEY, VALUE> {
     }
 
     public void add(List<KEY> path, VALUE value) {
-        var node = root;
+        var parent = root;
         for (int i = 0; i < path.size() - 1; ++i) {
             var key = path.get(i);
-            var child = node.children.get(key);
+            var child = parent.children.get(key);
             if (child == null) {
                 child = new Node<>(path.subList(0, i), null);
-                node.children.put(key, child);
+                parent.children.put(key, child);
             }
-            node = child;
+            parent = child;
         }
-        node.children.put(path.get(path.size() - 1), new Node<>(path, value));
+        var key = path.get(path.size() - 1);
+        var node = new Node<>(path, value);
+        var existing = parent.children.get(key);
+        if (existing != null) node.children.putAll(existing.children);
+        parent.children.put(key, node); // todo: test adding leaf nodes before their parents
     }
 
     public List<Node<KEY, VALUE>> leaves() {
@@ -83,6 +94,10 @@ public class Tree<KEY, VALUE> {
 
     public boolean isEmpty() {
         return root.children.isEmpty();
+    }
+
+    public int size() {
+        return root.size();
     }
 
     public void forEach(BiConsumer<List<KEY>, VALUE> action) {

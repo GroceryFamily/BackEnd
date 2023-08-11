@@ -5,7 +5,7 @@ import GroceryFamily.GroceryElders.domain.Category;
 import java.util.List;
 
 public class CategoryTreePath {
-    final Category[] categories;
+    final Category[] categories; // todo: use linked list instead
 
     public CategoryTreePath(Category first) {
         this(new Category[]{first});

@@ -2,6 +2,7 @@ package GroceryFamily.GroceryDad.scraper;
 
 import GroceryFamily.GroceryDad.scraper.tree.CategoryTree;
 import GroceryFamily.GroceryDad.scraper.view.CategoryView;
+import GroceryFamily.GroceryDad.scraper.view.NewCategoryView;
 import GroceryFamily.GroceryElders.domain.*;
 import com.codeborne.selenide.SelenideElement;
 import lombok.experimental.SuperBuilder;
@@ -14,12 +15,10 @@ import java.util.List;
 import java.util.Set;
 import java.util.function.Consumer;
 
-import static GroceryFamily.GroceryDad.scraper.RimiPage.mainCategoryViews;
-import static GroceryFamily.GroceryDad.scraper.page.Page.hrefContains;
 import static com.codeborne.selenide.CollectionCondition.sizeGreaterThan;
-import static com.codeborne.selenide.Condition.*;
-import static com.codeborne.selenide.Selenide.$;
-import static com.codeborne.selenide.Selenide.$$;
+import static com.codeborne.selenide.Condition.text;
+import static com.codeborne.selenide.Condition.visible;
+import static com.codeborne.selenide.Selenide.*;
 import static java.lang.String.format;
 
 @Slf4j
@@ -39,25 +38,17 @@ class RimiScraper extends Scraper {
 
     @Override
     protected void scrap(Consumer<Product> handler) {
-//        var categories = new CategoryTree();
-//        mainCategoryViews().forEach(view -> traverse(view, handler, categories));
-//        log.info("[RIMI] Traversed categories: {}", categories);
-        var startMillis = System.currentTimeMillis();
-//        var cnt = $$("nav[data-category-menu-container]")
-//                .asDynamicIterable()
-//                .stream()
-//                .count();
-//        System.out.println(cnt);
+        NewRimiPage
+                .runtime()
+                .categoryViewTree()
+                .leaves()
+                .forEach(node -> scrap(node.value, handler));
+    }
 
-
-        $("nav[data-category-menu-container]")
-                .$$("a")
-                .filter(hrefContains("/products/"))
-                .asDynamicIterable()
-//                .asFixedIterable()
-                .stream()
-                .forEach(e -> System.out.println(e.text()));
-        System.out.println(System.currentTimeMillis() - startMillis);
+    private void scrap(NewCategoryView view, Consumer<Product> handler) {
+        open(view.url);
+        waitUntilPageLoads();
+        // todo: scrap products
     }
 
     private void traverse(CategoryView view, Consumer<Product> handler, CategoryTree categories) {
