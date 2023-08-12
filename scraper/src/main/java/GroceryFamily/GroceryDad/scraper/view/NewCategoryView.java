@@ -5,9 +5,7 @@ import GroceryFamily.GroceryElders.domain.Category;
 import lombok.Builder;
 import lombok.Getter;
 
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class NewCategoryView {
     @Deprecated
@@ -16,6 +14,17 @@ public class NewCategoryView {
     public final Path<String> codePath;
     public final Category category;
     public final String url;
+
+    public Set<Category> categories() {
+        var categories = new HashSet<Category>();
+        var view = this;
+        while (!view.isRoot()) {
+            categories.add(view.category);
+            view = view.parent;
+        }
+        return categories;
+
+    }
 
     public String code() {
         return codePath.tail();
@@ -48,7 +57,6 @@ public class NewCategoryView {
     }
 
     public Path<String> namePath() { // todo: reimplement
-//        return oldPath.categories().stream().map(category -> category.name).toList();
         var path = Path.<String>empty();
         var view = this;
         while (!view.isRoot()) {

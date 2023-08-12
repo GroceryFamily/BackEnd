@@ -57,49 +57,49 @@ class BarboraScraper extends Scraper {
 
         var children = NewBarboraPage.runtime().childCategoryViews(view.codePath);
         if (children.isEmpty()) {
-            // todo: scrap products
+            // products(view).forEach(handler); // todo: fix
             System.out.printf("Scraping %s%n", view.namePath());
         } else {
             children.forEach(view::addChild);
             view.leaves().forEach(leaf -> scrap(leaf, handler));
         }
     }
-
-    private void traverse(CategoryView view, Consumer<Product> handler, CategoryTree categories) {
-        if (categoryAllowed(view.path)) {
-            view.select();
-            var children = view.children();
-            if (children.isEmpty()) {
-                products(view.path).forEach(handler);
-                categories.add(view.path);
-            } else {
-                view.children().forEach(child -> traverse(child, handler, categories));
-            }
-            view.deselect();
-        }
+//
+//    private void traverse(CategoryView view, Consumer<Product> handler, CategoryTree categories) {
+//        if (categoryAllowed(view)) {
+//            view.select();
+//            var children = view.children();
+//            if (children.isEmpty()) {
+//                products(view).forEach(handler);
+//                categories.add(view.path);
+//            } else {
+//                view.children().forEach(child -> traverse(child, handler, categories));
+//            }
+//            view.deselect();
+//        }
+//    }
+//
+    static List<Product> products(NewCategoryView categoryView) {
+        return productPages(categoryView).stream().flatMap(Collection::stream).toList();
     }
 
-    static List<Product> products(CategoryTreePath path) {
-        return productPages(path).stream().flatMap(Collection::stream).toList();
-    }
-
-    static List<List<Product>> productPages(CategoryTreePath path) {
+    static List<List<Product>> productPages(NewCategoryView categoryView) {
         List<List<Product>> pages = new ArrayList<>();
-        pages.add(productPage(path));
+        pages.add(productPage(categoryView));
         while (nextProductPageExists()) {
             nextProductPage();
-            pages.add(productPage(path));
+            pages.add(productPage(categoryView));
         }
         return pages;
     }
 
-    static List<Product> productPage(CategoryTreePath path) {
+    static List<Product> productPage(NewCategoryView categoryView) {
         return productPageElements()
                 .shouldHave(sizeGreaterThan(0))
                 .asDynamicIterable()
                 .stream()
                 .map(BarboraProductView::new)
-                .map(view -> view.product(path))
+                .map(view -> view.product(categoryView.categories()))
                 .toList();
 //
 //

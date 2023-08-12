@@ -1,5 +1,6 @@
 package GroceryFamily.GroceryDad.scraper;
 
+import GroceryFamily.GroceryDad.scraper.page.link.CategoryLink;
 import GroceryFamily.GroceryDad.scraper.view.NewCategoryView;
 import GroceryFamily.GroceryDad.scraper.view.Path;
 import GroceryFamily.GroceryElders.domain.Category;
@@ -32,41 +33,55 @@ class NewBarboraPage {
     List<NewCategoryView> childCategoryViews(Path<String> parentCodePath) {
         var views = new HashMap<Path<String>, NewCategoryView>();
         views.put(parentCodePath, NewCategoryView.root());
-        childCategoryViewsSortedByCodePath(parentCodePath).forEach(view -> {
-            var parent = views.get(view.codePath.parent());
+        childCategoryLinksSortedByCodePath(parentCodePath).forEach(link -> {
+            var view = NewCategoryView
+                    .builder()
+                    .codePath(link.codePath)
+                    .category(link.category)
+                    .url(link.absoluteURL)
+                    .build();
+            var parent = views.get(link.codePath.parent());
             parent.addChild(view);
-            views.put(view.codePath, view);
+            views.put(link.codePath, view);
         });
         return views.get(parentCodePath).detachChildren();
     }
 
-    private Stream<NewCategoryView> childCategoryViewsSortedByCodePath(Path<String> parentCodePath) {
+    private Stream<CategoryLink> childCategoryLinksSortedByCodePath(Path<String> parentCodePath) {
         return categoryLinks()
-                .map(link -> {
-                    var codePath = categoryCodePath(link);
-                    return NewCategoryView
-                            .builder()
-                            .codePath(codePath)
-                            .category(Category
-                                    .builder()
-                                    .code(codePath.tail())
-                                    .name(link.text())
-                                    .build())
-                            .url(link.absUrl("href"))
-                            .build();
-                })
                 .filter(view -> view.codePath.contains(parentCodePath))
                 .filter(view -> !view.codePath.equals(parentCodePath))
                 .sorted(comparing(view -> view.codePath.size()));
     }
 
-    private Stream<Element> categoryLinks() {
-        return document.select("a[class*=category]").stream().filter(Element::hasText);
+    private Stream<CategoryLink> categoryLinks() {
+        return document
+                .select("a[class*=category]")
+                .stream()
+                .filter(Element::hasText)
+                .map(NewBarboraPage::categoryLink);
     }
 
-    private static Path<String> categoryCodePath(Element categoryLink) {
-        var url = categoryLink.attr("href");
-        return Path.of(substringAfter(url, "/").split("/"));
+    private static CategoryLink categoryLink(Element e) {
+        var relativeURL = e.attr("href");
+        var codePath = Path.of(substringAfter(relativeURL, "/").split("/"));
+        var category = Category
+                .builder()
+                .code(codePath.tail())
+                .name(e.text())
+                .build();
+        return CategoryLink
+                .builder()
+                .codePath(codePath)
+                .category(category)
+                .relativeURL(relativeURL)
+                .absoluteURL(e.absUrl("href"))
+                .build();
+    }
+
+    private static Path<String> categoryCodePath(Element e) {
+        var relativeURL = e.attr("href");
+        return Path.of(substringAfter(relativeURL, "/").split("/"));
     }
 
     public static NewBarboraPage runtime() {

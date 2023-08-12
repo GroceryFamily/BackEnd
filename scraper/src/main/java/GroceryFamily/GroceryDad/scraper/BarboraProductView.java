@@ -6,6 +6,7 @@ import com.codeborne.selenide.SelenideElement;
 
 import java.math.BigDecimal;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Optional;
 import java.util.Set;
 
@@ -13,14 +14,14 @@ import static com.codeborne.selenide.Condition.cssClass;
 import static java.lang.String.format;
 
 record BarboraProductView(SelenideElement e) {
-    Product product(CategoryTreePath path) {
+    Product product(Set<Category> categories) {
         return Product
                 .builder()
                 .namespace(Namespace.BARBORA)
                 .code(code())
                 .name(name())
                 .prices(prices())
-//                .categories(path.categories())
+                .categories(categories)
                 .build();
     }
 
