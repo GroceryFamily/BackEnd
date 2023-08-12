@@ -72,6 +72,10 @@ public class Path<SEGMENT> {
         return new Path<>(List.of(segments));
     }
 
+    public static <SEGMENT> Path<SEGMENT> of(List<SEGMENT> segments) {
+        return new Path<>(segments);
+    }
+
     public static <SEGMENT> Path<SEGMENT> empty() {
         return new Path<>();
     }

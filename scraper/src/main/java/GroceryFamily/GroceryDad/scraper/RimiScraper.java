@@ -38,17 +38,24 @@ class RimiScraper extends Scraper {
 
     @Override
     protected void scrap(Consumer<Product> handler) {
-//        NewRimiPage
-//                .runtime()
-//                .categoryViewTree()
-//                .leaves()
-//                .forEach(node -> scrap(node.value, handler));
+        NewRimiPage.runtime().rootCategoryView().leaves().forEach(leaf -> scrap(leaf, handler));
     }
 
     private void scrap(NewCategoryView view, Consumer<Product> handler) {
+        if (view.isVisited()) return;
+        // if (!categoryAllowed(view.namePath())) return; // todo: move on
+        view.markVisited();
         open(view.url);
         waitUntilPageLoads();
-        // todo: scrap products
+
+        var children = NewRimiPage.runtime().childCategoryViews(view.codePath);
+        if (children.isEmpty()) {
+            // todo: scrap products
+            System.out.printf("Scraping %s%n", view.namePath());
+        } else {
+            children.forEach(view::addChild);
+            view.leaves().forEach(leaf -> scrap(leaf, handler));
+        }
     }
 
     static void category(List<String> categories) {

@@ -1,8 +1,7 @@
 package GroceryFamily.GroceryDad.scraper;
 
-import GroceryFamily.GroceryDad.scraper.tree.CategoryTreePath;
-import GroceryFamily.GroceryDad.scraper.tree.CategoryViewTree;
 import GroceryFamily.GroceryDad.scraper.view.NewCategoryView;
+import GroceryFamily.GroceryDad.scraper.view.Path;
 import GroceryFamily.GroceryElders.domain.Category;
 import com.codeborne.selenide.WebDriverRunner;
 import org.jsoup.Jsoup;
@@ -12,9 +11,11 @@ import org.jsoup.select.Elements;
 
 import java.util.HashMap;
 import java.util.List;
+import java.util.stream.Stream;
 
 import static GroceryFamily.GroceryDad.scraper.page.Page.html;
 import static java.util.Comparator.comparing;
+import static org.apache.commons.lang3.StringUtils.substringAfter;
 
 class NewRimiPage {
     private final Document document;
@@ -23,53 +24,70 @@ class NewRimiPage {
         this.document = Jsoup.parse(html, url);
     }
 
-    CategoryViewTree categoryViewTree() {
-        var buttons = document
-                .select("nav[data-category-menu-container] button")
-                .stream()
-                .sorted(comparing(e -> e.attr("data-target-level")))
-                .toList();
-        var categories = new HashMap<List<String>, Category>();
-        var urls = new HashMap<List<String>, String>();
-        buttons.forEach(button -> {
-            var codePath = codePath(link(button));
-            categories.put(codePath, Category
-                    .builder()
-                    .code(codePath.get(codePath.size() - 1))
-                    .name(button.text())
-                    .build());
-            urls.put(codePath, link(button).absUrl("href"));
-            submenuLinks(button).forEach(link -> {
-                var childCodePath = codePath(link);
-                categories.put(childCodePath, Category
-                        .builder()
-                        .code(childCodePath.get(childCodePath.size() - 1))
-                        .name(link.text())
-                        .build());
-                urls.put(childCodePath, link.absUrl("href"));
-            });
-        });
-        var tree = new CategoryViewTree();
-        categories.forEach((codePath, category) -> {
-            var path = new CategoryTreePath(categories.get(codePath.subList(0, 1)));
-            for (int l = 2; l <= codePath.size(); ++l) {
-                category = categories.get(codePath.subList(0, l));
-                path = path.add(category);
-            }
-            var view = NewCategoryView
-                    .builder()
-                    .oldPath(path)
-                    .category(category)
-                    .url(urls.get(codePath))
-                    .build();
-            tree.add(view);
-        });
-        return tree;
+    NewCategoryView rootCategoryView() {
+        var root = NewCategoryView.root();
+        childCategoryViews(root.codePath).forEach(root::addChild);
+        return root;
     }
 
-    private static List<String> codePath(Element e) {
+    List<NewCategoryView> childCategoryViews(Path<String> parentCodePath) {
+        var views = new HashMap<Path<String>, NewCategoryView>();
+        views.put(parentCodePath, NewCategoryView.root());
+        childCategoryViewsSortedByCodePath(parentCodePath).forEach(view -> {
+            var parent = views.get(view.codePath.parent());
+            parent.addChild(view);
+            views.put(view.codePath, view);
+        });
+        return views.get(parentCodePath).detachChildren();
+    }
+
+    Stream<NewCategoryView> childCategoryViewsSortedByCodePath(Path<String> parentCodePath) {
+        var buttons = document.select("nav[data-category-menu-container] button");
+        return Stream.concat(buttons.stream().map(button -> {
+                            var codePath = codePath(link(button));
+                            var category = Category
+                                    .builder()
+                                    .code(codePath.tail())
+                                    .name(button.text())
+                                    .build();
+                            return NewCategoryView
+                                    .builder()
+                                    .codePath(codePath)
+                                    .category(category)
+                                    .url(link(button).absUrl("href"))
+                                    .build();
+                        }), buttons.stream().flatMap(button -> submenuLinks(button).stream().map(link -> {
+                            var codePath = codePath(link);
+                            var category = Category
+                                    .builder()
+                                    .code(codePath.tail())
+                                    .name(link.text())
+                                    .build();
+                            return NewCategoryView
+                                    .builder()
+                                    .codePath(codePath)
+                                    .category(category)
+                                    .url(link.absUrl("href"))
+                                    .build();
+                        }))
+                )
+                .filter(view -> view.codePath.contains(parentCodePath))
+                .filter(view -> !view.codePath.equals(parentCodePath))
+                .sorted(comparing(view -> view.codePath.size()));
+    }
+
+    private Stream<Element> categoryLinks() {
+        return document.select("a[class*=category]").stream().filter(Element::hasText);
+    }
+
+    private static Path<String> categoryCodePath(Element categoryLink) {
+        var url = categoryLink.attr("href");
+        return Path.of(substringAfter(url, "/").split("/"));
+    }
+
+    private static Path<String> codePath(Element e) {
         var fragments = e.attr("href").split("/");
-        return List.of(fragments).subList(4, fragments.length - 2);
+        return Path.of(List.of(fragments).subList(4, fragments.length - 2));
     }
 
     private Element link(Element button) {
