@@ -19,9 +19,11 @@ import static org.apache.commons.lang3.StringUtils.substringAfter;
 
 class NewBarboraPage {
     private final Document document;
+    private final Path<String> codePath;
 
-    NewBarboraPage(String html, String url) {
+    NewBarboraPage(String html, String url, Path<String> codePath) {
         this.document = Jsoup.parse(html, url);
+        this.codePath = codePath;
     }
 
     NewCategoryView rootCategoryView() {
@@ -33,7 +35,7 @@ class NewBarboraPage {
     List<NewCategoryView> childCategoryViews(Path<String> parentCodePath) {
         var views = new HashMap<Path<String>, NewCategoryView>();
         views.put(parentCodePath, NewCategoryView.root());
-        childCategoryLinksSortedByCodePath(parentCodePath).forEach(link -> {
+        childCategoryLinksSortedByCodePath().forEach(link -> {
             var view = NewCategoryView
                     .builder()
                     .codePath(link.codePath)
@@ -47,10 +49,10 @@ class NewBarboraPage {
         return views.get(parentCodePath).detachChildren();
     }
 
-    private Stream<CategoryLink> childCategoryLinksSortedByCodePath(Path<String> parentCodePath) {
+    private Stream<CategoryLink> childCategoryLinksSortedByCodePath() {
         return categoryLinks()
-                .filter(view -> view.codePath.contains(parentCodePath))
-                .filter(view -> !view.codePath.equals(parentCodePath))
+                .filter(view -> view.codePath.contains(codePath))
+                .filter(view -> !view.codePath.equals(codePath))
                 .sorted(comparing(view -> view.codePath.size()));
     }
 
@@ -79,7 +81,7 @@ class NewBarboraPage {
                 .build();
     }
 
-    public static NewBarboraPage runtime() {
-        return new NewBarboraPage(html(), WebDriverRunner.getWebDriver().getCurrentUrl());
+    public static NewBarboraPage runtime(Path<String> codePath) {
+        return new NewBarboraPage(html(), WebDriverRunner.getWebDriver().getCurrentUrl(), codePath);
     }
 }

@@ -1,5 +1,6 @@
 package GroceryFamily.GroceryDad.scraper;
 
+import GroceryFamily.GroceryDad.scraper.page.link.CategoryLink;
 import GroceryFamily.GroceryDad.scraper.view.NewCategoryView;
 import GroceryFamily.GroceryDad.scraper.view.Path;
 import GroceryFamily.GroceryElders.domain.Category;
@@ -15,13 +16,14 @@ import java.util.stream.Stream;
 
 import static GroceryFamily.GroceryDad.scraper.page.Page.html;
 import static java.util.Comparator.comparing;
-import static org.apache.commons.lang3.StringUtils.substringAfter;
 
 class NewRimiPage {
     private final Document document;
+    private final Path<String> codePath;
 
-    NewRimiPage(String html, String url) {
+    NewRimiPage(String html, String url, Path<String> codePath) {
         this.document = Jsoup.parse(html, url);
+        this.codePath = codePath;
     }
 
     NewCategoryView rootCategoryView() {
@@ -33,59 +35,63 @@ class NewRimiPage {
     List<NewCategoryView> childCategoryViews(Path<String> parentCodePath) {
         var views = new HashMap<Path<String>, NewCategoryView>();
         views.put(parentCodePath, NewCategoryView.root());
-        childCategoryViewsSortedByCodePath(parentCodePath).forEach(view -> {
-            var parent = views.get(view.codePath.parent());
+        childCategoryLinksSortedByCodePath().forEach(link -> {
+            var view = NewCategoryView
+                    .builder()
+                    .codePath(link.codePath)
+                    .category(link.category)
+                    .url(link.absoluteURL)
+                    .build();
+            var parent = views.get(link.codePath.parent());
             parent.addChild(view);
-            views.put(view.codePath, view);
+            views.put(link.codePath, view);
         });
         return views.get(parentCodePath).detachChildren();
     }
 
-    Stream<NewCategoryView> childCategoryViewsSortedByCodePath(Path<String> parentCodePath) {
-        var buttons = document.select("nav[data-category-menu-container] button");
-        return Stream.concat(buttons.stream().map(button -> {
-                            var codePath = codePath(link(button));
-                            var category = Category
-                                    .builder()
-                                    .code(codePath.tail())
-                                    .name(button.text())
-                                    .build();
-                            return NewCategoryView
-                                    .builder()
-                                    .codePath(codePath)
-                                    .category(category)
-                                    .url(link(button).absUrl("href"))
-                                    .build();
-                        }), buttons.stream().flatMap(button -> submenuLinks(button).stream().map(link -> {
-                            var codePath = codePath(link);
-                            var category = Category
-                                    .builder()
-                                    .code(codePath.tail())
-                                    .name(link.text())
-                                    .build();
-                            return NewCategoryView
-                                    .builder()
-                                    .codePath(codePath)
-                                    .category(category)
-                                    .url(link.absUrl("href"))
-                                    .build();
-                        }))
-                )
-                .filter(view -> view.codePath.contains(parentCodePath))
-                .filter(view -> !view.codePath.equals(parentCodePath))
+    Stream<CategoryLink> childCategoryLinksSortedByCodePath() {
+        return categoryLinks()
+                .filter(view -> view.codePath.contains(codePath))
+                .filter(view -> !view.codePath.equals(codePath))
                 .sorted(comparing(view -> view.codePath.size()));
     }
 
-    private Stream<Element> categoryLinks() {
-        return document.select("a[class*=category]").stream().filter(Element::hasText);
+    private Stream<CategoryLink> categoryLinks() {
+        var buttons = document.select("nav[data-category-menu-container] button");
+        return Stream.concat(buttons.stream().map(button -> {
+                    var codePath = categoryCodePath(link(button));
+                    var category = Category
+                            .builder()
+                            .code(codePath.tail())
+                            .name(button.text())
+                            .build();
+                    return CategoryLink
+                            .builder()
+                            .codePath(codePath)
+                            .category(category)
+                            .relativeURL(link(button).attr("href"))
+                            .absoluteURL(link(button).absUrl("href"))
+                            .build();
+                }), buttons.stream().flatMap(button -> submenuLinks(button).stream().map(link -> {
+                    var codePath = categoryCodePath(link);
+                    var category = Category
+                            .builder()
+                            .code(codePath.tail())
+                            .name(link.text())
+                            .build();
+                    return CategoryLink
+                            .builder()
+                            .codePath(codePath)
+                            .category(category)
+                            .relativeURL(link.attr("href"))
+                            .absoluteURL(link.absUrl("href"))
+                            .build();
+                }))
+        );
+
     }
 
-    private static Path<String> categoryCodePath(Element categoryLink) {
-        var url = categoryLink.attr("href");
-        return Path.of(substringAfter(url, "/").split("/"));
-    }
-
-    private static Path<String> codePath(Element e) {
+    private static Path<String> categoryCodePath(Element e) {
         var fragments = e.attr("href").split("/");
         return Path.of(List.of(fragments).subList(4, fragments.length - 2));
     }
@@ -102,7 +108,7 @@ class NewRimiPage {
         return document.select("*[data-index=" + button.attr("data-target-descendant") + "]").first();
     }
 
-    public static NewRimiPage runtime() {
-        return new NewRimiPage(html(), WebDriverRunner.getWebDriver().getCurrentUrl());
+    public static NewRimiPage runtime(Path<String> codePath) {
+        return new NewRimiPage(html(), WebDriverRunner.getWebDriver().getCurrentUrl(), codePath);
     }
 }

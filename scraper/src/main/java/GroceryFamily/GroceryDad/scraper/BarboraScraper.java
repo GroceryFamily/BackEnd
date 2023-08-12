@@ -4,6 +4,7 @@ import GroceryFamily.GroceryDad.scraper.tree.CategoryTree;
 import GroceryFamily.GroceryDad.scraper.tree.CategoryTreePath;
 import GroceryFamily.GroceryDad.scraper.view.CategoryView;
 import GroceryFamily.GroceryDad.scraper.view.NewCategoryView;
+import GroceryFamily.GroceryDad.scraper.view.Path;
 import GroceryFamily.GroceryElders.domain.*;
 import com.codeborne.selenide.SelenideElement;
 import lombok.experimental.SuperBuilder;
@@ -45,7 +46,7 @@ class BarboraScraper extends Scraper {
 
     @Override
     protected void scrap(Consumer<Product> handler) {
-        NewBarboraPage.runtime().rootCategoryView().leaves().forEach(leaf -> scrap(leaf, handler));
+        NewBarboraPage.runtime(Path.empty()).rootCategoryView().leaves().forEach(leaf -> scrap(leaf, handler));
     }
 
     private void scrap(NewCategoryView view, Consumer<Product> handler) {
@@ -55,7 +56,7 @@ class BarboraScraper extends Scraper {
         open(view.url);
         waitUntilPageLoads();
 
-        var children = NewBarboraPage.runtime().childCategoryViews(view.codePath);
+        var children = NewBarboraPage.runtime(view.codePath).childCategoryViews(view.codePath);
         if (children.isEmpty()) {
             // products(view).forEach(handler); // todo: fix
             System.out.printf("Scraping %s%n", view.namePath());

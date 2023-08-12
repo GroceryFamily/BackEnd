@@ -3,6 +3,7 @@ package GroceryFamily.GroceryDad.scraper;
 import GroceryFamily.GroceryDad.scraper.tree.CategoryTree;
 import GroceryFamily.GroceryDad.scraper.view.CategoryView;
 import GroceryFamily.GroceryDad.scraper.view.NewCategoryView;
+import GroceryFamily.GroceryDad.scraper.view.Path;
 import GroceryFamily.GroceryElders.domain.*;
 import com.codeborne.selenide.SelenideElement;
 import lombok.experimental.SuperBuilder;
@@ -38,7 +39,7 @@ class RimiScraper extends Scraper {
 
     @Override
     protected void scrap(Consumer<Product> handler) {
-        NewRimiPage.runtime().rootCategoryView().leaves().forEach(leaf -> scrap(leaf, handler));
+        NewRimiPage.runtime(Path.empty()).rootCategoryView().leaves().forEach(leaf -> scrap(leaf, handler));
     }
 
     private void scrap(NewCategoryView view, Consumer<Product> handler) {
@@ -48,7 +49,7 @@ class RimiScraper extends Scraper {
         open(view.url);
         waitUntilPageLoads();
 
-        var children = NewRimiPage.runtime().childCategoryViews(view.codePath);
+        var children = NewRimiPage.runtime(view.codePath).childCategoryViews(view.codePath);
         if (children.isEmpty()) {
             // todo: scrap products
             System.out.printf("Scraping %s%n", view.namePath());

@@ -36,7 +36,7 @@ class NewPrismaPage {
     List<NewCategoryView> childCategoryViews(Path<String> parentCodePath) {
         var views = new HashMap<Path<String>, NewCategoryView>();
         views.put(parentCodePath, NewCategoryView.root());
-        childCategoryLinksSortedByCodePath(parentCodePath).forEach(link -> {
+        childCategoryLinksSortedByCodePath().forEach(link -> {
             var view = NewCategoryView
                     .builder()
                     .codePath(link.codePath)
@@ -50,10 +50,10 @@ class NewPrismaPage {
         return views.get(parentCodePath).detachChildren();
     }
 
-    private Stream<CategoryLink> childCategoryLinksSortedByCodePath(Path<String> parentCodePath) {
+    private Stream<CategoryLink> childCategoryLinksSortedByCodePath() {
         return categoryLinks()
-                .filter(view -> view.codePath.contains(parentCodePath))
-                .filter(view -> !view.codePath.equals(parentCodePath))
+                .filter(view -> view.codePath.contains(codePath))
+                .filter(view -> !view.codePath.equals(codePath))
                 .sorted(comparing(view -> view.codePath.size()));
     }
 
