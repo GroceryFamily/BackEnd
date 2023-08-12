@@ -1,5 +1,6 @@
 package GroceryFamily.GroceryDad.scraper;
 
+import GroceryFamily.GroceryDad.scraper.page.link.CategoryLink;
 import GroceryFamily.GroceryDad.scraper.view.NewCategoryView;
 import GroceryFamily.GroceryDad.scraper.view.Path;
 import GroceryFamily.GroceryElders.domain.Category;
@@ -14,13 +15,16 @@ import java.util.stream.Stream;
 
 import static GroceryFamily.GroceryDad.scraper.page.Page.html;
 import static java.util.Comparator.comparing;
-import static org.apache.commons.lang3.StringUtils.*;
+import static org.apache.commons.lang3.StringUtils.substringAfterLast;
+import static org.apache.commons.lang3.StringUtils.substringBeforeLast;
 
 class NewPrismaPage {
     private final Document document;
+    private final Path<String> codePath;
 
-    NewPrismaPage(String html, String url) {
+    NewPrismaPage(String html, String url, Path<String> codePath) {
         this.document = Jsoup.parse(html, url);
+        this.codePath = codePath;
     }
 
     NewCategoryView rootCategoryView() {
@@ -32,82 +36,82 @@ class NewPrismaPage {
     List<NewCategoryView> childCategoryViews(Path<String> parentCodePath) {
         var views = new HashMap<Path<String>, NewCategoryView>();
         views.put(parentCodePath, NewCategoryView.root());
-        childCategoryViewsSortedByCodePath(parentCodePath).forEach(view -> {
-            var parent = views.get(view.codePath.parent());
+        childCategoryLinksSortedByCodePath(parentCodePath).forEach(link -> {
+            var view = NewCategoryView
+                    .builder()
+                    .codePath(link.codePath)
+                    .category(link.category)
+                    .url(link.absoluteURL)
+                    .build();
+            var parent = views.get(link.codePath.parent());
             parent.addChild(view);
-            views.put(view.codePath, view);
+            views.put(link.codePath, view);
         });
         return views.get(parentCodePath).detachChildren();
     }
 
-    private Stream<NewCategoryView> childCategoryViewsSortedByCodePath(Path<String> parentCodePath) {
-        return Stream.concat(topCategoryViews(), leftCategoryViews(parentCodePath))
+    private Stream<CategoryLink> childCategoryLinksSortedByCodePath(Path<String> parentCodePath) {
+        return categoryLinks()
                 .filter(view -> view.codePath.contains(parentCodePath))
                 .filter(view -> !view.codePath.equals(parentCodePath))
                 .sorted(comparing(view -> view.codePath.size()));
     }
 
-    private Stream<Element> categoryLinks() {
-        return document.select("a[class*=category]").stream().filter(Element::hasText);
+    private Stream<CategoryLink> categoryLinks() {
+        return Stream.concat(topCategoryLinks(), leftCategoryLinks());
     }
 
-    private static Path<String> categoryCodePath(Element categoryLink) {
-        var url = categoryLink.attr("href");
-        return Path.of(substringAfter(url, "/").split("/"));
-    }
-//
-//    CategoryViewTree categoryViewTree() {
-//        var tree = new CategoryViewTree();
-//        topCategoryViews().forEach(tree::add);
-//        return tree;
-//    }
-//
-//    CategoryViewTree subcategoryViewTree(CategoryTreePath path) {
-//        var tree = new CategoryViewTree();
-//        leftCategoryViews(path).forEach(tree::add);
-//        return tree;
-//    }
-
-    private Stream<NewCategoryView> topCategoryViews() {
-        var rootCodePath = Path.<String>empty();
-        return document.select("#main-navigation a[href*=selection]")
+    private Stream<CategoryLink> topCategoryLinks() {
+        return document
+                .select("#main-navigation a[href*=selection]")
                 .stream()
-                .map(link -> {
-                    var category = Category
-                            .builder()
-                            .code(substringAfterLast(substringBeforeLast(link.attr("href"), "/"), "/"))
-                            .name(link.text())
-                            .build();
-                    return NewCategoryView
-                            .builder()
-//                            .oldPath(new CategoryTreePath(category))
-                            .codePath(rootCodePath.followedBy(category.code))
-                            .category(category)
-                            .url(link.absUrl("href"))
-                            .build();
-                });
+                .filter(Element::hasText)
+                .map(NewPrismaPage::topCategoryLink);
     }
 
-    private Stream<NewCategoryView> leftCategoryViews(Path<String> parentCodePath) {
-        return document.select("*[role=navigation] a[data-category-id]")
+    private static CategoryLink topCategoryLink(Element e) {
+        var relativeURL = e.attr("href");
+        var code = substringAfterLast(substringBeforeLast(relativeURL, "/"), "/");
+        var category = Category
+                .builder()
+                .code(code)
+                .name(e.text())
+                .build();
+        return CategoryLink
+                .builder()
+                .codePath(Path.<String>empty().followedBy(code))
+                .category(category)
+                .relativeURL(relativeURL)
+                .absoluteURL(e.absUrl("href"))
+                .build();
+    }
+
+    private Stream<CategoryLink> leftCategoryLinks() {
+        return document
+                .select("*[role=navigation] a[data-category-id]")
                 .stream()
-                .map(link -> {
-                    var category = Category
-                            .builder()
-                            .code(substringAfterLast(link.attr("href"), "/"))
-                            .name(link.text())
-                            .build();
-                    return NewCategoryView
-                            .builder()
-//                            .oldPath(path.add(category))
-                            .codePath(parentCodePath.followedBy(category.code))
-                            .category(category)
-                            .url(link.absUrl("href"))
-                            .build();
-                });
+                .filter(Element::hasText)
+                .map(this::leftCategoryLink);
     }
 
-    public static NewPrismaPage runtime() {
-        return new NewPrismaPage(html(), WebDriverRunner.getWebDriver().getCurrentUrl());
+    private CategoryLink leftCategoryLink(Element e) {
+        var relativeURL = e.attr("href");
+        var code = substringAfterLast(relativeURL, "/");
+        var category = Category
+                .builder()
+                .code(code)
+                .name(e.text())
+                .build();
+        return CategoryLink
+                .builder()
+                .codePath(codePath.followedBy(code))
+                .category(category)
+                .relativeURL(relativeURL)
+                .absoluteURL(e.absUrl("href"))
+                .build();
+    }
+
+    public static NewPrismaPage runtime(Path<String> codePath) {
+        return new NewPrismaPage(html(), WebDriverRunner.getWebDriver().getCurrentUrl(), codePath);
     }
 }

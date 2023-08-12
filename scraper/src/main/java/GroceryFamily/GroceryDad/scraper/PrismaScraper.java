@@ -2,6 +2,7 @@ package GroceryFamily.GroceryDad.scraper;
 
 import GroceryFamily.GroceryDad.scraper.tree.CategoryTreePath;
 import GroceryFamily.GroceryDad.scraper.view.NewCategoryView;
+import GroceryFamily.GroceryDad.scraper.view.Path;
 import GroceryFamily.GroceryElders.domain.Product;
 import lombok.experimental.SuperBuilder;
 import lombok.extern.slf4j.Slf4j;
@@ -35,7 +36,7 @@ class PrismaScraper extends Scraper {
 
     @Override
     protected void scrap(Consumer<Product> handler) {
-        NewPrismaPage.runtime().rootCategoryView().leaves().forEach(leaf -> scrap(leaf, handler));
+        NewPrismaPage.runtime(Path.empty()).rootCategoryView().leaves().forEach(leaf -> scrap(leaf, handler));
     }
 
     private void scrap(NewCategoryView view, Consumer<Product> handler) {
@@ -45,7 +46,7 @@ class PrismaScraper extends Scraper {
         open(view.url);
         waitUntilPageLoads();
 
-        var children = NewPrismaPage.runtime().childCategoryViews(view.codePath);
+        var children = NewPrismaPage.runtime(view.codePath).childCategoryViews(view.codePath);
         if (children.isEmpty()) {
             // todo: scrap products
             System.out.printf("Scraping %s%n", view.namePath());

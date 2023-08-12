@@ -2,8 +2,8 @@ GroceryDad:
   api.uri: http://localhost:8080
 
   enabled:
-    - barbora
-#    - prisma
+#    - barbora
+    - prisma
 #    - rimi
 
   scrapers:

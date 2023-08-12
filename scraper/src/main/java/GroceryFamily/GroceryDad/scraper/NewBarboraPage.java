@@ -79,11 +79,6 @@ class NewBarboraPage {
                 .build();
     }
 
-    private static Path<String> categoryCodePath(Element e) {
-        var relativeURL = e.attr("href");
-        return Path.of(substringAfter(relativeURL, "/").split("/"));
-    }
-
     public static NewBarboraPage runtime() {
         return new NewBarboraPage(html(), WebDriverRunner.getWebDriver().getCurrentUrl());
     }
