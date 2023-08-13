@@ -20,11 +20,10 @@ public class BarboraContext extends Context {
 
     @Override
     protected void waitUntilReady() {
-        if (!initialized) {
-            acceptOrRejectCookies();
-            switchToEnglish();
-            initialized = true;
-        }
+        if (initialized) return;
+        acceptOrRejectCookies();
+        switchToEnglish();
+        initialized = true;
     }
 
     @Override

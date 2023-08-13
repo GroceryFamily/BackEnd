@@ -1,5 +1,7 @@
 package GroceryFamily.GroceryDad.scraper;
 
+import GroceryFamily.GroceryDad.scraper.page.Node;
+import GroceryFamily.GroceryDad.scraper.page.context.PrismaContext;
 import GroceryFamily.GroceryDad.scraper.tree.CategoryTreePath;
 import GroceryFamily.GroceryDad.scraper.view.NewCategoryView;
 import GroceryFamily.GroceryDad.scraper.view.Path;
@@ -36,7 +38,7 @@ class PrismaScraper extends Scraper {
 
     @Override
     protected void scrap(Consumer<Product> handler) {
-        NewPrismaPage.runtime(Path.empty()).rootCategoryView().leaves().forEach(leaf -> scrap(leaf, handler));
+        Node.root(rootURL(), new PrismaContext()).traverse(handler);
     }
 
     private void scrap(NewCategoryView view, Consumer<Product> handler) {
