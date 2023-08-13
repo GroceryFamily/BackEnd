@@ -3,7 +3,7 @@ package GroceryFamily.GroceryDad.scraper;
 import GroceryFamily.GroceryDad.GroceryDadConfig;
 import GroceryFamily.GroceryDad.scraper.cache.Cache;
 import GroceryFamily.GroceryDad.scraper.page.Page;
-import GroceryFamily.GroceryDad.scraper.tree.CategoryPermissionTree;
+import GroceryFamily.GroceryDad.scraper.tree.PermissionTree;
 import GroceryFamily.GroceryElders.api.client.ProductAPIClient;
 import GroceryFamily.GroceryElders.domain.Namespace;
 import GroceryFamily.GroceryElders.domain.Product;
@@ -29,7 +29,7 @@ public abstract class Scraper {
     private final GroceryDadConfig.Scraper config;
     private final WebDriver driver;
     private final ProductAPIClient client;
-    protected final CategoryPermissionTree categoryPermissions;
+    protected final PermissionTree categoryPermissions;
 
     public final void scrap() {
         Configuration.timeout = config.timeout.toMillis();
@@ -75,8 +75,8 @@ public abstract class Scraper {
         };
     }
 
-    private static CategoryPermissionTree buildCategoryPermissionTree(GroceryDadConfig.Scraper config) {
-        var tree = new CategoryPermissionTree();
+    private static PermissionTree buildCategoryPermissionTree(GroceryDadConfig.Scraper config) {
+        var tree = new PermissionTree();
         config.categories.forEach(tree::add);
         return tree;
     }

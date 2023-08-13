@@ -2,7 +2,7 @@ package GroceryFamily.GroceryDad.scraper.tree;
 
 import java.util.List;
 
-class PermissionTree extends Tree<String, String> {
+public class PermissionTree extends Tree<String, String> {
     private static final String ANY = "*";
 
     public boolean allowed(List<String> path) {
