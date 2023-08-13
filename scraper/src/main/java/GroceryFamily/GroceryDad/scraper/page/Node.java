@@ -3,6 +3,7 @@ package GroceryFamily.GroceryDad.scraper.page;
 import GroceryFamily.GroceryDad.scraper.view.Path;
 import GroceryFamily.GroceryElders.domain.Product;
 import lombok.Builder;
+import org.jsoup.Jsoup;
 
 import java.util.HashMap;
 import java.util.List;
@@ -12,6 +13,7 @@ import java.util.function.Consumer;
 public class Node {
     public final Link link;
     private final Context context;
+    private NodeType type;
     private Node parent;
     private final Map<String, Node> children = new HashMap<>();
 
@@ -36,10 +38,16 @@ public class Node {
     }
 
     public void traverse(Consumer<Product> handler) {
-        context.select(link);
+        var cache = context.cache(link);
+        var html = cache.load(link.name);
+        if (html == null) {
+            html = context.open(link);
+            cache.save(link.name, html);
+        }
+        var document = Jsoup.parse(html, link.url);
         var nodes = new HashMap<Path<String>, Node>();
         nodes.put(codePath(), this);
-        context.childCategoryLinksSortedByCodePathSize().forEach(link -> {
+        context.childCategoryLinksSortedByCodePathSize(document, link).forEach(link -> {
             var node = Node.builder().link(link).context(context).build();
             var parent = nodes.get(link.codePath.parent());
             parent.children.put(link.code(), node);
@@ -47,9 +55,11 @@ public class Node {
             nodes.put(link.codePath, node);
         });
         if (isLeaf()) {
+            type = NodeType.PRODUCT_LIST;
             // todo: scrap products
             System.out.printf("Scraping %s%n", namePath());
         } else {
+            type = NodeType.CATEGORY;
             leaves().forEach(leaf -> leaf.traverse(handler));
         }
     }

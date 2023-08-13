@@ -1,5 +1,6 @@
 package GroceryFamily.GroceryDad.scraper.page.context;
 
+import GroceryFamily.GroceryDad.scraper.cache.Cache;
 import GroceryFamily.GroceryDad.scraper.page.Context;
 import GroceryFamily.GroceryDad.scraper.page.Link;
 import GroceryFamily.GroceryDad.scraper.view.Path;
@@ -18,6 +19,10 @@ import static org.apache.commons.lang3.StringUtils.substringBeforeLast;
 
 public class PrismaContext extends Context {
     private boolean initialized;
+
+    public PrismaContext(Cache.Factory cacheFactory) {
+        super(cacheFactory);
+    }
 
     @Override
     protected void waitUntilReady() {

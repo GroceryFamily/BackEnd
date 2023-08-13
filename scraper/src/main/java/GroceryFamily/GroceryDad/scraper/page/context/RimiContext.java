@@ -1,5 +1,6 @@
 package GroceryFamily.GroceryDad.scraper.page.context;
 
+import GroceryFamily.GroceryDad.scraper.cache.Cache;
 import GroceryFamily.GroceryDad.scraper.page.Context;
 import GroceryFamily.GroceryDad.scraper.page.Link;
 import GroceryFamily.GroceryDad.scraper.view.Path;
@@ -15,6 +16,10 @@ import static com.codeborne.selenide.Selenide.$;
 
 public class RimiContext extends Context {
     private boolean initialized;
+
+    public RimiContext(Cache.Factory cacheFactory) {
+        super(cacheFactory);
+    }
 
     @Override
     protected void waitUntilReady() {

@@ -38,7 +38,7 @@ class PrismaScraper extends Scraper {
 
     @Override
     protected void scrap(Consumer<Product> handler) {
-        Node.root(rootURL(), new PrismaContext()).traverse(handler);
+        Node.root(rootURL(), new PrismaContext(cacheFactory())).traverse(handler);
     }
 
     private void scrap(NewCategoryView view, Consumer<Product> handler) {

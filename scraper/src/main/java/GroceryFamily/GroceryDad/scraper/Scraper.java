@@ -1,6 +1,7 @@
 package GroceryFamily.GroceryDad.scraper;
 
 import GroceryFamily.GroceryDad.GroceryDadConfig;
+import GroceryFamily.GroceryDad.scraper.cache.Cache;
 import GroceryFamily.GroceryDad.scraper.page.Page;
 import GroceryFamily.GroceryDad.scraper.tree.CategoryPermissionTree;
 import GroceryFamily.GroceryDad.scraper.tree.CategoryTreePath;
@@ -57,6 +58,10 @@ public abstract class Scraper {
             });
              */
         });
+    }
+
+    protected final Cache.Factory cacheFactory() {
+        return Cache.factory(config.cache.directory);
     }
 
     protected final String rootURL() {

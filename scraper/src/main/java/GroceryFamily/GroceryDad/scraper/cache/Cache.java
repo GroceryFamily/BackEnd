@@ -26,5 +26,13 @@ public class Cache {
             }
             return FileCache.regular(subdirectory, FileType.document("json", Product.class));
         }
+
+        public FileCache<String> html(List<String> segments) {
+            Path subdirectory = directory;
+            for (String category : segments) {
+                subdirectory = subdirectory.resolve(category);
+            }
+            return FileCache.compressed(subdirectory, FileType.text("html"));
+        }
     }
 }
