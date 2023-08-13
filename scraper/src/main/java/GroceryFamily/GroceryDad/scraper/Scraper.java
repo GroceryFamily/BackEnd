@@ -68,9 +68,13 @@ public abstract class Scraper {
         return config.url;
     }
 
-    protected abstract void acceptOrRejectCookies();
+    protected void acceptOrRejectCookies() {
+        throw new UnsupportedOperationException("Method not supported");
+    }
 
-    protected abstract void switchToEnglish();
+    protected void switchToEnglish() {
+        throw new UnsupportedOperationException("Method not supported");
+    }
 
     protected Document open(String url, Runnable initialize) {
         Selenide.open(url);
