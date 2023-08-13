@@ -4,25 +4,19 @@ import GroceryFamily.GroceryDad.GroceryDadConfig;
 import GroceryFamily.GroceryDad.scraper.cache.Cache;
 import GroceryFamily.GroceryDad.scraper.page.Page;
 import GroceryFamily.GroceryDad.scraper.tree.CategoryPermissionTree;
-import GroceryFamily.GroceryDad.scraper.tree.CategoryTreePath;
 import GroceryFamily.GroceryElders.api.client.ProductAPIClient;
 import GroceryFamily.GroceryElders.domain.Namespace;
 import GroceryFamily.GroceryElders.domain.Product;
 import com.codeborne.selenide.Configuration;
-import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.WebDriverRunner;
 import lombok.experimental.SuperBuilder;
-import org.jsoup.Jsoup;
-import org.jsoup.nodes.Document;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
-import java.util.List;
 import java.util.function.Consumer;
 
-import static GroceryFamily.GroceryDad.scraper.page.Page.html;
 import static com.codeborne.selenide.Selenide.using;
 import static java.lang.String.format;
 
@@ -41,22 +35,7 @@ public abstract class Scraper {
         Configuration.timeout = config.timeout.toMillis();
         Page.sleepDelay = config.sleepDelay;
         using(driver, () -> {
-//            open(config.url);
-//            waitUntilPageLoads();
-//            acceptOrRejectCookies();
-//            switchToEnglish();
-            /* todo: remove
-            var categoryTree = buildCategoryTree();
-            categoryTree.print();
-             */
             scrap(client::update);
-            /* todo: remove
-            config.categories.forEach(categories -> {
-                FileCache<Product> cache = cache(categories); // todo: do we need cache at all?
-                scrap(categories, product -> cache.save(product.code, product));
-                cache.list().forEach(client::update);
-            });
-             */
         });
     }
 
@@ -68,30 +47,7 @@ public abstract class Scraper {
         return config.url;
     }
 
-    protected void acceptOrRejectCookies() {
-        throw new UnsupportedOperationException("Method not supported");
-    }
-
-    protected void switchToEnglish() {
-        throw new UnsupportedOperationException("Method not supported");
-    }
-
-    protected Document open(String url, Runnable initialize) {
-        Selenide.open(url);
-        waitUntilPageReady();
-        initialize.run();
-        return Jsoup.parse(html());
-    }
-
     protected abstract void scrap(Consumer<Product> handler);
-
-    protected final boolean categoryAllowed(CategoryTreePath path) {
-        return categoryPermissions.allowed(path);
-    }
-
-    protected final boolean categoryAllowed(List<String> path) {
-        return categoryPermissions.allowed(path);
-    }
 
     public static void waitUntilPageReady() {
         new WebDriverWait(WebDriverRunner.getWebDriver(), Duration.ofMillis(Configuration.timeout)).until(Scraper::pageIsReady);
