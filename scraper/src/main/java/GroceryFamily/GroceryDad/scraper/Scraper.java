@@ -8,15 +8,20 @@ import GroceryFamily.GroceryElders.api.client.ProductAPIClient;
 import GroceryFamily.GroceryElders.domain.Namespace;
 import GroceryFamily.GroceryElders.domain.Product;
 import com.codeborne.selenide.Configuration;
+import com.codeborne.selenide.Selenide;
+import com.codeborne.selenide.WebDriverRunner;
 import lombok.experimental.SuperBuilder;
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.time.Duration;
 import java.util.List;
 import java.util.function.Consumer;
 
-import static com.codeborne.selenide.Selenide.open;
+import static GroceryFamily.GroceryDad.scraper.page.Page.html;
 import static com.codeborne.selenide.Selenide.using;
 import static java.lang.String.format;
 
@@ -35,10 +40,10 @@ public abstract class Scraper {
         Configuration.timeout = config.timeout.toMillis();
         Page.sleepDelay = config.sleepDelay;
         using(driver, () -> {
-            open(config.uri);
-            waitUntilPageLoads();
-            acceptOrRejectCookies();
-            switchToEnglish();
+//            open(config.url);
+//            waitUntilPageLoads();
+//            acceptOrRejectCookies();
+//            switchToEnglish();
             /* todo: remove
             var categoryTree = buildCategoryTree();
             categoryTree.print();
@@ -54,9 +59,20 @@ public abstract class Scraper {
         });
     }
 
+    protected final String rootURL() {
+        return config.url;
+    }
+
     protected abstract void acceptOrRejectCookies();
 
     protected abstract void switchToEnglish();
+
+    protected Document open(String url, Runnable initialize) {
+        Selenide.open(url);
+        waitUntilPageReady();
+        initialize.run();
+        return Jsoup.parse(html());
+    }
 
     protected abstract void scrap(Consumer<Product> handler);
 
@@ -68,8 +84,8 @@ public abstract class Scraper {
         return categoryPermissions.allowed(path);
     }
 
-    void waitUntilPageLoads() {
-        new WebDriverWait(driver, config.timeout).until(Scraper::pageIsReady);
+    public static void waitUntilPageReady() {
+        new WebDriverWait(WebDriverRunner.getWebDriver(), Duration.ofMillis(Configuration.timeout)).until(Scraper::pageIsReady);
     }
 
     private static boolean pageIsReady(WebDriver driver) {

@@ -1,20 +1,18 @@
 package GroceryFamily.GroceryDad.scraper;
 
-import GroceryFamily.GroceryDad.scraper.tree.CategoryTree;
-import GroceryFamily.GroceryDad.scraper.tree.CategoryTreePath;
-import GroceryFamily.GroceryDad.scraper.view.CategoryView;
+import GroceryFamily.GroceryDad.scraper.page.Node;
+import GroceryFamily.GroceryDad.scraper.page.context.BarboraContext;
+import GroceryFamily.GroceryDad.scraper.page.link.CategoryLink;
 import GroceryFamily.GroceryDad.scraper.view.NewCategoryView;
 import GroceryFamily.GroceryDad.scraper.view.Path;
+import GroceryFamily.GroceryElders.domain.Currency;
 import GroceryFamily.GroceryElders.domain.*;
 import com.codeborne.selenide.SelenideElement;
 import lombok.experimental.SuperBuilder;
 import lombok.extern.slf4j.Slf4j;
 
 import java.math.BigDecimal;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 import java.util.function.Consumer;
 
 import static GroceryFamily.GroceryDad.scraper.BarboraPage.*;
@@ -46,26 +44,53 @@ class BarboraScraper extends Scraper {
 
     @Override
     protected void scrap(Consumer<Product> handler) {
-        NewBarboraPage.runtime(Path.empty()).rootCategoryView().leaves().forEach(leaf -> scrap(leaf, handler));
+        Node.root(rootURL(), new BarboraContext()).traverse(handler);
+    }
+
+    private void scrap(CategoryLink link, Consumer<Product> handler, Set<String> visited) {
+//        if (visited.contains(link.url)) return;
+//        // if (!categoryAllowed(view.namePath())) return; // todo: move on
+//        visited.add(link.url);
+//
+//        open(link.url);
+//        waitUntilPageReady();
+//        link.initialize();
+//
+//        var children = NewBarboraPage
+//                .builder()
+//                .
+//                .build()
+//                .childCategoryLinkTree();
+//
+//
+//        var children = NewBarboraPage.runtime(view.codePath).childCategoryViews(view.codePath);
+//        if (children.isEmpty()) {
+//            // products(view).forEach(handler); // todo: fix
+//            System.out.printf("Scraping %s%n", view.namePath());
+//        } else {
+//            children.forEach(view::addChild);
+//            view.leaves().forEach(leaf -> scrap(leaf, handler));
+//        }
     }
 
     private void scrap(NewCategoryView view, Consumer<Product> handler) {
-        if (view.isVisited()) return;
-        // if (!categoryAllowed(view.namePath())) return; // todo: move on
-        view.markVisited();
-        open(view.url);
-        waitUntilPageLoads();
-
-        var children = NewBarboraPage.runtime(view.codePath).childCategoryViews(view.codePath);
-        if (children.isEmpty()) {
-            // products(view).forEach(handler); // todo: fix
-            System.out.printf("Scraping %s%n", view.namePath());
-        } else {
-            children.forEach(view::addChild);
-            view.leaves().forEach(leaf -> scrap(leaf, handler));
-        }
-    }
+//        if (view.isVisited()) return;
+//        // if (!categoryAllowed(view.namePath())) return; // todo: move on
+//        view.markVisited();
+//        open(view.url);
+//        waitUntilPageReady();
 //
+//        var children = NewBarboraPage.runtime(view.codePath).childCategoryViews(view.codePath);
+//        if (children.isEmpty()) {
+//            // products(view).forEach(handler); // todo: fix
+//            System.out.printf("Scraping %s%n", view.namePath());
+//        } else {
+//            children.forEach(view::addChild);
+//            view.leaves().forEach(leaf -> scrap(leaf, handler));
+//        }
+    }
+
+    //
 //    private void traverse(CategoryView view, Consumer<Product> handler, CategoryTree categories) {
 //        if (categoryAllowed(view)) {
 //            view.select();

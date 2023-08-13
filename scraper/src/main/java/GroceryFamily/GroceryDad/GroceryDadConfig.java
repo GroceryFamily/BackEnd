@@ -21,7 +21,7 @@ public class GroceryDadConfig {
     @Data
     public static class Scraper {
         public final String namespace;
-        public final String uri;
+        public final String url;
         public final List<List<String>> categories;
         public final Cache cache;
         public final Duration timeout;

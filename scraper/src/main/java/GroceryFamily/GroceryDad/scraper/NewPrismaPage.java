@@ -41,7 +41,7 @@ class NewPrismaPage {
                     .builder()
                     .codePath(link.codePath)
                     .category(link.category)
-                    .url(link.absoluteURL)
+                    .url(link.url)
                     .build();
             var parent = views.get(link.codePath.parent());
             parent.addChild(view);
@@ -81,8 +81,8 @@ class NewPrismaPage {
                 .builder()
                 .codePath(Path.<String>empty().followedBy(code))
                 .category(category)
-                .relativeURL(relativeURL)
-                .absoluteURL(e.absUrl("href"))
+//                .relativeURL(relativeURL)
+//                .absoluteURL(e.absUrl("href"))
                 .build();
     }
 
@@ -106,8 +106,8 @@ class NewPrismaPage {
                 .builder()
                 .codePath(codePath.followedBy(code))
                 .category(category)
-                .relativeURL(relativeURL)
-                .absoluteURL(e.absUrl("href"))
+//                .relativeURL(relativeURL)
+//                .absoluteURL(e.absUrl("href"))
                 .build();
     }
 

@@ -1,7 +1,5 @@
 package GroceryFamily.GroceryDad.scraper;
 
-import GroceryFamily.GroceryDad.scraper.tree.CategoryTree;
-import GroceryFamily.GroceryDad.scraper.view.CategoryView;
 import GroceryFamily.GroceryDad.scraper.view.NewCategoryView;
 import GroceryFamily.GroceryDad.scraper.view.Path;
 import GroceryFamily.GroceryElders.domain.*;
@@ -46,8 +44,8 @@ class RimiScraper extends Scraper {
         if (view.isVisited()) return;
         // if (!categoryAllowed(view.namePath())) return; // todo: move on
         view.markVisited();
-        open(view.url);
-        waitUntilPageLoads();
+//        open(view.url);
+        waitUntilPageReady();
 
         var children = NewRimiPage.runtime(view.codePath).childCategoryViews(view.codePath);
         if (children.isEmpty()) {

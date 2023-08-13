@@ -43,8 +43,8 @@ class PrismaScraper extends Scraper {
         if (view.isVisited()) return;
         // if (!categoryAllowed(view.namePath())) return; // todo: move on
         view.markVisited();
-        open(view.url);
-        waitUntilPageLoads();
+//        open(view.url);
+        waitUntilPageReady();
 
         var children = NewPrismaPage.runtime(view.codePath).childCategoryViews(view.codePath);
         if (children.isEmpty()) {

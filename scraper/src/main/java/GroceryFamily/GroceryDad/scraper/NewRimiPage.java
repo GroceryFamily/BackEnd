@@ -40,7 +40,7 @@ class NewRimiPage {
                     .builder()
                     .codePath(link.codePath)
                     .category(link.category)
-                    .url(link.absoluteURL)
+                    .url(link.url)
                     .build();
             var parent = views.get(link.codePath.parent());
             parent.addChild(view);
@@ -69,8 +69,8 @@ class NewRimiPage {
                             .builder()
                             .codePath(codePath)
                             .category(category)
-                            .relativeURL(link(button).attr("href"))
-                            .absoluteURL(link(button).absUrl("href"))
+//                            .relativeURL(link(button).attr("href"))
+//                            .absoluteURL(link(button).absUrl("href"))
                             .build();
                 }), buttons.stream().flatMap(button -> submenuLinks(button).stream().map(link -> {
                     var codePath = categoryCodePath(link);
@@ -83,8 +83,8 @@ class NewRimiPage {
                             .builder()
                             .codePath(codePath)
                             .category(category)
-                            .relativeURL(link.attr("href"))
-                            .absoluteURL(link.absUrl("href"))
+//                            .relativeURL(link.attr("href"))
+//                            .absoluteURL(link.absUrl("href"))
                             .build();
                 }))
         );

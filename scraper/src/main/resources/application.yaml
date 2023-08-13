@@ -2,15 +2,15 @@ GroceryDad:
   api.uri: http://localhost:8080
 
   enabled:
-#    - barbora
+    - barbora
 #    - prisma
-    - rimi
+#    - rimi
 
   scrapers:
     barbora:
       namespace: barbora.ee
 #      uri: https://barbora.ee/koogiviljad-puuviljad
-      uri: https://barbora.ee
+      url: https://barbora.ee
       cache:
         directory: cache/barbora
       categories:
@@ -23,7 +23,7 @@ GroceryDad:
 
     prisma:
       namespace: prismamarket.ee
-      uri: https://prismamarket.ee
+      url: https://prismamarket.ee
       cache:
         directory: cache/prisma
       categories:
@@ -34,7 +34,7 @@ GroceryDad:
 
     rimi:
       namespace: rimi.ee
-      uri: https://rimi.ee/epood/en
+      url: https://rimi.ee/epood/en
       cache:
         directory: cache/rimi
       categories:
