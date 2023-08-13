@@ -2,14 +2,19 @@ package GroceryFamily.GroceryDad.scraper;
 
 import GroceryFamily.GroceryDad.GroceryDadConfig;
 import GroceryFamily.GroceryDad.scraper.cache.Cache;
+import GroceryFamily.GroceryDad.scraper.page.Context;
+import GroceryFamily.GroceryDad.scraper.page.Node;
 import GroceryFamily.GroceryDad.scraper.page.Page;
+import GroceryFamily.GroceryDad.scraper.page.context.BarboraContext;
+import GroceryFamily.GroceryDad.scraper.page.context.PrismaContext;
+import GroceryFamily.GroceryDad.scraper.page.context.RimiContext;
 import GroceryFamily.GroceryDad.scraper.tree.PermissionTree;
 import GroceryFamily.GroceryElders.api.client.ProductAPIClient;
 import GroceryFamily.GroceryElders.domain.Namespace;
 import GroceryFamily.GroceryElders.domain.Product;
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.WebDriverRunner;
-import lombok.experimental.SuperBuilder;
+import lombok.Builder;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -24,12 +29,13 @@ import static java.lang.String.format;
 //  https://en.wikipedia.org/wiki/Robots.txt
 //  https://github.com/google/robotstxt-java
 //  https://developers.google.com/search/docs/crawling-indexing/robots/robots_txt
-@SuperBuilder()
-public abstract class Scraper {
+@Builder()
+public class Scraper {
     private final GroceryDadConfig.Scraper config;
     private final WebDriver driver;
     private final ProductAPIClient client;
     protected final PermissionTree categoryPermissions;
+    final Context context;
 
     public final void scrap() {
         Configuration.timeout = config.timeout.toMillis();
@@ -39,15 +45,9 @@ public abstract class Scraper {
         });
     }
 
-    protected final Cache.Factory cacheFactory() {
-        return Cache.factory(config.cache.directory);
+    protected void scrap(Consumer<Product> handler) {
+        Node.root(config.url, context).traverse(handler);
     }
-
-    protected final String rootURL() {
-        return config.url;
-    }
-
-    protected abstract void scrap(Consumer<Product> handler);
 
     public static void waitUntilPageReady() {
         new WebDriverWait(WebDriverRunner.getWebDriver(), Duration.ofMillis(Configuration.timeout)).until(Scraper::pageIsReady);
@@ -58,19 +58,23 @@ public abstract class Scraper {
     }
 
     public static Scraper create(GroceryDadConfig.Scraper config, WebDriver driver, ProductAPIClient client) {
-        return builder(config)
+        var permissions = buildCategoryPermissionTree(config);
+        var cacheFactory = Cache.factory(config.cache.directory);
+        return Scraper
+                .builder()
                 .config(config)
                 .driver(driver)
                 .client(client)
                 .categoryPermissions(buildCategoryPermissionTree(config))
+                .context(context(config, cacheFactory, permissions))
                 .build();
     }
 
-    private static ScraperBuilder<?, ?> builder(GroceryDadConfig.Scraper config) {
+    private static Context context(GroceryDadConfig.Scraper config, Cache.Factory cacheFactory, PermissionTree permissions) {
         return switch (config.namespace) {
-            case Namespace.BARBORA -> BarboraScraper.builder();
-            case Namespace.PRISMA -> PrismaScraper.builder();
-            case Namespace.RIMI -> RimiScraper.builder();
+            case Namespace.BARBORA -> new BarboraContext(cacheFactory, permissions);
+            case Namespace.PRISMA -> new PrismaContext(cacheFactory, permissions);
+            case Namespace.RIMI -> new RimiContext(cacheFactory, permissions);
             default -> throw new UnsupportedOperationException(format("Unrecognized namespace '%s'", config.namespace));
         };
     }
