@@ -3,6 +3,7 @@ package GroceryFamily.GroceryDad.scraper.page;
 import GroceryFamily.GroceryDad.scraper.cache.Cache;
 import GroceryFamily.GroceryDad.scraper.tree.CategoryPermissionTree;
 import GroceryFamily.GroceryDad.scraper.view.Path;
+import GroceryFamily.GroceryElders.domain.Product;
 import com.codeborne.selenide.Selenide;
 import io.github.antivoland.sfc.FileCache;
 import org.jsoup.nodes.Document;
@@ -26,8 +27,13 @@ public abstract class Context {
         return permissions.allowed(namePath.segments());
     }
 
-    public final FileCache<String> cache(Link link) {
-        return cacheFactory.html(link.codePath.segments());
+    public final FileCache<String> cache(Path<String> categoryPath) {
+        return cacheFactory.html(categoryPath.segments());
+    }
+
+    public final FileCache<String> productsCache(Path<String> categoryPath) {
+        var path = categoryPath.followedBy("products");
+        return cacheFactory.html(path.segments());
     }
 
     public final String open(Link link) {
@@ -47,4 +53,10 @@ public abstract class Context {
     }
 
     protected abstract Stream<Link> categoryLinks(Document document, Link selected);
+
+    public Stream<Product> loadProducts(Path<String> categoryPath, String url) {
+        throw new UnsupportedOperationException("Not implemented yet");
+    }
+
+    ;
 }

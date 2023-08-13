@@ -41,23 +41,6 @@ class PrismaScraper extends Scraper {
         Node.root(rootURL(), new PrismaContext(cacheFactory(), categoryPermissions)).traverse(handler);
     }
 
-    private void scrap(NewCategoryView view, Consumer<Product> handler) {
-        if (view.isVisited()) return;
-        // if (!categoryAllowed(view.namePath())) return; // todo: move on
-        view.markVisited();
-//        open(view.url);
-        waitUntilPageReady();
-
-        var children = NewPrismaPage.runtime(view.codePath).childCategoryViews(view.codePath);
-        if (children.isEmpty()) {
-            // todo: scrap products
-            System.out.printf("Scraping %s%n", view.namePath());
-        } else {
-            children.forEach(view::addChild);
-            view.leaves().forEach(leaf -> scrap(leaf, handler));
-        }
-    }
-
     private static List<Product> products(CategoryTreePath path) {
         return productElements()
                 .asFixedIterable()

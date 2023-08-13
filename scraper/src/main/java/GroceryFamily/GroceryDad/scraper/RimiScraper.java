@@ -43,39 +43,6 @@ class RimiScraper extends Scraper {
         Node.root(rootURL(), new RimiContext(cacheFactory(), categoryPermissions)).traverse(handler);
     }
 
-    private void scrap(NewCategoryView view, Consumer<Product> handler) {
-        if (view.isVisited()) return;
-        // if (!categoryAllowed(view.namePath())) return; // todo: move on
-        view.markVisited();
-//        open(view.url);
-        waitUntilPageReady();
-
-        var children = NewRimiPage.runtime(view.codePath).childCategoryViews(view.codePath);
-        if (children.isEmpty()) {
-            // todo: scrap products
-            System.out.printf("Scraping %s%n", view.namePath());
-        } else {
-            children.forEach(view::addChild);
-            view.leaves().forEach(leaf -> scrap(leaf, handler));
-        }
-    }
-
-    static void category(List<String> categories) {
-        if (categories.size() < 2) throw new IllegalArgumentException("Requires at least two categories");
-
-        var button = $("#desktop_category_menu_button").shouldBe(visible);
-        button.click();
-        int dataLevel = 1;
-        for (String category : categories) {
-            button = $$("*[data-level='" + dataLevel + "'] li")
-                    .shouldHave(sizeGreaterThan(0))
-                    .findBy(text(category))
-                    .shouldBe(visible);
-            button.click();
-            ++dataLevel;
-        }
-    }
-
     static Collection<Product> products() {
         Collection<Product> products = new ArrayList<>();
         for (var e : $$("*[class='product-grid__item'] > div").shouldHave(sizeGreaterThan(0))) {
