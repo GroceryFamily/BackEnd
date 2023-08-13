@@ -7,7 +7,7 @@ import lombok.ToString;
 @Builder
 @ToString
 public class Link {
-    public final Path<String> codePath;
+    public final Path<String> codePath; // todo: source code path, code
     public final String name;
     public final String url;
 

@@ -9,7 +9,6 @@ import GroceryFamily.GroceryElders.domain.Namespace;
 import GroceryFamily.GroceryElders.domain.Product;
 import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
-import com.codeborne.selenide.WebDriverRunner;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
@@ -98,7 +97,7 @@ public class BarboraContext extends Context {
         var pages = new ArrayList<List<Link>>();
         pages.add(productLinkPage(document));
         while (nextProductPageExists(document)) {
-            cacheId = format("%s (%s)", categoryPath.tail(), selectedProductPageNumber(document));
+            cacheId = format("%s-%s", categoryPath.tail(), selectedProductPageNumber(document) + 1);
             html = cache.load(cacheId);
             if (html == null) {
                 html = nextProductPage();
@@ -149,10 +148,6 @@ public class BarboraContext extends Context {
 
     static SelenideElement productPageNumberElement(int pageNumber) {
         return productPageNumberElements().findBy(number(pageNumber));
-    }
-
-    static int lastVisibleProductPageNumber() {
-        return Integer.parseInt(productPageNumberElements().last().text());
     }
 
     static int selectedProductPageNumber(Document document) {

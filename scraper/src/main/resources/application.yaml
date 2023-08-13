@@ -3,8 +3,8 @@ GroceryDad:
 
   enabled:
 #    - barbora
-    - prisma
-#    - rimi
+#    - prisma
+    - rimi
 
   scrapers:
     barbora:
@@ -38,7 +38,7 @@ GroceryDad:
         directory: cache/rimi
       categories:
         - [ "Pre-order festivity meals", "Pre-order appetizers and selection plates" ]
-#        - [ "Fruits, vegetables, flowers", "Fruits", "Bananas" ]
+        - [ "Fruits, vegetables, flowers", "Fruits", "Bananas" ]
 #        - [ "Pet goods", "Dog food", "Dry food for dogs" ]
 #        - [ "Groceries", "Canned products", "Mushrooms" ]
 #        - [ "Bread, pastry, confectionery", "Rimi bakeries" ]
