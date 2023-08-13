@@ -1,5 +1,8 @@
 package GroceryFamily.GroceryDad.scraper;
 
+import GroceryFamily.GroceryDad.scraper.page.Node;
+import GroceryFamily.GroceryDad.scraper.page.context.PrismaContext;
+import GroceryFamily.GroceryDad.scraper.page.context.RimiContext;
 import GroceryFamily.GroceryDad.scraper.view.NewCategoryView;
 import GroceryFamily.GroceryDad.scraper.view.Path;
 import GroceryFamily.GroceryElders.domain.*;
@@ -37,7 +40,7 @@ class RimiScraper extends Scraper {
 
     @Override
     protected void scrap(Consumer<Product> handler) {
-        NewRimiPage.runtime(Path.empty()).rootCategoryView().leaves().forEach(leaf -> scrap(leaf, handler));
+        Node.root(rootURL(), new RimiContext()).traverse(handler);
     }
 
     private void scrap(NewCategoryView view, Consumer<Product> handler) {
