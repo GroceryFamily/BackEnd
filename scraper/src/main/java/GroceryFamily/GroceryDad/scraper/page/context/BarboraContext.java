@@ -65,8 +65,8 @@ public class BarboraContext extends Context {
     }
 
     @Override
-    public Stream<Product> loadProducts(Path<String> categoryPath, String url) {
-        return productLinkPages(categoryPath, url)
+    public Stream<Product> loadProducts(Path<String> categoryPath, Link selected) {
+        return productLinkPages(categoryPath, selected.url)
                 .stream()
                 .flatMap(Collection::stream)
                 .map(link -> loadProduct(link, categoryPath));

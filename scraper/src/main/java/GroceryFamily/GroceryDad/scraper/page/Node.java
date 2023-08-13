@@ -62,7 +62,7 @@ public class Node {
         if (isLeaf()) {
             log.info("Scraping {}...", namePath());
             type = NodeType.PRODUCT_LIST;
-            context.loadProducts(codePath(), link.url).forEach(handler);
+            context.loadProducts(codePath(), link).forEach(handler);
         } else {
             type = NodeType.CATEGORY;
             leaves().forEach(leaf -> leaf.traverse(handler));

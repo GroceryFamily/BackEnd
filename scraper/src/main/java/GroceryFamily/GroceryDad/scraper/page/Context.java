@@ -54,9 +54,7 @@ public abstract class Context {
 
     protected abstract Stream<Link> categoryLinks(Document document, Link selected);
 
-    public Stream<Product> loadProducts(Path<String> categoryPath, String url) {
+    public Stream<Product> loadProducts(Path<String> categoryPath, Link selected) {
         throw new UnsupportedOperationException("Not implemented yet");
     }
-
-    ;
 }

@@ -5,16 +5,24 @@ import GroceryFamily.GroceryDad.scraper.page.Context;
 import GroceryFamily.GroceryDad.scraper.page.Link;
 import GroceryFamily.GroceryDad.scraper.tree.CategoryPermissionTree;
 import GroceryFamily.GroceryDad.scraper.view.Path;
+import GroceryFamily.GroceryElders.domain.Namespace;
+import GroceryFamily.GroceryElders.domain.Product;
 import com.codeborne.selenide.ElementsCollection;
+import com.codeborne.selenide.SelenideElement;
+import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 
 import java.util.stream.Stream;
 
+import static GroceryFamily.GroceryDad.scraper.page.Page.html;
+import static GroceryFamily.GroceryDad.scraper.page.Page.scrollDown;
 import static com.codeborne.selenide.CollectionCondition.itemWithText;
+import static com.codeborne.selenide.CollectionCondition.sizeGreaterThan;
 import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.$$;
+import static java.util.Objects.requireNonNull;
 import static org.apache.commons.lang3.StringUtils.substringAfterLast;
 import static org.apache.commons.lang3.StringUtils.substringBeforeLast;
 
@@ -78,6 +86,88 @@ public class PrismaContext extends Context {
 
     private static String leftCategoryLinkCode(Element e) {
         return substringAfterLast(e.attr("href"), "/");
+    }
+
+    @Override
+    public Stream<Product> loadProducts(Path<String> categoryPath, Link selected) {
+        var cache = cache(categoryPath);
+        var cacheId = categoryPath.tail();
+        var html = cache.load(cacheId);
+        var document = Jsoup.parse(html, selected.url);
+        if (visibleProductElementCount(document) < totalProductElementCount(document)) {
+            open(selected);
+            var totalCount = Integer.parseInt(productCountElement().text());
+            var count = visibleProductElementCount();
+            while (count < totalCount) {
+                scrollDown();
+                visibleProductElements().shouldHave(sizeGreaterThan(count));
+                count = visibleProductElementCount();
+            }
+            html = html();
+            document = Jsoup.parse(html, selected.url);
+            cache.save(cacheId, html);
+        }
+        return productLinks(document).map(link -> loadProduct(link, categoryPath));
+    }
+
+    private Product loadProduct(Link link, Path<String> categoryPath) {
+        var cache = productsCache(categoryPath);
+        var cacheId = link.code();
+        var html = cache.load(cacheId);
+        if (html == null) {
+            html = open(link);
+            cache.save(cacheId, html);
+        }
+        var document = Jsoup.parse(html, link.url);
+        return Product
+                .builder()
+                .namespace(Namespace.PRISMA)
+                .code(substringAfterLast(link.url, "/"))
+                .name(document.select("#product-name").text())
+                // todo: set prices and categories
+                .build();
+    }
+
+    static Stream<Link> productLinks(Document document) {
+        return document.select("li[data-ean]").stream().map(PrismaContext::productLink);
+    }
+
+    private static Link productLink(Element e) {
+        var code = substringAfterLast(e.select("a").attr("href"), "/");
+        return Link
+                .builder()
+                .codePath(Path.<String>empty().followedBy(code))
+                .name(e.select("*[class='name']").text())
+                .url(requireNonNull(e.select("a").first()).absUrl("href"))
+                .build();
+    }
+
+    private static SelenideElement productCountElement() {
+        return $("*[class*='category-items'] b");
+    }
+
+    private static Element productCountElement(Document document) {
+        return document.select("*[class*='category-items'] b").first();
+    }
+
+    private static int visibleProductElementCount() {
+        return (int) visibleProductElements().asFixedIterable().stream().count();
+    }
+
+    private static int totalProductElementCount(Document document) {
+        return Integer.parseInt(productCountElement(document).text());
+    }
+
+    private static int visibleProductElementCount(Document document) {
+        return (int) visibleProductElements(document).count();
+    }
+
+    private static ElementsCollection visibleProductElements() {
+        return $$("li[data-ean]");
+    }
+
+    private static Stream<Element> visibleProductElements(Document document) {
+        return document.select("li[data-ean]").stream();
     }
 
     private static void acceptOrRejectCookies() {
