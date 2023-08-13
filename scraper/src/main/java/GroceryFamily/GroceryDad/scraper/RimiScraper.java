@@ -40,7 +40,7 @@ class RimiScraper extends Scraper {
 
     @Override
     protected void scrap(Consumer<Product> handler) {
-        Node.root(rootURL(), new RimiContext(cacheFactory())).traverse(handler);
+        Node.root(rootURL(), new RimiContext(cacheFactory(), categoryPermissions)).traverse(handler);
     }
 
     private void scrap(NewCategoryView view, Consumer<Product> handler) {

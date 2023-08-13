@@ -3,6 +3,7 @@ package GroceryFamily.GroceryDad.scraper.page.context;
 import GroceryFamily.GroceryDad.scraper.cache.Cache;
 import GroceryFamily.GroceryDad.scraper.page.Context;
 import GroceryFamily.GroceryDad.scraper.page.Link;
+import GroceryFamily.GroceryDad.scraper.tree.CategoryPermissionTree;
 import GroceryFamily.GroceryDad.scraper.view.Path;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
@@ -17,8 +18,9 @@ import static com.codeborne.selenide.Selenide.$;
 public class RimiContext extends Context {
     private boolean initialized;
 
-    public RimiContext(Cache.Factory cacheFactory) {
-        super(cacheFactory);
+
+    public RimiContext(Cache.Factory cacheFactory, CategoryPermissionTree permissions) {
+        super(cacheFactory, permissions);
     }
 
     @Override

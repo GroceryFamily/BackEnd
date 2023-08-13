@@ -38,6 +38,8 @@ public class Node {
     }
 
     public void traverse(Consumer<Product> handler) {
+        // todo: check if visited to avoid self-loops
+        if (!context.canOpen(namePath())) return;
         var cache = context.cache(link);
         var html = cache.load(link.name);
         if (html == null) {

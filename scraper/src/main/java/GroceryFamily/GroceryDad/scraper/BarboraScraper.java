@@ -44,7 +44,7 @@ class BarboraScraper extends Scraper {
 
     @Override
     protected void scrap(Consumer<Product> handler) {
-        Node.root(rootURL(), new BarboraContext(cacheFactory())).traverse(handler);
+        Node.root(rootURL(), new BarboraContext(cacheFactory(), categoryPermissions)).traverse(handler);
     }
 
     private void scrap(CategoryLink link, Consumer<Product> handler, Set<String> visited) {

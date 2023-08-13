@@ -3,6 +3,7 @@ package GroceryFamily.GroceryDad.scraper.page.context;
 import GroceryFamily.GroceryDad.scraper.cache.Cache;
 import GroceryFamily.GroceryDad.scraper.page.Context;
 import GroceryFamily.GroceryDad.scraper.page.Link;
+import GroceryFamily.GroceryDad.scraper.tree.CategoryPermissionTree;
 import GroceryFamily.GroceryDad.scraper.view.Path;
 import com.codeborne.selenide.SelenideElement;
 import org.jsoup.nodes.Document;
@@ -19,8 +20,8 @@ import static org.apache.commons.lang3.StringUtils.substringAfter;
 public class BarboraContext extends Context {
     private boolean initialized;
 
-    public BarboraContext(Cache.Factory cacheFactory) {
-        super(cacheFactory);
+    public BarboraContext(Cache.Factory cacheFactory, CategoryPermissionTree permissions) {
+        super(cacheFactory, permissions);
     }
 
     @Override

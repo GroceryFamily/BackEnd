@@ -35,7 +35,7 @@ public abstract class Scraper {
     private final GroceryDadConfig.Scraper config;
     private final WebDriver driver;
     private final ProductAPIClient client;
-    private final CategoryPermissionTree categoryPermissions;
+    protected final CategoryPermissionTree categoryPermissions;
 
     public final void scrap() {
         Configuration.timeout = config.timeout.toMillis();

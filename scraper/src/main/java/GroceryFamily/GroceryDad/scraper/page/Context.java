@@ -1,6 +1,8 @@
 package GroceryFamily.GroceryDad.scraper.page;
 
 import GroceryFamily.GroceryDad.scraper.cache.Cache;
+import GroceryFamily.GroceryDad.scraper.tree.CategoryPermissionTree;
+import GroceryFamily.GroceryDad.scraper.view.Path;
 import com.codeborne.selenide.Selenide;
 import io.github.antivoland.sfc.FileCache;
 import org.jsoup.nodes.Document;
@@ -13,9 +15,15 @@ import static java.util.Comparator.comparing;
 
 public abstract class Context {
     private final Cache.Factory cacheFactory;
+    private final CategoryPermissionTree permissions;
 
-    public Context(Cache.Factory cacheFactory) {
+    public Context(Cache.Factory cacheFactory, CategoryPermissionTree permissions) {
         this.cacheFactory = cacheFactory;
+        this.permissions = permissions;
+    }
+
+    public final boolean canOpen(Path<String> namePath) {
+        return permissions.allowed(namePath.segments());
     }
 
     public final FileCache<String> cache(Link link) {
