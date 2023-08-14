@@ -20,10 +20,6 @@ import static java.lang.String.format;
 
 @SpringBootApplication
 class GroceryDad implements CommandLineRunner {
-    public static void main(String... args) {
-        SpringApplication.run(GroceryDad.class, args);
-    }
-
     private final Collection<Scraper> scrapers = new ArrayList<>();
 
     GroceryDad(GroceryDadConfig dadConfig, WebDriver driver) {
@@ -45,6 +41,10 @@ class GroceryDad implements CommandLineRunner {
     @Override
     public void run(String... args) {
         scrapers.forEach(Scraper::scrap);
+    }
+
+    public static void main(String... args) {
+        SpringApplication.run(GroceryDad.class, args);
     }
 
     private static Context context(GroceryDadConfig.Scraper config) {
