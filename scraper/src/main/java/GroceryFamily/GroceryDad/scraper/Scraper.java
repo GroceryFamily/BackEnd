@@ -1,16 +1,11 @@
 package GroceryFamily.GroceryDad.scraper;
 
 import GroceryFamily.GroceryDad.GroceryDadConfig;
-import GroceryFamily.GroceryDad.scraper.cache.Cache;
 import GroceryFamily.GroceryDad.scraper.page.Context;
 import GroceryFamily.GroceryDad.scraper.page.Node;
 import GroceryFamily.GroceryDad.scraper.page.Page;
-import GroceryFamily.GroceryDad.scraper.page.context.BarboraContext;
-import GroceryFamily.GroceryDad.scraper.page.context.PrismaContext;
-import GroceryFamily.GroceryDad.scraper.page.context.RimiContext;
 import GroceryFamily.GroceryDad.scraper.tree.PermissionTree;
 import GroceryFamily.GroceryElders.api.client.ProductAPIClient;
-import GroceryFamily.GroceryElders.domain.Namespace;
 import GroceryFamily.GroceryElders.domain.Product;
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.WebDriverRunner;
@@ -23,7 +18,6 @@ import java.time.Duration;
 import java.util.function.Consumer;
 
 import static com.codeborne.selenide.Selenide.using;
-import static java.lang.String.format;
 
 // todo: think about robots.txt
 //  https://en.wikipedia.org/wiki/Robots.txt
@@ -55,31 +49,5 @@ public class Scraper {
 
     private static boolean pageIsReady(WebDriver driver) {
         return ((JavascriptExecutor) driver).executeScript("return document.readyState").equals("complete");
-    }
-
-    public static Scraper create(GroceryDadConfig.Scraper config, WebDriver driver, ProductAPIClient client) {
-        return Scraper
-                .builder()
-                .config(config)
-                .driver(driver)
-                .client(client)
-                .categoryPermissions(buildCategoryPermissionTree(config))
-                .context(context(config))
-                .build();
-    }
-
-    private static Context context(GroceryDadConfig.Scraper config) {
-        return switch (config.namespace) {
-            case Namespace.BARBORA -> new BarboraContext(config);
-            case Namespace.PRISMA -> new PrismaContext(config);
-            case Namespace.RIMI -> new RimiContext(config);
-            default -> throw new UnsupportedOperationException(format("Unrecognized namespace '%s'", config.namespace));
-        };
-    }
-
-    private static PermissionTree buildCategoryPermissionTree(GroceryDadConfig.Scraper config) {
-        var tree = new PermissionTree();
-        config.categories.forEach(tree::add);
-        return tree;
     }
 }
