@@ -2,8 +2,8 @@ GroceryDad:
   api.uri: http://localhost:8080
 
   enabled:
-#    - barbora
-#    - prisma
+    - barbora
+    - prisma
     - rimi
 
   scrapers:
@@ -17,7 +17,7 @@ GroceryDad:
 #        - [ "Vegetables and fruits", "Fruits and berries", "Bananas" ]
         - [ "Household and pets", "Pets", "Dry dog food" ]
 #        - [ "Dairy and eggs", "Milk", "Pasteurised milk" ]
-      timeout: 30s
+      timeout: 5s
       sleepDelay: 500ms
 
     prisma:
@@ -28,7 +28,7 @@ GroceryDad:
       categories:
         - [ "Groceries", "Fruits and vegetables", "Fruit" ]
         - [ "Groceries", "Pets", "Dog food" ]
-      timeout: 10s
+      timeout: 5s
       sleepDelay: 100ms
 
     rimi:
@@ -42,5 +42,5 @@ GroceryDad:
 #        - [ "Pet goods", "Dog food", "Dry food for dogs" ]
 #        - [ "Groceries", "Canned products", "Mushrooms" ]
 #        - [ "Bread, pastry, confectionery", "Rimi bakeries" ]
-      timeout: 10s
+      timeout: 5s
       sleepDelay: 100ms

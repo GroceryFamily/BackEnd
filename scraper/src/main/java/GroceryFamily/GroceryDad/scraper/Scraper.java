@@ -58,23 +58,21 @@ public class Scraper {
     }
 
     public static Scraper create(GroceryDadConfig.Scraper config, WebDriver driver, ProductAPIClient client) {
-        var permissions = buildCategoryPermissionTree(config);
-        var cacheFactory = Cache.factory(config.cache.directory);
         return Scraper
                 .builder()
                 .config(config)
                 .driver(driver)
                 .client(client)
                 .categoryPermissions(buildCategoryPermissionTree(config))
-                .context(context(config, cacheFactory, permissions))
+                .context(context(config))
                 .build();
     }
 
-    private static Context context(GroceryDadConfig.Scraper config, Cache.Factory cacheFactory, PermissionTree permissions) {
+    private static Context context(GroceryDadConfig.Scraper config) {
         return switch (config.namespace) {
-            case Namespace.BARBORA -> new BarboraContext(cacheFactory, permissions);
-            case Namespace.PRISMA -> new PrismaContext(cacheFactory, permissions);
-            case Namespace.RIMI -> new RimiContext(cacheFactory, permissions);
+            case Namespace.BARBORA -> new BarboraContext(config);
+            case Namespace.PRISMA -> new PrismaContext(config);
+            case Namespace.RIMI -> new RimiContext(config);
             default -> throw new UnsupportedOperationException(format("Unrecognized namespace '%s'", config.namespace));
         };
     }

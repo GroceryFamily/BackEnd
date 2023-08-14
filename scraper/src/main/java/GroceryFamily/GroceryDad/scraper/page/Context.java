@@ -1,5 +1,6 @@
 package GroceryFamily.GroceryDad.scraper.page;
 
+import GroceryFamily.GroceryDad.GroceryDadConfig;
 import GroceryFamily.GroceryDad.scraper.cache.Cache;
 import GroceryFamily.GroceryDad.scraper.tree.PermissionTree;
 import GroceryFamily.GroceryDad.scraper.view.Path;
@@ -18,9 +19,15 @@ public abstract class Context {
     private final Cache.Factory cacheFactory;
     private final PermissionTree permissions;
 
+    @Deprecated
     public Context(Cache.Factory cacheFactory, PermissionTree permissions) {
         this.cacheFactory = cacheFactory;
         this.permissions = permissions;
+    }
+
+    public Context(GroceryDadConfig.Scraper config) {
+        this.cacheFactory = Cache.factory(config.cache.directory);
+        this.permissions = buildCategoryPermissionTree(config);
     }
 
     public final boolean canOpen(Path<String> namePath) {
@@ -56,5 +63,11 @@ public abstract class Context {
 
     public Stream<Product> loadProducts(Path<String> categoryPath, Link selected) {
         throw new UnsupportedOperationException("Not implemented yet");
+    }
+
+    private static PermissionTree buildCategoryPermissionTree(GroceryDadConfig.Scraper config) {
+        var tree = new PermissionTree();
+        config.categories.forEach(tree::add);
+        return tree;
     }
 }

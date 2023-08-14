@@ -1,9 +1,8 @@
 package GroceryFamily.GroceryDad.scraper.page.context;
 
-import GroceryFamily.GroceryDad.scraper.cache.Cache;
+import GroceryFamily.GroceryDad.GroceryDadConfig;
 import GroceryFamily.GroceryDad.scraper.page.Context;
 import GroceryFamily.GroceryDad.scraper.page.Link;
-import GroceryFamily.GroceryDad.scraper.tree.PermissionTree;
 import GroceryFamily.GroceryDad.scraper.view.Path;
 import GroceryFamily.GroceryElders.domain.Namespace;
 import GroceryFamily.GroceryElders.domain.Product;
@@ -29,8 +28,8 @@ import static org.apache.commons.lang3.StringUtils.substringAfterLast;
 public class BarboraContext extends Context {
     private boolean initialized;
 
-    public BarboraContext(Cache.Factory cacheFactory, PermissionTree permissions) {
-        super(cacheFactory, permissions);
+    public BarboraContext(GroceryDadConfig.Scraper config) {
+        super(config);
     }
 
     @Override
