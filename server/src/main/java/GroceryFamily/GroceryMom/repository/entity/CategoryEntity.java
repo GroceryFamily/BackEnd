@@ -23,6 +23,7 @@ public class CategoryEntity {
     private String id;
     private String code;
     private String name;
+    private String url;
     private Instant ts;
     @Version
     private int version;
@@ -40,6 +41,7 @@ public class CategoryEntity {
                 .builder()
                 .code(getCode())
                 .name(getName())
+                .url(getUrl())
                 .build();
     }
 
@@ -52,6 +54,7 @@ public class CategoryEntity {
                 .setId(id)
                 .setCode(category.code)
                 .setName(category.name)
+                .setName(category.url)
                 .setTs(ts)
                 .setVersion(version)
                 .setProduct(productEntity);

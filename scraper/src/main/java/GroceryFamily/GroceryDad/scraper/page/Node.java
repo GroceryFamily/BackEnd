@@ -39,13 +39,15 @@ public class Node {
     }
 
     public void traverse(Consumer<Product> handler) {
+        context.traverse(handler);
+        /*
         // todo: check if visited to avoid self-loops
         if (!context.canOpen(namePath())) return;
         var cache = context.cache(codePath());
         var cacheId = parent != null ? link.code() : "root";
         var html = cache.load(cacheId);
         if (html == null) {
-            html = context.open(link);
+            html = context._open(link);
             cache.save(cacheId, html);
         }
         var document = Jsoup.parse(html, link.url);
@@ -66,6 +68,7 @@ public class Node {
             type = NodeType.CATEGORY;
             leaves().forEach(leaf -> leaf.traverse(handler));
         }
+         */
     }
 
     boolean isLeaf() {

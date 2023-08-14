@@ -12,4 +12,5 @@ import lombok.extern.jackson.Jacksonized;
 public class Category {
     public final String code;
     public final String name;
+    public final String url;
 }

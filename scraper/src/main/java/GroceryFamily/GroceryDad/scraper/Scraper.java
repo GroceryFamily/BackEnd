@@ -28,7 +28,6 @@ public class Scraper {
     private final GroceryDadConfig.Scraper config;
     private final WebDriver driver;
     private final ProductAPIClient client;
-    protected final PermissionTree categoryPermissions;
     final Context context;
 
     public final void scrap() {

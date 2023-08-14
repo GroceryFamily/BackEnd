@@ -6,6 +6,7 @@ import lombok.ToString;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.NoSuchElementException;
+import java.util.function.Predicate;
 
 @ToString
 @EqualsAndHashCode
@@ -34,6 +35,13 @@ public class Path<SEGMENT> {
         var values = new LinkedList<>(this.segments);
         values.addLast(tail);
         return new Path<>(values);
+    }
+
+    public Path<SEGMENT> filter(Predicate<SEGMENT> predicate) {
+        var filtered = new LinkedList<SEGMENT>();
+        segments().stream().filter(predicate).forEach(filtered::add);
+        return new Path<>(filtered);
+
     }
 
     public SEGMENT head() {

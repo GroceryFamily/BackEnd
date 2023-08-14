@@ -85,6 +85,7 @@ public class ProductService {
 
             return productEntity
                     .setName(product.name)
+                    .setUrl(product.url)
                     .setTs(ts)
                     .setPrices(new ArrayList<>(priceEntities.values()))
                     .setCategories(new ArrayList<>(categoryEntities.values()));

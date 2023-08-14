@@ -4,26 +4,28 @@ import GroceryFamily.GroceryDad.GroceryDadConfig;
 import GroceryFamily.GroceryDad.scraper.page.Context;
 import GroceryFamily.GroceryDad.scraper.page.Link;
 import GroceryFamily.GroceryDad.scraper.page.Path;
+import GroceryFamily.GroceryDad.scraper.page.SourceType;
+import GroceryFamily.GroceryDad.scraper.page.view.CategoryView;
+import GroceryFamily.GroceryDad.scraper.page.view.ProductListView;
+import GroceryFamily.GroceryDad.scraper.page.view.ProductView;
+import GroceryFamily.GroceryElders.domain.Category;
 import GroceryFamily.GroceryElders.domain.Namespace;
 import GroceryFamily.GroceryElders.domain.Product;
-import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
-import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 
-import java.util.ArrayList;
-import java.util.Collection;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.stream.Stream;
 
-import static GroceryFamily.GroceryDad.scraper.page.Page.*;
-import static com.codeborne.selenide.Condition.*;
+import static GroceryFamily.GroceryDad.scraper.page.Page.sleep;
+import static com.codeborne.selenide.Condition.text;
+import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.$;
-import static java.lang.String.format;
 import static java.util.Objects.requireNonNull;
-import static org.apache.commons.lang3.StringUtils.substringAfter;
-import static org.apache.commons.lang3.StringUtils.substringAfterLast;
+import static org.apache.commons.lang3.StringUtils.*;
 
 public class BarboraContext extends Context {
     private boolean initialized;
@@ -34,147 +36,117 @@ public class BarboraContext extends Context {
 
     @Override
     protected void waitUntilReady() {
-        if (initialized) return;
-        acceptOrRejectCookies();
-        switchToEnglish();
-        initialized = true;
-    }
-
-    @Override
-    protected Stream<Link> categoryLinks(Document document, Link selected) {
-        return document
-                .select("a[class*=category]")
-                .stream()
-                .filter(Element::hasText)
-                .map(BarboraContext::categoryLink);
-    }
-
-    private static Link categoryLink(Element e) {
-        return Link
-                .builder()
-                .codePath(categoryLinkCodePath(e))
-                .name(e.text())
-                .url(e.absUrl("href"))
-                .build();
-    }
-
-    private static Path<String> categoryLinkCodePath(Element e) {
-        return Path.of(substringAfter(e.attr("href"), "/").split("/"));
-    }
-
-    @Override
-    public Stream<Product> loadProducts(Path<String> categoryPath, Link selected) {
-        return productLinkPages(categoryPath, selected.url)
-                .stream()
-                .flatMap(Collection::stream)
-                .map(link -> loadProduct(link, categoryPath));
-    }
-
-    private Product loadProduct(Link link, Path<String> categoryPath) {
-        var cache = productsCache(categoryPath);
-        var cacheId = link.code();
-        var html = cache.load(cacheId);
-        if (html == null) {
-            html = open(link);
-            cache.save(cacheId, html);
+        if (!initialized) {
+            acceptOrRejectCookies();
+            switchToEnglish();
+            initialized = true;
         }
-        var document = Jsoup.parse(html, link.url);
-        return Product
-                .builder()
-                .namespace(Namespace.BARBORA)
-                .code(substringAfterLast(link.url, "/"))
-                .name(document.select("*[class=b-product-info--title]").text())
-                // todo: set prices and categories
-                .build();
     }
 
-    private List<List<Link>> productLinkPages(Path<String> categoryPath, String url) {
-        var cache = cache(categoryPath);
-        var cacheId = categoryPath.tail();
-        var html = cache.load(cacheId);
-        var document = Jsoup.parse(html, url);
-        var pages = new ArrayList<List<Link>>();
-        pages.add(productLinkPage(document));
-        while (nextProductPageExists(document)) {
-            cacheId = format("%s-%s", categoryPath.tail(), selectedProductPageNumber(document) + 1);
-            html = cache.load(cacheId);
-            if (html == null) {
-                html = nextProductPage();
-                cache.save(cacheId, html);
+    @Override
+    protected SourceType type(Document document) {
+        if (document.select("*[class*=products-info]").first() != null) return SourceType.PRODUCT;
+        if (document.select("*[class*=products-list]").first() != null) return SourceType.PRODUCT_LIST;
+        return SourceType.CATEGORY;
+    }
+
+    @Override
+    protected CategoryView categoryView(Document document, Link selected) {
+        return new CategoryView(document, selected) {
+            @Override
+            protected Map<Path<String>, Category> categories() {
+                var categories = new HashMap<Path<String>, Category>();
+                categoryElements().forEach(e -> {
+                    var codePath = categoryCodePath(e);
+                    categories.put(codePath, Category
+                            .builder()
+                            .code(codePath.tail())
+                            .name(e.text())
+                            .url(e.absUrl("href"))
+                            .build());
+                });
+                return categories;
             }
-            document = Jsoup.parse(html, url);
-            pages.add(productLinkPage(document));
-        }
-        return pages;
+
+            private Stream<Element> categoryElements() {
+                return document.select("a[class*=category]").stream().filter(Element::hasText);
+            }
+
+            private static Path<String> categoryCodePath(Element e) {
+                return Path.of(substringAfter(e.attr("href"), "/").split("/"));
+            }
+        };
     }
 
-    private static List<Link> productLinkPage(Document document) {
-        return productPageElements(document).map(BarboraContext::productLink).toList();
+    @Override
+    protected ProductListView productListView(Document document, Link selected) {
+        return new ProductListView(document, selected) {
+            @Override
+            public List<Link> productLinks() {
+                return productListElements()
+                        .map(e -> Link
+                                .builder()
+                                .code(productLinkCode(e))
+                                .name(e.select("*[itemprop=name]").text())
+                                .url(requireNonNull(e.select("a").first()).absUrl("href"))
+                                .source(selected.source)
+                                .build())
+                        .toList();
+            }
+
+            private Stream<Element> productListElements() {
+                return productListElement().select("*[itemtype*=Product]").stream();
+            }
+
+            private Element productListElement() {
+                return document.select("*[class*=products-list]").first();
+            }
+
+            private static String productLinkCode(Element e) {
+                return e.select("div[data-b-item-id]").attr("data-b-item-id");
+            }
+
+            @Override
+            public List<Link> productPageLinks() {
+                return productPageNumberElementsExcludingSelected()
+                        .map(e -> Link
+                                .builder()
+                                .code(productPageLinkCode(e))
+                                .name(selected.name)
+                                .url(e.absUrl("href"))
+                                .source(selected.source)
+                                .build())
+                        .toList();
+            }
+
+            Stream<Element> productPageNumberElementsExcludingSelected() {
+                return productPageNumbersElement().select("li[:matches([0-9]+)][:not(class=active)] a").stream();
+            }
+
+            Element productPageNumbersElement() {
+                return document.select("ul[class=pagination]").first();
+            }
+
+            private String productPageLinkCode(Element e) {
+                return substringBefore(selected.code, "@") + "@" + e.text();
+            }
+        };
     }
 
-    private static Stream<Element> productPageElements(Document document) {
-        return productPageElement(document).select("*[itemtype*=Product]").stream();
-    }
-
-    private static Element productPageElement(Document document) {
-        return document.select("*[class*=products-list]").first();
-    }
-
-    private static Link productLink(Element e) {
-        return Link
-                .builder()
-                .codePath(Path.<String>empty().followedBy(productLinkCode(e)))
-                .name(e.select("*[itemprop=name]").text())
-                .url(requireNonNull(e.select("a").first()).absUrl("href"))
-                .build();
-    }
-
-    private static String productLinkCode(Element e) {
-        return e.select("div[data-b-item-id]").attr("data-b-item-id");
-    }
-
-    static boolean nextProductPageExists(Document document) {
-        var selectedPageNumber = selectedProductPageNumber(document);
-        return productPageNumberElement(document, selectedPageNumber + 1) != null;
-    }
-
-    static String nextProductPage() {
-        var nextPageNumber = selectedProductPageNumber() + 1;
-        productPageNumberElement(nextPageNumber).$("a").click();
-        productPageNumberElement(nextPageNumber).shouldHave(cssClass("active"));
-        return html();
-    }
-
-    static SelenideElement productPageNumberElement(int pageNumber) {
-        return productPageNumberElements().findBy(number(pageNumber));
-    }
-
-    static int selectedProductPageNumber(Document document) {
-        return Integer.parseInt(selectedProductPageNumberElement(document).text());
-    }
-
-    static Element selectedProductPageNumberElement(Document document) {
-        return productPageNumberElements(document).filter(e -> e.hasClass("active")).findFirst().orElseThrow();
-    }
-
-    static int selectedProductPageNumber() {
-        return Integer.parseInt(productPageNumberElements().findBy(cssClass("active")).text());
-    }
-
-    static Element productPageNumberElement(Document document, int pageNumber) {
-        return productPageNumbersElement(document).select("li:matches(" + pageNumber + ")").first();
-    }
-
-    static Stream<Element> productPageNumberElements(Document document) {
-        return productPageNumbersElement(document).select("li:matches([0-9]+)").stream();
-    }
-
-    static Element productPageNumbersElement(Document document) {
-        return document.select("ul[class=pagination]").first();
-    }
-
-    static ElementsCollection productPageNumberElements() {
-        return $("ul[class=pagination]").$$("li").filter(number());
+    @Override
+    protected ProductView productView(Document document, Link selected) {
+        return new ProductView(document, selected) {
+            @Override
+            public Product product() {
+                return Product
+                        .builder()
+                        .namespace(Namespace.BARBORA)
+                        .code(substringAfterLast(selected.url, "/"))
+                        .name(document.select("*[class=b-product-info--title]").text())
+                        // todo: set prices and categories
+                        .build();
+            }
+        };
     }
 
     private static void acceptOrRejectCookies() {

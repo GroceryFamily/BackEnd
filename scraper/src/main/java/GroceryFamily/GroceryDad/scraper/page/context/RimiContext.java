@@ -1,6 +1,7 @@
 package GroceryFamily.GroceryDad.scraper.page.context;
 
 import GroceryFamily.GroceryDad.GroceryDadConfig;
+import GroceryFamily.GroceryDad.scraper.cache.Cache;
 import GroceryFamily.GroceryDad.scraper.page.Context;
 import GroceryFamily.GroceryDad.scraper.page.Link;
 import GroceryFamily.GroceryDad.scraper.page.Path;
@@ -90,7 +91,7 @@ public class RimiContext extends Context {
         var cacheId = link.code();
         var html = cache.load(cacheId);
         if (html == null) {
-            html = open(link);
+            html = _open(link);
             cache.save(cacheId, html);
         }
         var document = Jsoup.parse(html, link.url);
@@ -157,7 +158,7 @@ public class RimiContext extends Context {
     String nextProductPage(Document document) {
         var nextPageNumber = selectedProductPageNumber(document) + 1;
         var nextPageUrl = productPageNumberElement(document, nextPageNumber).select("a").first().absUrl("href");
-        open(Link.builder().url(nextPageUrl).build());
+        _open(Link.builder().url(nextPageUrl).build());
         return html();
     }
 

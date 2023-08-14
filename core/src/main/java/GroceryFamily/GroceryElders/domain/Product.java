@@ -17,6 +17,7 @@ public class Product {
     public final String namespace;
     public final String code;
     public final String name;
+    public final String url;
     @Builder.Default
     public final Set<Price> prices = Set.of();
     @Builder.Default

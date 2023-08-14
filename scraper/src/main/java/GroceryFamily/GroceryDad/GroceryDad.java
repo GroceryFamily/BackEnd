@@ -32,7 +32,6 @@ class GroceryDad implements CommandLineRunner {
                     .config(config)
                     .driver(driver)
                     .client(client)
-                    .categoryPermissions(buildCategoryPermissionTree(config))
                     .context(context(config))
                     .build());
         }

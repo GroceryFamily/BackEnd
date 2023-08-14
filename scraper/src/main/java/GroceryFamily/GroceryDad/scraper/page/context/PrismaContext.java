@@ -1,6 +1,7 @@
 package GroceryFamily.GroceryDad.scraper.page.context;
 
 import GroceryFamily.GroceryDad.GroceryDadConfig;
+import GroceryFamily.GroceryDad.scraper.cache.Cache;
 import GroceryFamily.GroceryDad.scraper.page.Context;
 import GroceryFamily.GroceryDad.scraper.page.Link;
 import GroceryFamily.GroceryDad.scraper.page.Path;
@@ -38,6 +39,7 @@ public class PrismaContext extends Context {
         acceptOrRejectCookies();
         switchToEnglish();
         initialized = true;
+        // todo: scroll product list
     }
 
     @Override
@@ -94,7 +96,7 @@ public class PrismaContext extends Context {
         var html = cache.load(cacheId);
         var document = Jsoup.parse(html, selected.url);
         if (visibleProductElementCount(document) < totalProductElementCount(document)) {
-            open(selected);
+            _open(selected);
             var totalCount = Integer.parseInt(productCountElement().text());
             var count = visibleProductElementCount();
             while (count < totalCount) {
@@ -114,7 +116,7 @@ public class PrismaContext extends Context {
         var cacheId = link.code();
         var html = cache.load(cacheId);
         if (html == null) {
-            html = open(link);
+            html = _open(link);
             cache.save(cacheId, html);
         }
         var document = Jsoup.parse(html, link.url);
