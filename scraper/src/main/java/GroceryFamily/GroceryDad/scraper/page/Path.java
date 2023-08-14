@@ -51,7 +51,6 @@ public class Path<SEGMENT> {
     }
 
     public boolean contains(Path<SEGMENT> path) {
-//        if (path.isEmpty()) return true;
         if (size() < path.size()) return false;
         return segments.subList(0, path.size()).equals(path.segments);
     }
