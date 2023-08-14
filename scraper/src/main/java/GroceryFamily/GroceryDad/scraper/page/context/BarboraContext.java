@@ -3,7 +3,7 @@ package GroceryFamily.GroceryDad.scraper.page.context;
 import GroceryFamily.GroceryDad.GroceryDadConfig;
 import GroceryFamily.GroceryDad.scraper.page.Context;
 import GroceryFamily.GroceryDad.scraper.page.Link;
-import GroceryFamily.GroceryDad.scraper.view.Path;
+import GroceryFamily.GroceryDad.scraper.page.Path;
 import GroceryFamily.GroceryElders.domain.Namespace;
 import GroceryFamily.GroceryElders.domain.Product;
 import com.codeborne.selenide.ElementsCollection;

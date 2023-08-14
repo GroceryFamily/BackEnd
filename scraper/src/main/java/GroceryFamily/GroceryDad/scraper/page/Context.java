@@ -3,7 +3,6 @@ package GroceryFamily.GroceryDad.scraper.page;
 import GroceryFamily.GroceryDad.GroceryDadConfig;
 import GroceryFamily.GroceryDad.scraper.cache.Cache;
 import GroceryFamily.GroceryDad.scraper.tree.PermissionTree;
-import GroceryFamily.GroceryDad.scraper.view.Path;
 import GroceryFamily.GroceryElders.domain.Product;
 import com.codeborne.selenide.Selenide;
 import io.github.antivoland.sfc.FileCache;

@@ -1,6 +1,5 @@
 package GroceryFamily.GroceryDad.scraper.page;
 
-import GroceryFamily.GroceryDad.scraper.view.Path;
 import GroceryFamily.GroceryElders.domain.Product;
 import lombok.Builder;
 import lombok.extern.slf4j.Slf4j;

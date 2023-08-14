@@ -1,6 +1,5 @@
 package GroceryFamily.GroceryDad.scraper.page;
 
-import GroceryFamily.GroceryDad.scraper.view.Path;
 import lombok.Builder;
 import lombok.ToString;
 
