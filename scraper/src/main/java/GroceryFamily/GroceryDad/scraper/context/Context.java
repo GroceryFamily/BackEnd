@@ -28,7 +28,7 @@ import java.util.function.Consumer;
 import static com.codeborne.selenide.Selenide.$;
 
 @Slf4j
-public abstract class Context {
+public abstract class Context { // todo: live vs. cached?
     private final GroceryDadConfig.Scraper config;
     private final Cache.Factory cacheFactory;
     private final PermissionTree permissions;
@@ -47,9 +47,9 @@ public abstract class Context {
         traverse(Link.builder().code(config.namespace).url(config.url).build(), new HashSet<>(), handler);
     }
 
-    public final void traverse(Link selected, Set<String> seen, Consumer<Product> handler) {
-        if (seen.contains(selected.url)) return;
-        seen.add(selected.url);
+    public final void traverse(Link selected, Set<Path<String>> seen, Consumer<Product> handler) {
+        if (seen.contains(selected.codePath())) return;
+        seen.add(selected.codePath());
         if (!canOpen(selected)) return;
         log.info("Traversing {}...", selected.namePath());
 
@@ -61,13 +61,13 @@ public abstract class Context {
             return;
         }
 
+        productPageLinks(document, Source.productList(selected)).forEach(link -> traverse(link, seen, handler));
+
         var productLinks = productLinks(document, Source.productList(selected));
         if (!productLinks.isEmpty()) {
             productLinks.forEach(link -> traverse(link, seen, handler));
             return;
         }
-
-        productPageLinks(document, Source.productList(selected)).forEach(link -> traverse(link, seen, handler));
 
         handler.accept(product(document, Source.product(selected)));
     }
