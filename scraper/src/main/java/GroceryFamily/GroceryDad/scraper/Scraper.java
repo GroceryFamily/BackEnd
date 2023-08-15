@@ -1,7 +1,7 @@
 package GroceryFamily.GroceryDad.scraper;
 
 import GroceryFamily.GroceryDad.GroceryDadConfig;
-import GroceryFamily.GroceryDad.scraper.page.Context;
+import GroceryFamily.GroceryDad.scraper.context.Context;
 import GroceryFamily.GroceryDad.scraper.page.PageUtils;
 import GroceryFamily.GroceryElders.api.client.ProductAPIClient;
 import GroceryFamily.GroceryElders.domain.Product;

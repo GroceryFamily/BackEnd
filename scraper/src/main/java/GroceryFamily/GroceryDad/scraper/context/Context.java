@@ -1,7 +1,10 @@
-package GroceryFamily.GroceryDad.scraper.page;
+package GroceryFamily.GroceryDad.scraper.context;
 
 import GroceryFamily.GroceryDad.GroceryDadConfig;
 import GroceryFamily.GroceryDad.scraper.cache.Cache;
+import GroceryFamily.GroceryDad.scraper.page.Link;
+import GroceryFamily.GroceryDad.scraper.page.Path;
+import GroceryFamily.GroceryDad.scraper.page.Source;
 import GroceryFamily.GroceryDad.scraper.tree.PermissionTree;
 import GroceryFamily.GroceryElders.domain.Category;
 import GroceryFamily.GroceryElders.domain.Product;

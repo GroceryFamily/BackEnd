@@ -1,7 +1,6 @@
-package GroceryFamily.GroceryDad.scraper;
+package GroceryFamily.GroceryDad.scraper.context;
 
 import GroceryFamily.GroceryDad.GroceryDadConfig;
-import GroceryFamily.GroceryDad.scraper.page.Context;
 import GroceryFamily.GroceryDad.scraper.page.Link;
 import GroceryFamily.GroceryDad.scraper.page.Path;
 import GroceryFamily.GroceryDad.scraper.page.Source;

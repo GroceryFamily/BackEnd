@@ -1,10 +1,10 @@
 package GroceryFamily.GroceryDad;
 
-import GroceryFamily.GroceryDad.scraper.BarboraContext;
-import GroceryFamily.GroceryDad.scraper.PrismaContext;
-import GroceryFamily.GroceryDad.scraper.RimiContext;
 import GroceryFamily.GroceryDad.scraper.Scraper;
-import GroceryFamily.GroceryDad.scraper.page.Context;
+import GroceryFamily.GroceryDad.scraper.context.BarboraContext;
+import GroceryFamily.GroceryDad.scraper.context.Context;
+import GroceryFamily.GroceryDad.scraper.context.PrismaContext;
+import GroceryFamily.GroceryDad.scraper.context.RimiContext;
 import GroceryFamily.GroceryDad.scraper.tree.PermissionTree;
 import GroceryFamily.GroceryElders.api.client.ProductAPIClient;
 import GroceryFamily.GroceryElders.domain.Namespace;

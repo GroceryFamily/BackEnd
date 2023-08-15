@@ -1,13 +1,13 @@
-package GroceryFamily.GroceryDad.scraper;
+package GroceryFamily.GroceryDad.scraper.context;
 
 import GroceryFamily.GroceryDad.GroceryDadConfig;
-import GroceryFamily.GroceryDad.scraper.page.Context;
 import GroceryFamily.GroceryDad.scraper.page.Link;
 import GroceryFamily.GroceryDad.scraper.page.Path;
 import GroceryFamily.GroceryDad.scraper.page.Source;
 import GroceryFamily.GroceryElders.domain.Category;
 import GroceryFamily.GroceryElders.domain.Namespace;
 import GroceryFamily.GroceryElders.domain.Product;
+import com.codeborne.selenide.SelenideElement;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 
@@ -16,15 +16,16 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Stream;
 
+import static GroceryFamily.GroceryDad.scraper.page.PageUtils.sleep;
+import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.$;
-import static java.util.Objects.requireNonNull;
 import static org.apache.commons.lang3.StringUtils.*;
 
-public class RimiContext extends Context {
+public class BarboraContext extends Context {
     private boolean initialized;
 
-    public RimiContext(GroceryDadConfig.Scraper config) {
+    public BarboraContext(GroceryDadConfig.Scraper config) {
         super(config);
     }
 
@@ -32,6 +33,7 @@ public class RimiContext extends Context {
     protected void initialize() {
         if (!initialized) {
             acceptOrRejectCookies();
+            switchToEnglish();
             initialized = true;
         }
     }
@@ -39,28 +41,14 @@ public class RimiContext extends Context {
     @Override
     protected Map<Path<String>, Category> categories(Document document, Source selected) {
         var categories = new HashMap<Path<String>, Category>();
-        var buttons = categoryButtonElements(document).toList();
-        buttons.forEach(be -> {
-            {
-                var le = categoryLinkElement(document, be);
-                var codePath = categoryCodePath(le);
-                categories.put(codePath, Category
-                        .builder()
-                        .code(codePath.tail())
-                        .name(be.text())
-                        .url(categoryLinkElement(document, be).absUrl("href"))
-                        .build());
-            }
-
-            subcategoryLinkElements(document, be).forEach(le -> {
-                var codePath = categoryCodePath(le);
-                categories.put(codePath, Category
-                        .builder()
-                        .code(codePath.tail())
-                        .name(le.text())
-                        .url(le.absUrl("href"))
-                        .build());
-            });
+        categoryElements(document).forEach(e -> {
+            var codePath = categoryCodePath(e);
+            categories.put(codePath, Category
+                    .builder()
+                    .code(codePath.tail())
+                    .name(e.text().replaceAll("\s[0-9]+$", ""))
+                    .url(e.absUrl("href"))
+                    .build());
         });
         return categories;
     }
@@ -86,11 +74,11 @@ public class RimiContext extends Context {
     public List<Link> productLinks(Document document, Source selected) {
         return productListElements(document)
                 .map(e -> {
-                    var url = requireNonNull(e.select("a").first()).absUrl("href");
+                    var url = e.absUrl("href");
                     return Link
                             .builder()
                             .code(productCode(url))
-                            .name(e.select("*[class*=name]").text())
+                            .name(e.text())
                             .url(url)
                             .source(selected)
                             .build();
@@ -102,50 +90,61 @@ public class RimiContext extends Context {
     public Product product(Document document, Source selected) {
         return Product
                 .builder()
-                .namespace(Namespace.RIMI)
+                .namespace(Namespace.BARBORA)
                 .code(productCode(selected.url))
-                .name(document.select("h3[class=name]").text())
+                .name(document.select("*[class=b-product-info--title]").text())
                 .url(selected.url)
                 // todo: set prices and categories
                 .build();
     }
 
     private static void acceptOrRejectCookies() {
-        $("#CybotCookiebotDialogBodyLevelButtonLevelOptinDeclineAll")
-                .shouldBe(visible)
-                .click();
+        $("#CybotCookiebotDialogBodyLevelButtonLevelOptinDeclineAll").shouldBe(visible).click();
     }
 
-    private static Stream<Element> categoryButtonElements(Document document) {
-        return document.select("nav[data-category-menu-container] button").stream();
+    private static void switchToEnglish() {
+        topMenuItemElement("Kaubavalik").shouldBe(visible);
+        languageSelectElement().shouldBe(visible).hover();
+        sleep();
+        englishLanguageElement().shouldBe(visible).hover();
+        sleep();
+        englishLanguageElement().shouldBe(visible).click();
+        topMenuItemElement("Products").shouldBe(visible);
     }
 
-    private Element categoryLinkElement(Document document, Element be) {
-        return subcategoriesElement(document, be).select("a[class*=base]").first();
+    private static SelenideElement topMenuItemElement(String name) {
+        return topMenuElement().$$("li[id*=fti-desktop-menu-item]").findBy(text(name));
     }
 
-    private Stream<Element> subcategoryLinkElements(Document document, Element be) {
-        return subcategoriesElement(document, be).select("a:not([class*=base])").stream();
+    private static SelenideElement topMenuElement() {
+        return $("#desktop-menu-placeholder");
     }
 
-    private static Element subcategoriesElement(Document document, Element be) {
-        return document.select("*[data-index=" + be.attr("data-target-descendant") + "]").first();
+    private static SelenideElement englishLanguageElement() {
+        return languageSelectElement().$$("li").findBy(text("English"));
+    }
+
+    private static SelenideElement languageSelectElement() {
+        return $("#fti-header-language-dropdown");
+    }
+
+    private static Stream<Element> categoryElements(Document document) {
+        return document.select("a[class*=category]").stream().filter(Element::hasText);
     }
 
     private static Path<String> categoryCodePath(Element e) {
-        var fragments = e.attr("href").split("/");
-        return Path.of(List.of(fragments).subList(4, fragments.length - 2));
+        return Path.of(substringAfter(e.attr("href"), "/").split("/"));
     }
 
     private static Stream<Element> productPageNumberElementsExcludingSelected(Document document) {
-        return document.select("ul[class*=pagination] a:matches([0-9]+)").stream();
+        return document.select("ul[class=pagination] li:matches([0-9]+):not([class=active]) a").stream();
     }
 
     private static Stream<Element> productListElements(Document document) {
-        return document.select("*[data-product-code]").stream();
+        return document.select("*[itemtype*=Product] a[class*=title]").stream();
     }
 
     private static String productCode(String url) {
-        return substringAfterLast(substringBeforeLast(url, "/p/"), "/");
+        return substringAfterLast(url, "/");
     }
 }
