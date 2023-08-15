@@ -2,7 +2,6 @@ package GroceryFamily.GroceryDad.scraper;
 
 import GroceryFamily.GroceryDad.GroceryDadConfig;
 import GroceryFamily.GroceryDad.scraper.page.Context;
-import GroceryFamily.GroceryDad.scraper.page.Node;
 import GroceryFamily.GroceryDad.scraper.page.PageUtils;
 import GroceryFamily.GroceryElders.api.client.ProductAPIClient;
 import GroceryFamily.GroceryElders.domain.Product;
@@ -38,7 +37,7 @@ public class Scraper {
     }
 
     protected void scrap(Consumer<Product> handler) {
-        Node.root(config.url, context).traverse(handler);
+        context.traverse(handler);
     }
 
     public static void waitUntilPageReady() {

@@ -1,4 +1,4 @@
-package GroceryFamily.GroceryDad.scraper.page.context;
+package GroceryFamily.GroceryDad.scraper;
 
 import GroceryFamily.GroceryDad.GroceryDadConfig;
 import GroceryFamily.GroceryDad.scraper.page.Context;
