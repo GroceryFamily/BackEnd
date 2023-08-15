@@ -12,7 +12,7 @@ import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.executeJavaScript;
 import static java.lang.String.format;
 
-public class Page {
+public class PageUtils {
     public static Duration sleepDelay = Duration.ofSeconds(1);
 
     public static void sleep() {

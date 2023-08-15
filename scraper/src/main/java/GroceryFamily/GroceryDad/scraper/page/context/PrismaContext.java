@@ -1,7 +1,6 @@
 package GroceryFamily.GroceryDad.scraper.page.context;
 
 import GroceryFamily.GroceryDad.GroceryDadConfig;
-import GroceryFamily.GroceryDad.scraper.cache.Cache;
 import GroceryFamily.GroceryDad.scraper.page.Context;
 import GroceryFamily.GroceryDad.scraper.page.Link;
 import GroceryFamily.GroceryDad.scraper.page.Path;
@@ -15,8 +14,8 @@ import org.jsoup.nodes.Element;
 
 import java.util.stream.Stream;
 
-import static GroceryFamily.GroceryDad.scraper.page.Page.html;
-import static GroceryFamily.GroceryDad.scraper.page.Page.scrollDown;
+import static GroceryFamily.GroceryDad.scraper.page.PageUtils.html;
+import static GroceryFamily.GroceryDad.scraper.page.PageUtils.scrollDown;
 import static com.codeborne.selenide.CollectionCondition.itemWithText;
 import static com.codeborne.selenide.CollectionCondition.sizeGreaterThan;
 import static com.codeborne.selenide.Condition.visible;
@@ -34,7 +33,7 @@ public class PrismaContext extends Context {
     }
 
     @Override
-    protected void waitUntilReady() {
+    protected void initialize() {
         if (initialized) return;
         acceptOrRejectCookies();
         switchToEnglish();

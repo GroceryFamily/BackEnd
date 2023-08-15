@@ -1,7 +1,6 @@
 package GroceryFamily.GroceryDad.scraper.page.context;
 
 import GroceryFamily.GroceryDad.GroceryDadConfig;
-import GroceryFamily.GroceryDad.scraper.cache.Cache;
 import GroceryFamily.GroceryDad.scraper.page.Context;
 import GroceryFamily.GroceryDad.scraper.page.Link;
 import GroceryFamily.GroceryDad.scraper.page.Path;
@@ -19,8 +18,8 @@ import java.util.Collection;
 import java.util.List;
 import java.util.stream.Stream;
 
-import static GroceryFamily.GroceryDad.scraper.page.Page.html;
-import static GroceryFamily.GroceryDad.scraper.page.Page.number;
+import static GroceryFamily.GroceryDad.scraper.page.PageUtils.html;
+import static GroceryFamily.GroceryDad.scraper.page.PageUtils.number;
 import static com.codeborne.selenide.Condition.cssClass;
 import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.$;
@@ -36,7 +35,7 @@ public class RimiContext extends Context {
     }
 
     @Override
-    protected void waitUntilReady() {
+    protected void initialize() {
         if (initialized) return;
         acceptOrRejectCookies();
         initialized = true;

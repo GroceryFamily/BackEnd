@@ -13,7 +13,7 @@ public class PermissionTree extends Tree<String, String> {
 
     public boolean allowed(List<String> path) {
         var node = root;
-        var i = 1;
+        var i = 0;
         while (node != null && i < path.size()) {
             var child = node.children.get(ANY);
             if (child == null) child = node.children.get(path.get(i));

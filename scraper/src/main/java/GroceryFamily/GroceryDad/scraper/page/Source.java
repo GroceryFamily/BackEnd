@@ -1,5 +1,6 @@
 package GroceryFamily.GroceryDad.scraper.page;
 
+import GroceryFamily.GroceryElders.domain.Category;
 import lombok.Builder;
 import lombok.ToString;
 
@@ -11,6 +12,7 @@ public class Source {
     public final SourceType type;
     public final String code;
     public final String name;
+    public final String url;
     public final Source parent;
 
     public Path<String> codePath() {
@@ -30,5 +32,49 @@ public class Source {
             source = source.parent;
         }
         return path;
+    }
+
+    public static Source category(Link link) {
+        return Source
+                .builder()
+                .type(SourceType.CATEGORY)
+                .code(link.code)
+                .name(link.name)
+                .url(link.url)
+                .parent(link.source)
+                .build();
+    }
+
+    public static Source category(Category category, Source parent) {
+        return Source
+                .builder()
+                .type(SourceType.CATEGORY)
+                .code(category.code)
+                .name(category.name)
+                .url(category.url)
+                .parent(parent)
+                .build();
+    }
+
+    public static Source productList(Link link) {
+        return Source
+                .builder()
+                .type(SourceType.PRODUCT_LIST)
+                .code(link.code)
+                .name(link.name)
+                .url(link.url)
+                .parent(link.source)
+                .build();
+    }
+
+    public static Source product(Link link) {
+        return Source
+                .builder()
+                .type(SourceType.PRODUCT)
+                .code(link.code)
+                .name(link.name)
+                .url(link.url)
+                .parent(link.source)
+                .build();
     }
 }

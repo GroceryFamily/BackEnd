@@ -1,13 +1,7 @@
 package GroceryFamily.GroceryDad.scraper.page.context;
 
 import GroceryFamily.GroceryDad.GroceryDadConfig;
-import GroceryFamily.GroceryDad.scraper.page.Context;
-import GroceryFamily.GroceryDad.scraper.page.Link;
-import GroceryFamily.GroceryDad.scraper.page.Path;
-import GroceryFamily.GroceryDad.scraper.page.SourceType;
-import GroceryFamily.GroceryDad.scraper.page.view.CategoryView;
-import GroceryFamily.GroceryDad.scraper.page.view.ProductListView;
-import GroceryFamily.GroceryDad.scraper.page.view.ProductView;
+import GroceryFamily.GroceryDad.scraper.page.*;
 import GroceryFamily.GroceryElders.domain.Category;
 import GroceryFamily.GroceryElders.domain.Namespace;
 import GroceryFamily.GroceryElders.domain.Product;
@@ -20,7 +14,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Stream;
 
-import static GroceryFamily.GroceryDad.scraper.page.Page.sleep;
+import static GroceryFamily.GroceryDad.scraper.page.PageUtils.sleep;
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.$;
@@ -35,7 +29,7 @@ public class BarboraContext extends Context {
     }
 
     @Override
-    protected void waitUntilReady() {
+    protected void initialize() {
         if (!initialized) {
             acceptOrRejectCookies();
             switchToEnglish();
@@ -44,109 +38,89 @@ public class BarboraContext extends Context {
     }
 
     @Override
-    protected SourceType type(Document document) {
-        if (document.select("*[class*=products-info]").first() != null) return SourceType.PRODUCT;
+    public SourceType type(Document document) {
+        if (document.select("h1[class*=products-info]").first() != null) return SourceType.PRODUCT;
         if (document.select("*[class*=products-list]").first() != null) return SourceType.PRODUCT_LIST;
         return SourceType.CATEGORY;
     }
 
     @Override
-    protected CategoryView categoryView(Document document, Link selected) {
-        return new CategoryView(document, selected) {
-            @Override
-            protected Map<Path<String>, Category> categories() {
-                var categories = new HashMap<Path<String>, Category>();
-                categoryElements().forEach(e -> {
-                    var codePath = categoryCodePath(e);
-                    categories.put(codePath, Category
-                            .builder()
-                            .code(codePath.tail())
-                            .name(e.text())
-                            .url(e.absUrl("href"))
-                            .build());
-                });
-                return categories;
-            }
+    protected Map<Path<String>, Category> categories(Document document, Source selected) {
+        var categories = new HashMap<Path<String>, Category>();
+        categoryElements(document).forEach(e -> {
+            var codePath = categoryCodePath(e);
+            categories.put(codePath, Category
+                    .builder()
+                    .code(codePath.tail())
+                    .name(e.text().replaceAll("\s[0-9]+$", ""))
+                    .url(e.absUrl("href"))
+                    .build());
+        });
+        return categories;
+    }
 
-            private Stream<Element> categoryElements() {
-                return document.select("a[class*=category]").stream().filter(Element::hasText);
-            }
+    private Stream<Element> categoryElements(Document document) {
+        return document.select("a[class*=category]").stream().filter(Element::hasText);
+    }
 
-            private static Path<String> categoryCodePath(Element e) {
-                return Path.of(substringAfter(e.attr("href"), "/").split("/"));
-            }
-        };
+    private static Path<String> categoryCodePath(Element e) {
+        return Path.of(substringAfter(e.attr("href"), "/").split("/"));
     }
 
     @Override
-    protected ProductListView productListView(Document document, Link selected) {
-        return new ProductListView(document, selected) {
-            @Override
-            public List<Link> productLinks() {
-                return productListElements()
-                        .map(e -> Link
-                                .builder()
-                                .code(productLinkCode(e))
-                                .name(e.select("*[itemprop=name]").text())
-                                .url(requireNonNull(e.select("a").first()).absUrl("href"))
-                                .source(selected.source)
-                                .build())
-                        .toList();
-            }
-
-            private Stream<Element> productListElements() {
-                return productListElement().select("*[itemtype*=Product]").stream();
-            }
-
-            private Element productListElement() {
-                return document.select("*[class*=products-list]").first();
-            }
-
-            private static String productLinkCode(Element e) {
-                return e.select("div[data-b-item-id]").attr("data-b-item-id");
-            }
-
-            @Override
-            public List<Link> productPageLinks() {
-                return productPageNumberElementsExcludingSelected()
-                        .map(e -> Link
-                                .builder()
-                                .code(productPageLinkCode(e))
-                                .name(selected.name)
-                                .url(e.absUrl("href"))
-                                .source(selected.source)
-                                .build())
-                        .toList();
-            }
-
-            Stream<Element> productPageNumberElementsExcludingSelected() {
-                return productPageNumbersElement().select("li[:matches([0-9]+)][:not(class=active)] a").stream();
-            }
-
-            Element productPageNumbersElement() {
-                return document.select("ul[class=pagination]").first();
-            }
-
-            private String productPageLinkCode(Element e) {
-                return substringBefore(selected.code, "@") + "@" + e.text();
-            }
-        };
-    }
-
-    @Override
-    protected ProductView productView(Document document, Link selected) {
-        return new ProductView(document, selected) {
-            @Override
-            public Product product() {
-                return Product
+    public List<Link> productPageLinks(Document document, Source selected) {
+        return productPageNumberElementsExcludingSelected(document)
+                .map(e -> Link
                         .builder()
-                        .namespace(Namespace.BARBORA)
-                        .code(substringAfterLast(selected.url, "/"))
-                        .name(document.select("*[class=b-product-info--title]").text())
-                        // todo: set prices and categories
-                        .build();
-            }
-        };
+                        .code(productPageLinkCode(e, selected))
+                        .name(selected.name)
+                        .url(e.absUrl("href"))
+                        .source(selected.parent)
+                        .build())
+                .toList();
+
+    }
+
+    Stream<Element> productPageNumberElementsExcludingSelected(Document document) {
+        return document.select("ul[class=pagination] li:matches([0-9]+):not([class=active]) a").stream();
+    }
+
+    private String productPageLinkCode(Element e, Source selected) {
+        return substringBefore(selected.code, "@") + "@" + e.text();
+    }
+
+    @Override
+    public List<Link> productLinks(Document document, Source selected) {
+        return productListElements(document)
+                .map(e -> Link
+                        .builder()
+                        .code(productLinkCode(e))
+                        .name(e.select("*[itemprop=name]").text())
+                        .url(requireNonNull(e.select("a").first()).absUrl("href"))
+                        .source(selected)
+                        .build())
+                .toList();
+
+    }
+
+    private Stream<Element> productListElements(Document document) {
+        return document.select("*[class*=products-list] *[itemtype*=Product]").stream();
+    }
+
+    private static String productLinkCode(Element e) {
+        return e.select("div[data-b-item-id]").attr("data-b-item-id");
+    }
+
+    @Override
+    public Product product(Document document, Source selected) {
+        return Product
+                .builder()
+                .namespace(Namespace.BARBORA)
+                .code(substringAfterLast(selected.url, "/"))
+                .name(document.select("*[class=b-product-info--title]").text())
+                .url(selected.url)
+                // todo: set prices and categories
+                .build();
     }
 
     private static void acceptOrRejectCookies() {

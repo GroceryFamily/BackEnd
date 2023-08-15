@@ -38,7 +38,7 @@ public class Cache {
 
         public FileCache<String> html(Link link) {
             var subdirectory = directory;
-            for (var segment : link.sourceCodePath().segments()) {
+            for (var segment : link.codePath().segments()) {
                 subdirectory = subdirectory.resolve(segment);
             }
             return FileCache.compressed(subdirectory, FileType.text("html"));

@@ -3,8 +3,7 @@ package GroceryFamily.GroceryDad.scraper;
 import GroceryFamily.GroceryDad.GroceryDadConfig;
 import GroceryFamily.GroceryDad.scraper.page.Context;
 import GroceryFamily.GroceryDad.scraper.page.Node;
-import GroceryFamily.GroceryDad.scraper.page.Page;
-import GroceryFamily.GroceryDad.scraper.tree.PermissionTree;
+import GroceryFamily.GroceryDad.scraper.page.PageUtils;
 import GroceryFamily.GroceryElders.api.client.ProductAPIClient;
 import GroceryFamily.GroceryElders.domain.Product;
 import com.codeborne.selenide.Configuration;
@@ -32,7 +31,7 @@ public class Scraper {
 
     public final void scrap() {
         Configuration.timeout = config.timeout.toMillis();
-        Page.sleepDelay = config.sleepDelay;
+        PageUtils.sleepDelay = config.sleepDelay;
         using(driver, () -> {
             scrap(client::update);
         });

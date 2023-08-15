@@ -6,11 +6,13 @@ import GroceryFamily.GroceryDad.scraper.page.view.CategoryView;
 import GroceryFamily.GroceryDad.scraper.page.view.ProductListView;
 import GroceryFamily.GroceryDad.scraper.page.view.ProductView;
 import GroceryFamily.GroceryDad.scraper.tree.PermissionTree;
+import GroceryFamily.GroceryElders.domain.Category;
 import GroceryFamily.GroceryElders.domain.Product;
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.WebDriverRunner;
 import io.github.antivoland.sfc.FileCache;
+import lombok.extern.slf4j.Slf4j;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.openqa.selenium.JavascriptExecutor;
@@ -19,15 +21,18 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 import java.util.HashSet;
+import java.util.List;
+import java.util.Map;
 import java.util.Set;
 import java.util.function.Consumer;
 import java.util.stream.Stream;
 
-import static GroceryFamily.GroceryDad.scraper.page.Page.html;
+import static GroceryFamily.GroceryDad.scraper.page.PageUtils.html;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 import static java.util.Comparator.comparing;
 
+@Slf4j
 public abstract class Context {
     private final GroceryDadConfig.Scraper config;
     private final Cache.Factory cacheFactory;
@@ -63,69 +68,99 @@ public abstract class Context {
     public final String _open(Link link) {
         open(link.url);
         waitUntilPageReady();
-        waitUntilReady();
+        initialize();
         return html();
     }
 
     public final void traverse(Consumer<Product> handler) {
-        var link = Link
-                .builder()
-                .code(config.namespace)
-                .name(config.namespace)
-                .url(config.url)
-                .build();
-        traverse(link, new HashSet<>(), handler);
+        traverse(Link.builder().code(config.namespace).url(config.url).build(), new HashSet<>(), handler);
     }
 
-    public final void traverse(Link link, Set<String> seen, Consumer<Product> handler) {
-        if (seen.contains(link.url)) return;
-        seen.add(link.url);
-        if (!canOpen(link)) return;
-        var document = load(link);
-        var type = type(document);
-        switch (type) {
-            case CATEGORY -> categoryView(document, link)
-                    .childCategoryLinks()
-                    .forEach(childCategoryLink -> traverse(childCategoryLink, seen, handler));
-            case PRODUCT_LIST -> {
-                var view = productListView(document, link);
-                view.productLinks().forEach(productLink -> traverse(productLink, seen, handler));
-                view.productPageLinks().forEach(productPageLink -> traverse(productPageLink, seen, handler));
-            }
-            case PRODUCT -> handler.accept(productView(document, link).product());
+    public final void traverse(Link selected, Set<String> seen, Consumer<Product> handler) {
+        if (seen.contains(selected.url)) return;
+        seen.add(selected.url);
+        if (!canOpen(selected)) return;
+        log.info("Traversing {}...", selected.namePath());
+
+        var document = load(selected);
+
+        var childCategoryLinks = childCategoryLinks(document, Source.category(selected));
+        if (!childCategoryLinks.isEmpty()) {
+            childCategoryLinks.forEach(link -> traverse(link, seen, handler));
+            return;
         }
+
+        productPageLinks(document, Source.productList(selected)).forEach(link -> traverse(link, seen, handler));
+
+        var productLinks = productLinks(document, Source.productList(selected));
+        if (!productLinks.isEmpty()) {
+            productLinks.forEach(link -> traverse(link, seen, handler));
+            return;
+        }
+
+        handler.accept(product(document, Source.product(selected)));
     }
 
-    protected SourceType type(Document document) {
+    @Deprecated
+    public SourceType type(Document document) {
         throw new UnsupportedOperationException("Not implemented yet");
     }
 
+    public final List<Link> childCategoryLinks(Document document, Source selected) {
+        var selectedCodePath = selected.codePath();
+        var categories = categories(document, selected);
+        return categories.keySet().stream()
+                .filter(codePath -> codePath.contains(selectedCodePath))
+                .filter(codePath -> codePath.size() - selectedCodePath.size() == 1)
+                .map(codePath -> Link.category(categories.get(codePath), selected))
+                .toList();
+    }
+
+    protected Map<Path<String>, Category> categories(Document document, Source selected) {
+        throw new UnsupportedOperationException("Not implemented yet");
+    }
+
+    public List<Link> productPageLinks(Document document, Source selected) {
+        throw new UnsupportedOperationException("Not implemented yet");
+    }
+
+    public List<Link> productLinks(Document document, Source selected) {
+        throw new UnsupportedOperationException("Not implemented yet");
+    }
+
+    public Product product(Document document, Source selected) {
+        throw new UnsupportedOperationException("Not implemented yet");
+    }
+
+    @Deprecated
     protected CategoryView categoryView(Document document, Link selected) {
         throw new UnsupportedOperationException("Not implemented yet");
     }
 
+    @Deprecated
     protected ProductListView productListView(Document document, Link selected) {
         throw new UnsupportedOperationException("Not implemented yet");
     }
 
+    @Deprecated
     protected ProductView productView(Document document, Link selected) {
         throw new UnsupportedOperationException("Not implemented yet");
     }
 
-    protected final Document load(Link link) {
+    public final Document load(Link link) {
         var cache = cacheFactory.html(link);
         var html = cache.load(link.code);
         if (html == null) {
             Selenide.open(link.url);
             waitUntilPageReady();
-            waitUntilReady();
+            initialize();
             html = $("html").innerHtml();
             cache.save(link.code, html);
         }
         return Jsoup.parse(html, link.url);
     }
 
-    protected abstract void waitUntilReady();
+    protected abstract void initialize();
 
     @Deprecated
     public final Stream<Link> childCategoryLinksSortedByCodePathSize(Document document, Link selected) {
