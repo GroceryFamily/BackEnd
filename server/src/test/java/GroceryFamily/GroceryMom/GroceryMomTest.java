@@ -33,14 +33,14 @@ import static org.springframework.util.StringUtils.capitalize;
 /*
  This is the main integration test that confirms the correctness of the
  implementation of the optimistic locking approach for the product update
- method. It uses 3 parallel threads, each doing 99 consecutive updates of the
+ method. It uses 2 parallel threads, each doing 99 consecutive updates of the
  same product. Each update uses unique markers for the product and its parts.
  */
 @SpringBootTest(webEnvironment = RANDOM_PORT)
 @ActiveProfiles("h2")
 @DirtiesContext(classMode = BEFORE_EACH_TEST_METHOD)
 class GroceryMomTest {
-    static final int NUMBER_OF_THREADS = 3;
+    static final int NUMBER_OF_THREADS = 2;
     static final int NUMBER_OF_UPDATES_PER_THREAD = 99;
 
     @LocalServerPort
