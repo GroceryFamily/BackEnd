@@ -54,7 +54,7 @@ public class CategoryEntity {
                 .setId(id)
                 .setCode(category.code)
                 .setName(category.name)
-                .setName(category.url)
+                .setUrl(category.url)
                 .setTs(ts)
                 .setVersion(version)
                 .setProduct(productEntity);
