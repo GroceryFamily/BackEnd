@@ -116,7 +116,7 @@ public class RimiContext extends Context {
     }
 
     private static Stream<Element> categoryButtonElements(Document document) {
-        return document.select("nav[data-category-menu-container] button").stream();
+        return document.select("nav[data-category-menu-container]:first-child button").stream();
     }
 
     private Element categoryLinkElement(Document document, Element be) {
@@ -128,7 +128,7 @@ public class RimiContext extends Context {
     }
 
     private static Element subcategoriesElement(Document document, Element be) {
-        return document.select("*[data-index=" + be.attr("data-target-descendant") + "]").first();
+        return document.select("nav[data-category-menu-container]:first-child div[data-index=" + be.attr("data-target-descendant") + "]").first();
     }
 
     private static Path<String> categoryCodePath(Element e) {
@@ -141,7 +141,7 @@ public class RimiContext extends Context {
     }
 
     private static Stream<Element> productListElements(Document document) {
-        return document.select("*[data-product-code]").stream();
+        return document.select("ul[class=product-grid] div[data-product-code]").stream();
     }
 
     private static String productCode(String url) {

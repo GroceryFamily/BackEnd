@@ -137,7 +137,7 @@ public class BarboraContext extends Context {
     }
 
     private static Stream<Element> productPageNumberElementsExcludingSelected(Document document) {
-        return document.select("ul[class=pagination] li:matches([0-9]+):not([class=active]) a").stream();
+        return document.select("ul[class=pagination]:first-child li:matches([0-9]+):not([class=active]) a").stream();
     }
 
     private static Stream<Element> productListElements(Document document) {
