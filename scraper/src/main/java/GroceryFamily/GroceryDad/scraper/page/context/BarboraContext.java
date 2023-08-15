@@ -43,7 +43,7 @@ public class BarboraContext extends Context {
     protected Map<Path<String>, Category> categories(Document document, Source selected) {
         var categories = new HashMap<Path<String>, Category>();
         categoryElements(document).forEach(e -> {
-            var codePath = Path.of(substringAfter(e.attr("href"), "/").split("/"));
+            var codePath = categoryCodePath(e);
             categories.put(codePath, Category
                     .builder()
                     .code(codePath.tail())
@@ -57,13 +57,17 @@ public class BarboraContext extends Context {
     @Override
     public List<Link> productPageLinks(Document document, Source selected) {
         return productPageNumberElementsExcludingSelected(document)
-                .map(e -> Link
-                        .builder()
-                        .code(substringBefore(selected.code, "@") + "@" + e.text())
-                        .name(selected.name)
-                        .url(e.absUrl("href"))
-                        .source(selected.parent)
-                        .build())
+                .map(e -> {
+                    var number = e.text();
+                    var codeSuffix = "1".equals(number) ? "" : "@" + e.text();
+                    return Link
+                            .builder()
+                            .code(substringBefore(selected.code, "@") + codeSuffix)
+                            .name(selected.name)
+                            .url(e.absUrl("href"))
+                            .source(selected.parent)
+                            .build();
+                })
                 .toList();
     }
 
@@ -74,14 +78,13 @@ public class BarboraContext extends Context {
                     var url = e.absUrl("href");
                     return Link
                             .builder()
-                            .code(substringAfterLast(url, "/"))
+                            .code(productCode(url))
                             .name(e.text())
                             .url(url)
                             .source(selected)
                             .build();
                 })
                 .toList();
-
     }
 
     @Override
@@ -89,7 +92,7 @@ public class BarboraContext extends Context {
         return Product
                 .builder()
                 .namespace(Namespace.BARBORA)
-                .code(substringAfterLast(selected.url, "/"))
+                .code(productCode(selected.url))
                 .name(document.select("*[class=b-product-info--title]").text())
                 .url(selected.url)
                 // todo: set prices and categories
@@ -130,11 +133,19 @@ public class BarboraContext extends Context {
         return document.select("a[class*=category]").stream().filter(Element::hasText);
     }
 
+    private static Path<String> categoryCodePath(Element e) {
+        return Path.of(substringAfter(e.attr("href"), "/").split("/"));
+    }
+
     private static Stream<Element> productPageNumberElementsExcludingSelected(Document document) {
         return document.select("ul[class=pagination] li:matches([0-9]+):not([class=active]) a").stream();
     }
 
     private static Stream<Element> productListElements(Document document) {
         return document.select("*[itemtype*=Product] a[class*=title]").stream();
+    }
+
+    private static String productCode(String url) {
+        return substringAfterLast(url, "/");
     }
 }

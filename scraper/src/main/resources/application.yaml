@@ -3,8 +3,8 @@ GroceryDad:
 
   enabled:
 #    - barbora
-    - prisma
-#    - rimi
+#    - prisma
+    - rimi
 
   scrapers:
     barbora:
@@ -13,9 +13,9 @@ GroceryDad:
       cache:
         directory: cache/barbora
       categories:
-        - [ "Dairy and eggs", "Yoghurts and desserts", "Flavored yoghurts", "*" ] # two product pages
         - [ "Vegetables and fruits", "Fruits and berries", "Bananas", "*" ]
         - [ "Household and pets", "Pets", "Dry dog food", "*" ]
+        - [ "Dairy and eggs", "Yoghurts and desserts", "Flavored yoghurts", "*" ] # two product pages
       timeout: 5s
       sleepDelay: 500ms
 
@@ -25,7 +25,7 @@ GroceryDad:
       cache:
         directory: cache/prisma
       categories:
-        - [ "Groceries", "Fruits and vegetables", "Fruit", "*" ]
+        - [ "Groceries", "Fruits and vegetables", "Fruit", "*" ] # need to scroll down
         - [ "Groceries", "Pets", "Dog food", "*" ]
       timeout: 5s
       sleepDelay: 100ms
@@ -36,10 +36,8 @@ GroceryDad:
       cache:
         directory: cache/rimi
       categories:
-        - [ "Pre-order festivity meals", "Pre-order appetizers and selection plates" ]
-        - [ "Fruits, vegetables, flowers", "Fruits", "Bananas" ]
-#        - [ "Pet goods", "Dog food", "Dry food for dogs" ]
-#        - [ "Groceries", "Canned products", "Mushrooms" ]
-#        - [ "Bread, pastry, confectionery", "Rimi bakeries" ]
+#        - [ "Fruits, vegetables, flowers", "Fruits", "Bananas", "*" ]
+#        - [ "Pet goods", "Dog food", "Dry food for dogs", "*" ]
+        - [ "Pre-order festivity meals", "Pre-order appetizers and selection plates", "*" ] # two pages
       timeout: 5s
       sleepDelay: 100ms

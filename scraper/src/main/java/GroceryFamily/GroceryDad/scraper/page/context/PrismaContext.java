@@ -79,7 +79,7 @@ public class PrismaContext extends Context {
                     var url = requireNonNull(e.select("a").first()).absUrl("href");
                     return Link
                             .builder()
-                            .code(substringAfterLast(substringBeforeLast(url, "/"), "/"))
+                            .code(productCode(url))
                             .name(e.select("*[class=name]").text())
                             .url(url)
                             .source(selected)
@@ -93,8 +93,9 @@ public class PrismaContext extends Context {
         return Product
                 .builder()
                 .namespace(Namespace.PRISMA)
-                .code(substringAfterLast(selected.url, "/"))
+                .code(productCode(selected.url))
                 .name(document.select("#product-name").text())
+                .url(selected.url)
                 // todo: set prices and categories
                 .build();
     }
@@ -142,7 +143,7 @@ public class PrismaContext extends Context {
     }
 
     private static Stream<Element> topCategoryElements(Document document) {
-        return document.select("#main-navigation a[href*=selection]").stream().filter(Element::hasText);
+        return document.select("#main-navigation a[href*=/selection]").stream().filter(Element::hasText);
     }
 
     private static Stream<Category> leftCategories(Document document) {
@@ -164,5 +165,9 @@ public class PrismaContext extends Context {
 
     private static Stream<Element> productListElements(Document document) {
         return document.select("li[data-ean]").stream();
+    }
+
+    private static String productCode(String url) {
+        return substringAfterLast(substringBeforeLast(url, "/"), "/");
     }
 }
