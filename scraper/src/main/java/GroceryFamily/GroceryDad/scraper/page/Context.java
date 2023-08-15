@@ -2,9 +2,6 @@ package GroceryFamily.GroceryDad.scraper.page;
 
 import GroceryFamily.GroceryDad.GroceryDadConfig;
 import GroceryFamily.GroceryDad.scraper.cache.Cache;
-import GroceryFamily.GroceryDad.scraper.page.view.CategoryView;
-import GroceryFamily.GroceryDad.scraper.page.view.ProductListView;
-import GroceryFamily.GroceryDad.scraper.page.view.ProductView;
 import GroceryFamily.GroceryDad.scraper.tree.PermissionTree;
 import GroceryFamily.GroceryElders.domain.Category;
 import GroceryFamily.GroceryElders.domain.Product;
@@ -24,10 +21,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 import java.util.function.Consumer;
-import java.util.stream.Stream;
 
 import static com.codeborne.selenide.Selenide.$;
-import static java.util.Comparator.comparing;
 
 @Slf4j
 public abstract class Context {
@@ -74,10 +69,20 @@ public abstract class Context {
         handler.accept(product(document, Source.product(selected)));
     }
 
-    @Deprecated
-    public SourceType type(Document document) {
-        throw new UnsupportedOperationException("Not implemented yet");
+    public final Document load(Link link) {
+        var cache = cacheFactory.html(link);
+        var html = cache.load(link.code);
+        if (html == null) {
+            Selenide.open(link.url); // todo: run web driver when it actually needed
+            waitUntilPageReady();
+            initialize();
+            html = $("html").innerHtml();
+            cache.save(link.code, html);
+        }
+        return Jsoup.parse(html, link.url);
     }
+
+    protected abstract void initialize();
 
     public final List<Link> childCategoryLinks(Document document, Source selected) {
         var selectedCodePath = selected.codePath();
@@ -89,69 +94,13 @@ public abstract class Context {
                 .toList();
     }
 
-    protected Map<Path<String>, Category> categories(Document document, Source selected) {
-        throw new UnsupportedOperationException("Not implemented yet");
-    }
+    protected abstract Map<Path<String>, Category> categories(Document document, Source selected);
 
-    public List<Link> productPageLinks(Document document, Source selected) {
-        throw new UnsupportedOperationException("Not implemented yet");
-    }
+    public abstract List<Link> productPageLinks(Document document, Source selected);
 
-    public List<Link> productLinks(Document document, Source selected) {
-        throw new UnsupportedOperationException("Not implemented yet");
-    }
+    public abstract List<Link> productLinks(Document document, Source selected);
 
-    public Product product(Document document, Source selected) {
-        throw new UnsupportedOperationException("Not implemented yet");
-    }
-
-    @Deprecated
-    protected CategoryView categoryView(Document document, Link selected) {
-        throw new UnsupportedOperationException("Not implemented yet");
-    }
-
-    @Deprecated
-    protected ProductListView productListView(Document document, Link selected) {
-        throw new UnsupportedOperationException("Not implemented yet");
-    }
-
-    @Deprecated
-    protected ProductView productView(Document document, Link selected) {
-        throw new UnsupportedOperationException("Not implemented yet");
-    }
-
-    public final Document load(Link link) {
-        var cache = cacheFactory.html(link);
-        var html = cache.load(link.code);
-        if (html == null) {
-            Selenide.open(link.url);
-            waitUntilPageReady();
-            initialize();
-            html = $("html").innerHtml();
-            cache.save(link.code, html);
-        }
-        return Jsoup.parse(html, link.url);
-    }
-
-    protected abstract void initialize();
-
-    @Deprecated
-    public final Stream<Link> childCategoryLinksSortedByCodePathSize(Document document, Link selected) {
-        return categoryLinks(document, selected)
-                .filter(link -> link.codePath.contains(selected.codePath))
-                .filter(link -> !link.codePath.equals(selected.codePath))
-                .sorted(comparing(link -> link.codePath.size()));
-    }
-
-    @Deprecated
-    protected Stream<Link> categoryLinks(Document document, Link selected) {
-        throw new UnsupportedOperationException("Method not supported");
-    }
-
-    @Deprecated
-    public Stream<Product> loadProducts(Path<String> categoryPath, Link selected) {
-        throw new UnsupportedOperationException("Method not supported");
-    }
+    public abstract Product product(Document document, Source selected);
 
     private static PermissionTree buildCategoryPermissionTree(GroceryDadConfig.Scraper config) {
         var tree = new PermissionTree();
