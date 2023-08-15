@@ -15,6 +15,12 @@ public class Source {
     public final String url;
     public final Source parent;
 
+    public Source root() {
+        var source = this;
+        while (source.parent != null) source = source.parent;
+        return source;
+    }
+
     public Path<String> codePath() {
         return path(source -> source.code);
     }

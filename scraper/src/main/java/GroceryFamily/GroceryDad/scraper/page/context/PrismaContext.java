@@ -4,17 +4,20 @@ import GroceryFamily.GroceryDad.GroceryDadConfig;
 import GroceryFamily.GroceryDad.scraper.page.Context;
 import GroceryFamily.GroceryDad.scraper.page.Link;
 import GroceryFamily.GroceryDad.scraper.page.Path;
+import GroceryFamily.GroceryDad.scraper.page.Source;
+import GroceryFamily.GroceryElders.domain.Category;
 import GroceryFamily.GroceryElders.domain.Namespace;
 import GroceryFamily.GroceryElders.domain.Product;
 import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
-import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 import java.util.stream.Stream;
 
-import static GroceryFamily.GroceryDad.scraper.page.PageUtils.html;
 import static GroceryFamily.GroceryDad.scraper.page.PageUtils.scrollDown;
 import static com.codeborne.selenide.CollectionCondition.itemWithText;
 import static com.codeborne.selenide.CollectionCondition.sizeGreaterThan;
@@ -34,152 +37,132 @@ public class PrismaContext extends Context {
 
     @Override
     protected void initialize() {
-        if (initialized) return;
-        acceptOrRejectCookies();
-        switchToEnglish();
-        initialized = true;
-        // todo: scroll product list
-    }
-
-    @Override
-    protected Stream<Link> categoryLinks(Document document, Link selected) {
-        return Stream.concat(topCategoryLinks(document), leftCategoryLinks(document, selected));
-    }
-
-    private static Stream<Link> topCategoryLinks(Document document) {
-        return document
-                .select("#main-navigation a[href*=selection]")
-                .stream()
-                .filter(Element::hasText)
-                .map(PrismaContext::topCategoryLink);
-    }
-
-    private static Link topCategoryLink(Element e) {
-        return Link
-                .builder()
-                .codePath(Path.<String>empty().followedBy(topCategoryLinkCode(e)))
-                .name(e.text())
-                .url(e.absUrl("href"))
-                .build();
-    }
-
-    private static String topCategoryLinkCode(Element e) {
-        return substringAfterLast(substringBeforeLast(e.attr("href"), "/"), "/");
-    }
-
-    private static Stream<Link> leftCategoryLinks(Document document, Link selected) {
-        return document
-                .select("*[role=navigation] a[data-category-id]")
-                .stream()
-                .filter(Element::hasText)
-                .map(e -> leftCategoryLink(e, selected));
-    }
-
-    private static Link leftCategoryLink(Element e, Link selected) {
-        return Link
-                .builder()
-                .codePath(selected.codePath.followedBy(leftCategoryLinkCode(e)))
-                .name(e.text())
-                .url(e.absUrl("href"))
-                .build();
-    }
-
-    private static String leftCategoryLinkCode(Element e) {
-        return substringAfterLast(e.attr("href"), "/");
-    }
-
-    @Override
-    public Stream<Product> loadProducts(Path<String> categoryPath, Link selected) {
-        var cache = cache(categoryPath);
-        var cacheId = categoryPath.tail();
-        var html = cache.load(cacheId);
-        var document = Jsoup.parse(html, selected.url);
-        if (visibleProductElementCount(document) < totalProductElementCount(document)) {
-            _open(selected);
-            var totalCount = Integer.parseInt(productCountElement().text());
-            var count = visibleProductElementCount();
-            while (count < totalCount) {
+        if (!initialized) {
+            acceptOrRejectCookies();
+            switchToEnglish();
+            initialized = true;
+        }
+        if (leftCategoryElements().isEmpty() && !visibleProductListElements().isEmpty()) {
+            var count = visibleProductListElements().size();
+            while (count < productListSize()) {
                 scrollDown();
-                visibleProductElements().shouldHave(sizeGreaterThan(count));
-                count = visibleProductElementCount();
+                visibleProductListElements().shouldHave(sizeGreaterThan(count));
+                count = visibleProductListElements().size();
             }
-            html = html();
-            document = Jsoup.parse(html, selected.url);
-            cache.save(cacheId, html);
         }
-        return productLinks(document).map(link -> loadProduct(link, categoryPath));
     }
 
-    private Product loadProduct(Link link, Path<String> categoryPath) {
-        var cache = productsCache(categoryPath);
-        var cacheId = link.code();
-        var html = cache.load(cacheId);
-        if (html == null) {
-            html = _open(link);
-            cache.save(cacheId, html);
-        }
-        var document = Jsoup.parse(html, link.url);
+    @Override
+    protected Map<Path<String>, Category> categories(Document document, Source selected) {
+        var categories = new HashMap<Path<String>, Category>();
+        topCategories(document).forEach(category -> {
+            var codePath = selected.root().codePath().followedBy(category.code);
+            categories.put(codePath, category);
+        });
+
+        leftCategories(document).forEach(category -> {
+            var codePath = selected.codePath().followedBy(category.code);
+            categories.put(codePath, category);
+        });
+        return categories;
+    }
+
+    @Override
+    public List<Link> productPageLinks(Document document, Source selected) {
+        return List.of();
+    }
+
+    @Override
+    public List<Link> productLinks(Document document, Source selected) {
+        return productListElements(document)
+                .map(e -> {
+                    var url = requireNonNull(e.select("a").first()).absUrl("href");
+                    return Link
+                            .builder()
+                            .code(substringAfterLast(substringBeforeLast(url, "/"), "/"))
+                            .name(e.select("*[class=name]").text())
+                            .url(url)
+                            .source(selected)
+                            .build();
+                })
+                .toList();
+    }
+
+    @Override
+    public Product product(Document document, Source selected) {
         return Product
                 .builder()
                 .namespace(Namespace.PRISMA)
-                .code(substringAfterLast(link.url, "/"))
+                .code(substringAfterLast(selected.url, "/"))
                 .name(document.select("#product-name").text())
                 // todo: set prices and categories
                 .build();
     }
 
-    static Stream<Link> productLinks(Document document) {
-        return document.select("li[data-ean]").stream().map(PrismaContext::productLink);
-    }
-
-    private static Link productLink(Element e) {
-        var code = substringAfterLast(e.select("a").attr("href"), "/");
-        return Link
-                .builder()
-                .codePath(Path.<String>empty().followedBy(code))
-                .name(e.select("*[class='name']").text())
-                .url(requireNonNull(e.select("a").first()).absUrl("href"))
-                .build();
-    }
-
-    private static SelenideElement productCountElement() {
-        return $("*[class*='category-items'] b");
-    }
-
-    private static Element productCountElement(Document document) {
-        return document.select("*[class*='category-items'] b").first();
-    }
-
-    private static int visibleProductElementCount() {
-        return (int) visibleProductElements().asFixedIterable().stream().count();
-    }
-
-    private static int totalProductElementCount(Document document) {
-        return Integer.parseInt(productCountElement(document).text());
-    }
-
-    private static int visibleProductElementCount(Document document) {
-        return (int) visibleProductElements(document).count();
-    }
-
-    private static ElementsCollection visibleProductElements() {
-        return $$("li[data-ean]");
-    }
-
-    private static Stream<Element> visibleProductElements(Document document) {
-        return document.select("li[data-ean]").stream();
-    }
-
     private static void acceptOrRejectCookies() {
-        $("*[class*='js-cookie-notice'] *[class='close-icon']").shouldBe(visible).click();
+        $("*[class*=cookie-notice] *[class=close-icon]").shouldBe(visible).click();
     }
 
     private static void switchToEnglish() {
-        $("*[data-language='en']").shouldBe(visible).click();
+        $("*[data-language=en]").shouldBe(visible).click();
         topCategoryElements().shouldHave(itemWithText("Groceries"));
     }
 
     private static ElementsCollection topCategoryElements() {
-        return $$("*[id='main-navigation'] a[href*='selection']");
+        return $$("#main-navigation a[href*=selection]");
+    }
+
+    private static ElementsCollection leftCategoryElements() {
+        return $$("*[role=navigation] a[data-category-id]");
+    }
+
+    private static ElementsCollection visibleProductListElements() {
+        return $$("li[data-ean]");
+    }
+
+    private static int productListSize() {
+        return Integer.parseInt(productListSizeElement().text());
+    }
+
+    private static SelenideElement productListSizeElement() {
+        return $("*[class*=category-items] b");
+    }
+
+    private static Stream<Category> topCategories(Document document) {
+        return topCategoryElements(document)
+                .map(e -> {
+                    var url = e.absUrl("href");
+                    return Category
+                            .builder()
+                            .code(substringAfterLast(substringBeforeLast(url, "/"), "/"))
+                            .name(e.text())
+                            .url(url)
+                            .build();
+                });
+    }
+
+    private static Stream<Element> topCategoryElements(Document document) {
+        return document.select("#main-navigation a[href*=selection]").stream().filter(Element::hasText);
+    }
+
+    private static Stream<Category> leftCategories(Document document) {
+        return leftCategoryElements(document)
+                .map(e -> {
+                    var url = e.absUrl("href");
+                    return Category
+                            .builder()
+                            .code(substringAfterLast(url, "/"))
+                            .name(e.text())
+                            .url(url)
+                            .build();
+                });
+    }
+
+    private static Stream<Element> leftCategoryElements(Document document) {
+        return document.select("*[role=navigation] a[data-category-id]").stream().filter(Element::hasText);
+    }
+
+    private static Stream<Element> productListElements(Document document) {
+        return document.select("li[data-ean]").stream();
     }
 }

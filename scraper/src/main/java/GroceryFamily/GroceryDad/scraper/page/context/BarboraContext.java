@@ -54,10 +54,6 @@ public class BarboraContext extends Context {
         return categories;
     }
 
-    private Stream<Element> categoryElements(Document document) {
-        return document.select("a[class*=category]").stream().filter(Element::hasText);
-    }
-
     @Override
     public List<Link> productPageLinks(Document document, Source selected) {
         return productPageNumberElementsExcludingSelected(document)
@@ -69,11 +65,6 @@ public class BarboraContext extends Context {
                         .source(selected.parent)
                         .build())
                 .toList();
-
-    }
-
-    private Stream<Element> productPageNumberElementsExcludingSelected(Document document) {
-        return document.select("ul[class=pagination] li:matches([0-9]+):not([class=active]) a").stream();
     }
 
     @Override
@@ -91,10 +82,6 @@ public class BarboraContext extends Context {
                 })
                 .toList();
 
-    }
-
-    private Stream<Element> productListElements(Document document) {
-        return document.select("*[itemtype*=Product] a[class*=title]").stream();
     }
 
     @Override
@@ -131,11 +118,23 @@ public class BarboraContext extends Context {
         return $("#desktop-menu-placeholder");
     }
 
-    static SelenideElement englishLanguageElement() {
+    private static SelenideElement englishLanguageElement() {
         return languageSelectElement().$$("li").findBy(text("English"));
     }
 
-    static SelenideElement languageSelectElement() {
+    private static SelenideElement languageSelectElement() {
         return $("#fti-header-language-dropdown");
+    }
+
+    private static Stream<Element> categoryElements(Document document) {
+        return document.select("a[class*=category]").stream().filter(Element::hasText);
+    }
+
+    private static Stream<Element> productPageNumberElementsExcludingSelected(Document document) {
+        return document.select("ul[class=pagination] li:matches([0-9]+):not([class=active]) a").stream();
+    }
+
+    private static Stream<Element> productListElements(Document document) {
+        return document.select("*[itemtype*=Product] a[class*=title]").stream();
     }
 }
