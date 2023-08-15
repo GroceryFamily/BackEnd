@@ -11,7 +11,6 @@ import GroceryFamily.GroceryElders.domain.Product;
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.WebDriverRunner;
-import io.github.antivoland.sfc.FileCache;
 import lombok.extern.slf4j.Slf4j;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
@@ -27,9 +26,7 @@ import java.util.Set;
 import java.util.function.Consumer;
 import java.util.stream.Stream;
 
-import static GroceryFamily.GroceryDad.scraper.page.PageUtils.html;
 import static com.codeborne.selenide.Selenide.$;
-import static com.codeborne.selenide.Selenide.open;
 import static java.util.Comparator.comparing;
 
 @Slf4j
@@ -44,32 +41,8 @@ public abstract class Context {
         this.permissions = buildCategoryPermissionTree(config);
     }
 
-    @Deprecated
-    public final boolean canOpen(Path<String> namePath) {
-        return permissions.allowed(namePath.segments());
-    }
-
     public final boolean canOpen(Link link) {
         return permissions.allowed(link.namePath());
-    }
-
-    @Deprecated
-    public final FileCache<String> cache(Path<String> categoryPath) {
-        return cacheFactory.html(categoryPath.segments());
-    }
-
-    @Deprecated
-    public final FileCache<String> productsCache(Path<String> categoryPath) {
-        var path = categoryPath.followedBy("products");
-        return cacheFactory.html(path.segments());
-    }
-
-    @Deprecated
-    public final String _open(Link link) {
-        open(link.url);
-        waitUntilPageReady();
-        initialize();
-        return html();
     }
 
     public final void traverse(Consumer<Product> handler) {
@@ -82,7 +55,7 @@ public abstract class Context {
         if (!canOpen(selected)) return;
         log.info("Traversing {}...", selected.namePath());
 
-        var document = load(selected);
+        var document = load(selected); // todo: flexible delays based on a platform response latency
 
         var childCategoryLinks = childCategoryLinks(document, Source.category(selected));
         if (!childCategoryLinks.isEmpty()) {
@@ -90,13 +63,13 @@ public abstract class Context {
             return;
         }
 
-        productPageLinks(document, Source.productList(selected)).forEach(link -> traverse(link, seen, handler));
-
         var productLinks = productLinks(document, Source.productList(selected));
         if (!productLinks.isEmpty()) {
             productLinks.forEach(link -> traverse(link, seen, handler));
             return;
         }
+
+        productPageLinks(document, Source.productList(selected)).forEach(link -> traverse(link, seen, handler));
 
         handler.accept(product(document, Source.product(selected)));
     }
