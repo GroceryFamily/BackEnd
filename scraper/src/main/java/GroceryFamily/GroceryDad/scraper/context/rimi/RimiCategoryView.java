@@ -21,30 +21,26 @@ public class RimiCategoryView extends View implements CategoryView {
     @Override
     public List<Link> childCategoryLinks() {
         var selectedCodePath = selected.codePath();
-        return new CategoryMenu()
-                .items()
-                .filter(e -> {
-                    var codePath = categoryCodePath(e.absUrl("href"));
-                    if (!codePath.contains(selectedCodePath)) return false;
-                    return codePath.size() - selectedCodePath.size() == 1;
-                })
-                .map(e -> {
-                    var url = e.absUrl("href");
-                    return Link
-                            .builder()
-                            .code(categoryCode(e.absUrl("href")))
-                            .name(e.text())
-                            .url(url)
-                            .source(selected)
-                            .build();
-                })
-                .toList();
+        return new LeftMenu().items().filter(e -> {
+            var codePath = categoryCodePath(e.absUrl("href"));
+            if (!codePath.contains(selectedCodePath)) return false;
+            return codePath.size() - selectedCodePath.size() == 1;
+        }).map(e -> {
+            var url = e.absUrl("href");
+            return Link
+                    .builder()
+                    .code(categoryCode(e.absUrl("href")))
+                    .name(e.text())
+                    .url(url)
+                    .source(selected)
+                    .build();
+        }).toList();
     }
 
-    private class CategoryMenu {
+    private class LeftMenu {
         final Map<String, Element> blocks;
 
-        CategoryMenu() {
+        LeftMenu() {
             this.blocks = leftMenuBlocks().collect(toMap(e -> e.attr("data-index"), identity()));
         }
 

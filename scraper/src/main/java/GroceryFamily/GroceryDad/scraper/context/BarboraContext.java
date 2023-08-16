@@ -1,26 +1,21 @@
 package GroceryFamily.GroceryDad.scraper.context;
 
 import GroceryFamily.GroceryDad.GroceryDadConfig;
+import GroceryFamily.GroceryDad.scraper.context.barbora.BarboraCategoryView;
+import GroceryFamily.GroceryDad.scraper.context.barbora.BarboraProductListView;
+import GroceryFamily.GroceryDad.scraper.context.barbora.BarboraProductView;
 import GroceryFamily.GroceryDad.scraper.page.Link;
-import GroceryFamily.GroceryDad.scraper.page.Path;
 import GroceryFamily.GroceryDad.scraper.page.Source;
-import GroceryFamily.GroceryElders.domain.Category;
-import GroceryFamily.GroceryElders.domain.Namespace;
 import GroceryFamily.GroceryElders.domain.Product;
 import com.codeborne.selenide.SelenideElement;
 import org.jsoup.nodes.Document;
-import org.jsoup.nodes.Element;
 
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
-import java.util.stream.Stream;
 
 import static GroceryFamily.GroceryDad.scraper.page.PageUtils.sleep;
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.$;
-import static org.apache.commons.lang3.StringUtils.*;
 
 public class BarboraContext extends Context {
     private boolean initialized;
@@ -39,63 +34,43 @@ public class BarboraContext extends Context {
     }
 
     @Override
-    protected Map<Path<String>, Category> categories(Document document, Source selected) {
-        var categories = new HashMap<Path<String>, Category>();
-        categoryElements(document).forEach(e -> {
-            var codePath = categoryCodePath(e);
-            categories.put(codePath, Category
-                    .builder()
-                    .code(codePath.last())
-                    .name(e.text().replaceAll("\s[0-9]+$", ""))
-                    .url(e.absUrl("href"))
-                    .build());
-        });
-        return categories;
+    public List<Link> childCategoryLinks(Document document, Source selected) {
+        return BarboraCategoryView
+                .builder()
+                .document(document)
+                .selected(selected)
+                .build()
+                .childCategoryLinks();
     }
 
     @Override
     public List<Link> productPageLinks(Document document, Source selected) {
-        return productPageNumberElementsExcludingSelected(document)
-                .map(e -> {
-                    var number = e.text();
-                    var codeSuffix = "1".equals(number) ? "" : "@" + e.text();
-                    return Link
-                            .builder()
-                            .code(substringBefore(selected.code, "@") + codeSuffix)
-                            .name(selected.name)
-                            .url(e.absUrl("href"))
-                            .source(selected.parent)
-                            .build();
-                })
-                .toList();
+        return BarboraProductListView
+                .builder()
+                .document(document)
+                .selected(selected)
+                .build()
+                .productPageLinks();
     }
 
     @Override
     public List<Link> productLinks(Document document, Source selected) {
-        return productListElements(document)
-                .map(e -> {
-                    var url = e.absUrl("href");
-                    return Link
-                            .builder()
-                            .code(productCode(url))
-                            .name(e.text())
-                            .url(url)
-                            .source(selected)
-                            .build();
-                })
-                .toList();
+        return BarboraProductListView
+                .builder()
+                .document(document)
+                .selected(selected)
+                .build()
+                .productLinks();
     }
 
     @Override
     public Product product(Document document, Source selected) {
-        return Product
+        return BarboraProductView
                 .builder()
-                .namespace(Namespace.BARBORA)
-                .code(productCode(selected.url))
-                .name(document.select("*[class=b-product-info--title]").text())
-                .url(selected.url)
-                // todo: set prices and categories
-                .build();
+                .document(document)
+                .selected(selected)
+                .build()
+                .product();
     }
 
     private static void acceptOrRejectCookies() {
@@ -126,25 +101,5 @@ public class BarboraContext extends Context {
 
     private static SelenideElement languageSelectElement() {
         return $("#fti-header-language-dropdown");
-    }
-
-    private static Stream<Element> categoryElements(Document document) {
-        return document.select("a[class*=category]").stream().filter(Element::hasText);
-    }
-
-    private static Path<String> categoryCodePath(Element e) {
-        return Path.of(substringAfter(e.attr("href"), "/").split("/"));
-    }
-
-    private static Stream<Element> productPageNumberElementsExcludingSelected(Document document) {
-        return document.select("ul[class=pagination]:first-child li:matches([0-9]+):not([class=active]) a").stream();
-    }
-
-    private static Stream<Element> productListElements(Document document) {
-        return document.select("*[itemtype*=Product] a[class*=title]").stream();
-    }
-
-    private static String productCode(String url) {
-        return substringAfterLast(url, "/");
     }
 }

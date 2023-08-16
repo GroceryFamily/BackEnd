@@ -1,4 +1,4 @@
-package GroceryFamily.GroceryDad.scraper.context.rimi;
+package GroceryFamily.GroceryDad.scraper.context.barbora;
 
 import GroceryFamily.GroceryDad.scraper.page.Link;
 import GroceryFamily.GroceryDad.scraper.view.ProductListView;
@@ -10,11 +10,10 @@ import java.util.List;
 import java.util.Optional;
 import java.util.stream.Stream;
 
-import static GroceryFamily.GroceryDad.scraper.context.rimi.RimiView.productCode;
-import static java.util.Objects.requireNonNull;
+import static GroceryFamily.GroceryDad.scraper.context.barbora.BarboraView.productCode;
 
 @SuperBuilder
-public class RimiProductListView extends View implements ProductListView {
+public class BarboraProductListView extends View implements ProductListView {
     @Override
     public List<Link> productPageLinks() {
         return productListPaginationItems().map(e -> {
@@ -26,12 +25,12 @@ public class RimiProductListView extends View implements ProductListView {
 
     @Override
     public List<Link> productLinks() {
-        return productListItems().map(e -> {
-            var url = requireNonNull(e.select("a").first()).absUrl("href");
+        return productItems().map(e -> {
+            var url = e.absUrl("href");
             return Link
                     .builder()
                     .code(productCode(url))
-                    .name(e.select("*[class*=name]").text())
+                    .name(e.text())
                     .url(url)
                     .source(selected)
                     .build();
@@ -43,14 +42,10 @@ public class RimiProductListView extends View implements ProductListView {
     }
 
     private Optional<Element> productListPagination() {
-        return Optional.ofNullable(document.select("ul[class*=pagination]").first());
+        return Optional.ofNullable(document.select("ul[class=pagination]").first());
     }
 
-    private Stream<Element> productListItems() {
-        return productList().stream().flatMap(e -> e.select("div[data-product-code]").stream());
-    }
-
-    private Optional<Element> productList() {
-        return Optional.ofNullable(document.select("ul[class=product-grid]").first());
+    private Stream<Element> productItems() {
+        return document.select("div[itemtype*=Product] a[class*=title]").stream();
     }
 }
