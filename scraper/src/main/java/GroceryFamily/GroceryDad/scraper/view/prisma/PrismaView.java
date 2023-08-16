@@ -1,4 +1,4 @@
-package GroceryFamily.GroceryDad.scraper.context.prisma;
+package GroceryFamily.GroceryDad.scraper.view.prisma;
 
 import static org.apache.commons.lang3.StringUtils.substringAfterLast;
 import static org.apache.commons.lang3.StringUtils.substringBeforeLast;

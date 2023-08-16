@@ -1,4 +1,4 @@
-package GroceryFamily.GroceryDad.scraper.context.barbora;
+package GroceryFamily.GroceryDad.scraper.view.barbora;
 
 import GroceryFamily.GroceryDad.scraper.view.ProductView;
 import GroceryFamily.GroceryDad.scraper.view.View;
@@ -6,7 +6,7 @@ import GroceryFamily.GroceryElders.domain.Namespace;
 import GroceryFamily.GroceryElders.domain.Product;
 import lombok.experimental.SuperBuilder;
 
-import static GroceryFamily.GroceryDad.scraper.context.barbora.BarboraView.productCode;
+import static GroceryFamily.GroceryDad.scraper.view.barbora.BarboraView.productCode;
 
 @SuperBuilder
 class BarboraProductView extends View implements ProductView {

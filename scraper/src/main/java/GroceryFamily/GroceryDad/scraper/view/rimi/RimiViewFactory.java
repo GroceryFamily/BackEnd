@@ -1,18 +1,18 @@
-package GroceryFamily.GroceryDad.scraper.context.barbora;
+package GroceryFamily.GroceryDad.scraper.view.rimi;
 
 import GroceryFamily.GroceryDad.scraper.page.Source;
 import GroceryFamily.GroceryDad.scraper.view.*;
 import org.jsoup.nodes.Document;
 
-public class BarboraViewFactory implements ViewFactory {
+public class RimiViewFactory implements ViewFactory {
     @Override
     public LiveView liveView() {
-        return BarboraLiveView.INSTANCE;
+        return RimiLiveView.INSTANCE;
     }
 
     @Override
     public CategoryView categoryView(Document document, Source selected) {
-        return BarboraCategoryView
+        return RimiCategoryView
                 .builder()
                 .document(document)
                 .selected(selected)
@@ -21,7 +21,7 @@ public class BarboraViewFactory implements ViewFactory {
 
     @Override
     public ProductListView productListView(Document document, Source selected) {
-        return BarboraProductListView
+        return RimiProductListView
                 .builder()
                 .document(document)
                 .selected(selected)
@@ -30,7 +30,7 @@ public class BarboraViewFactory implements ViewFactory {
 
     @Override
     public ProductView productView(Document document, Source selected) {
-        return BarboraProductView
+        return RimiProductView
                 .builder()
                 .document(document)
                 .selected(selected)

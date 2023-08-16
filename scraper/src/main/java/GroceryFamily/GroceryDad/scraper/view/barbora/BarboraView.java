@@ -1,4 +1,4 @@
-package GroceryFamily.GroceryDad.scraper.context.barbora;
+package GroceryFamily.GroceryDad.scraper.view.barbora;
 
 import GroceryFamily.GroceryDad.scraper.page.Path;
 

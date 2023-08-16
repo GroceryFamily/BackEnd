@@ -1,4 +1,4 @@
-package GroceryFamily.GroceryDad.scraper.context.rimi;
+package GroceryFamily.GroceryDad.scraper.view.rimi;
 
 import GroceryFamily.GroceryDad.scraper.page.Link;
 import GroceryFamily.GroceryDad.scraper.page.Path;
@@ -13,7 +13,7 @@ import java.util.Optional;
 import java.util.function.Predicate;
 import java.util.stream.Stream;
 
-import static GroceryFamily.GroceryDad.scraper.context.rimi.RimiView.categoryCodePath;
+import static GroceryFamily.GroceryDad.scraper.view.rimi.RimiView.categoryCodePath;
 import static java.util.function.Function.identity;
 import static java.util.stream.Collectors.toMap;
 

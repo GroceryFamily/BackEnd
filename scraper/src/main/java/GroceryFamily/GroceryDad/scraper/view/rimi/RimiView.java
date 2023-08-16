@@ -1,4 +1,4 @@
-package GroceryFamily.GroceryDad.scraper.context.rimi;
+package GroceryFamily.GroceryDad.scraper.view.rimi;
 
 import GroceryFamily.GroceryDad.scraper.page.Path;
 

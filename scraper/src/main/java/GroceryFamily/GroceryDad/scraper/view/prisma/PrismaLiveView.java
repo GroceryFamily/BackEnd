@@ -1,4 +1,4 @@
-package GroceryFamily.GroceryDad.scraper.context.prisma;
+package GroceryFamily.GroceryDad.scraper.view.prisma;
 
 import GroceryFamily.GroceryDad.scraper.view.LiveView;
 import com.codeborne.selenide.ElementsCollection;

@@ -1,9 +1,9 @@
 package GroceryFamily.GroceryDad.scraper.view;
 
-import GroceryFamily.GroceryDad.scraper.context.barbora.BarboraViewFactory;
-import GroceryFamily.GroceryDad.scraper.context.prisma.PrismaViewFactory;
-import GroceryFamily.GroceryDad.scraper.context.rimi.RimiViewFactory;
 import GroceryFamily.GroceryDad.scraper.page.Source;
+import GroceryFamily.GroceryDad.scraper.view.barbora.BarboraViewFactory;
+import GroceryFamily.GroceryDad.scraper.view.prisma.PrismaViewFactory;
+import GroceryFamily.GroceryDad.scraper.view.rimi.RimiViewFactory;
 import GroceryFamily.GroceryElders.domain.Namespace;
 import org.jsoup.nodes.Document;
 

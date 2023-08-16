@@ -1,4 +1,4 @@
-package GroceryFamily.GroceryDad.scraper.context.rimi;
+package GroceryFamily.GroceryDad.scraper.view.rimi;
 
 import GroceryFamily.GroceryDad.scraper.page.Link;
 import GroceryFamily.GroceryDad.scraper.view.ProductListView;
@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.Optional;
 import java.util.stream.Stream;
 
-import static GroceryFamily.GroceryDad.scraper.context.rimi.RimiView.productCode;
+import static GroceryFamily.GroceryDad.scraper.view.rimi.RimiView.productCode;
 import static java.util.Objects.requireNonNull;
 
 @SuperBuilder

@@ -1,4 +1,4 @@
-package GroceryFamily.GroceryDad.scraper.context.prisma;
+package GroceryFamily.GroceryDad.scraper.view.prisma;
 
 import GroceryFamily.GroceryDad.scraper.page.Link;
 import GroceryFamily.GroceryDad.scraper.view.ProductListView;
@@ -9,7 +9,7 @@ import org.jsoup.nodes.Element;
 import java.util.List;
 import java.util.stream.Stream;
 
-import static GroceryFamily.GroceryDad.scraper.context.prisma.PrismaView.productCode;
+import static GroceryFamily.GroceryDad.scraper.view.prisma.PrismaView.productCode;
 import static java.util.Objects.requireNonNull;
 
 @SuperBuilder

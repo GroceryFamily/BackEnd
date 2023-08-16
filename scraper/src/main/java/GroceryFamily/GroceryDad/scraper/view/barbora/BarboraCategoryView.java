@@ -1,4 +1,4 @@
-package GroceryFamily.GroceryDad.scraper.context.barbora;
+package GroceryFamily.GroceryDad.scraper.view.barbora;
 
 import GroceryFamily.GroceryDad.scraper.page.Link;
 import GroceryFamily.GroceryDad.scraper.page.Path;
@@ -11,7 +11,7 @@ import java.util.List;
 import java.util.function.Predicate;
 import java.util.stream.Stream;
 
-import static GroceryFamily.GroceryDad.scraper.context.barbora.BarboraView.categoryCodePath;
+import static GroceryFamily.GroceryDad.scraper.view.barbora.BarboraView.categoryCodePath;
 
 @SuperBuilder
 class BarboraCategoryView extends View implements CategoryView {

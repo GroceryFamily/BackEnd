@@ -1,18 +1,18 @@
-package GroceryFamily.GroceryDad.scraper.context.rimi;
+package GroceryFamily.GroceryDad.scraper.view.prisma;
 
 import GroceryFamily.GroceryDad.scraper.page.Source;
 import GroceryFamily.GroceryDad.scraper.view.*;
 import org.jsoup.nodes.Document;
 
-public class RimiViewFactory implements ViewFactory {
+public class PrismaViewFactory implements ViewFactory {
     @Override
     public LiveView liveView() {
-        return RimiLiveView.INSTANCE;
+        return PrismaLiveView.INSTANCE;
     }
 
     @Override
     public CategoryView categoryView(Document document, Source selected) {
-        return RimiCategoryView
+        return PrismaCategoryView
                 .builder()
                 .document(document)
                 .selected(selected)
@@ -21,7 +21,7 @@ public class RimiViewFactory implements ViewFactory {
 
     @Override
     public ProductListView productListView(Document document, Source selected) {
-        return RimiProductListView
+        return PrismaProductListView
                 .builder()
                 .document(document)
                 .selected(selected)
@@ -30,7 +30,7 @@ public class RimiViewFactory implements ViewFactory {
 
     @Override
     public ProductView productView(Document document, Source selected) {
-        return RimiProductView
+        return PrismaProductView
                 .builder()
                 .document(document)
                 .selected(selected)
