@@ -67,9 +67,13 @@ public class Path<SEGMENT> implements Iterable<SEGMENT> {
         return segments.subList(0, path.size()).equals(path.segments);
     }
 
-//    public void forEach(Consumer<SEGMENT> action) {
-//        segments.forEach(action);
-//    }
+    public boolean childOf(Path<SEGMENT> path) {
+        return contains(path) && size() - path.size() == 1;
+    }
+
+    public boolean parentOf(Path<SEGMENT> path) {
+        return path.contains(this) && path.size() - size() == 1;
+    }
 
     @Override
     public Iterator<SEGMENT> iterator() {

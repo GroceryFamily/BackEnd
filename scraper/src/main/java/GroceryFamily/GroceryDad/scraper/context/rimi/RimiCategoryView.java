@@ -1,6 +1,7 @@
 package GroceryFamily.GroceryDad.scraper.context.rimi;
 
 import GroceryFamily.GroceryDad.scraper.page.Link;
+import GroceryFamily.GroceryDad.scraper.page.Path;
 import GroceryFamily.GroceryDad.scraper.view.CategoryView;
 import GroceryFamily.GroceryDad.scraper.view.View;
 import lombok.experimental.SuperBuilder;
@@ -9,9 +10,9 @@ import org.jsoup.nodes.Element;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
+import java.util.function.Predicate;
 import java.util.stream.Stream;
 
-import static GroceryFamily.GroceryDad.scraper.context.rimi.RimiView.categoryCode;
 import static GroceryFamily.GroceryDad.scraper.context.rimi.RimiView.categoryCodePath;
 import static java.util.function.Function.identity;
 import static java.util.stream.Collectors.toMap;
@@ -20,29 +21,24 @@ import static java.util.stream.Collectors.toMap;
 public class RimiCategoryView extends View implements CategoryView {
     @Override
     public List<Link> childCategoryLinks() {
-        var selectedCodePath = selected.codePath();
-        return new LeftMenu().items().filter(e -> {
-            var codePath = categoryCodePath(e.absUrl("href"));
-            if (!codePath.contains(selectedCodePath)) return false;
-            return codePath.size() - selectedCodePath.size() == 1;
-        }).map(e -> {
-            var url = e.absUrl("href");
-            return Link
-                    .builder()
-                    .code(categoryCode(e.absUrl("href")))
-                    .name(e.text())
-                    .url(url)
-                    .source(selected)
-                    .build();
-        }).toList();
+        return leftMenuItems()
+                .filter(childOfSelected())
+                .map(e -> Link
+                        .builder()
+                        .code(codePath(e).last())
+                        .name(e.text())
+                        .url(url(e))
+                        .source(selected)
+                        .build())
+                .toList();
+    }
+
+    private Stream<Element> leftMenuItems() {
+        return new LeftMenu().items();
     }
 
     private class LeftMenu {
-        final Map<String, Element> blocks;
-
-        LeftMenu() {
-            this.blocks = leftMenuBlocks().collect(toMap(e -> e.attr("data-index"), identity()));
-        }
+        final Map<String, Element> blocks = leftMenuBlocks().collect(toMap(e -> e.attr("data-index"), identity()));
 
         Stream<Element> items() {
             return Stream.concat(buttons().map(button -> link(button).text(button.text())), links());
@@ -67,5 +63,17 @@ public class RimiCategoryView extends View implements CategoryView {
 
     private Optional<Element> leftMenu() {
         return Optional.ofNullable(document.select("nav[data-category-menu-container]").first());
+    }
+
+    private Predicate<Element> childOfSelected() {
+        return codePathFilter(RimiCategoryView::codePath).childOf(selected.codePath());
+    }
+
+    private static Path<String> codePath(Element e) {
+        return categoryCodePath(url(e));
+    }
+
+    private static String url(Element e) {
+        return e.absUrl("href");
     }
 }
