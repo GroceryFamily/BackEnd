@@ -6,6 +6,7 @@ import GroceryFamily.GroceryDad.scraper.page.Link;
 import GroceryFamily.GroceryDad.scraper.page.Path;
 import GroceryFamily.GroceryDad.scraper.page.Source;
 import GroceryFamily.GroceryDad.scraper.tree.PermissionTree;
+import GroceryFamily.GroceryDad.scraper.view.ViewFactory;
 import GroceryFamily.GroceryElders.domain.Category;
 import GroceryFamily.GroceryElders.domain.Product;
 import com.codeborne.selenide.Configuration;
