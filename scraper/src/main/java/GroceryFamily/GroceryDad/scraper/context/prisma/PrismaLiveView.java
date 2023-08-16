@@ -11,7 +11,7 @@ import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.$$;
 
-public class PrismaLiveView implements LiveView {
+class PrismaLiveView implements LiveView {
     static PrismaLiveView INSTANCE = new PrismaLiveView();
 
     private boolean initialized;
@@ -44,8 +44,9 @@ public class PrismaLiveView implements LiveView {
         topMenuItems().shouldHave(itemWithText("Groceries"));
     }
 
+    // todo: static constants with selectors?
     private static ElementsCollection topMenuItems() {
-        return $$("#main-navigation a[href*=/selection]");
+        return $$("#main-navigation a[href*='/selection']");
     }
 
     private static ElementsCollection leftMenuItems() {

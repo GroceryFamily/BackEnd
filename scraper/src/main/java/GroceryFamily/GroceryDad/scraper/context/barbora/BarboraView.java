@@ -12,10 +12,6 @@ class BarboraView {
         return substringAfterLast(url, "/");
     }
 
-    static String categoryCode(String url) {
-        return categoryCodePath(url).last();
-    }
-
     static Path<String> categoryCodePath(String url) {
         var fragments = substringAfter(url, "://").split("/");
         return Path.of(List.of(fragments).subList(1, fragments.length));

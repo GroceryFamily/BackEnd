@@ -9,7 +9,7 @@ import lombok.experimental.SuperBuilder;
 import static GroceryFamily.GroceryDad.scraper.context.barbora.BarboraView.productCode;
 
 @SuperBuilder
-public class BarboraProductView extends View implements ProductView {
+class BarboraProductView extends View implements ProductView {
     @Override
     public Product product() {
         return Product

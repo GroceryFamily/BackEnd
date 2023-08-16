@@ -7,7 +7,6 @@ import GroceryFamily.GroceryDad.scraper.page.Path;
 import GroceryFamily.GroceryDad.scraper.page.Source;
 import GroceryFamily.GroceryDad.scraper.tree.PermissionTree;
 import GroceryFamily.GroceryDad.scraper.view.ViewFactory;
-import GroceryFamily.GroceryElders.domain.Category;
 import GroceryFamily.GroceryElders.domain.Product;
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.Selenide;
@@ -21,23 +20,23 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 import java.util.HashSet;
-import java.util.List;
-import java.util.Map;
 import java.util.Set;
 import java.util.function.Consumer;
 
 import static com.codeborne.selenide.Selenide.$;
 
 @Slf4j
-public abstract class Context { // todo: live vs. cached?
+public class Context {
     private final GroceryDadConfig.Scraper config;
     private final Cache.Factory cacheFactory;
     private final PermissionTree permissions;
+    private final ViewFactory viewFactory;
 
     public Context(GroceryDadConfig.Scraper config) {
         this.config = config;
         this.cacheFactory = Cache.factory(config.cache.directory);
         this.permissions = buildCategoryPermissionTree(config);
+        this.viewFactory = ViewFactory.get(config.namespace);
     }
 
     public final boolean canOpen(Link link) {
@@ -56,21 +55,24 @@ public abstract class Context { // todo: live vs. cached?
 
         var document = load(selected); // todo: flexible delays based on a platform response latency
 
-        var childCategoryLinks = childCategoryLinks(document, Source.category(selected));
+        var categoryView = viewFactory.categoryView(document, Source.category(selected));
+        var childCategoryLinks = categoryView.childCategoryLinks();
         if (!childCategoryLinks.isEmpty()) {
             childCategoryLinks.forEach(link -> traverse(link, seen, handler));
             return;
         }
 
-        productPageLinks(document, Source.productList(selected)).forEach(link -> traverse(link, seen, handler));
+        var productListView = viewFactory.productListView(document, Source.productList(selected));
+        productListView.productPageLinks().forEach(link -> traverse(link, seen, handler));
 
-        var productLinks = productLinks(document, Source.productList(selected));
+        var productLinks = productListView.productLinks();
         if (!productLinks.isEmpty()) {
             productLinks.forEach(link -> traverse(link, seen, handler));
             return;
         }
 
-        handler.accept(product(document, Source.product(selected)));
+        var productView = viewFactory.productView(document, Source.product(selected));
+        handler.accept(productView.product());
     }
 
     public final Document load(Link link) {
@@ -79,34 +81,11 @@ public abstract class Context { // todo: live vs. cached?
         if (html == null) {
             Selenide.open(link.url); // todo: run web driver when it actually needed
             waitUntilPageReady();
-            initialize();
+            viewFactory.liveView().initialize();
             html = $("html").innerHtml();
             cache.save(link.code, html);
         }
         return Jsoup.parse(html, link.url);
-    }
-
-    protected abstract void initialize();
-
-    public List<Link> childCategoryLinks(Document document, Source selected) {
-        throw new UnsupportedOperationException("Not implemented yet");
-    }
-
-    @Deprecated
-    protected Map<Path<String>, Category> categories(Document document, Source selected) {
-        throw new UnsupportedOperationException("Method not supported");
-    }
-
-    public List<Link> productPageLinks(Document document, Source selected) {
-        throw new UnsupportedOperationException("Method not supported");
-    }
-
-    public List<Link> productLinks(Document document, Source selected) {
-        throw new UnsupportedOperationException("Method not supported");
-    }
-
-    public Product product(Document document, Source selected) {
-        throw new UnsupportedOperationException("Method not supported");
     }
 
     private static PermissionTree buildCategoryPermissionTree(GroceryDadConfig.Scraper config) {

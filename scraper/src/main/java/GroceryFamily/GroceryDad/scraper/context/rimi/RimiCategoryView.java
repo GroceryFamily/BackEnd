@@ -18,7 +18,7 @@ import static java.util.function.Function.identity;
 import static java.util.stream.Collectors.toMap;
 
 @SuperBuilder
-public class RimiCategoryView extends View implements CategoryView {
+class RimiCategoryView extends View implements CategoryView {
     @Override
     public List<Link> childCategoryLinks() {
         return leftMenuItems()

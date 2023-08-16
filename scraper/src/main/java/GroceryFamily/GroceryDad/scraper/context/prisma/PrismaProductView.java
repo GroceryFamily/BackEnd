@@ -9,7 +9,7 @@ import lombok.experimental.SuperBuilder;
 import static GroceryFamily.GroceryDad.scraper.context.prisma.PrismaView.productCode;
 
 @SuperBuilder
-public class PrismaProductView extends View implements ProductView {
+class PrismaProductView extends View implements ProductView {
     @Override
     public Product product() {
         return Product

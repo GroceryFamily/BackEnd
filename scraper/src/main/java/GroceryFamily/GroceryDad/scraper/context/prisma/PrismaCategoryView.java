@@ -14,7 +14,7 @@ import static org.apache.commons.lang3.StringUtils.substringAfterLast;
 import static org.apache.commons.lang3.StringUtils.substringBeforeLast;
 
 @SuperBuilder
-public class PrismaCategoryView extends View implements CategoryView {
+class PrismaCategoryView extends View implements CategoryView {
     @Override
     public List<Link> childCategoryLinks() {
         if (selected.codePath().isEmpty()) {

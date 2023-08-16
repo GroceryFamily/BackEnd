@@ -14,7 +14,7 @@ import static GroceryFamily.GroceryDad.scraper.context.rimi.RimiView.productCode
 import static java.util.Objects.requireNonNull;
 
 @SuperBuilder
-public class RimiProductListView extends View implements ProductListView {
+class RimiProductListView extends View implements ProductListView {
     @Override
     public List<Link> productPageLinks() {
         return productListPaginationItems().map(e -> {

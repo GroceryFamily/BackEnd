@@ -13,7 +13,7 @@ import static GroceryFamily.GroceryDad.scraper.context.prisma.PrismaView.product
 import static java.util.Objects.requireNonNull;
 
 @SuperBuilder
-public class PrismaProductListView extends View implements ProductListView {
+class PrismaProductListView extends View implements ProductListView {
     @Override
     public List<Link> productPageLinks() {
         return List.of();

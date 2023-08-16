@@ -1,13 +1,8 @@
 package GroceryFamily.GroceryDad;
 
 import GroceryFamily.GroceryDad.scraper.Scraper;
-import GroceryFamily.GroceryDad.scraper.context.BarboraContext;
 import GroceryFamily.GroceryDad.scraper.context.Context;
-import GroceryFamily.GroceryDad.scraper.context.PrismaContext;
-import GroceryFamily.GroceryDad.scraper.context.RimiContext;
-import GroceryFamily.GroceryDad.scraper.tree.PermissionTree;
 import GroceryFamily.GroceryElders.api.client.ProductAPIClient;
-import GroceryFamily.GroceryElders.domain.Namespace;
 import org.openqa.selenium.WebDriver;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -32,7 +27,7 @@ class GroceryDad implements CommandLineRunner {
                     .config(config)
                     .driver(driver)
                     .client(client)
-                    .context(context(config))
+                    .context(new Context(config))
                     .build());
         }
     }
@@ -44,20 +39,5 @@ class GroceryDad implements CommandLineRunner {
 
     public static void main(String... args) {
         SpringApplication.run(GroceryDad.class, args);
-    }
-
-    private static Context context(GroceryDadConfig.Scraper config) {
-        return switch (config.namespace) {
-            case Namespace.BARBORA -> new BarboraContext(config);
-            case Namespace.PRISMA -> new PrismaContext(config);
-            case Namespace.RIMI -> new RimiContext(config);
-            default -> throw new UnsupportedOperationException(format("Unrecognized namespace '%s'", config.namespace));
-        };
-    }
-
-    private static PermissionTree buildCategoryPermissionTree(GroceryDadConfig.Scraper config) {
-        var tree = new PermissionTree();
-        config.categories.forEach(tree::add);
-        return tree;
     }
 }

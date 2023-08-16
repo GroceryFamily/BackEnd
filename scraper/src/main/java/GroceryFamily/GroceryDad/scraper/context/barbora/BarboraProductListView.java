@@ -13,7 +13,7 @@ import java.util.stream.Stream;
 import static GroceryFamily.GroceryDad.scraper.context.barbora.BarboraView.productCode;
 
 @SuperBuilder
-public class BarboraProductListView extends View implements ProductListView {
+class BarboraProductListView extends View implements ProductListView {
     @Override
     public List<Link> productPageLinks() {
         return productListPaginationItems().map(e -> {

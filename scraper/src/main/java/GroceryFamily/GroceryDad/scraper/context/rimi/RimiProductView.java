@@ -9,7 +9,7 @@ import lombok.experimental.SuperBuilder;
 import static GroceryFamily.GroceryDad.scraper.context.rimi.RimiView.productCode;
 
 @SuperBuilder
-public class RimiProductView extends View implements ProductView {
+class RimiProductView extends View implements ProductView {
     @Override
     public Product product() {
         return Product

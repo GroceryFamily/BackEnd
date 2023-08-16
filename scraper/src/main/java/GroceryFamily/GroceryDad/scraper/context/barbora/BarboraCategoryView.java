@@ -14,7 +14,7 @@ import java.util.stream.Stream;
 import static GroceryFamily.GroceryDad.scraper.context.barbora.BarboraView.categoryCodePath;
 
 @SuperBuilder
-public class BarboraCategoryView extends View implements CategoryView {
+class BarboraCategoryView extends View implements CategoryView {
     @Override
     public List<Link> childCategoryLinks() {
         return items()

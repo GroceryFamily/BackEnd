@@ -5,7 +5,7 @@ import GroceryFamily.GroceryDad.scraper.view.LiveView;
 import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.$;
 
-public class RimiLiveView implements LiveView {
+class RimiLiveView implements LiveView {
     static RimiLiveView INSTANCE = new RimiLiveView();
 
     private boolean initialized;
