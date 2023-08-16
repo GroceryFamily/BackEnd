@@ -4,6 +4,8 @@ import GroceryFamily.GroceryElders.domain.Category;
 import lombok.Builder;
 import lombok.ToString;
 
+import static org.apache.commons.lang3.StringUtils.substringBefore;
+
 @Builder
 @ToString
 public class Link {
@@ -27,6 +29,18 @@ public class Link {
                 .name(category.name)
                 .url(category.url)
                 .source(source)
+                .build();
+    }
+
+    public static Link productList(int pageNo, String url, Source source) {
+        var codeSuffix = pageNo == 1 ? "" : "@" + pageNo;
+        var code = substringBefore(source.code, "@") + codeSuffix;
+        return Link
+                .builder()
+                .code(code)
+                .name(source.name)
+                .url(url)
+                .source(source.parent)
                 .build();
     }
 }

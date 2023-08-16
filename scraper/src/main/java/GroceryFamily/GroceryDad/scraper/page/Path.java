@@ -3,14 +3,13 @@ package GroceryFamily.GroceryDad.scraper.page;
 import lombok.EqualsAndHashCode;
 import lombok.ToString;
 
-import java.util.LinkedList;
-import java.util.List;
-import java.util.NoSuchElementException;
+import java.util.*;
+import java.util.function.Consumer;
 import java.util.function.Predicate;
 
 @ToString
 @EqualsAndHashCode
-public class Path<SEGMENT> {
+public class Path<SEGMENT> implements Iterable<SEGMENT> {
     private final LinkedList<SEGMENT> segments;
 
     private Path() {
@@ -49,7 +48,12 @@ public class Path<SEGMENT> {
         return segments.getFirst();
     }
 
-    public SEGMENT tail() {
+    public Path<SEGMENT> tail() {
+        if (segments.isEmpty()) throw new NoSuchElementException();
+        return new Path<>(segments.subList(1, segments.size() - 1));
+    }
+
+    public SEGMENT last() {
         if (segments.isEmpty()) throw new NoSuchElementException();
         return segments.getLast();
     }
@@ -61,6 +65,25 @@ public class Path<SEGMENT> {
     public boolean contains(Path<SEGMENT> path) {
         if (size() < path.size()) return false;
         return segments.subList(0, path.size()).equals(path.segments);
+    }
+
+//    public void forEach(Consumer<SEGMENT> action) {
+//        segments.forEach(action);
+//    }
+
+    @Override
+    public Iterator<SEGMENT> iterator() {
+        return segments.iterator();
+    }
+
+    @Override
+    public void forEach(Consumer<? super SEGMENT> action) {
+        segments.forEach(action);
+    }
+
+    @Override
+    public Spliterator<SEGMENT> spliterator() {
+        return segments.spliterator();
     }
 
     public int size() {

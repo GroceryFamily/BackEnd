@@ -51,7 +51,7 @@ public abstract class Context { // todo: live vs. cached?
         if (seen.contains(selected.codePath())) return;
         seen.add(selected.codePath());
         if (!canOpen(selected)) return;
-        log.info("Traversing {}...", selected.namePath());
+        log.info("{}: {}", config.namespace, selected.namePath());
 
         var document = load(selected); // todo: flexible delays based on a platform response latency
 
@@ -87,23 +87,26 @@ public abstract class Context { // todo: live vs. cached?
 
     protected abstract void initialize();
 
-    public final List<Link> childCategoryLinks(Document document, Source selected) {
-        var selectedCodePath = selected.codePath();
-        var categories = categories(document, selected);
-        return categories.keySet().stream()
-                .filter(codePath -> codePath.contains(selectedCodePath))
-                .filter(codePath -> codePath.size() - selectedCodePath.size() == 1)
-                .map(codePath -> Link.category(categories.get(codePath), selected))
-                .toList();
+    public List<Link> childCategoryLinks(Document document, Source selected) {
+        throw new UnsupportedOperationException("Not implemented yet");
     }
 
-    protected abstract Map<Path<String>, Category> categories(Document document, Source selected);
+    @Deprecated
+    protected Map<Path<String>, Category> categories(Document document, Source selected) {
+        throw new UnsupportedOperationException("Method not supported");
+    }
 
-    public abstract List<Link> productPageLinks(Document document, Source selected);
+    public List<Link> productPageLinks(Document document, Source selected) {
+        throw new UnsupportedOperationException("Method not supported");
+    }
 
-    public abstract List<Link> productLinks(Document document, Source selected);
+    public List<Link> productLinks(Document document, Source selected) {
+        throw new UnsupportedOperationException("Method not supported");
+    }
 
-    public abstract Product product(Document document, Source selected);
+    public Product product(Document document, Source selected) {
+        throw new UnsupportedOperationException("Method not supported");
+    }
 
     private static PermissionTree buildCategoryPermissionTree(GroceryDadConfig.Scraper config) {
         var tree = new PermissionTree();

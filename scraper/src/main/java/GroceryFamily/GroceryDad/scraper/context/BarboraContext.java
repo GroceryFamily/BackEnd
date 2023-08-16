@@ -45,7 +45,7 @@ public class BarboraContext extends Context {
             var codePath = categoryCodePath(e);
             categories.put(codePath, Category
                     .builder()
-                    .code(codePath.tail())
+                    .code(codePath.last())
                     .name(e.text().replaceAll("\s[0-9]+$", ""))
                     .url(e.absUrl("href"))
                     .build());
