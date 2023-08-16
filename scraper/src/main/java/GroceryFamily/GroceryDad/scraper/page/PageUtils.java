@@ -6,6 +6,7 @@ import java.time.Duration;
 
 import static com.codeborne.selenide.Selenide.executeJavaScript;
 
+@Deprecated // todo: move the methods to LiveView
 public class PageUtils {
     public static Duration sleepDelay = Duration.ofSeconds(1);
 

@@ -17,7 +17,7 @@ import static java.util.Objects.requireNonNull;
 class RimiProductListView extends View implements ProductListView {
     @Override
     public List<Link> productPageLinks() {
-        return productListPaginationItems().map(e -> {
+        return paginationItems().map(e -> {
             var pageNo = Integer.parseInt(e.text());
             var url = e.absUrl("href");
             return Link.productList(pageNo, url, selected);
@@ -26,7 +26,7 @@ class RimiProductListView extends View implements ProductListView {
 
     @Override
     public List<Link> productLinks() {
-        return productListItems().map(e -> {
+        return items().map(e -> {
             var url = requireNonNull(e.select("a").first()).absUrl("href");
             return Link
                     .builder()
@@ -38,19 +38,15 @@ class RimiProductListView extends View implements ProductListView {
         }).toList();
     }
 
-    private Stream<Element> productListPaginationItems() {
-        return productListPagination().stream().flatMap(e -> e.select("a:matches([0-9]+)").stream());
+    private Stream<Element> paginationItems() {
+        return pagination().stream().flatMap(e -> e.select("a:matches([0-9]+)").stream());
     }
 
-    private Optional<Element> productListPagination() {
+    private Optional<Element> pagination() {
         return Optional.ofNullable(document.select("ul[class*=pagination]").first());
     }
 
-    private Stream<Element> productListItems() {
-        return productList().stream().flatMap(e -> e.select("div[data-product-code]").stream());
-    }
-
-    private Optional<Element> productList() {
-        return Optional.ofNullable(document.select("ul[class=product-grid]").first());
+    private Stream<Element> items() {
+        return document.select("ul[class=product-grid] div[data-product-code]").stream();
     }
 }

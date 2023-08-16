@@ -16,7 +16,7 @@ import static GroceryFamily.GroceryDad.scraper.view.barbora.BarboraView.productC
 class BarboraProductListView extends View implements ProductListView {
     @Override
     public List<Link> productPageLinks() {
-        return productListPaginationItems().map(e -> {
+        return paginationItems().map(e -> {
             var pageNo = Integer.parseInt(e.text());
             var url = e.absUrl("href");
             return Link.productList(pageNo, url, selected);
@@ -25,7 +25,7 @@ class BarboraProductListView extends View implements ProductListView {
 
     @Override
     public List<Link> productLinks() {
-        return productItems().map(e -> {
+        return items().map(e -> {
             var url = e.absUrl("href");
             return Link
                     .builder()
@@ -37,15 +37,15 @@ class BarboraProductListView extends View implements ProductListView {
         }).toList();
     }
 
-    private Stream<Element> productListPaginationItems() {
-        return productListPagination().stream().flatMap(e -> e.select("a:matches([0-9]+)").stream());
+    private Stream<Element> paginationItems() {
+        return pagination().stream().flatMap(e -> e.select("a:matches([0-9]+)").stream());
     }
 
-    private Optional<Element> productListPagination() {
+    private Optional<Element> pagination() {
         return Optional.ofNullable(document.select("ul[class=pagination]").first());
     }
 
-    private Stream<Element> productItems() {
+    private Stream<Element> items() {
         return document.select("div[itemtype*=Product] a[class*=title]").stream();
     }
 }

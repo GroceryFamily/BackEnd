@@ -4,6 +4,7 @@ import GroceryFamily.GroceryDad.scraper.page.Path;
 
 import java.util.List;
 
+// todo: simplify
 public class PermissionTree extends Tree<String, String> {
     private static final String ANY = "*";
 
