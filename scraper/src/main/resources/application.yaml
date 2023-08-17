@@ -12,6 +12,7 @@ GroceryDad:
       url: https://barbora.ee
       cache:
         directory: cache/barbora
+        compressed: true
       categories:
         - [ "Vegetables and fruits", "Fruits and berries", "Bananas", "*" ]
         - [ "Household and pets", "Pets", "Dry dog food", "*" ]
@@ -24,6 +25,7 @@ GroceryDad:
       url: https://prismamarket.ee
       cache:
         directory: cache/prisma
+        compressed: true
       categories:
         - [ "Groceries", "Fruits and vegetables", "Fruit", "*" ] # need to scroll down
         - [ "Groceries", "Pets", "Dog food", "*" ]
@@ -35,6 +37,7 @@ GroceryDad:
       url: https://rimi.ee/epood/en
       cache:
         directory: cache/rimi
+        compressed: true
       categories:
         - [ "Fruits, vegetables, flowers", "Fruits", "Bananas", "*" ]
         - [ "Pet goods", "Dog food", "Dry food for dogs", "*" ]

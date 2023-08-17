@@ -39,7 +39,7 @@ public class Scraper {
         this.config = config;
         this.client = client;
         this.viewFactory = ViewFactory.get(config.namespace);
-        this.cacheFactory = CacheFactory.builder().directory(config.cache.directory).compressed(true).build();
+        this.cacheFactory = new CacheFactory(config.cache);
         this.allowlist = allowlist(config);
         this.driver = new LazyDriver(config); // todo: destroy
     }

@@ -30,6 +30,7 @@ public class GroceryDadConfig {
         @Data
         public static class Cache {
             public final Path directory;
+            public final boolean compressed;
         }
     }
 }
