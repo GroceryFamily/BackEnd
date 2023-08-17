@@ -16,7 +16,8 @@ class RimiProductView extends View implements ProductView {
                 .code(RimiView.productCode(selected.url))
                 .name(document.select("h3[class=name]").text())
                 .url(selected.url)
-                // todo: set prices and categories
+                // todo: set prices
+                .categories(selected.categories())
                 .build();
     }
 }

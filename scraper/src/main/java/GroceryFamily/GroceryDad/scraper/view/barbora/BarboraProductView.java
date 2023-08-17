@@ -18,7 +18,8 @@ class BarboraProductView extends View implements ProductView {
                 .code(productCode(selected.url))
                 .name(document.select("*[class=b-product-info--title]").text())
                 .url(selected.url)
-                // todo: set prices and categories
+                // todo: set prices
+                .categories(selected.categories())
                 .build();
     }
 }

@@ -4,6 +4,8 @@ import GroceryFamily.GroceryElders.domain.Category;
 import lombok.Builder;
 import lombok.ToString;
 
+import java.util.HashSet;
+import java.util.Set;
 import java.util.function.Function;
 
 @Builder
@@ -14,12 +16,6 @@ public class Source {
     public final String name;
     public final String url;
     public final Source parent;
-
-    public Source root() {
-        var source = this;
-        while (source.parent != null) source = source.parent;
-        return source;
-    }
 
     public Path<String> codePath() {
         return path(source -> source.code);
@@ -40,6 +36,23 @@ public class Source {
         return path;
     }
 
+    public Set<Category> categories() {
+        var categories = new HashSet<Category>();
+        var source = this;
+        while (source.parent != null) {
+            if (source.type == SourceType.CATEGORY) {
+                categories.add(Category
+                        .builder()
+                        .code(source.code)
+                        .name(source.name)
+                        .url(source.url)
+                        .build());
+            }
+            source = source.parent;
+        }
+        return categories;
+    }
+
     public static Source category(Link link) {
         return Source
                 .builder()
@@ -48,17 +61,6 @@ public class Source {
                 .name(link.name)
                 .url(link.url)
                 .parent(link.source)
-                .build();
-    }
-
-    public static Source category(Category category, Source parent) {
-        return Source
-                .builder()
-                .type(SourceType.CATEGORY)
-                .code(category.code)
-                .name(category.name)
-                .url(category.url)
-                .parent(parent)
                 .build();
     }
 
