@@ -37,6 +37,7 @@ class GroceryDad implements CommandLineRunner {
             }));
         } finally {
             threadPool.shutdown();
+            scrapers.values().forEach(Scraper::destroy);
         }
     }
 

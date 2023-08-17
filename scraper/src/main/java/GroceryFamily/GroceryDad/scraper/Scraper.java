@@ -47,7 +47,7 @@ public class Scraper {
         this.viewFactory = viewFactory(config);
         this.cacheFactory = new CacheFactory(config.cache);
         this.allowlist = allowlist(config);
-        this.driver = new LazyDriver(config.live); // todo: destroy
+        this.driver = new LazyDriver(config.live);
     }
 
     public void scrap(Consumer<Product> handler) {
@@ -90,6 +90,10 @@ public class Scraper {
             cache.save(link.code, html);
         }
         return Jsoup.parse(html, link.url);
+    }
+
+    public void destroy() {
+        driver.destroy();
     }
 
     public static ViewFactory viewFactory(GroceryDadConfig.Scraper config) {
