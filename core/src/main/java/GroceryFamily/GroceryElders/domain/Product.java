@@ -17,6 +17,7 @@ public class Product {
     public final String namespace;
     public final String code;
     public final String name;
+    public final String url;
     @Builder.Default
     public final Set<Price> prices = Set.of();
     @Builder.Default
@@ -36,7 +37,7 @@ public class Product {
     public Set<Identifiable<Category>> identifiableCategories() {
         return categories
                 .stream()
-                .map(category -> Identifiable.identify(category, namespace, category.code))
+                .map(category -> Identifiable.identify(category, id(), category.code))
                 .collect(toSet());
     }
 }

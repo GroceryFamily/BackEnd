@@ -21,14 +21,21 @@ public class GroceryDadConfig {
     @Data
     public static class Scraper {
         public final String namespace;
-        public final String uri;
-        public final List<List<String>> categories;
+        public final String url;
+        public final List<List<String>> allowlist;
         public final Cache cache;
-        public final Duration timeout;
+        public final Live live;
 
         @Data
         public static class Cache {
             public final Path directory;
+            public final boolean compressed;
+        }
+
+        @Data
+        public static class Live {
+            public final Duration waitTimeout;
+            public final Duration sleepDelay;
         }
     }
 }

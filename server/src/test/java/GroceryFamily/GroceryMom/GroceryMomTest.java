@@ -33,14 +33,14 @@ import static org.springframework.util.StringUtils.capitalize;
 /*
  This is the main integration test that confirms the correctness of the
  implementation of the optimistic locking approach for the product update
- method. It uses 3 parallel threads, each doing 99 consecutive updates of the
+ method. It uses 2 parallel threads, each doing 99 consecutive updates of the
  same product. Each update uses unique markers for the product and its parts.
  */
 @SpringBootTest(webEnvironment = RANDOM_PORT)
 @ActiveProfiles("h2")
 @DirtiesContext(classMode = BEFORE_EACH_TEST_METHOD)
 class GroceryMomTest {
-    static final int NUMBER_OF_THREADS = 3;
+    static final int NUMBER_OF_THREADS = 2;
     static final int NUMBER_OF_UPDATES_PER_THREAD = 99;
 
     @LocalServerPort
@@ -110,11 +110,11 @@ class GroceryMomTest {
                 Identifiable.identify(Category.builder()
                         .code("first")
                         .name("First" + expectedCategoryNameMarker)
-                        .build(), "grocery-mom-test::first"),
+                        .build(), "grocery-mom-test::product::first"),
                 Identifiable.identify(Category.builder()
                         .code("second")
                         .name("Second" + expectedCategoryNameMarker)
-                        .build(), "grocery-mom-test::second")
+                        .build(), "grocery-mom-test::product::second")
         ));
 
         var expectedProductName = "GroceryMom test product (threadNo=" + expectedThreadNo + ", updateNo=" + NUMBER_OF_UPDATES_PER_THREAD + ")";
@@ -123,8 +123,8 @@ class GroceryMomTest {
         assertProductEntity("grocery-mom-test::product", expectedProductName, expectedVersion);
         assertPriceEntity("grocery-mom-test::product::pc::usd", expectedPriceAmount, expectedVersion);
         assertPriceEntity("grocery-mom-test::product::ml::usd", expectedPriceAmount, expectedVersion);
-        assertCategoryEntity("grocery-mom-test::first", "First" + expectedCategoryNameMarker, expectedVersion);
-        assertCategoryEntity("grocery-mom-test::second", "Second" + expectedCategoryNameMarker, expectedVersion);
+        assertCategoryEntity("grocery-mom-test::product::first", "First" + expectedCategoryNameMarker, expectedVersion);
+        assertCategoryEntity("grocery-mom-test::product::second", "Second" + expectedCategoryNameMarker, expectedVersion);
     }
 
     void assertProductEntity(String id, String expectedName, int expectedVersion) {

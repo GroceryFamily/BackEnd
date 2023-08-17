@@ -9,35 +9,45 @@ GroceryDad:
   scrapers:
     barbora:
       namespace: barbora.ee
-      uri: https://barbora.ee
+      url: https://barbora.ee
+      live:
+        waitTimeout: 5s
+        sleepDelay: 500ms
       cache:
         directory: cache/barbora
-      categories:
-        - [ "Vegetables and fruits", "Fruits and berries", "Bananas" ]
-        - [ "Household and pets", "Pets", "Dry dog food" ]
-        - [ "Dairy and eggs", "Milk", "Pasteurised milk" ]
-      timeout: 10s
+        compressed: true
+      allowlist:
+        - [ "Vegetables and fruits", "Fruits and berries", "Bananas", "*" ]
+        - [ "Household and pets", "Pets", "Dry dog food", "*" ]
+        - [ "Dairy and eggs", "Yoghurts and desserts", "Flavored yoghurts", "*" ] # two product pages
 
     prisma:
       namespace: prismamarket.ee
-      uri: https://prismamarket.ee
+      url: https://prismamarket.ee
+      live:
+        waitTimeout: 5s
+        sleepDelay: 500ms
       cache:
         directory: cache/prisma
-      categories:
-#        - [ "Groceries", "Fruits and vegetables", "Fruit", "Bananas" ]
-#        - [ "Groceries", "Pets", "Dog food", "Dry food for dogs" ]
-        - [ "Groceries", "Pets", "Toys for pets" ]
-        - [ "Groceries", "Drinks", "Water" ]
-      timeout: 10s
+        compressed: true
+      allowlist:
+        - [ "Groceries", "Fruits and vegetables", "Fruit", "*" ] # need to scroll down
+        - [ "Groceries", "Pets", "Dog food", "*" ]
 
     rimi:
       namespace: rimi.ee
-      uri: https://rimi.ee/epood/en
+      url: https://rimi.ee/epood/en
+      live:
+        waitTimeout: 5s
+        sleepDelay: 500ms
       cache:
         directory: cache/rimi
-      categories:
-        - [ "Fruits, vegetables, flowers", "Fruits", "Bananas" ]
-        - [ "Pet goods", "Dog food", "Dry food for dogs" ]
-        - [ "Groceries", "Canned products", "Mushrooms" ]
-        - [ "Bread, pastry, confectionery", "Rimi bakeries" ]
-      timeout: 10s
+        compressed: true
+      allowlist:
+        - [ "Fruits, vegetables, flowers", "Fruits", "Bananas", "*" ]
+        - [ "Pet goods", "Dog food", "Dry food for dogs", "*" ]
+        - [ "Pre-order festivity meals", "Pre-order appetizers and selection plates", "*" ] # two pages
+
+logging.level:
+  com.codeborne.selenide: ERROR
+  org.springframework.core: ERROR

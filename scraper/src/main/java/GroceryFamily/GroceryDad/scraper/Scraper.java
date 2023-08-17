@@ -1,77 +1,92 @@
 package GroceryFamily.GroceryDad.scraper;
 
 import GroceryFamily.GroceryDad.GroceryDadConfig;
-import GroceryFamily.GroceryDad.scraper.cache.Cache;
-import GroceryFamily.GroceryElders.api.client.ProductAPIClient;
-import GroceryFamily.GroceryElders.domain.Namespace;
+import GroceryFamily.GroceryDad.scraper.cache.CacheFactory;
+import GroceryFamily.GroceryDad.scraper.driver.LazyDriver;
+import GroceryFamily.GroceryDad.scraper.model.*;
+import GroceryFamily.GroceryDad.scraper.view.ViewFactory;
 import GroceryFamily.GroceryElders.domain.Product;
-import com.codeborne.selenide.Configuration;
-import io.github.antivoland.sfc.FileCache;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.ui.WebDriverWait;
+import lombok.extern.slf4j.Slf4j;
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
 
-import java.util.List;
+import java.util.HashSet;
+import java.util.Set;
 import java.util.function.Consumer;
-
-import static com.codeborne.selenide.Selenide.open;
-import static com.codeborne.selenide.Selenide.using;
-import static java.lang.String.format;
 
 // todo: think about robots.txt
 //  https://en.wikipedia.org/wiki/Robots.txt
 //  https://github.com/google/robotstxt-java
 //  https://developers.google.com/search/docs/crawling-indexing/robots/robots_txt
-public abstract class Scraper {
-    private final GroceryDadConfig.Scraper config;
-    private final WebDriver driver;
-    private final ProductAPIClient client;
+@Slf4j
+public class Scraper {
+    private final Link root;
+    private final LazyDriver driver;
+    private final ViewFactory viewFactory;
+    private final CacheFactory cacheFactory;
+    private final Allowlist allowlist = new Allowlist();
+    private final Set<Path<String>> seen = new HashSet<>();
+    private final SourceTree visited = new SourceTree();
 
-    protected Scraper(GroceryDadConfig.Scraper config, WebDriver driver, ProductAPIClient client) {
-        this.config = config;
-        this.driver = driver;
-        this.client = client;
+    private Scraper(GroceryDadConfig.Scraper config) {
+        root = Link.builder().code(config.namespace).url(config.url).build();
+        driver = new LazyDriver(config.live);
+        viewFactory = ViewFactory.create(config);
+        cacheFactory = new CacheFactory(config.cache);
+        config.allowlist.stream().map(Path::of).forEach(allowlist::put);
     }
 
-    public final void scrap() {
-        Configuration.timeout = config.timeout.toMillis();
-        using(driver, () -> {
-            open(config.uri);
-            waitUntilPageLoads();
-            acceptOrRejectCookies();
-            switchToEnglish();
-            config.categories.forEach(categories -> {
-                FileCache<Product> cache = cache(categories); // todo: do we need cache at all?
-                scrap(categories, product -> cache.save(product.code, product));
-                cache.list().forEach(client::update);
-            });
-        });
+    private void traverse(Consumer<Product> handler) {
+        try {
+            traverse(root, handler);
+        } finally {
+            driver.destroy();
+        }
     }
 
-    protected abstract void acceptOrRejectCookies();
+    private void traverse(Link selected, Consumer<Product> handler) {
+        if (seen.contains(selected.codePath())) return;
+        seen.add(selected.codePath());
+        if (!allowlist.allowed(selected.namePath())) return;
 
-    protected abstract void switchToEnglish();
+        var document = load(selected); // todo: flexible delays based on a platform response latency
 
-    protected abstract void scrap(List<String> categories, Consumer<Product> handler);
+        var categoryView = viewFactory.categoryView(document, Source.category(selected));
+        var childCategoryLinks = categoryView.childCategoryLinks();
+        if (!childCategoryLinks.isEmpty()) {
+            childCategoryLinks.forEach(link -> traverse(link, handler));
+            visited.put(selected.namePath(), Source.category(selected));
+            return;
+        }
 
-    private FileCache<Product> cache(List<String> categories) {
-        return Cache.factory(config.cache.directory).get(categories);
+        var productListView = viewFactory.productListView(document, Source.productList(selected));
+        productListView.productPageLinks().forEach(link -> traverse(link, handler));
+
+        var productLinks = productListView.productLinks();
+        if (!productLinks.isEmpty()) {
+            productLinks.forEach(link -> traverse(link, handler));
+            visited.put(selected.namePath(), Source.productList(selected));
+            return;
+        }
+
+        var productView = viewFactory.productView(document, Source.product(selected));
+        handler.accept(productView.product());
+        visited.put(selected.namePath(), Source.product(selected));
     }
 
-    private void waitUntilPageLoads() {
-        new WebDriverWait(driver, config.timeout).until(Scraper::pageIsReady);
+    private Document load(Link link) {
+        var cache = cacheFactory.html(link);
+        var html = cache.load(link.code);
+        if (html == null) {
+            html = viewFactory.liveView(driver.get()).open(link);
+            cache.save(link.code, html);
+        }
+        return Jsoup.parse(html, link.url);
     }
 
-    private static boolean pageIsReady(WebDriver driver) {
-        return ((JavascriptExecutor) driver).executeScript("return document.readyState").equals("complete");
-    }
-
-    public static Scraper create(GroceryDadConfig.Scraper config, WebDriver driver, ProductAPIClient client) {
-        return switch (config.namespace) {
-            case Namespace.BARBORA -> new BarboraScraper(config, driver, client);
-            case Namespace.PRISMA -> new PrismaScraper(config, driver, client);
-            case Namespace.RIMI -> new RimiScraper(config, driver, client);
-            default -> throw new UnsupportedOperationException(format("Unrecognized namespace '%s'", config.namespace));
-        };
+    public static SourceTree scrap(GroceryDadConfig.Scraper config, Consumer<Product> handler) {
+        var scraper = new Scraper(config);
+        scraper.traverse(handler);
+        return scraper.visited;
     }
 }
