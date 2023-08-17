@@ -1,7 +1,6 @@
 package GroceryFamily.GroceryDad;
 
 import GroceryFamily.GroceryDad.scraper.Scraper;
-import GroceryFamily.GroceryDad.scraper.model.Context;
 import GroceryFamily.GroceryElders.api.client.ProductAPIClient;
 import org.openqa.selenium.WebDriver;
 import org.springframework.boot.CommandLineRunner;
@@ -27,7 +26,6 @@ class GroceryDad implements CommandLineRunner {
                     .config(config)
                     .driver(driver)
                     .client(client)
-                    .context(new Context(config))
                     .build());
         }
     }
