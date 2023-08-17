@@ -18,6 +18,7 @@ public abstract class LiveView {
         driver.open(link.url);
         waitUntilPageReady();
         initialize(link);
+        sleep();
         return driver.$("html").innerHtml();
     }
 
