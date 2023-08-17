@@ -13,7 +13,7 @@ GroceryDad:
       cache:
         directory: cache/barbora
         compressed: true
-      categories:
+      allowlist:
         - [ "Vegetables and fruits", "Fruits and berries", "Bananas", "*" ]
         - [ "Household and pets", "Pets", "Dry dog food", "*" ]
         - [ "Dairy and eggs", "Yoghurts and desserts", "Flavored yoghurts", "*" ] # two product pages
@@ -26,7 +26,7 @@ GroceryDad:
       cache:
         directory: cache/prisma
         compressed: true
-      categories:
+      allowlist:
         - [ "Groceries", "Fruits and vegetables", "Fruit", "*" ] # need to scroll down
         - [ "Groceries", "Pets", "Dog food", "*" ]
       timeout: 5s
@@ -38,7 +38,7 @@ GroceryDad:
       cache:
         directory: cache/rimi
         compressed: true
-      categories:
+      allowlist:
         - [ "Fruits, vegetables, flowers", "Fruits", "Bananas", "*" ]
         - [ "Pet goods", "Dog food", "Dry food for dogs", "*" ]
         - [ "Pre-order festivity meals", "Pre-order appetizers and selection plates", "*" ] # two pages

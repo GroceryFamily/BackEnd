@@ -9,10 +9,8 @@ import GroceryFamily.GroceryDad.scraper.model.Path;
 import GroceryFamily.GroceryDad.scraper.model.Source;
 import GroceryFamily.GroceryDad.scraper.page.PageUtils;
 import GroceryFamily.GroceryDad.scraper.view.ViewFactory;
-import GroceryFamily.GroceryElders.api.client.ProductAPIClient;
 import GroceryFamily.GroceryElders.domain.Product;
 import com.codeborne.selenide.Configuration;
-import lombok.Builder;
 import lombok.extern.slf4j.Slf4j;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
@@ -28,29 +26,25 @@ import java.util.function.Consumer;
 @Slf4j
 public class Scraper {
     private final GroceryDadConfig.Scraper config;
-    private final ProductAPIClient client;
+    private final String name;
     private final ViewFactory viewFactory;
     private final CacheFactory cacheFactory;
     private final Allowlist allowlist;
     private final LazyDriver driver;
 
-    @Builder()
-    public Scraper(GroceryDadConfig.Scraper config, ProductAPIClient client) {
+    public Scraper(GroceryDadConfig.Scraper config, String name) {
         this.config = config;
-        this.client = client;
+        this.name = name;
         this.viewFactory = ViewFactory.get(config.namespace);
         this.cacheFactory = new CacheFactory(config.cache);
         this.allowlist = allowlist(config);
         this.driver = new LazyDriver(config); // todo: destroy
     }
 
-    public void scrap() {
+    public void scrap(Consumer<Product> handler) {
+        Thread.currentThread().setName(name + "-worker");
         Configuration.timeout = config.timeout.toMillis();
         PageUtils.sleepDelay = config.sleepDelay;
-        traverse(client::update);
-    }
-
-    private void traverse(Consumer<Product> handler) {
         traverse(Link.builder().code(config.namespace).url(config.url).build(), new HashSet<>(), handler);
     }
 
@@ -94,7 +88,7 @@ public class Scraper {
 
     private static Allowlist allowlist(GroceryDadConfig.Scraper config) {
         var allowlist = new Allowlist();
-        config.categories.stream().map(Path::of).forEach(allowlist::put);
+        config.allowlist.stream().map(Path::of).forEach(allowlist::put);
         return allowlist;
     }
 }

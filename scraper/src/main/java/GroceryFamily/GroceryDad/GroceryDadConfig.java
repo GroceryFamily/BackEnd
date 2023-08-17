@@ -22,7 +22,7 @@ public class GroceryDadConfig {
     public static class Scraper {
         public final String namespace;
         public final String url;
-        public final List<List<String>> categories;
+        public final List<List<String>> allowlist;
         public final Cache cache;
         public final Duration timeout;
         public final Duration sleepDelay;
