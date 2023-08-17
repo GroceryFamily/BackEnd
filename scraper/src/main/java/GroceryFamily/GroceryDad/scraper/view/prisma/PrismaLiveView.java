@@ -6,7 +6,6 @@ import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
 import lombok.experimental.SuperBuilder;
 
-import static GroceryFamily.GroceryDad.scraper.page.PageUtils.scrollDown;
 import static com.codeborne.selenide.CollectionCondition.itemWithText;
 import static com.codeborne.selenide.CollectionCondition.sizeGreaterThan;
 import static com.codeborne.selenide.Condition.visible;

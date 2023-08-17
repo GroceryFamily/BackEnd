@@ -1,16 +1,23 @@
 package GroceryFamily.GroceryDad.scraper.view.barbora;
 
+import GroceryFamily.GroceryDad.GroceryDadConfig;
 import GroceryFamily.GroceryDad.scraper.model.Source;
 import GroceryFamily.GroceryDad.scraper.view.*;
 import com.codeborne.selenide.SelenideDriver;
 import org.jsoup.nodes.Document;
 
-public class BarboraViewFactory implements ViewFactory {
+public class BarboraViewFactory extends ViewFactory {
+    public BarboraViewFactory(GroceryDadConfig.Scraper config) {
+        super(config);
+    }
+
     @Override
     public LiveView liveView(SelenideDriver driver) {
         return BarboraLiveView
                 .builder()
                 .driver(driver)
+                .timeout(config.timeout)
+                .sleepDelay(config.sleepDelay)
                 .build();
     }
 

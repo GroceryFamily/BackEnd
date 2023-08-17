@@ -1,16 +1,23 @@
 package GroceryFamily.GroceryDad.scraper.view.prisma;
 
+import GroceryFamily.GroceryDad.GroceryDadConfig;
 import GroceryFamily.GroceryDad.scraper.model.Source;
 import GroceryFamily.GroceryDad.scraper.view.*;
 import com.codeborne.selenide.SelenideDriver;
 import org.jsoup.nodes.Document;
 
-public class PrismaViewFactory implements ViewFactory {
+public class PrismaViewFactory extends ViewFactory {
+    public PrismaViewFactory(GroceryDadConfig.Scraper config) {
+        super(config);
+    }
+
     @Override
     public LiveView liveView(SelenideDriver driver) {
         return PrismaLiveView
                 .builder()
                 .driver(driver)
+                .timeout(config.timeout)
+                .sleepDelay(config.sleepDelay)
                 .build();
     }
 

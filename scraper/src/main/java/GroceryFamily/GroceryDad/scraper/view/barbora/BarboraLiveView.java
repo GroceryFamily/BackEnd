@@ -5,7 +5,6 @@ import GroceryFamily.GroceryDad.scraper.view.LiveView;
 import com.codeborne.selenide.SelenideElement;
 import lombok.experimental.SuperBuilder;
 
-import static GroceryFamily.GroceryDad.scraper.page.PageUtils.sleep;
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Condition.visible;
 

@@ -7,17 +7,23 @@ import GroceryFamily.GroceryDad.scraper.model.Allowlist;
 import GroceryFamily.GroceryDad.scraper.model.Link;
 import GroceryFamily.GroceryDad.scraper.model.Path;
 import GroceryFamily.GroceryDad.scraper.model.Source;
-import GroceryFamily.GroceryDad.scraper.page.PageUtils;
 import GroceryFamily.GroceryDad.scraper.view.ViewFactory;
+import GroceryFamily.GroceryDad.scraper.view.barbora.BarboraViewFactory;
+import GroceryFamily.GroceryDad.scraper.view.prisma.PrismaViewFactory;
+import GroceryFamily.GroceryDad.scraper.view.rimi.RimiViewFactory;
+import GroceryFamily.GroceryElders.domain.Namespace;
 import GroceryFamily.GroceryElders.domain.Product;
-import com.codeborne.selenide.Configuration;
 import lombok.extern.slf4j.Slf4j;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 
 import java.util.HashSet;
+import java.util.Map;
 import java.util.Set;
 import java.util.function.Consumer;
+import java.util.function.Function;
+
+import static java.lang.String.format;
 
 // todo: think about robots.txt
 //  https://en.wikipedia.org/wiki/Robots.txt
@@ -25,26 +31,26 @@ import java.util.function.Consumer;
 //  https://developers.google.com/search/docs/crawling-indexing/robots/robots_txt
 @Slf4j
 public class Scraper {
+    private static final Map<String, Function<GroceryDadConfig.Scraper, ViewFactory>> FACTORIES = Map.of(
+            Namespace.BARBORA, BarboraViewFactory::new,
+            Namespace.PRISMA, PrismaViewFactory::new,
+            Namespace.RIMI, RimiViewFactory::new);
+
     private final GroceryDadConfig.Scraper config;
-    private final String name;
     private final ViewFactory viewFactory;
     private final CacheFactory cacheFactory;
     private final Allowlist allowlist;
     private final LazyDriver driver;
 
-    public Scraper(GroceryDadConfig.Scraper config, String name) {
+    public Scraper(GroceryDadConfig.Scraper config) {
         this.config = config;
-        this.name = name;
-        this.viewFactory = ViewFactory.get(config.namespace);
+        this.viewFactory = viewFactory(config);
         this.cacheFactory = new CacheFactory(config.cache);
         this.allowlist = allowlist(config);
         this.driver = new LazyDriver(config); // todo: destroy
     }
 
     public void scrap(Consumer<Product> handler) {
-        Thread.currentThread().setName(name + "-worker");
-        Configuration.timeout = config.timeout.toMillis();
-        PageUtils.sleepDelay = config.sleepDelay;
         traverse(Link.builder().code(config.namespace).url(config.url).build(), new HashSet<>(), handler);
     }
 
@@ -80,10 +86,18 @@ public class Scraper {
         var cache = cacheFactory.html(link);
         var html = cache.load(link.code);
         if (html == null) {
-            html = viewFactory.liveView(driver.get()).open(link, config.timeout);
+            html = viewFactory.liveView(driver.get()).open(link);
             cache.save(link.code, html);
         }
         return Jsoup.parse(html, link.url);
+    }
+
+    public static ViewFactory viewFactory(GroceryDadConfig.Scraper config) {
+        var factory = FACTORIES.get(config.namespace);
+        if (factory == null) {
+            throw new UnsupportedOperationException(format("Unrecognized namespace '%s'", config.namespace));
+        }
+        return factory.apply(config);
     }
 
     private static Allowlist allowlist(GroceryDadConfig.Scraper config) {

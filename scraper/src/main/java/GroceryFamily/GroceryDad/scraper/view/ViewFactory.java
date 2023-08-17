@@ -1,35 +1,22 @@
 package GroceryFamily.GroceryDad.scraper.view;
 
+import GroceryFamily.GroceryDad.GroceryDadConfig;
 import GroceryFamily.GroceryDad.scraper.model.Source;
-import GroceryFamily.GroceryDad.scraper.view.barbora.BarboraViewFactory;
-import GroceryFamily.GroceryDad.scraper.view.prisma.PrismaViewFactory;
-import GroceryFamily.GroceryDad.scraper.view.rimi.RimiViewFactory;
-import GroceryFamily.GroceryElders.domain.Namespace;
 import com.codeborne.selenide.SelenideDriver;
 import org.jsoup.nodes.Document;
 
-import java.util.Map;
-import java.util.function.Supplier;
+public abstract class ViewFactory {
+    protected final GroceryDadConfig.Scraper config;
 
-import static java.lang.String.format;
-
-public interface ViewFactory {
-    Map<String, Supplier<ViewFactory>> FACTORIES = Map.of(
-            Namespace.BARBORA, BarboraViewFactory::new,
-            Namespace.PRISMA, PrismaViewFactory::new,
-            Namespace.RIMI, RimiViewFactory::new);
-
-    LiveView liveView(SelenideDriver driver);
-
-    CategoryView categoryView(Document document, Source selected);
-
-    ProductListView productListView(Document document, Source selected);
-
-    ProductView productView(Document document, Source selected);
-
-    static ViewFactory get(String namespace) {
-        var factory = FACTORIES.get(namespace);
-        if (factory == null) throw new UnsupportedOperationException(format("Unrecognized namespace '%s'", namespace));
-        return factory.get();
+    protected ViewFactory(GroceryDadConfig.Scraper config) {
+        this.config = config;
     }
+
+    public abstract LiveView liveView(SelenideDriver driver);
+
+    public abstract CategoryView categoryView(Document document, Source selected);
+
+    public abstract ProductListView productListView(Document document, Source selected);
+
+    public abstract ProductView productView(Document document, Source selected);
 }

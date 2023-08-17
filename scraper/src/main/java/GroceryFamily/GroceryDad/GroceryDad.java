@@ -6,22 +6,22 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import java.util.ArrayList;
-import java.util.Collection;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.concurrent.Executors;
 
 import static java.lang.String.format;
 
 @SpringBootApplication
 class GroceryDad implements CommandLineRunner {
-    private final Collection<Scraper> scrapers = new ArrayList<>();
+    private final Map<String, Scraper> scrapers = new HashMap<>();
     private final ProductAPIClient client;
 
     GroceryDad(GroceryDadConfig dadConfig) {
         for (var name : dadConfig.enabled) {
             var config = dadConfig.scrapers.get(name);
             if (config == null) throw new IllegalArgumentException(format("Missing %s config", name));
-            scrapers.add(new Scraper(config, name));
+            scrapers.put(name, new Scraper(config));
         }
         client = new ProductAPIClient(dadConfig.api.uri);
     }
@@ -31,7 +31,10 @@ class GroceryDad implements CommandLineRunner {
         //noinspection resource
         var threadPool = Executors.newCachedThreadPool();
         try {
-            scrapers.forEach(scraper -> threadPool.execute(() -> scraper.scrap(client::update)));
+            scrapers.forEach((name, scraper) -> threadPool.execute(() -> {
+                Thread.currentThread().setName(name + "-worker");
+                scraper.scrap(client::update);
+            }));
         } finally {
             threadPool.shutdown();
         }
