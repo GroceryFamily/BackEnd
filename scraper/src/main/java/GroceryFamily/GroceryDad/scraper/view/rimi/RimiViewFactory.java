@@ -16,8 +16,7 @@ public class RimiViewFactory extends ViewFactory {
         return RimiLiveView
                 .builder()
                 .driver(driver)
-                .timeout(config.timeout)
-                .sleepDelay(config.sleepDelay)
+                .config(config.live)
                 .build();
     }
 

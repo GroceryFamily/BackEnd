@@ -26,7 +26,7 @@ public class LazyDriver {
 
     private SelenideConfig selenideConfig() {
         var selenideConfig = new SelenideConfig();
-        selenideConfig.timeout(config.timeout.toMillis());
+        selenideConfig.timeout(config.live.timeout.toMillis());
         return selenideConfig;
     }
 
@@ -34,8 +34,8 @@ public class LazyDriver {
         var chromeOptions = new ChromeOptions();
         chromeOptions.addArguments("--window-size=1920,1080");
         var chromeDriver = new ChromeDriver(chromeOptions);
-        chromeDriver.manage().timeouts().pageLoadTimeout(config.timeout);
-        chromeDriver.manage().timeouts().scriptTimeout(config.timeout);
+        chromeDriver.manage().timeouts().pageLoadTimeout(config.live.timeout);
+        chromeDriver.manage().timeouts().scriptTimeout(config.live.timeout);
         return chromeDriver;
     }
 

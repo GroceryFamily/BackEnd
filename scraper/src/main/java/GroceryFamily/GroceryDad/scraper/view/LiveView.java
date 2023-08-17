@@ -1,5 +1,6 @@
 package GroceryFamily.GroceryDad.scraper.view;
 
+import GroceryFamily.GroceryDad.GroceryDadConfig;
 import GroceryFamily.GroceryDad.scraper.model.Link;
 import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.SelenideDriver;
@@ -8,13 +9,10 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import java.time.Duration;
-
 @SuperBuilder
 public abstract class LiveView {
-    protected SelenideDriver driver;
-    protected Duration timeout;
-    protected Duration sleepDelay;
+    protected final SelenideDriver driver;
+    protected final GroceryDadConfig.Scraper.Live config;
 
     public final String open(Link link) {
         driver.open(link.url);
@@ -26,7 +24,7 @@ public abstract class LiveView {
     protected abstract void initialize(Link link);
 
     private void waitUntilPageReady() {
-        new WebDriverWait(driver.getWebDriver(), timeout).until(LiveView::pageIsReady);
+        new WebDriverWait(driver.getWebDriver(), config.timeout).until(LiveView::pageIsReady);
     }
 
     private static boolean pageIsReady(WebDriver driver) {
@@ -34,7 +32,7 @@ public abstract class LiveView {
     }
 
     protected final void sleep() {
-        Selenide.sleep((long) (sleepDelay.toMillis() * (1 + Math.random())));
+        Selenide.sleep((long) (config.sleepDelay.toMillis() * (1 + Math.random())));
     }
 
     protected final void scrollUp() {

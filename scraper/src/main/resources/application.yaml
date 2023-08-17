@@ -10,37 +10,40 @@ GroceryDad:
     barbora:
       namespace: barbora.ee
       url: https://barbora.ee
-      cache:
-        directory: cache/barbora
-        compressed: true
       allowlist:
         - [ "Vegetables and fruits", "Fruits and berries", "Bananas", "*" ]
         - [ "Household and pets", "Pets", "Dry dog food", "*" ]
         - [ "Dairy and eggs", "Yoghurts and desserts", "Flavored yoghurts", "*" ] # two product pages
-      timeout: 5s
-      sleepDelay: 500ms
+      cache:
+        directory: cache/barbora
+        compressed: true
+      live:
+        timeout: 5s
+        sleepDelay: 500ms
 
     prisma:
       namespace: prismamarket.ee
       url: https://prismamarket.ee
-      cache:
-        directory: cache/prisma
-        compressed: true
       allowlist:
         - [ "Groceries", "Fruits and vegetables", "Fruit", "*" ] # need to scroll down
         - [ "Groceries", "Pets", "Dog food", "*" ]
-      timeout: 5s
-      sleepDelay: 100ms
+      cache:
+        directory: cache/prisma
+        compressed: true
+      live:
+        timeout: 5s
+        sleepDelay: 500ms
 
     rimi:
       namespace: rimi.ee
       url: https://rimi.ee/epood/en
-      cache:
-        directory: cache/rimi
-        compressed: true
       allowlist:
         - [ "Fruits, vegetables, flowers", "Fruits", "Bananas", "*" ]
         - [ "Pet goods", "Dog food", "Dry food for dogs", "*" ]
         - [ "Pre-order festivity meals", "Pre-order appetizers and selection plates", "*" ] # two pages
-      timeout: 5s
-      sleepDelay: 100ms
+      cache:
+        directory: cache/rimi
+        compressed: true
+      live:
+        timeout: 5s
+        sleepDelay: 500ms

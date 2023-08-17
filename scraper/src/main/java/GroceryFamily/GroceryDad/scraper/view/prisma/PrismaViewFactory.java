@@ -16,8 +16,7 @@ public class PrismaViewFactory extends ViewFactory {
         return PrismaLiveView
                 .builder()
                 .driver(driver)
-                .timeout(config.timeout)
-                .sleepDelay(config.sleepDelay)
+                .config(config.live)
                 .build();
     }
 

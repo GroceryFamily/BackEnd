@@ -16,8 +16,7 @@ public class BarboraViewFactory extends ViewFactory {
         return BarboraLiveView
                 .builder()
                 .driver(driver)
-                .timeout(config.timeout)
-                .sleepDelay(config.sleepDelay)
+                .config(config.live)
                 .build();
     }
 
