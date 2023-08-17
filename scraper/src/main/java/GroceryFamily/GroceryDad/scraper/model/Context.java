@@ -1,11 +1,7 @@
-package GroceryFamily.GroceryDad.scraper.context;
+package GroceryFamily.GroceryDad.scraper.model;
 
 import GroceryFamily.GroceryDad.GroceryDadConfig;
 import GroceryFamily.GroceryDad.scraper.cache.Cache;
-import GroceryFamily.GroceryDad.scraper.page.Link;
-import GroceryFamily.GroceryDad.scraper.page.Path;
-import GroceryFamily.GroceryDad.scraper.page.Source;
-import GroceryFamily.GroceryDad.scraper.tree.PermissionTree;
 import GroceryFamily.GroceryDad.scraper.view.ViewFactory;
 import GroceryFamily.GroceryElders.domain.Product;
 import com.codeborne.selenide.Configuration;

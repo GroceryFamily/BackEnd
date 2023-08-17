@@ -1,6 +1,6 @@
 package GroceryFamily.GroceryDad.scraper.view.rimi;
 
-import GroceryFamily.GroceryDad.scraper.page.Path;
+import GroceryFamily.GroceryDad.scraper.model.Path;
 
 import java.util.List;
 

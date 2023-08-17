@@ -1,7 +1,7 @@
 package GroceryFamily.GroceryDad.scraper.view;
 
-import GroceryFamily.GroceryDad.scraper.page.Path;
-import GroceryFamily.GroceryDad.scraper.page.Source;
+import GroceryFamily.GroceryDad.scraper.model.Path;
+import GroceryFamily.GroceryDad.scraper.model.Source;
 import lombok.experimental.SuperBuilder;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;

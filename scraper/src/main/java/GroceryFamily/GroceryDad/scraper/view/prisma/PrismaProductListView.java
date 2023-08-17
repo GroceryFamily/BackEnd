@@ -1,6 +1,6 @@
 package GroceryFamily.GroceryDad.scraper.view.prisma;
 
-import GroceryFamily.GroceryDad.scraper.page.Link;
+import GroceryFamily.GroceryDad.scraper.model.Link;
 import GroceryFamily.GroceryDad.scraper.view.ProductListView;
 import GroceryFamily.GroceryDad.scraper.view.View;
 import lombok.experimental.SuperBuilder;

@@ -1,6 +1,4 @@
-package GroceryFamily.GroceryDad.scraper.tree;
-
-import GroceryFamily.GroceryDad.scraper.page.Path;
+package GroceryFamily.GroceryDad.scraper.model;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package GroceryFamily.GroceryDad.scraper.page;
+package GroceryFamily.GroceryDad.scraper.model;
 
 import lombok.EqualsAndHashCode;
 import lombok.ToString;

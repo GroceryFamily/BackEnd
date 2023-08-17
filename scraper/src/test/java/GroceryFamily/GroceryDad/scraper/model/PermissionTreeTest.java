@@ -1,4 +1,4 @@
-package GroceryFamily.GroceryDad.scraper.tree;
+package GroceryFamily.GroceryDad.scraper.model;
 
 import org.junit.jupiter.api.Test;
 

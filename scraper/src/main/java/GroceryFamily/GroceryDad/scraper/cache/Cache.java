@@ -1,12 +1,10 @@
 package GroceryFamily.GroceryDad.scraper.cache;
 
-import GroceryFamily.GroceryDad.scraper.page.Link;
-import GroceryFamily.GroceryElders.domain.Product;
+import GroceryFamily.GroceryDad.scraper.model.Link;
 import io.github.antivoland.sfc.FileCache;
 import io.github.antivoland.sfc.FileType;
 
 import java.nio.file.Path;
-import java.util.List;
 
 // todo: just CacheFactory
 public class Cache {

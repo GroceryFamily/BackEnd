@@ -1,7 +1,7 @@
 package GroceryFamily.GroceryDad.scraper.view.barbora;
 
-import GroceryFamily.GroceryDad.scraper.page.Link;
-import GroceryFamily.GroceryDad.scraper.page.Path;
+import GroceryFamily.GroceryDad.scraper.model.Link;
+import GroceryFamily.GroceryDad.scraper.model.Path;
 import GroceryFamily.GroceryDad.scraper.view.CategoryView;
 import GroceryFamily.GroceryDad.scraper.view.View;
 import lombok.experimental.SuperBuilder;

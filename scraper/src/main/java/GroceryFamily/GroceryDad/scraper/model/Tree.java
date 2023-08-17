@@ -1,4 +1,4 @@
-package GroceryFamily.GroceryDad.scraper.tree;
+package GroceryFamily.GroceryDad.scraper.model;
 
 import java.util.LinkedHashMap;
 import java.util.List;

@@ -1,7 +1,7 @@
 package GroceryFamily.GroceryDad;
 
 import GroceryFamily.GroceryDad.scraper.Scraper;
-import GroceryFamily.GroceryDad.scraper.context.Context;
+import GroceryFamily.GroceryDad.scraper.model.Context;
 import GroceryFamily.GroceryElders.api.client.ProductAPIClient;
 import org.openqa.selenium.WebDriver;
 import org.springframework.boot.CommandLineRunner;

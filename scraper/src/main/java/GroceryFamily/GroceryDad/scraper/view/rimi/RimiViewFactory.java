@@ -1,6 +1,6 @@
 package GroceryFamily.GroceryDad.scraper.view.rimi;
 
-import GroceryFamily.GroceryDad.scraper.page.Source;
+import GroceryFamily.GroceryDad.scraper.model.Source;
 import GroceryFamily.GroceryDad.scraper.view.*;
 import org.jsoup.nodes.Document;
 
