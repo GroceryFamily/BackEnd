@@ -2,12 +2,16 @@ package GroceryFamily.GroceryDad.scraper.view.barbora;
 
 import GroceryFamily.GroceryDad.scraper.model.Source;
 import GroceryFamily.GroceryDad.scraper.view.*;
+import com.codeborne.selenide.SelenideDriver;
 import org.jsoup.nodes.Document;
 
 public class BarboraViewFactory implements ViewFactory {
     @Override
-    public LiveView liveView() {
-        return BarboraLiveView.INSTANCE;
+    public LiveView liveView(SelenideDriver driver) {
+        return BarboraLiveView
+                .builder()
+                .driver(driver)
+                .build();
     }
 
     @Override

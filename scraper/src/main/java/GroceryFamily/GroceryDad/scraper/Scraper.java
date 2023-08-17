@@ -2,29 +2,24 @@ package GroceryFamily.GroceryDad.scraper;
 
 import GroceryFamily.GroceryDad.GroceryDadConfig;
 import GroceryFamily.GroceryDad.scraper.cache.Cache;
-import GroceryFamily.GroceryDad.scraper.model.*;
+import GroceryFamily.GroceryDad.scraper.driver.LazyDriver;
+import GroceryFamily.GroceryDad.scraper.model.Allowlist;
+import GroceryFamily.GroceryDad.scraper.model.Link;
+import GroceryFamily.GroceryDad.scraper.model.Path;
+import GroceryFamily.GroceryDad.scraper.model.Source;
 import GroceryFamily.GroceryDad.scraper.page.PageUtils;
 import GroceryFamily.GroceryDad.scraper.view.ViewFactory;
 import GroceryFamily.GroceryElders.api.client.ProductAPIClient;
 import GroceryFamily.GroceryElders.domain.Product;
 import com.codeborne.selenide.Configuration;
-import com.codeborne.selenide.Selenide;
-import com.codeborne.selenide.WebDriverRunner;
 import lombok.Builder;
 import lombok.extern.slf4j.Slf4j;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
-import java.time.Duration;
 import java.util.HashSet;
 import java.util.Set;
 import java.util.function.Consumer;
-
-import static com.codeborne.selenide.Selenide.$;
-import static com.codeborne.selenide.Selenide.using;
 
 // todo: think about robots.txt
 //  https://en.wikipedia.org/wiki/Robots.txt
@@ -33,26 +28,26 @@ import static com.codeborne.selenide.Selenide.using;
 @Slf4j
 public class Scraper {
     private final GroceryDadConfig.Scraper config;
-    private final WebDriver driver;
     private final ProductAPIClient client;
     private final ViewFactory viewFactory;
     private final Cache.Factory cacheFactory;
     private final Allowlist allowlist;
+    private final LazyDriver driver;
 
     @Builder()
-    public Scraper(GroceryDadConfig.Scraper config, WebDriver driver, ProductAPIClient client) {
+    public Scraper(GroceryDadConfig.Scraper config, ProductAPIClient client) {
         this.config = config;
-        this.driver = driver;
         this.client = client;
         this.viewFactory = ViewFactory.get(config.namespace);
         this.cacheFactory = Cache.factory(config.cache.directory);
         this.allowlist = allowlist(config);
+        this.driver = new LazyDriver(config); // todo: destroy
     }
 
     public void scrap() {
         Configuration.timeout = config.timeout.toMillis();
         PageUtils.sleepDelay = config.sleepDelay;
-        using(driver, () -> traverse(client::update));
+        traverse(client::update);
     }
 
     private void traverse(Consumer<Product> handler) {
@@ -91,10 +86,7 @@ public class Scraper {
         var cache = cacheFactory.html(link);
         var html = cache.load(link.code);
         if (html == null) {
-            Selenide.open(link.url); // todo: run web driver when it actually needed
-            waitUntilPageReady();
-            viewFactory.liveView().initialize();
-            html = $("html").innerHtml();
+            html = viewFactory.liveView(driver.get()).open(link, config.timeout);
             cache.save(link.code, html);
         }
         return Jsoup.parse(html, link.url);
@@ -104,16 +96,5 @@ public class Scraper {
         var allowlist = new Allowlist();
         config.categories.stream().map(Path::of).forEach(allowlist::put);
         return allowlist;
-    }
-
-    // todo: move to LiveView
-    private static void waitUntilPageReady() {
-        var driver = WebDriverRunner.getWebDriver();
-        var timeout = Duration.ofMillis(Configuration.timeout);
-        new WebDriverWait(driver, timeout).until(Scraper::pageIsReady);
-    }
-
-    private static boolean pageIsReady(WebDriver driver) {
-        return ((JavascriptExecutor) driver).executeScript("return document.readyState").equals("complete");
     }
 }

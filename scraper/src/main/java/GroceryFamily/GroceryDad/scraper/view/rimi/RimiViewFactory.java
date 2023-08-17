@@ -2,12 +2,16 @@ package GroceryFamily.GroceryDad.scraper.view.rimi;
 
 import GroceryFamily.GroceryDad.scraper.model.Source;
 import GroceryFamily.GroceryDad.scraper.view.*;
+import com.codeborne.selenide.SelenideDriver;
 import org.jsoup.nodes.Document;
 
 public class RimiViewFactory implements ViewFactory {
     @Override
-    public LiveView liveView() {
-        return RimiLiveView.INSTANCE;
+    public LiveView liveView(SelenideDriver driver) {
+        return RimiLiveView
+                .builder()
+                .driver(driver)
+                .build();
     }
 
     @Override

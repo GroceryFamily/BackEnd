@@ -5,6 +5,7 @@ import GroceryFamily.GroceryDad.scraper.view.barbora.BarboraViewFactory;
 import GroceryFamily.GroceryDad.scraper.view.prisma.PrismaViewFactory;
 import GroceryFamily.GroceryDad.scraper.view.rimi.RimiViewFactory;
 import GroceryFamily.GroceryElders.domain.Namespace;
+import com.codeborne.selenide.SelenideDriver;
 import org.jsoup.nodes.Document;
 
 import java.util.Map;
@@ -18,7 +19,7 @@ public interface ViewFactory {
             Namespace.PRISMA, PrismaViewFactory::new,
             Namespace.RIMI, RimiViewFactory::new);
 
-    LiveView liveView();
+    LiveView liveView(SelenideDriver driver);
 
     CategoryView categoryView(Document document, Source selected);
 

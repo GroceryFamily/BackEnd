@@ -8,7 +8,7 @@ import java.util.TreeMap;
 import java.util.function.Consumer;
 
 @ToString
-public class Tree<KEY extends Comparable<KEY>, VALUE> {
+class Tree<KEY extends Comparable<KEY>, VALUE> {
     @ToString
     static class Node<KEY extends Comparable<KEY>, VALUE> {
         private VALUE value;
@@ -54,27 +54,27 @@ public class Tree<KEY extends Comparable<KEY>, VALUE> {
 
     final Node<KEY, VALUE> root = new Node<>();
 
-    public VALUE get(Path<KEY> path) {
+    VALUE get(Path<KEY> path) {
         return root.get(path);
     }
 
-    public void put(Path<KEY> path, VALUE value) {
+    void put(Path<KEY> path, VALUE value) {
         root.put(path, value);
     }
 
-    public int size() {
+    int size() {
         return root.size();
     }
 
-    public boolean isEmpty() {
+    boolean isEmpty() {
         return size() == 0;
     }
 
-    public void forEach(Consumer<VALUE> action) {
+    void forEach(Consumer<VALUE> action) {
         root.forEach(action);
     }
 
-    public List<VALUE> leaves() {
+    List<VALUE> leaves() {
         return root.leaves();
     }
 }

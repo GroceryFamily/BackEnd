@@ -1,22 +1,20 @@
 package GroceryFamily.GroceryDad.scraper.view.barbora;
 
+import GroceryFamily.GroceryDad.scraper.model.Link;
 import GroceryFamily.GroceryDad.scraper.view.LiveView;
 import com.codeborne.selenide.SelenideElement;
+import lombok.experimental.SuperBuilder;
 
 import static GroceryFamily.GroceryDad.scraper.page.PageUtils.sleep;
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Condition.visible;
-import static com.codeborne.selenide.Selenide.$;
 
-class BarboraLiveView implements LiveView {
-    static BarboraLiveView INSTANCE = new BarboraLiveView();
-
-    private boolean initialized;
-
-    private BarboraLiveView() {}
+@SuperBuilder
+class BarboraLiveView extends LiveView {
+    private static boolean initialized;
 
     @Override
-    public void initialize() {
+    public void initialize(Link link) {
         if (!initialized) {
             declineAllCookies();
             switchToEnglish();
@@ -24,11 +22,11 @@ class BarboraLiveView implements LiveView {
         }
     }
 
-    private static void declineAllCookies() {
-        $("#CybotCookiebotDialogBodyLevelButtonLevelOptinDeclineAll").shouldBe(visible).click();
+    private void declineAllCookies() {
+        driver.$("#CybotCookiebotDialogBodyLevelButtonLevelOptinDeclineAll").shouldBe(visible).click();
     }
 
-    private static void switchToEnglish() {
+    private void switchToEnglish() {
         topMenuItem("Kaubavalik").shouldBe(visible);
         languageSelectDropdown().shouldBe(visible).hover();
         sleep();
@@ -38,19 +36,19 @@ class BarboraLiveView implements LiveView {
         topMenuItem("Products").shouldBe(visible);
     }
 
-    private static SelenideElement topMenuItem(String name) {
+    private SelenideElement topMenuItem(String name) {
         return topMenu().$$("li[id*=fti-desktop-menu-item]").findBy(text(name));
     }
 
-    private static SelenideElement topMenu() {
-        return $("#desktop-menu-placeholder");
+    private SelenideElement topMenu() {
+        return driver.$("#desktop-menu-placeholder");
     }
 
-    private static SelenideElement englishLanguageOption() {
+    private SelenideElement englishLanguageOption() {
         return languageSelectDropdown().$$("li").findBy(text("English"));
     }
 
-    private static SelenideElement languageSelectDropdown() {
-        return $("#fti-header-language-dropdown");
+    private SelenideElement languageSelectDropdown() {
+        return driver.$("#fti-header-language-dropdown");
     }
 }

@@ -16,7 +16,7 @@ import static java.lang.String.format;
 class GroceryDad implements CommandLineRunner {
     private final Collection<Scraper> scrapers = new ArrayList<>();
 
-    GroceryDad(GroceryDadConfig dadConfig, WebDriver driver) {
+    GroceryDad(GroceryDadConfig dadConfig) {
         var client = new ProductAPIClient(dadConfig.api.uri);
         for (var name : dadConfig.enabled) {
             var config = dadConfig.scrapers.get(name);
@@ -24,7 +24,6 @@ class GroceryDad implements CommandLineRunner {
             scrapers.add(Scraper
                     .builder()
                     .config(config)
-                    .driver(driver)
                     .client(client)
                     .build());
         }
@@ -32,7 +31,7 @@ class GroceryDad implements CommandLineRunner {
 
     @Override
     public void run(String... args) {
-        scrapers.forEach(Scraper::scrap);
+        scrapers.forEach(Scraper::scrap); // todo: run in parallel
     }
 
     public static void main(String... args) {

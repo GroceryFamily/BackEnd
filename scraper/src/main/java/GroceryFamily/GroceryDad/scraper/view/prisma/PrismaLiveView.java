@@ -1,25 +1,22 @@
 package GroceryFamily.GroceryDad.scraper.view.prisma;
 
+import GroceryFamily.GroceryDad.scraper.model.Link;
 import GroceryFamily.GroceryDad.scraper.view.LiveView;
 import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
+import lombok.experimental.SuperBuilder;
 
 import static GroceryFamily.GroceryDad.scraper.page.PageUtils.scrollDown;
 import static com.codeborne.selenide.CollectionCondition.itemWithText;
 import static com.codeborne.selenide.CollectionCondition.sizeGreaterThan;
 import static com.codeborne.selenide.Condition.visible;
-import static com.codeborne.selenide.Selenide.$;
-import static com.codeborne.selenide.Selenide.$$;
 
-class PrismaLiveView implements LiveView {
-    static PrismaLiveView INSTANCE = new PrismaLiveView();
-
-    private boolean initialized;
-
-    private PrismaLiveView() {}
+@SuperBuilder
+class PrismaLiveView extends LiveView {
+    private static boolean initialized;
 
     @Override
-    public void initialize() {
+    public void initialize(Link link) {
         if (!initialized) {
             closeCookieNotice();
             switchToEnglish();
@@ -35,33 +32,33 @@ class PrismaLiveView implements LiveView {
         }
     }
 
-    private static void closeCookieNotice() {
-        $("*[class*=cookie-notice] *[class=close-icon]").shouldBe(visible).click();
+    private void closeCookieNotice() {
+        driver.$("*[class*=cookie-notice] *[class=close-icon]").shouldBe(visible).click();
     }
 
-    private static void switchToEnglish() {
-        $("*[data-language=en]").shouldBe(visible).click();
+    private void switchToEnglish() {
+        driver.$("*[data-language=en]").shouldBe(visible).click();
         topMenuItems().shouldHave(itemWithText("Groceries"));
     }
 
     // todo: static constants with selectors?
-    private static ElementsCollection topMenuItems() {
-        return $$("#main-navigation a[href*='/selection']");
+    private ElementsCollection topMenuItems() {
+        return driver.$$("#main-navigation a[href*='/selection']");
     }
 
-    private static ElementsCollection leftMenuItems() {
-        return $$("*[role=navigation] a[data-category-id]");
+    private ElementsCollection leftMenuItems() {
+        return driver.$$("*[role=navigation] a[data-category-id]");
     }
 
-    private static ElementsCollection visibleProductListItems() {
-        return $$("li[data-ean]");
+    private ElementsCollection visibleProductListItems() {
+        return driver.$$("li[data-ean]");
     }
 
-    private static int productListSize() {
+    private int productListSize() {
         return Integer.parseInt(productListSizeElement().text());
     }
 
-    private static SelenideElement productListSizeElement() {
-        return $("*[class*=category-items] b");
+    private SelenideElement productListSizeElement() {
+        return driver.$("*[class*=category-items] b");
     }
 }
