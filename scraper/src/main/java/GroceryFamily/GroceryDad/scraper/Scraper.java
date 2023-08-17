@@ -20,6 +20,7 @@ import java.util.function.Consumer;
 //  https://developers.google.com/search/docs/crawling-indexing/robots/robots_txt
 @Slf4j
 public class Scraper {
+    private final Link root;
     private final LazyDriver driver;
     private final ViewFactory viewFactory;
     private final CacheFactory cacheFactory;
@@ -27,16 +28,17 @@ public class Scraper {
     private final Set<Path<String>> seen = new HashSet<>();
     private final SourceTree visited = new SourceTree();
 
-    private Scraper(GroceryDadConfig.Scraper config, Consumer<Product> handler) {
+    private Scraper(GroceryDadConfig.Scraper config) {
+        root = Link.builder().code(config.namespace).url(config.url).build();
         driver = new LazyDriver(config.live);
         viewFactory = ViewFactory.create(config);
         cacheFactory = new CacheFactory(config.cache);
         config.allowlist.stream().map(Path::of).forEach(allowlist::put);
     }
 
-    private void traverse(String url, Consumer<Product> handler) {
+    private void traverse(Consumer<Product> handler) {
         try {
-            traverse(Link.builder().url(url).build(), handler);
+            traverse(root, handler);
         } finally {
             driver.destroy();
         }
@@ -83,8 +85,8 @@ public class Scraper {
     }
 
     public static SourceTree scrap(GroceryDadConfig.Scraper config, Consumer<Product> handler) {
-        var scraper = new Scraper(config, handler);
-        scraper.traverse(config.url, handler);
+        var scraper = new Scraper(config);
+        scraper.traverse(handler);
         return scraper.visited;
     }
 }

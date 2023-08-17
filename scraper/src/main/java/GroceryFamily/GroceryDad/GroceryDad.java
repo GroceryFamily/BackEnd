@@ -10,6 +10,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import java.util.concurrent.Executors;
 
 import static java.lang.String.format;
+import static org.openqa.selenium.chrome.ChromeDriverService.CHROME_DRIVER_SILENT_OUTPUT_PROPERTY;
 
 @Slf4j
 @SpringBootApplication
@@ -46,6 +47,7 @@ class GroceryDad implements CommandLineRunner {
     }
 
     public static void main(String... args) {
+        System.setProperty(CHROME_DRIVER_SILENT_OUTPUT_PROPERTY, "true");
         SpringApplication.run(GroceryDad.class, args);
     }
 }

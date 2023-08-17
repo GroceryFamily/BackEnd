@@ -49,4 +49,5 @@ GroceryDad:
         - [ "Pre-order festivity meals", "Pre-order appetizers and selection plates", "*" ] # two pages
 
 logging.level:
+  com.codeborne.selenide: ERROR
   org.springframework.core: ERROR
