@@ -18,7 +18,7 @@ GroceryDad:
         directory: cache/barbora
         compressed: true
       live:
-        timeout: 5s
+        waitTimeout: 5s
         sleepDelay: 500ms
 
     prisma:
@@ -31,7 +31,7 @@ GroceryDad:
         directory: cache/prisma
         compressed: true
       live:
-        timeout: 5s
+        waitTimeout: 5s
         sleepDelay: 500ms
 
     rimi:
@@ -45,5 +45,5 @@ GroceryDad:
         directory: cache/rimi
         compressed: true
       live:
-        timeout: 5s
+        waitTimeout: 5s
         sleepDelay: 500ms

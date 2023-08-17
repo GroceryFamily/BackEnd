@@ -34,7 +34,7 @@ public class GroceryDadConfig {
 
         @Data
         public static class Live {
-            public final Duration timeout;
+            public final Duration waitTimeout;
             public final Duration sleepDelay;
         }
     }

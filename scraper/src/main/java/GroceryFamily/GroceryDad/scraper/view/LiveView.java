@@ -24,7 +24,7 @@ public abstract class LiveView {
     protected abstract void initialize(Link link);
 
     private void waitUntilPageReady() {
-        new WebDriverWait(driver.getWebDriver(), config.timeout).until(LiveView::pageIsReady);
+        new WebDriverWait(driver.getWebDriver(), config.waitTimeout).until(LiveView::pageIsReady);
     }
 
     private static boolean pageIsReady(WebDriver driver) {

@@ -47,7 +47,7 @@ public class Scraper {
         this.viewFactory = viewFactory(config);
         this.cacheFactory = new CacheFactory(config.cache);
         this.allowlist = allowlist(config);
-        this.driver = new LazyDriver(config); // todo: destroy
+        this.driver = new LazyDriver(config.live); // todo: destroy
     }
 
     public void scrap(Consumer<Product> handler) {
