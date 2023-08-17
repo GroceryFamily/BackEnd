@@ -50,7 +50,7 @@ public class Path<SEGMENT> implements Iterable<SEGMENT> {
 
     public Path<SEGMENT> tail() {
         if (segments.isEmpty()) throw new NoSuchElementException();
-        return new Path<>(segments.subList(1, segments.size() - 1));
+        return new Path<>(segments.subList(1, segments.size()));
     }
 
     public SEGMENT last() {
@@ -102,7 +102,8 @@ public class Path<SEGMENT> implements Iterable<SEGMENT> {
         return new Path<>(segments.subList(0, segments.size() - 1));
     }
 
-    public static <SEGMENT> Path<SEGMENT> of(SEGMENT[] segments) {
+    @SafeVarargs
+    public static <SEGMENT> Path<SEGMENT> of(SEGMENT... segments) {
         return new Path<>(List.of(segments));
     }
 

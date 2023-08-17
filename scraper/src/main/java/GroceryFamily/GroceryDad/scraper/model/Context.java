@@ -24,19 +24,19 @@ import static com.codeborne.selenide.Selenide.$;
 @Slf4j
 public class Context {
     private final GroceryDadConfig.Scraper config;
-    private final Cache.Factory cacheFactory;
-    private final PermissionTree permissions;
     private final ViewFactory viewFactory;
+    private final Cache.Factory cacheFactory;
+    private final Allowlist allowlist;
 
     public Context(GroceryDadConfig.Scraper config) {
         this.config = config;
-        this.cacheFactory = Cache.factory(config.cache.directory);
-        this.permissions = buildCategoryPermissionTree(config);
         this.viewFactory = ViewFactory.get(config.namespace);
+        this.cacheFactory = Cache.factory(config.cache.directory);
+        this.allowlist = allowlist(config);
     }
 
     public final boolean canOpen(Link link) {
-        return permissions.allowed(link.namePath());
+        return allowlist.allowed(link.namePath());
     }
 
     public final void traverse(Consumer<Product> handler) {
@@ -84,12 +84,13 @@ public class Context {
         return Jsoup.parse(html, link.url);
     }
 
-    private static PermissionTree buildCategoryPermissionTree(GroceryDadConfig.Scraper config) {
-        var tree = new PermissionTree();
-        config.categories.forEach(tree::add);
-        return tree;
+    private static Allowlist allowlist(GroceryDadConfig.Scraper config) {
+        var allowlist = new Allowlist();
+        config.categories.stream().map(Path::of).forEach(allowlist::put);
+        return allowlist;
     }
 
+    // todo: move to LiveView
     private static void waitUntilPageReady() {
         var driver = WebDriverRunner.getWebDriver();
         var timeout = Duration.ofMillis(Configuration.timeout);
