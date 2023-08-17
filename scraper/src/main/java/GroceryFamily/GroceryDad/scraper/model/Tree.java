@@ -5,10 +5,11 @@ import lombok.ToString;
 import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
+import java.util.function.BiFunction;
 import java.util.function.Consumer;
 
 @ToString
-class Tree<KEY extends Comparable<KEY>, VALUE> {
+public class Tree<KEY extends Comparable<KEY>, VALUE> {
     @ToString
     static class Node<KEY extends Comparable<KEY>, VALUE> {
         private VALUE value;
@@ -50,6 +51,13 @@ class Tree<KEY extends Comparable<KEY>, VALUE> {
             if (children.isEmpty()) return value != null ? List.of(value) : List.of();
             return children.values().stream().flatMap(child -> child.leaves().stream()).toList();
         }
+
+        private void print(StringBuilder sb, String indent, BiFunction<KEY, VALUE, String> print) {
+            children.forEach((key, child) -> {
+                sb.append(indent).append(print.apply(key, child.value)).append('\n');
+                child.print(sb, indent + "  ", print);
+            });
+        }
     }
 
     final Node<KEY, VALUE> root = new Node<>();
@@ -58,7 +66,7 @@ class Tree<KEY extends Comparable<KEY>, VALUE> {
         return root.get(path);
     }
 
-    void put(Path<KEY> path, VALUE value) {
+    public void put(Path<KEY> path, VALUE value) {
         root.put(path, value);
     }
 
@@ -76,5 +84,11 @@ class Tree<KEY extends Comparable<KEY>, VALUE> {
 
     List<VALUE> leaves() {
         return root.leaves();
+    }
+
+    String print(BiFunction<KEY, VALUE, String> print) {
+        var sb = new StringBuilder();
+        root.print(sb, "", print);
+        return sb.toString();
     }
 }

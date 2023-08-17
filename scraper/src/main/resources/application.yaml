@@ -10,40 +10,43 @@ GroceryDad:
     barbora:
       namespace: barbora.ee
       url: https://barbora.ee
+      live:
+        waitTimeout: 5s
+        sleepDelay: 500ms
+      cache:
+        directory: cache/barbora
+        compressed: true
       allowlist:
         - [ "Vegetables and fruits", "Fruits and berries", "Bananas", "*" ]
         - [ "Household and pets", "Pets", "Dry dog food", "*" ]
         - [ "Dairy and eggs", "Yoghurts and desserts", "Flavored yoghurts", "*" ] # two product pages
-      cache:
-        directory: cache/barbora
-        compressed: true
-      live:
-        waitTimeout: 5s
-        sleepDelay: 500ms
 
     prisma:
       namespace: prismamarket.ee
       url: https://prismamarket.ee
-      allowlist:
-        - [ "Groceries", "Fruits and vegetables", "Fruit", "*" ] # need to scroll down
-        - [ "Groceries", "Pets", "Dog food", "*" ]
-      cache:
-        directory: cache/prisma
-        compressed: true
       live:
         waitTimeout: 5s
         sleepDelay: 500ms
+      cache:
+        directory: cache/prisma
+        compressed: true
+      allowlist:
+        - [ "Groceries", "Fruits and vegetables", "Fruit", "*" ] # need to scroll down
+        - [ "Groceries", "Pets", "Dog food", "*" ]
 
     rimi:
       namespace: rimi.ee
       url: https://rimi.ee/epood/en
+      live:
+        waitTimeout: 5s
+        sleepDelay: 500ms
+      cache:
+        directory: cache/rimi
+        compressed: true
       allowlist:
         - [ "Fruits, vegetables, flowers", "Fruits", "Bananas", "*" ]
         - [ "Pet goods", "Dog food", "Dry food for dogs", "*" ]
         - [ "Pre-order festivity meals", "Pre-order appetizers and selection plates", "*" ] # two pages
-      cache:
-        directory: cache/rimi
-        compressed: true
-      live:
-        waitTimeout: 5s
-        sleepDelay: 500ms
+
+logging.level:
+  org.springframework.core: ERROR

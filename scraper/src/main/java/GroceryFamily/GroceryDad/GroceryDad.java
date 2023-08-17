@@ -2,43 +2,47 @@ package GroceryFamily.GroceryDad;
 
 import GroceryFamily.GroceryDad.scraper.Scraper;
 import GroceryFamily.GroceryElders.api.client.ProductAPIClient;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import java.util.HashMap;
-import java.util.Map;
 import java.util.concurrent.Executors;
 
 import static java.lang.String.format;
 
+@Slf4j
 @SpringBootApplication
 class GroceryDad implements CommandLineRunner {
-    private final Map<String, Scraper> scrapers = new HashMap<>();
-    private final ProductAPIClient client;
+    private final GroceryDadConfig config;
 
-    GroceryDad(GroceryDadConfig dadConfig) {
-        for (var name : dadConfig.enabled) {
-            var config = dadConfig.scrapers.get(name);
-            if (config == null) throw new IllegalArgumentException(format("Missing %s config", name));
-            scrapers.put(name, new Scraper(config));
-        }
-        client = new ProductAPIClient(dadConfig.api.uri);
+    GroceryDad(GroceryDadConfig config) {
+        this.config = config;
     }
 
     @Override
     public void run(String... args) {
+        var client = new ProductAPIClient(config.api.uri);
         //noinspection resource
         var threadPool = Executors.newCachedThreadPool();
         try {
-            scrapers.forEach((name, scraper) -> threadPool.execute(() -> {
-                Thread.currentThread().setName(name + "-worker");
-                scraper.scrap(client::update);
-            }));
+            for (var name : config.enabled) {
+                threadPool.execute(() -> {
+                    Thread.currentThread().setName(name + "-worker");
+                    var visited = Scraper.scrap(scraperConfig(name), client::update);
+                    log.info("Visited {} links: \n{}", name, visited);
+                });
+            }
         } finally {
             threadPool.shutdown();
-            scrapers.values().forEach(Scraper::destroy);
         }
+    }
+
+    private GroceryDadConfig.Scraper scraperConfig(String name) {
+        if (!config.scrapers.containsKey(name)) {
+            throw new IllegalArgumentException(format("Missing %s config", name));
+        }
+        return config.scrapers.get(name);
     }
 
     public static void main(String... args) {
