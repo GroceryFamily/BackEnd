@@ -1,7 +1,7 @@
 package GroceryFamily.GroceryDad.scraper;
 
 import GroceryFamily.GroceryDad.GroceryDadConfig;
-import GroceryFamily.GroceryDad.scraper.cache.Cache;
+import GroceryFamily.GroceryDad.scraper.cache.CacheFactory;
 import GroceryFamily.GroceryDad.scraper.driver.LazyDriver;
 import GroceryFamily.GroceryDad.scraper.model.Allowlist;
 import GroceryFamily.GroceryDad.scraper.model.Link;
@@ -30,7 +30,7 @@ public class Scraper {
     private final GroceryDadConfig.Scraper config;
     private final ProductAPIClient client;
     private final ViewFactory viewFactory;
-    private final Cache.Factory cacheFactory;
+    private final CacheFactory cacheFactory;
     private final Allowlist allowlist;
     private final LazyDriver driver;
 
@@ -39,7 +39,7 @@ public class Scraper {
         this.config = config;
         this.client = client;
         this.viewFactory = ViewFactory.get(config.namespace);
-        this.cacheFactory = Cache.factory(config.cache.directory);
+        this.cacheFactory = CacheFactory.builder().directory(config.cache.directory).compressed(true).build();
         this.allowlist = allowlist(config);
         this.driver = new LazyDriver(config); // todo: destroy
     }
