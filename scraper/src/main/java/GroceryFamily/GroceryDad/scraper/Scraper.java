@@ -8,22 +8,14 @@ import GroceryFamily.GroceryDad.scraper.model.Link;
 import GroceryFamily.GroceryDad.scraper.model.Path;
 import GroceryFamily.GroceryDad.scraper.model.Source;
 import GroceryFamily.GroceryDad.scraper.view.ViewFactory;
-import GroceryFamily.GroceryDad.scraper.view.barbora.BarboraViewFactory;
-import GroceryFamily.GroceryDad.scraper.view.prisma.PrismaViewFactory;
-import GroceryFamily.GroceryDad.scraper.view.rimi.RimiViewFactory;
-import GroceryFamily.GroceryElders.domain.Namespace;
 import GroceryFamily.GroceryElders.domain.Product;
 import lombok.extern.slf4j.Slf4j;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 
 import java.util.HashSet;
-import java.util.Map;
 import java.util.Set;
 import java.util.function.Consumer;
-import java.util.function.Function;
-
-import static java.lang.String.format;
 
 // todo: think about robots.txt
 //  https://en.wikipedia.org/wiki/Robots.txt
@@ -31,11 +23,6 @@ import static java.lang.String.format;
 //  https://developers.google.com/search/docs/crawling-indexing/robots/robots_txt
 @Slf4j
 public class Scraper {
-    private static final Map<String, Function<GroceryDadConfig.Scraper, ViewFactory>> FACTORIES = Map.of(
-            Namespace.BARBORA, BarboraViewFactory::new,
-            Namespace.PRISMA, PrismaViewFactory::new,
-            Namespace.RIMI, RimiViewFactory::new);
-
     private final GroceryDadConfig.Scraper config;
     private final ViewFactory viewFactory;
     private final CacheFactory cacheFactory;
@@ -44,7 +31,7 @@ public class Scraper {
 
     public Scraper(GroceryDadConfig.Scraper config) {
         this.config = config;
-        this.viewFactory = viewFactory(config);
+        this.viewFactory = ViewFactory.create(config);
         this.cacheFactory = new CacheFactory(config.cache);
         this.allowlist = allowlist(config);
         this.driver = new LazyDriver(config.live);
@@ -94,14 +81,6 @@ public class Scraper {
 
     public void destroy() {
         driver.destroy();
-    }
-
-    public static ViewFactory viewFactory(GroceryDadConfig.Scraper config) {
-        var factory = FACTORIES.get(config.namespace);
-        if (factory == null) {
-            throw new UnsupportedOperationException(format("Unrecognized namespace '%s'", config.namespace));
-        }
-        return factory.apply(config);
     }
 
     private static Allowlist allowlist(GroceryDadConfig.Scraper config) {
