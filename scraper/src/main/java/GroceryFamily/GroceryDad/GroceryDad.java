@@ -26,7 +26,6 @@ class GroceryDad implements CommandLineRunner {
     }
 
     public static void main(String... args) {
-        System.setProperty(CHROME_DRIVER_SILENT_OUTPUT_PROPERTY, "true");
         SpringApplication.run(GroceryDad.class, args);
         System.exit(0);
     }

@@ -46,7 +46,7 @@ GroceryDad:
       allowlist:
         - [ "Fruits, vegetables, flowers", "Fruits", "Bananas", "*" ]
         - [ "Pet goods", "Dog food", "Dry food for dogs", "*" ]
-        - [ "Pre-order festivity meals", "Pre-order appetizers and selection plates", "*" ] # two pages
+        - [ "Pre-order festivity meals", "Pre-order appetizers and selection plates", "*" ] # two product pages
 
 logging.level:
   com.codeborne.selenide: ERROR

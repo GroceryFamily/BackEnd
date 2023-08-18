@@ -13,6 +13,7 @@ import java.util.concurrent.Executors;
 import java.util.function.Consumer;
 
 import static java.lang.String.format;
+import static org.openqa.selenium.chrome.ChromeDriverService.CHROME_DRIVER_SILENT_OUTPUT_PROPERTY;
 
 // todo: think about robots.txt
 //  https://en.wikipedia.org/wiki/Robots.txt
@@ -24,6 +25,10 @@ public class Scraper {
     private final GroceryDadConfig config;
     private final ExecutorService threadPool = Executors.newCachedThreadPool();
 
+    static {
+        System.setProperty(CHROME_DRIVER_SILENT_OUTPUT_PROPERTY, "true");
+    }
+
     Scraper(GroceryDadConfig config) {
         this.config = config;
     }
@@ -33,9 +38,12 @@ public class Scraper {
         for (var name : config.enabled) {
             threadPool.execute(() -> {
                 Thread.currentThread().setName(name + "-worker");
-                var visited = Worker.traverse(workerConfig(name), handler);
-                log.info("Visited {} links: \n{}", name, visited);
-                finish.countDown();
+                try {
+                    var visited = Worker.traverse(workerConfig(name), handler);
+                    log.info("Visited {} links: \n{}", name, visited);
+                } finally {
+                    finish.countDown();
+                }
             });
         }
         try {
