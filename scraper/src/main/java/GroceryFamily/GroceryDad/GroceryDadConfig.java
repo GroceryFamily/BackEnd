@@ -1,7 +1,7 @@
 package GroceryFamily.GroceryDad;
 
 import GroceryFamily.GroceryElders.api.client.APIClientConfig;
-import lombok.Data;
+import lombok.Builder;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.boot.context.properties.NestedConfigurationProperty;
 
@@ -10,7 +10,7 @@ import java.time.Duration;
 import java.util.List;
 import java.util.Map;
 
-@Data
+@Builder
 @ConfigurationProperties("grocery-dad")
 public class GroceryDadConfig {
     @NestedConfigurationProperty
@@ -18,7 +18,7 @@ public class GroceryDadConfig {
     public final List<String> enabled;
     public final Map<String, Scraper> scrapers;
 
-    @Data
+    @Builder
     public static class Scraper {
         public final String namespace;
         public final String url;
@@ -26,13 +26,13 @@ public class GroceryDadConfig {
         public final Cache cache;
         public final Live live;
 
-        @Data
+        @Builder
         public static class Cache {
             public final Path directory;
             public final boolean compressed;
         }
 
-        @Data
+        @Builder
         public static class Live {
             public final Duration waitTimeout;
             public final Duration sleepDelay;

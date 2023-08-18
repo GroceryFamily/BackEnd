@@ -10,4 +10,4 @@ import org.springframework.retry.annotation.EnableRetry;
 @Import(value = {GroceryEldersApplicationConfig.class})
 @EnableJpaRepositories
 @EnableRetry
-public class GroceryMomApplicationConfig {}
+class GroceryMomApplicationConfig {}
