@@ -5,10 +5,10 @@ import com.codeborne.selenide.SelenideConfig;
 import com.codeborne.selenide.SelenideDriver;
 
 public class LazyDriver {
-    private final GroceryDadConfig.Scraper.Live config;
+    private final GroceryDadConfig.Platform.Live config;
     private SelenideDriver driver;
 
-    public LazyDriver(GroceryDadConfig.Scraper.Live config) {
+    public LazyDriver(GroceryDadConfig.Platform.Live config) {
         this.config = config;
     }
 
@@ -19,7 +19,7 @@ public class LazyDriver {
         return driver;
     }
 
-    private static SelenideConfig selenideConfig(GroceryDadConfig.Scraper.Live config) {
+    private static SelenideConfig selenideConfig(GroceryDadConfig.Platform.Live config) {
         return new SelenideConfig()
                 .browserSize("1920x1080")
                 .timeout(config.waitTimeout.toMillis())

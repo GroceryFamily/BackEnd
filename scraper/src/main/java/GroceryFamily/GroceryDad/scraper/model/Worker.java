@@ -4,33 +4,33 @@ import GroceryFamily.GroceryDad.GroceryDadConfig;
 import GroceryFamily.GroceryDad.scraper.cache.CacheFactory;
 import GroceryFamily.GroceryDad.scraper.driver.LazyDriver;
 import GroceryFamily.GroceryDad.scraper.view.ViewFactory;
-import GroceryFamily.GroceryElders.domain.Product;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 
 import java.util.HashSet;
 import java.util.Set;
-import java.util.function.Consumer;
 
 import static java.lang.String.format;
 
 public class Worker {
+    private final String platform;
     private final Link root;
     private final LazyDriver driver;
     private final ViewFactory viewFactory;
     private final CacheFactory cacheFactory;
     private final Allowlist allowlist = new Allowlist();
-    private final Consumer<Product> handler;
+    private final Listener listener;
     private final Set<Path<String>> seen = new HashSet<>();
     private final SourceTree visited = new SourceTree();
 
-    private Worker(GroceryDadConfig.Scraper config, Consumer<Product> handler) {
+    private Worker(String platform, GroceryDadConfig.Platform config, CacheFactory cacheFactory, Listener listener) {
+        this.platform = platform;
         root = Link.builder().code(config.namespace).url(config.url).build();
         driver = new LazyDriver(config.live);
         viewFactory = ViewFactory.create(config);
-        cacheFactory = new CacheFactory(config.cache);
+        this.cacheFactory = cacheFactory;
         config.allowlist.stream().map(Path::of).forEach(allowlist::put);
-        this.handler = handler;
+        this.listener = listener;
     }
 
     private void traverse() {
@@ -85,12 +85,12 @@ public class Worker {
 
     private void handleProduct(Document document, Source selected) {
         var productView = viewFactory.productView(document, selected);
-        handler.accept(productView.product());
+        listener.product(platform, productView.product(), selected);
         visited.put(selected.namePath(), selected);
     }
 
     private Document load(Link link) {
-        var cache = cacheFactory.html(link);
+        var cache = cacheFactory.html(platform, link);
         var html = cache.load(link.code);
         if (html == null) {
             html = viewFactory.liveView(driver.get()).open(link);
@@ -99,8 +99,8 @@ public class Worker {
         return Jsoup.parse(html, link.url);
     }
 
-    public static SourceTree traverse(GroceryDadConfig.Scraper config, Consumer<Product> handler) {
-        var worker = new Worker(config, handler);
+    public static SourceTree traverse(String platform, GroceryDadConfig.Platform config, CacheFactory cacheFactory, Listener listener) {
+        var worker = new Worker(platform, config, cacheFactory, listener);
         worker.traverse();
         return worker.visited;
     }

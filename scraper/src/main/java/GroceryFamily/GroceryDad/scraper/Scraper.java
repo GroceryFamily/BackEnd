@@ -1,8 +1,9 @@
 package GroceryFamily.GroceryDad.scraper;
 
 import GroceryFamily.GroceryDad.GroceryDadConfig;
+import GroceryFamily.GroceryDad.scraper.cache.CacheFactory;
+import GroceryFamily.GroceryDad.scraper.model.Listener;
 import GroceryFamily.GroceryDad.scraper.model.Worker;
-import GroceryFamily.GroceryElders.domain.Product;
 import jakarta.annotation.PreDestroy;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
@@ -10,7 +11,6 @@ import org.springframework.stereotype.Component;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
-import java.util.function.Consumer;
 
 import static java.lang.String.format;
 import static org.openqa.selenium.chrome.ChromeDriverService.CHROME_DRIVER_SILENT_OUTPUT_PROPERTY;
@@ -23,24 +23,26 @@ import static org.openqa.selenium.chrome.ChromeDriverService.CHROME_DRIVER_SILEN
 @Component
 public class Scraper {
     private final GroceryDadConfig config;
+    private final CacheFactory cacheFactory;
     private final ExecutorService threadPool = Executors.newCachedThreadPool();
 
     static {
         System.setProperty(CHROME_DRIVER_SILENT_OUTPUT_PROPERTY, "true");
     }
 
-    Scraper(GroceryDadConfig config) {
+    Scraper(GroceryDadConfig config, CacheFactory cacheFactory) {
         this.config = config;
+        this.cacheFactory = cacheFactory;
     }
 
-    public void scrap(Consumer<Product> handler) {
-        var finish = new CountDownLatch(config.enabled.size());
-        for (var name : config.enabled) {
+    public void scrap(Listener listener) {
+        var finish = new CountDownLatch(config.enabledPlatforms.size());
+        for (var platform : config.enabledPlatforms) {
             threadPool.execute(() -> {
-                Thread.currentThread().setName(name + "-worker");
+                Thread.currentThread().setName(platform + "-worker");
                 try {
-                    var visited = Worker.traverse(workerConfig(name), handler);
-                    log.info("Visited {} links: \n{}", name, visited);
+                    var visited = Worker.traverse(platform, workerConfig(platform), cacheFactory, listener);
+                    log.info("Visited {} links: \n{}", platform, visited);
                 } finally {
                     finish.countDown();
                 }
@@ -53,11 +55,11 @@ public class Scraper {
         }
     }
 
-    private GroceryDadConfig.Scraper workerConfig(String name) {
-        if (!config.scrapers.containsKey(name)) {
+    private GroceryDadConfig.Platform workerConfig(String name) {
+        if (!config.platforms.containsKey(name)) {
             throw new IllegalArgumentException(format("Missing %s config", name));
         }
-        return config.scrapers.get(name);
+        return config.platforms.get(name);
     }
 
     @PreDestroy

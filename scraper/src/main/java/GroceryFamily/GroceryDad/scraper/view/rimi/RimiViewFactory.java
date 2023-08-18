@@ -7,7 +7,7 @@ import com.codeborne.selenide.SelenideDriver;
 import org.jsoup.nodes.Document;
 
 public class RimiViewFactory extends ViewFactory {
-    public RimiViewFactory(GroceryDadConfig.Scraper config) {
+    public RimiViewFactory(GroceryDadConfig.Platform config) {
         super(config);
     }
 

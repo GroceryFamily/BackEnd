@@ -1,21 +1,20 @@
 GroceryDad:
   api.uri: http://localhost:8080
 
-  enabled:
+  cacheDirectory: cache
+
+  enabledPlatforms:
     - barbora
     - prisma
     - rimi
 
-  scrapers:
+  platforms:
     barbora:
       namespace: barbora.ee
       url: https://barbora.ee
       live:
         waitTimeout: 5s
         sleepDelay: 500ms
-      cache:
-        directory: cache/barbora
-        compressed: true
       allowlist:
         - [ "Dairy and eggs", "Yoghurts and desserts", "Flavored yoghurts", "*" ] # two product pages
         - [ "Home and leisure", "Gardening", "Seeds", "*" ]
@@ -28,9 +27,6 @@ GroceryDad:
       live:
         waitTimeout: 5s
         sleepDelay: 500ms
-      cache:
-        directory: cache/prisma
-        compressed: true
       allowlist:
         - [ "Groceries", "Fruits and vegetables", "Fruit", "*" ] # need to scroll down
         - [ "Groceries", "Milk", "Yogurt", "*" ]
@@ -42,9 +38,6 @@ GroceryDad:
       live:
         waitTimeout: 5s
         sleepDelay: 500ms
-      cache:
-        directory: cache/rimi
-        compressed: true
       allowlist:
         - [ "Fruits, vegetables, flowers", "Fruits", "Bananas", "*" ]
         - [ "Meat and fish products", "Fish roe and seafood", "Fish roe", "*" ]

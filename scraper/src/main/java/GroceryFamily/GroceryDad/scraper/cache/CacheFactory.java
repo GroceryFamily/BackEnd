@@ -1,26 +1,23 @@
 package GroceryFamily.GroceryDad.scraper.cache;
 
-import GroceryFamily.GroceryDad.GroceryDadConfig;
 import GroceryFamily.GroceryDad.scraper.model.Link;
 import io.github.antivoland.sfc.FileCache;
 import io.github.antivoland.sfc.FileType;
-import lombok.Builder;
+
+import java.nio.file.Path;
 
 public class CacheFactory {
-    private final GroceryDadConfig.Scraper.Cache config;
+    private final Path directory;
 
-    public CacheFactory(GroceryDadConfig.Scraper.Cache config) {
-        this.config = config;
+    public CacheFactory(Path directory) {
+        this.directory = directory;
     }
 
-    public FileCache<String> html(Link link) {
-        var subdirectory = config.directory;
-        for (var segment : link.codePath().segments()) {
-            subdirectory = subdirectory.resolve(segment);
+    public FileCache<String> html(String platform, Link link) {
+        var subdirectory = directory.resolve(platform);
+        for (var code : link.codePath()) {
+            subdirectory = subdirectory.resolve(code);
         }
-        var fileType = FileType.text("html");
-        return config.compressed
-                ? FileCache.compressed(subdirectory, fileType)
-                : FileCache.regular(subdirectory, fileType);
+        return FileCache.compressed(subdirectory, FileType.text("html"));
     }
 }

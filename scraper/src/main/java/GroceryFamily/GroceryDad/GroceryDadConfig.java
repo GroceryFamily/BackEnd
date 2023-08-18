@@ -15,22 +15,16 @@ import java.util.Map;
 public class GroceryDadConfig {
     @NestedConfigurationProperty
     public final APIClientConfig api;
-    public final List<String> enabled;
-    public final Map<String, Scraper> scrapers;
+    public final Path cacheDirectory;
+    public final List<String> enabledPlatforms;
+    public final Map<String, Platform> platforms;
 
     @Builder
-    public static class Scraper {
+    public static class Platform {
         public final String namespace;
         public final String url;
-        public final List<List<String>> allowlist;
-        public final Cache cache;
         public final Live live;
-
-        @Builder
-        public static class Cache {
-            public final Path directory;
-            public final boolean compressed;
-        }
+        public final List<List<String>> allowlist;
 
         @Builder
         public static class Live {

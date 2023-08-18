@@ -7,7 +7,7 @@ import com.codeborne.selenide.SelenideDriver;
 import org.jsoup.nodes.Document;
 
 public class BarboraViewFactory extends ViewFactory {
-    public BarboraViewFactory(GroceryDadConfig.Scraper config) {
+    public BarboraViewFactory(GroceryDadConfig.Platform config) {
         super(config);
     }
 

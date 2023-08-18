@@ -12,9 +12,9 @@ import org.jsoup.nodes.Document;
 import static java.lang.String.format;
 
 public abstract class ViewFactory {
-    protected final GroceryDadConfig.Scraper config;
+    protected final GroceryDadConfig.Platform config;
 
-    protected ViewFactory(GroceryDadConfig.Scraper config) {
+    protected ViewFactory(GroceryDadConfig.Platform config) {
         this.config = config;
     }
 
@@ -26,7 +26,7 @@ public abstract class ViewFactory {
 
     public abstract ProductView productView(Document document, Source selected);
 
-    public static ViewFactory create(GroceryDadConfig.Scraper config) {
+    public static ViewFactory create(GroceryDadConfig.Platform config) {
         return switch (config.namespace) {
             case Namespace.BARBORA -> new BarboraViewFactory(config);
             case Namespace.PRISMA -> new PrismaViewFactory(config);

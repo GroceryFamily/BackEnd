@@ -7,7 +7,7 @@ import com.codeborne.selenide.SelenideDriver;
 import org.jsoup.nodes.Document;
 
 public class PrismaViewFactory extends ViewFactory {
-    public PrismaViewFactory(GroceryDadConfig.Scraper config) {
+    public PrismaViewFactory(GroceryDadConfig.Platform config) {
         super(config);
     }
 
