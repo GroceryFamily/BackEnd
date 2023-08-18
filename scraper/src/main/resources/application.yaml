@@ -35,4 +35,4 @@ GroceryDad:
       categories:
         - [ "Groceries", "Canned products", "Mushrooms" ]
         - [ "Bread, pastry, confectionery", "Rimi bakeries" ]
-      timeout: 10s
+      timeout: 20s
