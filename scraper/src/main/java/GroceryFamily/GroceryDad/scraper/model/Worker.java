@@ -64,7 +64,7 @@ public class Worker {
             return;
         }
 
-        throw new UnsupportedOperationException(format("Source %s is not supported", selected.source));
+        throw new UnsupportedOperationException(format("Source type %s is not supported", selected.source));
     }
 
     private boolean handleCategory(Document document, Source selected) {
