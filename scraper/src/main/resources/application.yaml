@@ -17,9 +17,10 @@ GroceryDad:
         directory: cache/barbora
         compressed: true
       allowlist:
-        - [ "Vegetables and fruits", "Fruits and berries", "Bananas", "*" ]
-        - [ "Household and pets", "Pets", "Dry dog food", "*" ]
         - [ "Dairy and eggs", "Yoghurts and desserts", "Flavored yoghurts", "*" ] # two product pages
+        - [ "Home and leisure", "Gardening", "Seeds", "*" ]
+        - [ "Household and pets", "Pets", "Dry dog food", "*" ]
+        - [ "Vegetables and fruits", "Fruits and berries", "Bananas", "*" ]
 
     prisma:
       namespace: prismamarket.ee
@@ -32,6 +33,7 @@ GroceryDad:
         compressed: true
       allowlist:
         - [ "Groceries", "Fruits and vegetables", "Fruit", "*" ] # need to scroll down
+        - [ "Groceries", "Milk", "Yogurt", "*" ]
         - [ "Groceries", "Pets", "Dog food", "*" ]
 
     rimi:
@@ -45,6 +47,7 @@ GroceryDad:
         compressed: true
       allowlist:
         - [ "Fruits, vegetables, flowers", "Fruits", "Bananas", "*" ]
+        - [ "Meat and fish products", "Fish roe and seafood", "Fish roe", "*" ]
         - [ "Pet goods", "Dog food", "Dry food for dogs", "*" ]
         - [ "Pre-order festivity meals", "Pre-order appetizers and selection plates", "*" ] # two product pages
 
