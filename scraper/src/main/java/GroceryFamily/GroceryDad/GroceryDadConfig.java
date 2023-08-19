@@ -16,6 +16,7 @@ public class GroceryDadConfig {
     @NestedConfigurationProperty
     public final APIClientConfig api;
     public final Path cacheDirectory;
+    public final Path sampleDirectory;
     public final List<String> enabledPlatforms;
     public final Map<String, Platform> platforms;
 

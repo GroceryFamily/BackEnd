@@ -1,6 +1,5 @@
 package GroceryFamily.GroceryDad.scraper.model;
 
-import GroceryFamily.GroceryElders.domain.Category;
 import lombok.Builder;
 import lombok.ToString;
 
@@ -20,16 +19,6 @@ public class Link {
 
     public Path<String> namePath() {
         return source != null ? source.namePath().followedBy(name) : Path.empty();
-    }
-
-    public static Link category(Category category, Source source) {
-        return Link
-                .builder()
-                .code(category.code)
-                .name(category.name)
-                .url(category.url)
-                .source(source)
-                .build();
     }
 
     public static Link productList(int pageNo, String url, Source source) {

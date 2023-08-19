@@ -1,7 +1,7 @@
 package GroceryFamily.GroceryDad.scraper.worker;
 
 import GroceryFamily.GroceryDad.GroceryDadConfig;
-import GroceryFamily.GroceryDad.scraper.cache.CacheFactory;
+import GroceryFamily.GroceryDad.scraper.cache.HTMLCache;
 import GroceryFamily.GroceryDad.scraper.model.*;
 import GroceryFamily.GroceryDad.scraper.view.ViewFactory;
 import lombok.Builder;
@@ -14,10 +14,10 @@ import static java.lang.String.format;
 public class Worker {
     private final String platform;
     private final GroceryDadConfig.Platform config;
-    private final CacheFactory cacheFactory;
+    private final HTMLCache htmlCache;
     private final ViewFactory viewFactory;
     private final Allowlist allowlist;
-    private final Listener listener;
+    private final WorkerEventListener listener;
 
     public SourceTree traverse() {
         var state = new WorkerState(config.live);
@@ -30,29 +30,33 @@ public class Worker {
     }
 
     private void traverse(Link selected, WorkerState state) {
-        if (state.seen.contains(selected.codePath())) return;
-        state.seen.add(selected.codePath());
-        if (!allowlist.allowed(selected.namePath())) return;
+        try {
+            if (state.seen.contains(selected.codePath())) return;
+            state.seen.add(selected.codePath());
+            if (!allowlist.allowed(selected.namePath())) return;
 
-        var document = load(selected, state); // todo: flexible delays based on a platform response latency
+            var document = load(selected, state); // todo: flexible delays based on a platform response latency
 
-        if (selected.source == null) {
-            handleCategory(document, Source.category(selected), state);
-            return;
+            if (selected.source == null) {
+                handleCategory(document, Source.category(selected), state);
+                return;
+            }
+
+            if (selected.source.type == SourceType.PRODUCT_LIST) {
+                handleProduct(document, Source.product(selected), state);
+                return;
+            }
+
+            if (selected.source.type == SourceType.CATEGORY) {
+                if (handleCategory(document, Source.category(selected), state)) return;
+                handleProductList(document, Source.productList(selected), state);
+                return;
+            }
+
+            throw new UnsupportedOperationException(format("Source type %s is not supported", selected.source));
+        } catch (Throwable error) {
+            listener.error(platform, selected, error);
         }
-
-        if (selected.source.type == SourceType.PRODUCT_LIST) {
-            handleProduct(document, Source.product(selected), state);
-            return;
-        }
-
-        if (selected.source.type == SourceType.CATEGORY) {
-            if (handleCategory(document, Source.category(selected), state)) return;
-            handleProductList(document, Source.productList(selected), state);
-            return;
-        }
-
-        throw new UnsupportedOperationException(format("Source type %s is not supported", selected.source));
     }
 
     private boolean handleCategory(Document document, Source selected, WorkerState state) {
@@ -73,16 +77,15 @@ public class Worker {
 
     private void handleProduct(Document document, Source selected, WorkerState state) {
         var productView = viewFactory.productView(document, selected);
-        listener.product(platform, productView.product(), selected);
+        listener.product(platform, selected.link(), productView.product());
         state.visited.put(selected.namePath(), selected);
     }
 
     private Document load(Link link, WorkerState state) {
-        var cache = cacheFactory.html(platform, link);
-        var html = cache.load(link.code);
+        var html = htmlCache.load(platform, link);
         if (html == null) {
             html = viewFactory.liveView(state.driver()).open(link);
-            cache.save(link.code, html);
+            htmlCache.save(platform, link, html);
         }
         return Jsoup.parse(html, link.url);
     }

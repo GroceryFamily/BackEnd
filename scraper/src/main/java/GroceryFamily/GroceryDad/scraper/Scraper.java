@@ -1,7 +1,7 @@
 package GroceryFamily.GroceryDad.scraper;
 
 import GroceryFamily.GroceryDad.GroceryDadConfig;
-import GroceryFamily.GroceryDad.scraper.model.Listener;
+import GroceryFamily.GroceryDad.scraper.worker.WorkerEventListener;
 import GroceryFamily.GroceryDad.scraper.worker.WorkerFactory;
 import jakarta.annotation.PreDestroy;
 import lombok.extern.slf4j.Slf4j;
@@ -33,7 +33,7 @@ public class Scraper {
         this.workerFactory = workerFactory;
     }
 
-    public void scrap(Listener listener) {
+    public void scrap(WorkerEventListener listener) {
         var finish = new CountDownLatch(config.enabledPlatforms.size());
         for (var platform : config.enabledPlatforms) {
             threadPool.execute(() -> {
