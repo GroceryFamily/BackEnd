@@ -12,7 +12,6 @@
     <modules>
         <module>ai</module>
         <module>core</module>
-        <module>sandbox</module>
         <module>scraper</module>
         <module>server</module>
     </modules>
@@ -40,6 +39,11 @@
     <dependencyManagement>
         <dependencies>
             <!-- https://github.com/GroceryFamily -->
+            <dependency>
+                <groupId>GroceryFamily.GroceryElders</groupId>
+                <artifactId>api-client</artifactId>
+                <version>${project.version}</version>
+            </dependency>
             <dependency>
                 <groupId>GroceryFamily.GroceryElders</groupId>
                 <artifactId>domain</artifactId>

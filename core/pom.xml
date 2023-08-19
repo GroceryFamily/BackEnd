@@ -15,6 +15,7 @@
     <packaging>pom</packaging>
 
     <modules>
+        <module>api-client</module>
         <module>domain</module>
     </modules>
 

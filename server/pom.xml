@@ -14,6 +14,7 @@
     <artifactId>GroceryMom</artifactId>
 
     <dependencies>
+        <!-- https://github.com/GroceryFamily -->
         <dependency>
             <groupId>GroceryFamily.GroceryElders</groupId>
             <artifactId>domain</artifactId>
@@ -39,6 +40,13 @@
             <artifactId>mysql-connector-j</artifactId>
             <scope>runtime</scope>
         </dependency>
+
+        <!-- https://github.com/GroceryFamily :: test -->
+        <dependency>
+            <groupId>GroceryFamily.GroceryElders</groupId>
+            <artifactId>api-client</artifactId>
+        </dependency>
+
 
         <!-- https://github.com/spring-projects :: test -->
         <dependency>

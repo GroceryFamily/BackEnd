@@ -14,9 +14,10 @@
     <artifactId>GrocerySis</artifactId>
 
     <dependencies>
+        <!-- https://github.com/GroceryFamily -->
         <dependency>
             <groupId>GroceryFamily.GroceryElders</groupId>
-            <artifactId>domain</artifactId>
+            <artifactId>api-client</artifactId>
         </dependency>
 
         <!-- https://github.com/spring-projects -->
