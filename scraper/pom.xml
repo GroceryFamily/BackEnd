@@ -19,6 +19,10 @@
             <groupId>GroceryFamily.GroceryElders</groupId>
             <artifactId>api-client</artifactId>
         </dependency>
+        <dependency>
+            <groupId>GroceryFamily.GroceryElders</groupId>
+            <artifactId>config</artifactId>
+        </dependency>
 
         <!-- https://github.com/spring-projects -->
         <dependency>
