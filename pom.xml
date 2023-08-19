@@ -49,6 +49,11 @@
                 <artifactId>domain</artifactId>
                 <version>${project.version}</version>
             </dependency>
+            <dependency>
+                <groupId>GroceryFamily.GroceryElders</groupId>
+                <artifactId>mysql-service</artifactId>
+                <version>${project.version}</version>
+            </dependency>
 
             <!-- https://github.com/spring-projects/spring-boot -->
             <dependency>

@@ -19,6 +19,10 @@
             <groupId>GroceryFamily.GroceryElders</groupId>
             <artifactId>domain</artifactId>
         </dependency>
+        <dependency>
+            <groupId>GroceryFamily.GroceryElders</groupId>
+            <artifactId>mysql-service</artifactId>
+        </dependency>
 
         <!-- https://github.com/spring-projects -->
         <dependency>

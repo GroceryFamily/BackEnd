@@ -17,6 +17,7 @@
     <modules>
         <module>api-client</module>
         <module>domain</module>
+        <module>mysql-service</module>
     </modules>
 
     <build>
