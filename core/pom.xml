@@ -12,32 +12,11 @@
 
     <groupId>GroceryFamily.GroceryElders</groupId>
     <artifactId>GroceryElders</artifactId>
+    <packaging>pom</packaging>
 
-    <dependencies>
-        <!-- https://github.com/spring-projects -->
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-context</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-core</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-web</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot</artifactId>
-        </dependency>
-
-        <!-- https://github.com/FasterXML/jackson-core -->
-        <dependency>
-            <groupId>com.fasterxml.jackson.core</groupId>
-            <artifactId>jackson-databind</artifactId>
-        </dependency>
-    </dependencies>
+    <modules>
+        <module>domain</module>
+    </modules>
 
     <build>
         <plugins>

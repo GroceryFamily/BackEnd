@@ -17,8 +17,7 @@
         <!-- https://github.com/GroceryFamily -->
         <dependency>
             <groupId>GroceryFamily.GroceryElders</groupId>
-            <artifactId>GroceryElders</artifactId>
-            <version>0.1.0-SNAPSHOT</version>
+            <artifactId>domain</artifactId>
         </dependency>
 
         <!-- https://github.com/spring-projects -->
