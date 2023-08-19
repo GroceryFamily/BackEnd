@@ -12,7 +12,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 @SuperBuilder
 public abstract class LiveView {
     protected final SelenideDriver driver;
-    protected final GroceryDadConfig.Scraper.Live config;
+    protected final GroceryDadConfig.Platform.Live config;
 
     public final String open(Link link) {
         driver.open(link.url);

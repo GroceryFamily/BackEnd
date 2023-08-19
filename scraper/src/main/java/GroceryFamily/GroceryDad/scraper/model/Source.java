@@ -53,6 +53,16 @@ public class Source {
         return categories;
     }
 
+    public Link link() {
+        return Link
+                .builder()
+                .code(code)
+                .name(name)
+                .url(url)
+                .source(parent)
+                .build();
+    }
+
     public static Source category(Link link) {
         return Source
                 .builder()
