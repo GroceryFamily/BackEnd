@@ -17,10 +17,6 @@ public class Price {
     @EqualsAndHashCode.Exclude
     public final BigDecimal amount;
 
-    public String id(String productId) {
-        return Id.build(productId, unit, currency);
-    }
-
     @EqualsAndHashCode.Include
     private BigDecimal amount() {
         return amount != null ? amount.stripTrailingZeros() : null;

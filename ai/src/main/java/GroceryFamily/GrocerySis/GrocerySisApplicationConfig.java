@@ -6,4 +6,4 @@ import org.springframework.context.annotation.Import;
 
 @Configuration
 @Import(value = {GroceryEldersApplicationConfig.class})
-public class GrocerySisApplicationConfig {}
+class GrocerySisApplicationConfig {}

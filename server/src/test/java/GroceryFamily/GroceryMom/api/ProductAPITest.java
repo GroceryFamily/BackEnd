@@ -24,6 +24,7 @@ import static org.hamcrest.Matchers.is;
 import static net.bytebuddy.matcher.ElementMatchers.isGenericGetter;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.ArgumentMatchers.anyInt;
+import static org.mockito.ArgumentMatchers.anyString;
 import static org.mockito.Mockito.when;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
@@ -35,15 +36,33 @@ class ProductAPITest {
     private ProductAPI productAPI;
     @Mock
     private ProductService service;
+    private List<Product> products;
 
     @BeforeEach
-    void setUp() throws Exception {
+    void setUp(){
         MockitoAnnotations.openMocks(this);
         this.mockMvc = MockMvcBuilders.standaloneSetup(productAPI).build();
+
     }
 
     @Test
     void testListProductsByPageSize() throws Exception{
+
+        Page<Product> testPage = Page.<Product>builder()
+                .content(products)
+                .nextPageToken("some_Token")
+                .build();
+        
+        when(service.list(anyInt())).thenReturn(testPage);
+
+        mockMvc.perform(MockMvcRequestBuilders.get("/products?pageSize=10"))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.nextPageToken", is("some_Token")));
+
+    }
+
+    @Test
+    void testListProductsByPageToken() throws Exception{
         Set<Price> prices= new HashSet<>();
         Price price = Price.builder()
                 .unit("pc")
@@ -67,22 +86,19 @@ class ProductAPITest {
         products.add(product);
         products.add(product1);
 
-        int pageSize=10;
-
+        System.out.println(products.size());
         Page<Product> testPage = Page.<Product>builder()
                 .content(products)
                 .nextPageToken("some_Token")
                 .build();
-        assertEquals("some_Token",testPage.nextPageToken);
-        
-        when(service.list(anyInt())).thenReturn(testPage);
 
-        mockMvc.perform(MockMvcRequestBuilders.get("/products?pageSize=10"))
+        when(service.list(anyString())).thenReturn(testPage);
+
+        mockMvc.perform(MockMvcRequestBuilders.get("/products?pageToken=some_token"))
                 .andExpect(status().isOk())
-                .andExpect(jsonPath("$.nextPageToken", is("some_Token")));
-
-
-
+                .andExpect(jsonPath("$.nextPageToken", is("some_Token")))
+                .andExpect(jsonPath("$.content.length()", is(2)));
 
     }
+
 }

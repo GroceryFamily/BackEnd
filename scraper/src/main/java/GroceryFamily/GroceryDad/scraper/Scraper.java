@@ -1,77 +1,61 @@
 package GroceryFamily.GroceryDad.scraper;
 
 import GroceryFamily.GroceryDad.GroceryDadConfig;
-import GroceryFamily.GroceryDad.scraper.cache.Cache;
-import GroceryFamily.GroceryElders.api.client.ProductAPIClient;
-import GroceryFamily.GroceryElders.domain.Namespace;
-import GroceryFamily.GroceryElders.domain.Product;
-import com.codeborne.selenide.Configuration;
-import io.github.antivoland.sfc.FileCache;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.ui.WebDriverWait;
+import GroceryFamily.GroceryDad.scraper.worker.WorkerEventListener;
+import GroceryFamily.GroceryDad.scraper.worker.WorkerFactory;
+import jakarta.annotation.PreDestroy;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.stereotype.Component;
 
-import java.util.List;
-import java.util.function.Consumer;
+import java.util.concurrent.CountDownLatch;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
-import static com.codeborne.selenide.Selenide.open;
-import static com.codeborne.selenide.Selenide.using;
-import static java.lang.String.format;
+import static org.openqa.selenium.chrome.ChromeDriverService.CHROME_DRIVER_SILENT_OUTPUT_PROPERTY;
 
 // todo: think about robots.txt
 //  https://en.wikipedia.org/wiki/Robots.txt
 //  https://github.com/google/robotstxt-java
 //  https://developers.google.com/search/docs/crawling-indexing/robots/robots_txt
-public abstract class Scraper {
-    private final GroceryDadConfig.Scraper config;
-    private final WebDriver driver;
-    private final ProductAPIClient client;
+@Slf4j
+@Component
+public class Scraper {
+    private final GroceryDadConfig config;
+    private final WorkerFactory workerFactory;
+    private final ExecutorService threadPool = Executors.newCachedThreadPool();
 
-    protected Scraper(GroceryDadConfig.Scraper config, WebDriver driver, ProductAPIClient client) {
+    static {
+        System.setProperty(CHROME_DRIVER_SILENT_OUTPUT_PROPERTY, "true");
+    }
+
+    Scraper(GroceryDadConfig config, WorkerFactory workerFactory) {
         this.config = config;
-        this.driver = driver;
-        this.client = client;
+        this.workerFactory = workerFactory;
     }
 
-    public final void scrap() {
-        Configuration.timeout = config.timeout.toMillis();
-        using(driver, () -> {
-            open(config.uri);
-            waitUntilPageLoads();
-            acceptOrRejectCookies();
-            switchToEnglish();
-            config.categories.forEach(categories -> {
-                FileCache<Product> cache = cache(categories); // todo: do we need cache at all?
-                scrap(categories, product -> cache.save(product.code, product));
-                cache.list().forEach(client::update);
+    public void scrap(WorkerEventListener listener) {
+        var finish = new CountDownLatch(config.enabledPlatforms.size());
+        for (var platform : config.enabledPlatforms) {
+            threadPool.execute(() -> {
+                Thread.currentThread().setName(platform + "-worker");
+                try {
+                    var worker = workerFactory.worker(platform, listener);
+                    var visited = worker.traverse();
+                    log.info("Visited {} links: \n{}", platform, visited);
+                } finally {
+                    finish.countDown();
+                }
             });
-        });
+        }
+        try {
+            finish.await();
+        } catch (InterruptedException e) {
+            Thread.currentThread().interrupt();
+        }
     }
 
-    protected abstract void acceptOrRejectCookies();
-
-    protected abstract void switchToEnglish();
-
-    protected abstract void scrap(List<String> categories, Consumer<Product> handler);
-
-    private FileCache<Product> cache(List<String> categories) {
-        return Cache.factory(config.cache.directory).get(categories);
-    }
-
-    private void waitUntilPageLoads() {
-        new WebDriverWait(driver, config.timeout).until(Scraper::pageIsReady);
-    }
-
-    private static boolean pageIsReady(WebDriver driver) {
-        return ((JavascriptExecutor) driver).executeScript("return document.readyState").equals("complete");
-    }
-
-    public static Scraper create(GroceryDadConfig.Scraper config, WebDriver driver, ProductAPIClient client) {
-        return switch (config.namespace) {
-            case Namespace.BARBORA -> new BarboraScraper(config, driver, client);
-            case Namespace.PRISMA -> new PrismaScraper(config, driver, client);
-            case Namespace.RIMI -> new RimiScraper(config, driver, client);
-            default -> throw new UnsupportedOperationException(format("Unrecognized namespace '%s'", config.namespace));
-        };
+    @PreDestroy
+    void destroy() {
+        threadPool.shutdown();
     }
 }

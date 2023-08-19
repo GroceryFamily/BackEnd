@@ -1,20 +1,16 @@
 package GroceryFamily.GroceryDad;
 
 import GroceryFamily.GroceryElders.GroceryEldersApplicationConfig;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
+import GroceryFamily.GroceryElders.api.client.ProductAPIClient;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
 
 @Configuration
 @Import(value = {GroceryEldersApplicationConfig.class})
-public class GroceryDadApplicationConfig {
-    @Bean(destroyMethod = "close")
-    WebDriver webDriver() {
-        ChromeOptions options = new ChromeOptions();
-        options.addArguments("--window-size=1920,1080");
-        return new ChromeDriver(options);
+class GroceryDadApplicationConfig {
+    @Bean
+    ProductAPIClient client(GroceryDadConfig config) {
+        return new ProductAPIClient(config.api.uri);
     }
 }

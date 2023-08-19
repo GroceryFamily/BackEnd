@@ -20,12 +20,16 @@ public class ProductEntity {
     private String namespace;
     private String code;
     private String name;
+    private String url;
     private Instant ts;
     @Version
     private int version;
     @OneToMany(mappedBy = "product", cascade = CascadeType.ALL)
     @EqualsAndHashCode.Exclude
     private List<PriceEntity> prices;
+    @OneToMany(mappedBy = "product", cascade = CascadeType.ALL)
+    @EqualsAndHashCode.Exclude
+    private List<CategoryEntity> categories;
 
     public Product toDomainProduct() {
         return Product
@@ -33,7 +37,9 @@ public class ProductEntity {
                 .namespace(getNamespace())
                 .code(getCode())
                 .name(getName())
+                .url(getUrl())
                 .prices(PriceEntity.toDomainPrices(getPrices()))
+                .categories(CategoryEntity.toDomainCategories(getCategories()))
                 .build();
     }
 
@@ -58,8 +64,10 @@ public class ProductEntity {
                 .setNamespace(product.namespace)
                 .setCode(product.code)
                 .setName(product.name)
-                .setPrices(PriceEntity.fromDomainPrices(product.identifiablePrices(), ts, entity))
+                .setUrl(product.url)
                 .setTs(ts)
-                .setVersion(0);
+                .setVersion(0)
+                .setPrices(PriceEntity.fromDomainPrices(product.identifiablePrices(), ts, entity))
+                .setCategories(CategoryEntity.fromDomainCategories(product.identifiableCategories(), ts, entity));
     }
 }

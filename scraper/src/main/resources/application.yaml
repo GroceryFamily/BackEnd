@@ -1,38 +1,50 @@
 GroceryDad:
   api.uri: http://localhost:8080
 
-  enabled:
+  cacheDirectory: @project.basedir@/../cache
+  sampleDirectory: @project.basedir@/../samples
+
+  enabledPlatforms:
     - barbora
     - prisma
     - rimi
 
-  scrapers:
+  platforms:
     barbora:
       namespace: barbora.ee
-      uri: https://barbora.ee
-      cache:
-        directory: cache/barbora
-      categories:
-        - [ "Dairy and eggs", "Milk", "Pasteurised milk" ]
-        - [ "Vegetables and fruits", "Fruits and berries", "Bananas" ]
-      timeout: 10s
+      url: https://barbora.ee
+      live:
+        waitTimeout: 5s
+        sleepDelay: 500ms
+      allowlist:
+        - [ "Dairy and eggs", "Yoghurts and desserts", "Flavored yoghurts", "*" ] # two product pages
+        - [ "Home and leisure", "Gardening", "Seeds", "*" ]
+        - [ "Household and pets", "Pets", "Dry dog food", "*" ]
+        - [ "Vegetables and fruits", "Fruits and berries", "Bananas", "*" ]
 
     prisma:
       namespace: prismamarket.ee
-      uri: https://prismamarket.ee
-      cache:
-        directory: cache/prisma
-      categories:
-        - [ "Groceries", "Pets", "Toys for pets" ]
-        - [ "Groceries", "Drinks", "Water" ]
-      timeout: 10s
+      url: https://prismamarket.ee
+      live:
+        waitTimeout: 5s
+        sleepDelay: 500ms
+      allowlist:
+        - [ "Groceries", "Fruits and vegetables", "Fruit", "*" ] # need to scroll down
+        - [ "Groceries", "Milk", "Yogurt", "*" ]
+        - [ "Groceries", "Pets", "Dog food", "*" ]
 
     rimi:
       namespace: rimi.ee
-      uri: https://rimi.ee/epood/en
-      cache:
-        directory: cache/rimi
-      categories:
-        - [ "Groceries", "Canned products", "Mushrooms" ]
-        - [ "Bread, pastry, confectionery", "Rimi bakeries" ]
-      timeout: 20s
+      url: https://rimi.ee/epood/en
+      live:
+        waitTimeout: 5s
+        sleepDelay: 500ms
+      allowlist:
+        - [ "Fruits, vegetables, flowers", "Fruits", "Bananas", "*" ]
+        - [ "Meat and fish products", "Fish roe and seafood", "Fish roe", "*" ]
+        - [ "Pet goods", "Dog food", "Dry food for dogs", "*" ]
+        - [ "Pre-order festivity meals", "Pre-order appetizers and selection plates", "*" ] # two product pages
+
+logging.level:
+  com.codeborne.selenide: ERROR
+  org.springframework.core: ERROR
