@@ -18,7 +18,6 @@ import static org.assertj.core.api.Assertions.assertThat;
 @Slf4j
 @SpringBootTest
 @ActiveProfiles("test")
-@Disabled("Relatively small bandwidth quota prevents this test from being used during an automated build")
 class GroceryDadTest {
     @Autowired
     Scraper scraper;
