@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:91ab4164d59a2ddb1f21ba752c754d5ab66d9dd1d76ad98a93f221a8e0a35252
-size 471
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "datlid-taldrikul-200-g",
+  "name" : "Datlid taldrikul 200 g",
+  "url" : "https://prismamarket.ee/entry/16972/datlid-taldrikul-200-g/4742022670033",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16929",
+    "name" : "Fruits and vegetables",
+    "url" : "https://prismamarket.ee/products/16929"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

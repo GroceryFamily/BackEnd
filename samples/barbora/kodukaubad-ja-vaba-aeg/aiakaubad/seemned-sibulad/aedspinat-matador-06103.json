@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0951ba618ba236410645658104a505282246ac95ec7add70c6a9e53ad5d13069
-size 463
+{
+  "namespace" : "barbora.ee",
+  "code" : "aedspinat-matador-06103",
+  "name" : "Aedspinat Matador",
+  "url" : "https://barbora.ee/toode/aedspinat-matador-06103",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "aiakaubad",
+    "name" : "Gardening",
+    "url" : "https://barbora.ee/kodukaubad-ja-vaba-aeg/aiakaubad"
+  }, {
+    "code" : "kodukaubad-ja-vaba-aeg",
+    "name" : "Home and leisure",
+    "url" : "https://barbora.ee/kodukaubad-ja-vaba-aeg"
+  } ]
+}

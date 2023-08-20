@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0f048b3b5d19e3213436308923053b6fc4fe1869b0fc96d867ecbbb36d77662e
-size 483
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "apelsin-suur-navel-i-klass",
+  "name" : "Apelsin suur Navel I klass",
+  "url" : "https://prismamarket.ee/entry/16972/apelsin-suur-navel-i-klass/2060268700003",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16929",
+    "name" : "Fruits and vegetables",
+    "url" : "https://prismamarket.ee/products/16929"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

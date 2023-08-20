@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f498c6223a7702a13c7c4080aaf5cc656c62fcd38c6a2c24528f1c98267d0f68
-size 484
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "alma-jogurtimaius-rabarberi-200g",
+  "name" : "Alma jogurtimaius rabarberi 200g",
+  "url" : "https://prismamarket.ee/entry/17097/alma-jogurtimaius-rabarberi-200g/4740125532265",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16932",
+    "name" : "Milk",
+    "url" : "https://prismamarket.ee/products/16932"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

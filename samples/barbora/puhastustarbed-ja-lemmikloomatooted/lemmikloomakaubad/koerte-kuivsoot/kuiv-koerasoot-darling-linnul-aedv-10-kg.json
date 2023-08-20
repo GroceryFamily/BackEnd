@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6e57970c856f3659acb9fc622e40a7b47272ccbbb2ff3cd431f55749116dc193
-size 574
+{
+  "namespace" : "barbora.ee",
+  "code" : "kuiv-koerasoot-darling-linnul-aedv-10-kg",
+  "name" : "Kuiv koerasööt DARLING linnul.+aedv.10kg",
+  "url" : "https://barbora.ee/toode/kuiv-koerasoot-darling-linnul-aedv-10-kg",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "lemmikloomakaubad",
+    "name" : "Pets",
+    "url" : "https://barbora.ee/puhastustarbed-ja-lemmikloomatooted/lemmikloomakaubad"
+  }, {
+    "code" : "puhastustarbed-ja-lemmikloomatooted",
+    "name" : "Household and pets",
+    "url" : "https://barbora.ee/puhastustarbed-ja-lemmikloomatooted"
+  } ]
+}

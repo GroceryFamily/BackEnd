@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:cf25c56327ab5d0b6e1e6739220a9253a1047481dc1a4e84ea5257229a487d2c
-size 474
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "pirn-mahe-pakitud-500-g",
+  "name" : "Pirn mahe pakitud 500 g",
+  "url" : "https://prismamarket.ee/entry/16972/pirn-mahe-pakitud-500-g/4742818010623",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16929",
+    "name" : "Fruits and vegetables",
+    "url" : "https://prismamarket.ee/products/16929"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

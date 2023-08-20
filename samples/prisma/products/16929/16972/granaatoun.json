@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:30fe48d15737d6daf60fb2644388952ee48f495038081ae1817bad0c750f3cc5
-size 436
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "granaatoun",
+  "name" : "Granaatõun",
+  "url" : "https://prismamarket.ee/entry/16972/granaatoun/2060430500004",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16929",
+    "name" : "Fruits and vegetables",
+    "url" : "https://prismamarket.ee/products/16929"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:88353383accafdd99cb1e2d9d5807d8211813c6eaacc23498dc438610cc97438
-size 528
+{
+  "namespace" : "barbora.ee",
+  "code" : "proteiinijogurt-fit-maasika-150-g",
+  "name" : "Proteiinijogurt FIT! maasika, 150g",
+  "url" : "https://barbora.ee/toode/proteiinijogurt-fit-maasika-150-g",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "jogurtid-ja-desserdid",
+    "name" : "Yoghurts and desserts",
+    "url" : "https://barbora.ee/piimatooted-ja-munad/jogurtid-ja-desserdid"
+  }, {
+    "code" : "piimatooted-ja-munad",
+    "name" : "Dairy and eggs",
+    "url" : "https://barbora.ee/piimatooted-ja-munad"
+  } ]
+}

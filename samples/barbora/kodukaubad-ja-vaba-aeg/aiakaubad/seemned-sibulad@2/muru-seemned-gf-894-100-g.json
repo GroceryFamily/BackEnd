@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f13dc3add383f0919f29c3350c0daf9998cbba4bd92f2d024f27c58a48c735ca
-size 474
+{
+  "namespace" : "barbora.ee",
+  "code" : "muru-seemned-gf-894-100-g",
+  "name" : "Muru seemned GF-894 100g",
+  "url" : "https://barbora.ee/toode/muru-seemned-gf-894-100-g",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "aiakaubad",
+    "name" : "Gardening",
+    "url" : "https://barbora.ee/kodukaubad-ja-vaba-aeg/aiakaubad"
+  }, {
+    "code" : "kodukaubad-ja-vaba-aeg",
+    "name" : "Home and leisure",
+    "url" : "https://barbora.ee/kodukaubad-ja-vaba-aeg"
+  } ]
+}

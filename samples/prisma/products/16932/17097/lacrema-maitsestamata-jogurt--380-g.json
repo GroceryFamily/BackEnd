@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a5057d2f832904f8a0b27ea477a98a3b7c6f7edb08457c8351e0e313fc14e44e
-size 493
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "lacrema-maitsestamata-jogurt--380-g",
+  "name" : "LaCrema maitsestamata jogurt, 380 g",
+  "url" : "https://prismamarket.ee/entry/17097/lacrema-maitsestamata-jogurt--380-g/4740036009238",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16932",
+    "name" : "Milk",
+    "url" : "https://prismamarket.ee/products/16932"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

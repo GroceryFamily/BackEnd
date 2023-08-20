@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:133f4f79cfb7b3adb573832ee395ddc2fb9c1b0c828dd897e887989118ad9ae1
-size 460
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "nektariin---i-klass",
+  "name" : "Nektariin I klass",
+  "url" : "https://prismamarket.ee/entry/16972/nektariin---i-klass/2060470300008",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16929",
+    "name" : "Fruits and vegetables",
+    "url" : "https://prismamarket.ee/products/16929"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:95cc379ab25d8ef48c61b6f3748301179aa1ab7edffab486c392fe29bb5a0d8f
-size 586
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "juustoportti-suhkru-ja-magusaineteta-laktoosivaba-mangojogurt-1-kg",
+  "name" : "Juustoportti suhkru ja magusaineteta laktoosivaba mangojogurt 1 kg",
+  "url" : "https://prismamarket.ee/entry/17097/juustoportti-suhkru-ja-magusaineteta-laktoosivaba-mangojogurt-1-kg/6408652226580",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16932",
+    "name" : "Milk",
+    "url" : "https://prismamarket.ee/products/16932"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

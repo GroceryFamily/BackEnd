@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f34e1ab1b618381d0fea681cbc2050787cf6f6c0c83e1d4b8f541c067d53f3a3
-size 526
+{
+  "namespace" : "rimi.ee",
+  "code" : "pt-minipliinid-tuunikalakreemiga-160g",
+  "name" : "PT Minipliinid tuunikalakreemiga 160g (ETTETELLIMISEGA)",
+  "url" : "https://rimi.ee/epood/en/products/pre-order-festivity-meals/pre-order-appetizers-and-selection-plates/pt-minipliinid-tuunikalakreemiga-160g/p/1006202",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "pre-order-festivity-meals",
+    "name" : "Pre-order festivity meals",
+    "url" : "https://rimi.ee/epood/en/products/pre-order-festivity-meals/c/SH-20"
+  } ]
+}

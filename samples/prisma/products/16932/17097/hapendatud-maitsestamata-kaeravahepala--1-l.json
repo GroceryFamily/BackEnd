@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:542430c58537014abb0a9e946dc1cafac4ada8c411e033571e36db44bd4348b3
-size 517
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "hapendatud-maitsestamata-kaeravahepala--1-l",
+  "name" : "Hapendatud maitsestamata kaeravahepala, 1 l",
+  "url" : "https://prismamarket.ee/entry/17097/hapendatud-maitsestamata-kaeravahepala--1-l/7394376616068",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16932",
+    "name" : "Milk",
+    "url" : "https://prismamarket.ee/products/16932"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

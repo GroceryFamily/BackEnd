@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2ab3edb77362c69feeca505a5dd93a6b7cfcccd9785559aef100bfb67dae27f6
-size 502
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "muah--stracciatella-koorejogurt--380-g",
+  "name" : "Muah! stracciatella koorejogurt, 380 g",
+  "url" : "https://prismamarket.ee/entry/17097/muah--stracciatella-koorejogurt--380-g/4740125535853",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16932",
+    "name" : "Milk",
+    "url" : "https://prismamarket.ee/products/16932"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

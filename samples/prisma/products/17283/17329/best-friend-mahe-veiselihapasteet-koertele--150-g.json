@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5b8de4c9b1f4f194eead3516825790c1d79015179284fb75782d0d5f504f1276
-size 535
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "best-friend-mahe-veiselihapasteet-koertele--150-g",
+  "name" : "Best Friend mahe veiselihapasteet koertele, 150 g",
+  "url" : "https://prismamarket.ee/entry/17329/best-friend-mahe-veiselihapasteet-koertele--150-g/5700551111006",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "17283",
+    "name" : "Pets",
+    "url" : "https://prismamarket.ee/products/17283"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

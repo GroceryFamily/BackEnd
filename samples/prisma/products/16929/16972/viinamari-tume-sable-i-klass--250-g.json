@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a244b9a68a5dd04491b4b10c7d455a8477ad5013a498e978a4434da884d150a0
-size 509
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "viinamari-tume-sable-i-klass--250-g",
+  "name" : "Viinamari tume Sable I klass 250 g",
+  "url" : "https://prismamarket.ee/entry/16972/viinamari-tume-sable-i-klass--250-g/8437013783187",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16929",
+    "name" : "Fruits and vegetables",
+    "url" : "https://prismamarket.ee/products/16929"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

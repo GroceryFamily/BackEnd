@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:553380ca96212d06f426b8fe04d33e6b60388858ffbcf575e398be88d89f5b3c
-size 481
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "alpro-hapendatud-sojatoode-500g",
+  "name" : "Alpro hapendatud sojatoode 500g",
+  "url" : "https://prismamarket.ee/entry/17097/alpro-hapendatud-sojatoode-500g/5411188118121",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16932",
+    "name" : "Milk",
+    "url" : "https://prismamarket.ee/products/16932"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

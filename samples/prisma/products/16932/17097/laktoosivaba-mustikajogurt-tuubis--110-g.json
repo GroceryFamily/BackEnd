@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:169ffb248af19e66bfaffd0dadd0f8e3a696a148746a8a8dd680f30bba8a7dbf
-size 508
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "laktoosivaba-mustikajogurt-tuubis--110-g",
+  "name" : "Laktoosivaba mustikajogurt tuubis, 110 g",
+  "url" : "https://prismamarket.ee/entry/17097/laktoosivaba-mustikajogurt-tuubis--110-g/4740036015512",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16932",
+    "name" : "Milk",
+    "url" : "https://prismamarket.ee/products/16932"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

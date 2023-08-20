@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4ed7f6fedd44cdae0f6cb28fd01765ad12dff878b6176664cc53b39dd1af2a7b
-size 478
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "jogurtijook-8x100g--metsamarja",
+  "name" : "Jogurtijook 8x100g, metsamarja",
+  "url" : "https://prismamarket.ee/entry/17097/jogurtijook-8x100g--metsamarja/5410146410581",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16932",
+    "name" : "Milk",
+    "url" : "https://prismamarket.ee/products/16932"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

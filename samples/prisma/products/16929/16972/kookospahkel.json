@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:200d79c0e9bcff1b2a188264f0466d9f1ff26fa5c30208f06cffe87c7ad4000c
-size 442
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "kookospahkel",
+  "name" : "Kookospähkel",
+  "url" : "https://prismamarket.ee/entry/16972/kookospahkel/2060491300001",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16929",
+    "name" : "Fruits and vegetables",
+    "url" : "https://prismamarket.ee/products/16929"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

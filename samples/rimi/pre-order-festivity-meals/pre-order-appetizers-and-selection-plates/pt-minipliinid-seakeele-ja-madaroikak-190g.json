@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b8d240b4c57f11f1d06dea3f4cd345c13c5169838baf08a903ce4b5837945169
-size 562
+{
+  "namespace" : "rimi.ee",
+  "code" : "pt-minipliinid-seakeele-ja-madaroikak-190g",
+  "name" : "PT Minipliinid suitsutatud seakeele ja mädarõikakreemiga 190g (ETTETELLIMISEGA)",
+  "url" : "https://rimi.ee/epood/en/products/pre-order-festivity-meals/pre-order-appetizers-and-selection-plates/pt-minipliinid-seakeele-ja-madaroikak-190g/p/1006201",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "pre-order-festivity-meals",
+    "name" : "Pre-order festivity meals",
+    "url" : "https://rimi.ee/epood/en/products/pre-order-festivity-meals/c/SH-20"
+  } ]
+}

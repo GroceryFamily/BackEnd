@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:10bcb4e4c1eea544d07e037a2833cfe3da7fc21b1418167ea4010801e85b173f
-size 574
+{
+  "namespace" : "barbora.ee",
+  "code" : "kuiv-koeratoit-ardour-linnul-1-5-kg-adult",
+  "name" : "Kuiv koeratoit ARDOUR linnul 1.5kg adult",
+  "url" : "https://barbora.ee/toode/kuiv-koeratoit-ardour-linnul-1-5-kg-adult",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "lemmikloomakaubad",
+    "name" : "Pets",
+    "url" : "https://barbora.ee/puhastustarbed-ja-lemmikloomatooted/lemmikloomakaubad"
+  }, {
+    "code" : "puhastustarbed-ja-lemmikloomatooted",
+    "name" : "Household and pets",
+    "url" : "https://barbora.ee/puhastustarbed-ja-lemmikloomatooted"
+  } ]
+}

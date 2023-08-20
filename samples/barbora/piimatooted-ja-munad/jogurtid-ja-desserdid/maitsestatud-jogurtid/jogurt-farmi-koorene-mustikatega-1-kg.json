@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:36f2cf19badfd9a68cee1bf9151f0d46db9365e640ff449fbddcc6476349a238
-size 539
+{
+  "namespace" : "barbora.ee",
+  "code" : "jogurt-farmi-koorene-mustikatega-1-kg",
+  "name" : "Jogurt FARMI koorene mustikatega, 1kg",
+  "url" : "https://barbora.ee/toode/jogurt-farmi-koorene-mustikatega-1-kg",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "jogurtid-ja-desserdid",
+    "name" : "Yoghurts and desserts",
+    "url" : "https://barbora.ee/piimatooted-ja-munad/jogurtid-ja-desserdid"
+  }, {
+    "code" : "piimatooted-ja-munad",
+    "name" : "Dairy and eggs",
+    "url" : "https://barbora.ee/piimatooted-ja-munad"
+  } ]
+}

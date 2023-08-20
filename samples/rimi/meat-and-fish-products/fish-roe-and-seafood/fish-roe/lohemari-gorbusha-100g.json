@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a28c210d9a2742caa49f307c8b95d7e3ef3a15963fe25e3d93dae2f4217a5f7b
-size 621
+{
+  "namespace" : "rimi.ee",
+  "code" : "lohemari-gorbusha-100g",
+  "name" : "Lõhemari(gorbusha) 100g",
+  "url" : "https://rimi.ee/epood/en/products/meat-and-fish-products/fish-roe-and-seafood/fish-roe/lohemari-gorbusha-100g/p/966068",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "meat-and-fish-products",
+    "name" : "Meat and fish products",
+    "url" : "https://rimi.ee/epood/en/products/meat-and-fish-products/c/SH-8"
+  }, {
+    "code" : "fish-roe-and-seafood",
+    "name" : "Fish roe and seafood",
+    "url" : "https://rimi.ee/epood/en/products/meat-and-fish-products/fish-roe-and-seafood/c/SH-8-3"
+  } ]
+}

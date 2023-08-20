@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2bf8907079fe7d9bd513670e99067ec3f0ffa56c7245876dbf0d2b93205411e6
-size 460
+{
+  "namespace" : "barbora.ee",
+  "code" : "aedporgand-amsterdam",
+  "name" : "Aedporgand Amsterdam",
+  "url" : "https://barbora.ee/toode/aedporgand-amsterdam",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "aiakaubad",
+    "name" : "Gardening",
+    "url" : "https://barbora.ee/kodukaubad-ja-vaba-aeg/aiakaubad"
+  }, {
+    "code" : "kodukaubad-ja-vaba-aeg",
+    "name" : "Home and leisure",
+    "url" : "https://barbora.ee/kodukaubad-ja-vaba-aeg"
+  } ]
+}

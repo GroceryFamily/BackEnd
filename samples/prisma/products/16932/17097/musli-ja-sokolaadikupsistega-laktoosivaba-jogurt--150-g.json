@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:89171487500e7ab623ce657fce8acab235582191c8bc0f2f29030e8a776c6afa
-size 556
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "musli-ja-sokolaadikupsistega-laktoosivaba-jogurt--150-g",
+  "name" : "Müsli ja šokolaadiküpsistega laktoosivaba jogurt, 150 g",
+  "url" : "https://prismamarket.ee/entry/17097/musli-ja-sokolaadikupsistega-laktoosivaba-jogurt--150-g/4740125539080",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16932",
+    "name" : "Milk",
+    "url" : "https://prismamarket.ee/products/16932"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e2dd2b9ae78bd1aba22ad6041720f58d8f94e9e0e9c1e68c2882bbe3b2347635
-size 487
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "maasika-arbuusi-joogijogurt--900g",
+  "name" : "Maasika-arbuusi joogijogurt, 900g",
+  "url" : "https://prismamarket.ee/entry/17097/maasika-arbuusi-joogijogurt--900g/4740113096908",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16932",
+    "name" : "Milk",
+    "url" : "https://prismamarket.ee/products/16932"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

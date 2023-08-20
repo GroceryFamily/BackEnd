@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:346d22810602177fb833681f50a2cf347d6e9f65cfd2fe13b1aca44e962419b4
-size 482
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "ploom--tume-black-splendor",
+  "name" : "Ploom tume Black Splendor",
+  "url" : "https://prismamarket.ee/entry/16972/ploom--tume-black-splendor/2060471600008",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16929",
+    "name" : "Fruits and vegetables",
+    "url" : "https://prismamarket.ee/products/16929"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

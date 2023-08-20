@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:60d7f8792642e01bc45aa0edff8eb1e48aeb6ab3c239ff0a7f43ccd4e9b9cc58
-size 427
+{
+  "namespace" : "barbora.ee",
+  "code" : "mahe-till",
+  "name" : "Mahe till",
+  "url" : "https://barbora.ee/toode/mahe-till",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "aiakaubad",
+    "name" : "Gardening",
+    "url" : "https://barbora.ee/kodukaubad-ja-vaba-aeg/aiakaubad"
+  }, {
+    "code" : "kodukaubad-ja-vaba-aeg",
+    "name" : "Home and leisure",
+    "url" : "https://barbora.ee/kodukaubad-ja-vaba-aeg"
+  } ]
+}

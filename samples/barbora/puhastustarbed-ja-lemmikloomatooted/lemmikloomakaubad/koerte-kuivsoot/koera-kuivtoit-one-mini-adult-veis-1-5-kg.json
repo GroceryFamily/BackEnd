@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e48ecf9be9140d60b1406f66aced1efec502bb4b8edcc354870b9e669152d695
-size 574
+{
+  "namespace" : "barbora.ee",
+  "code" : "koera-kuivtoit-one-mini-adult-veis-1-5-kg",
+  "name" : "Koera kuivtoit ONE Mini Adult veis.1.5kg",
+  "url" : "https://barbora.ee/toode/koera-kuivtoit-one-mini-adult-veis-1-5-kg",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "lemmikloomakaubad",
+    "name" : "Pets",
+    "url" : "https://barbora.ee/puhastustarbed-ja-lemmikloomatooted/lemmikloomakaubad"
+  }, {
+    "code" : "puhastustarbed-ja-lemmikloomatooted",
+    "name" : "Household and pets",
+    "url" : "https://barbora.ee/puhastustarbed-ja-lemmikloomatooted"
+  } ]
+}

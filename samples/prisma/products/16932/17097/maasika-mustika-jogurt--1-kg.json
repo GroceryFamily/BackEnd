@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6106578e5b14bb0eb585652e5c142201d0f6ab3fe11ed39b351f9ac9f925f336
-size 472
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "maasika-mustika-jogurt--1-kg",
+  "name" : "Maasika-mustika jogurt, 1 kg",
+  "url" : "https://prismamarket.ee/entry/17097/maasika-mustika-jogurt--1-kg/4740125521214",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16932",
+    "name" : "Milk",
+    "url" : "https://prismamarket.ee/products/16932"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

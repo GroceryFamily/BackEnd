@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d860b8785dc566c0449fe922cd12b95abdd8962c3ff47c19c5a817c856cb6d6a
-size 509
+{
+  "namespace" : "barbora.ee",
+  "code" : "skyr-farmi-kirssidega-150-g",
+  "name" : "Skyr FARMI kirssidega, 150g",
+  "url" : "https://barbora.ee/toode/skyr-farmi-kirssidega-150-g",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "jogurtid-ja-desserdid",
+    "name" : "Yoghurts and desserts",
+    "url" : "https://barbora.ee/piimatooted-ja-munad/jogurtid-ja-desserdid"
+  }, {
+    "code" : "piimatooted-ja-munad",
+    "name" : "Dairy and eggs",
+    "url" : "https://barbora.ee/piimatooted-ja-munad"
+  } ]
+}

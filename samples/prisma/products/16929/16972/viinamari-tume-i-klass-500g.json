@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8cfaf4630e66bf312f7ad742f233b3b6aaf65d776211c33e01a56b28ce9726db
-size 486
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "viinamari-tume-i-klass-500g",
+  "name" : "Viinamari tume I klass 500g",
+  "url" : "https://prismamarket.ee/entry/16972/viinamari-tume-i-klass-500g/6009900306773",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16929",
+    "name" : "Fruits and vegetables",
+    "url" : "https://prismamarket.ee/products/16929"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

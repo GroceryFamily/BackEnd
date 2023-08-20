@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6610e607e2be1f9192222d556daba598740ccf5cdbe6b31c25504abe6a900d63
-size 459
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "avokaado-mahe-2-tk",
+  "name" : "AVOKAADO MAHE 2 tk",
+  "url" : "https://prismamarket.ee/entry/16972/avokaado-mahe-2-tk/8713037000241",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16929",
+    "name" : "Fruits and vegetables",
+    "url" : "https://prismamarket.ee/products/16929"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

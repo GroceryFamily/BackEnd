@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e62a4452f41cabd84f76341b8c407621488f573d4c4ede5748626095ec41a42e
-size 423
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "banaan",
+  "name" : "Banaan",
+  "url" : "https://prismamarket.ee/entry/16972/banaan/2060400700007",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16929",
+    "name" : "Fruits and vegetables",
+    "url" : "https://prismamarket.ee/products/16929"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

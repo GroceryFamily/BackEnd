@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:443c9824ae222eaca6fab709f304dbd2224f88c1cc7dc6859f14d6a3c69153d7
-size 542
+{
+  "namespace" : "barbora.ee",
+  "code" : "jogurt-gefilus-virs-papaya-2-proc-380-g",
+  "name" : "Jogurt GEFILUS virs.-papaya 2%, 380g",
+  "url" : "https://barbora.ee/toode/jogurt-gefilus-virs-papaya-2-proc-380-g",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "jogurtid-ja-desserdid",
+    "name" : "Yoghurts and desserts",
+    "url" : "https://barbora.ee/piimatooted-ja-munad/jogurtid-ja-desserdid"
+  }, {
+    "code" : "piimatooted-ja-munad",
+    "name" : "Dairy and eggs",
+    "url" : "https://barbora.ee/piimatooted-ja-munad"
+  } ]
+}

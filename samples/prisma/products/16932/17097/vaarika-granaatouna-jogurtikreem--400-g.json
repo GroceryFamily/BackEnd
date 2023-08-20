@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:fd6f9020fff6b3aa7543ca428a4f1b5a02d6f88f72fc8dfcafbb09fca4e80230
-size 506
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "vaarika-granaatouna-jogurtikreem--400-g",
+  "name" : "Vaarika-granaatõuna jogurtikreem, 400 g",
+  "url" : "https://prismamarket.ee/entry/17097/vaarika-granaatouna-jogurtikreem--400-g/4742231004568",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16932",
+    "name" : "Milk",
+    "url" : "https://prismamarket.ee/products/16932"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

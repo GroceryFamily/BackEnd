@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e39136380a021cf6c96679d1d512057fac09f265bbccc5d2d81499e3f83c4c1b
-size 550
+{
+  "namespace" : "rimi.ee",
+  "code" : "pt-korvikesed-sinihallitusj-kreveti-360g",
+  "name" : "PT Korvikesed sinihallitusjuustukreemi ja krevetiga 360g (ETTETELLIMISEGA)",
+  "url" : "https://rimi.ee/epood/en/products/pre-order-festivity-meals/pre-order-appetizers-and-selection-plates/pt-korvikesed-sinihallitusj-kreveti-360g/p/981323",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "pre-order-festivity-meals",
+    "name" : "Pre-order festivity meals",
+    "url" : "https://rimi.ee/epood/en/products/pre-order-festivity-meals/c/SH-20"
+  } ]
+}

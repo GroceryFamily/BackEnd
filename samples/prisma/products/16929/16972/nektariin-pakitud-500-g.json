@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:795e045a1dc77804ba82b4a11e965f3dea1e0245d88456db4c3ccc4955cb4804
-size 474
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "nektariin-pakitud-500-g",
+  "name" : "Nektariin pakitud 500 g",
+  "url" : "https://prismamarket.ee/entry/16972/nektariin-pakitud-500-g/6438460331077",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16929",
+    "name" : "Fruits and vegetables",
+    "url" : "https://prismamarket.ee/products/16929"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

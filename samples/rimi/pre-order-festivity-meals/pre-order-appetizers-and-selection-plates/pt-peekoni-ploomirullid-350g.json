@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:73b81fdcff72bdef335270bd56342248bfce51b9043eddc37762e76318dab305
-size 498
+{
+  "namespace" : "rimi.ee",
+  "code" : "pt-peekoni-ploomirullid-350g",
+  "name" : "PT Peekoni-ploomirullid 350g (ETTETELLIMISEGA)",
+  "url" : "https://rimi.ee/epood/en/products/pre-order-festivity-meals/pre-order-appetizers-and-selection-plates/pt-peekoni-ploomirullid-350g/p/981566",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "pre-order-festivity-meals",
+    "name" : "Pre-order festivity meals",
+    "url" : "https://rimi.ee/epood/en/products/pre-order-festivity-meals/c/SH-20"
+  } ]
+}

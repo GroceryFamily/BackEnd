@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ac7758a160fa95967cce79ea10fc6b0dec752c402291c8fbbf2ec35101bceb24
-size 520
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "saare-sidruni-jogurtikreem-laktoosivaba-400g",
+  "name" : "Saare sidruni jogurtikreem laktoosivaba 400g",
+  "url" : "https://prismamarket.ee/entry/17097/saare-sidruni-jogurtikreem-laktoosivaba-400g/4742231005305",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16932",
+    "name" : "Milk",
+    "url" : "https://prismamarket.ee/products/16932"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

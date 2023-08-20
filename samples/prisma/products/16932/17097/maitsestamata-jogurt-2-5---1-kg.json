@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b8f0f55759ee275da23f6ccc2b6ac930ee2d4f9eaf8a1be985f05298555e6d6a
-size 481
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "maitsestamata-jogurt-2-5---1-kg",
+  "name" : "Maitsestamata jogurt 2,5%, 1 kg",
+  "url" : "https://prismamarket.ee/entry/17097/maitsestamata-jogurt-2-5---1-kg/4740125521108",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16932",
+    "name" : "Milk",
+    "url" : "https://prismamarket.ee/products/16932"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

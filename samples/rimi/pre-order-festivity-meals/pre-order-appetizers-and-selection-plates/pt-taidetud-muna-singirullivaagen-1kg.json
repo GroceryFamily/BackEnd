@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6a01d9ba1c2f930a35d92d7a5764d91fdf819ac449b15f7a7ffa93bb8ca956c3
-size 526
+{
+  "namespace" : "rimi.ee",
+  "code" : "pt-taidetud-muna-singirullivaagen-1kg",
+  "name" : "PT Täidetud muna-singirullivaagen 1kg (ETTETELLIMISEGA)",
+  "url" : "https://rimi.ee/epood/en/products/pre-order-festivity-meals/pre-order-appetizers-and-selection-plates/pt-taidetud-muna-singirullivaagen-1kg/p/954972",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "pre-order-festivity-meals",
+    "name" : "Pre-order festivity meals",
+    "url" : "https://rimi.ee/epood/en/products/pre-order-festivity-meals/c/SH-20"
+  } ]
+}

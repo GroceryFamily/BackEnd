@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f4d61c7f60642b5e2469550953215af3309bdb2d505a3aec302339551fad6fe5
-size 495
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "hele-viinamari-seemneteta-500g",
+  "name" : "Hele viinamari seemneteta 500g",
+  "url" : "https://prismamarket.ee/entry/16972/hele-viinamari-seemneteta-500g/6414894500609",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16929",
+    "name" : "Fruits and vegetables",
+    "url" : "https://prismamarket.ee/products/16929"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

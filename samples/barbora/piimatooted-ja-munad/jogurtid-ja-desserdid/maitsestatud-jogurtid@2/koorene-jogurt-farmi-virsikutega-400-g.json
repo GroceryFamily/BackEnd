@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5f5e6626d55fdefed896ae0c30910f4b7629831a97f8c35a682783d9b07e86d4
-size 542
+{
+  "namespace" : "barbora.ee",
+  "code" : "koorene-jogurt-farmi-virsikutega-400-g",
+  "name" : "Koorene jogurt FARMI virsikutega, 400g",
+  "url" : "https://barbora.ee/toode/koorene-jogurt-farmi-virsikutega-400-g",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "jogurtid-ja-desserdid",
+    "name" : "Yoghurts and desserts",
+    "url" : "https://barbora.ee/piimatooted-ja-munad/jogurtid-ja-desserdid"
+  }, {
+    "code" : "piimatooted-ja-munad",
+    "name" : "Dairy and eggs",
+    "url" : "https://barbora.ee/piimatooted-ja-munad"
+  } ]
+}

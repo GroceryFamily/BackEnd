@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8a1fa572098f50bf00d7d00a5415d43cfd1710e61fea4e8aac13febabb39f838
-size 450
+{
+  "namespace" : "barbora.ee",
+  "code" : "aedkoriander-bio",
+  "name" : "Aedkoriander (BIO)",
+  "url" : "https://barbora.ee/toode/aedkoriander-bio",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "aiakaubad",
+    "name" : "Gardening",
+    "url" : "https://barbora.ee/kodukaubad-ja-vaba-aeg/aiakaubad"
+  }, {
+    "code" : "kodukaubad-ja-vaba-aeg",
+    "name" : "Home and leisure",
+    "url" : "https://barbora.ee/kodukaubad-ja-vaba-aeg"
+  } ]
+}

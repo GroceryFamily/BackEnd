@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a219cc840eea626e06e374e8fa19dffb12d0d87e46781fab83d8a723ae1b6960
-size 523
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "taissoot-koertele-veiseliha-ja-riisiga-800-g",
+  "name" : "Täissööt koertele veiseliha ja riisiga 800 g",
+  "url" : "https://prismamarket.ee/entry/17329/taissoot-koertele-veiseliha-ja-riisiga-800-g/7613034746344",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "17283",
+    "name" : "Pets",
+    "url" : "https://prismamarket.ee/products/17283"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

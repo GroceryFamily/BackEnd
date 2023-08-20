@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f71ca0798324eac9c16193296068c94ba3dddbb4df67adcd91a24271b5f52aaa
-size 576
+{
+  "namespace" : "barbora.ee",
+  "code" : "kuiv-koerasoot-happy-tails-linnuliha-3-kg",
+  "name" : "Kuiv koerasööt HAPPY TAILS linnuliha,3kg",
+  "url" : "https://barbora.ee/toode/kuiv-koerasoot-happy-tails-linnuliha-3-kg",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "lemmikloomakaubad",
+    "name" : "Pets",
+    "url" : "https://barbora.ee/puhastustarbed-ja-lemmikloomatooted/lemmikloomakaubad"
+  }, {
+    "code" : "puhastustarbed-ja-lemmikloomatooted",
+    "name" : "Household and pets",
+    "url" : "https://barbora.ee/puhastustarbed-ja-lemmikloomatooted"
+  } ]
+}

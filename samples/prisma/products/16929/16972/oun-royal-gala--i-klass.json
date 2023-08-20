@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b8ac57b419e8541a8255904a9ab7c77f534e26637a66acab265b70f96e2c6d8f
-size 475
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "oun-royal-gala--i-klass",
+  "name" : "Õun Royal Gala, I klass",
+  "url" : "https://prismamarket.ee/entry/16972/oun-royal-gala--i-klass/2060515100006",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16929",
+    "name" : "Fruits and vegetables",
+    "url" : "https://prismamarket.ee/products/16929"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

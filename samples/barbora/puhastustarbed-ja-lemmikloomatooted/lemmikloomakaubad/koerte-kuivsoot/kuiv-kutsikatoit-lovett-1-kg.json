@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:098befdd9ceaf39e804e7b6db989dd9876d07326df9a5746973d2c7673f11a5f
-size 535
+{
+  "namespace" : "barbora.ee",
+  "code" : "kuiv-kutsikatoit-lovett-1-kg",
+  "name" : "Kuiv kutsikatoit LOVETT 1kg",
+  "url" : "https://barbora.ee/toode/kuiv-kutsikatoit-lovett-1-kg",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "lemmikloomakaubad",
+    "name" : "Pets",
+    "url" : "https://barbora.ee/puhastustarbed-ja-lemmikloomatooted/lemmikloomakaubad"
+  }, {
+    "code" : "puhastustarbed-ja-lemmikloomatooted",
+    "name" : "Household and pets",
+    "url" : "https://barbora.ee/puhastustarbed-ja-lemmikloomatooted"
+  } ]
+}

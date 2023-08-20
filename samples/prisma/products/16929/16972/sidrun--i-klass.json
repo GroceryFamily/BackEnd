@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8c6567ffff27cc0d54a0585f2aa3bba5353233155f8413ca1fae414ab7ca5d6a
-size 450
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "sidrun--i-klass",
+  "name" : "Sidrun, I klass",
+  "url" : "https://prismamarket.ee/entry/16972/sidrun--i-klass/2060400800004",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16929",
+    "name" : "Fruits and vegetables",
+    "url" : "https://prismamarket.ee/products/16929"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

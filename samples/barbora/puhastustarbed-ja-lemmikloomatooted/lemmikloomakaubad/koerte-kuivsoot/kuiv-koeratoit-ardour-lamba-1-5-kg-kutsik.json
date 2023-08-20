@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:54cda243f15324dcd7b227b9624d2675fc0660d51497a074be25d11ab0f0dcf8
-size 574
+{
+  "namespace" : "barbora.ee",
+  "code" : "kuiv-koeratoit-ardour-lamba-1-5-kg-kutsik",
+  "name" : "Kuiv koeratoit ARDOUR lamba 1.5kg kutsik",
+  "url" : "https://barbora.ee/toode/kuiv-koeratoit-ardour-lamba-1-5-kg-kutsik",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "lemmikloomakaubad",
+    "name" : "Pets",
+    "url" : "https://barbora.ee/puhastustarbed-ja-lemmikloomatooted/lemmikloomakaubad"
+  }, {
+    "code" : "puhastustarbed-ja-lemmikloomatooted",
+    "name" : "Household and pets",
+    "url" : "https://barbora.ee/puhastustarbed-ja-lemmikloomatooted"
+  } ]
+}

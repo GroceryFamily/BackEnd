@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:552638272746784298d7a653d78e5389416cda8aee9aac64b00d5744637dfeee
-size 487
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "kuivtoit-koertele-kanalihaga-12kg",
+  "name" : "Kuivtoit koertele kanalihaga 12kg",
+  "url" : "https://prismamarket.ee/entry/17329/kuivtoit-koertele-kanalihaga-12kg/5902921304166",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "17283",
+    "name" : "Pets",
+    "url" : "https://prismamarket.ee/products/17283"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

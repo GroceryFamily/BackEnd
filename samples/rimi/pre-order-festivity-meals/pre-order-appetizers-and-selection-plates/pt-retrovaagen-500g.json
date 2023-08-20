@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8fa1921b786f745f5c8ae045a61ad8f8881ac6f34dea505eb48c1e4ff343ddf6
-size 471
+{
+  "namespace" : "rimi.ee",
+  "code" : "pt-retrovaagen-500g",
+  "name" : "PT Retrovaagen 500g (ETTETELLIMISEGA)",
+  "url" : "https://rimi.ee/epood/en/products/pre-order-festivity-meals/pre-order-appetizers-and-selection-plates/pt-retrovaagen-500g/p/981561",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "pre-order-festivity-meals",
+    "name" : "Pre-order festivity meals",
+    "url" : "https://rimi.ee/epood/en/products/pre-order-festivity-meals/c/SH-20"
+  } ]
+}

@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3b5bee65e2fd8fcf850b50177434489917c69ab3148be580b9865986d4c10394
-size 508
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "farmi-koorene-jogurt-mandariini-mee-150g",
+  "name" : "FARMI Koorene jogurt mandariini-mee 150g",
+  "url" : "https://prismamarket.ee/entry/17097/farmi-koorene-jogurt-mandariini-mee-150g/4740113019150",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16932",
+    "name" : "Milk",
+    "url" : "https://prismamarket.ee/products/16932"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

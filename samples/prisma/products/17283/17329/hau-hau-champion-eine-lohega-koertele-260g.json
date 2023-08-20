@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6971674e0b5714f8c4d1300fdbffde9e4318c34845c7218b6054ecbd1cfb164b
-size 515
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "hau-hau-champion-eine-lohega-koertele-260g",
+  "name" : "Hau-Hau Champion eine lõhega koertele 260g",
+  "url" : "https://prismamarket.ee/entry/17329/hau-hau-champion-eine-lohega-koertele-260g/6430062465907",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "17283",
+    "name" : "Pets",
+    "url" : "https://prismamarket.ee/products/17283"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

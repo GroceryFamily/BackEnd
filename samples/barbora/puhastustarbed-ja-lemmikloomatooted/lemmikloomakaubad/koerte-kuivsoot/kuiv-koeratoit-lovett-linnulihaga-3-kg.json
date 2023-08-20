@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:280eed4981267513eb449bec6cfa0481775201c8300a816be68acb38255fa470
-size 565
+{
+  "namespace" : "barbora.ee",
+  "code" : "kuiv-koeratoit-lovett-linnulihaga-3-kg",
+  "name" : "Kuiv koeratoit LOVETT linnulihaga 3kg",
+  "url" : "https://barbora.ee/toode/kuiv-koeratoit-lovett-linnulihaga-3-kg",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "lemmikloomakaubad",
+    "name" : "Pets",
+    "url" : "https://barbora.ee/puhastustarbed-ja-lemmikloomatooted/lemmikloomakaubad"
+  }, {
+    "code" : "puhastustarbed-ja-lemmikloomatooted",
+    "name" : "Household and pets",
+    "url" : "https://barbora.ee/puhastustarbed-ja-lemmikloomatooted"
+  } ]
+}

@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a95efde1ad596122177644da44fc67fff920778f82d0c27b3965acb403576aa0
-size 436
+{
+  "namespace" : "barbora.ee",
+  "code" : "lehtpeet-07833",
+  "name" : "Lehtpeet",
+  "url" : "https://barbora.ee/toode/lehtpeet-07833",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "aiakaubad",
+    "name" : "Gardening",
+    "url" : "https://barbora.ee/kodukaubad-ja-vaba-aeg/aiakaubad"
+  }, {
+    "code" : "kodukaubad-ja-vaba-aeg",
+    "name" : "Home and leisure",
+    "url" : "https://barbora.ee/kodukaubad-ja-vaba-aeg"
+  } ]
+}

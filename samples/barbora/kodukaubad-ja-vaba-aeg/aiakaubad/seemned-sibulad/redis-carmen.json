@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:334427e68b73b506018429058fbe80ed03a71b4adc2c3706d05c8890631a7c73
-size 436
+{
+  "namespace" : "barbora.ee",
+  "code" : "redis-carmen",
+  "name" : "Redis CARMEN",
+  "url" : "https://barbora.ee/toode/redis-carmen",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "aiakaubad",
+    "name" : "Gardening",
+    "url" : "https://barbora.ee/kodukaubad-ja-vaba-aeg/aiakaubad"
+  }, {
+    "code" : "kodukaubad-ja-vaba-aeg",
+    "name" : "Home and leisure",
+    "url" : "https://barbora.ee/kodukaubad-ja-vaba-aeg"
+  } ]
+}

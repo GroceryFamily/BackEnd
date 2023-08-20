@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c52f51bd45fb20fcd6805fb5ab012726d0c5515001cf9b54140727b5205e4ab7
-size 497
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "koeratoit-harjaliha-ja-maksaga-150-g",
+  "name" : "Koeratoit härjaliha ja maksaga 150 g",
+  "url" : "https://prismamarket.ee/entry/17329/koeratoit-harjaliha-ja-maksaga-150-g/4008429511110",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "17283",
+    "name" : "Pets",
+    "url" : "https://prismamarket.ee/products/17283"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

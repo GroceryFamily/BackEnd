@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4a3473eb7de708121e51b7ba91d3445f13635592c27d7be01a72af44ea2abf5d
-size 481
+{
+  "namespace" : "barbora.ee",
+  "code" : "aed-liivatee-english-winter",
+  "name" : "Aed-liivatee ENGLISH WINTER",
+  "url" : "https://barbora.ee/toode/aed-liivatee-english-winter",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "aiakaubad",
+    "name" : "Gardening",
+    "url" : "https://barbora.ee/kodukaubad-ja-vaba-aeg/aiakaubad"
+  }, {
+    "code" : "kodukaubad-ja-vaba-aeg",
+    "name" : "Home and leisure",
+    "url" : "https://barbora.ee/kodukaubad-ja-vaba-aeg"
+  } ]
+}

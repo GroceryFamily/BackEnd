@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2ef59f662f63e1770894d95607d31d13c4d14a3075d91fb5ff63562785ec2dbf
-size 423
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "feijoa",
+  "name" : "Feijoa",
+  "url" : "https://prismamarket.ee/entry/16972/feijoa/2060177800009",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16929",
+    "name" : "Fruits and vegetables",
+    "url" : "https://prismamarket.ee/products/16929"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

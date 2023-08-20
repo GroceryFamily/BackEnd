@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a49d4828a81ae85a93145fa320bed633c0e6843018ef69896db42cca6d3b9107
-size 439
+{
+  "namespace" : "barbora.ee",
+  "code" : "redis-rondeel",
+  "name" : "Redis Rondeel",
+  "url" : "https://barbora.ee/toode/redis-rondeel",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "aiakaubad",
+    "name" : "Gardening",
+    "url" : "https://barbora.ee/kodukaubad-ja-vaba-aeg/aiakaubad"
+  }, {
+    "code" : "kodukaubad-ja-vaba-aeg",
+    "name" : "Home and leisure",
+    "url" : "https://barbora.ee/kodukaubad-ja-vaba-aeg"
+  } ]
+}

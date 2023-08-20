@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:085adc43c3760c8a3ed8437536a0c9a9404f4e8af918f9d240db8f1b07a0f7e9
-size 625
+{
+  "namespace" : "rimi.ee",
+  "code" : "forellimari-premium-100g",
+  "name" : "Forellimari premium 100g",
+  "url" : "https://rimi.ee/epood/en/products/meat-and-fish-products/fish-roe-and-seafood/fish-roe/forellimari-premium-100g/p/275453",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "meat-and-fish-products",
+    "name" : "Meat and fish products",
+    "url" : "https://rimi.ee/epood/en/products/meat-and-fish-products/c/SH-8"
+  }, {
+    "code" : "fish-roe-and-seafood",
+    "name" : "Fish roe and seafood",
+    "url" : "https://rimi.ee/epood/en/products/meat-and-fish-products/fish-roe-and-seafood/c/SH-8-3"
+  } ]
+}

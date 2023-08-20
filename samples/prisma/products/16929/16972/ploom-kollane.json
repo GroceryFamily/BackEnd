@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c15a4e38bfc69b1f6f21a90aa5975ad9a4f138b9a62daa04fcd8f0990cbde0cb
-size 444
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "ploom-kollane",
+  "name" : "Ploom kollane",
+  "url" : "https://prismamarket.ee/entry/16972/ploom-kollane/2060471500001",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16929",
+    "name" : "Fruits and vegetables",
+    "url" : "https://prismamarket.ee/products/16929"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

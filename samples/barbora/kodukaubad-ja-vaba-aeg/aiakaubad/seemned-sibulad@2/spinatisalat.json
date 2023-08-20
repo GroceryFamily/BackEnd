@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e4ece8d4f0bfd87ed428acc29a25218062b25bc57495e6d83d23f1550af9183b
-size 436
+{
+  "namespace" : "barbora.ee",
+  "code" : "spinatisalat",
+  "name" : "Spinatisalat",
+  "url" : "https://barbora.ee/toode/spinatisalat",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "aiakaubad",
+    "name" : "Gardening",
+    "url" : "https://barbora.ee/kodukaubad-ja-vaba-aeg/aiakaubad"
+  }, {
+    "code" : "kodukaubad-ja-vaba-aeg",
+    "name" : "Home and leisure",
+    "url" : "https://barbora.ee/kodukaubad-ja-vaba-aeg"
+  } ]
+}

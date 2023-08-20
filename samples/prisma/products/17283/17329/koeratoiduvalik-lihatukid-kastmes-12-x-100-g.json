@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3af0e5fa344e891d11d217d9604f30c00e15433cc63ba46d15e016e3cd0dc663
-size 522
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "koeratoiduvalik-lihatukid-kastmes-12-x-100-g",
+  "name" : "Koeratoiduvalik lihatükid kastmes 12 × 100 g",
+  "url" : "https://prismamarket.ee/entry/17329/koeratoiduvalik-lihatukid-kastmes-12-x-100-g/5900951249341",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "17283",
+    "name" : "Pets",
+    "url" : "https://prismamarket.ee/products/17283"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

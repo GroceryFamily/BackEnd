@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:15c3116d7d48fcd09dbb4dbfe7c8eb63937b73f29c8596c1c05a7cde42801269
-size 562
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "perfect-fit-junior-taissoot-kutsikatele-kanalihaga--825-g",
+  "name" : "Perfect Fit Junior täissööt kutsikatele kanalihaga, 825 g",
+  "url" : "https://prismamarket.ee/entry/17329/perfect-fit-junior-taissoot-kutsikatele-kanalihaga--825-g/4008429092060",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "17283",
+    "name" : "Pets",
+    "url" : "https://prismamarket.ee/products/17283"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

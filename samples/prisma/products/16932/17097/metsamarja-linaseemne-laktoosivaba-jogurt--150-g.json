@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:899ae27b50f7bbae297fede448bc8ebdc49289c48e5efadfffb9fc4a131d5f6b
-size 532
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "metsamarja-linaseemne-laktoosivaba-jogurt--150-g",
+  "name" : "Metsamarja-linaseemne laktoosivaba jogurt, 150 g",
+  "url" : "https://prismamarket.ee/entry/17097/metsamarja-linaseemne-laktoosivaba-jogurt--150-g/4740125537222",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16932",
+    "name" : "Milk",
+    "url" : "https://prismamarket.ee/products/16932"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

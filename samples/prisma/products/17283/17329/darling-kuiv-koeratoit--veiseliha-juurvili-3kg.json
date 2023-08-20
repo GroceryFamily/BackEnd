@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:71514300eb8f8c395a37fc2475327fc396aed227454a1aa1952b53232c76540f
-size 526
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "darling-kuiv-koeratoit--veiseliha-juurvili-3kg",
+  "name" : "DARLING kuiv koeratoit, veiseliha/juurvili 3kg",
+  "url" : "https://prismamarket.ee/entry/17329/darling-kuiv-koeratoit--veiseliha-juurvili-3kg/7613032933760",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "17283",
+    "name" : "Pets",
+    "url" : "https://prismamarket.ee/products/17283"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

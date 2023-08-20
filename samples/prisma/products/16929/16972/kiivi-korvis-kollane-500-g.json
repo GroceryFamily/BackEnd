@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1cc59e7ca8672aaddc4e58bf7415fa42dfa58bb7498262fceee8a8913b1bedf5
-size 483
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "kiivi-korvis-kollane-500-g",
+  "name" : "Kiivi korvis kollane 500 g",
+  "url" : "https://prismamarket.ee/entry/16972/kiivi-korvis-kollane-500-g/5415191166278",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16929",
+    "name" : "Fruits and vegetables",
+    "url" : "https://prismamarket.ee/products/16929"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

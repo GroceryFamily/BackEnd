@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7ee1274445a15761f34c162a6072688ead1fd45f0e3e1720f6a92d21b30917f5
-size 508
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "nordic-taissoot-vanematele-koertele-3kg",
+  "name" : "Nordic täissööt vanematele koertele 3kg",
+  "url" : "https://prismamarket.ee/entry/17329/nordic-taissoot-vanematele-koertele-3kg/6410328143718",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "17283",
+    "name" : "Pets",
+    "url" : "https://prismamarket.ee/products/17283"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

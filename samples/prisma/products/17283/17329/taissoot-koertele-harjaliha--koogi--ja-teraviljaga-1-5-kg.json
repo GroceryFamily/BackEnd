@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d251e924675dd5a379cbf9694cabb211127aec6405f4818eadc0cf2bdc76c973
-size 565
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "taissoot-koertele-harjaliha--koogi--ja-teraviljaga-1-5-kg",
+  "name" : "Täissööt koertele härjaliha, köögi- ja teraviljaga 1,5 kg",
+  "url" : "https://prismamarket.ee/entry/17329/taissoot-koertele-harjaliha--koogi--ja-teraviljaga-1-5-kg/4008429029110",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "17283",
+    "name" : "Pets",
+    "url" : "https://prismamarket.ee/products/17283"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

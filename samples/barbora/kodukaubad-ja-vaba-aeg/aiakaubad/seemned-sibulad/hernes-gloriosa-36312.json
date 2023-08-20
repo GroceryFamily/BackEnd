@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1d0a941088d6d19d0e6ad93a238a9d2b6f8c985f3afc2878f107d899c85f4982
-size 457
+{
+  "namespace" : "barbora.ee",
+  "code" : "hernes-gloriosa-36312",
+  "name" : "Hernes Gloriosa",
+  "url" : "https://barbora.ee/toode/hernes-gloriosa-36312",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "aiakaubad",
+    "name" : "Gardening",
+    "url" : "https://barbora.ee/kodukaubad-ja-vaba-aeg/aiakaubad"
+  }, {
+    "code" : "kodukaubad-ja-vaba-aeg",
+    "name" : "Home and leisure",
+    "url" : "https://barbora.ee/kodukaubad-ja-vaba-aeg"
+  } ]
+}

@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:110bc166fd6e1b91946e0a85d9f48f289358b1a43b5bcc8b9f8e414db536112a
-size 593
+{
+  "namespace" : "rimi.ee",
+  "code" : "koerasoot-vaik-tougudele-c4p-premium-2kg",
+  "name" : "Koerasööt kuiv väikestele tõugudele Club 4 Paws Premium 2kg",
+  "url" : "https://rimi.ee/epood/en/products/pet-goods/dog-food/dry-food-for-dogs/koerasoot-vaik-tougudele-c4p-premium-2kg/p/7270678",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "pet-goods",
+    "name" : "Pet goods",
+    "url" : "https://rimi.ee/epood/en/products/pet-goods/c/SH-7"
+  }, {
+    "code" : "dog-food",
+    "name" : "Dog food",
+    "url" : "https://rimi.ee/epood/en/products/pet-goods/dog-food/c/SH-7-2"
+  } ]
+}

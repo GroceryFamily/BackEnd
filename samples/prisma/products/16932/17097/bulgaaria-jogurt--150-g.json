@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:dadaccea8393df7555db9405b9f66b813e7908ecf3833b8a4e3994b3c902d198
-size 457
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "bulgaaria-jogurt--150-g",
+  "name" : "Bulgaaria jogurt, 150 g",
+  "url" : "https://prismamarket.ee/entry/17097/bulgaaria-jogurt--150-g/6414893096172",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16932",
+    "name" : "Milk",
+    "url" : "https://prismamarket.ee/products/16932"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

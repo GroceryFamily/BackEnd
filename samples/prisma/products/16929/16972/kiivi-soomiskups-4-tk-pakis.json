@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ac0e2f7bbf08010da2778aff4576def068675ace652d0d602d03f1ddf7e7c310
-size 489
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "kiivi-soomiskups-4-tk-pakis",
+  "name" : "Kiivi söömisküps 4 tk pakis",
+  "url" : "https://prismamarket.ee/entry/16972/kiivi-soomiskups-4-tk-pakis/8718963049722",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16929",
+    "name" : "Fruits and vegetables",
+    "url" : "https://prismamarket.ee/products/16929"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

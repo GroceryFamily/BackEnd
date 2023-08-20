@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5252021106114e93b7258d57c84d8ae66fe1c823c0eaecdbdf43ffd6c4926fd1
-size 483
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "ploom-tume--vaike-lepotica",
+  "name" : "Ploom tume väike Lepotica",
+  "url" : "https://prismamarket.ee/entry/16972/ploom-tume--vaike-lepotica/2060268100001",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16929",
+    "name" : "Fruits and vegetables",
+    "url" : "https://prismamarket.ee/products/16929"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

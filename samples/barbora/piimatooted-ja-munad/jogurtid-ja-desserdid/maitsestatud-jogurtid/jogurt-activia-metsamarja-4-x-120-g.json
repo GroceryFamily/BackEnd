@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c8dfb77bb938f410c033017b6f4f9c5440a7b464bc6fc1d6d48801ac70c3fdd1
-size 531
+{
+  "namespace" : "barbora.ee",
+  "code" : "jogurt-activia-metsamarja-4-x-120-g",
+  "name" : "Jogurt ACTIVIA metsamarja, 4x120g",
+  "url" : "https://barbora.ee/toode/jogurt-activia-metsamarja-4-x-120-g",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "jogurtid-ja-desserdid",
+    "name" : "Yoghurts and desserts",
+    "url" : "https://barbora.ee/piimatooted-ja-munad/jogurtid-ja-desserdid"
+  }, {
+    "code" : "piimatooted-ja-munad",
+    "name" : "Dairy and eggs",
+    "url" : "https://barbora.ee/piimatooted-ja-munad"
+  } ]
+}

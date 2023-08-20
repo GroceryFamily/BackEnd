@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0d3c484300d27a99a615d9fcb23e2a45ab6027dedf59fb4d23d8d1c5b08cd6ad
-size 459
+{
+  "namespace" : "barbora.ee",
+  "code" : "banaan-kg",
+  "name" : "Banaan, kg",
+  "url" : "https://barbora.ee/toode/banaan-kg",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "koogiviljad-puuviljad",
+    "name" : "Vegetables and fruits",
+    "url" : "https://barbora.ee/koogiviljad-puuviljad"
+  }, {
+    "code" : "puuviljad-ja-marjad",
+    "name" : "Fruits and berries",
+    "url" : "https://barbora.ee/koogiviljad-puuviljad/puuviljad-ja-marjad"
+  } ]
+}

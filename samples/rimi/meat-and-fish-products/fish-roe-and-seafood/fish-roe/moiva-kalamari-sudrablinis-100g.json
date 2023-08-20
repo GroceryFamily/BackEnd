@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e43e0769e1a43b7b41ca76bb686a1a0aa22efb839962d7df8a35735fc1ebd1fe
-size 646
+{
+  "namespace" : "rimi.ee",
+  "code" : "moiva-kalamari-sudrablinis-100g",
+  "name" : "Moiva kalamari Sudrablinis 100g",
+  "url" : "https://rimi.ee/epood/en/products/meat-and-fish-products/fish-roe-and-seafood/fish-roe/moiva-kalamari-sudrablinis-100g/p/982472",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "meat-and-fish-products",
+    "name" : "Meat and fish products",
+    "url" : "https://rimi.ee/epood/en/products/meat-and-fish-products/c/SH-8"
+  }, {
+    "code" : "fish-roe-and-seafood",
+    "name" : "Fish roe and seafood",
+    "url" : "https://rimi.ee/epood/en/products/meat-and-fish-products/fish-roe-and-seafood/c/SH-8-3"
+  } ]
+}

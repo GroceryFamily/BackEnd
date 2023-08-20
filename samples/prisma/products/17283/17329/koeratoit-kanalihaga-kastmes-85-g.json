@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f5d9c2e0d198703e971e220a84dba891d55c21832189582cd9c56087853b7fdc
-size 487
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "koeratoit-kanalihaga-kastmes-85-g",
+  "name" : "Koeratoit kanalihaga kastmes 85 G",
+  "url" : "https://prismamarket.ee/entry/17329/koeratoit-kanalihaga-kastmes-85-g/6430069586742",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "17283",
+    "name" : "Pets",
+    "url" : "https://prismamarket.ee/products/17283"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

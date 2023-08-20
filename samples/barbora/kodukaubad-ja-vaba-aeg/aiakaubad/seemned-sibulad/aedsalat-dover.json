@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:765338770589df1b525069c27e41b2d9d0c935ffe5f29dc90e355fd472fc1800
-size 442
+{
+  "namespace" : "barbora.ee",
+  "code" : "aedsalat-dover",
+  "name" : "Aedsalat Dover",
+  "url" : "https://barbora.ee/toode/aedsalat-dover",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "aiakaubad",
+    "name" : "Gardening",
+    "url" : "https://barbora.ee/kodukaubad-ja-vaba-aeg/aiakaubad"
+  }, {
+    "code" : "kodukaubad-ja-vaba-aeg",
+    "name" : "Home and leisure",
+    "url" : "https://barbora.ee/kodukaubad-ja-vaba-aeg"
+  } ]
+}

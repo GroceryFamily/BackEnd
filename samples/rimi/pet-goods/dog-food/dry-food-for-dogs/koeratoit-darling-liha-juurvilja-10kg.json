@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e87ad92d4896788fdb4d1cb50be18b5a163c57687d89ab38983e77fdad5bae79
-size 560
+{
+  "namespace" : "rimi.ee",
+  "code" : "koeratoit-darling-liha-juurvilja-10kg",
+  "name" : "Koeratoit Darling liha-juurvilja 10kg",
+  "url" : "https://rimi.ee/epood/en/products/pet-goods/dog-food/dry-food-for-dogs/koeratoit-darling-liha-juurvilja-10kg/p/104006",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "pet-goods",
+    "name" : "Pet goods",
+    "url" : "https://rimi.ee/epood/en/products/pet-goods/c/SH-7"
+  }, {
+    "code" : "dog-food",
+    "name" : "Dog food",
+    "url" : "https://rimi.ee/epood/en/products/pet-goods/dog-food/c/SH-7-2"
+  } ]
+}

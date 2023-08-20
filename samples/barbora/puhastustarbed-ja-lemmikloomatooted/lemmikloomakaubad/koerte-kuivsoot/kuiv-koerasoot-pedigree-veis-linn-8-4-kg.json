@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8341a2803453fcc265677e4dd02a901966a11c61ea0afb927f2539a569694f56
-size 573
+{
+  "namespace" : "barbora.ee",
+  "code" : "kuiv-koerasoot-pedigree-veis-linn-8-4-kg",
+  "name" : "Kuiv koerasööt PEDIGREE veis/linn.8,4kg",
+  "url" : "https://barbora.ee/toode/kuiv-koerasoot-pedigree-veis-linn-8-4-kg",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "lemmikloomakaubad",
+    "name" : "Pets",
+    "url" : "https://barbora.ee/puhastustarbed-ja-lemmikloomatooted/lemmikloomakaubad"
+  }, {
+    "code" : "puhastustarbed-ja-lemmikloomatooted",
+    "name" : "Household and pets",
+    "url" : "https://barbora.ee/puhastustarbed-ja-lemmikloomatooted"
+  } ]
+}

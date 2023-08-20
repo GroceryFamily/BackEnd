@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2f91390585fc9dbda6c62ad1a6bbd7a040d2e536ca23332be8dddda148d9428e
-size 537
+{
+  "namespace" : "barbora.ee",
+  "code" : "jogurt-tere-hellus-mustasostra-350-g",
+  "name" : "Jogurt TERE Hellus mustasõstra, 350g",
+  "url" : "https://barbora.ee/toode/jogurt-tere-hellus-mustasostra-350-g",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "jogurtid-ja-desserdid",
+    "name" : "Yoghurts and desserts",
+    "url" : "https://barbora.ee/piimatooted-ja-munad/jogurtid-ja-desserdid"
+  }, {
+    "code" : "piimatooted-ja-munad",
+    "name" : "Dairy and eggs",
+    "url" : "https://barbora.ee/piimatooted-ja-munad"
+  } ]
+}

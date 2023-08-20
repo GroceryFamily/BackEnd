@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f24bb9a7e452bff81238082700696f5ff93fd9dd5cdba21f7090fb1933d3cbb6
-size 529
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "darling-kuiv-koeratoit--linnuliha-juurvili-10kg",
+  "name" : "DARLING kuiv koeratoit, linnuliha/juurvili 10kg",
+  "url" : "https://prismamarket.ee/entry/17329/darling-kuiv-koeratoit--linnuliha-juurvili-10kg/7613032933814",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "17283",
+    "name" : "Pets",
+    "url" : "https://prismamarket.ee/products/17283"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

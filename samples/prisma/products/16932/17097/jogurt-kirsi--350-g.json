@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0030ef7d517177a1ca3e4782d9afe738b4cdfdfdc77ad327adadf2481d3db547
-size 445
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "jogurt-kirsi--350-g",
+  "name" : "Jogurt kirsi, 350 g",
+  "url" : "https://prismamarket.ee/entry/17097/jogurt-kirsi--350-g/4750072014240",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16932",
+    "name" : "Milk",
+    "url" : "https://prismamarket.ee/products/16932"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

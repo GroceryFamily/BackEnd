@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:dc0e17afa2af5e171a53e7572ff4552c6f3fa58738eed357d9fe909990bddcc0
-size 468
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "arbuusikuubikud-250-g",
+  "name" : "Arbuusikuubikud 250 g",
+  "url" : "https://prismamarket.ee/entry/16972/arbuusikuubikud-250-g/4740199000547",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16929",
+    "name" : "Fruits and vegetables",
+    "url" : "https://prismamarket.ee/products/16929"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

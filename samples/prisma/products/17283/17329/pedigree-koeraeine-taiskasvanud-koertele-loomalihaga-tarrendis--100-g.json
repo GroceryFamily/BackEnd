@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:93456a917ce53777c3e01ae18bb846aaaef5d866045dca07a270a621326165d9
-size 596
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "pedigree-koeraeine-taiskasvanud-koertele-loomalihaga-tarrendis--100-g",
+  "name" : "PEDIGREE koeraeine täiskasvanud koertele loomalihaga tarrendis, 100 g",
+  "url" : "https://prismamarket.ee/entry/17329/pedigree-koeraeine-taiskasvanud-koertele-loomalihaga-tarrendis--100-g/5900951017261",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "17283",
+    "name" : "Pets",
+    "url" : "https://prismamarket.ee/products/17283"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

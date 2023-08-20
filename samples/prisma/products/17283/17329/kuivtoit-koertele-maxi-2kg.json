@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ec82d6ebebf7c359e80373cce6dd4a129afe829dd726175b23028cbc23bfdcb5
-size 466
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "kuivtoit-koertele-maxi-2kg",
+  "name" : "Kuivtoit koertele Maxi 2kg",
+  "url" : "https://prismamarket.ee/entry/17329/kuivtoit-koertele-maxi-2kg/6438411009093",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "17283",
+    "name" : "Pets",
+    "url" : "https://prismamarket.ee/products/17283"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

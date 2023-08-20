@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f1fda951d6c50834bd1f8ecff8c8f97436dca55e6de4b7f2dae3cccce4f68865
-size 662
+{
+  "namespace" : "rimi.ee",
+  "code" : "voileivamari-punane-sudrablinis-100g",
+  "name" : "Võileivamari punane Sudrablinis 100g",
+  "url" : "https://rimi.ee/epood/en/products/meat-and-fish-products/fish-roe-and-seafood/fish-roe/voileivamari-punane-sudrablinis-100g/p/209356",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "meat-and-fish-products",
+    "name" : "Meat and fish products",
+    "url" : "https://rimi.ee/epood/en/products/meat-and-fish-products/c/SH-8"
+  }, {
+    "code" : "fish-roe-and-seafood",
+    "name" : "Fish roe and seafood",
+    "url" : "https://rimi.ee/epood/en/products/meat-and-fish-products/fish-roe-and-seafood/c/SH-8-3"
+  } ]
+}

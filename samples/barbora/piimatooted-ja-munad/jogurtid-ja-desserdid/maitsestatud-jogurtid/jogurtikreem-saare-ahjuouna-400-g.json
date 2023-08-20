@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b8a70468d174bc082919da202e55e83d7714f0ace99fc867e3f75fa363a3f65a
-size 528
+{
+  "namespace" : "barbora.ee",
+  "code" : "jogurtikreem-saare-ahjuouna-400-g",
+  "name" : "Jogurtikreem SAARE ahjuõuna, 400g",
+  "url" : "https://barbora.ee/toode/jogurtikreem-saare-ahjuouna-400-g",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "jogurtid-ja-desserdid",
+    "name" : "Yoghurts and desserts",
+    "url" : "https://barbora.ee/piimatooted-ja-munad/jogurtid-ja-desserdid"
+  }, {
+    "code" : "piimatooted-ja-munad",
+    "name" : "Dairy and eggs",
+    "url" : "https://barbora.ee/piimatooted-ja-munad"
+  } ]
+}

@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2c70c60019cc6f1c4103e24110e87ae8e6a4ee08b627146403d093a226c90a37
-size 527
+{
+  "namespace" : "barbora.ee",
+  "code" : "kreeka-jogurt-virsiku-liisu-160-g",
+  "name" : "Kreeka jogurt virsiku LIISU, 160g",
+  "url" : "https://barbora.ee/toode/kreeka-jogurt-virsiku-liisu-160-g",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "jogurtid-ja-desserdid",
+    "name" : "Yoghurts and desserts",
+    "url" : "https://barbora.ee/piimatooted-ja-munad/jogurtid-ja-desserdid"
+  }, {
+    "code" : "piimatooted-ja-munad",
+    "name" : "Dairy and eggs",
+    "url" : "https://barbora.ee/piimatooted-ja-munad"
+  } ]
+}

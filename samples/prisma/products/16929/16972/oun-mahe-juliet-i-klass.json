@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:838b50bdd8509e5da6de156bc1bfdc281e07df52e590fa7ffe4c0c8d089e6a1c
-size 475
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "oun-mahe-juliet-i-klass",
+  "name" : "Õun mahe Juliet I klass",
+  "url" : "https://prismamarket.ee/entry/16972/oun-mahe-juliet-i-klass/2060268200008",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16929",
+    "name" : "Fruits and vegetables",
+    "url" : "https://prismamarket.ee/products/16929"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

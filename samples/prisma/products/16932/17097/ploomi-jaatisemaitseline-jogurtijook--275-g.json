@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e98e3982b3ea297ef098a7b5784821c9655d0e4a48ff8b7a405c11e74cc71434
-size 519
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "ploomi-jaatisemaitseline-jogurtijook--275-g",
+  "name" : "Ploomi-jäätisemaitseline jogurtijook, 275 g",
+  "url" : "https://prismamarket.ee/entry/17097/ploomi-jaatisemaitseline-jogurtijook--275-g/4740125582772",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16932",
+    "name" : "Milk",
+    "url" : "https://prismamarket.ee/products/16932"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

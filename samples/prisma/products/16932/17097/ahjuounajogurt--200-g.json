@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:272760202ff6a3f1f9f0430c63c18898e0b0b1ff0b46f90b8e76fe507e7112c0
-size 452
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "ahjuounajogurt--200-g",
+  "name" : "Ahjuõunajogurt, 200 g",
+  "url" : "https://prismamarket.ee/entry/17097/ahjuounajogurt--200-g/4740125532401",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16932",
+    "name" : "Milk",
+    "url" : "https://prismamarket.ee/products/16932"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

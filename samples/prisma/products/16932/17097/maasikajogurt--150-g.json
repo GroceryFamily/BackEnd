@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:054c750de846ef049d07014fcffd43535629808cfec40d6edcc55b9fa5f8a4fd
-size 448
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "maasikajogurt--150-g",
+  "name" : "Maasikajogurt, 150 g",
+  "url" : "https://prismamarket.ee/entry/17097/maasikajogurt--150-g/6414893148901",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16932",
+    "name" : "Milk",
+    "url" : "https://prismamarket.ee/products/16932"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

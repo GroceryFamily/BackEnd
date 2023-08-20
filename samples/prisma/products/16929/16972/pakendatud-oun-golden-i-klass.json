@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6384df75f5ba0617bd54d348fd1780613078742af43208d43f70b5eeb0ab5020
-size 493
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "pakendatud-oun-golden-i-klass",
+  "name" : "Pakendatud õun Golden I klass",
+  "url" : "https://prismamarket.ee/entry/16972/pakendatud-oun-golden-i-klass/4740669020051",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16929",
+    "name" : "Fruits and vegetables",
+    "url" : "https://prismamarket.ee/products/16929"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

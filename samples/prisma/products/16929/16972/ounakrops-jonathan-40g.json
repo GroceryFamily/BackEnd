@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:18b7f8a9f94cfdf592c7fa0c94c6b1f39dd906eb7f34b85f0546259e418f2bc0
-size 473
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "ounakrops-jonathan-40g",
+  "name" : "Õunakrõps Jonathan 40g",
+  "url" : "https://prismamarket.ee/entry/16972/ounakrops-jonathan-40g/5997690707874",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16929",
+    "name" : "Fruits and vegetables",
+    "url" : "https://prismamarket.ee/products/16929"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

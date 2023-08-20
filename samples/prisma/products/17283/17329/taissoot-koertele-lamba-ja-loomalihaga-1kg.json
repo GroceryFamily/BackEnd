@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ecae63969fcde14808af28610323715539d12684e0ede40590c80c4fd7f7d654
-size 517
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "taissoot-koertele-lamba-ja-loomalihaga-1kg",
+  "name" : "Täissööt koertele lamba ja loomalihaga 1kg",
+  "url" : "https://prismamarket.ee/entry/17329/taissoot-koertele-lamba-ja-loomalihaga-1kg/4008429114892",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "17283",
+    "name" : "Pets",
+    "url" : "https://prismamarket.ee/products/17283"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

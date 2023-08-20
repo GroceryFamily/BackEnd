@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a7e4b5f77681612ea55762d511382c0a9ad94ec0f6d40e9ee52cb6d7de3444a8
-size 474
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "greip-valge-white-marsh",
+  "name" : "Greip valge White marsh",
+  "url" : "https://prismamarket.ee/entry/16972/greip-valge-white-marsh/2060505200006",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16929",
+    "name" : "Fruits and vegetables",
+    "url" : "https://prismamarket.ee/products/16929"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

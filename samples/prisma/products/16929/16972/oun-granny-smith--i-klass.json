@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8ed52dc9df6bd269eee81766f6adcfc2b96a11617efbff6bd6f348c6fac5da49
-size 481
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "oun-granny-smith--i-klass",
+  "name" : "Õun Granny Smith, I klass",
+  "url" : "https://prismamarket.ee/entry/16972/oun-granny-smith--i-klass/2060515000009",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16929",
+    "name" : "Fruits and vegetables",
+    "url" : "https://prismamarket.ee/products/16929"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

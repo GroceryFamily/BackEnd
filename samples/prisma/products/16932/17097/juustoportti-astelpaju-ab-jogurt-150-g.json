@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:fb2f81d3f32a30f5c4909dcd6bd6a64924bdf9622c507c245291d8cf45caa4f6
-size 502
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "juustoportti-astelpaju-ab-jogurt-150-g",
+  "name" : "Juustoportti astelpaju-AB-jogurt 150 g",
+  "url" : "https://prismamarket.ee/entry/17097/juustoportti-astelpaju-ab-jogurt-150-g/6408652225071",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16932",
+    "name" : "Milk",
+    "url" : "https://prismamarket.ee/products/16932"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

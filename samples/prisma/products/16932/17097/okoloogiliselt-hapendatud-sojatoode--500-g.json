@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e32e86de42cd02a203cc91181f2eca471651d24c61722f17a3d718c6ebcf95aa
-size 515
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "okoloogiliselt-hapendatud-sojatoode--500-g",
+  "name" : "Ökoloogiliselt hapendatud sojatoode, 500 g",
+  "url" : "https://prismamarket.ee/entry/17097/okoloogiliselt-hapendatud-sojatoode--500-g/6414893096097",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16932",
+    "name" : "Milk",
+    "url" : "https://prismamarket.ee/products/16932"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f40e57e5c543386c7e8f826d6a4872acbccaf17fa6c669bda4c943c900cabec2
-size 539
+{
+  "namespace" : "barbora.ee",
+  "code" : "jogurt-mio-delizzi-virsikumaits-150-g",
+  "name" : "Jogurt MIO DELIZZI virsikumaits.,150g",
+  "url" : "https://barbora.ee/toode/jogurt-mio-delizzi-virsikumaits-150-g",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "jogurtid-ja-desserdid",
+    "name" : "Yoghurts and desserts",
+    "url" : "https://barbora.ee/piimatooted-ja-munad/jogurtid-ja-desserdid"
+  }, {
+    "code" : "piimatooted-ja-munad",
+    "name" : "Dairy and eggs",
+    "url" : "https://barbora.ee/piimatooted-ja-munad"
+  } ]
+}

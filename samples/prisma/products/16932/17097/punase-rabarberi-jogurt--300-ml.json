@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:add758a11fb518d0c234a5cc2e8b1b2c6cb2d76f6fa8675d05858f5103c2f246
-size 481
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "punase-rabarberi-jogurt--300-ml",
+  "name" : "Punase rabarberi jogurt, 300 ml",
+  "url" : "https://prismamarket.ee/entry/17097/punase-rabarberi-jogurt--300-ml/4740218002545",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16932",
+    "name" : "Milk",
+    "url" : "https://prismamarket.ee/products/16932"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

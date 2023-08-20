@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:70083cd5672f94760ccfaeaad425a42dd84c9949458208b98805ea71d0ddcf6e
-size 430
+{
+  "namespace" : "barbora.ee",
+  "code" : "rebasesaba",
+  "name" : "Rebasesaba",
+  "url" : "https://barbora.ee/toode/rebasesaba",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "aiakaubad",
+    "name" : "Gardening",
+    "url" : "https://barbora.ee/kodukaubad-ja-vaba-aeg/aiakaubad"
+  }, {
+    "code" : "kodukaubad-ja-vaba-aeg",
+    "name" : "Home and leisure",
+    "url" : "https://barbora.ee/kodukaubad-ja-vaba-aeg"
+  } ]
+}

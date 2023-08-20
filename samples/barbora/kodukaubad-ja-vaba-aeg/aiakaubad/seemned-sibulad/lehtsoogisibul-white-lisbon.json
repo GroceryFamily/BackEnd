@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:912e8e63c9b0d4d16b8774c4e08c7f77c3d934bc8e2b8ce7b78668fdcf44533d
-size 483
+{
+  "namespace" : "barbora.ee",
+  "code" : "lehtsoogisibul-white-lisbon",
+  "name" : "Lehtsöögisibul White Lisbon",
+  "url" : "https://barbora.ee/toode/lehtsoogisibul-white-lisbon",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "aiakaubad",
+    "name" : "Gardening",
+    "url" : "https://barbora.ee/kodukaubad-ja-vaba-aeg/aiakaubad"
+  }, {
+    "code" : "kodukaubad-ja-vaba-aeg",
+    "name" : "Home and leisure",
+    "url" : "https://barbora.ee/kodukaubad-ja-vaba-aeg"
+  } ]
+}

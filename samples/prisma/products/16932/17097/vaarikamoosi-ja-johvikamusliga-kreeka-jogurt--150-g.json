@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6bee77e99f1ecbc0e1785c74abc0c6bc88d30d8ba4f2d2fa5b721208a07d4af3
-size 543
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "vaarikamoosi-ja-johvikamusliga-kreeka-jogurt--150-g",
+  "name" : "Vaarikamoosi ja jõhvikamüsliga kreeka jogurt, 150 g",
+  "url" : "https://prismamarket.ee/entry/17097/vaarikamoosi-ja-johvikamusliga-kreeka-jogurt--150-g/4740036013150",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16932",
+    "name" : "Milk",
+    "url" : "https://prismamarket.ee/products/16932"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

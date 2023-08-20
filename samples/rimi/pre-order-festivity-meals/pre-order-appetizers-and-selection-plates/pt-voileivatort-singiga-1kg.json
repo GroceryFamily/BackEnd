@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:bbe236341f0e896f2f0b75c7eb2aa64b01f517d0d3e7f1924ce7fa83df1c9057
-size 496
+{
+  "namespace" : "rimi.ee",
+  "code" : "pt-voileivatort-singiga-1kg",
+  "name" : "PT Võileivatort singiga 1kg (ETTETELLIMISEGA)",
+  "url" : "https://rimi.ee/epood/en/products/pre-order-festivity-meals/pre-order-appetizers-and-selection-plates/pt-voileivatort-singiga-1kg/p/954971",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "pre-order-festivity-meals",
+    "name" : "Pre-order festivity meals",
+    "url" : "https://rimi.ee/epood/en/products/pre-order-festivity-meals/c/SH-20"
+  } ]
+}

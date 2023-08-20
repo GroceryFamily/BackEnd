@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:42187125b4b8a8e38a7f45aeb65895b3dbac6e5a5df39e5ea7a7f1223a12f4a5
-size 574
+{
+  "namespace" : "barbora.ee",
+  "code" : "kuiv-koerasoot-darling-linnul-juurv-3-kg",
+  "name" : "Kuiv koerasööt DARLING linnul- juurv.3kg",
+  "url" : "https://barbora.ee/toode/kuiv-koerasoot-darling-linnul-juurv-3-kg",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "lemmikloomakaubad",
+    "name" : "Pets",
+    "url" : "https://barbora.ee/puhastustarbed-ja-lemmikloomatooted/lemmikloomakaubad"
+  }, {
+    "code" : "puhastustarbed-ja-lemmikloomatooted",
+    "name" : "Household and pets",
+    "url" : "https://barbora.ee/puhastustarbed-ja-lemmikloomatooted"
+  } ]
+}

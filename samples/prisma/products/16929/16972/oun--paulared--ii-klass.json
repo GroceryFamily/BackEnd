@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:350f49138fed5cc46b9b53c07b62dd8eb52b9456ca2137be28cc18af7da64daf
-size 474
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "oun--paulared--ii-klass",
+  "name" : "Õun Paulared, II klass",
+  "url" : "https://prismamarket.ee/entry/16972/oun--paulared--ii-klass/2060514600002",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16929",
+    "name" : "Fruits and vegetables",
+    "url" : "https://prismamarket.ee/products/16929"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

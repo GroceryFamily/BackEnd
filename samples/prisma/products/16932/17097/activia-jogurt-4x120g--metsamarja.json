@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c1c95f7c366a5b45e948d698cb2c17c7266974ea816cf03cd3f76cc5bcc9c68b
-size 487
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "activia-jogurt-4x120g--metsamarja",
+  "name" : "Activia jogurt 4x120g, metsamarja",
+  "url" : "https://prismamarket.ee/entry/17097/activia-jogurt-4x120g--metsamarja/5900643043318",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16932",
+    "name" : "Milk",
+    "url" : "https://prismamarket.ee/products/16932"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

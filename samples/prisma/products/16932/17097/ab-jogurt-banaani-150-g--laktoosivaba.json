@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:107ed6c5ba5cc2c3f1bebd23501cd7eee6762d7c09d664218b926a9b0a6fba82
-size 499
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "ab-jogurt-banaani-150-g--laktoosivaba",
+  "name" : "AB-jogurt banaani 150 g, laktoosivaba",
+  "url" : "https://prismamarket.ee/entry/17097/ab-jogurt-banaani-150-g--laktoosivaba/4740113093440",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16932",
+    "name" : "Milk",
+    "url" : "https://prismamarket.ee/products/16932"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

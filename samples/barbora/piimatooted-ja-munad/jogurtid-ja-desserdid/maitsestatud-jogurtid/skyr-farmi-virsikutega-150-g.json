@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5cf64e60ef5a1b652c86dc152f41ea5a14eed54d54edaf1477e51db902ef2b98
-size 512
+{
+  "namespace" : "barbora.ee",
+  "code" : "skyr-farmi-virsikutega-150-g",
+  "name" : "Skyr FARMI virsikutega, 150g",
+  "url" : "https://barbora.ee/toode/skyr-farmi-virsikutega-150-g",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "jogurtid-ja-desserdid",
+    "name" : "Yoghurts and desserts",
+    "url" : "https://barbora.ee/piimatooted-ja-munad/jogurtid-ja-desserdid"
+  }, {
+    "code" : "piimatooted-ja-munad",
+    "name" : "Dairy and eggs",
+    "url" : "https://barbora.ee/piimatooted-ja-munad"
+  } ]
+}

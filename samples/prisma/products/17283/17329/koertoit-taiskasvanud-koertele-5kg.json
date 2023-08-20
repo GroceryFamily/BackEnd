@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e5770d86845de3d29c0cbfeeb2274d03b6fce511e989196316a09aa708cb3679
-size 491
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "koertoit-taiskasvanud-koertele-5kg",
+  "name" : "Koertoit täiskasvanud koertele 5kg",
+  "url" : "https://prismamarket.ee/entry/17329/koertoit-taiskasvanud-koertele-5kg/6429810236012",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "17283",
+    "name" : "Pets",
+    "url" : "https://prismamarket.ee/products/17283"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

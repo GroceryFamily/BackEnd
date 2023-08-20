@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8b7d6b61fae422008559486d6fa939bb84a1a9f0401ef3494ba106fb9faaef71
-size 448
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "kreeka-jogurt--370-g",
+  "name" : "Kreeka jogurt, 370 g",
+  "url" : "https://prismamarket.ee/entry/17097/kreeka-jogurt--370-g/4740125531213",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16932",
+    "name" : "Milk",
+    "url" : "https://prismamarket.ee/products/16932"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

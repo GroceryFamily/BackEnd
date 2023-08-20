@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:74ce443b5d2c50f1a8ad47a0d73def4d4bd027c65a1a5c294631e014d3bd0f6f
-size 572
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "hau-hau-koeratoit-kalkuni--ja-kanaliha-tukkidega-kastmes-375g",
+  "name" : "Hau-Hau koeratoit kalkuni- ja kanaliha tükkidega kastmes 375g",
+  "url" : "https://prismamarket.ee/entry/17329/hau-hau-koeratoit-kalkuni--ja-kanaliha-tukkidega-kastmes-375g/6430062465860",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "17283",
+    "name" : "Pets",
+    "url" : "https://prismamarket.ee/products/17283"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b3da9fd693ae5378ca40ff20d2941a2451e4e626e1efd1ba00da9e9cfc0bfbd2
-size 467
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "jogurtijook-4x100g--puuvilja",
+  "name" : "Jogurtijook 4x100g, puuvilja",
+  "url" : "https://prismamarket.ee/entry/17097/jogurtijook-4x100g--puuvilja/47500891",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16932",
+    "name" : "Milk",
+    "url" : "https://prismamarket.ee/products/16932"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

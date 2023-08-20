@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ff27f88f03b4e9e395570acfc9d198cf6dc6e4628f61094991803d31c6632d62
-size 545
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "cesar-country-koeratoit-harjaliha-ja-kalkuniga-150-g",
+  "name" : "Cesar Country koeratoit härjaliha ja kalkuniga 150 g",
+  "url" : "https://prismamarket.ee/entry/17329/cesar-country-koeratoit-harjaliha-ja-kalkuniga-150-g/4008429139055",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "17283",
+    "name" : "Pets",
+    "url" : "https://prismamarket.ee/products/17283"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

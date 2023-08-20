@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c93ae0a86dfd0eca8852376249913e6df7abe9d3652e1ea8186c7f662960b44b
-size 499
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "ab-jogurt-mustika-150-g--laktoosivaba",
+  "name" : "AB-jogurt mustika 150 g, laktoosivaba",
+  "url" : "https://prismamarket.ee/entry/17097/ab-jogurt-mustika-150-g--laktoosivaba/4740113093426",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16932",
+    "name" : "Milk",
+    "url" : "https://prismamarket.ee/products/16932"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

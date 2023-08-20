@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:07e1f1938e5630bffcd5734f5a4a185ce098c13b260d7dc688bff3e922463027
-size 455
+{
+  "namespace" : "barbora.ee",
+  "code" : "hiina-nelk-violet",
+  "name" : "Hiina nelk \"Violet\"",
+  "url" : "https://barbora.ee/toode/hiina-nelk-violet",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "aiakaubad",
+    "name" : "Gardening",
+    "url" : "https://barbora.ee/kodukaubad-ja-vaba-aeg/aiakaubad"
+  }, {
+    "code" : "kodukaubad-ja-vaba-aeg",
+    "name" : "Home and leisure",
+    "url" : "https://barbora.ee/kodukaubad-ja-vaba-aeg"
+  } ]
+}

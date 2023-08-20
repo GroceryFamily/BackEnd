@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f45e4e08dc1770972eea7c12282a1f06ab64aefd53e066ff43b19c0c762742b8
-size 475
+{
+  "namespace" : "barbora.ee",
+  "code" : "aedpetersell-mooskrause-2",
+  "name" : "Aedpetersell MOOSKRAUSE 2",
+  "url" : "https://barbora.ee/toode/aedpetersell-mooskrause-2",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "aiakaubad",
+    "name" : "Gardening",
+    "url" : "https://barbora.ee/kodukaubad-ja-vaba-aeg/aiakaubad"
+  }, {
+    "code" : "kodukaubad-ja-vaba-aeg",
+    "name" : "Home and leisure",
+    "url" : "https://barbora.ee/kodukaubad-ja-vaba-aeg"
+  } ]
+}

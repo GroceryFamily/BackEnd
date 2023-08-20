@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:cab87348e28ddeb1f61bd9198e9385762f821822b03d79fb2a69a296fba2e679
-size 515
+{
+  "namespace" : "barbora.ee",
+  "code" : "jogurt-well-done-banaan-350-g",
+  "name" : "Jogurt WELL DONE banaan, 350g",
+  "url" : "https://barbora.ee/toode/jogurt-well-done-banaan-350-g",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "jogurtid-ja-desserdid",
+    "name" : "Yoghurts and desserts",
+    "url" : "https://barbora.ee/piimatooted-ja-munad/jogurtid-ja-desserdid"
+  }, {
+    "code" : "piimatooted-ja-munad",
+    "name" : "Dairy and eggs",
+    "url" : "https://barbora.ee/piimatooted-ja-munad"
+  } ]
+}

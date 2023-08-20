@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c510213b765eee2dec5488e17c3a52eefe6979bdb356bab410a45ef83fb1c06d
-size 526
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "hau-hau-champion-eine-lambalihaga-koerale-260g",
+  "name" : "Hau-Hau Champion eine lambalihaga koerale 260g",
+  "url" : "https://prismamarket.ee/entry/17329/hau-hau-champion-eine-lambalihaga-koerale-260g/6430062465914",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "17283",
+    "name" : "Pets",
+    "url" : "https://prismamarket.ee/products/17283"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

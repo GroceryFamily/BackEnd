@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e57e84665d5c34fa36878a54a25d2c12c4136ae357c17f98810b4b6edd8dfd79
-size 548
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "taissoot-kana-ja-riisiga-taiskasvanud-koertele-15-kg",
+  "name" : "Täissööt kana ja riisiga täiskasvanud koertele 15 kg",
+  "url" : "https://prismamarket.ee/entry/17329/taissoot-kana-ja-riisiga-taiskasvanud-koertele-15-kg/6420140700174",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "17283",
+    "name" : "Pets",
+    "url" : "https://prismamarket.ee/products/17283"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

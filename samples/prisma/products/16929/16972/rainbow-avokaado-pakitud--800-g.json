@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5ee4b4954233261b1854a72d3403593a25406c7d5b8e9961fa6533355e880893
-size 497
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "rainbow-avokaado-pakitud--800-g",
+  "name" : "Rainbow avokaado pakitud 800 g",
+  "url" : "https://prismamarket.ee/entry/16972/rainbow-avokaado-pakitud--800-g/7340011432371",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16929",
+    "name" : "Fruits and vegetables",
+    "url" : "https://prismamarket.ee/products/16929"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

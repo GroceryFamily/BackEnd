@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:aaa903938f3c2f2d67097b3b68f57b8e646b8c803fe9aaf06e6da42ba4ac2c97
-size 500
+{
+  "namespace" : "barbora.ee",
+  "code" : "kortsteraline-hernes-progress-n-9",
+  "name" : "Kortsteraline hernes PROGRESS N. 9",
+  "url" : "https://barbora.ee/toode/kortsteraline-hernes-progress-n-9",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "aiakaubad",
+    "name" : "Gardening",
+    "url" : "https://barbora.ee/kodukaubad-ja-vaba-aeg/aiakaubad"
+  }, {
+    "code" : "kodukaubad-ja-vaba-aeg",
+    "name" : "Home and leisure",
+    "url" : "https://barbora.ee/kodukaubad-ja-vaba-aeg"
+  } ]
+}

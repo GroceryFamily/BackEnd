@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:128de5838e249de39ba03d096434db957a7a36bccd95ff44950c22ce41eaa206
-size 481
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "koerakonserv-ulukilihaga-1240-g",
+  "name" : "Koerakonserv ulukilihaga 1240 g",
+  "url" : "https://prismamarket.ee/entry/17329/koerakonserv-ulukilihaga-1240-g/7340011458937",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "17283",
+    "name" : "Pets",
+    "url" : "https://prismamarket.ee/products/17283"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

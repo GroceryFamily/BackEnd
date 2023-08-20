@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f58a204ac55f5899f814afc3c571349d36e6792aea551dee5f73d8ff356e7879
-size 525
+{
+  "namespace" : "barbora.ee",
+  "code" : "vaikesed-banaanid-pakitud-250-g",
+  "name" : "Väikesed banaanid pakitud, 250g",
+  "url" : "https://barbora.ee/toode/vaikesed-banaanid-pakitud-250-g",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "koogiviljad-puuviljad",
+    "name" : "Vegetables and fruits",
+    "url" : "https://barbora.ee/koogiviljad-puuviljad"
+  }, {
+    "code" : "puuviljad-ja-marjad",
+    "name" : "Fruits and berries",
+    "url" : "https://barbora.ee/koogiviljad-puuviljad/puuviljad-ja-marjad"
+  } ]
+}

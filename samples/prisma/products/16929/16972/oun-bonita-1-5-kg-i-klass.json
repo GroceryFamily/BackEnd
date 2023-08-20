@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:683185de0e1692c9fa48b94c3df30100e5afdeb6373ee922a61d5c6e0c76f476
-size 481
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "oun-bonita-1-5-kg-i-klass",
+  "name" : "Õun Bonita 1,5 kg I klass",
+  "url" : "https://prismamarket.ee/entry/16972/oun-bonita-1-5-kg-i-klass/9033400001750",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16929",
+    "name" : "Fruits and vegetables",
+    "url" : "https://prismamarket.ee/products/16929"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

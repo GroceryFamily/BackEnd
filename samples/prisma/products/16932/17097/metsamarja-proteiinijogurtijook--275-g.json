@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b5e3bcaaae35ed6db6418493fbeaccb441c0508d737505d4f2b2fe80748f222a
-size 502
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "metsamarja-proteiinijogurtijook--275-g",
+  "name" : "Metsamarja proteiinijogurtijook, 275 g",
+  "url" : "https://prismamarket.ee/entry/17097/metsamarja-proteiinijogurtijook--275-g/4740125582130",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16932",
+    "name" : "Milk",
+    "url" : "https://prismamarket.ee/products/16932"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

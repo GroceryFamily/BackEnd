@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:54edf01d676960976697aad32a25f261533105158d8914fffad1085b313eb60f
-size 460
+{
+  "namespace" : "barbora.ee",
+  "code" : "herneseeme-rondo-bio",
+  "name" : "Herneseeme Rondo Bio",
+  "url" : "https://barbora.ee/toode/herneseeme-rondo-bio",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "aiakaubad",
+    "name" : "Gardening",
+    "url" : "https://barbora.ee/kodukaubad-ja-vaba-aeg/aiakaubad"
+  }, {
+    "code" : "kodukaubad-ja-vaba-aeg",
+    "name" : "Home and leisure",
+    "url" : "https://barbora.ee/kodukaubad-ja-vaba-aeg"
+  } ]
+}

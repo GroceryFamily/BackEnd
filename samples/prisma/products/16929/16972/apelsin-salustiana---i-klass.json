@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:afe31504e90786ba5196ff81873c40f1d002fa1319bd4cec00d88558525615d9
-size 488
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "apelsin-salustiana---i-klass",
+  "name" : "Apelsin Salustiana, I klass",
+  "url" : "https://prismamarket.ee/entry/16972/apelsin-salustiana---i-klass/2060401100004",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16929",
+    "name" : "Fruits and vegetables",
+    "url" : "https://prismamarket.ee/products/16929"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

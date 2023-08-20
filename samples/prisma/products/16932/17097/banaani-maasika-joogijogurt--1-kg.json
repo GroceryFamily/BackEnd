@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8cdf51cbd8444e6860be2ee8526e12f490849274b6aa569a7bdf4f74cbfd632d
-size 487
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "banaani-maasika-joogijogurt--1-kg",
+  "name" : "Banaani-maasika joogijogurt, 1 kg",
+  "url" : "https://prismamarket.ee/entry/17097/banaani-maasika-joogijogurt--1-kg/4740125510072",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16932",
+    "name" : "Milk",
+    "url" : "https://prismamarket.ee/products/16932"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

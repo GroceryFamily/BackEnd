@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:525bb1ca35a7964588d74e0e2e7b473f4256115d15bcd53ad22fac25f9331cc0
-size 513
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "koorene-jogurt--polka--maasikatega--400-g",
+  "name" : "Koorene jogurt \"Polka\" maasikatega, 400 g",
+  "url" : "https://prismamarket.ee/entry/17097/koorene-jogurt--polka--maasikatega--400-g/4740113034269",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16932",
+    "name" : "Milk",
+    "url" : "https://prismamarket.ee/products/16932"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

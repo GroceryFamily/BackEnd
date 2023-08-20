@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9cc9ecc2e0293e36718014ddb086de43f3664c1fc72ed05182671b1d4651949d
-size 484
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "adult-l-koeratoit-kanalihaga-8kg",
+  "name" : "Adult L koeratoit kanalihaga 8kg",
+  "url" : "https://prismamarket.ee/entry/17329/adult-l-koeratoit-kanalihaga-8kg/8595602526451",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "17283",
+    "name" : "Pets",
+    "url" : "https://prismamarket.ee/products/17283"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

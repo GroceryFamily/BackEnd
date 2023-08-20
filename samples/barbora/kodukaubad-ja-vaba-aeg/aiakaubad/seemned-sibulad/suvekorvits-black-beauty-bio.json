@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a743dfe365f24eba3b231b161b7feebf260c1483e7971a6a160642063bc4e4e3
-size 485
+{
+  "namespace" : "barbora.ee",
+  "code" : "suvekorvits-black-beauty-bio",
+  "name" : "Suvekõrvits Black Beauty Bio",
+  "url" : "https://barbora.ee/toode/suvekorvits-black-beauty-bio",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "aiakaubad",
+    "name" : "Gardening",
+    "url" : "https://barbora.ee/kodukaubad-ja-vaba-aeg/aiakaubad"
+  }, {
+    "code" : "kodukaubad-ja-vaba-aeg",
+    "name" : "Home and leisure",
+    "url" : "https://barbora.ee/kodukaubad-ja-vaba-aeg"
+  } ]
+}

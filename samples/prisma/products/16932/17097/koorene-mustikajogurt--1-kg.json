@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d819a4b465d78c24874286dd38f73e55f073b996b5b11911cb34ef409e6b5281
-size 469
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "koorene-mustikajogurt--1-kg",
+  "name" : "Koorene mustikajogurt, 1 kg",
+  "url" : "https://prismamarket.ee/entry/17097/koorene-mustikajogurt--1-kg/4740113090272",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16932",
+    "name" : "Milk",
+    "url" : "https://prismamarket.ee/products/16932"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

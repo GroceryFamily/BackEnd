@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b16dbcdab4c57b15defac7b81a309cd42c8ace638f0ce855898071e392dde8a2
-size 503
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "vaarika-granaatouna-joogijogurt--300-g",
+  "name" : "Vaarika-granaatõuna joogijogurt, 300 g",
+  "url" : "https://prismamarket.ee/entry/17097/vaarika-granaatouna-joogijogurt--300-g/5900643029831",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16932",
+    "name" : "Milk",
+    "url" : "https://prismamarket.ee/products/16932"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6508357f8d71d6c85eed1d0963806046a113f731c19d2fc815077a4c579062f3
-size 481
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "kuivtoit-koertele-mini-medi-2kg",
+  "name" : "Kuivtoit koertele Mini&Medi 2kg",
+  "url" : "https://prismamarket.ee/entry/17329/kuivtoit-koertele-mini-medi-2kg/6438411009109",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "17283",
+    "name" : "Pets",
+    "url" : "https://prismamarket.ee/products/17283"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

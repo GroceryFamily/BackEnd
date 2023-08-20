@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:84a3e14fccbebfc3c6c0d70d41306d56b10c97846652a5bc0749b7b2bb675c2d
-size 534
+{
+  "namespace" : "barbora.ee",
+  "code" : "jogurt-activia-maasikatega-4-x-120-g",
+  "name" : "Jogurt ACTIVIA maasikatega, 4x120g",
+  "url" : "https://barbora.ee/toode/jogurt-activia-maasikatega-4-x-120-g",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "jogurtid-ja-desserdid",
+    "name" : "Yoghurts and desserts",
+    "url" : "https://barbora.ee/piimatooted-ja-munad/jogurtid-ja-desserdid"
+  }, {
+    "code" : "piimatooted-ja-munad",
+    "name" : "Dairy and eggs",
+    "url" : "https://barbora.ee/piimatooted-ja-munad"
+  } ]
+}

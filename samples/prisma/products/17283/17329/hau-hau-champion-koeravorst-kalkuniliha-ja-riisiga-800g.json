@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:17a0899fd9ac2a5ab18825168ae395a59d17dc44a2569b78918335cbd9ecf4cb
-size 553
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "hau-hau-champion-koeravorst-kalkuniliha-ja-riisiga-800g",
+  "name" : "Hau-Hau Champion koeravorst kalkuniliha ja riisiga 800g",
+  "url" : "https://prismamarket.ee/entry/17329/hau-hau-champion-koeravorst-kalkuniliha-ja-riisiga-800g/6430056889993",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "17283",
+    "name" : "Pets",
+    "url" : "https://prismamarket.ee/products/17283"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

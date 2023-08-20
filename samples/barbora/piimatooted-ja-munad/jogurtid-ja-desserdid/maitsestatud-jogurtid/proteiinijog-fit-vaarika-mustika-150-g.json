@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4dc0d882cfa5377064f87bebf90423d05efa7c542317b7c04c86f7a3e9986a23
-size 543
+{
+  "namespace" : "barbora.ee",
+  "code" : "proteiinijog-fit-vaarika-mustika-150-g",
+  "name" : "Proteiinijog.FIT! vaarika-mustika, 150g",
+  "url" : "https://barbora.ee/toode/proteiinijog-fit-vaarika-mustika-150-g",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "jogurtid-ja-desserdid",
+    "name" : "Yoghurts and desserts",
+    "url" : "https://barbora.ee/piimatooted-ja-munad/jogurtid-ja-desserdid"
+  }, {
+    "code" : "piimatooted-ja-munad",
+    "name" : "Dairy and eggs",
+    "url" : "https://barbora.ee/piimatooted-ja-munad"
+  } ]
+}

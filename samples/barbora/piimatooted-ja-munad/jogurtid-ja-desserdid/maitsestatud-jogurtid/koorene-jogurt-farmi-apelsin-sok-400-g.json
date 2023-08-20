@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d2af43c1b3922e02f91fb259575b79dbb8c1b47af492a6748f46d15fcd87804f
-size 544
+{
+  "namespace" : "barbora.ee",
+  "code" : "koorene-jogurt-farmi-apelsin-sok-400-g",
+  "name" : "Koorene jogurt FARMI apelsin&šok., 400g",
+  "url" : "https://barbora.ee/toode/koorene-jogurt-farmi-apelsin-sok-400-g",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "jogurtid-ja-desserdid",
+    "name" : "Yoghurts and desserts",
+    "url" : "https://barbora.ee/piimatooted-ja-munad/jogurtid-ja-desserdid"
+  }, {
+    "code" : "piimatooted-ja-munad",
+    "name" : "Dairy and eggs",
+    "url" : "https://barbora.ee/piimatooted-ja-munad"
+  } ]
+}

@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:95cde6e4328eb4ec9a0258106aa8d5adac144c4ba742e8d82bcd8ac09ae14506
-size 573
+{
+  "namespace" : "barbora.ee",
+  "code" : "kuiv-koerasoot-super-prem-dr-stern-10-kg",
+  "name" : "Kuiv koerasööt Super.Prem.DR.STERN 10kg",
+  "url" : "https://barbora.ee/toode/kuiv-koerasoot-super-prem-dr-stern-10-kg",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "lemmikloomakaubad",
+    "name" : "Pets",
+    "url" : "https://barbora.ee/puhastustarbed-ja-lemmikloomatooted/lemmikloomakaubad"
+  }, {
+    "code" : "puhastustarbed-ja-lemmikloomatooted",
+    "name" : "Household and pets",
+    "url" : "https://barbora.ee/puhastustarbed-ja-lemmikloomatooted"
+  } ]
+}

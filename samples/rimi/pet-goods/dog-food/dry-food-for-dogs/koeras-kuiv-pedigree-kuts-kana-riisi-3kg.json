@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a41e0f1f0da6a0a5b3710b992cd0dc207b2581693248073baefcb604fed9981a
-size 588
+{
+  "namespace" : "rimi.ee",
+  "code" : "koeras-kuiv-pedigree-kuts-kana-riisi-3kg",
+  "name" : "Koerasööt kuiv Pedigreet kutsikatele kana ja riisiga 3kg",
+  "url" : "https://rimi.ee/epood/en/products/pet-goods/dog-food/dry-food-for-dogs/koeras-kuiv-pedigree-kuts-kana-riisi-3kg/p/7270625",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "pet-goods",
+    "name" : "Pet goods",
+    "url" : "https://rimi.ee/epood/en/products/pet-goods/c/SH-7"
+  }, {
+    "code" : "dog-food",
+    "name" : "Dog food",
+    "url" : "https://rimi.ee/epood/en/products/pet-goods/dog-food/c/SH-7-2"
+  } ]
+}

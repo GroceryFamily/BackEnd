@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2584c102713df7f3cdafe78a97d07325a6d459018bb353989311df9dc475c5cb
-size 478
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "maasika-jogurtijook--4-x-100-g",
+  "name" : "Maasika jogurtijook, 4 x 100 g",
+  "url" : "https://prismamarket.ee/entry/17097/maasika-jogurtijook--4-x-100-g/4740036009818",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16932",
+    "name" : "Milk",
+    "url" : "https://prismamarket.ee/products/16932"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

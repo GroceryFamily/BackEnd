@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1db3c18bd869363716672d46e7bfa221fb4b5406e707256bb48c82fc11dba1e0
-size 556
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "teraviljata-taissoot-koertele-hirve--kalkunilihaga-10kg",
+  "name" : "Teraviljata täissööt koertele hirve, kalkunilihaga 10kg",
+  "url" : "https://prismamarket.ee/entry/17329/teraviljata-taissoot-koertele-hirve--kalkunilihaga-10kg/6430062469400",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "17283",
+    "name" : "Pets",
+    "url" : "https://prismamarket.ee/products/17283"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

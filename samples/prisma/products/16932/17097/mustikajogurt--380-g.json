@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a3d663d651e766418171a9d338caa0d360270ddf7894c55f1200a025a8df9268
-size 448
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "mustikajogurt--380-g",
+  "name" : "Mustikajogurt, 380 g",
+  "url" : "https://prismamarket.ee/entry/17097/mustikajogurt--380-g/4740125536164",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16932",
+    "name" : "Milk",
+    "url" : "https://prismamarket.ee/products/16932"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

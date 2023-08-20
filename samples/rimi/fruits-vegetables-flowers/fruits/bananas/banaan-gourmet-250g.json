@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6b9bad4a66d977df4108b14d85d1cf771a6d2d7119e3c80e6e9ab564e4b7b99c
-size 572
+{
+  "namespace" : "rimi.ee",
+  "code" : "banaan-gourmet-250g",
+  "name" : "Banaan Gourmet 250g",
+  "url" : "https://rimi.ee/epood/en/products/fruits-vegetables-flowers/fruits/bananas/banaan-gourmet-250g/p/291040",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "fruits",
+    "name" : "Fruits",
+    "url" : "https://rimi.ee/epood/en/products/fruits-vegetables-flowers/fruits/c/SH-12-5"
+  }, {
+    "code" : "fruits-vegetables-flowers",
+    "name" : "Fruits, vegetables, flowers",
+    "url" : "https://rimi.ee/epood/en/products/fruits-vegetables-flowers/c/SH-12"
+  } ]
+}
