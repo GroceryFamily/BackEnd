@@ -11,7 +11,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
         with:
-          lfs: true
+          lfs: false # unfortunately, the free bandwidth quota isn't enough to run our tests utilizing LFS
       - name: Set up JDK
         uses: actions/setup-java@v3
         with:
