@@ -1,0 +1,16 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "datlid-taldrikul-200-g",
+  "name" : "Datlid taldrikul 200 g",
+  "url" : "https://prismamarket.ee/entry/16972/datlid-taldrikul-200-g/4742022670033",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16929",
+    "name" : "Fruits and vegetables",
+    "url" : "https://prismamarket.ee/products/16929"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

@@ -1,0 +1,16 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "kuivtoit-koertele-lohega-12kg",
+  "name" : "Kuivtoit koertele lõhega 12kg",
+  "url" : "https://prismamarket.ee/entry/17329/kuivtoit-koertele-lohega-12kg/5902921304159",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "17283",
+    "name" : "Pets",
+    "url" : "https://prismamarket.ee/products/17283"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

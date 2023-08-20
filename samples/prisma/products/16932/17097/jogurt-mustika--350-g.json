@@ -1,0 +1,16 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "jogurt-mustika--350-g",
+  "name" : "Jogurt mustika, 350 g",
+  "url" : "https://prismamarket.ee/entry/17097/jogurt-mustika--350-g/4750072014257",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16932",
+    "name" : "Milk",
+    "url" : "https://prismamarket.ee/products/16932"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

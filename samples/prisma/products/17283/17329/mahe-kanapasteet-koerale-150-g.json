@@ -1,0 +1,16 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "mahe-kanapasteet-koerale-150-g",
+  "name" : "Mahe kanapasteet koerale 150 g",
+  "url" : "https://prismamarket.ee/entry/17329/mahe-kanapasteet-koerale-150-g/5700551110931",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "17283",
+    "name" : "Pets",
+    "url" : "https://prismamarket.ee/products/17283"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

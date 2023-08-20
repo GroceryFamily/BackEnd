@@ -1,0 +1,16 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "tume-viinamari-i-klass-seem--ta-500g",
+  "name" : "Tume viinamari I klass seem.-ta 500g",
+  "url" : "https://prismamarket.ee/entry/16972/tume-viinamari-i-klass-seem--ta-500g/6414894500401",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16929",
+    "name" : "Fruits and vegetables",
+    "url" : "https://prismamarket.ee/products/16929"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

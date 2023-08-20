@@ -1,0 +1,16 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "kiivi--i-klass",
+  "name" : "Kiivi, I klass",
+  "url" : "https://prismamarket.ee/entry/16972/kiivi--i-klass/2060492900002",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16929",
+    "name" : "Fruits and vegetables",
+    "url" : "https://prismamarket.ee/products/16929"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

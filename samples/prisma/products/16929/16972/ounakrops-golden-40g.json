@@ -1,0 +1,16 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "ounakrops-golden-40g",
+  "name" : "Õunakrõps Golden 40g",
+  "url" : "https://prismamarket.ee/entry/16972/ounakrops-golden-40g/5997690711574",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16929",
+    "name" : "Fruits and vegetables",
+    "url" : "https://prismamarket.ee/products/16929"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

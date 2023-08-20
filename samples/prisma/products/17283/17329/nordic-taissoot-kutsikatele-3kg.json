@@ -1,0 +1,16 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "nordic-taissoot-kutsikatele-3kg",
+  "name" : "Nordic täissööt kutsikatele 3kg",
+  "url" : "https://prismamarket.ee/entry/17329/nordic-taissoot-kutsikatele-3kg/6410328143688",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "17283",
+    "name" : "Pets",
+    "url" : "https://prismamarket.ee/products/17283"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

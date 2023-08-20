@@ -1,0 +1,16 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "oun-evelina-i-klass",
+  "name" : "Õun Evelina I klass",
+  "url" : "https://prismamarket.ee/entry/16972/oun-evelina-i-klass/2060214400001",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16929",
+    "name" : "Fruits and vegetables",
+    "url" : "https://prismamarket.ee/products/16929"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

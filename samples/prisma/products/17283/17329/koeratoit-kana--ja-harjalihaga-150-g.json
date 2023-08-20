@@ -1,0 +1,16 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "koeratoit-kana--ja-harjalihaga-150-g",
+  "name" : "Koeratoit kana- ja härjalihaga 150 g",
+  "url" : "https://prismamarket.ee/entry/17329/koeratoit-kana--ja-harjalihaga-150-g/4008429511219",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "17283",
+    "name" : "Pets",
+    "url" : "https://prismamarket.ee/products/17283"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

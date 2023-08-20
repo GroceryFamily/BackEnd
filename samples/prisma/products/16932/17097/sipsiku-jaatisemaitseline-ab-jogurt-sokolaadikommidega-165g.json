@@ -1,0 +1,16 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "sipsiku-jaatisemaitseline-ab-jogurt-sokolaadikommidega-165g",
+  "name" : "SIPSIKU jäätisemaitseline AB-jogurt šokolaadikommidega 165g",
+  "url" : "https://prismamarket.ee/entry/17097/sipsiku-jaatisemaitseline-ab-jogurt-sokolaadikommidega-165g/4742231005206",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16932",
+    "name" : "Milk",
+    "url" : "https://prismamarket.ee/products/16932"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

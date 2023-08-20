@@ -1,0 +1,16 @@
+{
+  "namespace" : "rimi.ee",
+  "code" : "koerasoot-primadog-kana---kartul-2kg",
+  "name" : "Koerasööt PrimaDog täistoit täiskasvanud koertele kana ja kartuli 2kg",
+  "url" : "https://rimi.ee/epood/en/products/pet-goods/dog-food/dry-food-for-dogs/koerasoot-primadog-kana---kartul-2kg/p/7171740",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "pet-goods",
+    "name" : "Pet goods",
+    "url" : "https://rimi.ee/epood/en/products/pet-goods/c/SH-7"
+  }, {
+    "code" : "dog-food",
+    "name" : "Dog food",
+    "url" : "https://rimi.ee/epood/en/products/pet-goods/dog-food/c/SH-7-2"
+  } ]
+}

@@ -1,0 +1,16 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "punase-rabarberi-jogurt--300-ml",
+  "name" : "Punase rabarberi jogurt, 300 ml",
+  "url" : "https://prismamarket.ee/entry/17097/punase-rabarberi-jogurt--300-ml/4740218002545",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16932",
+    "name" : "Milk",
+    "url" : "https://prismamarket.ee/products/16932"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

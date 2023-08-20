@@ -1,0 +1,16 @@
+{
+  "namespace" : "barbora.ee",
+  "code" : "kuiv-koerasootpedigree-junior-kanal-500-g",
+  "name" : "Kuiv koerasöötPEDIGREE Junior kanal.500g",
+  "url" : "https://barbora.ee/toode/kuiv-koerasootpedigree-junior-kanal-500-g",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "lemmikloomakaubad",
+    "name" : "Pets",
+    "url" : "https://barbora.ee/puhastustarbed-ja-lemmikloomatooted/lemmikloomakaubad"
+  }, {
+    "code" : "puhastustarbed-ja-lemmikloomatooted",
+    "name" : "Household and pets",
+    "url" : "https://barbora.ee/puhastustarbed-ja-lemmikloomatooted"
+  } ]
+}

@@ -1,0 +1,16 @@
+{
+  "namespace" : "barbora.ee",
+  "code" : "spinat-new-zealand-spinach",
+  "name" : "Spinat New Zealand Spinach",
+  "url" : "https://barbora.ee/toode/spinat-new-zealand-spinach",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "aiakaubad",
+    "name" : "Gardening",
+    "url" : "https://barbora.ee/kodukaubad-ja-vaba-aeg/aiakaubad"
+  }, {
+    "code" : "kodukaubad-ja-vaba-aeg",
+    "name" : "Home and leisure",
+    "url" : "https://barbora.ee/kodukaubad-ja-vaba-aeg"
+  } ]
+}

@@ -1,0 +1,16 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "hau-hau-koeratoit-looma--ja-kanaliha-tukkidega-kastmes-375g",
+  "name" : "Hau-Hau koeratoit looma- ja kanaliha tükkidega kastmes 375g",
+  "url" : "https://prismamarket.ee/entry/17329/hau-hau-koeratoit-looma--ja-kanaliha-tukkidega-kastmes-375g/6430062465846",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "17283",
+    "name" : "Pets",
+    "url" : "https://prismamarket.ee/products/17283"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

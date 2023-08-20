@@ -1,0 +1,16 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "banaani-maasika-jogurtijook--4-x-100-g",
+  "name" : "Banaani-maasika jogurtijook, 4 x 100 g",
+  "url" : "https://prismamarket.ee/entry/17097/banaani-maasika-jogurtijook--4-x-100-g/4740125581089",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16932",
+    "name" : "Milk",
+    "url" : "https://prismamarket.ee/products/16932"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

@@ -1,0 +1,16 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "virsik-karbis-i-klass-1-kg",
+  "name" : "Virsik karbis I klass 1 kg",
+  "url" : "https://prismamarket.ee/entry/16972/virsik-karbis-i-klass-1-kg/6438460181733",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16929",
+    "name" : "Fruits and vegetables",
+    "url" : "https://prismamarket.ee/products/16929"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

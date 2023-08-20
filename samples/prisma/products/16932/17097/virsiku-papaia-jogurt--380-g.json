@@ -1,0 +1,16 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "virsiku-papaia-jogurt--380-g",
+  "name" : "Virsiku-papaia jogurt, 380 g",
+  "url" : "https://prismamarket.ee/entry/17097/virsiku-papaia-jogurt--380-g/4740125536171",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16932",
+    "name" : "Milk",
+    "url" : "https://prismamarket.ee/products/16932"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

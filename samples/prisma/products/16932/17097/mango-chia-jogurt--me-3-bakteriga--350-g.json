@@ -1,0 +1,16 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "mango-chia-jogurt--me-3-bakteriga--350-g",
+  "name" : "Mango-chia jogurt, ME-3 bakteriga, 350 g",
+  "url" : "https://prismamarket.ee/entry/17097/mango-chia-jogurt--me-3-bakteriga--350-g/4740036013884",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16932",
+    "name" : "Milk",
+    "url" : "https://prismamarket.ee/products/16932"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

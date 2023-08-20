@@ -1,0 +1,16 @@
+{
+  "namespace" : "barbora.ee",
+  "code" : "kuiv-koerasoot-darling-linnul-aedv-10-kg",
+  "name" : "Kuiv koerasööt DARLING linnul.+aedv.10kg",
+  "url" : "https://barbora.ee/toode/kuiv-koerasoot-darling-linnul-aedv-10-kg",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "lemmikloomakaubad",
+    "name" : "Pets",
+    "url" : "https://barbora.ee/puhastustarbed-ja-lemmikloomatooted/lemmikloomakaubad"
+  }, {
+    "code" : "puhastustarbed-ja-lemmikloomatooted",
+    "name" : "Household and pets",
+    "url" : "https://barbora.ee/puhastustarbed-ja-lemmikloomatooted"
+  } ]
+}

@@ -1,0 +1,16 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "actimel-poldmuraka-mustika-jogurtijook--vitamiin-c-ga-4x100g",
+  "name" : "Actimel Põldmuraka-mustika jogurtijook, vitamiin C-ga 4x100g",
+  "url" : "https://prismamarket.ee/entry/17097/actimel-poldmuraka-mustika-jogurtijook--vitamiin-c-ga-4x100g/5997536304588",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16932",
+    "name" : "Milk",
+    "url" : "https://prismamarket.ee/products/16932"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

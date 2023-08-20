@@ -1,0 +1,16 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "kreeka-jogurt-maitsestamata--laktoosivaba-350-g",
+  "name" : "Kreeka jogurt maitsestamata, laktoosivaba 350 g",
+  "url" : "https://prismamarket.ee/entry/17097/kreeka-jogurt-maitsestamata--laktoosivaba-350-g/4740036014287",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16932",
+    "name" : "Milk",
+    "url" : "https://prismamarket.ee/products/16932"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

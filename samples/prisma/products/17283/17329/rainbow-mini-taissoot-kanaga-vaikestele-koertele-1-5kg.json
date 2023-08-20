@@ -1,0 +1,16 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "rainbow-mini-taissoot-kanaga-vaikestele-koertele-1-5kg",
+  "name" : "Rainbow Mini täissööt kanaga väikestele koertele 1,5kg",
+  "url" : "https://prismamarket.ee/entry/17329/rainbow-mini-taissoot-kanaga-vaikestele-koertele-1-5kg/7340011477433",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "17283",
+    "name" : "Pets",
+    "url" : "https://prismamarket.ee/products/17283"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

@@ -1,0 +1,16 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "juustoportti-astelpaju-ab-jogurt-150-g",
+  "name" : "Juustoportti astelpaju-AB-jogurt 150 g",
+  "url" : "https://prismamarket.ee/entry/17097/juustoportti-astelpaju-ab-jogurt-150-g/6408652225071",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16932",
+    "name" : "Milk",
+    "url" : "https://prismamarket.ee/products/16932"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

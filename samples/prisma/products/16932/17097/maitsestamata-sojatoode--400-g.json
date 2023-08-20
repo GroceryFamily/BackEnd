@@ -1,0 +1,16 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "maitsestamata-sojatoode--400-g",
+  "name" : "Maitsestamata sojatoode, 400 g",
+  "url" : "https://prismamarket.ee/entry/17097/maitsestamata-sojatoode--400-g/5411188121213",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16932",
+    "name" : "Milk",
+    "url" : "https://prismamarket.ee/products/16932"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

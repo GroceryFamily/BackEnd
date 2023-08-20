@@ -1,0 +1,16 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "virsik-paraguay-i-klass--500-g",
+  "name" : "Virsik Paraguay I klass, 500 g",
+  "url" : "https://prismamarket.ee/entry/16972/virsik-paraguay-i-klass--500-g/8437005431799",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16929",
+    "name" : "Fruits and vegetables",
+    "url" : "https://prismamarket.ee/products/16929"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

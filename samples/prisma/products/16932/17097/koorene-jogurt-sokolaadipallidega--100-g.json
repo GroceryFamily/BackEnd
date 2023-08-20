@@ -1,0 +1,16 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "koorene-jogurt-sokolaadipallidega--100-g",
+  "name" : "Koorene jogurt šokolaadipallidega, 100 g",
+  "url" : "https://prismamarket.ee/entry/17097/koorene-jogurt-sokolaadipallidega--100-g/59034643",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16932",
+    "name" : "Milk",
+    "url" : "https://prismamarket.ee/products/16932"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

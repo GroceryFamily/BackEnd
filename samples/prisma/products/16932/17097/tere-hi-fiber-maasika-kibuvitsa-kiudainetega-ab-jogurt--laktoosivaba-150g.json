@@ -1,0 +1,16 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "tere-hi-fiber-maasika-kibuvitsa-kiudainetega-ab-jogurt--laktoosivaba-150g",
+  "name" : "Tere Hi!Fiber maasika-kibuvitsa kiudainetega AB-jogurt, laktoosivaba,150g",
+  "url" : "https://prismamarket.ee/entry/17097/tere-hi-fiber-maasika-kibuvitsa-kiudainetega-ab-jogurt--laktoosivaba-150g/4740036016366",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16932",
+    "name" : "Milk",
+    "url" : "https://prismamarket.ee/products/16932"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

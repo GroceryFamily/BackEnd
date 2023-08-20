@@ -1,0 +1,16 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "pakendatud-oun-golden-i-klass",
+  "name" : "Pakendatud õun Golden I klass",
+  "url" : "https://prismamarket.ee/entry/16972/pakendatud-oun-golden-i-klass/4740669020051",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16929",
+    "name" : "Fruits and vegetables",
+    "url" : "https://prismamarket.ee/products/16929"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

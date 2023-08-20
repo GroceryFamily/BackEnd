@@ -1,0 +1,16 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "alma-jogurtismuuti-banaani-porgandi-astelpaju-275g",
+  "name" : "Alma jogurtismuuti banaani-porgandi-astelpaju 275g",
+  "url" : "https://prismamarket.ee/entry/17097/alma-jogurtismuuti-banaani-porgandi-astelpaju-275g/4740125582789",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16932",
+    "name" : "Milk",
+    "url" : "https://prismamarket.ee/products/16932"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

@@ -1,0 +1,16 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "pedigree-junior-koeraeine-kutsikatele-kanalihaga-tarrendis--100-g",
+  "name" : "PEDIGREE Junior koeraeine kutsikatele kanalihaga tarrendis, 100 g",
+  "url" : "https://prismamarket.ee/entry/17329/pedigree-junior-koeraeine-kutsikatele-kanalihaga-tarrendis--100-g/5900951017247",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "17283",
+    "name" : "Pets",
+    "url" : "https://prismamarket.ee/products/17283"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

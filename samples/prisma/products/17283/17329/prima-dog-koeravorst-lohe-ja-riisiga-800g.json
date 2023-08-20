@@ -1,0 +1,16 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "prima-dog-koeravorst-lohe-ja-riisiga-800g",
+  "name" : "Prima Dog koeravorst lõhe ja riisiga 800g",
+  "url" : "https://prismamarket.ee/entry/17329/prima-dog-koeravorst-lohe-ja-riisiga-800g/6430062460902",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "17283",
+    "name" : "Pets",
+    "url" : "https://prismamarket.ee/products/17283"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

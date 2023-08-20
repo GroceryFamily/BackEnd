@@ -1,0 +1,16 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "pom-bel-ouna-banaani-maasika-puuviljamiks--4x100-g",
+  "name" : "Pom´bel õuna-banaani-maasika puuviljamiks, 4x100 g",
+  "url" : "https://prismamarket.ee/entry/16972/pom-bel-ouna-banaani-maasika-puuviljamiks--4x100-g/8437010537158",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16929",
+    "name" : "Fruits and vegetables",
+    "url" : "https://prismamarket.ee/products/16929"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

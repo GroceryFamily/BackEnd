@@ -1,0 +1,16 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "koorene-jogurt-kirsiga--118-g",
+  "name" : "Koorene jogurt kirsiga, 118 g",
+  "url" : "https://prismamarket.ee/entry/17097/koorene-jogurt-kirsiga--118-g/5900643047347",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16932",
+    "name" : "Milk",
+    "url" : "https://prismamarket.ee/products/16932"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

@@ -1,0 +1,16 @@
+{
+  "namespace" : "barbora.ee",
+  "code" : "redis-rondeel",
+  "name" : "Redis Rondeel",
+  "url" : "https://barbora.ee/toode/redis-rondeel",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "aiakaubad",
+    "name" : "Gardening",
+    "url" : "https://barbora.ee/kodukaubad-ja-vaba-aeg/aiakaubad"
+  }, {
+    "code" : "kodukaubad-ja-vaba-aeg",
+    "name" : "Home and leisure",
+    "url" : "https://barbora.ee/kodukaubad-ja-vaba-aeg"
+  } ]
+}

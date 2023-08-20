@@ -1,0 +1,16 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "rainbow-joogijogurt-virsiku-passioni-500g",
+  "name" : "Rainbow joogijogurt virsiku-passioni 500g",
+  "url" : "https://prismamarket.ee/entry/17097/rainbow-joogijogurt-virsiku-passioni-500g/6414893097063",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16932",
+    "name" : "Milk",
+    "url" : "https://prismamarket.ee/products/16932"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

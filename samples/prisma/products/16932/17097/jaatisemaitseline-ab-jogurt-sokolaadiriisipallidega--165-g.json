@@ -1,0 +1,16 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "jaatisemaitseline-ab-jogurt-sokolaadiriisipallidega--165-g",
+  "name" : "Jäätisemaitseline AB-jogurt šokolaadiriisipallidega, 165 g",
+  "url" : "https://prismamarket.ee/entry/17097/jaatisemaitseline-ab-jogurt-sokolaadiriisipallidega--165-g/4742231005213",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16932",
+    "name" : "Milk",
+    "url" : "https://prismamarket.ee/products/16932"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

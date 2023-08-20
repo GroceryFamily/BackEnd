@@ -1,0 +1,16 @@
+{
+  "namespace" : "barbora.ee",
+  "code" : "spargel-argenteuil",
+  "name" : "Spargel ARGENTEUIL",
+  "url" : "https://barbora.ee/toode/spargel-argenteuil",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "aiakaubad",
+    "name" : "Gardening",
+    "url" : "https://barbora.ee/kodukaubad-ja-vaba-aeg/aiakaubad"
+  }, {
+    "code" : "kodukaubad-ja-vaba-aeg",
+    "name" : "Home and leisure",
+    "url" : "https://barbora.ee/kodukaubad-ja-vaba-aeg"
+  } ]
+}

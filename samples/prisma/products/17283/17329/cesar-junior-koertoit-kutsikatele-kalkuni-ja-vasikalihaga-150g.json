@@ -1,0 +1,16 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "cesar-junior-koertoit-kutsikatele-kalkuni-ja-vasikalihaga-150g",
+  "name" : "Cesar Junior koertoit kutsikatele kalkuni ja vasikalihaga 150g",
+  "url" : "https://prismamarket.ee/entry/17329/cesar-junior-koertoit-kutsikatele-kalkuni-ja-vasikalihaga-150g/4008429121852",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "17283",
+    "name" : "Pets",
+    "url" : "https://prismamarket.ee/products/17283"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

@@ -1,0 +1,16 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "brit-premium-koerakonserv-kala-ja-kalanahaga-400g",
+  "name" : "Brit Premium koerakonserv kala ja kalanahaga 400g",
+  "url" : "https://prismamarket.ee/entry/17329/brit-premium-koerakonserv-kala-ja-kalanahaga-400g/8595602561889",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "17283",
+    "name" : "Pets",
+    "url" : "https://prismamarket.ee/products/17283"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

@@ -1,0 +1,16 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "juustoportti-suhkru-ja-magusaineteta-laktoosivaba-banaanijogurt-1-kg",
+  "name" : "Juustoportti suhkru ja magusaineteta laktoosivaba banaanijogurt 1 kg",
+  "url" : "https://prismamarket.ee/entry/17097/juustoportti-suhkru-ja-magusaineteta-laktoosivaba-banaanijogurt-1-kg/6408652226603",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16932",
+    "name" : "Milk",
+    "url" : "https://prismamarket.ee/products/16932"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

@@ -1,0 +1,16 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "koeratoit-kanaga-2-6kg",
+  "name" : "Koeratoit kanaga 2,6kg",
+  "url" : "https://prismamarket.ee/entry/17329/koeratoit-kanaga-2-6kg/4008429117848",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "17283",
+    "name" : "Pets",
+    "url" : "https://prismamarket.ee/products/17283"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

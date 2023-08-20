@@ -1,0 +1,16 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "lacrema-maitsestamata-jogurt--380-g",
+  "name" : "LaCrema maitsestamata jogurt, 380 g",
+  "url" : "https://prismamarket.ee/entry/17097/lacrema-maitsestamata-jogurt--380-g/4740036009238",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16932",
+    "name" : "Milk",
+    "url" : "https://prismamarket.ee/products/16932"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

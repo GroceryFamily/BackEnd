@@ -1,0 +1,16 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "purina-one-koeratoit-vaiksetele-taiskasvanutele-koertele-1-5kg",
+  "name" : "Purina One koeratoit väiksetele täiskasvanutele koertele 1,5kg",
+  "url" : "https://prismamarket.ee/entry/17329/purina-one-koeratoit-vaiksetele-taiskasvanutele-koertele-1-5kg/7613287034540",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "17283",
+    "name" : "Pets",
+    "url" : "https://prismamarket.ee/products/17283"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

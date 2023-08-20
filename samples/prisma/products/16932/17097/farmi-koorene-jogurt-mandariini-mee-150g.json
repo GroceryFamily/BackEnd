@@ -1,0 +1,16 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "farmi-koorene-jogurt-mandariini-mee-150g",
+  "name" : "FARMI Koorene jogurt mandariini-mee 150g",
+  "url" : "https://prismamarket.ee/entry/17097/farmi-koorene-jogurt-mandariini-mee-150g/4740113019150",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16932",
+    "name" : "Milk",
+    "url" : "https://prismamarket.ee/products/16932"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

@@ -1,0 +1,16 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "kanaliha-sisaldav-pasteet-300-g",
+  "name" : "Kanaliha sisaldav pasteet 300 g",
+  "url" : "https://prismamarket.ee/entry/17329/kanaliha-sisaldav-pasteet-300-g/7340011475163",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "17283",
+    "name" : "Pets",
+    "url" : "https://prismamarket.ee/products/17283"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

@@ -1,0 +1,16 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "valio-oddlygood-kaeravahepala-mustika-vanilli-150g",
+  "name" : "Valio Oddlygood kaeravahepala mustika-vanilli 150g",
+  "url" : "https://prismamarket.ee/entry/17097/valio-oddlygood-kaeravahepala-mustika-vanilli-150g/6408430400034",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16932",
+    "name" : "Milk",
+    "url" : "https://prismamarket.ee/products/16932"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

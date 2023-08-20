@@ -1,0 +1,16 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "koeratoit-harjaliha-ja-maksaga-150-g",
+  "name" : "Koeratoit härjaliha ja maksaga 150 g",
+  "url" : "https://prismamarket.ee/entry/17329/koeratoit-harjaliha-ja-maksaga-150-g/4008429511110",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "17283",
+    "name" : "Pets",
+    "url" : "https://prismamarket.ee/products/17283"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

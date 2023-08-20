@@ -1,0 +1,16 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "maasika-yuzu-jogurt--laktoosivaba--380-g",
+  "name" : "Maasika-Yuzu jogurt, laktoosivaba, 380 g",
+  "url" : "https://prismamarket.ee/entry/17097/maasika-yuzu-jogurt--laktoosivaba--380-g/4740125536256",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16932",
+    "name" : "Milk",
+    "url" : "https://prismamarket.ee/products/16932"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

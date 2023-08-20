@@ -1,0 +1,16 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "veiselihapasteet-koerale-300-g",
+  "name" : "Veiselihapasteet koerale 300 g",
+  "url" : "https://prismamarket.ee/entry/17329/veiselihapasteet-koerale-300-g/6415711912902",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "17283",
+    "name" : "Pets",
+    "url" : "https://prismamarket.ee/products/17283"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

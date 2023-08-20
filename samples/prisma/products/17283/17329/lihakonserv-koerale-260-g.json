@@ -1,0 +1,16 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "lihakonserv-koerale-260-g",
+  "name" : "Lihakonserv koerale 260 g",
+  "url" : "https://prismamarket.ee/entry/17329/lihakonserv-koerale-260-g/6430062465884",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "17283",
+    "name" : "Pets",
+    "url" : "https://prismamarket.ee/products/17283"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

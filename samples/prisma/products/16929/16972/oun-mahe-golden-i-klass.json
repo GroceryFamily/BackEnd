@@ -1,0 +1,16 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "oun-mahe-golden-i-klass",
+  "name" : "Õun Mahe Golden I klass",
+  "url" : "https://prismamarket.ee/entry/16972/oun-mahe-golden-i-klass/2060250600007",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16929",
+    "name" : "Fruits and vegetables",
+    "url" : "https://prismamarket.ee/products/16929"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

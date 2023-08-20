@@ -1,0 +1,16 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "x-tra-taissoot-koertele-lihaga--7-5-kg",
+  "name" : "X-tra täissööt koertele lihaga, 7,5 kg",
+  "url" : "https://prismamarket.ee/entry/17329/x-tra-taissoot-koertele-lihaga--7-5-kg/7340011497264",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "17283",
+    "name" : "Pets",
+    "url" : "https://prismamarket.ee/products/17283"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

@@ -1,0 +1,16 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "nektariin-mahe-i-klass-500-g",
+  "name" : "Nektariin mahe I klass 500 g",
+  "url" : "https://prismamarket.ee/entry/16972/nektariin-mahe-i-klass-500-g/6414893504691",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16929",
+    "name" : "Fruits and vegetables",
+    "url" : "https://prismamarket.ee/products/16929"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

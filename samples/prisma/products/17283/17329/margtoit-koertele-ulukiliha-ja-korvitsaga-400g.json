@@ -1,0 +1,16 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "margtoit-koertele-ulukiliha-ja-korvitsaga-400g",
+  "name" : "Märgtoit koertele ulukiliha ja kõrvitsaga 400g",
+  "url" : "https://prismamarket.ee/entry/17329/margtoit-koertele-ulukiliha-ja-korvitsaga-400g/5902921380313",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "17283",
+    "name" : "Pets",
+    "url" : "https://prismamarket.ee/products/17283"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

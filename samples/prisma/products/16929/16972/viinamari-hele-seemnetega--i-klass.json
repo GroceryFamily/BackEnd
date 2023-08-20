@@ -1,0 +1,16 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "viinamari-hele-seemnetega--i-klass",
+  "name" : "Viinamari hele seemnetega I klass",
+  "url" : "https://prismamarket.ee/entry/16972/viinamari-hele-seemnetega--i-klass/2060242900009",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16929",
+    "name" : "Fruits and vegetables",
+    "url" : "https://prismamarket.ee/products/16929"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

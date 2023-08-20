@@ -1,0 +1,16 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "koeratoit-kanalihaga-kastmes-85-g",
+  "name" : "Koeratoit kanalihaga kastmes 85 G",
+  "url" : "https://prismamarket.ee/entry/17329/koeratoit-kanalihaga-kastmes-85-g/6430069586742",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "17283",
+    "name" : "Pets",
+    "url" : "https://prismamarket.ee/products/17283"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

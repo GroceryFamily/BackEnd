@@ -1,0 +1,16 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "banaani-maasika-joogijogurt--1-kg",
+  "name" : "Banaani-maasika joogijogurt, 1 kg",
+  "url" : "https://prismamarket.ee/entry/17097/banaani-maasika-joogijogurt--1-kg/4740125510072",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16932",
+    "name" : "Milk",
+    "url" : "https://prismamarket.ee/products/16932"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

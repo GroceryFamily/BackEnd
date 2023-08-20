@@ -1,0 +1,16 @@
+{
+  "namespace" : "barbora.ee",
+  "code" : "vaikesed-banaanid-pakitud-250-g",
+  "name" : "Väikesed banaanid pakitud, 250g",
+  "url" : "https://barbora.ee/toode/vaikesed-banaanid-pakitud-250-g",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "koogiviljad-puuviljad",
+    "name" : "Vegetables and fruits",
+    "url" : "https://barbora.ee/koogiviljad-puuviljad"
+  }, {
+    "code" : "puuviljad-ja-marjad",
+    "name" : "Fruits and berries",
+    "url" : "https://barbora.ee/koogiviljad-puuviljad/puuviljad-ja-marjad"
+  } ]
+}

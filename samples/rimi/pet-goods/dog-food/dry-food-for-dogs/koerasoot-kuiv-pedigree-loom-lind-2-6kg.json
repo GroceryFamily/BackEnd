@@ -1,0 +1,16 @@
+{
+  "namespace" : "rimi.ee",
+  "code" : "koerasoot-kuiv-pedigree-loom-lind-2-6kg",
+  "name" : "Koerasööt kuiv Pedigree täiskasvanud koertele looma- ja linnulihaga, 2,6 kg",
+  "url" : "https://rimi.ee/epood/en/products/pet-goods/dog-food/dry-food-for-dogs/koerasoot-kuiv-pedigree-loom-lind-2-6kg/p/7149092",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "pet-goods",
+    "name" : "Pet goods",
+    "url" : "https://rimi.ee/epood/en/products/pet-goods/c/SH-7"
+  }, {
+    "code" : "dog-food",
+    "name" : "Dog food",
+    "url" : "https://rimi.ee/epood/en/products/pet-goods/dog-food/c/SH-7-2"
+  } ]
+}

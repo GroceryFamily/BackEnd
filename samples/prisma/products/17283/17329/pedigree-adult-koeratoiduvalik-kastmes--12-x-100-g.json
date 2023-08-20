@@ -1,0 +1,16 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "pedigree-adult-koeratoiduvalik-kastmes--12-x-100-g",
+  "name" : "Pedigree Adult koeratoiduvalik kastmes, 12 x 100 g",
+  "url" : "https://prismamarket.ee/entry/17329/pedigree-adult-koeratoiduvalik-kastmes--12-x-100-g/5900951134876",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "17283",
+    "name" : "Pets",
+    "url" : "https://prismamarket.ee/products/17283"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

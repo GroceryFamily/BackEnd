@@ -1,0 +1,16 @@
+{
+  "namespace" : "barbora.ee",
+  "code" : "jogurt-activia-virsiku-musliga-4-x-120-g",
+  "name" : "Jogurt ACTIVIA virsiku-müsliga, 4x120g",
+  "url" : "https://barbora.ee/toode/jogurt-activia-virsiku-musliga-4-x-120-g",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "jogurtid-ja-desserdid",
+    "name" : "Yoghurts and desserts",
+    "url" : "https://barbora.ee/piimatooted-ja-munad/jogurtid-ja-desserdid"
+  }, {
+    "code" : "piimatooted-ja-munad",
+    "name" : "Dairy and eggs",
+    "url" : "https://barbora.ee/piimatooted-ja-munad"
+  } ]
+}

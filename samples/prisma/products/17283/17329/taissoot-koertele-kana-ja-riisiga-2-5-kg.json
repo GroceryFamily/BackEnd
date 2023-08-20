@@ -1,0 +1,16 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "taissoot-koertele-kana-ja-riisiga-2-5-kg",
+  "name" : "Täissööt koertele kana ja riisiga 2,5 kg",
+  "url" : "https://prismamarket.ee/entry/17329/taissoot-koertele-kana-ja-riisiga-2-5-kg/7613036307390",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "17283",
+    "name" : "Pets",
+    "url" : "https://prismamarket.ee/products/17283"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

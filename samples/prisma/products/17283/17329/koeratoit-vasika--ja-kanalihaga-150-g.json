@@ -1,0 +1,16 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "koeratoit-vasika--ja-kanalihaga-150-g",
+  "name" : "Koeratoit vasika- ja kanalihaga 150 g",
+  "url" : "https://prismamarket.ee/entry/17329/koeratoit-vasika--ja-kanalihaga-150-g/4008429012617",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "17283",
+    "name" : "Pets",
+    "url" : "https://prismamarket.ee/products/17283"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

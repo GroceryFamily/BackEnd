@@ -1,0 +1,16 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "cesar-eine-koertele-kana---koogiviljadega-100g",
+  "name" : "CESAR Eine koertele kana & köögiviljadega 100g",
+  "url" : "https://prismamarket.ee/entry/17329/cesar-eine-koertele-kana---koogiviljadega-100g/4008429079382",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "17283",
+    "name" : "Pets",
+    "url" : "https://prismamarket.ee/products/17283"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

@@ -1,0 +1,16 @@
+{
+  "namespace" : "barbora.ee",
+  "code" : "jogurt-mio-delizzi-virsiku-400-g",
+  "name" : "Jogurt MIO DELIZZI virsiku, 400g",
+  "url" : "https://barbora.ee/toode/jogurt-mio-delizzi-virsiku-400-g",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "jogurtid-ja-desserdid",
+    "name" : "Yoghurts and desserts",
+    "url" : "https://barbora.ee/piimatooted-ja-munad/jogurtid-ja-desserdid"
+  }, {
+    "code" : "piimatooted-ja-munad",
+    "name" : "Dairy and eggs",
+    "url" : "https://barbora.ee/piimatooted-ja-munad"
+  } ]
+}

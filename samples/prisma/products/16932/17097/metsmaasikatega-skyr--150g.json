@@ -1,0 +1,16 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "metsmaasikatega-skyr--150g",
+  "name" : "Metsmaasikatega Skyr, 150g",
+  "url" : "https://prismamarket.ee/entry/17097/metsmaasikatega-skyr--150g/4740113096878",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16932",
+    "name" : "Milk",
+    "url" : "https://prismamarket.ee/products/16932"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

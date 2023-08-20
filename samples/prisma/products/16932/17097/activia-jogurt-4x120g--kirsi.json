@@ -1,0 +1,16 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "activia-jogurt-4x120g--kirsi",
+  "name" : "Activia jogurt 4x120g, kirsi",
+  "url" : "https://prismamarket.ee/entry/17097/activia-jogurt-4x120g--kirsi/4751008970500",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16932",
+    "name" : "Milk",
+    "url" : "https://prismamarket.ee/products/16932"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

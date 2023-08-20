@@ -1,0 +1,16 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "puuviljasalat-melon--apelsin-300-g",
+  "name" : "Puuviljasalat melon, apelsin 300 g",
+  "url" : "https://prismamarket.ee/entry/16972/puuviljasalat-melon--apelsin-300-g/4742024310067",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16929",
+    "name" : "Fruits and vegetables",
+    "url" : "https://prismamarket.ee/products/16929"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

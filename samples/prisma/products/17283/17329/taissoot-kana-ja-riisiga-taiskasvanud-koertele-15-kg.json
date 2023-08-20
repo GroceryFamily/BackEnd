@@ -1,0 +1,16 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "taissoot-kana-ja-riisiga-taiskasvanud-koertele-15-kg",
+  "name" : "Täissööt kana ja riisiga täiskasvanud koertele 15 kg",
+  "url" : "https://prismamarket.ee/entry/17329/taissoot-kana-ja-riisiga-taiskasvanud-koertele-15-kg/6420140700174",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "17283",
+    "name" : "Pets",
+    "url" : "https://prismamarket.ee/products/17283"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

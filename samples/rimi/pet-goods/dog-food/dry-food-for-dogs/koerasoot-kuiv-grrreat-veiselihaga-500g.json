@@ -1,0 +1,16 @@
+{
+  "namespace" : "rimi.ee",
+  "code" : "koerasoot-kuiv-grrreat-veiselihaga-500g",
+  "name" : "Koerasööt kuiv Grrreat veiselihaga 500g",
+  "url" : "https://rimi.ee/epood/en/products/pet-goods/dog-food/dry-food-for-dogs/koerasoot-kuiv-grrreat-veiselihaga-500g/p/801215",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "pet-goods",
+    "name" : "Pet goods",
+    "url" : "https://rimi.ee/epood/en/products/pet-goods/c/SH-7"
+  }, {
+    "code" : "dog-food",
+    "name" : "Dog food",
+    "url" : "https://rimi.ee/epood/en/products/pet-goods/dog-food/c/SH-7-2"
+  } ]
+}

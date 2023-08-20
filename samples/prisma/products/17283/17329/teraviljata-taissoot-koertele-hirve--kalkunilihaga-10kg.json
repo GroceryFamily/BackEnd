@@ -1,0 +1,16 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "teraviljata-taissoot-koertele-hirve--kalkunilihaga-10kg",
+  "name" : "Teraviljata täissööt koertele hirve, kalkunilihaga 10kg",
+  "url" : "https://prismamarket.ee/entry/17329/teraviljata-taissoot-koertele-hirve--kalkunilihaga-10kg/6430062469400",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "17283",
+    "name" : "Pets",
+    "url" : "https://prismamarket.ee/products/17283"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

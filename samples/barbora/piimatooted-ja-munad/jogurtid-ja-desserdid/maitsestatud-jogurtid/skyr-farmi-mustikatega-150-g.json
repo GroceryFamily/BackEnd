@@ -1,0 +1,16 @@
+{
+  "namespace" : "barbora.ee",
+  "code" : "skyr-farmi-mustikatega-150-g",
+  "name" : "Skyr FARMI mustikatega, 150g",
+  "url" : "https://barbora.ee/toode/skyr-farmi-mustikatega-150-g",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "jogurtid-ja-desserdid",
+    "name" : "Yoghurts and desserts",
+    "url" : "https://barbora.ee/piimatooted-ja-munad/jogurtid-ja-desserdid"
+  }, {
+    "code" : "piimatooted-ja-munad",
+    "name" : "Dairy and eggs",
+    "url" : "https://barbora.ee/piimatooted-ja-munad"
+  } ]
+}

@@ -1,0 +1,16 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "margtoit-koertele-veise-maksa-ja-kartuliga-500g",
+  "name" : "Märgtoit koertele veise maksa ja kartuliga 500g",
+  "url" : "https://prismamarket.ee/entry/17329/margtoit-koertele-veise-maksa-ja-kartuliga-500g/5902921300267",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "17283",
+    "name" : "Pets",
+    "url" : "https://prismamarket.ee/products/17283"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

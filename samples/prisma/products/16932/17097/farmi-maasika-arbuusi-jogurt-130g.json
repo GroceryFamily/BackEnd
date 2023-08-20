@@ -1,0 +1,16 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "farmi-maasika-arbuusi-jogurt-130g",
+  "name" : "FARMI Maasika-arbuusi jogurt 130g",
+  "url" : "https://prismamarket.ee/entry/17097/farmi-maasika-arbuusi-jogurt-130g/4740113097134",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16932",
+    "name" : "Milk",
+    "url" : "https://prismamarket.ee/products/16932"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

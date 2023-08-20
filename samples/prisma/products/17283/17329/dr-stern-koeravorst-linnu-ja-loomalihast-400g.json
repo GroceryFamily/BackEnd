@@ -1,0 +1,16 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "dr-stern-koeravorst-linnu-ja-loomalihast-400g",
+  "name" : "Dr.Stern koeravorst linnu ja loomalihast 400g",
+  "url" : "https://prismamarket.ee/entry/17329/dr-stern-koeravorst-linnu-ja-loomalihast-400g/4744355018100",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "17283",
+    "name" : "Pets",
+    "url" : "https://prismamarket.ee/products/17283"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

@@ -1,0 +1,16 @@
+{
+  "namespace" : "barbora.ee",
+  "code" : "koorejogurt-alma-muah-pistaatsiam-380-g",
+  "name" : "Koorejogurt ALMA Muah pistaatsiam., 380g",
+  "url" : "https://barbora.ee/toode/koorejogurt-alma-muah-pistaatsiam-380-g",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "jogurtid-ja-desserdid",
+    "name" : "Yoghurts and desserts",
+    "url" : "https://barbora.ee/piimatooted-ja-munad/jogurtid-ja-desserdid"
+  }, {
+    "code" : "piimatooted-ja-munad",
+    "name" : "Dairy and eggs",
+    "url" : "https://barbora.ee/piimatooted-ja-munad"
+  } ]
+}

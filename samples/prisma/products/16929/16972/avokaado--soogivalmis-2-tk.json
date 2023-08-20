@@ -1,0 +1,16 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "avokaado--soogivalmis-2-tk",
+  "name" : "Avokaado, söögivalmis 2 tk",
+  "url" : "https://prismamarket.ee/entry/16972/avokaado--soogivalmis-2-tk/8718366857269",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16929",
+    "name" : "Fruits and vegetables",
+    "url" : "https://prismamarket.ee/products/16929"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

@@ -1,0 +1,16 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "purina-one-sensitive-taissoot-koertele-lohega-2-5kg",
+  "name" : "Purina One Sensitive täissööt koertele lõhega 2,5kg",
+  "url" : "https://prismamarket.ee/entry/17329/purina-one-sensitive-taissoot-koertele-lohega-2-5kg/7613036514279",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "17283",
+    "name" : "Pets",
+    "url" : "https://prismamarket.ee/products/17283"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

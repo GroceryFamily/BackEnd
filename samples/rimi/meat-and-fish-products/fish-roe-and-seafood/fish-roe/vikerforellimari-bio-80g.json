@@ -1,0 +1,16 @@
+{
+  "namespace" : "rimi.ee",
+  "code" : "vikerforellimari-bio-80g",
+  "name" : "Vikerforellimari I love eco 80g",
+  "url" : "https://rimi.ee/epood/en/products/meat-and-fish-products/fish-roe-and-seafood/fish-roe/vikerforellimari-bio-80g/p/808893",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "meat-and-fish-products",
+    "name" : "Meat and fish products",
+    "url" : "https://rimi.ee/epood/en/products/meat-and-fish-products/c/SH-8"
+  }, {
+    "code" : "fish-roe-and-seafood",
+    "name" : "Fish roe and seafood",
+    "url" : "https://rimi.ee/epood/en/products/meat-and-fish-products/fish-roe-and-seafood/c/SH-8-3"
+  } ]
+}
