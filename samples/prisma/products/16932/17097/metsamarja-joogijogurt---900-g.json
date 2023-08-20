@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:495ff06e6e15bcbfe38347847e370572fd30311e36b4fca4181582b085dfb9d4
-size 477
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "metsamarja-joogijogurt---900-g",
+  "name" : "Metsamarja joogijogurt, 900 g",
+  "url" : "https://prismamarket.ee/entry/17097/metsamarja-joogijogurt---900-g/4740125525236",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16932",
+    "name" : "Milk",
+    "url" : "https://prismamarket.ee/products/16932"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

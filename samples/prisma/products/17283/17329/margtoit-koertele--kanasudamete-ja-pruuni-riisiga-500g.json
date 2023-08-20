@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a3623e2e19267ba730d005a2e1164ab2d8b1d7c9eaf4ef624dca981110eb415c
-size 551
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "margtoit-koertele--kanasudamete-ja-pruuni-riisiga-500g",
+  "name" : "Märgtoit koertele kanasüdamete ja pruuni riisiga 500g",
+  "url" : "https://prismamarket.ee/entry/17329/margtoit-koertele--kanasudamete-ja-pruuni-riisiga-500g/5902921300298",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "17283",
+    "name" : "Pets",
+    "url" : "https://prismamarket.ee/products/17283"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

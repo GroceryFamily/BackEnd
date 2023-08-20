@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1430525137770fbb69a9b055f3a1461749188852178eed12914d2c786588419b
-size 528
+{
+  "namespace" : "barbora.ee",
+  "code" : "taispiimajogurt-alma-muraka-350-g",
+  "name" : "Täispiimajogurt ALMA muraka, 350g",
+  "url" : "https://barbora.ee/toode/taispiimajogurt-alma-muraka-350-g",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "jogurtid-ja-desserdid",
+    "name" : "Yoghurts and desserts",
+    "url" : "https://barbora.ee/piimatooted-ja-munad/jogurtid-ja-desserdid"
+  }, {
+    "code" : "piimatooted-ja-munad",
+    "name" : "Dairy and eggs",
+    "url" : "https://barbora.ee/piimatooted-ja-munad"
+  } ]
+}

@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:eb95db1e50a931c6ec5d86d24a43653620c0e929ba37f7cc5764e96faff160be
-size 481
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "kanaliha-sisaldav-pasteet-300-g",
+  "name" : "Kanaliha sisaldav pasteet 300 g",
+  "url" : "https://prismamarket.ee/entry/17329/kanaliha-sisaldav-pasteet-300-g/7340011475163",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "17283",
+    "name" : "Pets",
+    "url" : "https://prismamarket.ee/products/17283"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2330f1a8df1e40965b329ee945cbb2c5acfdac05231ee4a6ae09eaa332f4b2af
-size 504
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "viinamari-hele-mahe-i-klass-400-g",
+  "name" : "Viinamari hele mahe I klass 400 g",
+  "url" : "https://prismamarket.ee/entry/16972/viinamari-hele-mahe-i-klass-400-g/8436572732438",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16929",
+    "name" : "Fruits and vegetables",
+    "url" : "https://prismamarket.ee/products/16929"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:da476a71086de83e393aa5c4bdcdc5cc7dcfcb4ed6a43e24e7b1e48ae7859262
-size 515
+{
+  "namespace" : "barbora.ee",
+  "code" : "jogurt-well-done-virsik-350-g",
+  "name" : "Jogurt WELL DONE virsik, 350g",
+  "url" : "https://barbora.ee/toode/jogurt-well-done-virsik-350-g",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "jogurtid-ja-desserdid",
+    "name" : "Yoghurts and desserts",
+    "url" : "https://barbora.ee/piimatooted-ja-munad/jogurtid-ja-desserdid"
+  }, {
+    "code" : "piimatooted-ja-munad",
+    "name" : "Dairy and eggs",
+    "url" : "https://barbora.ee/piimatooted-ja-munad"
+  } ]
+}

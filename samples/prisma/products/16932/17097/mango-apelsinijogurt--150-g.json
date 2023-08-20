@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:05fb9a24ec01ce51d33967cffab0d080319fafe8ca77db315fd3844b2634addf
-size 469
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "mango-apelsinijogurt--150-g",
+  "name" : "Mango-apelsinijogurt, 150 g",
+  "url" : "https://prismamarket.ee/entry/17097/mango-apelsinijogurt--150-g/6414893096950",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16932",
+    "name" : "Milk",
+    "url" : "https://prismamarket.ee/products/16932"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

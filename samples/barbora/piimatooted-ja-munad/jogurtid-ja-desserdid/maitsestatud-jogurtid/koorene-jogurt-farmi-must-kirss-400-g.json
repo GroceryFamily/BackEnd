@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:10137329f1b5433195af6e441e5ad685b65ac7a6751366ec6e140a62f4bee00f
-size 540
+{
+  "namespace" : "barbora.ee",
+  "code" : "koorene-jogurt-farmi-must-kirss-400-g",
+  "name" : "Koorene jogurt FARMI must.kirss., 400g",
+  "url" : "https://barbora.ee/toode/koorene-jogurt-farmi-must-kirss-400-g",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "jogurtid-ja-desserdid",
+    "name" : "Yoghurts and desserts",
+    "url" : "https://barbora.ee/piimatooted-ja-munad/jogurtid-ja-desserdid"
+  }, {
+    "code" : "piimatooted-ja-munad",
+    "name" : "Dairy and eggs",
+    "url" : "https://barbora.ee/piimatooted-ja-munad"
+  } ]
+}

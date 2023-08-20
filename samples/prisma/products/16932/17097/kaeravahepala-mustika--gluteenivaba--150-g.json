@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5111d54dcb63e08157041f7de0de1f656304bbc348f76dd13cfd9cc2311682c6
-size 514
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "kaeravahepala-mustika--gluteenivaba--150-g",
+  "name" : "Kaeravahepala mustika, gluteenivaba, 150 g",
+  "url" : "https://prismamarket.ee/entry/17097/kaeravahepala-mustika--gluteenivaba--150-g/6430015538801",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16932",
+    "name" : "Milk",
+    "url" : "https://prismamarket.ee/products/16932"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

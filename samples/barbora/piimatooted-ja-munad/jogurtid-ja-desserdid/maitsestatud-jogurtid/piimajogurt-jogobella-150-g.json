@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:22ce81061e1aae2a0a98ae4946aa447c519ca2d647e7d57119c640e76bbe2f7f
-size 508
+{
+  "namespace" : "barbora.ee",
+  "code" : "piimajogurt-jogobella-150-g",
+  "name" : "Piimajogurt JOGOBELLA 150g",
+  "url" : "https://barbora.ee/toode/piimajogurt-jogobella-150-g",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "jogurtid-ja-desserdid",
+    "name" : "Yoghurts and desserts",
+    "url" : "https://barbora.ee/piimatooted-ja-munad/jogurtid-ja-desserdid"
+  }, {
+    "code" : "piimatooted-ja-munad",
+    "name" : "Dairy and eggs",
+    "url" : "https://barbora.ee/piimatooted-ja-munad"
+  } ]
+}

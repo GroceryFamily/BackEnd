@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:34c8d64a90ac02805b4221ee2534c35dabb62bfc9beb15832966442ea2b30287
-size 499
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "taissoot-koertele-veiselihaga-1-4-kg",
+  "name" : "Täissööt koertele veiselihaga 1,4 kg",
+  "url" : "https://prismamarket.ee/entry/17329/taissoot-koertele-veiselihaga-1-4-kg/7613035215955",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "17283",
+    "name" : "Pets",
+    "url" : "https://prismamarket.ee/products/17283"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:757c821469c5a183503fcb45553fbc8c7594eb64d00bab8858a30feb9d6b88cd
-size 500
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "alma-taispiimajogurt-metsmaasika-350g",
+  "name" : "Alma täispiimajogurt metsmaasika 350g",
+  "url" : "https://prismamarket.ee/entry/17097/alma-taispiimajogurt-metsmaasika-350g/4740125535440",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16932",
+    "name" : "Milk",
+    "url" : "https://prismamarket.ee/products/16932"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

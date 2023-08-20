@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f95388192a421a0f974a42a551e946cc17204c9fb9688f8701f567ed36b0a762
-size 460
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "mango-joogijogurt--900-g",
+  "name" : "Mango joogijogurt, 900 g",
+  "url" : "https://prismamarket.ee/entry/17097/mango-joogijogurt--900-g/4740125525243",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16932",
+    "name" : "Milk",
+    "url" : "https://prismamarket.ee/products/16932"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

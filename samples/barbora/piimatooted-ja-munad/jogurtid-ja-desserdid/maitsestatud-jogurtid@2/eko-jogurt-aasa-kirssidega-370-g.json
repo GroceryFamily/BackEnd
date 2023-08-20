@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2d290b43755a896314a8eb6983d4b3c777ea629fc49fb179d26c94fc8464354c
-size 524
+{
+  "namespace" : "barbora.ee",
+  "code" : "eko-jogurt-aasa-kirssidega-370-g",
+  "name" : "Eko jogurt AASA kirssidega, 370g",
+  "url" : "https://barbora.ee/toode/eko-jogurt-aasa-kirssidega-370-g",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "jogurtid-ja-desserdid",
+    "name" : "Yoghurts and desserts",
+    "url" : "https://barbora.ee/piimatooted-ja-munad/jogurtid-ja-desserdid"
+  }, {
+    "code" : "piimatooted-ja-munad",
+    "name" : "Dairy and eggs",
+    "url" : "https://barbora.ee/piimatooted-ja-munad"
+  } ]
+}

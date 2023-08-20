@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:21ce89899bd98271c491892d2cc8c32c5d668ae4d2b8b068038225cb10e1379b
-size 488
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "margtoit-koertele-vutilihaga-400g",
+  "name" : "Märgtoit koertele vutilihaga 400g",
+  "url" : "https://prismamarket.ee/entry/17329/margtoit-koertele-vutilihaga-400g/5902921302407",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "17283",
+    "name" : "Pets",
+    "url" : "https://prismamarket.ee/products/17283"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

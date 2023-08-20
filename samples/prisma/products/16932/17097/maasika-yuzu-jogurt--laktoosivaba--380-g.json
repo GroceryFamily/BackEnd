@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4a4a0aa206a67348da605ae5b327a8fc0740874ba6138ffa4965f59a7b883f44
-size 508
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "maasika-yuzu-jogurt--laktoosivaba--380-g",
+  "name" : "Maasika-Yuzu jogurt, laktoosivaba, 380 g",
+  "url" : "https://prismamarket.ee/entry/17097/maasika-yuzu-jogurt--laktoosivaba--380-g/4740125536256",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16932",
+    "name" : "Milk",
+    "url" : "https://prismamarket.ee/products/16932"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

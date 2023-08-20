@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:67ad8a4a80d41e15ac867f056ee61ccc633fae7a3c0bb1640c89975d49256e7a
-size 508
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "vaarika-virsiku-kreeka-jogurtijook--275g",
+  "name" : "Vaarika-virsiku kreeka jogurtijook, 275g",
+  "url" : "https://prismamarket.ee/entry/17097/vaarika-virsiku-kreeka-jogurtijook--275g/4740125582062",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16932",
+    "name" : "Milk",
+    "url" : "https://prismamarket.ee/products/16932"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

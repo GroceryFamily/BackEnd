@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4cb1ceb90823a02ed72b58fb6addb03a8c46e54247a6431e2c3a59f9f58624d7
-size 445
+{
+  "namespace" : "barbora.ee",
+  "code" : "salat-may-queen",
+  "name" : "Salat MAY QUEEN",
+  "url" : "https://barbora.ee/toode/salat-may-queen",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "aiakaubad",
+    "name" : "Gardening",
+    "url" : "https://barbora.ee/kodukaubad-ja-vaba-aeg/aiakaubad"
+  }, {
+    "code" : "kodukaubad-ja-vaba-aeg",
+    "name" : "Home and leisure",
+    "url" : "https://barbora.ee/kodukaubad-ja-vaba-aeg"
+  } ]
+}

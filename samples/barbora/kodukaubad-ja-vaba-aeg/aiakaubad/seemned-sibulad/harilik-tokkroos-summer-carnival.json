@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0538c7bdccb0e2b76b5aed1b885033bedc36de3bbadf32c9c9bea528b408dc56
-size 496
+{
+  "namespace" : "barbora.ee",
+  "code" : "harilik-tokkroos-summer-carnival",
+  "name" : "Harilik Tokkroos SUMMER CARNIVAL",
+  "url" : "https://barbora.ee/toode/harilik-tokkroos-summer-carnival",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "aiakaubad",
+    "name" : "Gardening",
+    "url" : "https://barbora.ee/kodukaubad-ja-vaba-aeg/aiakaubad"
+  }, {
+    "code" : "kodukaubad-ja-vaba-aeg",
+    "name" : "Home and leisure",
+    "url" : "https://barbora.ee/kodukaubad-ja-vaba-aeg"
+  } ]
+}

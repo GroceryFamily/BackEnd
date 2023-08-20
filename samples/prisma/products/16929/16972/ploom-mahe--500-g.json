@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5e5808f3393d1758ce288ebfcbd8cf44dfe8f0cb87c7293816685045bf5afc96
-size 455
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "ploom-mahe--500-g",
+  "name" : "Ploom mahe 500 g",
+  "url" : "https://prismamarket.ee/entry/16972/ploom-mahe--500-g/6414893504707",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16929",
+    "name" : "Fruits and vegetables",
+    "url" : "https://prismamarket.ee/products/16929"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

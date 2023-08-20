@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d3f6246b54cec54b6a69111de9422bafb3ef92557df5cd0c6f7a1842e6e38f05
-size 490
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "maitsestamata-kreeka-jogurt--180-g",
+  "name" : "Maitsestamata kreeka jogurt, 180 g",
+  "url" : "https://prismamarket.ee/entry/17097/maitsestamata-kreeka-jogurt--180-g/4740125531206",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16932",
+    "name" : "Milk",
+    "url" : "https://prismamarket.ee/products/16932"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:755b59e334dc7dac9db435624134690edfabb53ec5ee2fe09deef4f67545da28
-size 561
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "cesar-country-koeratoit-linnuliha-ja-koogiviljadega-150-g",
+  "name" : "Cesar Country koeratoit linnuliha ja köögiviljadega 150 g",
+  "url" : "https://prismamarket.ee/entry/17329/cesar-country-koeratoit-linnuliha-ja-koogiviljadega-150-g/4008429139062",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "17283",
+    "name" : "Pets",
+    "url" : "https://prismamarket.ee/products/17283"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

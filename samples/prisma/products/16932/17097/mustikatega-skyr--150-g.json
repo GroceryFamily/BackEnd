@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:90729186a6f04839dd89e47c19657c0456982bdb05fd086ec4aa17152473d5be
-size 457
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "mustikatega-skyr--150-g",
+  "name" : "Mustikatega skyr, 150 g",
+  "url" : "https://prismamarket.ee/entry/17097/mustikatega-skyr--150-g/4740113091101",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16932",
+    "name" : "Milk",
+    "url" : "https://prismamarket.ee/products/16932"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

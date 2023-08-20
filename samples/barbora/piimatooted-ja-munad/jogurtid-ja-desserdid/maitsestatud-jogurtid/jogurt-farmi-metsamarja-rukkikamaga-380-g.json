@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a77665ac2678be3c5e354de9ee3ef64b2c9ef344aee39d30b2cb610114337887
-size 550
+{
+  "namespace" : "barbora.ee",
+  "code" : "jogurt-farmi-metsamarja-rukkikamaga-380-g",
+  "name" : "Jogurt FARMI metsamarja rukkikamaga,380g",
+  "url" : "https://barbora.ee/toode/jogurt-farmi-metsamarja-rukkikamaga-380-g",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "jogurtid-ja-desserdid",
+    "name" : "Yoghurts and desserts",
+    "url" : "https://barbora.ee/piimatooted-ja-munad/jogurtid-ja-desserdid"
+  }, {
+    "code" : "piimatooted-ja-munad",
+    "name" : "Dairy and eggs",
+    "url" : "https://barbora.ee/piimatooted-ja-munad"
+  } ]
+}

@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0d4afe7a42033db9bb371846966bde3f0663c0198cf06a5d37fc1742de9d81d6
-size 524
+{
+  "namespace" : "barbora.ee",
+  "code" : "jogurt-mio-delizzi-virsiku-400-g",
+  "name" : "Jogurt MIO DELIZZI virsiku, 400g",
+  "url" : "https://barbora.ee/toode/jogurt-mio-delizzi-virsiku-400-g",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "jogurtid-ja-desserdid",
+    "name" : "Yoghurts and desserts",
+    "url" : "https://barbora.ee/piimatooted-ja-munad/jogurtid-ja-desserdid"
+  }, {
+    "code" : "piimatooted-ja-munad",
+    "name" : "Dairy and eggs",
+    "url" : "https://barbora.ee/piimatooted-ja-munad"
+  } ]
+}

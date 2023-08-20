@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:97b8711126b24f91988eeedfea05aa783d0d925ecaef98d9baa4ffed443c2d30
-size 476
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "taispiimajogurt-muraka--350-g",
+  "name" : "Täispiimajogurt muraka, 350 g",
+  "url" : "https://prismamarket.ee/entry/17097/taispiimajogurt-muraka--350-g/4740125535419",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16932",
+    "name" : "Milk",
+    "url" : "https://prismamarket.ee/products/16932"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

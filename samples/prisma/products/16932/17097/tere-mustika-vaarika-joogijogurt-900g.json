@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:878c3da10f5a4f0c6a28aa088769cd7dcbffeb61008a582e88749c0c6fa0366d
-size 499
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "tere-mustika-vaarika-joogijogurt-900g",
+  "name" : "Tere Mustika-vaarika joogijogurt 900g",
+  "url" : "https://prismamarket.ee/entry/17097/tere-mustika-vaarika-joogijogurt-900g/4740036016298",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16932",
+    "name" : "Milk",
+    "url" : "https://prismamarket.ee/products/16932"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

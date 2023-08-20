@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e43e9e9ad6db988abde0662be5940c0f17dba8b91b822749afac46d94f041856
-size 495
+{
+  "namespace" : "barbora.ee",
+  "code" : "mahebanaan-pakitud-kg",
+  "name" : "Mahebanaan pakitud, kg",
+  "url" : "https://barbora.ee/toode/mahebanaan-pakitud-kg",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "koogiviljad-puuviljad",
+    "name" : "Vegetables and fruits",
+    "url" : "https://barbora.ee/koogiviljad-puuviljad"
+  }, {
+    "code" : "puuviljad-ja-marjad",
+    "name" : "Fruits and berries",
+    "url" : "https://barbora.ee/koogiviljad-puuviljad/puuviljad-ja-marjad"
+  } ]
+}

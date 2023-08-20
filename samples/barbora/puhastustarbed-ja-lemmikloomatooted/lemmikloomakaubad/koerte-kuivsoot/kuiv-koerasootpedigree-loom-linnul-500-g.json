@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4f23eaf6d5f2a8476c066caad49858e6eaf651f8dd7f01e4b489862e63508b99
-size 574
+{
+  "namespace" : "barbora.ee",
+  "code" : "kuiv-koerasootpedigree-loom-linnul-500-g",
+  "name" : "Kuiv koerasöötPEDIGREE loom.+linnul.500g",
+  "url" : "https://barbora.ee/toode/kuiv-koerasootpedigree-loom-linnul-500-g",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "lemmikloomakaubad",
+    "name" : "Pets",
+    "url" : "https://barbora.ee/puhastustarbed-ja-lemmikloomatooted/lemmikloomakaubad"
+  }, {
+    "code" : "puhastustarbed-ja-lemmikloomatooted",
+    "name" : "Household and pets",
+    "url" : "https://barbora.ee/puhastustarbed-ja-lemmikloomatooted"
+  } ]
+}

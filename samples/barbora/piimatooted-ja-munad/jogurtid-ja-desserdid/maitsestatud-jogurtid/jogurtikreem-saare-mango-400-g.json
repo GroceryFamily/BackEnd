@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:01cd68bd1a4415e447bd279f719e74f68052b47d2cc47c48d76fb598d4366253
-size 518
+{
+  "namespace" : "barbora.ee",
+  "code" : "jogurtikreem-saare-mango-400-g",
+  "name" : "Jogurtikreem SAARE mango, 400g",
+  "url" : "https://barbora.ee/toode/jogurtikreem-saare-mango-400-g",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "jogurtid-ja-desserdid",
+    "name" : "Yoghurts and desserts",
+    "url" : "https://barbora.ee/piimatooted-ja-munad/jogurtid-ja-desserdid"
+  }, {
+    "code" : "piimatooted-ja-munad",
+    "name" : "Dairy and eggs",
+    "url" : "https://barbora.ee/piimatooted-ja-munad"
+  } ]
+}

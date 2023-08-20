@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:278be4e33d872b1709249ae1ce17d6109209040f8fcc304ba9d964bc326470ce
-size 468
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "mesimelon-oranz-candy",
+  "name" : "Mesimelon oranz Candy",
+  "url" : "https://prismamarket.ee/entry/16972/mesimelon-oranz-candy/2060157200003",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16929",
+    "name" : "Fruits and vegetables",
+    "url" : "https://prismamarket.ee/products/16929"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

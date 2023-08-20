@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:22634365dcaddf84fc79bf9f3e22247158a098f63dd00f2a17e98b0a82841dd1
-size 461
+{
+  "namespace" : "barbora.ee",
+  "code" : "hobepael-silver-fall",
+  "name" : "Hõbepael Silver fall",
+  "url" : "https://barbora.ee/toode/hobepael-silver-fall",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "aiakaubad",
+    "name" : "Gardening",
+    "url" : "https://barbora.ee/kodukaubad-ja-vaba-aeg/aiakaubad"
+  }, {
+    "code" : "kodukaubad-ja-vaba-aeg",
+    "name" : "Home and leisure",
+    "url" : "https://barbora.ee/kodukaubad-ja-vaba-aeg"
+  } ]
+}

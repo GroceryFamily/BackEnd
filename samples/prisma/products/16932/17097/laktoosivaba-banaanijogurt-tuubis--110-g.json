@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:cfec36f93e0a02e8efabb25b2da346e0d0ff381dbeac23f96ce2a768f09044f4
-size 508
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "laktoosivaba-banaanijogurt-tuubis--110-g",
+  "name" : "Laktoosivaba banaanijogurt tuubis, 110 g",
+  "url" : "https://prismamarket.ee/entry/17097/laktoosivaba-banaanijogurt-tuubis--110-g/4740036015529",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16932",
+    "name" : "Milk",
+    "url" : "https://prismamarket.ee/products/16932"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

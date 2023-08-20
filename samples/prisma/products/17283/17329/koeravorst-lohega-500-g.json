@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b6d3f0fa5dff84f1473338585d953a17d985514e65045d29c5d0cad1a064cd06
-size 458
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "koeravorst-lohega-500-g",
+  "name" : "Koeravorst lõhega 500 g",
+  "url" : "https://prismamarket.ee/entry/17329/koeravorst-lohega-500-g/6415712301491",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "17283",
+    "name" : "Pets",
+    "url" : "https://prismamarket.ee/products/17283"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

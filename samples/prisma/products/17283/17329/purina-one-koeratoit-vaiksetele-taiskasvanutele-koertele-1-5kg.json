@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:40920f1d7401630a2ebd9e9dbf76ab4f95f33ad65924ba2d5eedbbbe525b5fcd
-size 576
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "purina-one-koeratoit-vaiksetele-taiskasvanutele-koertele-1-5kg",
+  "name" : "Purina One koeratoit väiksetele täiskasvanutele koertele 1,5kg",
+  "url" : "https://prismamarket.ee/entry/17329/purina-one-koeratoit-vaiksetele-taiskasvanutele-koertele-1-5kg/7613287034540",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "17283",
+    "name" : "Pets",
+    "url" : "https://prismamarket.ee/products/17283"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

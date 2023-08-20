@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:349ca884ebdcab94af318d26a45a44f28ea9f71dc48e73b483567187f0218c51
-size 523
+{
+  "namespace" : "barbora.ee",
+  "code" : "jogurtikreem-saare-maasika-400-g",
+  "name" : "Jogurtikreem SAARE maasika,400g",
+  "url" : "https://barbora.ee/toode/jogurtikreem-saare-maasika-400-g",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "jogurtid-ja-desserdid",
+    "name" : "Yoghurts and desserts",
+    "url" : "https://barbora.ee/piimatooted-ja-munad/jogurtid-ja-desserdid"
+  }, {
+    "code" : "piimatooted-ja-munad",
+    "name" : "Dairy and eggs",
+    "url" : "https://barbora.ee/piimatooted-ja-munad"
+  } ]
+}

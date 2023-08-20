@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8fb82a7210b594f4224b3bdbfe1bb368edd2c6e4a54feaff14858bf3ee42e66c
-size 499
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "metsmaasika-kreeka-jogurtijook--275-g",
+  "name" : "Metsmaasika kreeka jogurtijook, 275 g",
+  "url" : "https://prismamarket.ee/entry/17097/metsmaasika-kreeka-jogurtijook--275-g/4740125582048",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16932",
+    "name" : "Milk",
+    "url" : "https://prismamarket.ee/products/16932"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

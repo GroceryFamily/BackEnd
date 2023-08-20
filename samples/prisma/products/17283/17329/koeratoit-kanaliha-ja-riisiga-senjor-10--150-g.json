@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:37c1568475b56e62014b5bfa41c03b70c588bb9a23bbcd3508c2ba5a334f7cbb
-size 526
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "koeratoit-kanaliha-ja-riisiga-senjor-10--150-g",
+  "name" : "Koeratoit kanaliha ja riisiga Senjor 10+ 150 g",
+  "url" : "https://prismamarket.ee/entry/17329/koeratoit-kanaliha-ja-riisiga-senjor-10--150-g/4008429006296",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "17283",
+    "name" : "Pets",
+    "url" : "https://prismamarket.ee/products/17283"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

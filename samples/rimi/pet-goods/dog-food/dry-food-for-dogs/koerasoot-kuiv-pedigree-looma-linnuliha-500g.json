@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e96800d673986121789b1f9dff3c5c31724f3f6ae73e5208eb369baf90947472
-size 585
+{
+  "namespace" : "rimi.ee",
+  "code" : "koerasoot-kuiv-pedigree-looma-linnuliha-500g",
+  "name" : "Koerasööt kuiv Pedigree looma-linnulihaga 500g",
+  "url" : "https://rimi.ee/epood/en/products/pet-goods/dog-food/dry-food-for-dogs/koerasoot-kuiv-pedigree-looma-linnuliha-500g/p/648853",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "pet-goods",
+    "name" : "Pet goods",
+    "url" : "https://rimi.ee/epood/en/products/pet-goods/c/SH-7"
+  }, {
+    "code" : "dog-food",
+    "name" : "Dog food",
+    "url" : "https://rimi.ee/epood/en/products/pet-goods/dog-food/c/SH-7-2"
+  } ]
+}

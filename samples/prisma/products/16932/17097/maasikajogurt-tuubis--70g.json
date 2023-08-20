@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4a4d6e0a50f50b284aa1521fed48e09c24ac86c6253478cf528e0bfb3f7dc583
-size 458
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "maasikajogurt-tuubis--70g",
+  "name" : "Maasikajogurt tuubis, 70g",
+  "url" : "https://prismamarket.ee/entry/17097/maasikajogurt-tuubis--70g/59055853",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16932",
+    "name" : "Milk",
+    "url" : "https://prismamarket.ee/products/16932"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7eb23a3c14bbaaf79756d6824b2946cb95b256411313b3e2e3c796300c2e49cc
-size 496
+{
+  "namespace" : "rimi.ee",
+  "code" : "pt-voileivatort-kiluga-500g",
+  "name" : "PT Võileivatort kiluga 500g (ETTETELLIMISEGA)",
+  "url" : "https://rimi.ee/epood/en/products/pre-order-festivity-meals/pre-order-appetizers-and-selection-plates/pt-voileivatort-kiluga-500g/p/959613",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "pre-order-festivity-meals",
+    "name" : "Pre-order festivity meals",
+    "url" : "https://rimi.ee/epood/en/products/pre-order-festivity-meals/c/SH-20"
+  } ]
+}

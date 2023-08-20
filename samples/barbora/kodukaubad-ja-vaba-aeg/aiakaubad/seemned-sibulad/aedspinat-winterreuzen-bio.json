@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3ac150e8749e1901ca336edb3bd3923af1ee071f56e8ed6e911d12f6adfcdef5
-size 478
+{
+  "namespace" : "barbora.ee",
+  "code" : "aedspinat-winterreuzen-bio",
+  "name" : "Aedspinat Winterreuzen Bio",
+  "url" : "https://barbora.ee/toode/aedspinat-winterreuzen-bio",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "aiakaubad",
+    "name" : "Gardening",
+    "url" : "https://barbora.ee/kodukaubad-ja-vaba-aeg/aiakaubad"
+  }, {
+    "code" : "kodukaubad-ja-vaba-aeg",
+    "name" : "Home and leisure",
+    "url" : "https://barbora.ee/kodukaubad-ja-vaba-aeg"
+  } ]
+}

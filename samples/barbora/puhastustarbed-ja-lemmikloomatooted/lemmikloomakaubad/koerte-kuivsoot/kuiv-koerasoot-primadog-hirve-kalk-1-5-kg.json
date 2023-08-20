@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6e59948f87220e7c874a6b3d7dad39f086adb0e25d9c12a809324a82490b130b
-size 576
+{
+  "namespace" : "barbora.ee",
+  "code" : "kuiv-koerasoot-primadog-hirve-kalk-1-5-kg",
+  "name" : "Kuiv koerasööt PRIMADOG hirve/kalk.1,5kg",
+  "url" : "https://barbora.ee/toode/kuiv-koerasoot-primadog-hirve-kalk-1-5-kg",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "lemmikloomakaubad",
+    "name" : "Pets",
+    "url" : "https://barbora.ee/puhastustarbed-ja-lemmikloomatooted/lemmikloomakaubad"
+  }, {
+    "code" : "puhastustarbed-ja-lemmikloomatooted",
+    "name" : "Household and pets",
+    "url" : "https://barbora.ee/puhastustarbed-ja-lemmikloomatooted"
+  } ]
+}

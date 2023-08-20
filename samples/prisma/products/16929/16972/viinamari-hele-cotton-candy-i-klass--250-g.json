@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:139db529bb3e60866763f0e9c52a347843bf06ae95df8d4f04ad7ab83646726b
-size 530
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "viinamari-hele-cotton-candy-i-klass--250-g",
+  "name" : "Viinamari hele Cotton Candy I klass 250 g",
+  "url" : "https://prismamarket.ee/entry/16972/viinamari-hele-cotton-candy-i-klass--250-g/8437013783286",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16929",
+    "name" : "Fruits and vegetables",
+    "url" : "https://prismamarket.ee/products/16929"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

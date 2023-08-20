@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6f934fb7fc1f2303e1692ef8836f19c57d21a2e42acab27abdd6e51f1d91abe2
-size 535
+{
+  "namespace" : "barbora.ee",
+  "code" : "taispiimajogurt-alma-ahjuouna-350-g",
+  "name" : "Täispiimajogurt ALMA ahjuõuna, 350g",
+  "url" : "https://barbora.ee/toode/taispiimajogurt-alma-ahjuouna-350-g",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "jogurtid-ja-desserdid",
+    "name" : "Yoghurts and desserts",
+    "url" : "https://barbora.ee/piimatooted-ja-munad/jogurtid-ja-desserdid"
+  }, {
+    "code" : "piimatooted-ja-munad",
+    "name" : "Dairy and eggs",
+    "url" : "https://barbora.ee/piimatooted-ja-munad"
+  } ]
+}

@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d6979d9aa791cb79556d2b0905bed1b62196a02012a208359a7df37360548037
-size 522
+{
+  "namespace" : "rimi.ee",
+  "code" : "pt-korvikesed-tuunikalakreemiga-300g",
+  "name" : "PT Korvikesed tuunikalakreemiga 300g (ETTETELLIMISEGA)",
+  "url" : "https://rimi.ee/epood/en/products/pre-order-festivity-meals/pre-order-appetizers-and-selection-plates/pt-korvikesed-tuunikalakreemiga-300g/p/982463",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "pre-order-festivity-meals",
+    "name" : "Pre-order festivity meals",
+    "url" : "https://rimi.ee/epood/en/products/pre-order-festivity-meals/c/SH-20"
+  } ]
+}

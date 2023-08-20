@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b6635a79af6cec5dd54f4d13fe53971bd7014dd3f68028c8a7a9271c28cd6ef3
-size 469
+{
+  "namespace" : "rimi.ee",
+  "code" : "pt-ollevaagen-600g",
+  "name" : "PT Õllevaagen 600g (ETTETELLIMISEGA)",
+  "url" : "https://rimi.ee/epood/en/products/pre-order-festivity-meals/pre-order-appetizers-and-selection-plates/pt-ollevaagen-600g/p/982464",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "pre-order-festivity-meals",
+    "name" : "Pre-order festivity meals",
+    "url" : "https://rimi.ee/epood/en/products/pre-order-festivity-meals/c/SH-20"
+  } ]
+}

@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:528ddbe368ee4be849681f03859b4ee42aa36a4bceba4624550d7efe5137f0a2
-size 451
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "puuviljajogurt--150-g",
+  "name" : "Puuviljajogurt, 150 g",
+  "url" : "https://prismamarket.ee/entry/17097/puuviljajogurt--150-g/6414893148918",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16932",
+    "name" : "Milk",
+    "url" : "https://prismamarket.ee/products/16932"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

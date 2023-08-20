@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d074a6591c620076a54586bbdc7f4c2081b18aa73e3a0b0af98d8df08570a9b7
-size 504
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "proteiinijogurtijook--troopiline--275-g",
+  "name" : "Proteiinijogurtijook troopiline, 275 g",
+  "url" : "https://prismamarket.ee/entry/17097/proteiinijogurtijook--troopiline--275-g/4740125582147",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16932",
+    "name" : "Milk",
+    "url" : "https://prismamarket.ee/products/16932"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

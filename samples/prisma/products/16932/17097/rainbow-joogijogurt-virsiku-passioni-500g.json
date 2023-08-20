@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3e100ec6fbc69f787a36dd1e8ddf4c9fe38d21089e360a1335d5f31122cb3aaa
-size 511
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "rainbow-joogijogurt-virsiku-passioni-500g",
+  "name" : "Rainbow joogijogurt virsiku-passioni 500g",
+  "url" : "https://prismamarket.ee/entry/17097/rainbow-joogijogurt-virsiku-passioni-500g/6414893097063",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16932",
+    "name" : "Milk",
+    "url" : "https://prismamarket.ee/products/16932"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1f6cc4fee40e856e79af5043dbdee760315bd07f8bc387b8a1272813b8a5b54e
-size 500
+{
+  "namespace" : "barbora.ee",
+  "code" : "aedkannike-voorasema-rasberry-xp",
+  "name" : "Aedkannike (võõrasema) Rasberry XP",
+  "url" : "https://barbora.ee/toode/aedkannike-voorasema-rasberry-xp",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "aiakaubad",
+    "name" : "Gardening",
+    "url" : "https://barbora.ee/kodukaubad-ja-vaba-aeg/aiakaubad"
+  }, {
+    "code" : "kodukaubad-ja-vaba-aeg",
+    "name" : "Home and leisure",
+    "url" : "https://barbora.ee/kodukaubad-ja-vaba-aeg"
+  } ]
+}

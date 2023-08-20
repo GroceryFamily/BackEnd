@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ecc6ece374bc07503abed80ce5c9ddb18e0f7b3e93821e53f673ba51563b1e0c
-size 468
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "oun-jonagold-i--klass",
+  "name" : "Õun Jonagold I klass",
+  "url" : "https://prismamarket.ee/entry/16972/oun-jonagold-i--klass/2060433700005",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16929",
+    "name" : "Fruits and vegetables",
+    "url" : "https://prismamarket.ee/products/16929"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0599b20a72cd74c0931db994a1dc6f340fe091d6954b9c425a7d305acd2ee3f4
-size 568
+{
+  "namespace" : "rimi.ee",
+  "code" : "koerasoot-kuiv-grrreat-veiselihaga-500g",
+  "name" : "Koerasööt kuiv Grrreat veiselihaga 500g",
+  "url" : "https://rimi.ee/epood/en/products/pet-goods/dog-food/dry-food-for-dogs/koerasoot-kuiv-grrreat-veiselihaga-500g/p/801215",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "pet-goods",
+    "name" : "Pet goods",
+    "url" : "https://rimi.ee/epood/en/products/pet-goods/c/SH-7"
+  }, {
+    "code" : "dog-food",
+    "name" : "Dog food",
+    "url" : "https://rimi.ee/epood/en/products/pet-goods/dog-food/c/SH-7-2"
+  } ]
+}

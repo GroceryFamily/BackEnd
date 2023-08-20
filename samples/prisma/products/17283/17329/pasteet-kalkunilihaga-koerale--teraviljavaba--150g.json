@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:65c8bf6cd69421f65432c20823dd0e2bf072196c34bcfda949e9737812b11582
-size 538
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "pasteet-kalkunilihaga-koerale--teraviljavaba--150g",
+  "name" : "Pasteet kalkunilihaga koerale, teraviljavaba, 150g",
+  "url" : "https://prismamarket.ee/entry/17329/pasteet-kalkunilihaga-koerale--teraviljavaba--150g/5700551110993",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "17283",
+    "name" : "Pets",
+    "url" : "https://prismamarket.ee/products/17283"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

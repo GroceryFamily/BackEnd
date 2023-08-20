@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d624dee90980d641c021255539eb0cba1b44b8a798f0be32054478a48a63cace
-size 505
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "metsmaasikamaitseline-joogijogurt--1-kg",
+  "name" : "Metsmaasikamaitseline joogijogurt, 1 kg",
+  "url" : "https://prismamarket.ee/entry/17097/metsmaasikamaitseline-joogijogurt--1-kg/4740036006275",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16932",
+    "name" : "Milk",
+    "url" : "https://prismamarket.ee/products/16932"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

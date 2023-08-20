@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:52e4b0653957789ed664cebc582d934f3d54f09bbbdb167dfe4f66495a90b791
-size 478
+{
+  "namespace" : "barbora.ee",
+  "code" : "spinat-new-zealand-spinach",
+  "name" : "Spinat New Zealand Spinach",
+  "url" : "https://barbora.ee/toode/spinat-new-zealand-spinach",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "aiakaubad",
+    "name" : "Gardening",
+    "url" : "https://barbora.ee/kodukaubad-ja-vaba-aeg/aiakaubad"
+  }, {
+    "code" : "kodukaubad-ja-vaba-aeg",
+    "name" : "Home and leisure",
+    "url" : "https://barbora.ee/kodukaubad-ja-vaba-aeg"
+  } ]
+}

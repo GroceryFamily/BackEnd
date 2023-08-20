@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0a51f4205baa6ba8a4f8099cb6f4d63b040607b516f44b2326f340ad7e0c5547
-size 538
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "valio-oddlygood-kaeravahepala-mustika-vanilli-150g",
+  "name" : "Valio Oddlygood kaeravahepala mustika-vanilli 150g",
+  "url" : "https://prismamarket.ee/entry/17097/valio-oddlygood-kaeravahepala-mustika-vanilli-150g/6408430400034",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16932",
+    "name" : "Milk",
+    "url" : "https://prismamarket.ee/products/16932"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

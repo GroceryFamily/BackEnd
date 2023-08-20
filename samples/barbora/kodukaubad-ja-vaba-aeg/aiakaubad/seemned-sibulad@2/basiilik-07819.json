@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f0890e3a683e0856455fb7e09274027fa3c92b51c48126ce743c8f66470de19e
-size 436
+{
+  "namespace" : "barbora.ee",
+  "code" : "basiilik-07819",
+  "name" : "Basiilik",
+  "url" : "https://barbora.ee/toode/basiilik-07819",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "aiakaubad",
+    "name" : "Gardening",
+    "url" : "https://barbora.ee/kodukaubad-ja-vaba-aeg/aiakaubad"
+  }, {
+    "code" : "kodukaubad-ja-vaba-aeg",
+    "name" : "Home and leisure",
+    "url" : "https://barbora.ee/kodukaubad-ja-vaba-aeg"
+  } ]
+}

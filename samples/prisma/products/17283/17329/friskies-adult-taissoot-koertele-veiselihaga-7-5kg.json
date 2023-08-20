@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f58d249c43abcd3fcc41cf2a0c7014ef50cd03c95a0b81426ce1e30aaae402d0
-size 541
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "friskies-adult-taissoot-koertele-veiselihaga-7-5kg",
+  "name" : "Friskies Adult täissööt koertele veiselihaga 7,5kg",
+  "url" : "https://prismamarket.ee/entry/17329/friskies-adult-taissoot-koertele-veiselihaga-7-5kg/7336014499206",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "17283",
+    "name" : "Pets",
+    "url" : "https://prismamarket.ee/products/17283"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

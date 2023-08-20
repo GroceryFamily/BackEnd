@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:57c339e4b616ad95f97c680dc257f6b1b76603e9dfcdd50355e26a3ca06a8b66
-size 447
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "virsik-i-klass",
+  "name" : "Virsik I klass",
+  "url" : "https://prismamarket.ee/entry/16972/virsik-i-klass/2060470400005",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16929",
+    "name" : "Fruits and vegetables",
+    "url" : "https://prismamarket.ee/products/16929"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

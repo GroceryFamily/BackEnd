@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0684bcec391e1d971a033d0047468766833ed5af348857fbf84ecac0fb857661
-size 550
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "brit-premium-sport-koeravorst-veiseliha-ja-kalaga-800g",
+  "name" : "Brit Premium Sport koeravorst veiseliha ja kalaga 800g",
+  "url" : "https://prismamarket.ee/entry/17329/brit-premium-sport-koeravorst-veiseliha-ja-kalaga-800g/8595602525935",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "17283",
+    "name" : "Pets",
+    "url" : "https://prismamarket.ee/products/17283"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

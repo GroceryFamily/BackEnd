@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a8775ddfd15cf7ff1119432b4397a00e960888275071deeccdc74051ac60f262
-size 478
+{
+  "namespace" : "barbora.ee",
+  "code" : "maasika-seemned-alexandria",
+  "name" : "Maasika seemned Alexandria",
+  "url" : "https://barbora.ee/toode/maasika-seemned-alexandria",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "aiakaubad",
+    "name" : "Gardening",
+    "url" : "https://barbora.ee/kodukaubad-ja-vaba-aeg/aiakaubad"
+  }, {
+    "code" : "kodukaubad-ja-vaba-aeg",
+    "name" : "Home and leisure",
+    "url" : "https://barbora.ee/kodukaubad-ja-vaba-aeg"
+  } ]
+}

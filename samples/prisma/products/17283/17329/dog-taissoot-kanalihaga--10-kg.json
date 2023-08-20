@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2420bd61b786101858f928a1c31ef76667a0a2cc46c1082930ad65e83b6481bb
-size 481
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "dog-taissoot-kanalihaga--10-kg",
+  "name" : "Dog täissööt kanalihaga, 10 kg",
+  "url" : "https://prismamarket.ee/entry/17329/dog-taissoot-kanalihaga--10-kg/5700553111059",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "17283",
+    "name" : "Pets",
+    "url" : "https://prismamarket.ee/products/17283"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

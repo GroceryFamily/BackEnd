@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6a6aa4a280fa67444bc6d6df8f22027b4cbab418d74c4495fbd959d3b36cc96f
-size 574
+{
+  "namespace" : "barbora.ee",
+  "code" : "kuiv-koerasoot-primadog-lohe-kart-1-5-kg",
+  "name" : "Kuiv koerasööt PRIMADOG lõhe-kart.1,5kg",
+  "url" : "https://barbora.ee/toode/kuiv-koerasoot-primadog-lohe-kart-1-5-kg",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "lemmikloomakaubad",
+    "name" : "Pets",
+    "url" : "https://barbora.ee/puhastustarbed-ja-lemmikloomatooted/lemmikloomakaubad"
+  }, {
+    "code" : "puhastustarbed-ja-lemmikloomatooted",
+    "name" : "Household and pets",
+    "url" : "https://barbora.ee/puhastustarbed-ja-lemmikloomatooted"
+  } ]
+}

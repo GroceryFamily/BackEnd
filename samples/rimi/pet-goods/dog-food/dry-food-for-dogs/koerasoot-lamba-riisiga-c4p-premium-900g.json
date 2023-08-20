@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c4f441fc0fb997b72c6da25d5127cddc4f4126bae571ccee88fe9b52f1c00455
-size 592
+{
+  "namespace" : "rimi.ee",
+  "code" : "koerasoot-lamba-riisiga-c4p-premium-900g",
+  "name" : "Koerasööt kuiv lambaliha ja riisiga Club 4 Paws Premium 900g",
+  "url" : "https://rimi.ee/epood/en/products/pet-goods/dog-food/dry-food-for-dogs/koerasoot-lamba-riisiga-c4p-premium-900g/p/7270683",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "pet-goods",
+    "name" : "Pet goods",
+    "url" : "https://rimi.ee/epood/en/products/pet-goods/c/SH-7"
+  }, {
+    "code" : "dog-food",
+    "name" : "Dog food",
+    "url" : "https://rimi.ee/epood/en/products/pet-goods/dog-food/c/SH-7-2"
+  } ]
+}

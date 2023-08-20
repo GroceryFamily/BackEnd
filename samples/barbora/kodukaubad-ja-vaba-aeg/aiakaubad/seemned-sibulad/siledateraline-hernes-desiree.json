@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d19bdc83a4c6b55d838854987fce6fa45a2a41c24e7581d18b0b163616657241
-size 487
+{
+  "namespace" : "barbora.ee",
+  "code" : "siledateraline-hernes-desiree",
+  "name" : "Siledateraline hernes Desiree",
+  "url" : "https://barbora.ee/toode/siledateraline-hernes-desiree",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "aiakaubad",
+    "name" : "Gardening",
+    "url" : "https://barbora.ee/kodukaubad-ja-vaba-aeg/aiakaubad"
+  }, {
+    "code" : "kodukaubad-ja-vaba-aeg",
+    "name" : "Home and leisure",
+    "url" : "https://barbora.ee/kodukaubad-ja-vaba-aeg"
+  } ]
+}

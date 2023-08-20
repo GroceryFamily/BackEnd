@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3a92302e5fbd1eba652ce80273ffe22cfa45c2131c3290cc4a4270ec8b411ddd
-size 541
+{
+  "namespace" : "rimi.ee",
+  "code" : "pt-hiidkrevetid-magusas-tsillikastmes-650g",
+  "name" : "PT Hiidkrevetid magusas tšillikastmes 650g (ETTETELLIMISEGA)",
+  "url" : "https://rimi.ee/epood/en/products/pre-order-festivity-meals/pre-order-appetizers-and-selection-plates/pt-hiidkrevetid-magusas-tsillikastmes-650g/p/981673",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "pre-order-festivity-meals",
+    "name" : "Pre-order festivity meals",
+    "url" : "https://rimi.ee/epood/en/products/pre-order-festivity-meals/c/SH-20"
+  } ]
+}

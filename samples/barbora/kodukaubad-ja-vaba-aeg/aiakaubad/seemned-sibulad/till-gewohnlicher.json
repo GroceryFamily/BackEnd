@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:493cf244ece4b802b40c85004079010ebe0e9544731f0e6079b97c5ea21f04d9
-size 451
+{
+  "namespace" : "barbora.ee",
+  "code" : "till-gewohnlicher",
+  "name" : "Till GEWOHNLICHER",
+  "url" : "https://barbora.ee/toode/till-gewohnlicher",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "aiakaubad",
+    "name" : "Gardening",
+    "url" : "https://barbora.ee/kodukaubad-ja-vaba-aeg/aiakaubad"
+  }, {
+    "code" : "kodukaubad-ja-vaba-aeg",
+    "name" : "Home and leisure",
+    "url" : "https://barbora.ee/kodukaubad-ja-vaba-aeg"
+  } ]
+}

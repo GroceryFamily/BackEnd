@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0c2811f99b4cb56a622aeba0c1da453a824de4b98355cf97089c65fd04ab13be
-size 517
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "konserv-koertele-loomalihaga-kastmes-1-24kg",
+  "name" : "Konserv koertele loomalihaga kastmes 1,24kg",
+  "url" : "https://prismamarket.ee/entry/17329/konserv-koertele-loomalihaga-kastmes-1-24kg/7340011336730",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "17283",
+    "name" : "Pets",
+    "url" : "https://prismamarket.ee/products/17283"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

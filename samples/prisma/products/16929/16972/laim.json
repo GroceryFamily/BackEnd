@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7cc96c64518e76d0567c5fc9fdf6fa310f565067d40a1d8fb5c45d4af25ec948
-size 417
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "laim",
+  "name" : "Laim",
+  "url" : "https://prismamarket.ee/entry/16972/laim/2060493000008",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16929",
+    "name" : "Fruits and vegetables",
+    "url" : "https://prismamarket.ee/products/16929"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:adbad1bd0ccdf7c8df3d7cebb28bf201001a697bdd23692396fcc992b45df2d7
-size 473
+{
+  "namespace" : "barbora.ee",
+  "code" : "kurgid-rodniciok-natur-h",
+  "name" : "Kurgid RODNIČIOK NATUR H",
+  "url" : "https://barbora.ee/toode/kurgid-rodniciok-natur-h",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "aiakaubad",
+    "name" : "Gardening",
+    "url" : "https://barbora.ee/kodukaubad-ja-vaba-aeg/aiakaubad"
+  }, {
+    "code" : "kodukaubad-ja-vaba-aeg",
+    "name" : "Home and leisure",
+    "url" : "https://barbora.ee/kodukaubad-ja-vaba-aeg"
+  } ]
+}

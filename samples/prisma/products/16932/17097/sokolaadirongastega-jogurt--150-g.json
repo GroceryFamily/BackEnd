@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:cf36f1e3ae9fdb1abc93b24cb613f64974e30ddbcb79a03c230d62b906b61692
-size 489
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "sokolaadirongastega-jogurt--150-g",
+  "name" : "Šokolaadirõngastega jogurt, 150 g",
+  "url" : "https://prismamarket.ee/entry/17097/sokolaadirongastega-jogurt--150-g/4740125539059",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16932",
+    "name" : "Milk",
+    "url" : "https://prismamarket.ee/products/16932"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

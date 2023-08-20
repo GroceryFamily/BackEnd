@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7ecf66a490e9ea65db9eeaa24b899bd28ec993ca2f08b0ea07c3269237af0531
-size 442
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "muraka-jogurt--1kg",
+  "name" : "Muraka jogurt, 1kg",
+  "url" : "https://prismamarket.ee/entry/17097/muraka-jogurt--1kg/4740113090722",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16932",
+    "name" : "Milk",
+    "url" : "https://prismamarket.ee/products/16932"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:be174b135a69774fa41f7e88b0d4021e10986e2b8ca9bcdacf76152070d308e3
-size 478
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "mahe-kanapasteet-koerale-150-g",
+  "name" : "Mahe kanapasteet koerale 150 g",
+  "url" : "https://prismamarket.ee/entry/17329/mahe-kanapasteet-koerale-150-g/5700551110931",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "17283",
+    "name" : "Pets",
+    "url" : "https://prismamarket.ee/products/17283"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

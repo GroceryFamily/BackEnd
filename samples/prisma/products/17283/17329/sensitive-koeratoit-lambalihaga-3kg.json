@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5a2cd73ee1086cb55740b2bde6c79a727f2db918309dcef46e0446836b45d376
-size 493
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "sensitive-koeratoit-lambalihaga-3kg",
+  "name" : "Sensitive koeratoit lambalihaga 3kg",
+  "url" : "https://prismamarket.ee/entry/17329/sensitive-koeratoit-lambalihaga-3kg/8595602526628",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "17283",
+    "name" : "Pets",
+    "url" : "https://prismamarket.ee/products/17283"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

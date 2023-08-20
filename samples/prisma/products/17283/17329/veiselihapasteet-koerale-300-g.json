@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a42cd7e4e45e7c662eb7367e0f2e730c8df21fb8594fb46b6868e2dab36c28d6
-size 478
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "veiselihapasteet-koerale-300-g",
+  "name" : "Veiselihapasteet koerale 300 g",
+  "url" : "https://prismamarket.ee/entry/17329/veiselihapasteet-koerale-300-g/6415711912902",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "17283",
+    "name" : "Pets",
+    "url" : "https://prismamarket.ee/products/17283"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:efceffb9a73eed1ad7a650925f802a221abf0f589d4539b86ec8693cb3116731
-size 485
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "avokaado--soogivalmis-2-tk",
+  "name" : "Avokaado, söögivalmis 2 tk",
+  "url" : "https://prismamarket.ee/entry/16972/avokaado--soogivalmis-2-tk/8718366857269",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16929",
+    "name" : "Fruits and vegetables",
+    "url" : "https://prismamarket.ee/products/16929"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e3d650ed336874d04119f3986078d8cfc4c6d426a102cec6960fc8bb582415ed
-size 586
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "hau-hau-champion-taissoot-koertele-kalkuniliha-ja-kaeraga--1-5-kg",
+  "name" : "Hau-Hau Champion täissööt koertele kalkuniliha ja kaeraga, 1,5 kg",
+  "url" : "https://prismamarket.ee/entry/17329/hau-hau-champion-taissoot-koertele-kalkuniliha-ja-kaeraga--1-5-kg/6430069580191",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "17283",
+    "name" : "Pets",
+    "url" : "https://prismamarket.ee/products/17283"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

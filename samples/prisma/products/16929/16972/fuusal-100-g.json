@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:16265c18997ecec33e76d744088767796618fe8f554684e6b7d57cb0901ef9a1
-size 443
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "fuusal-100-g",
+  "name" : "FÜÜSAL 100 G",
+  "url" : "https://prismamarket.ee/entry/16972/fuusal-100-g/8718366803136",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16929",
+    "name" : "Fruits and vegetables",
+    "url" : "https://prismamarket.ee/products/16929"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5033d1939d0673073f1d72734a8b1e8662e74881b4a5c052c45f43e978ce3639
-size 526
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "prima-dog-koeravorst-ulukiliha-ja-riisiga-800g",
+  "name" : "Prima Dog koeravorst Ulukiliha ja riisiga 800g",
+  "url" : "https://prismamarket.ee/entry/17329/prima-dog-koeravorst-ulukiliha-ja-riisiga-800g/6430062460933",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "17283",
+    "name" : "Pets",
+    "url" : "https://prismamarket.ee/products/17283"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

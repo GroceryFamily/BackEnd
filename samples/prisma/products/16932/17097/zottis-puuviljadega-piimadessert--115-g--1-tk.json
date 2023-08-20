@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ff850d867fabd0dd438897079911a8930e727f6123eb031f10578189239b12d8
-size 518
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "zottis-puuviljadega-piimadessert--115-g--1-tk",
+  "name" : "Zottis puuviljadega piimadessert, 115 g, 1 TK",
+  "url" : "https://prismamarket.ee/entry/17097/zottis-puuviljadega-piimadessert--115-g--1-tk/40338576",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16932",
+    "name" : "Milk",
+    "url" : "https://prismamarket.ee/products/16932"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

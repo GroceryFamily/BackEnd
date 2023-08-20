@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:20672b57286c0546984db5b79c62679d10aa2935da26c17b91ef1484e2ffd5fc
-size 606
+{
+  "namespace" : "rimi.ee",
+  "code" : "koerasoot-kuiv-pedigree-loom-lind-2-6kg",
+  "name" : "Koerasööt kuiv Pedigree täiskasvanud koertele looma- ja linnulihaga, 2,6 kg",
+  "url" : "https://rimi.ee/epood/en/products/pet-goods/dog-food/dry-food-for-dogs/koerasoot-kuiv-pedigree-loom-lind-2-6kg/p/7149092",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "pet-goods",
+    "name" : "Pet goods",
+    "url" : "https://rimi.ee/epood/en/products/pet-goods/c/SH-7"
+  }, {
+    "code" : "dog-food",
+    "name" : "Dog food",
+    "url" : "https://rimi.ee/epood/en/products/pet-goods/dog-food/c/SH-7-2"
+  } ]
+}

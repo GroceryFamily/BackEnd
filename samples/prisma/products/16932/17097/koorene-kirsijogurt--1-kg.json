@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9e742b434bfc997208ff2f15fa84aa7938dd565ad6c690faa995e49bbc05f985
-size 463
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "koorene-kirsijogurt--1-kg",
+  "name" : "Koorene kirsijogurt, 1 kg",
+  "url" : "https://prismamarket.ee/entry/17097/koorene-kirsijogurt--1-kg/4740113090289",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16932",
+    "name" : "Milk",
+    "url" : "https://prismamarket.ee/products/16932"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

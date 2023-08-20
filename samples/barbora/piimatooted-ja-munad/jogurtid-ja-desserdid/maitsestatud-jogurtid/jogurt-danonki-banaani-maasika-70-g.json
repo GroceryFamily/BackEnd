@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:108a5bd5a1d57170f0e76413239d93f6d29d2019a6dd59ea38826a63b261ea1b
-size 533
+{
+  "namespace" : "barbora.ee",
+  "code" : "jogurt-danonki-banaani-maasika-70-g",
+  "name" : "Jogurt DANONKI banaani-maasika, 70g",
+  "url" : "https://barbora.ee/toode/jogurt-danonki-banaani-maasika-70-g",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "jogurtid-ja-desserdid",
+    "name" : "Yoghurts and desserts",
+    "url" : "https://barbora.ee/piimatooted-ja-munad/jogurtid-ja-desserdid"
+  }, {
+    "code" : "piimatooted-ja-munad",
+    "name" : "Dairy and eggs",
+    "url" : "https://barbora.ee/piimatooted-ja-munad"
+  } ]
+}

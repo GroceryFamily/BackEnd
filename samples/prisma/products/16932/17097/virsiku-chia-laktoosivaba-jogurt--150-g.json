@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9a250f8c4bc0cddba6ca33ce456a8a2636fe7392964b2596b0370a8aa0b51549
-size 505
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "virsiku-chia-laktoosivaba-jogurt--150-g",
+  "name" : "Virsiku-chia laktoosivaba jogurt, 150 g",
+  "url" : "https://prismamarket.ee/entry/17097/virsiku-chia-laktoosivaba-jogurt--150-g/4740125537208",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16932",
+    "name" : "Milk",
+    "url" : "https://prismamarket.ee/products/16932"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

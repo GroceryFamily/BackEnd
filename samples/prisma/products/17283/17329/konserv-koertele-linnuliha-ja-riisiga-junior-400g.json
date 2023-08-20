@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:097d60e9a8bf63259027eac389808eeeadbb46e3470e0b2492a7262e194219c9
-size 535
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "konserv-koertele-linnuliha-ja-riisiga-junior-400g",
+  "name" : "Konserv koertele linnuliha ja riisiga Junior 400g",
+  "url" : "https://prismamarket.ee/entry/17329/konserv-koertele-linnuliha-ja-riisiga-junior-400g/4008429056086",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "17283",
+    "name" : "Pets",
+    "url" : "https://prismamarket.ee/products/17283"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

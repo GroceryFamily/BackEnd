@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:aaaab73ca474d37fcbde46396e7787312588fb7cf8f6dfdcf6ccf099034f9850
-size 527
+{
+  "namespace" : "barbora.ee",
+  "code" : "biojogurt-liisu-mustikatega-350-g",
+  "name" : "Biojogurt LIISU mustikatega, 350g",
+  "url" : "https://barbora.ee/toode/biojogurt-liisu-mustikatega-350-g",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "jogurtid-ja-desserdid",
+    "name" : "Yoghurts and desserts",
+    "url" : "https://barbora.ee/piimatooted-ja-munad/jogurtid-ja-desserdid"
+  }, {
+    "code" : "piimatooted-ja-munad",
+    "name" : "Dairy and eggs",
+    "url" : "https://barbora.ee/piimatooted-ja-munad"
+  } ]
+}

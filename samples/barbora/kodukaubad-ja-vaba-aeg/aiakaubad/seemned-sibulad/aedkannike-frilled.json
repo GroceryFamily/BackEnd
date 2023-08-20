@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7c0ddd64a0bcc2bb1e4e844c46cd4adc50ce11845eaa03d78c15279e437ed86d
-size 454
+{
+  "namespace" : "barbora.ee",
+  "code" : "aedkannike-frilled",
+  "name" : "Aedkannike FRILLED",
+  "url" : "https://barbora.ee/toode/aedkannike-frilled",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "aiakaubad",
+    "name" : "Gardening",
+    "url" : "https://barbora.ee/kodukaubad-ja-vaba-aeg/aiakaubad"
+  }, {
+    "code" : "kodukaubad-ja-vaba-aeg",
+    "name" : "Home and leisure",
+    "url" : "https://barbora.ee/kodukaubad-ja-vaba-aeg"
+  } ]
+}

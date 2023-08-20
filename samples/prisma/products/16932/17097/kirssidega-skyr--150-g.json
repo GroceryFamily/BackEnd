@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5323d138233a6addc3b28b04d6fccb07b34245ea3a22fb874bcdab0c3a8dd6e2
-size 454
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "kirssidega-skyr--150-g",
+  "name" : "Kirssidega skyr, 150 g",
+  "url" : "https://prismamarket.ee/entry/17097/kirssidega-skyr--150-g/4740113091453",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16932",
+    "name" : "Milk",
+    "url" : "https://prismamarket.ee/products/16932"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

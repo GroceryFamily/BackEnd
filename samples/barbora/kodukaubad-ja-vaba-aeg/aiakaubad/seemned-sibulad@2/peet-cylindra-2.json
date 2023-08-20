@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d5aa8fe230ae4d3b5ec7a3a1216e732479dec15017f50c0db7f5e6b139a7425f
-size 444
+{
+  "namespace" : "barbora.ee",
+  "code" : "peet-cylindra-2",
+  "name" : "Peet Cylindra2",
+  "url" : "https://barbora.ee/toode/peet-cylindra-2",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "aiakaubad",
+    "name" : "Gardening",
+    "url" : "https://barbora.ee/kodukaubad-ja-vaba-aeg/aiakaubad"
+  }, {
+    "code" : "kodukaubad-ja-vaba-aeg",
+    "name" : "Home and leisure",
+    "url" : "https://barbora.ee/kodukaubad-ja-vaba-aeg"
+  } ]
+}

@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:110793dff7580955e717f60cbc4f2c203edad7b50e019bc71b14a32ee1258076
-size 511
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "taissoot-koertele-kana-ja-riisiga-2-5-kg",
+  "name" : "Täissööt koertele kana ja riisiga 2,5 kg",
+  "url" : "https://prismamarket.ee/entry/17329/taissoot-koertele-kana-ja-riisiga-2-5-kg/7613036307390",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "17283",
+    "name" : "Pets",
+    "url" : "https://prismamarket.ee/products/17283"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

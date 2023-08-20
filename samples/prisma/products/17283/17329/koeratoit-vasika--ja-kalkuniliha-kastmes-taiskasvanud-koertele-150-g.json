@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5dca1d2a748082a15815e64da98a0eb9072fa8b92ff068df4a76aedd2f5b5f2e
-size 593
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "koeratoit-vasika--ja-kalkuniliha-kastmes-taiskasvanud-koertele-150-g",
+  "name" : "Koeratoit vasika- ja kalkuniliha kastmes täiskasvanud koertele 150 g",
+  "url" : "https://prismamarket.ee/entry/17329/koeratoit-vasika--ja-kalkuniliha-kastmes-taiskasvanud-koertele-150-g/4008429094521",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "17283",
+    "name" : "Pets",
+    "url" : "https://prismamarket.ee/products/17283"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

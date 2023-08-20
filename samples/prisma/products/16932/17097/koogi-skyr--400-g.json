@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ecd9fe257c970ae6e4ec037ada842fa5b06a53cdd03f6e3369aea6602c3f2734
-size 441
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "koogi-skyr--400-g",
+  "name" : "Köögi skyr, 400 g",
+  "url" : "https://prismamarket.ee/entry/17097/koogi-skyr--400-g/4740113091415",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16932",
+    "name" : "Milk",
+    "url" : "https://prismamarket.ee/products/16932"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

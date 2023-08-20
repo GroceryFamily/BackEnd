@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:451d16b856f203ff4530cb6cb4e736c6fe47befa187e7fae59f72eacb9757bf2
-size 553
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "koeratoiduvalik-kastmes-looma--lamba--kanalihaga-4x100g",
+  "name" : "Koeratoiduvalik kastmes looma, lamba, kanalihaga 4x100g",
+  "url" : "https://prismamarket.ee/entry/17329/koeratoiduvalik-kastmes-looma--lamba--kanalihaga-4x100g/7613035808294",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "17283",
+    "name" : "Pets",
+    "url" : "https://prismamarket.ee/products/17283"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

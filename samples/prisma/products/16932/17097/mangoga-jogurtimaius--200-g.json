@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9ba47042071238c5fac3d4c805a0c60611451da30df118e2e7ddbb156d05b976
-size 469
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "mangoga-jogurtimaius--200-g",
+  "name" : "Mangoga jogurtimaius, 200 g",
+  "url" : "https://prismamarket.ee/entry/17097/mangoga-jogurtimaius--200-g/4740125532241",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16932",
+    "name" : "Milk",
+    "url" : "https://prismamarket.ee/products/16932"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2f630e4a7db45cbf1a19fa8163feff7778bba06d154f731ee9eb718dbd9833d3
-size 529
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "alma-muah-koorejogurt-pistaatsiamaitseline-380g",
+  "name" : "Alma Muah koorejogurt pistaatsiamaitseline 380g",
+  "url" : "https://prismamarket.ee/entry/17097/alma-muah-koorejogurt-pistaatsiamaitseline-380g/4740125535952",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16932",
+    "name" : "Milk",
+    "url" : "https://prismamarket.ee/products/16932"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9c0c029b761ca08c2b6d054106669a3bc28f081b36c2fc41946e57d7a0fa28ee
-size 637
+{
+  "namespace" : "rimi.ee",
+  "code" : "meremari-punane-kriskal-113g",
+  "name" : "Meremari punane Kriskal 113g",
+  "url" : "https://rimi.ee/epood/en/products/meat-and-fish-products/fish-roe-and-seafood/fish-roe/meremari-punane-kriskal-113g/p/206480",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "meat-and-fish-products",
+    "name" : "Meat and fish products",
+    "url" : "https://rimi.ee/epood/en/products/meat-and-fish-products/c/SH-8"
+  }, {
+    "code" : "fish-roe-and-seafood",
+    "name" : "Fish roe and seafood",
+    "url" : "https://rimi.ee/epood/en/products/meat-and-fish-products/fish-roe-and-seafood/c/SH-8-3"
+  } ]
+}

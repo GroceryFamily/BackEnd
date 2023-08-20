@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b74dbea038ef5ec54d91bcd89eed3be44fcc05520d6fb8fe72909a1058897ad7
-size 568
+{
+  "namespace" : "barbora.ee",
+  "code" : "kuiv-koeratoit-lovett-veiselihaga-10-kg",
+  "name" : "Kuiv koeratoit LOVETT veiselihaga 10kg",
+  "url" : "https://barbora.ee/toode/kuiv-koeratoit-lovett-veiselihaga-10-kg",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "lemmikloomakaubad",
+    "name" : "Pets",
+    "url" : "https://barbora.ee/puhastustarbed-ja-lemmikloomatooted/lemmikloomakaubad"
+  }, {
+    "code" : "puhastustarbed-ja-lemmikloomatooted",
+    "name" : "Household and pets",
+    "url" : "https://barbora.ee/puhastustarbed-ja-lemmikloomatooted"
+  } ]
+}

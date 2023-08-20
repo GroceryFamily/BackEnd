@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:986cb6f4f64cb9c2346b590afb78b563a1e2272bc6b3e6c94c573b162a70acd4
-size 447
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "arbuus-kollane",
+  "name" : "Arbuus kollane",
+  "url" : "https://prismamarket.ee/entry/16972/arbuus-kollane/2060490400009",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16929",
+    "name" : "Fruits and vegetables",
+    "url" : "https://prismamarket.ee/products/16929"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

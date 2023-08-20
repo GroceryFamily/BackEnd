@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1afba37b2b284f0a347d3257c3ba2426d95643fbcfbc5fa1ca3f3607d1a7551b
-size 457
+{
+  "namespace" : "barbora.ee",
+  "code" : "oblikas-bloody-dock",
+  "name" : "Oblikas Bloody dock",
+  "url" : "https://barbora.ee/toode/oblikas-bloody-dock",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "aiakaubad",
+    "name" : "Gardening",
+    "url" : "https://barbora.ee/kodukaubad-ja-vaba-aeg/aiakaubad"
+  }, {
+    "code" : "kodukaubad-ja-vaba-aeg",
+    "name" : "Home and leisure",
+    "url" : "https://barbora.ee/kodukaubad-ja-vaba-aeg"
+  } ]
+}

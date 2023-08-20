@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9fb58325c0e928bc0b17fa6f064cb82116cbbc20f77880c4a5f1e40f131bd1a2
-size 477
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "pirn-conference--i-klass",
+  "name" : "Pirn Conference, I klass",
+  "url" : "https://prismamarket.ee/entry/16972/pirn-conference--i-klass/2060442000004",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16929",
+    "name" : "Fruits and vegetables",
+    "url" : "https://prismamarket.ee/products/16929"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:524a756926751521aa12666c017a177a97af601d47b6f706cecad930ca196d46
-size 499
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "koeratoit-vasika--ja-kanalihaga-150-g",
+  "name" : "Koeratoit vasika- ja kanalihaga 150 g",
+  "url" : "https://prismamarket.ee/entry/17329/koeratoit-vasika--ja-kanalihaga-150-g/4008429012617",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "17283",
+    "name" : "Pets",
+    "url" : "https://prismamarket.ee/products/17283"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

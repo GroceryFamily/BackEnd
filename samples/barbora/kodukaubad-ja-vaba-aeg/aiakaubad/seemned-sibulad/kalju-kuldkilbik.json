@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:eba35e5b2c47f0d90677ee4dc28b88d6a20f227a3b1b2737f6327263219a09c5
-size 448
+{
+  "namespace" : "barbora.ee",
+  "code" : "kalju-kuldkilbik",
+  "name" : "Kalju-kuldkilbik",
+  "url" : "https://barbora.ee/toode/kalju-kuldkilbik",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "aiakaubad",
+    "name" : "Gardening",
+    "url" : "https://barbora.ee/kodukaubad-ja-vaba-aeg/aiakaubad"
+  }, {
+    "code" : "kodukaubad-ja-vaba-aeg",
+    "name" : "Home and leisure",
+    "url" : "https://barbora.ee/kodukaubad-ja-vaba-aeg"
+  } ]
+}

@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d33d49fbc5faa14e4f70802e9612fb8969c728663967e5b7673cd1f04ac7c3bb
-size 502
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "kreeka-jogurt-10---laktoosivaba--370-g",
+  "name" : "Kreeka jogurt 10%, laktoosivaba, 370 g",
+  "url" : "https://prismamarket.ee/entry/17097/kreeka-jogurt-10---laktoosivaba--370-g/4740113035631",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16932",
+    "name" : "Milk",
+    "url" : "https://prismamarket.ee/products/16932"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

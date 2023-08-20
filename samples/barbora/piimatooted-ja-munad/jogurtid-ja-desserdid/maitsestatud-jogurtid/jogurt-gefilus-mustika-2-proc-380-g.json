@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f0e470d8b1d5145780bf46f49aada03d12d16fc69bcd766d06cb9053143f803f
-size 529
+{
+  "namespace" : "barbora.ee",
+  "code" : "jogurt-gefilus-mustika-2-proc-380-g",
+  "name" : "Jogurt GEFILUS mustika 2%, 380g",
+  "url" : "https://barbora.ee/toode/jogurt-gefilus-mustika-2-proc-380-g",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "jogurtid-ja-desserdid",
+    "name" : "Yoghurts and desserts",
+    "url" : "https://barbora.ee/piimatooted-ja-munad/jogurtid-ja-desserdid"
+  }, {
+    "code" : "piimatooted-ja-munad",
+    "name" : "Dairy and eggs",
+    "url" : "https://barbora.ee/piimatooted-ja-munad"
+  } ]
+}

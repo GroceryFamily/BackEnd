@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ce07e6d2b0abd9d7ed1192748c47b9e772358027eff53c82c04904014d18911f
-size 542
+{
+  "namespace" : "rimi.ee",
+  "code" : "banaan-kg",
+  "name" : "Banaan kg",
+  "url" : "https://rimi.ee/epood/en/products/fruits-vegetables-flowers/fruits/bananas/banaan-kg/p/270939",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "fruits",
+    "name" : "Fruits",
+    "url" : "https://rimi.ee/epood/en/products/fruits-vegetables-flowers/fruits/c/SH-12-5"
+  }, {
+    "code" : "fruits-vegetables-flowers",
+    "name" : "Fruits, vegetables, flowers",
+    "url" : "https://rimi.ee/epood/en/products/fruits-vegetables-flowers/c/SH-12"
+  } ]
+}

@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:53aaf1ad1820ee80ae06ffd267eaf34e459bd6df5fa2de55761c7ddc72b09a78
-size 478
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "maitsestamata-sojatoode--400-g",
+  "name" : "Maitsestamata sojatoode, 400 g",
+  "url" : "https://prismamarket.ee/entry/17097/maitsestamata-sojatoode--400-g/5411188121213",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16932",
+    "name" : "Milk",
+    "url" : "https://prismamarket.ee/products/16932"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

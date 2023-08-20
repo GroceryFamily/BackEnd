@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9aa643256c4e20ce78c12b8a4b073a02487ce03a91237710f79fd80109af8f32
-size 450
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "ananass-rainbow",
+  "name" : "Ananass Rainbow",
+  "url" : "https://prismamarket.ee/entry/16972/ananass-rainbow/2060490800007",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16929",
+    "name" : "Fruits and vegetables",
+    "url" : "https://prismamarket.ee/products/16929"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

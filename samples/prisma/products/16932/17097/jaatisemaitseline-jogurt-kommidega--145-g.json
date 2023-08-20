@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:de9c60b69378030d82c85907b604a98b5e6422510bd53c819bbb57be3569e768
-size 513
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "jaatisemaitseline-jogurt-kommidega--145-g",
+  "name" : "Jäätisemaitseline jogurt kommidega, 145 g",
+  "url" : "https://prismamarket.ee/entry/17097/jaatisemaitseline-jogurt-kommidega--145-g/4740036013709",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16932",
+    "name" : "Milk",
+    "url" : "https://prismamarket.ee/products/16932"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:61d7aeb1e0839cb804a48a0a21c4ac601c112fe6f55bea5ce530be147a6d2aeb
-size 517
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "muah--rukkileiva-kaneeli-koorejogurt--380-g",
+  "name" : "Muah! rukkileiva-kaneeli koorejogurt, 380 g",
+  "url" : "https://prismamarket.ee/entry/17097/muah--rukkileiva-kaneeli-koorejogurt--380-g/4740125535815",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16932",
+    "name" : "Milk",
+    "url" : "https://prismamarket.ee/products/16932"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

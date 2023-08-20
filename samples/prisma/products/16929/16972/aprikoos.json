@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:67abded7871b0e2839d5dc8d2bcefcf5a3af5945d25abdbf2de521147f0fcfd7
-size 429
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "aprikoos",
+  "name" : "Aprikoos",
+  "url" : "https://prismamarket.ee/entry/16972/aprikoos/2060470100004",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16929",
+    "name" : "Fruits and vegetables",
+    "url" : "https://prismamarket.ee/products/16929"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

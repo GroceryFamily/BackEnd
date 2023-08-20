@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f58146ed2a9691f05f9207569b0464dde91317575db884ad5eaf4ea67228148a
-size 508
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "pedigree-vorst-koertele-kanalihaga--500g",
+  "name" : "Pedigree vorst koertele kanalihaga, 500g",
+  "url" : "https://prismamarket.ee/entry/17329/pedigree-vorst-koertele-kanalihaga--500g/4008429046322",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "17283",
+    "name" : "Pets",
+    "url" : "https://prismamarket.ee/products/17283"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

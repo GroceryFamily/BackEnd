@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a3d89cf393db7ed35d6f9f1a557422dc8ede7cdca0a6781a856c276c5512c3b6
-size 436
+{
+  "namespace" : "barbora.ee",
+  "code" : "till-mammoth",
+  "name" : "Till MAMMOTH",
+  "url" : "https://barbora.ee/toode/till-mammoth",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "aiakaubad",
+    "name" : "Gardening",
+    "url" : "https://barbora.ee/kodukaubad-ja-vaba-aeg/aiakaubad"
+  }, {
+    "code" : "kodukaubad-ja-vaba-aeg",
+    "name" : "Home and leisure",
+    "url" : "https://barbora.ee/kodukaubad-ja-vaba-aeg"
+  } ]
+}

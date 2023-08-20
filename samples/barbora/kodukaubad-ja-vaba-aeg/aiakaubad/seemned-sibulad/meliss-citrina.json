@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2a3c7b26fbff8a459b1f3067769d137101320210e1cd742f1ce978149d82b77f
-size 442
+{
+  "namespace" : "barbora.ee",
+  "code" : "meliss-citrina",
+  "name" : "Meliss CITRINA",
+  "url" : "https://barbora.ee/toode/meliss-citrina",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "aiakaubad",
+    "name" : "Gardening",
+    "url" : "https://barbora.ee/kodukaubad-ja-vaba-aeg/aiakaubad"
+  }, {
+    "code" : "kodukaubad-ja-vaba-aeg",
+    "name" : "Home and leisure",
+    "url" : "https://barbora.ee/kodukaubad-ja-vaba-aeg"
+  } ]
+}

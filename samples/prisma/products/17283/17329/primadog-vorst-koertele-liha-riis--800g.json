@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:416addb54095583d362847b9487f8a4a367aa93c9a02698a3bbb07e8f6cf2507
-size 505
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "primadog-vorst-koertele-liha-riis--800g",
+  "name" : "Primadog vorst koertele liha-riis, 800g",
+  "url" : "https://prismamarket.ee/entry/17329/primadog-vorst-koertele-liha-riis--800g/6430062460889",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "17283",
+    "name" : "Pets",
+    "url" : "https://prismamarket.ee/products/17283"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

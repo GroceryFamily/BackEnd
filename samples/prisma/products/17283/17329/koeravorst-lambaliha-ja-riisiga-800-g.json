@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3c047a11f7463ce6053728c108f6a34327a1d3e68271407a75cf20af5ccbb8fe
-size 499
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "koeravorst-lambaliha-ja-riisiga-800-g",
+  "name" : "Koeravorst lambaliha ja riisiga 800 g",
+  "url" : "https://prismamarket.ee/entry/17329/koeravorst-lambaliha-ja-riisiga-800-g/6430056889986",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "17283",
+    "name" : "Pets",
+    "url" : "https://prismamarket.ee/products/17283"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:58a426c91fb5aa865850f3b5e9ad2555687ef0ac1bd60af883288aeb454b5436
-size 545
+{
+  "namespace" : "barbora.ee",
+  "code" : "prot-jogurt-valio-profeel-maasika-200-g",
+  "name" : "Prot.jogurt VALIO Profeel maasika, 200g",
+  "url" : "https://barbora.ee/toode/prot-jogurt-valio-profeel-maasika-200-g",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "jogurtid-ja-desserdid",
+    "name" : "Yoghurts and desserts",
+    "url" : "https://barbora.ee/piimatooted-ja-munad/jogurtid-ja-desserdid"
+  }, {
+    "code" : "piimatooted-ja-munad",
+    "name" : "Dairy and eggs",
+    "url" : "https://barbora.ee/piimatooted-ja-munad"
+  } ]
+}

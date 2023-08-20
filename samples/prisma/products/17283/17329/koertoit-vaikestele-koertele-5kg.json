@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5187dc2b9de7aac42254ec02d905f509d295aee36f420fd26aaf2aed64367f57
-size 485
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "koertoit-vaikestele-koertele-5kg",
+  "name" : "Koertoit väikestele koertele 5kg",
+  "url" : "https://prismamarket.ee/entry/17329/koertoit-vaikestele-koertele-5kg/6429810236067",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "17283",
+    "name" : "Pets",
+    "url" : "https://prismamarket.ee/products/17283"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

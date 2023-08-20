@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3a0435b0c4e96e2dcaff4c6ca9eb30cef29257cfa2e0df33de54ca36e17f78b0
-size 538
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "alma-jogurtismuuti-banaani-porgandi-astelpaju-275g",
+  "name" : "Alma jogurtismuuti banaani-porgandi-astelpaju 275g",
+  "url" : "https://prismamarket.ee/entry/17097/alma-jogurtismuuti-banaani-porgandi-astelpaju-275g/4740125582789",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16932",
+    "name" : "Milk",
+    "url" : "https://prismamarket.ee/products/16932"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

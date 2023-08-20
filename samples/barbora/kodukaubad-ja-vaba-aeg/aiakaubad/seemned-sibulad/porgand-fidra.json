@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0445b809bcc878c738bdda0282880125796e73f9245ad959aa59900ff96e74c2
-size 439
+{
+  "namespace" : "barbora.ee",
+  "code" : "porgand-fidra",
+  "name" : "Porgand Fidra",
+  "url" : "https://barbora.ee/toode/porgand-fidra",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "aiakaubad",
+    "name" : "Gardening",
+    "url" : "https://barbora.ee/kodukaubad-ja-vaba-aeg/aiakaubad"
+  }, {
+    "code" : "kodukaubad-ja-vaba-aeg",
+    "name" : "Home and leisure",
+    "url" : "https://barbora.ee/kodukaubad-ja-vaba-aeg"
+  } ]
+}

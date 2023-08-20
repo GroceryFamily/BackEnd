@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:aa14ad71eb2b062cba03774e791969d5db5a303456cc9a5dc6db633be42f6d2b
-size 445
+{
+  "namespace" : "barbora.ee",
+  "code" : "lehtseller-fest",
+  "name" : "Lehtseller Fest",
+  "url" : "https://barbora.ee/toode/lehtseller-fest",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "aiakaubad",
+    "name" : "Gardening",
+    "url" : "https://barbora.ee/kodukaubad-ja-vaba-aeg/aiakaubad"
+  }, {
+    "code" : "kodukaubad-ja-vaba-aeg",
+    "name" : "Home and leisure",
+    "url" : "https://barbora.ee/kodukaubad-ja-vaba-aeg"
+  } ]
+}

@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5dd128862559cd70e7bb4fa572b652149b750b1426f26f72d6324d9c1578bd33
-size 554
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "rainbow-mini-taissoot-kanaga-vaikestele-koertele-1-5kg",
+  "name" : "Rainbow Mini täissööt kanaga väikestele koertele 1,5kg",
+  "url" : "https://prismamarket.ee/entry/17329/rainbow-mini-taissoot-kanaga-vaikestele-koertele-1-5kg/7340011477433",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "17283",
+    "name" : "Pets",
+    "url" : "https://prismamarket.ee/products/17283"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

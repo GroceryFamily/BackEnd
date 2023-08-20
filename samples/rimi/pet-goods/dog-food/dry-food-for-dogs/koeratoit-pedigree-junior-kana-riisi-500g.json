@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c08170339060ba51e5edeab493ded2deb7d285d701b63cb40ca01704a3894c42
-size 572
+{
+  "namespace" : "rimi.ee",
+  "code" : "koeratoit-pedigree-junior-kana-riisi-500g",
+  "name" : "Koeratoit Pedigree junior kana-riisi 500g",
+  "url" : "https://rimi.ee/epood/en/products/pet-goods/dog-food/dry-food-for-dogs/koeratoit-pedigree-junior-kana-riisi-500g/p/648855",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "pet-goods",
+    "name" : "Pet goods",
+    "url" : "https://rimi.ee/epood/en/products/pet-goods/c/SH-7"
+  }, {
+    "code" : "dog-food",
+    "name" : "Dog food",
+    "url" : "https://rimi.ee/epood/en/products/pet-goods/dog-food/c/SH-7-2"
+  } ]
+}

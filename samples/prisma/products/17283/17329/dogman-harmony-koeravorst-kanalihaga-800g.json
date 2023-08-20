@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8bd12da52bb3594edc4d72624baeaaa180d2bde7bc9823379a82d12301d130bd
-size 511
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "dogman-harmony-koeravorst-kanalihaga-800g",
+  "name" : "Dogman Harmony koeravorst kanalihaga 800g",
+  "url" : "https://prismamarket.ee/entry/17329/dogman-harmony-koeravorst-kanalihaga-800g/7312134704017",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "17283",
+    "name" : "Pets",
+    "url" : "https://prismamarket.ee/products/17283"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

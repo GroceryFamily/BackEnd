@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6bfea323136c13149dd2478d799e6108ec11d20d365889d7f9109fc5c3f738e0
-size 574
+{
+  "namespace" : "barbora.ee",
+  "code" : "kuiv-koerasoot-loomal-linnul-chappi-9-kg",
+  "name" : "Kuiv koerasööt loomal.+linnul.CHAPPI 9kg",
+  "url" : "https://barbora.ee/toode/kuiv-koerasoot-loomal-linnul-chappi-9-kg",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "lemmikloomakaubad",
+    "name" : "Pets",
+    "url" : "https://barbora.ee/puhastustarbed-ja-lemmikloomatooted/lemmikloomakaubad"
+  }, {
+    "code" : "puhastustarbed-ja-lemmikloomatooted",
+    "name" : "Household and pets",
+    "url" : "https://barbora.ee/puhastustarbed-ja-lemmikloomatooted"
+  } ]
+}

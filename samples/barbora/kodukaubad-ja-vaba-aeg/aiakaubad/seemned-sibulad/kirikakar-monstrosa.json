@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2e2334933225276185094c8df7eaef78abf09db0142d89da6b22afc1637375f3
-size 457
+{
+  "namespace" : "barbora.ee",
+  "code" : "kirikakar-monstrosa",
+  "name" : "Kirikakar MONSTROSA",
+  "url" : "https://barbora.ee/toode/kirikakar-monstrosa",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "aiakaubad",
+    "name" : "Gardening",
+    "url" : "https://barbora.ee/kodukaubad-ja-vaba-aeg/aiakaubad"
+  }, {
+    "code" : "kodukaubad-ja-vaba-aeg",
+    "name" : "Home and leisure",
+    "url" : "https://barbora.ee/kodukaubad-ja-vaba-aeg"
+  } ]
+}

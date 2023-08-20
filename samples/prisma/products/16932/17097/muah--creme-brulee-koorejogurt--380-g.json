@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d7323fc91d2e29f56021429f455901f3826264b2aefc6ac91b5fa23957b5458c
-size 499
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "muah--creme-brulee-koorejogurt--380-g",
+  "name" : "Muah! creme-brulee koorejogurt, 380 g",
+  "url" : "https://prismamarket.ee/entry/17097/muah--creme-brulee-koorejogurt--380-g/4740125535839",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16932",
+    "name" : "Milk",
+    "url" : "https://prismamarket.ee/products/16932"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

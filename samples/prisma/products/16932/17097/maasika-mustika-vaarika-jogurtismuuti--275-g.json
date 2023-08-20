@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:21c42d33479ee3107ded6bd21ae88c5c7b50e11028d7754356fae53796dfffb1
-size 520
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "maasika-mustika-vaarika-jogurtismuuti--275-g",
+  "name" : "Maasika-mustika-vaarika jogurtismuuti, 275 g",
+  "url" : "https://prismamarket.ee/entry/17097/maasika-mustika-vaarika-jogurtismuuti--275-g/4740125582734",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16932",
+    "name" : "Milk",
+    "url" : "https://prismamarket.ee/products/16932"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

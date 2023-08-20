@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:878320d3bc5e5b8d493e7c5ab113f2ca93cc90c517a1200a873b32d200858444
-size 453
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "mahe-dattel-400g",
+  "name" : "Mahe dattel 400g",
+  "url" : "https://prismamarket.ee/entry/16972/mahe-dattel-400g/5708147002875",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16929",
+    "name" : "Fruits and vegetables",
+    "url" : "https://prismamarket.ee/products/16929"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

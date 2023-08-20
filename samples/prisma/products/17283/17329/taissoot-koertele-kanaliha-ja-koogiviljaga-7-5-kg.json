@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:fe3301a1ee1497e121b3a7201f10078f2c036d169c05809615e9b0b2e235c064
-size 540
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "taissoot-koertele-kanaliha-ja-koogiviljaga-7-5-kg",
+  "name" : "Täissööt koertele kanaliha ja köögiviljaga 7,5 kg",
+  "url" : "https://prismamarket.ee/entry/17329/taissoot-koertele-kanaliha-ja-koogiviljaga-7-5-kg/7336013499603",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "17283",
+    "name" : "Pets",
+    "url" : "https://prismamarket.ee/products/17283"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

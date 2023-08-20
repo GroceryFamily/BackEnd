@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1a4f119962da0254d830b751686ec263624e40c7047b3dee18507f123ad5afe9
-size 499
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "koeratoit-lambalihaga-tarretises-85-g",
+  "name" : "Koeratoit lambalihaga tarretises 85 G",
+  "url" : "https://prismamarket.ee/entry/17329/koeratoit-lambalihaga-tarretises-85-g/6430069586780",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "17283",
+    "name" : "Pets",
+    "url" : "https://prismamarket.ee/products/17283"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

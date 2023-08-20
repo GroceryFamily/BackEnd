@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a09814b3afb3a05285568336dc41279af379f5daba403b5a628c84f911652bc8
-size 484
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "rokka-koeravorst-kanalihaga-800g",
+  "name" : "Rokka koeravorst kanalihaga 800g",
+  "url" : "https://prismamarket.ee/entry/17329/rokka-koeravorst-kanalihaga-800g/6438411008942",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "17283",
+    "name" : "Pets",
+    "url" : "https://prismamarket.ee/products/17283"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

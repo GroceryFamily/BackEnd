@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7e74572f68ceee0bc06a8356960a33db62e433cc04ffd4221a28c7951d7fb0af
-size 507
+{
+  "namespace" : "rimi.ee",
+  "code" : "pt-sushi-set-komplekt-top-1100g",
+  "name" : "PT Sushi Set komplekt TOP 1100g (ETTETELLIMISEGA)",
+  "url" : "https://rimi.ee/epood/en/products/pre-order-festivity-meals/pre-order-appetizers-and-selection-plates/pt-sushi-set-komplekt-top-1100g/p/979056",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "pre-order-festivity-meals",
+    "name" : "Pre-order festivity meals",
+    "url" : "https://rimi.ee/epood/en/products/pre-order-festivity-meals/c/SH-20"
+  } ]
+}

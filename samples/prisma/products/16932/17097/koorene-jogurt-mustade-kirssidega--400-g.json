@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:edd538bf375e192f786158a1055474b59a4af66e49d9017018333862a1608f8d
-size 508
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "koorene-jogurt-mustade-kirssidega--400-g",
+  "name" : "Koorene jogurt mustade kirssidega, 400 g",
+  "url" : "https://prismamarket.ee/entry/17097/koorene-jogurt-mustade-kirssidega--400-g/4740113034283",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16932",
+    "name" : "Milk",
+    "url" : "https://prismamarket.ee/products/16932"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

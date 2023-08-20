@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:25db228e25205f9ac651f9a91b55aca435b4793c73ba83edce8b9d8a5f9f07bd
-size 472
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "virsiku-papaia-jogurt--380-g",
+  "name" : "Virsiku-papaia jogurt, 380 g",
+  "url" : "https://prismamarket.ee/entry/17097/virsiku-papaia-jogurt--380-g/4740125536171",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16932",
+    "name" : "Milk",
+    "url" : "https://prismamarket.ee/products/16932"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

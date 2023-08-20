@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7c252ee23d6c4dcc93b9094c8877290ba65d92ffadaa30f76cfbe8014ea270ea
-size 496
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "koorejogurt--erinevad-maitsed--150-g",
+  "name" : "Koorejogurt, erinevad maitsed, 150 g",
+  "url" : "https://prismamarket.ee/entry/17097/koorejogurt--erinevad-maitsed--150-g/4002334107673",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16932",
+    "name" : "Milk",
+    "url" : "https://prismamarket.ee/products/16932"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

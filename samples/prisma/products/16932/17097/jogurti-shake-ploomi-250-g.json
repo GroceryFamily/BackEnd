@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:95440c70c27751c94c29f1832aa3cd774f6b7b52c3a1e9867d7326030c94a481
-size 466
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "jogurti-shake-ploomi-250-g",
+  "name" : "Jogurti Shake ploomi 250 g",
+  "url" : "https://prismamarket.ee/entry/17097/jogurti-shake-ploomi-250-g/4750072515822",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16932",
+    "name" : "Milk",
+    "url" : "https://prismamarket.ee/products/16932"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

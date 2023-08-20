@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8f149a64c631343022d4140a2d07d0aa59f56fdca11a61bbf3631a48617a3a41
-size 565
+{
+  "namespace" : "rimi.ee",
+  "code" : "koerasoot-kuiv-friskies-kanaga-10kg",
+  "name" : "Koerasööt kuiv Friskies Balance kanaga 10kg",
+  "url" : "https://rimi.ee/epood/en/products/pet-goods/dog-food/dry-food-for-dogs/koerasoot-kuiv-friskies-kanaga-10kg/p/7270365",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "pet-goods",
+    "name" : "Pet goods",
+    "url" : "https://rimi.ee/epood/en/products/pet-goods/c/SH-7"
+  }, {
+    "code" : "dog-food",
+    "name" : "Dog food",
+    "url" : "https://rimi.ee/epood/en/products/pet-goods/dog-food/c/SH-7-2"
+  } ]
+}

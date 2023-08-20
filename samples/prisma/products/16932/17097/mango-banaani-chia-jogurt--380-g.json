@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:bc0b15575557f6a8c97fb9596d54fe1ff4edc3caa47f7e6b997b2111ca602a45
-size 484
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "mango-banaani-chia-jogurt--380-g",
+  "name" : "Mango-banaani-chia jogurt, 380 g",
+  "url" : "https://prismamarket.ee/entry/17097/mango-banaani-chia-jogurt--380-g/4740125536232",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16932",
+    "name" : "Milk",
+    "url" : "https://prismamarket.ee/products/16932"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

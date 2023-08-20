@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:64d717badbdc3bbcb6bdf60dbba35eb2b1305290d8c7c64208afac9313869259
-size 487
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "kuivtoit-koertele-10--senior-825g",
+  "name" : "Kuivtoit koertele 10+ Senior 825g",
+  "url" : "https://prismamarket.ee/entry/17329/kuivtoit-koertele-10--senior-825g/4008429113291",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "17283",
+    "name" : "Pets",
+    "url" : "https://prismamarket.ee/products/17283"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

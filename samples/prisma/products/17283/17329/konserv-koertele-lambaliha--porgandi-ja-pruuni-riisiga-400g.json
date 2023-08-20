@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:aaa6d0fcdc08ed3e4389bfc9b47e73206c29e44369515d5676364467a895dd02
-size 565
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "konserv-koertele-lambaliha--porgandi-ja-pruuni-riisiga-400g",
+  "name" : "Konserv koertele lambaliha, porgandi ja pruuni riisiga 400g",
+  "url" : "https://prismamarket.ee/entry/17329/konserv-koertele-lambaliha--porgandi-ja-pruuni-riisiga-400g/5902921300328",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "17283",
+    "name" : "Pets",
+    "url" : "https://prismamarket.ee/products/17283"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

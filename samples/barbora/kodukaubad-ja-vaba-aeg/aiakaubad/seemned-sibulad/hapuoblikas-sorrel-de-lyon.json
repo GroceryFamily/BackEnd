@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e71850b3e91010bb558b88de3f8016741475833304c7cadd154a3ea496830832
-size 478
+{
+  "namespace" : "barbora.ee",
+  "code" : "hapuoblikas-sorrel-de-lyon",
+  "name" : "Hapuoblikas Sorrel De Lyon",
+  "url" : "https://barbora.ee/toode/hapuoblikas-sorrel-de-lyon",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "aiakaubad",
+    "name" : "Gardening",
+    "url" : "https://barbora.ee/kodukaubad-ja-vaba-aeg/aiakaubad"
+  }, {
+    "code" : "kodukaubad-ja-vaba-aeg",
+    "name" : "Home and leisure",
+    "url" : "https://barbora.ee/kodukaubad-ja-vaba-aeg"
+  } ]
+}

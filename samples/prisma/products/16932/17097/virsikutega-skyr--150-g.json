@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5d779c56bb45299d9bb86b65b07bf037be00aa9388264acec11b26dd7b5ef489
-size 457
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "virsikutega-skyr--150-g",
+  "name" : "Virsikutega skyr, 150 g",
+  "url" : "https://prismamarket.ee/entry/17097/virsikutega-skyr--150-g/4740113091446",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16932",
+    "name" : "Milk",
+    "url" : "https://prismamarket.ee/products/16932"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}

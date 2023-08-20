@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2ea48d8aa33818cb37aa89db889276ea0e0fe8fc8d86c9e87e475935c4a417b0
-size 454
+{
+  "namespace" : "barbora.ee",
+  "code" : "aedsalat-garlander",
+  "name" : "Aedsalat GARLANDER",
+  "url" : "https://barbora.ee/toode/aedsalat-garlander",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "aiakaubad",
+    "name" : "Gardening",
+    "url" : "https://barbora.ee/kodukaubad-ja-vaba-aeg/aiakaubad"
+  }, {
+    "code" : "kodukaubad-ja-vaba-aeg",
+    "name" : "Home and leisure",
+    "url" : "https://barbora.ee/kodukaubad-ja-vaba-aeg"
+  } ]
+}

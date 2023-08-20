@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:41f1ab865c914ccefb2095b32b6f771b15ecaec2b8b7c597f445ce36f17f661d
-size 500
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "viinamari-tume-strawgrape--250-g",
+  "name" : "Viinamari tume StrawGrape 250 g",
+  "url" : "https://prismamarket.ee/entry/16972/viinamari-tume-strawgrape--250-g/8437013783293",
+  "prices" : [ ],
+  "categories" : [ {
+    "code" : "16929",
+    "name" : "Fruits and vegetables",
+    "url" : "https://prismamarket.ee/products/16929"
+  }, {
+    "code" : "products",
+    "name" : "Groceries",
+    "url" : "https://prismamarket.ee/products/selection"
+  } ]
+}
