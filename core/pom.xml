@@ -32,7 +32,7 @@
             <artifactId>spring-boot</artifactId>
         </dependency>
 
-        <!-- https://github.com/FasterXML/jackson-core -->
+        <!-- https://github.com/FasterXML -->
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>

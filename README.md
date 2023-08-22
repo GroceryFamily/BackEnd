@@ -8,7 +8,7 @@
 
 ## Cache
 
-It seems like a good idea to use [GitHub LFS](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-git-large-file-storage) for our cache, so we can reuse it in tests. The installation and configuration instructions can be found [here](https://docs.github.com/en/repositories/working-with-files/managing-large-files/installing-git-large-file-storage) and [here](https://docs.github.com/en/repositories/working-with-files/managing-large-files/configuring-git-large-file-storage) respectively.
+It seemed like a good idea to use [GitHub LFS](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-git-large-file-storage) for our cache, so we can reuse it in tests. However, the bandwidth limit is just meager, and it turns out that the better solution is to keep the scraped data as regular repository files.
 
 ## Secrets
 

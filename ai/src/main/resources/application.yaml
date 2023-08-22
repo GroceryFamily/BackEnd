@@ -1,2 +1,8 @@
 GrocerySis:
   api.uri: http://localhost:8080
+
+  OpenFoodFacts:
+    dataset: @project.basedir@/../data/en.openfoodfacts.org.products.csv
+
+logging.level:
+  org.springframework.core: ERROR

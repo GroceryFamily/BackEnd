@@ -29,7 +29,9 @@
         <selenide.version>6.17.0</selenide.version>
         <jsoup.version>1.16.1</jsoup.version>
         <commons-lang3.version>3.13.0</commons-lang3.version>
+        <jackson.version>2.15.2</jackson.version>
         <deeplearning4j.version>1.0.0-M2.1</deeplearning4j.version>
+        <console-progress-bar.version>1.1.0-SNAPSHOT</console-progress-bar.version>
         <lombok.version>1.18.28</lombok.version>
 
         <maven-compiler-plugin.version>3.11.0</maven-compiler-plugin.version>
@@ -90,6 +92,18 @@
                 <version>${commons-lang3.version}</version>
             </dependency>
 
+            <!-- https://github.com/FasterXML -->
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-databind</artifactId>
+                <version>${jackson.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.dataformat</groupId>
+                <artifactId>jackson-dataformat-csv</artifactId>
+                <version>${jackson.version}</version>
+            </dependency>
+
             <!-- https://github.com/deeplearning4j -->
             <dependency>
                 <groupId>org.deeplearning4j</groupId>
@@ -105,6 +119,13 @@
                 <groupId>org.deeplearning4j</groupId>
                 <artifactId>deeplearning4j-nlp</artifactId>
                 <version>${deeplearning4j.version}</version>
+            </dependency>
+
+            <!-- https://github.com/antivoland/console-progress-bar -->
+            <dependency>
+                <groupId>io.github.antivoland</groupId>
+                <artifactId>console-progress-bar</artifactId>
+                <version>${console-progress-bar.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
