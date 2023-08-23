@@ -13,6 +13,8 @@ public class GrocerySisConfig {
     @NestedConfigurationProperty
     public final APIClientConfig api;
     public final OpenFoodFacts openFoodFacts;
+    public final Path labeled;
+    public final Path unlabeled;
 
     @Builder
     public static class OpenFoodFacts {

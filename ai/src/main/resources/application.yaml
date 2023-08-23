@@ -3,6 +3,10 @@ GrocerySis:
 
   OpenFoodFacts:
     dataset: @project.basedir@/../data/en.openfoodfacts.org.products.csv
+#    dataset: @project.basedir@/../data/est.csv
+
+  labeled: @project.basedir@/../data/labeled
+  unlabeled: @project.basedir@/../data/unlabeled
 
 logging.level:
   org.springframework.core: ERROR

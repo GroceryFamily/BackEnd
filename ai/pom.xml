@@ -32,6 +32,12 @@
             <artifactId>jackson-dataformat-csv</artifactId>
         </dependency>
 
+        <!-- https://github.com/antivoland/simple-file-cache -->
+        <dependency>
+            <groupId>io.github.antivoland</groupId>
+            <artifactId>simple-file-cache</artifactId>
+        </dependency>
+
         <!-- https://github.com/deeplearning4j -->
         <dependency>
             <groupId>org.deeplearning4j</groupId>
@@ -50,6 +56,12 @@
         <dependency>
             <groupId>io.github.antivoland</groupId>
             <artifactId>console-progress-bar</artifactId>
+        </dependency>
+
+        <!-- https://github.com/apache/commons-lang -->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
         </dependency>
 
         <!-- https://github.com/spring-projects :: test -->

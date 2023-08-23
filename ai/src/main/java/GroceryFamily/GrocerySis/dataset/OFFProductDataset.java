@@ -4,11 +4,13 @@ import GroceryFamily.GrocerySis.GrocerySisConfig;
 import GroceryFamily.GrocerySis.dataset.io.CSVDatasetIO;
 import GroceryFamily.GrocerySis.dataset.io.progress.ProgressBarFactory;
 import GroceryFamily.GrocerySis.model.Code;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 
 import java.nio.file.Path;
 import java.util.function.Consumer;
 
+@Slf4j
 @Component
 public class OFFProductDataset {
     private static final int CODE = 0;
@@ -27,11 +29,12 @@ public class OFFProductDataset {
     }
 
     public void read(Consumer<OFFProduct> handler, boolean interactive) {
+        log.info("Reading {}...", dataset);
         var io = CSVDatasetIO
                 .builder()
                 .separator("\t")
                 .progressBarFactory(interactive ? ProgressBarFactory.CONSOLE : ProgressBarFactory.DUMMY)
-                .skip(1)
+                //.skip(1)
                 .build();
         io.read(dataset, row -> handler.accept(product(row)));
     }
