@@ -1,9 +1,12 @@
 package GroceryFamily.GrocerySis;
 
 import GroceryFamily.GroceryElders.api.client.ProductAPIClient;
+import GroceryFamily.GroceryElders.domain.Detail;
 import GroceryFamily.GroceryElders.domain.Namespace;
+import GroceryFamily.GrocerySis.dataset.OFFProduct;
 import GroceryFamily.GrocerySis.dataset.OFFProductDataset;
 import GroceryFamily.GrocerySis.model.*;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.extern.slf4j.Slf4j;
 import org.deeplearning4j.models.embeddings.inmemory.InMemoryLookupTable;
 import org.deeplearning4j.models.paragraphvectors.ParagraphVectors;
@@ -22,12 +25,14 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import java.io.IOException;
 import java.nio.file.Paths;
-import java.util.Comparator;
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
+import java.util.Set;
 import java.util.concurrent.atomic.AtomicInteger;
 
 import static java.util.Comparator.comparing;
-import static java.util.Comparator.reverseOrder;
+import static java.util.stream.Collectors.toSet;
 import static org.apache.commons.lang3.StringUtils.isBlank;
 
 @Slf4j
@@ -52,26 +57,48 @@ class GrocerySis implements CommandLineRunner {
         client.listAll().forEach(product -> System.out.println(no.incrementAndGet() + ": " + product));
          */
 
-        var offTotal = new AtomicInteger();
+        var prismaProductEANs = prismaProductEANs();
+        log.info("Fetched {} PRISMA product EANs", prismaProductEANs.size());
+
+        var offProducts = new ArrayList<OFFProduct>();
         dataset.read(product -> {
-            offTotal.incrementAndGet();
-            if (isBlank(product.name)) return;
-            if (product.code.type == Code.Type.UNKNOWN) return;
-            labeled.add(product);
+            if (prismaProductEANs.contains(product.code.value)) {
+                offProducts.add(product);
+            }
         }, true);
-        log.info("Read {} products, created {} labels", offTotal, labeled.size);
-
-        var prismaTotal = new AtomicInteger();
-        client.listAll().forEach(product -> {
-            if (!Namespace.PRISMA.equals(product.namespace)) return;
-            prismaTotal.incrementAndGet();
-            unlabeled.add(product);
-        });
-        log.info("Created {} prisma unlabeled products", prismaTotal);
+        log.info("Fetched {} OFF products", offProducts.size());
+        System.out.println(new ObjectMapper().writerWithDefaultPrettyPrinter().writeValueAsString(offProducts));
 
 
-        makeParagraphVectors();
-        checkUnlabeledData();
+//        var offTotal = new AtomicInteger();
+//        dataset.read(product -> {
+//            offTotal.incrementAndGet();
+//            if (isBlank(product.name)) return;
+//            if (product.code.type == Code.Type.UNKNOWN) return;
+//            labeled.add(product);
+//        }, true);
+//        log.info("Read {} products, created {} labels", offTotal, labeled.size);
+//
+//        var prismaTotal = new AtomicInteger();
+//        client.listAll().forEach(product -> {
+//            if (!Namespace.PRISMA.equals(product.namespace)) return;
+//            prismaTotal.incrementAndGet();
+//            unlabeled.add(product);
+//        });
+//        log.info("Created {} prisma unlabeled products", prismaTotal);
+//
+//
+//        makeParagraphVectors();
+//        checkUnlabeledData();
+    }
+
+    private Set<String> prismaProductEANs() {
+        return client
+                .listAll()
+                .filter(product -> Namespace.PRISMA.equals(product.namespace))
+                .map(product -> product.details.get(Detail.EAN))
+                .filter(Objects::nonNull)
+                .collect(toSet());
     }
 
     ParagraphVectors paragraphVectors;
@@ -125,7 +152,7 @@ class GrocerySis implements CommandLineRunner {
                  */
                 log.info("Document '" + document.getLabels() + "' falls into the following categories: ");
                 var maxScore = scores.stream().max(comparing(Pair::getSecond)).orElseThrow();
-                    log.info("        " + maxScore.getFirst() + ": " + maxScore.getSecond());
+                log.info("        " + maxScore.getFirst() + ": " + maxScore.getSecond());
 //                for (Pair<String, Double> score : scores) {
 //                    log.info("        " + score.getFirst() + ": " + score.getSecond());
 //                }
