@@ -124,7 +124,7 @@ class GrocerySis implements CommandLineRunner {
                 .learningRate(0.025)
                 .minLearningRate(0.001)
                 .batchSize(1000)
-                .epochs(200)
+                .epochs(20)
                 .iterate(iterator(namespace))
                 .trainWordVectors(true)
                 .tokenizerFactory(tokenizerFactory())

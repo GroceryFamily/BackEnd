@@ -27,8 +27,9 @@ public class Labeled {
 
     public void add(Product product) {
         var sb = new StringBuilder();
-        sb.append(product.name).append('\n');
-//        product.brand().ifPresent(brand -> sb.append(brand).append('\n'));
+        for (var detail : product.details.values()) {
+            sb.append(detail).append('\n');
+        }
         storage(product.namespace, product.code).save(product.code, sb.toString());
         ++size;
     }
