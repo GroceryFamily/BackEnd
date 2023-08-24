@@ -4,7 +4,10 @@ import GroceryFamily.GroceryElders.api.client.ProductAPIClient;
 import GroceryFamily.GroceryElders.domain.Detail;
 import GroceryFamily.GroceryElders.domain.Namespace;
 import GroceryFamily.GrocerySis.dataset.OFFProductDataset;
-import GroceryFamily.GrocerySis.model.*;
+import GroceryFamily.GrocerySis.model.LabelSeeker;
+import GroceryFamily.GrocerySis.model.Labeled;
+import GroceryFamily.GrocerySis.model.MeansBuilder;
+import GroceryFamily.GrocerySis.model.Unlabeled;
 import lombok.extern.slf4j.Slf4j;
 import org.deeplearning4j.models.embeddings.inmemory.InMemoryLookupTable;
 import org.deeplearning4j.models.paragraphvectors.ParagraphVectors;
@@ -28,6 +31,7 @@ import java.util.Objects;
 import java.util.Set;
 
 import static java.util.Comparator.comparing;
+import static java.util.Comparator.reverseOrder;
 import static java.util.stream.Collectors.toSet;
 
 @Slf4j
@@ -53,7 +57,11 @@ class GrocerySis implements CommandLineRunner {
          */
 
         client.listAll().forEach(product -> {
-            documents.add(product);
+//            if (product.categories.values().stream().anyMatch("milk"::equalsIgnoreCase)) {
+//                if (product.brand().isPresent() && product.brand().get().equalsIgnoreCase("alma")) {
+                    documents.add(product);
+//                }
+//            }
 //            unlabeled.add(product);
         });
 
@@ -88,8 +96,10 @@ class GrocerySis implements CommandLineRunner {
 //        log.info("Created {} prisma unlabeled products", prismaTotal);
 //
 //
-        var barboraParagraphVectors = makeParagraphVectors(Namespace.BARBORA);
-        checkUnlabeledData(Namespace.PRISMA, Namespace.BARBORA, barboraParagraphVectors);
+        var rimiParagraphVectors = makeParagraphVectors(Namespace.RIMI);
+        checkUnlabeledData(Namespace.PRISMA, Namespace.RIMI, rimiParagraphVectors);
+//        var prismaParagraphVectors = makeParagraphVectors(Namespace.PRISMA);
+//        checkUnlabeledData(Namespace.RIMI, Namespace.PRISMA, prismaParagraphVectors);
     }
 
     private Set<String> prismaProductEANs() {
@@ -160,10 +170,14 @@ class GrocerySis implements CommandLineRunner {
                 var unclDoc = client.get(unlabeledNamespace + "::" + document.getLabels().get(0));
 //                log.info("Document '" + document.getLabels() + "' falls into the following categories: ");
                 log.info("Document '" + unclDoc.url + "' falls into the following categories: ");
-                var maxScore = scores.stream().max(comparing(Pair::getSecond)).orElseThrow();
-                var clDoc = client.get(labeledNamespace + "::" + maxScore.getFirst());
+                var maxScores = scores.stream().sorted(comparing(Pair::getSecond, reverseOrder())).limit(3).toList();
+                for (var maxScore : maxScores) {
+                    var clDoc = client.get(labeledNamespace + "::" + maxScore.getFirst());
+                    log.info("        " + clDoc.url + ": " + maxScore.getSecond());
+                }
+//                var clDoc = client.get(labeledNamespace + "::" + maxScores.getFirst());
 //                log.info("        " + maxScore.getFirst() + ": " + maxScore.getSecond());
-                log.info("        " + clDoc.url + ": " + maxScore.getSecond());
+//                log.info("        " + clDoc.url + ": " + maxScores.getSecond());
 //                for (Pair<String, Double> score : scores) {
 //                    log.info("        " + score.getFirst() + ": " + score.getSecond());
 //                }

@@ -27,6 +27,10 @@ public class Labeled {
 
     public void add(Product product) {
         var sb = new StringBuilder();
+        sb.append(product.name).append('\n');
+        for (var category : product.categories.values()) {
+            sb.append(category).append('\n');
+        }
         for (var detail : product.details.values()) {
             sb.append(detail).append('\n');
         }
