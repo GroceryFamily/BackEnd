@@ -1,0 +1,17 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "rasvatu-kodujuust-0-1---200-g",
+  "name" : "Rasvatu kodujuust 0,1%, 200 g",
+  "url" : "https://prismamarket.ee/entry/17108/rasvatu-kodujuust-0-1---200-g/4740125633047",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "4740125633047",
+    "origin" : "Estonia",
+    "ingredients" : "kodujuust, rasvatu piim, sool (max 1%)",
+    "brand" : "ALMA"
+  }
+}

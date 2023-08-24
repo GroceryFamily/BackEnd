@@ -1,0 +1,17 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "vanilje-laktoosivaba-piimakissell--1-kg",
+  "name" : "Vanilje laktoosivaba piimakissell, 1 kg",
+  "url" : "https://prismamarket.ee/entry/17099/vanilje-laktoosivaba-piimakissell--1-kg/4740036011842",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "4740036011842",
+    "origin" : "Estonia",
+    "ingredients" : "piim, suhkur, modifitseeritud tärklis, sool, vanilliin, looduslik lõhna- ja maitseaine, vanilliin.",
+    "brand" : "TERE"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "cheddari-juustudipp--200-g",
+  "name" : "Cheddari juustudipp, 200 g",
+  "url" : "https://prismamarket.ee/entry/17106/cheddari-juustudipp--200-g/4740036013877",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "4740036013877",
+    "origin" : "Estonia",
+    "brand" : "MEREVAIK"
+  }
+}

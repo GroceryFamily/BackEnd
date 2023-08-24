@@ -1,0 +1,17 @@
+{
+  "namespace" : "barbora.ee",
+  "code" : "piim-farm-milk-2-proc-uht-1-l",
+  "name" : "Piim FARM MILK 2% UHT, 1L",
+  "url" : "https://barbora.ee/toode/piim-farm-milk-2-proc-uht-1-l",
+  "prices" : [ ],
+  "categories" : {
+    "piimatooted-ja-munad" : "Dairy and eggs",
+    "piimad" : "Milk"
+  },
+  "details" : {
+    "origin" : "Poland",
+    "description" : "Piim, 2,0% rasva (kõrgpastöriseeritud)",
+    "ingredients" : "PIIM, stabilisaator karrageen",
+    "brand" : "FARM MILK"
+  }
+}

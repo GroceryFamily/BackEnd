@@ -1,0 +1,17 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "koore-viili-12--200-g-vah--laktoosisisaldusega",
+  "name" : "KOORE-VIILI 12% 200 G VÄH. LAKTOOSISISALDUSEGA",
+  "url" : "https://prismamarket.ee/entry/17098/koore-viili-12--200-g-vah--laktoosisisaldusega/6414893386181",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "6414893386181",
+    "origin" : "Finland",
+    "ingredients" : "pastöriseeritud koor, juuretis",
+    "brand" : "KOTIMAISTA"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "namespace" : "barbora.ee",
+  "code" : "kondenspiim-jaani-suhkruga-250-g",
+  "name" : "Kondenspiim JAANI suhkruga, 250g",
+  "url" : "https://barbora.ee/toode/kondenspiim-jaani-suhkruga-250-g",
+  "prices" : [ ],
+  "categories" : {
+    "piimatooted-ja-munad" : "Dairy and eggs",
+    "piimad" : "Milk"
+  },
+  "details" : {
+    "origin" : "Estonia",
+    "ingredients" : "Pastöriseeritud PIIM, suhkur, täisPIIM, LÕSSIPULBER. Rasvata PIIMakuivaine sisaldus 20%. PIIMarasva sisaldus 5%.",
+    "brand" : "JAANI"
+  }
+}

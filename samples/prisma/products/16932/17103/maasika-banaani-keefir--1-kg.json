@@ -1,0 +1,17 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "maasika-banaani-keefir--1-kg",
+  "name" : "Maasika-banaani keefir, 1 kg",
+  "url" : "https://prismamarket.ee/entry/17103/maasika-banaani-keefir--1-kg/4740125321074",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "4740125321074",
+    "origin" : "Estonia",
+    "ingredients" : "piim 88%, suhkur, maasikad 1,2%, banaanid 1,2%, modifitseeritud tärklis, happesuse regulaator (sidrunhape), lõhna- ja maitseained, toiduvärv (peedipunane), juuretis, piimhappebakter Lactobacillus rhamnosus gg, D-vitamiin",
+    "brand" : "GEFILUS"
+  }
+}

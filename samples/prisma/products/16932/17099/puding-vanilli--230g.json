@@ -1,0 +1,18 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "puding-vanilli--230g",
+  "name" : "Puding vanilli, 230g",
+  "url" : "https://prismamarket.ee/entry/17099/puding-vanilli--230g/4740125534177",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "4740125534177",
+    "origin" : "Estonia",
+    "description" : "Alma pudingut iseloomustab hõrgutav maitse ning kreemine konsistents. Tegemist on magustoiduga, mis valmib puhtaimast kodumaisest piimast. Nauding igas lusikatäies!",
+    "ingredients" : "PIIM; rõõsk koor, suhkur, modifitseeritud tärklis, lõssipulber, paksendajad (guarkummi, karrageen), sool, vanilliin, looduslik vanilli lõhna- ja maitseaine.",
+    "brand" : "ALMA"
+  }
+}

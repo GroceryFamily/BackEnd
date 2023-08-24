@@ -1,0 +1,16 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "riitan-herkku-vaarikasupp--200-ml",
+  "name" : "Riitan Herkku vaarikasupp, 200 ml",
+  "url" : "https://prismamarket.ee/entry/17101/riitan-herkku-vaarikasupp--200-ml/6408620005377",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "6408620005377",
+    "ingredients" : "vesi, vaarikad (13%), suhkur, paksendajad (modifitseeritud maisitärklis ja pektiin), happesuse regulaator (sidrunhape), C-vitamiin.",
+    "brand" : "RIITAN HERKKU"
+  }
+}

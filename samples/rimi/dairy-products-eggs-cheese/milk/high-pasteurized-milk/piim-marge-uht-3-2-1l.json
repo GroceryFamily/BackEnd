@@ -1,0 +1,16 @@
+{
+  "namespace" : "rimi.ee",
+  "code" : "piim-marge-uht-3-2-1l",
+  "name" : "Piim Marge UHT 3,2% 1l",
+  "url" : "https://rimi.ee/epood/en/products/dairy-products-eggs-cheese/milk/high-pasteurized-milk/piim-marge-uht-3-2-1l/p/263216",
+  "prices" : [ ],
+  "categories" : {
+    "milk" : "Milk",
+    "dairy-products-eggs-cheese" : "Dairy products, eggs, cheese"
+  },
+  "details" : {
+    "origin" : "Poland",
+    "ingredients" : "PIIM",
+    "brand" : "Marge"
+  }
+}

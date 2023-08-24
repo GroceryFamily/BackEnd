@@ -1,0 +1,17 @@
+{
+  "namespace" : "barbora.ee",
+  "code" : "piim-vaike-tom-uht-maasika-vitam-200-ml",
+  "name" : "Piim VÄIKE TOM UHT maasika&vitam.,200ml",
+  "url" : "https://barbora.ee/toode/piim-vaike-tom-uht-maasika-vitam-200-ml",
+  "prices" : [ ],
+  "categories" : {
+    "piimatooted-ja-munad" : "Dairy and eggs",
+    "piimad" : "Milk"
+  },
+  "details" : {
+    "origin" : "Latvia",
+    "description" : "Kõrgkuumutatud piim maasikalisandi ja vitamiinidega.",
+    "ingredients" : "PIIM, suhkur, maasikalisand 2% (invertsuhkur, vesi, looduslik maasika lõhna- ja maitseaine, maasikamahla kontsentraat 1%, paksendaja - karrageen), vitamiinid A, B, B12, D, foolhape.",
+    "brand" : "VÄIKE TOM"
+  }
+}

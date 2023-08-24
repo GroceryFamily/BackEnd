@@ -1,0 +1,18 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "mandlijook--1-l",
+  "name" : "Mandlijook, 1 l",
+  "url" : "https://prismamarket.ee/entry/17104/mandlijook--1-l/5411188110835",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "5411188110835",
+    "origin" : "Belgium",
+    "description" : "Sobib tervisliku toitumise osaks üle 1-aastastele. Looduslikult laktoosi- ja piimavaba. Gluteenivaba. Lisatud B12-vitamiini, riboflaviini, D-vitamiini, E-vitamiini. Ei sisalda toiduvärve. Säilitusaineteta.",
+    "ingredients" : "vesi, suhkur, mandlid (2%), trikaltsiumfosfaat, meresool, stabilisaatorid (jaanikaunajahu, gellankummi), emulgaator (päevalilleletsitiin), vitamiinid (riboflaviin (B2), B12, E, D2). Võib sisaldada sarapuupähklite jääke. Võib sisaldada sojaube ja sojaoatooteid.",
+    "brand" : "ALPRO"
+  }
+}

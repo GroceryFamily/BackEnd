@@ -1,0 +1,16 @@
+{
+  "namespace" : "barbora.ee",
+  "code" : "mahe-kaerajook-oatly-1-l",
+  "name" : "Mahe kaerajook OATLY, 1l",
+  "url" : "https://barbora.ee/toode/mahe-kaerajook-oatly-1-l",
+  "prices" : [ ],
+  "categories" : {
+    "piimatooted-ja-munad" : "Dairy and eggs",
+    "piimad" : "Milk"
+  },
+  "details" : {
+    "origin" : "Sweden",
+    "ingredients" : "Vesi, KAER* (10%), meresool. *Mahepõllumajandusest.",
+    "brand" : "OATLY"
+  }
+}

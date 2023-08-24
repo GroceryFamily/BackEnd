@@ -1,0 +1,16 @@
+{
+  "namespace" : "rimi.ee",
+  "code" : "kondenspiim-suhkruga-jaani-250g",
+  "name" : "Kondenspiim suhkruga Jaani 250g",
+  "url" : "https://rimi.ee/epood/en/products/dairy-products-eggs-cheese/milk/condensed-milk/kondenspiim-suhkruga-jaani-250g/p/902178",
+  "prices" : [ ],
+  "categories" : {
+    "milk" : "Milk",
+    "dairy-products-eggs-cheese" : "Dairy products, eggs, cheese"
+  },
+  "details" : {
+    "origin" : "Estonia",
+    "ingredients" : "Pastöriseeritud PIIM, suhkur (45%)",
+    "brand" : "Jaani"
+  }
+}

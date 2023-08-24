@@ -1,0 +1,18 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "kodune-johvikakissell--750-g",
+  "name" : "Kodune jõhvikakissell, 750 g",
+  "url" : "https://prismamarket.ee/entry/17101/kodune-johvikakissell--750-g/4740153700018",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "4740153700018",
+    "origin" : "Estonia",
+    "description" : "Preserve in cool place",
+    "ingredients" : "vesi, jõhvikalisand (suhkur, jõhvikad (44%), vesi, modifitseeritud tärklis, sidrunhape), suhkur, modifitseeritud maisitärklis",
+    "brand" : "MO SAAREMAA"
+  }
+}

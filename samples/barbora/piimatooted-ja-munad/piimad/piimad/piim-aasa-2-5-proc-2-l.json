@@ -1,0 +1,16 @@
+{
+  "namespace" : "barbora.ee",
+  "code" : "piim-aasa-2-5-proc-2-l",
+  "name" : "Piim AASA 2,5%, 2L",
+  "url" : "https://barbora.ee/toode/piim-aasa-2-5-proc-2-l",
+  "prices" : [ ],
+  "categories" : {
+    "piimatooted-ja-munad" : "Dairy and eggs",
+    "piimad" : "Milk"
+  },
+  "details" : {
+    "origin" : "Latvia",
+    "ingredients" : "PIIM",
+    "brand" : "AASA"
+  }
+}

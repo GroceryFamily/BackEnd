@@ -1,0 +1,18 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "rosina-kohupiimapasta--300-g",
+  "name" : "Rosina kohupiimapasta, 300 g",
+  "url" : "https://prismamarket.ee/entry/17107/rosina-kohupiimapasta--300-g/4740036007357",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "4740036007357",
+    "origin" : "Estonia",
+    "description" : "Mõnusalt kreemjas klassikaline rosinatega kohupiimapasta, mis on nüüdsest rikastatud ka D-vitamiiniga",
+    "ingredients" : "Rasvata kohupiimapasta, rõõsk koor, suhkur, rosinad 6,0%, vanilliin, D- vitamiin",
+    "brand" : "TERE"
+  }
+}

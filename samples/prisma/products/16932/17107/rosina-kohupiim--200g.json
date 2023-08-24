@@ -1,0 +1,18 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "rosina-kohupiim--200g",
+  "name" : "Rosina kohupiim, 200g",
+  "url" : "https://prismamarket.ee/entry/17107/rosina-kohupiim--200g/4740125638530",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "4740125638530",
+    "origin" : "Estonia",
+    "description" : "Eestlaste poolt palavalt armastatud traditsiooniline kohupiim Alma kvaliteediga! Pehme tekstuuriga valgurikas kohupiim, millele on lisatud mahlaseid rosinaid. Alma kohupiim sobib ideaalselt maitsvate kookide, tortide ja küpsetiste valmistamiseks ning ka puhtalt nautimiseks. Alma kohupiimad on Alma toodetele omaselt säilitusainetevabad, hea valguallikas ning mõistagi tehtud puhtast kodumaisest Eesti piimast.",
+    "ingredients" : "kohupiim, suhkur, rosinad 6%, vanilliin.",
+    "brand" : "ALMA"
+  }
+}

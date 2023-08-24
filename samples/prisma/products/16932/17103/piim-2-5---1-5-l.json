@@ -1,0 +1,17 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "piim-2-5---1-5-l",
+  "name" : "Piim 2,5%, 1,5 l",
+  "url" : "https://prismamarket.ee/entry/17103/piim-2-5---1-5-l/4740125120059",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "4740125120059",
+    "origin" : "Estonia",
+    "ingredients" : "PIIM",
+    "brand" : "ALMA"
+  }
+}

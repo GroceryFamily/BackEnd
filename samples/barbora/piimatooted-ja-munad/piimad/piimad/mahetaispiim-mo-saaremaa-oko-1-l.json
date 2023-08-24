@@ -1,0 +1,17 @@
+{
+  "namespace" : "barbora.ee",
+  "code" : "mahetaispiim-mo-saaremaa-oko-1-l",
+  "name" : "Mahetäispiim MO SAAREMAA Öko, 1L",
+  "url" : "https://barbora.ee/toode/mahetaispiim-mo-saaremaa-oko-1-l",
+  "prices" : [ ],
+  "categories" : {
+    "piimatooted-ja-munad" : "Dairy and eggs",
+    "piimad" : "Milk"
+  },
+  "details" : {
+    "origin" : "Estonia",
+    "description" : "Esimene 100% taaskasutatavas purepakendis. Piim on naturaalne pastöriseeritud mahe maapiim, mistõttu selle rasvaprotsent kõigub vahemikus 4,0-4,4% Saaremaa PT mahepiim on pärit Saaremaa ja Hiiumaa mahetootjatelt.",
+    "ingredients" : "Pastöriseeritud TÄISPIIM",
+    "brand" : "MO SAAREMAA"
+  }
+}

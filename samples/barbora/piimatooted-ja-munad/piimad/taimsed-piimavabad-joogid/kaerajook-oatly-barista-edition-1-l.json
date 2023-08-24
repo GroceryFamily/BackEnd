@@ -1,0 +1,16 @@
+{
+  "namespace" : "barbora.ee",
+  "code" : "kaerajook-oatly-barista-edition-1-l",
+  "name" : "Kaerajook OATLY Barista Edition, 1l",
+  "url" : "https://barbora.ee/toode/kaerajook-oatly-barista-edition-1-l",
+  "prices" : [ ],
+  "categories" : {
+    "piimatooted-ja-munad" : "Dairy and eggs",
+    "piimad" : "Milk"
+  },
+  "details" : {
+    "origin" : "Sweden",
+    "ingredients" : "Vesi, KAER (10%), rapsiõli, happesuse regulaator (dikaaliumfosfaat), kaltsiumkarbonaat, jodeeritud sool, vitamiinid (D2, riboflaviin ja B12).",
+    "brand" : "OATLY"
+  }
+}

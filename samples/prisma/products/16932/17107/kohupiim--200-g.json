@@ -1,0 +1,18 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "kohupiim--200-g",
+  "name" : "Kohupiim, 200 g",
+  "url" : "https://prismamarket.ee/entry/17107/kohupiim--200-g/4740036007128",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "4740036007128",
+    "origin" : "Estonia",
+    "description" : "Meeldivalt pehme traditsiooniline kohupiim. Rikas valgu ja kaltsiumi poolest. Ei sisalda lisaaineid ega säilitusaineid",
+    "ingredients" : "Rasvata kohupiim, rõõsk KOOR",
+    "brand" : "TERE"
+  }
+}

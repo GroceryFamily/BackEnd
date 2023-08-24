@@ -1,0 +1,18 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "piimasnakk-sokolaadis--34-g",
+  "name" : "Piimasnäkk šokolaadis, 34 g",
+  "url" : "https://prismamarket.ee/entry/17100/piimasnakk-sokolaadis--34-g/4740125775006",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "4740125775006",
+    "origin" : "Italy",
+    "description" : "Piimatäidisega biskviitkook piimašokolaadiglasuuris",
+    "ingredients" : "piimašokolaad 29,8% (suhkur, täispiimapulber, kakaovõi, kakaomass, emulgaator: sojaletsitiin, lõhna- ja maitseained), täispiim 21,1%, suhkur, taimsed rasvad (kõrge oleiinisisaldusega päevalilleõli, kakaovõi), nisujahu, munad, glükoosi-fruktoosi siirup, piimavalk, kartulitärklis, lõssipulber 1,5%, madala rasvasisaldusega kakaopulber 1,2%, lõhna- ja maitseained, kergitusained (difosfaadid, naatriumkarbonaadid), emulgaatorid (rasvhapete mono- ja diglütseriidid), sool. Toode võib sisaldada pähkleid!",
+    "brand" : "VALIO"
+  }
+}

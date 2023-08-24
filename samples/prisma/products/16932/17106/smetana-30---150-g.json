@@ -1,0 +1,18 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "smetana-30---150-g",
+  "name" : "Smetana 30%, 150 g",
+  "url" : "https://prismamarket.ee/entry/17106/smetana-30---150-g/4742231004018",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "4742231004018",
+    "origin" : "Estonia",
+    "description" : "Hapendatud piimatoode",
+    "ingredients" : "rõõsk koor, rasvatu piim, juuretis",
+    "brand" : "SAARE"
+  }
+}

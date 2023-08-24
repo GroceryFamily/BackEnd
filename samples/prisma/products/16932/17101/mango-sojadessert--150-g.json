@@ -1,0 +1,17 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "mango-sojadessert--150-g",
+  "name" : "Mango sojadessert, 150 g",
+  "url" : "https://prismamarket.ee/entry/17101/mango-sojadessert--150-g/5411188121305",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "5411188121305",
+    "origin" : "Belgium",
+    "ingredients" : "Vesi, kooritud sojaoad (13,5%), suhkur, mango (6%), granadillimahl kontsentreeritud mahlast (3,9%), maisitärklis, stabilisaator (pektiin), happesuse regulaatorid (naatriumtsitraat, sidrunhape), trikaltsiumtsitraat, lõhna- ja maitseaine, meresool, antioksüdandid (tokoferooliekstrakt, askorbiinhappe rasvhappeestrid), vitamiinid (B12, D2), juuretis (S.thermophilus, L.bulgaricus). Võib sisaldada sarapuupähkleid ja sarapuupähklitooteid, mandleid ja mandlitooteid. Laktoosivaba.",
+    "brand" : "ALPRO"
+  }
+}

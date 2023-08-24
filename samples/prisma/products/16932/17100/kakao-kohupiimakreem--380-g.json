@@ -1,0 +1,17 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "kakao-kohupiimakreem--380-g",
+  "name" : "Kakao kohupiimakreem, 380 g",
+  "url" : "https://prismamarket.ee/entry/17100/kakao-kohupiimakreem--380-g/4740125638066",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "4740125638066",
+    "origin" : "Estonia",
+    "ingredients" : "kohupiimapasta, kakaolisand (suhkur, vesi, kakao, modifitseeritud tärklis, happesuse regulaator (sidrunhape)), rõõsk koor. Tootes on 1,4% kakaod.",
+    "brand" : "ALMA"
+  }
+}

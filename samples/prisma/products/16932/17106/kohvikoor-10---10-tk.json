@@ -1,0 +1,18 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "kohvikoor-10---10-tk",
+  "name" : "Kohvikoor 10%, 10 tk",
+  "url" : "https://prismamarket.ee/entry/17106/kohvikoor-10---10-tk/40145037",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "40145037",
+    "origin" : "Germany",
+    "description" : "Rasva 10%",
+    "ingredients" : "10% rõõsk KOOR",
+    "brand" : "ZOTT"
+  }
+}

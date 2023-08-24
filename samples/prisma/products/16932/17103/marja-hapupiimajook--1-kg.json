@@ -1,0 +1,18 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "marja-hapupiimajook--1-kg",
+  "name" : "Marja hapupiimajook, 1 kg",
+  "url" : "https://prismamarket.ee/entry/17103/marja-hapupiimajook--1-kg/4740036007791",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "4740036007791",
+    "origin" : "Estonia",
+    "description" : "Värskendav ja magusa marja maitsega hapupiimajook, mis sisaldab lisaks muudele kasulikele elus piimhappebakteritele ka Eesti teadlaste poolt avastatud ja välja töötatud ning rahvusvaheliselt tunnustatud Lactobacillus fermentum ME-3 ehk Hellus piimhappebaktereid ning piimhappebaktereid L. acidophilus LA-5® ja Bifidobacterium BB-12®",
+    "ingredients" : "piim, suhkur, marjamahl ja -püree 2,4% (põldmuraka-, õuna-, vaarika ja mustasõstramahl, maasikapüree), paksendaja (modifitseeritud tärklis), happesuse regulaator (naatriumtsitraat, sidrunhape), lõhna- ja maitseaine, toiduvärv (antotsüaniinid), peedimahla kontsentraat, juuretis [sisaldab lisaks ka piimhappebaktereid L. acidophilus la-5, Bifidobacterium bb-12 ja Lactobacillus fermentum me-3 (lisatud Tartu Ülikooli litsentsi alusel)]",
+    "brand" : "HELLUS"
+  }
+}

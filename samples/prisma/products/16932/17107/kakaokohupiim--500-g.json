@@ -1,0 +1,18 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "kakaokohupiim--500-g",
+  "name" : "Kakaokohupiim, 500 g",
+  "url" : "https://prismamarket.ee/entry/17107/kakaokohupiim--500-g/4740464730506",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "4740464730506",
+    "origin" : "Estonia",
+    "description" : "Kakaovärvi pruun, kreemjas, poolpaks šokolaadi maitsega magus kohupiimamass. Iseseisev magustoit. Sobib hästi kiselliga",
+    "ingredients" : "kohupiim (täispiim,juuretis, laap), suhkur, kakao",
+    "brand" : "SAIDAFARM"
+  }
+}

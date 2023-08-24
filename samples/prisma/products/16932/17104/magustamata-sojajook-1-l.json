@@ -1,0 +1,16 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "magustamata-sojajook-1-l",
+  "name" : "Magustamata sojajook 1 l",
+  "url" : "https://prismamarket.ee/entry/17104/magustamata-sojajook-1-l/5411188115496",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "5411188115496",
+    "ingredients" : "Vesi, kooritud sojaoad (6,4%), happesuse regulaatorid (monokaaliumfosfaat, dikaaliumfosfaat), kaltsiumkarbonaat, maltodekstriin, stabilisaator (gellankummi), vitamiinid (riboflaviin (B2), B12 ja D2)",
+    "brand" : "ALPRO"
+  }
+}

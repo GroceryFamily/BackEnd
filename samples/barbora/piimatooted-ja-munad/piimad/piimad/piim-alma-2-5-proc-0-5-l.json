@@ -1,0 +1,17 @@
+{
+  "namespace" : "barbora.ee",
+  "code" : "piim-alma-2-5-proc-0-5-l",
+  "name" : "Piim ALMA 2,5%, 0,5L",
+  "url" : "https://barbora.ee/toode/piim-alma-2-5-proc-0-5-l",
+  "prices" : [ ],
+  "categories" : {
+    "piimatooted-ja-munad" : "Dairy and eggs",
+    "piimad" : "Milk"
+  },
+  "details" : {
+    "origin" : "Estonia",
+    "description" : "Kes januneb korraliku klaasitäie piima järele, saab kiiret leevendust Alma väiksest piimapakendist. Taassuletava korgiga piimapakk sobib suurepäraselt ka neile, kel meeldib värske piimaga oma kohvi või teed pehmendada. Eestimaa parimad lehmad on andnud endast kõik, et ka tagasihoidlikuma isuga piimatarbijad saaksid juua naturaalset hea maitsega piima.",
+    "ingredients" : "Pastöriseeritud PIIM.",
+    "brand" : "ALMA"
+  }
+}

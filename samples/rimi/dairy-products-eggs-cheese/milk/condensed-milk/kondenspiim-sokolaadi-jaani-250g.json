@@ -1,0 +1,16 @@
+{
+  "namespace" : "rimi.ee",
+  "code" : "kondenspiim-sokolaadi-jaani-250g",
+  "name" : "Kondenspiim šokolaadi Jaani 250g",
+  "url" : "https://rimi.ee/epood/en/products/dairy-products-eggs-cheese/milk/condensed-milk/kondenspiim-sokolaadi-jaani-250g/p/902179",
+  "prices" : [ ],
+  "categories" : {
+    "milk" : "Milk",
+    "dairy-products-eggs-cheese" : "Dairy products, eggs, cheese"
+  },
+  "details" : {
+    "origin" : "Estonia",
+    "ingredients" : "pastöriseeritud PIIM, suhkur, kakaopulber 7%",
+    "brand" : "Jaani"
+  }
+}

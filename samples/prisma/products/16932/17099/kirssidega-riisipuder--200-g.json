@@ -1,0 +1,17 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "kirssidega-riisipuder--200-g",
+  "name" : "Kirssidega riisipuder, 200 g",
+  "url" : "https://prismamarket.ee/entry/17099/kirssidega-riisipuder--200-g/4770265048050",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "4770265048050",
+    "origin" : "Lithuania",
+    "ingredients" : "piim, rõõsk koor, vesi, 12% kirsilisandit (suhkur, kirsse, tahkestusained: modifitseeritud tärklis, pektiin; lõhnaained, värvaine E162, happesust regulleerivad ained: E331, sidrunhape), 9,6% riisi, suhkur, lõssipulber, paksendajad: E410, karrageen; sool, vanilliin",
+    "brand" : "AASA"
+  }
+}

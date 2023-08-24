@@ -1,0 +1,17 @@
+{
+  "namespace" : "barbora.ee",
+  "code" : "mandlijook-alpro-1-l",
+  "name" : "Mandlijook ALPRO, 1L",
+  "url" : "https://barbora.ee/toode/mandlijook-alpro-1-l",
+  "prices" : [ ],
+  "categories" : {
+    "piimatooted-ja-munad" : "Dairy and eggs",
+    "piimad" : "Milk"
+  },
+  "details" : {
+    "origin" : "Belgium",
+    "description" : "100% taimne mandlijook.",
+    "ingredients" : "Vesi, suhkur, MANDEL (2%), trikaltisumfosfaat, meresool, stabilisaatorid (jaanileivapuujahu, gellankummi), emulsioon (päevalille letsitiin), vitamiiinid (riboflaviin b2, b12, e, d2)",
+    "brand" : "ALPRO"
+  }
+}

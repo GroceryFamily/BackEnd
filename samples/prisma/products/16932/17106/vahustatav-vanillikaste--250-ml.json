@@ -1,0 +1,17 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "vahustatav-vanillikaste--250-ml",
+  "name" : "Vahustatav vanillikaste, 250 ml",
+  "url" : "https://prismamarket.ee/entry/17106/vahustatav-vanillikaste--250-ml/6414893386983",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "6414893386983",
+    "origin" : "Finland",
+    "ingredients" : "lõss, tahkestatud palmituumarasv, suhkur, lõssipulber, emulgaatorid (E472b, E471), vanilli lõhna- ja maitseaine, stabilsaatorid (E410, E407), toiduvärv (E160a).",
+    "brand" : "KOTIMAISTA"
+  }
+}

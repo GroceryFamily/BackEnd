@@ -1,0 +1,17 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "tere-laktoosivaba-rasvata-kohupiim--200g",
+  "name" : "Tere Laktoosivaba rasvata kohupiim 200g",
+  "url" : "https://prismamarket.ee/entry/17107/tere-laktoosivaba-rasvata-kohupiim--200g/4740036016359",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "4740036016359",
+    "origin" : "Estonia",
+    "ingredients" : "Laktoosivaba rasvata KOHUPIIM",
+    "brand" : "TERE"
+  }
+}

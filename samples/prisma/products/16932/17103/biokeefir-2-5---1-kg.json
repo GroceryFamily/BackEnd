@@ -1,0 +1,18 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "biokeefir-2-5---1-kg",
+  "name" : "Biokeefir 2,5%, 1 kg",
+  "url" : "https://prismamarket.ee/entry/17103/biokeefir-2-5---1-kg/4740294010731",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "4740294010731",
+    "origin" : "Estonia",
+    "description" : "ME-3 piimhappebaktereid sisaldavad Helluse tooted aitavad mitmekesistada toidulauda ning toetada organismi võitluses kahjulike bakterite ja viirustega. Helluse tooted sisaldavad rohkelt uuritud probiootilisi piimhappebaktereid Lactobacillus fermentum ME-3, L.acidofilus LA-5®, Bifidobacterium BB-12® ja L.casei",
+    "ingredients" : "piim, juuretis, piimhappebakterid Lactobacillus fermentum me-3 (lisatud Tartu Ülikooli litsentsi alusel)",
+    "brand" : "HELLUS"
+  }
+}

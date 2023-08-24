@@ -1,0 +1,18 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "kohupiim-vanilli--200-g",
+  "name" : "Kohupiim Vanilli, 200 g",
+  "url" : "https://prismamarket.ee/entry/17107/kohupiim-vanilli--200-g/4740125638516",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "4740125638516",
+    "origin" : "Estonia",
+    "description" : "Eestlaste poolt palavalt armastatud traditsiooniline kohupiim Alma kvaliteediga! Pehme tekstuuriga valgurikas kohupiim, millele on lisatud maitsekat vanilli. Alma kohupiim sobib ideaalselt maitsvate kookide, tortide ja küpsetiste valmistamiseks ning ka puhtalt nautimiseks. Alma kohupiimad on Alma toodetele omaselt säilitusainetevabad, hea valguallikas ning mõistagi tehtud puhtast kodumaisest Eesti piimast.",
+    "ingredients" : "kohupiim, suhkur, vanilliin, vanilli looduslik lõhna- ja maitseaine.",
+    "brand" : "ALMA"
+  }
+}

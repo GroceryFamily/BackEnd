@@ -1,0 +1,18 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "kohupiim-tutti-frutti--100-g",
+  "name" : "Kohupiim Tutti-Frutti, 100 g",
+  "url" : "https://prismamarket.ee/entry/17107/kohupiim-tutti-frutti--100-g/4750072515075",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "4750072515075",
+    "origin" : "Latvia",
+    "description" : "magus kohupiim",
+    "ingredients" : "kohupiim72,2%,želeekommid 6%,toiduželatiin,happesuse regulaator (sidrunihape),paksendaja(agar),glasuur, niiskusesäilitaja sorbitool,naturaalne aromatisaator,naturaalsed värvained,modifitseeritud kartulitärklis.",
+    "brand" : "LIISU"
+  }
+}

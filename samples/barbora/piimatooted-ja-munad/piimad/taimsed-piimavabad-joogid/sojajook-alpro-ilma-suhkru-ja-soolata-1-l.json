@@ -1,0 +1,17 @@
+{
+  "namespace" : "barbora.ee",
+  "code" : "sojajook-alpro-ilma-suhkru-ja-soolata-1-l",
+  "name" : "Sojajook ALPRO ilma suhkru ja soolata,1L",
+  "url" : "https://barbora.ee/toode/sojajook-alpro-ilma-suhkru-ja-soolata-1-l",
+  "prices" : [ ],
+  "categories" : {
+    "piimatooted-ja-munad" : "Dairy and eggs",
+    "piimad" : "Milk"
+  },
+  "details" : {
+    "origin" : "Belgium",
+    "description" : "100% taimne suhkruvaba sojajook.",
+    "ingredients" : "Vesi, lüditud SOJAOAD (6,4%), happesuse regulaatorid (monokaaliumdivesinikfosfaat, dikaaliumvesinikfosfaat), kaltsiumkarbonaat, (maltodextriin), stabilisaator (gellankummi), vitamiinid (riboflaviin (B2), B12, D2)",
+    "brand" : "ALPRO"
+  }
+}

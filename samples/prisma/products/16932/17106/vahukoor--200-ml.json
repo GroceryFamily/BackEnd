@@ -1,0 +1,17 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "vahukoor--200-ml",
+  "name" : "Vahukoor, 200 ml",
+  "url" : "https://prismamarket.ee/entry/17106/vahukoor--200-ml/6414893386082",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "6414893386082",
+    "origin" : "Finland",
+    "ingredients" : "kõrgpastöriseeritud koor, stabilisaator (E407).",
+    "brand" : "KOTIMAISTA"
+  }
+}

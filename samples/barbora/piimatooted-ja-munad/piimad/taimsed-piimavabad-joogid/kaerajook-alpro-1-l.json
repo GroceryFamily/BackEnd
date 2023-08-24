@@ -1,0 +1,17 @@
+{
+  "namespace" : "barbora.ee",
+  "code" : "kaerajook-alpro-1-l",
+  "name" : "Kaerajook ALPRO, 1l",
+  "url" : "https://barbora.ee/toode/kaerajook-alpro-1-l",
+  "prices" : [ ],
+  "categories" : {
+    "piimatooted-ja-munad" : "Dairy and eggs",
+    "piimad" : "Milk"
+  },
+  "details" : {
+    "origin" : "Belgium",
+    "description" : "ALPRO Kaerajook. Taimne tode, sobib taimetoitlastele.",
+    "ingredients" : "Vesi, KAER (10%), kiudained (inuliin), taimeõli (päevalilleõli), trikaltsiumfosfaat, maltodekstriin, meresool stabilisaatorid (gellankummi), vitamiinid (riboflaviin (B2), B12, D2).",
+    "brand" : "ALPRO"
+  }
+}

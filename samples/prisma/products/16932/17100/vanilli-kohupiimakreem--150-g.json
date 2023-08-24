@@ -1,0 +1,18 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "vanilli-kohupiimakreem--150-g",
+  "name" : "Vanilli kohupiimakreem, 150 g",
+  "url" : "https://prismamarket.ee/entry/17100/vanilli-kohupiimakreem--150-g/6414893074156",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "6414893074156",
+    "origin" : "Estonia",
+    "description" : "Rainbow vanillikohupiim on hea vahepala või magustoit. Serveeri marjade või puuviljadega",
+    "ingredients" : "kohupiim, suhkur, koor, lõhnaaine (vanilliin)",
+    "brand" : "RAINBOW"
+  }
+}

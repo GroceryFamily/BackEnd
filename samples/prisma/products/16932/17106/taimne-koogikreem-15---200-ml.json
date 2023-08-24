@@ -1,0 +1,18 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "taimne-koogikreem-15---200-ml",
+  "name" : "Taimne köögikreem 15%, 200 ml",
+  "url" : "https://prismamarket.ee/entry/17106/taimne-koogikreem-15---200-ml/7311440601157",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "7311440601157",
+    "origin" : "Finland",
+    "description" : "Kaeratoode toiduvalmistamiseks.",
+    "ingredients" : "vesi, rüpsiõli, kaerahelbed (10%), emulgaator (E472e), happesuse regulaatorid (E331, E330), paksendaja (E415).",
+    "brand" : "PLANTI"
+  }
+}

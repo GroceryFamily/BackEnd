@@ -1,0 +1,17 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "keefir-2-5---1-5kg",
+  "name" : "keefir 2,5%, 1,5kg",
+  "url" : "https://prismamarket.ee/entry/17103/keefir-2-5---1-5kg/4740125321203",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "4740125321203",
+    "origin" : "Estonia",
+    "ingredients" : "piim, juuretis, piimhappebakter Lactobacillus rhamnosus gg, D-vitamiin",
+    "brand" : "GEFILUS"
+  }
+}

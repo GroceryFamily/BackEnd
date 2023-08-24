@@ -1,0 +1,17 @@
+{
+  "namespace" : "barbora.ee",
+  "code" : "mandlijook-alpro-magustamata-1-l",
+  "name" : "Mandlijook ALPRO magustamata, 1L",
+  "url" : "https://barbora.ee/toode/mandlijook-alpro-magustamata-1-l",
+  "prices" : [ ],
+  "categories" : {
+    "piimatooted-ja-munad" : "Dairy and eggs",
+    "piimad" : "Milk"
+  },
+  "details" : {
+    "origin" : "Belgium",
+    "description" : "100% taimne mandlijook, magustamata.",
+    "ingredients" : "Vesi, MANDEL (2%), trikaltsiumfosfaat, meresool, stabilisaatorid (jaanileivapuu jahu, gellaankummi), emulgaator päevalille letsitiin, vitamiinid (riboflaviin (B2) B12, E, D2)",
+    "brand" : "ALPRO"
+  }
+}

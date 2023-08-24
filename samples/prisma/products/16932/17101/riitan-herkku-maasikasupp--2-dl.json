@@ -1,0 +1,17 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "riitan-herkku-maasikasupp--2-dl",
+  "name" : "Riitan Herkku maasikasupp, 2 dl",
+  "url" : "https://prismamarket.ee/entry/17101/riitan-herkku-maasikasupp--2-dl/6408620005438",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "6408620005438",
+    "description" : "loksutada",
+    "ingredients" : "vesi, maasikad (12%), suhkur, modifitseeritud maisitärklis, mustasõstramahl, paksendaja (pektiin), happesuse regulaator (sidrunhape), C-vitamiin.",
+    "brand" : "RIITAN HERKKU"
+  }
+}

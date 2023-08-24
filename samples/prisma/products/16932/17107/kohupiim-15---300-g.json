@@ -1,0 +1,17 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "kohupiim-15---300-g",
+  "name" : "Kohupiim 15%, 300 g",
+  "url" : "https://prismamarket.ee/entry/17107/kohupiim-15---300-g/4770265048029",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "4770265048029",
+    "origin" : "Lithuania",
+    "ingredients" : "piim, juuretis, piimhappebakterid",
+    "brand" : "AASA"
+  }
+}

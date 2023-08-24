@@ -1,0 +1,18 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "karamelli-koorekreem--150-g",
+  "name" : "Karamelli koorekreem, 150 g",
+  "url" : "https://prismamarket.ee/entry/17099/karamelli-koorekreem--150-g/4750050010073",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "4750050010073",
+    "origin" : "Latvia",
+    "description" : "Karamellimaitseline vahustatud koorekreem. Säilitusainete vaba",
+    "ingredients" : "Rõõsk koor 18%, piim, suhkur, vesi, lõssipulber, toiduželatiin, modifitseeritud tärklis, stabilisaatorid: karrageen, rasvhapete mono- ja diglütseriidid; lõhna- ja maitseaine, toiduvärv ammooniumkaramell",
+    "brand" : "KARUMS"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "x-tra-vaarikakissell--1l",
+  "name" : "X-tra vaarikakissell, 1l",
+  "url" : "https://prismamarket.ee/entry/17101/x-tra-vaarikakissell--1l/6414893504462",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "6414893504462",
+    "ingredients" : "vesi, vaarikapüree (Saksamaa), vaarikamahl kontsentreeritud mahlast (Austria), paksendajad (E1442, E412), happesuse regulaator (E330), C-vitamiin, magusained (E951, E950). Sisaldab aspartaami (fenüülalaniini allikas). Vaarikat 8%.",
+    "brand" : "X-TRA"
+  }
+}

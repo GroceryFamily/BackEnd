@@ -1,0 +1,17 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "kamaga-kohupiimakreem--200-g",
+  "name" : "Kamaga kohupiimakreem, 200 g",
+  "url" : "https://prismamarket.ee/entry/17100/kamaga-kohupiimakreem--200-g/4740464781201",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "4740464781201",
+    "origin" : "Estonia",
+    "ingredients" : "Täispiim, kamajahu 3,5%, suhkur, juuretis, laap",
+    "brand" : "SAIDAFARM"
+  }
+}

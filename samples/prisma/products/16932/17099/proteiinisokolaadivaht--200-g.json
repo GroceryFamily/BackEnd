@@ -1,0 +1,17 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "proteiinisokolaadivaht--200-g",
+  "name" : "Proteiinišokolaadivaht, 200 g",
+  "url" : "https://prismamarket.ee/entry/17099/proteiinisokolaadivaht--200-g/4002971283808",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "4002971283808",
+    "description" : "Sisaldab rohkelt valku. Väherasvane. Laktoosi- ja gluteenivaba. Ehrmann proteiinimousse šokolaadi 200 g",
+    "ingredients" : "lõss, piimavalk (6,5%), kakaopulber (4%), koor (3,2%), želatiin, modifitseeritud tärklis, looduslik lõhna- ja maitseaine, paksendajad (E407, E412), laktaasiensüüm, magusained (E950, E955). Sisaldab looduslikult esinevaid suhkruid. Vahustatud lämmastikuga.",
+    "brand" : "EHRMANN"
+  }
+}

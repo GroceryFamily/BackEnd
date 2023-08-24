@@ -1,0 +1,17 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "kaltsiumiga-kaerajook--250-ml",
+  "name" : "Kaltsiumiga kaerajook, 250 ml",
+  "url" : "https://prismamarket.ee/entry/17104/kaltsiumiga-kaerajook--250-ml/7394376614798",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "7394376614798",
+    "origin" : "Sweden",
+    "ingredients" : "kaerapõhi (vesi, kaer 10%), rapsiõli, sool, vitamiinid (D, riboflaviin ja B12), kaltsium.",
+    "brand" : "OATLY"
+  }
+}

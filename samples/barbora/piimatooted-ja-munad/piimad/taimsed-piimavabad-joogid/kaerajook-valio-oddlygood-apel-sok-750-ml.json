@@ -1,0 +1,17 @@
+{
+  "namespace" : "barbora.ee",
+  "code" : "kaerajook-valio-oddlygood-apel-sok-750-ml",
+  "name" : "Kaerajook VALIO Oddlygood apel-šok.750ml",
+  "url" : "https://barbora.ee/toode/kaerajook-valio-oddlygood-apel-sok-750-ml",
+  "prices" : [ ],
+  "categories" : {
+    "piimatooted-ja-munad" : "Dairy and eggs",
+    "piimad" : "Milk"
+  },
+  "details" : {
+    "origin" : "Finland",
+    "description" : "Kõrgtemperatuuril pastöriseeritud (ca 125-135 °C kraadiga) maitsestatud kaerajook. Rikastatud vitamiinide ja mineraalidega. Enne kasutamist loksutada korralikult. Sobib toiduvalmistamiseks. Mõeldud puhtalt kasutamiseks või võib lisada kõikidele jookidele. Sobib ka veganitele. Gluteenivaba. Sobib hästi soojale kohvile (75-85 °C). Toote koostis on optimeeritud, et see oleks ideaalne piima asendaja külmade ja kuumade jookide jaoks. Vahustub hästi. Vahtu on lihtne valada ja kujundada kohvi või muude jookide peale.",
+    "ingredients" : "Vesi, gluteenivaba KAERAjahu, rapsiõli, suhkur, vähendatud rasvasisaldusega kakao pulber 0,5%, happesuse regulaatorid (kaaliumfosfaadid), kaltsium, sool, lõhna-ja maitseained (apelsin ja šokolaad), jood, vitamiinid (B2, B12, D2). Sisaldab KAERA 10%.",
+    "brand" : "VALIO"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "namespace" : "rimi.ee",
+  "code" : "piimajook-eila-1l",
+  "name" : "Piimajook Eila 1l",
+  "url" : "https://rimi.ee/epood/en/products/dairy-products-eggs-cheese/milk/special-milk/piimajook-eila-1l/p/904887",
+  "prices" : [ ],
+  "categories" : {
+    "milk" : "Milk",
+    "dairy-products-eggs-cheese" : "Dairy products, eggs, cheese"
+  },
+  "details" : {
+    "origin" : "Finland",
+    "ingredients" : "PIIM; D-vitamiin 2 µg (40% päevasest võrdluskogusest)",
+    "brand" : "Valio Eila"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "kakao-kohupiimapasta--300-g",
+  "name" : "Kakao kohupiimapasta, 300 g",
+  "url" : "https://prismamarket.ee/entry/17107/kakao-kohupiimapasta--300-g/4740036014515",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "4740036014515",
+    "origin" : "Estonia",
+    "ingredients" : "kohupiimapasta, rõõsk koor, suhkur, kakaopulber 1,5%, modifitseeritud tärklis, paksendaja (pektiin), happesuse regulaator (sidrunhape), looduslik lõhna- ja maitseaine",
+    "brand" : "TERE"
+  }
+}

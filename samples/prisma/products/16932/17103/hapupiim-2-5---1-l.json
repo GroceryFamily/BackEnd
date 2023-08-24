@@ -1,0 +1,18 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "hapupiim-2-5---1-l",
+  "name" : "Hapupiim 2,5%, 1 l",
+  "url" : "https://prismamarket.ee/entry/17103/hapupiim-2-5---1-l/4740218001081",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "4740218001081",
+    "origin" : "Estonia",
+    "description" : "Nagu vanasti tehtud kodune hapupiim. Vanaemade traditsioonide kohaselt valmistatud",
+    "ingredients" : "Pastöriseeritud piim, juuretis",
+    "brand" : "NOPRI"
+  }
+}

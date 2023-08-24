@@ -1,0 +1,16 @@
+{
+  "namespace" : "rimi.ee",
+  "code" : "piimajook-sokolaadi-aasa-450ml",
+  "name" : "Piimajook šokolaadi Aasa 450ml",
+  "url" : "https://rimi.ee/epood/en/products/dairy-products-eggs-cheese/milk/flavored-milk/piimajook-sokolaadi-aasa-450ml/p/962390",
+  "prices" : [ ],
+  "categories" : {
+    "milk" : "Milk",
+    "dairy-products-eggs-cheese" : "Dairy products, eggs, cheese"
+  },
+  "details" : {
+    "origin" : "Lithuania",
+    "ingredients" : "PIIM 93%, suhkur, vähendatud rasvasisaldusega kakaopulber 1%, šokolaadipulber 0,5%, stabilisaatorid: rasvhapete mono- ja diglütseriidide estrid, karrageen, guarkummi, šokolaadilõhna- ja maitseained",
+    "brand" : "Aasa"
+  }
+}

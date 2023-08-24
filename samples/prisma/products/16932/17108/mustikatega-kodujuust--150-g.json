@@ -1,0 +1,17 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "mustikatega-kodujuust--150-g",
+  "name" : "Mustikatega kodujuust, 150 g",
+  "url" : "https://prismamarket.ee/entry/17108/mustikatega-kodujuust--150-g/4770237043304",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "4770237043304",
+    "origin" : "Lithuania",
+    "ingredients" : "Curd grains, cream, blueberry preparation 20% (sugar, blueberry 35%, glucose-fructose syrup, lemon juice concentrate, thickener pectin, acidity regulator citric acid, natural flavouring), salt",
+    "brand" : "AASA"
+  }
+}

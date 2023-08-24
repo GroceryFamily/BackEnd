@@ -1,0 +1,17 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "rosinakohupiim--500-g",
+  "name" : "Rosinakohupiim, 500 g",
+  "url" : "https://prismamarket.ee/entry/17107/rosinakohupiim--500-g/4740464770502",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "4740464770502",
+    "origin" : "Estonia",
+    "ingredients" : "kohupiim (täispiim,juuretis, laap), suhkur, rosin, vanilliin",
+    "brand" : "SAIDAFARM"
+  }
+}
