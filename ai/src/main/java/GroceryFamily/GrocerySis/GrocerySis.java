@@ -3,10 +3,8 @@ package GroceryFamily.GrocerySis;
 import GroceryFamily.GroceryElders.api.client.ProductAPIClient;
 import GroceryFamily.GroceryElders.domain.Detail;
 import GroceryFamily.GroceryElders.domain.Namespace;
-import GroceryFamily.GrocerySis.dataset.OFFProduct;
 import GroceryFamily.GrocerySis.dataset.OFFProductDataset;
 import GroceryFamily.GrocerySis.model.*;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.extern.slf4j.Slf4j;
 import org.deeplearning4j.models.embeddings.inmemory.InMemoryLookupTable;
 import org.deeplearning4j.models.paragraphvectors.ParagraphVectors;
@@ -25,27 +23,24 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import java.io.IOException;
 import java.nio.file.Paths;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 import java.util.Set;
-import java.util.concurrent.atomic.AtomicInteger;
 
 import static java.util.Comparator.comparing;
 import static java.util.stream.Collectors.toSet;
-import static org.apache.commons.lang3.StringUtils.isBlank;
 
 @Slf4j
 @SpringBootApplication
 class GrocerySis implements CommandLineRunner {
     private final OFFProductDataset dataset;
-    private final Labeled labeled;
+    private final Labeled documents;
     private final Unlabeled unlabeled;
     private final ProductAPIClient client;
 
-    GrocerySis(OFFProductDataset dataset, Labeled labeled, Unlabeled unlabeled, ProductAPIClient client) {
+    GrocerySis(OFFProductDataset dataset, Labeled documents, Unlabeled unlabeled, ProductAPIClient client) {
         this.dataset = dataset;
-        this.labeled = labeled;
+        this.documents = documents;
         this.unlabeled = unlabeled;
         this.client = client;
     }
@@ -57,17 +52,22 @@ class GrocerySis implements CommandLineRunner {
         client.listAll().forEach(product -> System.out.println(no.incrementAndGet() + ": " + product));
          */
 
-        var prismaProductEANs = prismaProductEANs();
-        log.info("Fetched {} PRISMA product EANs", prismaProductEANs.size());
+        client.listAll().forEach(product -> {
+            documents.add(product);
+//            unlabeled.add(product);
+        });
 
-        var offProducts = new ArrayList<OFFProduct>();
-        dataset.read(product -> {
-            if (prismaProductEANs.contains(product.code.value)) {
-                offProducts.add(product);
-            }
-        }, true);
-        log.info("Fetched {} OFF products", offProducts.size());
-        System.out.println(new ObjectMapper().writerWithDefaultPrettyPrinter().writeValueAsString(offProducts));
+//        var prismaProductEANs = prismaProductEANs();
+//        log.info("Fetched {} PRISMA product EANs", prismaProductEANs.size());
+//
+//        var offProducts = new ArrayList<OFFProduct>();
+//        dataset.read(product -> {
+//            if (prismaProductEANs.contains(product.code.value)) {
+//                offProducts.add(product);
+//            }
+//        }, true);
+//        log.info("Fetched {} OFF products", offProducts.size());
+//        System.out.println(new ObjectMapper().writerWithDefaultPrettyPrinter().writeValueAsString(offProducts));
 
 
 //        var offTotal = new AtomicInteger();
@@ -88,8 +88,8 @@ class GrocerySis implements CommandLineRunner {
 //        log.info("Created {} prisma unlabeled products", prismaTotal);
 //
 //
-//        makeParagraphVectors();
-//        checkUnlabeledData();
+        var barboraParagraphVectors = makeParagraphVectors(Namespace.BARBORA);
+        checkUnlabeledData(Namespace.PRISMA, Namespace.BARBORA, barboraParagraphVectors);
     }
 
     private Set<String> prismaProductEANs() {
@@ -101,42 +101,49 @@ class GrocerySis implements CommandLineRunner {
                 .collect(toSet());
     }
 
-    ParagraphVectors paragraphVectors;
-    LabelAwareIterator iterator;
-    TokenizerFactory tokenizerFactory;
+    LabelAwareIterator iterator(String namespace) {
+        var resource = Paths.get("data/labeled/" + namespace);
+        return new FileLabelAwareIterator.Builder().addSourceFolder(resource.toFile()).build();
+    }
 
-    void makeParagraphVectors() throws Exception {
-        var resource = Paths.get("data/labeled");
+//    LabelAwareIterator unlabeledIterator(String namespace) {
+//        var unClassifiedResource = Paths.get("data/unlabeled/" + namespace);
+//        return new FileLabelAwareIterator.Builder().addSourceFolder(unClassifiedResource.toFile()).build();
+//    }
 
-        // build an iterator for our dataset
-        iterator = new FileLabelAwareIterator.Builder().addSourceFolder(resource.toFile()).build();
-
-        tokenizerFactory = new DefaultTokenizerFactory();
+    TokenizerFactory tokenizerFactory() {
+        var tokenizerFactory = new DefaultTokenizerFactory();
         tokenizerFactory.setTokenPreProcessor(new CommonPreprocessor());
+        return tokenizerFactory;
+    }
 
+    ParagraphVectors makeParagraphVectors(String namespace) {
         // ParagraphVectors training configuration
-        paragraphVectors = new ParagraphVectors.Builder().learningRate(0.025).minLearningRate(0.001).batchSize(1000).epochs(20).iterate(iterator).trainWordVectors(true).tokenizerFactory(tokenizerFactory).build();
+        var paragraphVectors = new ParagraphVectors
+                .Builder()
+                .learningRate(0.025)
+                .minLearningRate(0.001)
+                .batchSize(1000)
+                .epochs(200)
+                .iterate(iterator(namespace))
+                .trainWordVectors(true)
+                .tokenizerFactory(tokenizerFactory())
+                .build();
 
         // Start model training
         paragraphVectors.fit();
+        return paragraphVectors;
     }
 
-    void checkUnlabeledData() throws IOException {
-      /*
-      At this point we assume that we have model built and we can check
-      which categories our unlabeled document falls into.
-      So we'll start loading our unlabeled documents and checking them
-     */
-        var unClassifiedResource = Paths.get("data/unlabeled"); // todo: hardcode
-        FileLabelAwareIterator unClassifiedIterator = new FileLabelAwareIterator.Builder().addSourceFolder(unClassifiedResource.toFile()).build();
-
+    void checkUnlabeledData(String unlabeledNamespace, String labeledNamespace, ParagraphVectors paragraphVectors) throws IOException {
      /*
       Now we'll iterate over unlabeled data, and check which label it could be assigned to
       Please note: for many domains it's normal to have 1 document fall into few labels at once,
       with different "weight" for each.
      */
-        MeansBuilder meansBuilder = new MeansBuilder((InMemoryLookupTable<VocabWord>) paragraphVectors.getLookupTable(), tokenizerFactory);
-        LabelSeeker seeker = new LabelSeeker(iterator.getLabelsSource().getLabels(), (InMemoryLookupTable<VocabWord>) paragraphVectors.getLookupTable());
+        var unClassifiedIterator = iterator(unlabeledNamespace);
+        MeansBuilder meansBuilder = new MeansBuilder((InMemoryLookupTable<VocabWord>) paragraphVectors.getLookupTable(), tokenizerFactory());
+        LabelSeeker seeker = new LabelSeeker(iterator(labeledNamespace).getLabelsSource().getLabels(), (InMemoryLookupTable<VocabWord>) paragraphVectors.getLookupTable());
 
         while (unClassifiedIterator.hasNextDocument()) {
             try {
@@ -150,9 +157,13 @@ class GrocerySis implements CommandLineRunner {
                   So, labels on these two documents are used like titles,
                   just to visualize our classification done properly
                  */
-                log.info("Document '" + document.getLabels() + "' falls into the following categories: ");
+                var unclDoc = client.get(unlabeledNamespace + "::" + document.getLabels().get(0));
+//                log.info("Document '" + document.getLabels() + "' falls into the following categories: ");
+                log.info("Document '" + unclDoc.url + "' falls into the following categories: ");
                 var maxScore = scores.stream().max(comparing(Pair::getSecond)).orElseThrow();
-                log.info("        " + maxScore.getFirst() + ": " + maxScore.getSecond());
+                var clDoc = client.get(labeledNamespace + "::" + maxScore.getFirst());
+//                log.info("        " + maxScore.getFirst() + ": " + maxScore.getSecond());
+                log.info("        " + clDoc.url + ": " + maxScore.getSecond());
 //                for (Pair<String, Double> score : scores) {
 //                    log.info("        " + score.getFirst() + ": " + score.getSecond());
 //                }

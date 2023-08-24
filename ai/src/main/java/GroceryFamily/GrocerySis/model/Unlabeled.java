@@ -20,11 +20,18 @@ public class Unlabeled {
     }
 
     public void add(Product product) {
-        storage(product.code).save(product.code, product.name);
+        var sb = new StringBuilder();
+        sb.append(product.name).append('\n');
+        product.brand().ifPresent(brand -> sb.append(brand).append('\n'));
+        storage(product.namespace, product.code).save(product.code, sb.toString());
         ++size;
     }
 
-    private FileCache<String> storage(String subdirectory) {
-        return FileCache.regular(directory.resolve(subdirectory), FILE_TYPE);
+    private FileCache<String> storage(String... subdirectories) {
+        var directory = this.directory;
+        for (var subdirectory : subdirectories) {
+            directory = directory.resolve(subdirectory);
+        }
+        return FileCache.regular(directory, FILE_TYPE);
     }
 }
