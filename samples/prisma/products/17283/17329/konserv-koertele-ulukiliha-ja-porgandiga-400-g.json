@@ -12,5 +12,9 @@
     "code" : "products",
     "name" : "Groceries",
     "url" : "https://prismamarket.ee/products/selection"
-  } ]
+  } ],
+  "details" : {
+    "ean" : "8001220136557",
+    "brand" : "PEDIGREE"
+  }
 }

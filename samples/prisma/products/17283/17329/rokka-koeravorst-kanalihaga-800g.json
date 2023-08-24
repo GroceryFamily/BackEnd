@@ -12,5 +12,9 @@
     "code" : "products",
     "name" : "Groceries",
     "url" : "https://prismamarket.ee/products/selection"
-  } ]
+  } ],
+  "details" : {
+    "ean" : "6438411008942",
+    "brand" : "ROKKA"
+  }
 }
