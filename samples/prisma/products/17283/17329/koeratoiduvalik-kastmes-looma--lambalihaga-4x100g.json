@@ -4,15 +4,10 @@
   "name" : "Koeratoiduvalik kastmes looma, lambalihaga 4x100g",
   "url" : "https://prismamarket.ee/entry/17329/koeratoiduvalik-kastmes-looma--lambalihaga-4x100g/8410136023293",
   "prices" : [ ],
-  "categories" : [ {
-    "code" : "17283",
-    "name" : "Pets",
-    "url" : "https://prismamarket.ee/products/17283"
-  }, {
-    "code" : "products",
-    "name" : "Groceries",
-    "url" : "https://prismamarket.ee/products/selection"
-  } ],
+  "categories" : {
+    "17283" : "Pets",
+    "products" : "Groceries"
+  },
   "details" : {
     "ean" : "8410136023293",
     "brand" : "PEDIGREE"

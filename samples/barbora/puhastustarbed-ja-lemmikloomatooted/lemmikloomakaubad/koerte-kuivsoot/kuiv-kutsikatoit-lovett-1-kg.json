@@ -4,15 +4,10 @@
   "name" : "Kuiv kutsikatoit LOVETT 1kg",
   "url" : "https://barbora.ee/toode/kuiv-kutsikatoit-lovett-1-kg",
   "prices" : [ ],
-  "categories" : [ {
-    "code" : "lemmikloomakaubad",
-    "name" : "Pets",
-    "url" : "https://barbora.ee/puhastustarbed-ja-lemmikloomatooted/lemmikloomakaubad"
-  }, {
-    "code" : "puhastustarbed-ja-lemmikloomatooted",
-    "name" : "Household and pets",
-    "url" : "https://barbora.ee/puhastustarbed-ja-lemmikloomatooted"
-  } ],
+  "categories" : {
+    "puhastustarbed-ja-lemmikloomatooted" : "Household and pets",
+    "lemmikloomakaubad" : "Pets"
+  },
   "details" : {
     "brand" : "LOVETT"
   }

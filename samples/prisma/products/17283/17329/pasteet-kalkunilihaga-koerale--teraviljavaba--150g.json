@@ -4,15 +4,10 @@
   "name" : "Pasteet kalkunilihaga koerale, teraviljavaba, 150g",
   "url" : "https://prismamarket.ee/entry/17329/pasteet-kalkunilihaga-koerale--teraviljavaba--150g/5700551110993",
   "prices" : [ ],
-  "categories" : [ {
-    "code" : "17283",
-    "name" : "Pets",
-    "url" : "https://prismamarket.ee/products/17283"
-  }, {
-    "code" : "products",
-    "name" : "Groceries",
-    "url" : "https://prismamarket.ee/products/selection"
-  } ],
+  "categories" : {
+    "17283" : "Pets",
+    "products" : "Groceries"
+  },
   "details" : {
     "ean" : "5700551110993",
     "brand" : "BEST FRIEND"

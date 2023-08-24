@@ -4,15 +4,10 @@
   "name" : "Kuivtoit koertele veiselihaga 12kg",
   "url" : "https://prismamarket.ee/entry/17329/kuivtoit-koertele-veiselihaga-12kg/5902921304142",
   "prices" : [ ],
-  "categories" : [ {
-    "code" : "17283",
-    "name" : "Pets",
-    "url" : "https://prismamarket.ee/products/17283"
-  }, {
-    "code" : "products",
-    "name" : "Groceries",
-    "url" : "https://prismamarket.ee/products/selection"
-  } ],
+  "categories" : {
+    "17283" : "Pets",
+    "products" : "Groceries"
+  },
   "details" : {
     "ean" : "5902921304142",
     "brand" : "PIPER"

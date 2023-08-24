@@ -4,15 +4,10 @@
   "name" : "Saare sidruni jogurtikreem laktoosivaba 400g",
   "url" : "https://prismamarket.ee/entry/17097/saare-sidruni-jogurtikreem-laktoosivaba-400g/4742231005305",
   "prices" : [ ],
-  "categories" : [ {
-    "code" : "16932",
-    "name" : "Milk",
-    "url" : "https://prismamarket.ee/products/16932"
-  }, {
-    "code" : "products",
-    "name" : "Groceries",
-    "url" : "https://prismamarket.ee/products/selection"
-  } ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
   "details" : {
     "ean" : "4742231005305",
     "brand" : "SAARE"

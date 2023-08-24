@@ -4,15 +4,10 @@
   "name" : "Sensitive koeratoit lambalihaga 3kg",
   "url" : "https://prismamarket.ee/entry/17329/sensitive-koeratoit-lambalihaga-3kg/8595602526628",
   "prices" : [ ],
-  "categories" : [ {
-    "code" : "17283",
-    "name" : "Pets",
-    "url" : "https://prismamarket.ee/products/17283"
-  }, {
-    "code" : "products",
-    "name" : "Groceries",
-    "url" : "https://prismamarket.ee/products/selection"
-  } ],
+  "categories" : {
+    "17283" : "Pets",
+    "products" : "Groceries"
+  },
   "details" : {
     "ean" : "8595602526628",
     "brand" : "BRIT PREMIUM"

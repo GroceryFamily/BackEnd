@@ -4,15 +4,10 @@
   "name" : "Cesar Country koeratoit linnuliha ja köögiviljadega 150 g",
   "url" : "https://prismamarket.ee/entry/17329/cesar-country-koeratoit-linnuliha-ja-koogiviljadega-150-g/4008429139062",
   "prices" : [ ],
-  "categories" : [ {
-    "code" : "17283",
-    "name" : "Pets",
-    "url" : "https://prismamarket.ee/products/17283"
-  }, {
-    "code" : "products",
-    "name" : "Groceries",
-    "url" : "https://prismamarket.ee/products/selection"
-  } ],
+  "categories" : {
+    "17283" : "Pets",
+    "products" : "Groceries"
+  },
   "details" : {
     "ean" : "4008429139062",
     "brand" : "CESAR"

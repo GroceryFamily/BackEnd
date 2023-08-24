@@ -4,15 +4,10 @@
   "name" : "Wauh! eine koerale 600g",
   "url" : "https://prismamarket.ee/entry/17329/wauh--eine-koerale-600g/4740234007036",
   "prices" : [ ],
-  "categories" : [ {
-    "code" : "17283",
-    "name" : "Pets",
-    "url" : "https://prismamarket.ee/products/17283"
-  }, {
-    "code" : "products",
-    "name" : "Groceries",
-    "url" : "https://prismamarket.ee/products/selection"
-  } ],
+  "categories" : {
+    "17283" : "Pets",
+    "products" : "Groceries"
+  },
   "details" : {
     "ean" : "4740234007036",
     "brand" : "WAUH"

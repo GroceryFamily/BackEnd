@@ -4,15 +4,10 @@
   "name" : "Banaan Gourmet 250g",
   "url" : "https://rimi.ee/epood/en/products/fruits-vegetables-flowers/fruits/bananas/banaan-gourmet-250g/p/291040",
   "prices" : [ ],
-  "categories" : [ {
-    "code" : "fruits",
-    "name" : "Fruits",
-    "url" : "https://rimi.ee/epood/en/products/fruits-vegetables-flowers/fruits/c/SH-12-5"
-  }, {
-    "code" : "fruits-vegetables-flowers",
-    "name" : "Fruits, vegetables, flowers",
-    "url" : "https://rimi.ee/epood/en/products/fruits-vegetables-flowers/c/SH-12"
-  } ],
+  "categories" : {
+    "fruits" : "Fruits",
+    "fruits-vegetables-flowers" : "Fruits, vegetables, flowers"
+  },
   "details" : {
     "brand" : "Määramata"
   }

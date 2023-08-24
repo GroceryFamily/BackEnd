@@ -4,15 +4,10 @@
   "name" : "Koeratoiduvalik kastmes looma, lamba, kanalihaga 4x100g",
   "url" : "https://prismamarket.ee/entry/17329/koeratoiduvalik-kastmes-looma--lamba--kanalihaga-4x100g/7613035808294",
   "prices" : [ ],
-  "categories" : [ {
-    "code" : "17283",
-    "name" : "Pets",
-    "url" : "https://prismamarket.ee/products/17283"
-  }, {
-    "code" : "products",
-    "name" : "Groceries",
-    "url" : "https://prismamarket.ee/products/selection"
-  } ],
+  "categories" : {
+    "17283" : "Pets",
+    "products" : "Groceries"
+  },
   "details" : {
     "ean" : "7613035808294",
     "brand" : "FRISKIES"

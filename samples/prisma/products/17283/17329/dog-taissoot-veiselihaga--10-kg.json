@@ -4,15 +4,10 @@
   "name" : "Dog täissööt veiselihaga, 10 kg",
   "url" : "https://prismamarket.ee/entry/17329/dog-taissoot-veiselihaga--10-kg/5700553111066",
   "prices" : [ ],
-  "categories" : [ {
-    "code" : "17283",
-    "name" : "Pets",
-    "url" : "https://prismamarket.ee/products/17283"
-  }, {
-    "code" : "products",
-    "name" : "Groceries",
-    "url" : "https://prismamarket.ee/products/selection"
-  } ],
+  "categories" : {
+    "17283" : "Pets",
+    "products" : "Groceries"
+  },
   "details" : {
     "ean" : "5700553111066",
     "brand" : "DOG"

@@ -4,15 +4,10 @@
   "name" : "Kuiv koeratoit ARDOUR lamba 1.5kg junior",
   "url" : "https://barbora.ee/toode/kuiv-koeratoit-ardour-lamba-1-5-kg-junior",
   "prices" : [ ],
-  "categories" : [ {
-    "code" : "lemmikloomakaubad",
-    "name" : "Pets",
-    "url" : "https://barbora.ee/puhastustarbed-ja-lemmikloomatooted/lemmikloomakaubad"
-  }, {
-    "code" : "puhastustarbed-ja-lemmikloomatooted",
-    "name" : "Household and pets",
-    "url" : "https://barbora.ee/puhastustarbed-ja-lemmikloomatooted"
-  } ],
+  "categories" : {
+    "puhastustarbed-ja-lemmikloomatooted" : "Household and pets",
+    "lemmikloomakaubad" : "Pets"
+  },
   "details" : {
     "brand" : "ARDOUR"
   }

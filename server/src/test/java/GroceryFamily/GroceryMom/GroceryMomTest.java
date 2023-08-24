@@ -5,7 +5,6 @@ import GroceryFamily.GroceryElders.domain.Category;
 import GroceryFamily.GroceryElders.domain.Identifiable;
 import GroceryFamily.GroceryElders.domain.Price;
 import GroceryFamily.GroceryElders.domain.Product;
-import GroceryFamily.GroceryMom.repository.CategoryRepository;
 import GroceryFamily.GroceryMom.repository.PriceRepository;
 import GroceryFamily.GroceryMom.repository.ProductRepository;
 import org.junit.jupiter.api.BeforeEach;
@@ -17,6 +16,7 @@ import org.springframework.test.annotation.DirtiesContext;
 import org.springframework.test.context.ActiveProfiles;
 
 import java.math.BigDecimal;
+import java.util.Map;
 import java.util.Set;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.Executors;
@@ -49,8 +49,6 @@ class GroceryMomTest {
     ProductRepository productRepository;
     @Autowired
     PriceRepository priceRepository;
-    @Autowired
-    CategoryRepository categoryRepository;
 
     ProductAPIClient client;
 
@@ -106,16 +104,9 @@ class GroceryMomTest {
 
         var expectedCategoryNameMarker = " (threadNo=" + expectedThreadNo + ", updateNo=" + NUMBER_OF_UPDATES_PER_THREAD + ")";
 
-        assertThat(product.identifiableCategories()).isEqualTo(Set.of(
-                Identifiable.identify(Category.builder()
-                        .code("first")
-                        .name("First" + expectedCategoryNameMarker)
-                        .build(), "grocery-mom-test::product::first"),
-                Identifiable.identify(Category.builder()
-                        .code("second")
-                        .name("Second" + expectedCategoryNameMarker)
-                        .build(), "grocery-mom-test::product::second")
-        ));
+        assertThat(product.categories).isEqualTo(Map.of(
+                "first", "First" + expectedCategoryNameMarker,
+                "second", "Second" + expectedCategoryNameMarker));
 
         var expectedProductName = "GroceryMom test product (threadNo=" + expectedThreadNo + ", updateNo=" + NUMBER_OF_UPDATES_PER_THREAD + ")";
         var expectedVersion = NUMBER_OF_THREADS * NUMBER_OF_UPDATES_PER_THREAD - 1;
@@ -123,8 +114,6 @@ class GroceryMomTest {
         assertProductEntity("grocery-mom-test::product", expectedProductName, expectedVersion);
         assertPriceEntity("grocery-mom-test::product::pc::usd", expectedPriceAmount, expectedVersion);
         assertPriceEntity("grocery-mom-test::product::ml::usd", expectedPriceAmount, expectedVersion);
-        assertCategoryEntity("grocery-mom-test::product::first", "First" + expectedCategoryNameMarker, expectedVersion);
-        assertCategoryEntity("grocery-mom-test::product::second", "Second" + expectedCategoryNameMarker, expectedVersion);
     }
 
     void assertProductEntity(String id, String expectedName, int expectedVersion) {
@@ -137,13 +126,6 @@ class GroceryMomTest {
         var modelPrice = priceRepository.findById(id).orElseThrow();
         assertThat(modelPrice.getId()).isEqualTo(id);
         assertThat(modelPrice.getAmount()).isEqualByComparingTo(expectedAmount);
-        assertThat(modelPrice.getVersion()).isEqualTo(expectedVersion);
-    }
-
-    void assertCategoryEntity(String id, String expectedName, int expectedVersion) {
-        var modelPrice = categoryRepository.findById(id).orElseThrow();
-        assertThat(modelPrice.getId()).isEqualTo(id);
-        assertThat(modelPrice.getName()).isEqualTo(expectedName);
         assertThat(modelPrice.getVersion()).isEqualTo(expectedVersion);
     }
 
@@ -196,18 +178,12 @@ class GroceryMomTest {
                 .build();
     }
 
-    static Set<Category> categories(int threadNo, int updateNo) {
-        return Set.of(
-                category("first", threadNo, updateNo),
-                category("second", threadNo, updateNo));
+    static Map<String, String> categories(int threadNo, int updateNo) {
+        return Map.of("first", categoryName("first", threadNo, updateNo),
+                "second", categoryName("second", threadNo, updateNo));
     }
 
-    static Category category(String code, int threadNo, int updateNo) {
-        String name = capitalize(format("%s (threadNo=%s, updateNo=%s)", code, threadNo, updateNo));
-        return Category
-                .builder()
-                .code(code)
-                .name(name)
-                .build();
+    static String categoryName(String code, int threadNo, int updateNo) {
+        return capitalize(format("%s (threadNo=%s, updateNo=%s)", code, threadNo, updateNo));
     }
 }
