@@ -1,0 +1,16 @@
+{
+  "namespace" : "barbora.ee",
+  "code" : "kondenspiim-jaani-sokolaadi-250-g",
+  "name" : "Kondenspiim JAANI šokolaadi, 250g",
+  "url" : "https://barbora.ee/toode/kondenspiim-jaani-sokolaadi-250-g",
+  "prices" : [ ],
+  "categories" : {
+    "piimatooted-ja-munad" : "Dairy and eggs",
+    "piimad" : "Milk"
+  },
+  "details" : {
+    "origin" : "Estonia",
+    "ingredients" : "Pastöriseeritud PIIM, suhkur, täisPIIMApulber, šokolaadipulber 5% (s. h. kakaopulber)",
+    "brand" : "JAANI"
+  }
+}

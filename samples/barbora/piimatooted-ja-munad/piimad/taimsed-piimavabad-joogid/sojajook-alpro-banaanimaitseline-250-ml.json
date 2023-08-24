@@ -1,0 +1,17 @@
+{
+  "namespace" : "barbora.ee",
+  "code" : "sojajook-alpro-banaanimaitseline-250-ml",
+  "name" : "Sojajook ALPRO banaanimaitseline, 250ml",
+  "url" : "https://barbora.ee/toode/sojajook-alpro-banaanimaitseline-250-ml",
+  "prices" : [ ],
+  "categories" : {
+    "piimatooted-ja-munad" : "Dairy and eggs",
+    "piimad" : "Milk"
+  },
+  "details" : {
+    "origin" : "Belgium",
+    "description" : "100% taimne banaaniimaitseline sojajook.",
+    "ingredients" : "Vesi, lüditud SOJAoad (5, 8%), suhkur, konsentreeitud banaanimahl (1, 2%), maitseained, maltodekstriin, kaltsiumkarbonaat, stabilisaatorid (jaanileivapuujahu, gelaankummi), meresool, happesuse regulaator (monokaaliumfosfaat), vitamiinid (riboflaviin (b2), b12, d2), naturaalsed lõhna-ja maitseained.",
+    "brand" : "ALPRO"
+  }
+}

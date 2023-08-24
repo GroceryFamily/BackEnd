@@ -7,5 +7,8 @@
   "categories" : {
     "pre-order-festivity-meals" : "Pre-order festivity meals"
   },
-  "details" : { }
+  "details" : {
+    "origin" : "Estonia",
+    "ingredients" : "Tuunikalakreem 60,8% [tuuniKALA (tuuniKALA, päevalilleõli, sool), toorJUUST (kohuPIIM, modifitseeritud tärklis, sool, paksendaja: E410, E412), kapparid (kapparid, veiniäädikas (SULFITID), sool)], minipliin 37,4% (NISUjahu, täisPIIM, vesi, vabapidamise kanaMUNA, kontsentreeritud VÕI, kergitusained: E450, E500; roosuhkur, sool, NISUtärklis, päevalilleõli), petersell, paprikahelves."
+  }
 }

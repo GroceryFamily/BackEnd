@@ -1,0 +1,17 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "dovgan-magustatud-kondenspiim-397g",
+  "name" : "Dovgan magustatud kondenspiim 397g",
+  "url" : "https://prismamarket.ee/entry/17105/dovgan-magustatud-kondenspiim-397g/4032549001770",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "4032549001770",
+    "description" : "Preserve at room temperature",
+    "ingredients" : "täispiim, suhkur. Rasvu 8%, lõssi kuivainesisaldus 20%, kuumtöödeldud.",
+    "brand" : "DOVGAN"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "kohvikoor-10---380-ml",
+  "name" : "Kohvikoor 10%, 380 ml",
+  "url" : "https://prismamarket.ee/entry/17106/kohvikoor-10---380-ml/4740125220117",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "4740125220117",
+    "origin" : "Estonia",
+    "ingredients" : "10% rõõsk KOOR",
+    "brand" : "ALMA"
+  }
+}

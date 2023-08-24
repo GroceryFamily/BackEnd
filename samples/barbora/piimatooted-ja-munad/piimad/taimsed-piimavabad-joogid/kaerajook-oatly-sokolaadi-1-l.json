@@ -1,0 +1,16 @@
+{
+  "namespace" : "barbora.ee",
+  "code" : "kaerajook-oatly-sokolaadi-1-l",
+  "name" : "Kaerajook OATLY šokolaadi, 1l",
+  "url" : "https://barbora.ee/toode/kaerajook-oatly-sokolaadi-1-l",
+  "prices" : [ ],
+  "categories" : {
+    "piimatooted-ja-munad" : "Dairy and eggs",
+    "piimad" : "Milk"
+  },
+  "details" : {
+    "origin" : "Sweden",
+    "ingredients" : "Vesi, KAER 10%, suhkur (3,5%), kakaopulber (1%), rapsiõli, kaltsiumkarbonaat, kaltsiumfosfaadid, jodeeritud sool, lõhna- ja maitseaine, vitamiinid (D2, riboflaviin ja B12).",
+    "brand" : "OATLY"
+  }
+}

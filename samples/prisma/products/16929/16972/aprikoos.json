@@ -9,6 +9,8 @@
     "products" : "Groceries"
   },
   "details" : {
-    "ean" : "2060470100004"
+    "ean" : "2060470100004",
+    "origin" : "Moldova",
+    "description" : "Pilt on illustreeriv. Aprikoos I klass"
   }
 }

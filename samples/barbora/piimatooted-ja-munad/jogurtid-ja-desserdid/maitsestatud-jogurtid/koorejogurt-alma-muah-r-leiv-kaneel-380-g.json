@@ -9,6 +9,9 @@
     "jogurtid-ja-desserdid" : "Yoghurts and desserts"
   },
   "details" : {
+    "origin" : "Estonia",
+    "description" : "Alma jogurtite seeria Muah! rukkileiva-kaneeli koorejogurt on uudse maitse ning oma kreemiselt siidise konsistentsiga pakub nauditava maitseelamuse igale jogurtisõbrale. Alma Muah! koorejogurtid on kõige kooresemad kodumaised jogurtid (rasvasisaldus 6,5%). Tooteseeria ei sisalda säilitusaineid ning on mugavas taassuletavas 380-grammises pakendis.",
+    "ingredients" : "RÕÕSK KOOR, rukkileiva-kaneelilisand 16% (suhkur, vesi, riivitud rukkileib 14% (RUKKIJAHU, leivajuuretis, suhkur, rukkilinnas, köömned, sool), tärklis, kaneel 0, 36%, lõhna- ja maitseained, happesuse regulaatorid - sidrunhape, naatriumtsitraat), juuretis.",
     "brand" : "ALMA"
   }
 }

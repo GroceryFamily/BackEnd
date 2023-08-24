@@ -1,0 +1,16 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "kotimaista-mustikakissell--1l",
+  "name" : "Kotimaista mustikakissell, 1l",
+  "url" : "https://prismamarket.ee/entry/17101/kotimaista-mustikakissell--1l/6414893503236",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "6414893503236",
+    "ingredients" : "vesi, mustikapüree (Soome), suhkur, modifitseeritud maisitärklis, paksendaja (E440), happesuse regulaator (E330), C-vitamiin. Mustikaid 11%.",
+    "brand" : "KOTIMAISTA"
+  }
+}

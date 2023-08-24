@@ -1,0 +1,17 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "kirsimaitseline-tarretis--150-g",
+  "name" : "Kirsimaitseline tarretis, 150 g",
+  "url" : "https://prismamarket.ee/entry/17101/kirsimaitseline-tarretis--150-g/4740113070106",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "4740113070106",
+    "origin" : "Estonia",
+    "ingredients" : "vesi, suhkur, želatiin, hape: sidrunhape, musta porgandi mahla kontsentraat, lõhna- ja maitseaine, toiduvärv: ammooniumkaramell",
+    "brand" : "JÄNKS"
+  }
+}

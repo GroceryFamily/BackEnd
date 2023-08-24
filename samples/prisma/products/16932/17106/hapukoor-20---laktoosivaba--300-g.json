@@ -1,0 +1,18 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "hapukoor-20---laktoosivaba--300-g",
+  "name" : "Hapukoor 20%, laktoosivaba, 300 g",
+  "url" : "https://prismamarket.ee/entry/17106/hapukoor-20---laktoosivaba--300-g/4740036011156",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "4740036011156",
+    "origin" : "Estonia",
+    "description" : "Klassikaline hapukoor kõige levinuma rasvaprotsendiga ja mõnusa konsistentsiga, mis on nüüdsest ka laktoosivaba ja mugavas topsis",
+    "ingredients" : "HAPUKOOR",
+    "brand" : "TERE"
+  }
+}

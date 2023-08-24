@@ -8,5 +8,8 @@
     "aiakaubad" : "Gardening",
     "kodukaubad-ja-vaba-aeg" : "Home and leisure"
   },
-  "details" : { }
+  "details" : {
+    "origin" : "Lithuania",
+    "description" : "Keskvarajane punapeedisort. Juurikad on piklikud, silindrikujulised. Viljaliha on erepunane. Sobib väga hästi ümbertöötlemiseks, sest säilitab keetmisel oma värvi. See punapeet säilib hästi ületalve."
+  }
 }

@@ -1,0 +1,17 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "koorene-sokolaadipuding--230-g",
+  "name" : "Koorene šokolaadipuding, 230 g",
+  "url" : "https://prismamarket.ee/entry/17099/koorene-sokolaadipuding--230-g/4740113090814",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "4740113090814",
+    "origin" : "Estonia",
+    "ingredients" : "Pastöriseeritud piim, rõõsk koor, suhkur, modifitseeritud tärklis, lõssipulber, šokolaadipulber 1,7%, kakaopulber 0,65%, stabilisaatorid: ksantaankummi, karrageen; sool",
+    "brand" : "FARMI"
+  }
+}

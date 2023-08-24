@@ -1,0 +1,16 @@
+{
+  "namespace" : "rimi.ee",
+  "code" : "piimajook-maasika-aasa-450ml",
+  "name" : "Piimajook maasika Aasa 450ml",
+  "url" : "https://rimi.ee/epood/en/products/dairy-products-eggs-cheese/milk/flavored-milk/piimajook-maasika-aasa-450ml/p/962392",
+  "prices" : [ ],
+  "categories" : {
+    "milk" : "Milk",
+    "dairy-products-eggs-cheese" : "Dairy products, eggs, cheese"
+  },
+  "details" : {
+    "origin" : "Lithuania",
+    "ingredients" : "PIIM 95%, suhkur, maasikasiirup 1,1% (suhkur, glükoosi-fruktoosisiirup, maasika mahlakontsentraat 3,5%, toiduvärv: beetakaroteen, lõhna-ja maitseained), stabilisaatorid: rasvhapete mono- ja diglütseriidide estrid, karrageen, guarkummi",
+    "brand" : "Aasa"
+  }
+}

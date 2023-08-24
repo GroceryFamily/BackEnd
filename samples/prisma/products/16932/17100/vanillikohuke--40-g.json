@@ -1,0 +1,17 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "vanillikohuke--40-g",
+  "name" : "Vanillikohuke, 40 g",
+  "url" : "https://prismamarket.ee/entry/17100/vanillikohuke--40-g/4770265211676",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "4770265211676",
+    "origin" : "Lithuania",
+    "ingredients" : "kohupiim 61%, Belgia šokolaad 18% (suhkur, kakaomass, kakaovõi, piimarasv, täispiimapulber, emulgaator: sojaletsitiin, vanilliini maitse-ja lõhnaaine), suhkur, või, maitse-ja lõhnaaine vanilliin",
+    "brand" : "AASA"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "namespace" : "barbora.ee",
+  "code" : "kitse-taispiim-amalattea-0-5-l",
+  "name" : "Kitse täispiim AMALATTEA, 0,5L",
+  "url" : "https://barbora.ee/toode/kitse-taispiim-amalattea-0-5-l",
+  "prices" : [ ],
+  "categories" : {
+    "piimatooted-ja-munad" : "Dairy and eggs",
+    "piimad" : "Milk"
+  },
+  "details" : {
+    "origin" : "Italy",
+    "description" : "Kitse täispiim B9, D3 ja B12 vitamiinidega UHT.",
+    "ingredients" : "KITSEPIIM, kaltsium, vitamiinid B9, D3, B12.",
+    "brand" : "AMALATTEA"
+  }
+}

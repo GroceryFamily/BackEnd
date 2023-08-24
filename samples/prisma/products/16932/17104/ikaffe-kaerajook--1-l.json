@@ -1,0 +1,17 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "ikaffe-kaerajook--1-l",
+  "name" : "Ikaffe kaerajook, 1 l",
+  "url" : "https://prismamarket.ee/entry/17104/ikaffe-kaerajook--1-l/7394376616037",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "7394376616037",
+    "origin" : "Sweden",
+    "ingredients" : "kaerapõhi (vesi, kaer (12%)), rapsiõli, kaltsium, happesuse regulaator (dikaaliumvesinikfosfaat), sool, vitamiinid (D2, riboflaviin ja B12).",
+    "brand" : "OATLY"
+  }
+}

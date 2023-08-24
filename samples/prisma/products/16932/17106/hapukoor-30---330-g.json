@@ -1,0 +1,18 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "hapukoor-30---330-g",
+  "name" : "Hapukoor 30%, 330 g",
+  "url" : "https://prismamarket.ee/entry/17106/hapukoor-30---330-g/4740036009504",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "4740036009504",
+    "origin" : "Estonia",
+    "description" : "Kõrgema rasvasisaldusega ja rammus hapukoor, mis on ka kõige paksema konsistentsiga",
+    "ingredients" : "HAPUKOOR",
+    "brand" : "TERE"
+  }
+}

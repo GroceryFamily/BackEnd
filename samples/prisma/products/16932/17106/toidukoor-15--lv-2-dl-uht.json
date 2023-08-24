@@ -1,0 +1,18 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "toidukoor-15--lv-2-dl-uht",
+  "name" : "Toidukoor 15% lv 2 dl uht",
+  "url" : "https://prismamarket.ee/entry/17106/toidukoor-15--lv-2-dl-uht/6414893385498",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "6414893385498",
+    "origin" : "Finland",
+    "description" : "Laktoosivaba toidukoor. Sobib toiduvalmistamiseks ja küpsetamiseks. Ei vahustu.",
+    "ingredients" : "koor, piimatoode, modifitseeritud maisi- ja tapiokitärklis, stabilisaatorid (E471, E466).",
+    "brand" : "KOTIMAISTA"
+  }
+}

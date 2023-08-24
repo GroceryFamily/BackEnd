@@ -1,0 +1,18 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "milk-slice-magustoit--28g",
+  "name" : "Milk Slice magustoit, 28g",
+  "url" : "https://prismamarket.ee/entry/17100/milk-slice-magustoit--28g/40084725",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "40084725",
+    "origin" : "Germany",
+    "description" : "Piimatäidisega biskviitkook. Preserve in cool place",
+    "ingredients" : "Koostisained: pastöriseeritud piim (40%), palmiõli, suhkur, nisujahu, lõssipulber, mesi (5%), vee sisalduseta või, munapulber, madala rasvasisaldusega kakaopulber, nisu peenkliid, kergitusained (dinaatrium difosfaat, naatriumvesinikkarbonaat, ammooniumkarbonaat), emulgaatorid (rasvahapete mono-, diglütseriidid), lõhna- ja maitseained, sool.",
+    "brand" : "KINDER"
+  }
+}

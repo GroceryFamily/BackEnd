@@ -1,0 +1,17 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "tere-kaerajook-1-l",
+  "name" : "Tere kaerajook 1 l",
+  "url" : "https://prismamarket.ee/entry/17104/tere-kaerajook-1-l/4740036014607",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "4740036014607",
+    "origin" : "Finland",
+    "ingredients" : "Kaerapõhi (vesi, kaer 9%), rapsiõli, kaltsiumkarbonaat, sool, stabilisaator (gellankummi), vitamiinid (B2, foolhape, D2, B12), jood",
+    "brand" : "TERE"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "vanillimaitseline-kohupiimavorm--250-g",
+  "name" : "Vanillimaitseline kohupiimavorm, 250 g",
+  "url" : "https://prismamarket.ee/entry/17099/vanillimaitseline-kohupiimavorm--250-g/4740113090012",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "4740113090012",
+    "origin" : "Estonia",
+    "ingredients" : "kohupiim (46%), hapukoor, munamass, suhkur, maitsestamata jogurt, manna, vanilliin.",
+    "brand" : "FARMI"
+  }
+}

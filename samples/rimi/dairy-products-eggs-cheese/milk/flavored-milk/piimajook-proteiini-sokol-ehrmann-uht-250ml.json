@@ -1,0 +1,16 @@
+{
+  "namespace" : "rimi.ee",
+  "code" : "piimajook-proteiini-sokol-ehrmann-uht-250ml",
+  "name" : "Piimajook proteiini šokolaadi Ehrmann UHT 250ml",
+  "url" : "https://rimi.ee/epood/en/products/dairy-products-eggs-cheese/milk/flavored-milk/piimajook-proteiini-sokol-ehrmann-uht-250ml/p/943762",
+  "prices" : [ ],
+  "categories" : {
+    "milk" : "Milk",
+    "dairy-products-eggs-cheese" : "Dairy products, eggs, cheese"
+  },
+  "details" : {
+    "origin" : "Germany",
+    "ingredients" : "LÕSS 94%, PIIMAVALGUD 5%, kakaopulber 1%, laktaas, paksendajad (karrageen), magusained (kaaliumatsesulfaam, sukraloos), naturaalne lõhna- ja maitseaine, sool",
+    "brand" : "Ehrmann"
+  }
+}

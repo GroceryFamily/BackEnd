@@ -1,0 +1,17 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "mahe-kohupiimakreemide-segu--265-g",
+  "name" : "Mahe kohupiimakreemide segu, 265 g",
+  "url" : "https://prismamarket.ee/entry/17100/mahe-kohupiimakreemide-segu--265-g/4743135000618",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "4743135000618",
+    "origin" : "Estonia",
+    "ingredients" : "jogurt, kohupiim, suhkur, rosinad, vanillisuhkur, kakao",
+    "brand" : "PAJUMÄE TALU"
+  }
+}

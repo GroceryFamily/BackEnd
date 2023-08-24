@@ -1,0 +1,17 @@
+{
+  "namespace" : "barbora.ee",
+  "code" : "piimajook-well-done-banaan-250-ml",
+  "name" : "Piimajook WELL DONE banaan, 250ml",
+  "url" : "https://barbora.ee/toode/piimajook-well-done-banaan-250-ml",
+  "prices" : [ ],
+  "categories" : {
+    "piimatooted-ja-munad" : "Dairy and eggs",
+    "piimad" : "Milk"
+  },
+  "details" : {
+    "origin" : "Latvia",
+    "description" : "Banaanimaitseline piimajook",
+    "ingredients" : "PIIM, banaanimaitseline lisand 10% (suhkur, banaanimahl banaanimahla kontsentraadist 3%, niiskusesäilitaja glütserool, modifitseeritud tärklis E1442, looduslik banaani lõhna- ja maitseaine, happesuse regulaator kaaliumfosfaadid, safloori ja sidruni kontsentraat), stabilisaatorid: gellaankummi, karrageen.",
+    "brand" : "WELL DONE"
+  }
+}

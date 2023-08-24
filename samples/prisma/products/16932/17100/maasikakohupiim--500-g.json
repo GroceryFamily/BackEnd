@@ -1,0 +1,18 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "maasikakohupiim--500-g",
+  "name" : "Maasikakohupiim, 500 g",
+  "url" : "https://prismamarket.ee/entry/17100/maasikakohupiim--500-g/6414893095991",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "6414893095991",
+    "origin" : "Germany",
+    "description" : "X-tra maasikakohupiimas on rasva ainult 0,2%. Maasikakohupiim sobib hästi vahepalaks või magustoiduks.",
+    "ingredients" : "kohupiim 45% (rasvavaba piim, juuretis, mikrobioloogiline laap), jogurt (rasvavaba piim, juuretis), suhkur, maasikas 8%, glükoosi- ja fruktoosisiirup, modifitseeritud maisitärklis, kontsentraadid (porgand, punapeet, aroonia), lõhnaaine.",
+    "brand" : "X-TRA"
+  }
+}

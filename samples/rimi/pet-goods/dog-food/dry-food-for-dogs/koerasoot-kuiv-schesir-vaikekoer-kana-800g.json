@@ -9,6 +9,8 @@
     "pet-goods" : "Pet goods"
   },
   "details" : {
+    "origin" : "Italy",
+    "ingredients" : "\"24% kuivatatud liha (kana 18%), mais, 15% riis, rafineeritud searasv, oder, 5% heeringajahu, maisigluteen, 4% suhkrupeedi kuivainet 1% FOS, 0.8% päevalilleõli, 0.8% munapulber, 0.5% õllepärm, dikaltsiumfosfaat, Kaaliumkloriid, Naatriumkloriid, 0,3% kuivatatud maitsetaimi (aloe vera, teelehed, rosmariin, saialill, kummel, roheline tee, apteegitill, kurkum ja nõges) 0.1% yucca. \"",
     "brand" : "Schesir"
   }
 }

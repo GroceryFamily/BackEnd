@@ -1,0 +1,18 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "keefir-2-5---1-kg",
+  "name" : "Keefir 2,5%, 1 kg",
+  "url" : "https://prismamarket.ee/entry/17103/keefir-2-5---1-kg/4740125321043",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "4740125321043",
+    "origin" : "Estonia",
+    "description" : "Keerulise Lactobacillus rhamnosus GG nime taha on peitunud enimuuritud piimhappebakter, mis muudab Valio Gefilus keefiri eriliseks. Lõuna-Eestis Laeva meiereis valmistatud keefir on number 1 keefir Eestis, mõistagi peitub põhjus tema imelises maitses",
+    "ingredients" : "piim, juuretis, piimhappebakter Lactobacillus rhamnosus gg, D-vitamiin",
+    "brand" : "GEFILUS"
+  }
+}

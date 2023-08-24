@@ -10,6 +10,9 @@
   },
   "details" : {
     "ean" : "4740125525236",
+    "origin" : "Estonia",
+    "description" : "Parajalt vedel konsistents ning puhas maitse teevad jogurtist ideaalse kaaslase hommikusöögihelvestele, jogurt sobib suurepäraselt ka lihtsalt kosutavaks vahepalaks. Alma joogijogurtid ei sisalda säilitusaineid ning on valmistatud puhtast Eestimaa piimast",
+    "ingredients" : "piim, metsamarjamaitseline siirup (suhkur, vesi, modifitseeritud tärklis, paksendaja (pektiinid), punaste marjade, vaarika, mustika lõhna- ja maitseained, toiduvärv (peedipunane), happesuse regulaator (sidrunhape)), suhkur, juuretis, D-vitamiin.",
     "brand" : "ALMA"
   }
 }

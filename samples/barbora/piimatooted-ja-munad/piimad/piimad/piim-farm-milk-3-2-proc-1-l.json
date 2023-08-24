@@ -1,0 +1,17 @@
+{
+  "namespace" : "barbora.ee",
+  "code" : "piim-farm-milk-3-2-proc-1-l",
+  "name" : "Piim FARM MILK 3,2%, 1L",
+  "url" : "https://barbora.ee/toode/piim-farm-milk-3-2-proc-1-l",
+  "prices" : [ ],
+  "categories" : {
+    "piimatooted-ja-munad" : "Dairy and eggs",
+    "piimad" : "Milk"
+  },
+  "details" : {
+    "origin" : "Poland",
+    "description" : "Pastöriseeritud piim, mikrofiltreeritud, 3,2% rasva.",
+    "ingredients" : "Pastöriseeritud lehmaPIIM",
+    "brand" : "FARM MILK"
+  }
+}

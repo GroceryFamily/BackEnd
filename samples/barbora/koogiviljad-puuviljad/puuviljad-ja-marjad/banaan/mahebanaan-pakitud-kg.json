@@ -8,5 +8,7 @@
     "koogiviljad-puuviljad" : "Vegetables and fruits",
     "puuviljad-ja-marjad" : "Fruits and berries"
   },
-  "details" : { }
+  "details" : {
+    "origin" : "Ecuador"
+  }
 }

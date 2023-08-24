@@ -1,0 +1,17 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "toorjuustu-dessert-mango-150g",
+  "name" : "Toorjuustu dessert Mango 150g",
+  "url" : "https://prismamarket.ee/entry/17099/toorjuustu-dessert-mango-150g/4740218003641",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "4740218003641",
+    "origin" : "Estonia",
+    "ingredients" : "kohupiim, toorjuust 30%, rõõsk koor, küpsisepuru (nisujahu, suhkur, rapsiõli, kakaopulber 4,5%, nisutärklis, munamass, glükoos-fruktoosisiirup, kergitusained (kaaliumkarbonaadid), sool, emulgaator (sojaletsitiin), lõhna- ja maitseaine), mangopüree 10%, suhkur, vanilliin",
+    "brand" : "NOPRI"
+  }
+}

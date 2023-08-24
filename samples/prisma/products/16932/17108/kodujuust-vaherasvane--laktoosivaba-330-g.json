@@ -1,0 +1,17 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "kodujuust-vaherasvane--laktoosivaba-330-g",
+  "name" : "Kodujuust väherasvane, laktoosivaba 330 g",
+  "url" : "https://prismamarket.ee/entry/17108/kodujuust-vaherasvane--laktoosivaba-330-g/4740113093549",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "4740113093549",
+    "origin" : "Estonia",
+    "ingredients" : "kodujuust (pastöriseeritud rasvatu piim, juuretis), rõõsk koor, sool",
+    "brand" : "FARMI"
+  }
+}

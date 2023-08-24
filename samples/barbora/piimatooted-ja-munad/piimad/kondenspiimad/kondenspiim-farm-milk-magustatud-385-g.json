@@ -1,0 +1,16 @@
+{
+  "namespace" : "barbora.ee",
+  "code" : "kondenspiim-farm-milk-magustatud-385-g",
+  "name" : "Kondenspiim FARM MILK magustatud, 385g",
+  "url" : "https://barbora.ee/toode/kondenspiim-farm-milk-magustatud-385-g",
+  "prices" : [ ],
+  "categories" : {
+    "piimatooted-ja-munad" : "Dairy and eggs",
+    "piimad" : "Milk"
+  },
+  "details" : {
+    "origin" : "Lithuania",
+    "description" : "Magustatud kondenspiim. Rasva vähemalt 8%, rasvata piimakuivaine sisaldus vähemalt 20%.",
+    "brand" : "FARM MILK"
+  }
+}

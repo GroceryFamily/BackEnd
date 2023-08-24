@@ -1,0 +1,17 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "koogikoor-15---laktoosivaba-400-ml",
+  "name" : "Köögikoor 15%, laktoosivaba 400 ml",
+  "url" : "https://prismamarket.ee/entry/17106/koogikoor-15---laktoosivaba-400-ml/4740113093556",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "4740113093556",
+    "origin" : "Estonia",
+    "ingredients" : "rõõsk koor, paksendajad (modifitseeritud tärklis, guarkummi, E472e)",
+    "brand" : "FARMI"
+  }
+}

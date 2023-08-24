@@ -1,0 +1,16 @@
+{
+  "namespace" : "barbora.ee",
+  "code" : "piim-alma-2-5-proc-1-5-l",
+  "name" : "Piim ALMA 2,5%, 1,5L",
+  "url" : "https://barbora.ee/toode/piim-alma-2-5-proc-1-5-l",
+  "prices" : [ ],
+  "categories" : {
+    "piimatooted-ja-munad" : "Dairy and eggs",
+    "piimad" : "Milk"
+  },
+  "details" : {
+    "origin" : "Estonia",
+    "ingredients" : "Pastöriseeritud PIIM.",
+    "brand" : "ALMA"
+  }
+}

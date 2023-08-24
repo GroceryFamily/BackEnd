@@ -8,5 +8,8 @@
     "aiakaubad" : "Gardening",
     "kodukaubad-ja-vaba-aeg" : "Home and leisure"
   },
-  "details" : { }
+  "details" : {
+    "origin" : "Lithuania",
+    "description" : "Üheaastane rohttaim. Lehed korjatakse enne õitsemist, sest siis on nad kõige aromaatsemad. Tarvitatakse värskelt, külmutatult, vilus kuivatatult. Sobib kasvatamiseks aias, rõdudel, aknalaual.Väetisega seemnelintide (15-9-12+2MgO+TE) eelised: kerge külvata, seemned idanevad ühtlasemalt, külv on korrapärane. Seemnelindil olev väetis parandab istikute kvaliteeti. Enne seemnelintide mulda viimist soovitatakse mulda rikkalikult kasta. Seemnelint katta mullaga ja veelkord kasta. Piisava niiskuse olemasolul idanevad seemned ühtlaselt ja kiiremini. Sortide segusse 50% : 50%"
+  }
 }

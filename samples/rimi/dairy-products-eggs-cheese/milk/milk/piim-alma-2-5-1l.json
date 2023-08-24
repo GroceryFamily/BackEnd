@@ -1,0 +1,16 @@
+{
+  "namespace" : "rimi.ee",
+  "code" : "piim-alma-2-5-1l",
+  "name" : "Piim Alma 2,5% 1l",
+  "url" : "https://rimi.ee/epood/en/products/dairy-products-eggs-cheese/milk/milk/piim-alma-2-5-1l/p/200104",
+  "prices" : [ ],
+  "categories" : {
+    "milk" : "Milk",
+    "dairy-products-eggs-cheese" : "Dairy products, eggs, cheese"
+  },
+  "details" : {
+    "origin" : "Estonia",
+    "ingredients" : "PIIM",
+    "brand" : "Alma"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "valio-vaarikakissell-magusainetega-1kg",
+  "name" : "Valio vaarikakissell magusainetega 1kg",
+  "url" : "https://prismamarket.ee/entry/17101/valio-vaarikakissell-magusainetega-1kg/6408430062171",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "6408430062171",
+    "origin" : "Finland",
+    "ingredients" : "Vesi, vaarikamahl (10%, kontsentraadist), vaarikad (5%), paksendaja (guarkummi), modifitseeritud maisitärklis, happesuse regulaator (sidrunhape), toiduvärv (peedipunane), magusained (aspartaam*, atsesulfaam K). * Sisaldab fenüülalaniini allikat.",
+    "brand" : "VALIO"
+  }
+}

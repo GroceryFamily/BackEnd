@@ -9,6 +9,9 @@
     "jogurtid-ja-desserdid" : "Yoghurts and desserts"
   },
   "details" : {
+    "origin" : "Estonia",
+    "description" : "Alma täispiimajogurt on valmistatud puhtast kodumaisest maapiimast ning hoiab au sees mälestusi maavanaemast. Südantsoojendav kodune tunne igas suutäies.",
+    "ingredients" : "TÄISPIIM, suhkur, õunad 4,2%, LÕSSIPULBER, modifitseeritud tärklis, lõhna-ja maitseained, kaneel 0,03%, paksendaja (pektiin), happesuse regulator (kaltsiumtsitraat), karamellisiirup, happesuse regulator (naatriumtsitraat), juuretis.",
     "brand" : "ALMA"
   }
 }

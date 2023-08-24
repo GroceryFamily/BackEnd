@@ -8,5 +8,8 @@
     "aiakaubad" : "Gardening",
     "kodukaubad-ja-vaba-aeg" : "Home and leisure"
   },
-  "details" : { }
+  "details" : {
+    "origin" : "Lithuania",
+    "description" : "Lühiviljaline kurk Anulka H - Keskvarajane, viljakas kornišon tüüpi hübriid avamaal kasvatamiseks. Viljad on korrapärase kujuga, lühikesed, suurte kühmudega. Tarvitakse värskelt või konserveerimiseks."
+  }
 }

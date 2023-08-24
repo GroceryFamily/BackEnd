@@ -1,0 +1,17 @@
+{
+  "namespace" : "barbora.ee",
+  "code" : "kohvijook-starbucks-cappuccino-220-ml",
+  "name" : "Kohvijook STARBUCKS Cappuccino, 220ml",
+  "url" : "https://barbora.ee/toode/kohvijook-starbucks-cappuccino-220-ml",
+  "prices" : [ ],
+  "categories" : {
+    "piimatooted-ja-munad" : "Dairy and eggs",
+    "piimad" : "Milk"
+  },
+  "details" : {
+    "origin" : "Denmark",
+    "description" : "Tugeva espresso maitse ja luksusliku tekstuuriga. Sisaldab vähem piima kui Latte. Parim jahutatult tarbides. Starbucks kasutab oma toodangus vaid Fairtrade-sertifitseeritud kohviube.",
+    "ingredients" : "3% rasvasisaldusega PIIM (75%), Starbucks® kohv (vesi ja kohviekstrakt) (19,5%), suhkur (5%), vähendatud rasvasisaldusega kakaopulber (0,1%), looduslik vanilli lõhna- ja maitseaine, happesse regulaator (kaaliumkarbonaat), stabilisaatorid (karrageen, guargummi), emulgaatorid (taimset päritolu rasvhapete mono- ja diglütseriidid).",
+    "brand" : "STARBUCKS"
+  }
+}

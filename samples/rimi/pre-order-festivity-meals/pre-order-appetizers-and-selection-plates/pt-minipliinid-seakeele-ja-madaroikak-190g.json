@@ -7,5 +7,8 @@
   "categories" : {
     "pre-order-festivity-meals" : "Pre-order festivity meals"
   },
-  "details" : { }
+  "details" : {
+    "origin" : "Estonia",
+    "ingredients" : "Mädarõikakreem 52,8% [toorJUUST (kohuPIIM, modifitseeritud tärklis, sool, paksendaja: E410, E412), mädarõigas (mädarõikajuured, vesi, rapsiõli, suhkur, happesuse regulaator: E260, E330; sool, antioksüdandid: E300, E223)], minipliin 32,5% (NISUjahu, täisPIIM, vesi, vabapidamise kanaMUNA, kontsentreeritud VÕI, kergitusained: E450, E500; roosuhkur, sool, NISUtärklis, päevalilleõli), suitsutatud seakeel 6,6% (seakeel, vesi, sool, stabilisaator: E450, E451; suhkur, antioksüdant: E316; säilitusaine: E250), kurk, till, paprikahelves."
+  }
 }

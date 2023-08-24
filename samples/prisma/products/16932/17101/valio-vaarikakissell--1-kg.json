@@ -1,0 +1,17 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "valio-vaarikakissell--1-kg",
+  "name" : "Valio vaarikakissell, 1 kg",
+  "url" : "https://prismamarket.ee/entry/17101/valio-vaarikakissell--1-kg/6408430062157",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "6408430062157",
+    "origin" : "Finland",
+    "ingredients" : "vesi, suhkur, vaarikamahl 11,5%, vaarikad (5,5%), paksendaja( guarkummi), modifitseeritud maisitärklis, happesuse regulaator (sidrunhape), C-vitamiin",
+    "brand" : "VALIO"
+  }
+}

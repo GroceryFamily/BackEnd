@@ -1,0 +1,18 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "juuretisega-kaerajook-mango-330ml",
+  "name" : "Juuretisega kaerajook Mango 330ml",
+  "url" : "https://prismamarket.ee/entry/17104/juuretisega-kaerajook-mango-330ml/4742117001698",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "4742117001698",
+    "origin" : "Estonia",
+    "description" : "Mango kaerajook ehtsa jogurtijuuretisega sisaldab ainult mango loomulikku suhkrut. Imemaitsev kaerajook on suurepärane loommulikult laktoosivaba alternatiiv piimast.Valmistatud Eestis. Preserve in cool place",
+    "ingredients" : "kaerajook (vesi, kaer 24%), mangopüree 17%, (mango 100%), rapsiõli, stabilisaator (modifitseeritud tärklis E1442, pektiin, psüllium (standardiseeritud sahharoosiga), juuretis 0,002%",
+    "brand" : "BON VEGAN"
+  }
+}

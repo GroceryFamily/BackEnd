@@ -1,0 +1,17 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "laktoosivaba-vanillipuding--200-g",
+  "name" : "Laktoosivaba vanillipuding, 200 g",
+  "url" : "https://prismamarket.ee/entry/17099/laktoosivaba-vanillipuding--200-g/4740036015901",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "4740036015901",
+    "origin" : "Estonia",
+    "ingredients" : "piim, suhkur, modifitseeritud tärklis, paksendajad (guarkummi, karrageen), lõssipulber, sool, vanilliin",
+    "brand" : "TERE"
+  }
+}

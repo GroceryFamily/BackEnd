@@ -8,5 +8,8 @@
     "aiakaubad" : "Gardening",
     "kodukaubad-ja-vaba-aeg" : "Home and leisure"
   },
-  "details" : { }
+  "details" : {
+    "origin" : "Lithuania",
+    "description" : "Mitmeaastane. Taime kõrgus kuni 35 cm. Õie läbimõõt 5 cm, vars - hargnev. Seemned idanevad 12-16 päeva jooksul. Hästi kasvavad keskmise niiskusega, toitainerikkas mullas, päikesepaistelises või poolvarjulises kohas. Samas kohas võib kasvada järjest 4-5 aastat. Istutatakse sügisel (septembris), harvemini ka kevadel. Istutatakse gruppidena koos teiste mitmeaastaste taimedega. Paljundatakse seemnest ja istikutest. Talveks ei pea kinni katma."
+  }
 }

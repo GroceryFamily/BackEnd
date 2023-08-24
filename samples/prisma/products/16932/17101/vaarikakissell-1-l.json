@@ -1,0 +1,16 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "vaarikakissell-1-l",
+  "name" : "Vaarikakissell 1 l",
+  "url" : "https://prismamarket.ee/entry/17101/vaarikakissell-1-l/7340011341611",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "7340011341611",
+    "origin" : "Sweden",
+    "brand" : "XTRA"
+  }
+}

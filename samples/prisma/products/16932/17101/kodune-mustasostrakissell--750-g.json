@@ -1,0 +1,18 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "kodune-mustasostrakissell--750-g",
+  "name" : "Kodune mustasõstrakissell, 750 g",
+  "url" : "https://prismamarket.ee/entry/17101/kodune-mustasostrakissell--750-g/4740153700025",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "4740153700025",
+    "origin" : "Estonia",
+    "description" : "Preserve in cool place",
+    "ingredients" : "vesi, mustasõstralisand (suhkur, mustasõstrapüree (30%), vesi, modifitseeritud tärklis, sidrunhape, lõhna- ja maitseaine), suhkur, modifitseeritud maisitärklis",
+    "brand" : "MO SAAREMAA"
+  }
+}

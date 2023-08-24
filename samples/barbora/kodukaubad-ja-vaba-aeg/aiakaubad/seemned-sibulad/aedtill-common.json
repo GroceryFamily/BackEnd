@@ -8,5 +8,8 @@
     "aiakaubad" : "Gardening",
     "kodukaubad-ja-vaba-aeg" : "Home and leisure"
   },
-  "details" : { }
+  "details" : {
+    "origin" : "Lithuania",
+    "description" : "Keskmiselt varajane viljakas sort. Kasvab poolvarjus. Kui kogu suve jooksul soovite värskeid tille, siis tuleb külvata iga 10 päeva tagant. Toiduks kasutatakse lehti, õisikuid ja varsi."
+  }
 }

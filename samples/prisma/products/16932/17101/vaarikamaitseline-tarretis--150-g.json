@@ -1,0 +1,17 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "vaarikamaitseline-tarretis--150-g",
+  "name" : "Vaarikamaitseline tarretis, 150 g",
+  "url" : "https://prismamarket.ee/entry/17101/vaarikamaitseline-tarretis--150-g/4740113070014",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "4740113070014",
+    "origin" : "Estonia",
+    "ingredients" : "vesi, suhkur, želatiin, happesuse regulaator sidrunhape, vaarika lõhna- ja maitseaine, mustsõstra mahl",
+    "brand" : "JÄNKS"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "magustamata-mandlijook--1-l",
+  "name" : "Magustamata mandlijook, 1 l",
+  "url" : "https://prismamarket.ee/entry/17104/magustamata-mandlijook--1-l/7340011474180",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "7340011474180",
+    "description" : "Lisatud B2-, B12- ja D2-vitamiini ja kaltsiumi. Homogeenitud ja kõrgkuumutatud. Laktoosivaba. Veganlik.",
+    "ingredients" : "vesi, mandlid (2%), mineraaltoitaine (kaltsiumkarbonaat), paksendajad (E418, E412), emulgaator (E322), sool, vitamiinid (B2, B12, D2). Võib sisaldada vähesel määral sarapuupähkleid, kašupähkleid ja pistaatsiapähkleid. Mandlite päritolumaa: vt kuupäeva juurde märgitud koodi. us = Ameerika Ühendriigid. au = Austraalia. es = Hispaania.",
+    "brand" : "RAINBOW"
+  }
+}

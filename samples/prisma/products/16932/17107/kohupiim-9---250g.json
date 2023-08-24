@@ -1,0 +1,17 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "kohupiim-9---250g",
+  "name" : "Kohupiim 9%, 250g",
+  "url" : "https://prismamarket.ee/entry/17107/kohupiim-9---250g/4750072014189",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "4750072014189",
+    "origin" : "Latvia",
+    "description" : "teraline kohupiim Preserve in cool place",
+    "ingredients" : "piim ,juuretis"
+  }
+}

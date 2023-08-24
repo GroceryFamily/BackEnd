@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
-    "ean" : "2060490800007"
+    "ean" : "2060490800007",
+    "origin" : "Costa rica"
   }
 }

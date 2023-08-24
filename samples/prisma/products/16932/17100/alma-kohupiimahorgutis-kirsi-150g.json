@@ -1,0 +1,18 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "alma-kohupiimahorgutis-kirsi-150g",
+  "name" : "Alma kohupiimahõrgutis kirsi 150g",
+  "url" : "https://prismamarket.ee/entry/17100/alma-kohupiimahorgutis-kirsi-150g/4740125632453",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "4740125632453",
+    "origin" : "Estonia",
+    "description" : "Kihiline kohupiimamagustoit koos maitsva moosilisandiga. Kohupiima maitsestab kerge vanillinoot. Sobib ideaalselt magustoiduks, kuid ka vahepalaks. Preserve in cool place",
+    "ingredients" : "kohupiim 76%, vesi, suhkur, kirss 4,5%, modifitseeritud tärklis, paksendajad (pektiin, jaanileivapuujahu), lõhna- ja maitseained, happesuse regulaatorid (sidrunhape, naatriumtsitraadid), toiduvärvid (peedipunane, beetakaroteen).",
+    "brand" : "ALMA"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "vanilli-glasuurkohuke--45-g",
+  "name" : "Vanilli glasuurkohuke, 45 g",
+  "url" : "https://prismamarket.ee/entry/17100/vanilli-glasuurkohuke--45-g/4750050341405",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "4750050341405",
+    "origin" : "Latvia",
+    "ingredients" : "kohupiim 63%, suhkur, glasuur 18% (või, suhkur, kakaopulber), lõhnaaine vanilliin",
+    "brand" : "KARUMS"
+  }
+}

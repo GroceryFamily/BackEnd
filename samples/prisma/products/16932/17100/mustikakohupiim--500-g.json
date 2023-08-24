@@ -1,0 +1,18 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "mustikakohupiim--500-g",
+  "name" : "Mustikakohupiim, 500 g",
+  "url" : "https://prismamarket.ee/entry/17100/mustikakohupiim--500-g/6414893096035",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "6414893096035",
+    "origin" : "Germany",
+    "description" : "X-tra mustikakohupiimas on rasva ainult 0,2%. Mustikakohupiim sobib hästi vahepalaks või magustoiduks.",
+    "ingredients" : "kohupiim 45% (rasvavaba piim, juuretis, mikrobioloogiline laap), jogurt (rasvavaba piim, juuretis), mustikas 8%, suhkur, glükoosi- ja fruktoosisiirup, modifitseeritud maisitärklis, leedrimarja täismahl, lõhnaaine.",
+    "brand" : "X-TRA"
+  }
+}

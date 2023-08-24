@@ -8,5 +8,8 @@
     "aiakaubad" : "Gardening",
     "kodukaubad-ja-vaba-aeg" : "Home and leisure"
   },
-  "details" : { }
+  "details" : {
+    "origin" : "Poland",
+    "description" : "Aedspinati idud on maheda, magusavõitu maitsega, ilmekate, roheliste lehtede ja rohekate vartega. Külvatud seemneid hoida kaetult 2-3 päeva, idanemine algab 3-5 päeva pärast. Idusid kasutada 10-14 päeva pärast."
+  }
 }

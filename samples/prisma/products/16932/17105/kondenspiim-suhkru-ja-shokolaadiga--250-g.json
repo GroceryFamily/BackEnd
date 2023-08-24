@@ -1,0 +1,18 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "kondenspiim-suhkru-ja-shokolaadiga--250-g",
+  "name" : "Kondenspiim suhkru ja shokolaadiga, 250 g",
+  "url" : "https://prismamarket.ee/entry/17105/kondenspiim-suhkru-ja-shokolaadiga--250-g/4740502003302",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "4740502003302",
+    "origin" : "Estonia",
+    "description" : "Toode sobib nii edasiseks toidu valmistamiseks kui ka vahetult tarvitamiseks",
+    "ingredients" : "pastöriseeritud piim*, suhkur, täispiimapulber, šokolaadipulber 5% (s.h. Kakaopulber)",
+    "brand" : "JAANI"
+  }
+}

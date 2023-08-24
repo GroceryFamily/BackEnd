@@ -1,0 +1,17 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "toidukoor-20---400-ml",
+  "name" : "Toidukoor 20%, 400 ml",
+  "url" : "https://prismamarket.ee/entry/17106/toidukoor-20---400-ml/4740125220094",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "4740125220094",
+    "origin" : "Estonia",
+    "ingredients" : "20% rõõsk KOOR",
+    "brand" : "ALMA"
+  }
+}

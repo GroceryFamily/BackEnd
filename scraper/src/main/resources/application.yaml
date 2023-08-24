@@ -17,6 +17,7 @@ GroceryDad:
         waitTimeout: 5s
         sleepDelay: 500ms
       allowlist:
+        - [ "Dairy and eggs", "Milk", "*" ]
         - [ "Dairy and eggs", "Yoghurts and desserts", "Flavored yoghurts", "*" ] # two product pages
         - [ "Home and leisure", "Gardening", "Seeds", "*" ]
         - [ "Household and pets", "Pets", "Dry dog food", "*" ]
@@ -30,7 +31,7 @@ GroceryDad:
         sleepDelay: 500ms
       allowlist:
         - [ "Groceries", "Fruits and vegetables", "Fruit", "*" ] # need to scroll down
-        - [ "Groceries", "Milk", "Yogurt", "*" ]
+        - [ "Groceries", "Milk", "*" ]
         - [ "Groceries", "Pets", "Dog food", "*" ]
 
     rimi:
@@ -40,6 +41,7 @@ GroceryDad:
         waitTimeout: 5s
         sleepDelay: 500ms
       allowlist:
+        - [ "Dairy products, eggs, cheese", "Milk", "*" ]
         - [ "Fruits, vegetables, flowers", "Fruits", "Bananas", "*" ]
         - [ "Meat and fish products", "Fish roe and seafood", "Fish roe", "*" ]
         - [ "Pet goods", "Dog food", "Dry food for dogs", "*" ]

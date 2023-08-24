@@ -9,6 +9,8 @@
     "products" : "Groceries"
   },
   "details" : {
-    "ean" : "2060400800004"
+    "ean" : "2060400800004",
+    "origin" : "Egypt",
+    "description" : "Pilt on illustreeriv."
   }
 }

@@ -9,6 +9,9 @@
     "jogurtid-ja-desserdid" : "Yoghurts and desserts"
   },
   "details" : {
+    "origin" : "Estonia",
+    "description" : "Topsis valminud koorejogurt, omadustel eriti kreemjas ja tummine.",
+    "ingredients" : "PETT, rasvatu PIIM, RÕÕSK KOOR, vaarika-granaatõunalisand 12%(suhkur, vaarikad(25%), vesi, granaatõunad(10%), paksendaja: modifitseeritud tärklis, lõhna- ja maitseained, happesuse regulaator: naatriumtsitraat, toiduvärv: peedimahla kontsentraat), suhkur, PIIMavalk, juuretis, LAAP.",
     "brand" : "SAARE"
   }
 }

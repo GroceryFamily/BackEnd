@@ -1,0 +1,17 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "kakao-proteiinipuding--150-g",
+  "name" : "Kakao proteiinipuding, 150 g",
+  "url" : "https://prismamarket.ee/entry/17099/kakao-proteiinipuding--150-g/4740036013426",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "4740036013426",
+    "origin" : "Estonia",
+    "ingredients" : "piim, piimavalk, magusained (maltitool, steviool-glükosiid), kakaopulber 18%, paksendajad (tärklis, guarkummi, karrageen), dekstriin, inuliin, sool.",
+    "brand" : "FIT"
+  }
+}

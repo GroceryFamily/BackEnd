@@ -1,0 +1,17 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "kirssidega-kodujuust--150-g",
+  "name" : "Kirssidega kodujuust, 150 g",
+  "url" : "https://prismamarket.ee/entry/17108/kirssidega-kodujuust--150-g/4770237043328",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "4770237043328",
+    "origin" : "Lithuania",
+    "ingredients" : "kodujuustu terad, koor, kirsi valmissegu 20% (suhkur, kirsid 35%, paksendaja pektiin, happesuse regulaator sidrunihape, antioksüdant askorbiinhape, maitseained), sool.",
+    "brand" : "AASA"
+  }
+}

@@ -9,6 +9,8 @@
     "products" : "Groceries"
   },
   "details" : {
-    "ean" : "2060490400009"
+    "ean" : "2060490400009",
+    "origin" : "Spain",
+    "description" : "Pilt on illustreeriv. Arbuus"
   }
 }

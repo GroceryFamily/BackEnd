@@ -1,0 +1,17 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "-oreo--dessert-banaaniga-150-g",
+  "name" : "\"Oreo\" dessert banaaniga 150 g",
+  "url" : "https://prismamarket.ee/entry/17099/-oreo--dessert-banaaniga-150-g/4740218003016",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "4740218003016",
+    "origin" : "Estonia",
+    "ingredients" : "Kohupiim, \"Oreo\" küpsisepuru 7% (nisujahu, suhkur, rapsiõli, kakaopulber 4,5%, nisutärklis, glükoos-fruktoosisiirup, kergitusained (kaaliumkarbonaadid), sool, emulgaator (sojaletsitiin), lõhna- ja maitseaine), banaanilisand 5% (suhkur, banaani püree 25%, vesi, paksendaja tärklis, banaani lõhna ja maitseaine), suhkur",
+    "brand" : "NOPRI"
+  }
+}

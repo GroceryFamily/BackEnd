@@ -1,0 +1,16 @@
+{
+  "namespace" : "barbora.ee",
+  "code" : "piim-farm-milk-2-5-proc-1-l-kile",
+  "name" : "Piim FARM MILK 2,5%, 1L kile",
+  "url" : "https://barbora.ee/toode/piim-farm-milk-2-5-proc-1-l-kile",
+  "prices" : [ ],
+  "categories" : {
+    "piimatooted-ja-munad" : "Dairy and eggs",
+    "piimad" : "Milk"
+  },
+  "details" : {
+    "origin" : "Estonia",
+    "ingredients" : "Pastöriseeritud PIIM.",
+    "brand" : "FARM MILK"
+  }
+}

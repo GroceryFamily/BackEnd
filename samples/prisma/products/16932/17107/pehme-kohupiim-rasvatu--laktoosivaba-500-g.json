@@ -1,0 +1,18 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "pehme-kohupiim-rasvatu--laktoosivaba-500-g",
+  "name" : "Pehme kohupiim rasvatu, laktoosivaba 500 g",
+  "url" : "https://prismamarket.ee/entry/17107/pehme-kohupiim-rasvatu--laktoosivaba-500-g/4740153101112",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "4740153101112",
+    "origin" : "Estonia",
+    "description" : "Preserve in cool place",
+    "ingredients" : "Pastöriseeritud rasvatu piim, juuretis",
+    "brand" : "MO SAAREMAA"
+  }
+}

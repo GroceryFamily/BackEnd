@@ -1,0 +1,17 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "taimne-karamellipuding--150-g",
+  "name" : "Taimne karamellipuding, 150 g",
+  "url" : "https://prismamarket.ee/entry/17099/taimne-karamellipuding--150-g/4740036015895",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "4740036015895",
+    "origin" : "Estonia",
+    "ingredients" : "kaerapõhi (vesi, kaer 9%), rapsiõli, kaltsiumkarbonaat, sool, stabilisaator (gellankummi), vitamiinid (B2, foolhape, D2, B12), jood.",
+    "brand" : "DEARY"
+  }
+}

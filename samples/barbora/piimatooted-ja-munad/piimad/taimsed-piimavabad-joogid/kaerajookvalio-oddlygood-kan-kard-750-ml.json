@@ -1,0 +1,17 @@
+{
+  "namespace" : "barbora.ee",
+  "code" : "kaerajookvalio-oddlygood-kan-kard-750-ml",
+  "name" : "KaerajookVALIO Oddlygood kan.-kard.750ml",
+  "url" : "https://barbora.ee/toode/kaerajookvalio-oddlygood-kan-kard-750-ml",
+  "prices" : [ ],
+  "categories" : {
+    "piimatooted-ja-munad" : "Dairy and eggs",
+    "piimad" : "Milk"
+  },
+  "details" : {
+    "origin" : "Finland",
+    "description" : "Valio Oddlygood kaneeli- ja kardemonimaitseline kaerajook kohvile. Valio kaerajook on taimne toode, mis ei sisalda gluteeni ega laktoosi. Kaerajook on väljatöötatud koos baristadega ja sobib hästi nii filtrikohvi kui ka espresso baasil kohvijookidele lisamiseks. Sisaldab vitamiine (B2, B12 ja D2) ja kaera 10%.",
+    "ingredients" : "KAERApõhi (vesi, gluteenivaba KAERAJAHU, rapsiõli, kaltsium, sool, happesuse regulaator (kaaliumfosfaadid)), vesi, suhkur, looduslik kardemoni lõhna- ja maitseaine, kaneeli lõhna- ja maitseaine, lõhna- ja maitseaine, jood, vitamiinid (riboflaviin (B2), B12, D2). Sisaldab kaera 10 %.",
+    "brand" : "VALIO"
+  }
+}

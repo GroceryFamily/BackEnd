@@ -1,0 +1,18 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "kuuslaugu-juustu-dipikaste--200-g",
+  "name" : "Küüslaugu-juustu dipikaste, 200 g",
+  "url" : "https://prismamarket.ee/entry/17106/kuuslaugu-juustu-dipikaste--200-g/4740036004554",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "4740036004554",
+    "origin" : "Estonia",
+    "description" : "Meeldiva küüslaugu ja juustu maitsega hapukoorekaste, valmis serveerimiseks",
+    "ingredients" : "hapukoor, paksendaja (modifitseeritud tärklis), küüslauk 1,1%, sool 1,0%, suhkur, juustupulber 0,4%, lõhna- ja maitseaine, säilitusaine (kaaliumsorbaat, naatriumbensoaat)",
+    "brand" : "TERE"
+  }
+}

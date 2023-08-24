@@ -1,0 +1,17 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "vaherasvane-keefir-1---1-kg",
+  "name" : "Väherasvane keefir 1%, 1 kg",
+  "url" : "https://prismamarket.ee/entry/17103/vaherasvane-keefir-1---1-kg/4740036011149",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "4740036011149",
+    "origin" : "Estonia",
+    "ingredients" : "piim, juuretis, piimhappebakterid Lactobacillus fermentum me-3 (lisatud Tartu Ülikooli litsentsi alusel",
+    "brand" : "HELLUS"
+  }
+}

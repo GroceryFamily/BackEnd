@@ -1,0 +1,17 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "sojajook--1-l",
+  "name" : "Sojajook, 1 l",
+  "url" : "https://prismamarket.ee/entry/17104/sojajook--1-l/6414893397002",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "6414893397002",
+    "description" : "Rikastatud E-, B2- ja B12-vitamiini ning kaltsiumiga. Laktoosivaba. 100% taimne. Homogeniseeritud ja UHT-töödeldud. Preserve in cool place",
+    "ingredients" : "Vesi, sojaoad 7,2%, suhkur, mineraalaine (kaltsiumkarbonaat), stabilisaatorid (E418), meresool, happesuse regulaator (E340), vitamiinid (E-vitamiin, riboflaviin, B12-vitamiin), aroom.",
+    "brand" : "RAINBOW"
+  }
+}

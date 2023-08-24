@@ -1,0 +1,16 @@
+{
+  "namespace" : "barbora.ee",
+  "code" : "taispiim-farmi-3-8-4-2-proc-2-l",
+  "name" : "Täispiim FARMI 3,8-4,2%, 2L",
+  "url" : "https://barbora.ee/toode/taispiim-farmi-3-8-4-2-proc-2-l",
+  "prices" : [ ],
+  "categories" : {
+    "piimatooted-ja-munad" : "Dairy and eggs",
+    "piimad" : "Milk"
+  },
+  "details" : {
+    "origin" : "Estonia",
+    "ingredients" : "PIIM",
+    "brand" : "FARMI"
+  }
+}

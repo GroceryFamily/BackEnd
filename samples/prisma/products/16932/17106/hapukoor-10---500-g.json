@@ -1,0 +1,17 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "hapukoor-10---500-g",
+  "name" : "Hapukoor 10%, 500 g",
+  "url" : "https://prismamarket.ee/entry/17106/hapukoor-10---500-g/4740123000728",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "4740123000728",
+    "origin" : "Estonia",
+    "ingredients" : "rõõsk koor, juuretis",
+    "brand" : "FARMI"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "tere-deary-taimne-dessert-mango-150g",
+  "name" : "Tere Deary taimne dessert mango 150g",
+  "url" : "https://prismamarket.ee/entry/17101/tere-deary-taimne-dessert-mango-150g/4740036016250",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "4740036016250",
+    "origin" : "Estonia",
+    "description" : "Deary taimsed desserdid on valmistatud kookosõli baasil ja rikastatud herne ja mandli valguga, et hoida Sinu kõht peale maiustamist kauem täis püsiks. Taimsed desserdid sisaldavad ka triljoneid probiootilisi baktereid (L.acidophilus, Bifidobacterium, L.paracasei), mis hoiavad seedimise korras ja kõhubakterid õnnelikuna. Ja kui kõhubakterid on õnnelikud, oled ka Sina õnnelik! Suurepärane näide sellest, et midagi kasulikku võib olla ka nii maitsev!",
+    "ingredients" : "vesi, suhkur, mango 4%, mangopüree kontsentraadist 3%, modifitseeritud tärklis, täielikult hüdrogeenitud kookosõli, mandlivalk, hernevalk, paksendaja (pektiin, guarkummi), sidrunimahla kontsentraat, kõrvitsa- ja õunakontsentraat, looduslikud lõhna- ja maitseained, juuretis",
+    "brand" : "TERE DEARY"
+  }
+}

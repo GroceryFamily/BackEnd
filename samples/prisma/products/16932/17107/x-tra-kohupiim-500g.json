@@ -1,0 +1,18 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "x-tra-kohupiim-500g",
+  "name" : "X-TRA KOHUPIIM 500G",
+  "url" : "https://prismamarket.ee/entry/17107/x-tra-kohupiim-500g/6414893393004",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "6414893393004",
+    "origin" : "Germany",
+    "description" : "Maitsestamata rasvata kohupiim",
+    "ingredients" : "pastöriseeritud rasvata piim (el), piimhappebakter, mikrobioloogiline laap.",
+    "brand" : "X-TRA"
+  }
+}

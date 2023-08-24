@@ -19,6 +19,9 @@ class PrismaProductView extends View implements ProductView {
     public Product product() {
         var details = new HashMap<String, String>();
         brand().ifPresent(brand -> details.put(Detail.BRAND, brand));
+        origin().ifPresent(origin -> details.put(Detail.ORIGIN, origin));
+        description().ifPresent(description -> details.put(Detail.DESCRIPTION, description));
+        ingredients().ifPresent(ingredients -> details.put(Detail.INGREDIENTS, ingredients));
         ean().ifPresent(ean -> details.put(Detail.EAN, ean));
 
         return Product
@@ -34,12 +37,27 @@ class PrismaProductView extends View implements ProductView {
     }
 
     private Optional<String> brand() {
-        var brand = document.select("*[itemprop='brand']").text();
+        var brand = document.select("*[itemprop=brand]").text();
         return isBlank(brand) ? Optional.empty() : Optional.of(brand);
     }
 
+    private Optional<String> origin() {
+        var origin = document.select("h3:contains(origin)").next().text();
+        return isBlank(origin) ? Optional.empty() : Optional.of(origin);
+    }
+
+    private Optional<String> description() {
+        var description = document.select("*[itemprop=description]").text();
+        return isBlank(description) ? Optional.empty() : Optional.of(description);
+    }
+
+    private Optional<String> ingredients() {
+        var ingredients = document.select("#product-ingredients").text();
+        return isBlank(ingredients) ? Optional.empty() : Optional.of(ingredients);
+    }
+
     private Optional<String> ean() {
-        var ean = document.select("*[itemprop='sku']").text();
+        var ean = document.select("*[itemprop=sku]").text();
         return isBlank(ean) ? Optional.empty() : Optional.of(ean);
     }
 }

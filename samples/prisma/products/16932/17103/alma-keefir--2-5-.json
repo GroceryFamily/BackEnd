@@ -1,0 +1,17 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "alma-keefir--2-5-",
+  "name" : "Alma keefir, 2,5%",
+  "url" : "https://prismamarket.ee/entry/17103/alma-keefir--2-5-/4740125321036",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "4740125321036",
+    "origin" : "Estonia",
+    "ingredients" : "piim, juuretis",
+    "brand" : "ALMA"
+  }
+}

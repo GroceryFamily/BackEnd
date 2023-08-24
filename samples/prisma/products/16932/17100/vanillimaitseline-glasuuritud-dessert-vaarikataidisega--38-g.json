@@ -1,0 +1,17 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "vanillimaitseline-glasuuritud-dessert-vaarikataidisega--38-g",
+  "name" : "Vanillimaitseline glasuuritud dessert vaarikatäidisega, 38 g",
+  "url" : "https://prismamarket.ee/entry/17100/vanillimaitseline-glasuuritud-dessert-vaarikataidisega--38-g/47410145",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "47410145",
+    "origin" : "Estonia",
+    "ingredients" : "kohupiim 46%, kakaoglasuur 17% (suhkur, taimne rasv [kookos- ja palmituumaõli], kakaomass, lõssipulber, vähendatud rasvasisaldusega kakaopulber, vadakupulber, emulgaator: sojaletsitiin), taimne rasv (palmi-, võiseemniku- ja palmituumaõli), suhkur, vaarikatäidis 8% (suhkur, vaarikad, nisukiud, paksendaja: pektiin, toiduvärv: peedipunane, happesuse regulaatorid: sidrunhape, naatriumtsitraadid, kaltsiumtsitraadid, lõhna- ja maitseaine), vadakupulber, želatiin, vanilliin, säilitusaine: kaaliumsorbaat.",
+    "brand" : "JEPPI"
+  }
+}

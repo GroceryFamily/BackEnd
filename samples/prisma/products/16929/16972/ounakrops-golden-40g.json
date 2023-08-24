@@ -9,6 +9,9 @@
     "products" : "Groceries"
   },
   "details" : {
-    "ean" : "5997690711574"
+    "ean" : "5997690711574",
+    "origin" : "Hungary",
+    "description" : "Preserve in dry and dark place",
+    "ingredients" : "Golden õun,sidrunhape"
   }
 }

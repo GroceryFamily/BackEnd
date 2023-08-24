@@ -1,0 +1,17 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "janks-tutti-frutti-tarretis--150-g",
+  "name" : "Jänks Tutti-Frutti tarretis, 150 g",
+  "url" : "https://prismamarket.ee/entry/17101/janks-tutti-frutti-tarretis--150-g/4740113093693",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "4740113093693",
+    "origin" : "Estonia",
+    "ingredients" : "vesi, suhkur, želatiin, hape (sidrunhape), lõhna- ja maitseained, toiduvärv annaato.",
+    "brand" : "JÄNKS"
+  }
+}

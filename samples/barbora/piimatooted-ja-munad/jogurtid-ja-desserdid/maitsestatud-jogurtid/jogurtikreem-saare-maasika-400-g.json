@@ -9,6 +9,9 @@
     "jogurtid-ja-desserdid" : "Yoghurts and desserts"
   },
   "details" : {
+    "origin" : "Estonia",
+    "description" : "Saare 5% rasvasusega jogurtikreem on konsistentsilt eriti kreemjas jogurt, mis on valminud topsis. Saare jogurtikreemi tootmisel kasutatakse põhitoorainena Saaremaa koort ja piima, mille puhtus ja looduslik päritolukeskkond on kindlasti selle toote eeliseks. Tarbijate tagasiside põhjal annab Saare jogurtikreemis üllatavat tooni jogurti pehme maitse. Saare jogurtikreeme võib peale tavalise tarbimise kasutada ka kreemina kookide valmistamisel. Saare jogurtite eriti koorene ja paks konsistents võimaldab lihtsa vaevaga valmistada maitsvaid jogurtinööpe. Sisaldab kasulikke elus piimhappebaktereid Streptococcus thermophilus Lactobacillus delbrueckii subsp. Bulgaricus",
+    "ingredients" : "PETT, rasvatu PIIM, maasikalisand 14% (suhkur, maasikad (40%), vesi, paksendaja modifitseeritud tärklis, happesuse regulaator naatriumtsitraat, toiduvärv: peedimahla konsentraat, lõhna- ja maitseaine), RÕÕSK KOOR suhkur, PIIMAVALK, juuretis, laap.",
     "brand" : "SAARE"
   }
 }

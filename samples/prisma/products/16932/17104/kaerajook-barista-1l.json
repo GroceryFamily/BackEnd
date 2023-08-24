@@ -1,0 +1,18 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "kaerajook-barista-1l",
+  "name" : "kaerajook Barista 1l",
+  "url" : "https://prismamarket.ee/entry/17104/kaerajook-barista-1l/6408659990422",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "6408659990422",
+    "origin" : "Finland",
+    "description" : "Friendly Viking kaerajook Barista kohviga tarbimiseks, sobilik veganitele X",
+    "ingredients" : "vesi, gluteenivaba kaer (10%), rapsiseemneõli, dekstriin (kartulist), happesuseregulaator (dikaalumfosfaat), kaltsiumkarbonaat, sool, kaltsiumfosfaat, riboflaviin, foolhape, vitamiin D2, vitamiin B12",
+    "brand" : "FRIENDLY VIKING'S"
+  }
+}

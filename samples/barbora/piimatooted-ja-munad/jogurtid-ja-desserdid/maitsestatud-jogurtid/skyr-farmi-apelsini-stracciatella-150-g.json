@@ -9,6 +9,9 @@
     "jogurtid-ja-desserdid" : "Yoghurts and desserts"
   },
   "details" : {
+    "origin" : "Estonia",
+    "description" : "FARMI Skyr apelsini-stracciatella",
+    "ingredients" : "PIIM, suhkur, apelsinid 2,7% šokolaaditükid 1% (kakaomass, kakaovõi, suhkur), modifitseeritud tärklis, paksendajad (pektiin, guarkummi), lõhna- ja maitseaine, happesuse regulaatorid (sidrunhape, naatriumtsitraadid), tardaine (kaltsiumtsitraadid), toiduvärv (karoteenid), juuretis.",
     "brand" : "SKYR"
   }
 }

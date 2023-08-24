@@ -1,0 +1,17 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "spreikreem--250-g",
+  "name" : "Spreikreem, 250 g",
+  "url" : "https://prismamarket.ee/entry/17106/spreikreem--250-g/8711900021010",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "8711900021010",
+    "origin" : "Netherland",
+    "ingredients" : "koor 53%, rasvavaba piim, taimeõli, suhkur 6,5%, hüdrogeenitud taimeõli, glükoosisiirup, propellent N2O, emulgaator E471, stabilisaator E407, lõhnaaine",
+    "brand" : "CESSIBON"
+  }
+}

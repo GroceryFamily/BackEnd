@@ -1,0 +1,18 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "pehme-kohupiim-5---500g",
+  "name" : "Pehme kohupiim 5%, 500g",
+  "url" : "https://prismamarket.ee/entry/17107/pehme-kohupiim-5---500g/4740153101129",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "4740153101129",
+    "origin" : "Estonia",
+    "description" : "Preserve in cool place",
+    "ingredients" : "pastöriseeritud piim, juuretis",
+    "brand" : "MO SAAREMAA"
+  }
+}

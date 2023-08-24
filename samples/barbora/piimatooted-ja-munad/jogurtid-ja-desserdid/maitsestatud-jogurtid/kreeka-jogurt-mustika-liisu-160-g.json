@@ -9,6 +9,9 @@
     "jogurtid-ja-desserdid" : "Yoghurts and desserts"
   },
   "details" : {
+    "origin" : "Latvia",
+    "description" : "Kreerka jogurt mustika moosiga",
+    "ingredients" : "PIIM,mustikalisand,paksendaja,pektiin,sidrunhape,juuretis, naatriumsulfaat ,kaltsiumsulfaat",
     "brand" : "LIISU"
   }
 }
