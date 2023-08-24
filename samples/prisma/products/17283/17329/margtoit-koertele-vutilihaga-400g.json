@@ -4,15 +4,10 @@
   "name" : "Märgtoit koertele vutilihaga 400g",
   "url" : "https://prismamarket.ee/entry/17329/margtoit-koertele-vutilihaga-400g/5902921302407",
   "prices" : [ ],
-  "categories" : [ {
-    "code" : "17283",
-    "name" : "Pets",
-    "url" : "https://prismamarket.ee/products/17283"
-  }, {
-    "code" : "products",
-    "name" : "Groceries",
-    "url" : "https://prismamarket.ee/products/selection"
-  } ],
+  "categories" : {
+    "17283" : "Pets",
+    "products" : "Groceries"
+  },
   "details" : {
     "ean" : "5902921302407",
     "brand" : "PIPER"

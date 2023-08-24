@@ -4,15 +4,10 @@
   "name" : "Täissööt täiskasvanud koertele kanaga 825 g",
   "url" : "https://prismamarket.ee/entry/17329/taissoot-taiskasvanud-koertele-kanaga-825-g/4008429092107",
   "prices" : [ ],
-  "categories" : [ {
-    "code" : "17283",
-    "name" : "Pets",
-    "url" : "https://prismamarket.ee/products/17283"
-  }, {
-    "code" : "products",
-    "name" : "Groceries",
-    "url" : "https://prismamarket.ee/products/selection"
-  } ],
+  "categories" : {
+    "17283" : "Pets",
+    "products" : "Groceries"
+  },
   "details" : {
     "ean" : "4008429092107",
     "brand" : "PERFECT FIT"

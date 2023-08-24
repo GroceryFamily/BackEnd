@@ -4,15 +4,10 @@
   "name" : "Märgtoit koertele ulukiliha ja kõrvitsaga 500g",
   "url" : "https://prismamarket.ee/entry/17329/margtoit-koertele-ulukiliha-ja-korvitsaga-500g/5902921300274",
   "prices" : [ ],
-  "categories" : [ {
-    "code" : "17283",
-    "name" : "Pets",
-    "url" : "https://prismamarket.ee/products/17283"
-  }, {
-    "code" : "products",
-    "name" : "Groceries",
-    "url" : "https://prismamarket.ee/products/selection"
-  } ],
+  "categories" : {
+    "17283" : "Pets",
+    "products" : "Groceries"
+  },
   "details" : {
     "ean" : "5902921300274",
     "brand" : "PIPER"

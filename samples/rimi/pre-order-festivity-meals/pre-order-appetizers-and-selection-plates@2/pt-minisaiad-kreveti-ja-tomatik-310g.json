@@ -4,11 +4,9 @@
   "name" : "PT Minisaiad kreveti ja päikesekuivatatud tomatikreemiga 310g (ETTETELLIMISEGA)",
   "url" : "https://rimi.ee/epood/en/products/pre-order-festivity-meals/pre-order-appetizers-and-selection-plates/pt-minisaiad-kreveti-ja-tomatik-310g/p/981674",
   "prices" : [ ],
-  "categories" : [ {
-    "code" : "pre-order-festivity-meals",
-    "name" : "Pre-order festivity meals",
-    "url" : "https://rimi.ee/epood/en/products/pre-order-festivity-meals/c/SH-20"
-  } ],
+  "categories" : {
+    "pre-order-festivity-meals" : "Pre-order festivity meals"
+  },
   "details" : {
     "brand" : "Rimi"
   }

@@ -4,15 +4,10 @@
   "name" : "Sidrun, I klass",
   "url" : "https://prismamarket.ee/entry/16972/sidrun--i-klass/2060400800004",
   "prices" : [ ],
-  "categories" : [ {
-    "code" : "16929",
-    "name" : "Fruits and vegetables",
-    "url" : "https://prismamarket.ee/products/16929"
-  }, {
-    "code" : "products",
-    "name" : "Groceries",
-    "url" : "https://prismamarket.ee/products/selection"
-  } ],
+  "categories" : {
+    "16929" : "Fruits and vegetables",
+    "products" : "Groceries"
+  },
   "details" : {
     "ean" : "2060400800004"
   }

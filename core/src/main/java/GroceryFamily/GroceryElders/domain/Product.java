@@ -22,7 +22,7 @@ public class Product {
     @Builder.Default
     public final Set<Price> prices = Set.of();
     @Builder.Default
-    public final Set<Category> categories = Set.of();
+    public final Map<String, String> categories = Map.of();
     @Builder.Default
     public final Map<String, String> details = Map.of();
 
@@ -34,13 +34,6 @@ public class Product {
         return prices
                 .stream()
                 .map(price -> Identifiable.identify(price, id(), price.unit, price.currency))
-                .collect(toSet());
-    }
-
-    public Set<Identifiable<Category>> identifiableCategories() {
-        return categories
-                .stream()
-                .map(category -> Identifiable.identify(category, id(), category.code))
                 .collect(toSet());
     }
 }

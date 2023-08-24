@@ -4,15 +4,10 @@
   "name" : "Teraviljata koeratoit 5kg",
   "url" : "https://prismamarket.ee/entry/17329/teraviljata-koeratoit-5kg/6429810236043",
   "prices" : [ ],
-  "categories" : [ {
-    "code" : "17283",
-    "name" : "Pets",
-    "url" : "https://prismamarket.ee/products/17283"
-  }, {
-    "code" : "products",
-    "name" : "Groceries",
-    "url" : "https://prismamarket.ee/products/selection"
-  } ],
+  "categories" : {
+    "17283" : "Pets",
+    "products" : "Groceries"
+  },
   "details" : {
     "ean" : "6429810236043",
     "brand" : "WERRATON"

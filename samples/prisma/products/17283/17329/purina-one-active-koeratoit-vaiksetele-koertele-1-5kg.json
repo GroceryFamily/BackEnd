@@ -4,15 +4,10 @@
   "name" : "Purina One Active koeratoit väiksetele koertele 1,5kg",
   "url" : "https://prismamarket.ee/entry/17329/purina-one-active-koeratoit-vaiksetele-koertele-1-5kg/7613287034564",
   "prices" : [ ],
-  "categories" : [ {
-    "code" : "17283",
-    "name" : "Pets",
-    "url" : "https://prismamarket.ee/products/17283"
-  }, {
-    "code" : "products",
-    "name" : "Groceries",
-    "url" : "https://prismamarket.ee/products/selection"
-  } ],
+  "categories" : {
+    "17283" : "Pets",
+    "products" : "Groceries"
+  },
   "details" : {
     "ean" : "7613287034564",
     "brand" : "PURINA ONE"

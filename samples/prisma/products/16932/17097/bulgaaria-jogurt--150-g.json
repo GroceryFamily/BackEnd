@@ -4,15 +4,10 @@
   "name" : "Bulgaaria jogurt, 150 g",
   "url" : "https://prismamarket.ee/entry/17097/bulgaaria-jogurt--150-g/6414893096172",
   "prices" : [ ],
-  "categories" : [ {
-    "code" : "16932",
-    "name" : "Milk",
-    "url" : "https://prismamarket.ee/products/16932"
-  }, {
-    "code" : "products",
-    "name" : "Groceries",
-    "url" : "https://prismamarket.ee/products/selection"
-  } ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
   "details" : {
     "ean" : "6414893096172",
     "brand" : "KOTIMAISTA"

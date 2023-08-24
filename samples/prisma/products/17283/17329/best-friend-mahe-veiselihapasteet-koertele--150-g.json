@@ -4,15 +4,10 @@
   "name" : "Best Friend mahe veiselihapasteet koertele, 150 g",
   "url" : "https://prismamarket.ee/entry/17329/best-friend-mahe-veiselihapasteet-koertele--150-g/5700551111006",
   "prices" : [ ],
-  "categories" : [ {
-    "code" : "17283",
-    "name" : "Pets",
-    "url" : "https://prismamarket.ee/products/17283"
-  }, {
-    "code" : "products",
-    "name" : "Groceries",
-    "url" : "https://prismamarket.ee/products/selection"
-  } ],
+  "categories" : {
+    "17283" : "Pets",
+    "products" : "Groceries"
+  },
   "details" : {
     "ean" : "5700551111006",
     "brand" : "BEST FRIEND"

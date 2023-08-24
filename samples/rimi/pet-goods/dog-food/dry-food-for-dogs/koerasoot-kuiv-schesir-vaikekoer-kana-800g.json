@@ -4,15 +4,10 @@
   "name" : "Koerasööt kuiv Schesir kõigile väikekoertele, kana, 800g",
   "url" : "https://rimi.ee/epood/en/products/pet-goods/dog-food/dry-food-for-dogs/koerasoot-kuiv-schesir-vaikekoer-kana-800g/p/7128727",
   "prices" : [ ],
-  "categories" : [ {
-    "code" : "pet-goods",
-    "name" : "Pet goods",
-    "url" : "https://rimi.ee/epood/en/products/pet-goods/c/SH-7"
-  }, {
-    "code" : "dog-food",
-    "name" : "Dog food",
-    "url" : "https://rimi.ee/epood/en/products/pet-goods/dog-food/c/SH-7-2"
-  } ],
+  "categories" : {
+    "dog-food" : "Dog food",
+    "pet-goods" : "Pet goods"
+  },
   "details" : {
     "brand" : "Schesir"
   }

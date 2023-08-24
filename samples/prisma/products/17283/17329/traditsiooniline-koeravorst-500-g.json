@@ -4,15 +4,10 @@
   "name" : "Traditsiooniline koeravorst 500 g",
   "url" : "https://prismamarket.ee/entry/17329/traditsiooniline-koeravorst-500-g/6414893209855",
   "prices" : [ ],
-  "categories" : [ {
-    "code" : "17283",
-    "name" : "Pets",
-    "url" : "https://prismamarket.ee/products/17283"
-  }, {
-    "code" : "products",
-    "name" : "Groceries",
-    "url" : "https://prismamarket.ee/products/selection"
-  } ],
+  "categories" : {
+    "17283" : "Pets",
+    "products" : "Groceries"
+  },
   "details" : {
     "ean" : "6414893209855",
     "brand" : "RAINBOW"

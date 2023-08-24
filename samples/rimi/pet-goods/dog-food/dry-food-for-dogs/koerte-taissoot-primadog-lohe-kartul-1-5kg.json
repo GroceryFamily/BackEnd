@@ -4,15 +4,10 @@
   "name" : "Koerte täissööt PrimaDog teraviljavaba täiskasvanud koertele lõhe ja kartuli 1,5kg",
   "url" : "https://rimi.ee/epood/en/products/pet-goods/dog-food/dry-food-for-dogs/koerte-taissoot-primadog-lohe-kartul-1-5kg/p/7171723",
   "prices" : [ ],
-  "categories" : [ {
-    "code" : "pet-goods",
-    "name" : "Pet goods",
-    "url" : "https://rimi.ee/epood/en/products/pet-goods/c/SH-7"
-  }, {
-    "code" : "dog-food",
-    "name" : "Dog food",
-    "url" : "https://rimi.ee/epood/en/products/pet-goods/dog-food/c/SH-7-2"
-  } ],
+  "categories" : {
+    "dog-food" : "Dog food",
+    "pet-goods" : "Pet goods"
+  },
   "details" : {
     "brand" : "Prima Dog"
   }

@@ -4,15 +4,10 @@
   "name" : "Koeratoit Darling liha-juurvilja 10kg",
   "url" : "https://rimi.ee/epood/en/products/pet-goods/dog-food/dry-food-for-dogs/koeratoit-darling-liha-juurvilja-10kg/p/104006",
   "prices" : [ ],
-  "categories" : [ {
-    "code" : "pet-goods",
-    "name" : "Pet goods",
-    "url" : "https://rimi.ee/epood/en/products/pet-goods/c/SH-7"
-  }, {
-    "code" : "dog-food",
-    "name" : "Dog food",
-    "url" : "https://rimi.ee/epood/en/products/pet-goods/dog-food/c/SH-7-2"
-  } ],
+  "categories" : {
+    "dog-food" : "Dog food",
+    "pet-goods" : "Pet goods"
+  },
   "details" : {
     "brand" : "Purina Darling"
   }

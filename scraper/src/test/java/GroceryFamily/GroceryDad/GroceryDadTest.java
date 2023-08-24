@@ -4,7 +4,6 @@ import GroceryFamily.GroceryDad.scraper.Scraper;
 import GroceryFamily.GroceryDad.scraper.sample.TestSampleStorage;
 import GroceryFamily.GroceryDad.scraper.worker.WorkerEventListener;
 import lombok.extern.slf4j.Slf4j;
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -41,7 +40,6 @@ class GroceryDadTest {
         scraper.scrap(listener);
         assertThat(failures)
                 .withFailMessage(() -> format("Non-zero number of errors occurred (%s)", failures))
-                .hasValue(0)
-        ;
+                .hasValue(0);
     }
 }

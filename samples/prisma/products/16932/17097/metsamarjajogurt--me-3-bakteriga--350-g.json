@@ -4,15 +4,10 @@
   "name" : "Metsamarjajogurt, ME-3 bakteriga, 350 g",
   "url" : "https://prismamarket.ee/entry/17097/metsamarjajogurt--me-3-bakteriga--350-g/4740036013280",
   "prices" : [ ],
-  "categories" : [ {
-    "code" : "16932",
-    "name" : "Milk",
-    "url" : "https://prismamarket.ee/products/16932"
-  }, {
-    "code" : "products",
-    "name" : "Groceries",
-    "url" : "https://prismamarket.ee/products/selection"
-  } ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
   "details" : {
     "ean" : "4740036013280",
     "brand" : "HELLUS"

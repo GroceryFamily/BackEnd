@@ -20,6 +20,7 @@ import java.util.Optional;
 @Entity(name = "product")
 public class ProductEntity {
     private static ObjectMapper MAPPER = new ObjectMapper();
+    private static final JavaType CATEGORIES = MAPPER.getTypeFactory().constructMapLikeType(Map.class, String.class, String.class);
     private static final JavaType DETAILS = MAPPER.getTypeFactory().constructMapLikeType(Map.class, String.class, String.class);
 
     @Id
@@ -34,15 +35,27 @@ public class ProductEntity {
     @OneToMany(mappedBy = "product", cascade = CascadeType.ALL)
     @EqualsAndHashCode.Exclude
     private List<PriceEntity> prices;
-    @OneToMany(mappedBy = "product", cascade = CascadeType.ALL)
     @EqualsAndHashCode.Exclude
-    private List<CategoryEntity> categories;
+    private String categories;
     @EqualsAndHashCode.Exclude
     @Column(columnDefinition = "text")
     private String details;
 
     @SneakyThrows
+    public Map<String, String> getCategories() {
+        if (categories == null) return Map.of();
+        return MAPPER.readValue(categories, CATEGORIES);
+    }
+
+    @SneakyThrows
+    public ProductEntity setCategories(Map<String, String> categories) {
+        this.categories = MAPPER.writeValueAsString(categories);
+        return this;
+    }
+
+    @SneakyThrows
     public Map<String, String> getDetails() {
+        if (details == null) return Map.of();
         return MAPPER.readValue(details, DETAILS);
     }
 
@@ -60,7 +73,7 @@ public class ProductEntity {
                 .name(getName())
                 .url(getUrl())
                 .prices(PriceEntity.toDomainPrices(getPrices()))
-                .categories(CategoryEntity.toDomainCategories(getCategories()))
+                .categories(getCategories())
                 .details(getDetails())
                 .build();
     }
@@ -90,7 +103,7 @@ public class ProductEntity {
                 .setTs(ts)
                 .setVersion(0)
                 .setPrices(PriceEntity.fromDomainPrices(product.identifiablePrices(), ts, entity))
-                .setCategories(CategoryEntity.fromDomainCategories(product.identifiableCategories(), ts, entity))
+                .setCategories(product.categories)
                 .setDetails(product.details);
     }
 }

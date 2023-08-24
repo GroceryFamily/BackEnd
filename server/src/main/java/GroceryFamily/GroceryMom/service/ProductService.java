@@ -4,7 +4,6 @@ import GroceryFamily.GroceryElders.domain.Page;
 import GroceryFamily.GroceryElders.domain.Product;
 import GroceryFamily.GroceryMom.model.PageToken;
 import GroceryFamily.GroceryMom.repository.ProductRepository;
-import GroceryFamily.GroceryMom.repository.entity.CategoryEntity;
 import GroceryFamily.GroceryMom.repository.entity.PriceEntity;
 import GroceryFamily.GroceryMom.repository.entity.ProductEntity;
 import GroceryFamily.GroceryMom.service.exception.ProductNotFoundException;
@@ -73,23 +72,13 @@ public class ProductService {
                 priceEntities.put(price.id, PriceEntity.fromDomainPrice(price.id, price.data, ts, version, productEntity));
             });
 
-            var categoryEntities = new HashMap<String, CategoryEntity>();
-            productEntity.getCategories().forEach(categoryEntity -> categoryEntities.put(categoryEntity.getId(), categoryEntity));
-            product.identifiableCategories().forEach(category -> {
-                int version = Optional
-                        .ofNullable(categoryEntities.get(category.id))
-                        .map(CategoryEntity::getVersion)
-                        .orElse(0);
-                categoryEntities.put(category.id, CategoryEntity.fromDomainCategory(category.id, category.data, ts, version, productEntity));
-            });
-
             return productEntity
                     .setName(product.name)
                     .setUrl(product.url)
                     .setTs(ts)
                     .setPrices(new ArrayList<>(priceEntities.values()))
-                    .setCategories(new ArrayList<>(categoryEntities.values()))
-                    .setDetails(product.details);
+                    .setCategories(product.categories) // todo: merge categories?
+                    .setDetails(product.details); // todo: merge details?
         };
     }
 
