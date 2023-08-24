@@ -5,6 +5,7 @@ import lombok.EqualsAndHashCode;
 import lombok.ToString;
 import lombok.extern.jackson.Jacksonized;
 
+import java.util.Map;
 import java.util.Set;
 
 import static java.util.stream.Collectors.toSet;
@@ -22,6 +23,8 @@ public class Product {
     public final Set<Price> prices = Set.of();
     @Builder.Default
     public final Set<Category> categories = Set.of();
+    @Builder.Default
+    public final Map<String, String> details = Map.of();
 
     public String id() {
         return Identifiable.id(namespace, code);

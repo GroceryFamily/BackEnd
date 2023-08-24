@@ -12,5 +12,8 @@
     "code" : "piimatooted-ja-munad",
     "name" : "Dairy and eggs",
     "url" : "https://barbora.ee/piimatooted-ja-munad"
-  } ]
+  } ],
+  "details" : {
+    "brand" : "WELL DONE"
+  }
 }

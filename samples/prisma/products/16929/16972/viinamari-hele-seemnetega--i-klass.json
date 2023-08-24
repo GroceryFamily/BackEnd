@@ -12,5 +12,8 @@
     "code" : "products",
     "name" : "Groceries",
     "url" : "https://prismamarket.ee/products/selection"
-  } ]
+  } ],
+  "details" : {
+    "ean" : "2060242900009"
+  }
 }

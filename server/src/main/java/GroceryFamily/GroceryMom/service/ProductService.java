@@ -88,7 +88,8 @@ public class ProductService {
                     .setUrl(product.url)
                     .setTs(ts)
                     .setPrices(new ArrayList<>(priceEntities.values()))
-                    .setCategories(new ArrayList<>(categoryEntities.values()));
+                    .setCategories(new ArrayList<>(categoryEntities.values()))
+                    .setDetails(product.details);
         };
     }
 

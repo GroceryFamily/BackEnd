@@ -12,5 +12,9 @@
     "code" : "products",
     "name" : "Groceries",
     "url" : "https://prismamarket.ee/products/selection"
-  } ]
+  } ],
+  "details" : {
+    "ean" : "6430062460933",
+    "brand" : "PRIMA DOG"
+  }
 }
