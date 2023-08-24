@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
-    "ean" : "5708147002875"
+    "ean" : "5708147002875",
+    "origin" : "Iran"
   }
 }

@@ -9,6 +9,9 @@
     "jogurtid-ja-desserdid" : "Yoghurts and desserts"
   },
   "details" : {
+    "origin" : "Estonia",
+    "description" : "Farmi skyr mustikatega.",
+    "ingredients" : "Pastöriseeritud LÕSS, mustikad (11%), suhkur, vesi, modifitseeritud tärklis, lõhna- ja maitseaine, happesuse regulaator: naatriumtsitraadid, juuretis.",
     "brand" : "SKYR"
   }
 }

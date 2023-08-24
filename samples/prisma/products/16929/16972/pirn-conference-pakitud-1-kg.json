@@ -9,6 +9,8 @@
     "products" : "Groceries"
   },
   "details" : {
-    "ean" : "6414890440176"
+    "ean" : "6414890440176",
+    "origin" : "Netherland",
+    "description" : "Pilt on illustreeriv. Pirn Conference pakitud 1 kg"
   }
 }

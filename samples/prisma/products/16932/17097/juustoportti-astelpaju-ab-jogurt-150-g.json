@@ -9,6 +9,8 @@
     "products" : "Groceries"
   },
   "details" : {
-    "ean" : "6408652225071"
+    "ean" : "6408652225071",
+    "origin" : "Finland",
+    "ingredients" : "pastöriseeritud piim (Soome), suhkur, astelpajumarjad (2%), juuretis (atsidofiil- ja bifidobakterid), lõhna- ja maitseaine, säilitusaine (kaaliumsorbaat). Sisaldab astelpajuseemneid"
   }
 }

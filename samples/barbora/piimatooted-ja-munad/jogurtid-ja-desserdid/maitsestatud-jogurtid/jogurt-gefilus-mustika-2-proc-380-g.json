@@ -9,6 +9,9 @@
     "jogurtid-ja-desserdid" : "Yoghurts and desserts"
   },
   "details" : {
+    "origin" : "Estonia",
+    "description" : "Mustikad on alati olnud ühed meie jogurtisõprade lemmikmarjadest, mistõttu on ka tervisest ja värskusest pakatav Valio Gefilus jogurt saadaval mustikamaitselisena. Valio Gefilus laktoosivaba mustikajogurt sisaldab maailma enimuuritud piimhappebakterit Lactobacillus rhamnosus GG ja D-vitamiini. D-vitamiin aitab kaasa immuunsüsteemi normaalsele talitlusele ning on meile, kes me elame päikesevaeses kliimas tervise seisukohalt väga oluline. Valio Gefiluse mustikajogurt on laktoosivaba ja sobib seega ideaalselt ka neile, kellele laktoos vaevusi põhjustab.",
+    "ingredients" : "PIIM, suhkur 5, 9%, mustikad 3%, modifitseeritud tärklis, želatiin, lõhna- ja maitseained, happesuse regulaator (naatriumtsitraat), juuretis, PIIMhappebakter lactobacillus rhamnosus gg, d-vitamiin",
     "brand" : "VALIO GEFILUS"
   }
 }

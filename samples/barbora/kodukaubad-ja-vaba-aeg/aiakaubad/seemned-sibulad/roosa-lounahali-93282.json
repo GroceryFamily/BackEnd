@@ -8,5 +8,8 @@
     "aiakaubad" : "Gardening",
     "kodukaubad-ja-vaba-aeg" : "Home and leisure"
   },
-  "details" : { }
+  "details" : {
+    "origin" : "Lithuania",
+    "description" : "Õied on umbes 3 cm suurused. Õitsevad rikkalikult. Võib kasvatada toas ja õues. Kõige paremini sobib valgusrikas, kuid mitte päikesepaisteline koht. Ei talu jahedat ning vihma. Mürgine. Igal kevadel tuleb istutada ümber. Külmatundlik."
+  }
 }

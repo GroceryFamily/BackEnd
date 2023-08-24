@@ -8,5 +8,8 @@
     "aiakaubad" : "Gardening",
     "kodukaubad-ja-vaba-aeg" : "Home and leisure"
   },
-  "details" : { }
+  "details" : {
+    "origin" : "Netherlands",
+    "description" : "Sobib kergetele, keskmistele ja rasketele pinnastele. Ei suuda kasvada varjus. Eelistab niisket pinnast ja suudab taluda põuda. Katke seemned kergelt. Võib istutada individuaalsetesse mahutitesse ning seejärel istutada põllule ilma jaotamata või külvata seemikualustele. Väikesed seemikud saab eraldada ja istutada ümber otse seemikualuselt aeda või põllule. Iga tavaline, mõistlikult hea drenaažiga pinnas."
+  }
 }

@@ -9,6 +9,8 @@
     "pet-goods" : "Pet goods"
   },
   "details" : {
+    "origin" : "Czech Republic",
+    "ingredients" : "teraviljad, liha ja loomsed saadused (veiseliha vähemalt 3%), taimsed kõrvalsaadused, õlid ja rasvad, mineraalained, pärm, toiduvärvid, antioksüdandid, säilitusained",
     "brand" : "Grrreat"
   }
 }

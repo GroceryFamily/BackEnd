@@ -9,6 +9,9 @@
     "jogurtid-ja-desserdid" : "Yoghurts and desserts"
   },
   "details" : {
+    "origin" : "Estonia",
+    "description" : "Valio PROfeel proteiinijogurtid on eriti siidise ja mahlase tekstuuriga valgurikkad jogurtid (200g topsis 18,4g valku), mis ei sisalda lisatud suhkrut ning on seega ideaalseks toidukorraks sportlikke eluviise harrastavale inimesele. Valio PROfeel proteiinijogurtid on välja töötatud koostöös Eesti absoluutse fitnesstipu Ott Kiivikasega.",
+    "ingredients" : "PIIM, vesi, mustad sõstrad 1,8%, modifitseeritud tärklis, happesuse regulaator (naatriumtsitraat), lõhna- ja maitseained, magusained (atsesulfaam K, sukraloos), toiduvärv (antotsüaniinid), juuretis.",
     "brand" : "VALIO PROFEEL"
   }
 }

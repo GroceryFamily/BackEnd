@@ -10,6 +10,9 @@
   },
   "details" : {
     "ean" : "4740125582772",
+    "origin" : "Estonia",
+    "description" : "Täiusliku maitse ja mõnusa pehmusega Alma jogurtikokteil maitseb nagu ehtne suvine ploomi-jäätisekokteil. Alma jogurtikokteil valmib puhtast kodumaisest piimast valmistatud jogurtiga ning on säilitusainete vaba. Tänu mugavale käepärasele pakendile saad värskendavat Alma jogurtikokteili nautida ükskõik kus ja millal.",
+    "ingredients" : "piim 88%, suhkur, tärklis, punase ploomi mahla kontsentraat 0,2%, lõhna-ja maitseained, toiduvärv (antotsüaniinid), happesuse regulaator (sidrunhape), juuretis.",
     "brand" : "ALMA"
   }
 }

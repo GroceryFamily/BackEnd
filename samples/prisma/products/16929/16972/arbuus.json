@@ -9,6 +9,8 @@
     "products" : "Groceries"
   },
   "details" : {
-    "ean" : "2060494500002"
+    "ean" : "2060494500002",
+    "origin" : "Azerbaijan",
+    "description" : "Pilt on illustreeriv. Tellida saab tervet arbuusi."
   }
 }

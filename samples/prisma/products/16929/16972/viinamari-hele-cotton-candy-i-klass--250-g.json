@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
-    "ean" : "8437013783286"
+    "ean" : "8437013783286",
+    "origin" : "Spain"
   }
 }

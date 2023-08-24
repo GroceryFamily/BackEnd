@@ -9,6 +9,9 @@
     "jogurtid-ja-desserdid" : "Yoghurts and desserts"
   },
   "details" : {
+    "origin" : "Estonia",
+    "description" : "Valio Gefilus virsiku-papaia jogurt on ideaalne vahepala neile, kes armastavad unikaalsemaid kombinatsioone. Et aga jogurti maitses annab domineeriva tooni virsik, armastavad seda jogurtit ka paljud traditsiooniliste maitsete austajad. Ka see Valio Gefilus jogurt on säilitusainetevaba ning sisaldab enimuuritud piimhappebakterit Lactobacillus rhamnosus GG ning D-vitamiini, mis aitab kaasa immuunsüsteemi normaalsele talitlusele ning on meile, kes me elame päikesevaeses kliimas, tervise seisukohalt väga oluline.",
+    "ingredients" : "PIIM, suhkur 5, 9%, virsikud 3, 2%, papaia 2, 3%, modifitseeritud tärklis, želatiin, lõhna- ja maitseained, happesuse regulaator (sidrunhape), juuretis, lactobacillus rhamnosus gg, d-vitamiin",
     "brand" : "VALIO GEFILUS"
   }
 }

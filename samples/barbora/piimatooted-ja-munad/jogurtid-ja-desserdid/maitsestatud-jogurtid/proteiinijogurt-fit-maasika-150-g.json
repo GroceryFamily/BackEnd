@@ -9,6 +9,9 @@
     "jogurtid-ja-desserdid" : "Yoghurts and desserts"
   },
   "details" : {
+    "origin" : "Estonia",
+    "description" : "Tere FIT! maasika proteiinijogurt",
+    "ingredients" : "PIIM, maasikad (8%), magusained (maltitool, stevioolglükosiid E960a), PIIMAVALK, LÕSSIPULBER, dekstriin, inuliin, lõhna- ja maitseained, paksendaja (pektiin), hape (sidrunhape), musta porgandi mahla kontsentraat, juuretis",
     "brand" : "TERE"
   }
 }

@@ -9,6 +9,8 @@
     "products" : "Groceries"
   },
   "details" : {
-    "ean" : "2060560700008"
+    "ean" : "2060560700008",
+    "origin" : "Moldova",
+    "description" : "Pilt on illustreeriv. Murel I klass"
   }
 }

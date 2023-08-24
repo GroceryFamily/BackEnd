@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
-    "ean" : "6408652221622"
+    "ean" : "6408652221622",
+    "ingredients" : "pastöriseeritud piim (Soome) ja juuretis (atsidofiil- ja bifidobakterid)"
   }
 }

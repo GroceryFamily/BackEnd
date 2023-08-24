@@ -8,5 +8,8 @@
     "aiakaubad" : "Gardening",
     "kodukaubad-ja-vaba-aeg" : "Home and leisure"
   },
-  "details" : { }
+  "details" : {
+    "origin" : "Lithuania",
+    "description" : "Till on üheaastane, moodustab palju varsi ja kasvatab lopsaka lehestiku, õitsema hakkab hilja, seetõttu on kaua aega roheline ja mahlakas."
+  }
 }

@@ -8,5 +8,8 @@
     "aiakaubad" : "Gardening",
     "kodukaubad-ja-vaba-aeg" : "Home and leisure"
   },
-  "details" : { }
+  "details" : {
+    "origin" : "Lithuania",
+    "description" : "Keskvarajane rooma salati sort. Kasvatatakse kevad- ja sügissaagiks. Saak 65-75 päeva pärast istutamist. Hakkab idanema, kui mulla temperatuur tõuseb 4°C. Pea pikliku kujuga, lehed krõmpsuvad. Sort ei moodusta õisikuid."
+  }
 }

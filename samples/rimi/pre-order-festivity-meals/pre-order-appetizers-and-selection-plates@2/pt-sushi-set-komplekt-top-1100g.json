@@ -7,5 +7,8 @@
   "categories" : {
     "pre-order-festivity-meals" : "Pre-order festivity meals"
   },
-  "details" : { }
+  "details" : {
+    "origin" : "Estonia",
+    "ingredients" : "sushi riis 60% (sushi riis, sool, suhkur, äädikas), LUMEKRABI (SURIMI 52% (KALAliha, stabilisaatorid sorbitool, suhkur, stabilisaator E452), vesi, tärklis(sisaldab GLUTEENI), MUNAvalge, suhkur, lõhna-ja maitseained (sisaldab KOORIKLOOMI ning lõhna- ja maitsetugevdajat E635), sool, toiduvärv E120, paprikaekstrakt), majonees (rapsiõli, vesi, äädikas, suhkur, MUNAkollane, sinep (vesi SINEPIseemned, äädikas, sool, vürtsid, lõhna- ja maitseained), sool, toiduvärv E160, antioksüdant E385), LÕHE 20%, kreemjuust10%(pastöriseeritud PIIM, sool, juuretis, mikrobioloogiline laap, paksendaja:E412), terav kaste (tšillipipar, apelsiniekstrakt, mustad SEESAMISEEMNED, merevetikad, valged SEESAMISEEMNED, jaapani pipar, ingver), kurk, nori (röstitud merevetikas), SEESAMISEEMNED. Marineeritud ingver magusainetega: ingver 66,7%,vesi, sool, happesuseregulaator E330, säilitusained E260 ja E202, maitsetugevdaja E621, magusained E951, E954, E955 ja toiduvärv E163. Sisaldab aspartaami (fenüülalaniini allikas). SOJAkaste: vesi, SOJAOAD 30%, sool, NISU. Wasabi: mädarõika pulber, SINEPIpulber, maisitärklis, happesuseregulaator E330, C-vitamiin, kurkumipulber, toiduvärv E133."
+  }
 }

@@ -10,6 +10,9 @@
   },
   "details" : {
     "ean" : "6415712301491",
+    "origin" : "Finland",
+    "description" : "Rainbow koertele mõeldud vorst sisaldab lõhet ja on täisväärtuslik toit. Võib pakkuda eraldi toidukorrana, kuid ka muu toidu hulka segatuna. Sobib igas vanuses koertele. Koor ei ole söödav. Ei sisalda nisu ega verd.",
+    "ingredients" : "Koostis: vesi, sealiha ja siseorganid, lõhe (20%), soja, sool, maitseained. Söödalisandid: säilitusained (E270, E250, E202), antioksüdant (E306). Analüütiline koostis: valk (13%), rasv (11%), toorkiud (1,5%), toortuhk (1,8%), niiskus (71%), kaltsium (1,2 g/kg), fosfor (0,9 g/kg). Metaboliseeruv energia 6,1 MJ/kg.",
     "brand" : "RAINBOW"
   }
 }

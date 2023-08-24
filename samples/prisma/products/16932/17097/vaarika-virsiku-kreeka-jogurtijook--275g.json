@@ -10,6 +10,9 @@
   },
   "details" : {
     "ean" : "4740125582062",
+    "origin" : "Estonia",
+    "description" : "Alma kreeka jogurtijoogid valmivad puhtaimast kodumaisest piimast ning autentsest kreeka jogurti juuretisest. Alma Kreeka jogurtijooke iseloomustab puhas koostis, säilitusainetevaba retsept ja siidine tükivaba konsistents, mis on eriti meelepärane just lastele.",
+    "ingredients" : "piim, suhkur, vaarikamahl 0,6%, virsikumahl 0,5%, modifitseeritud tärklis, porgandikontsentraat, lõhna-ja maitseained, paksendaja (guar kummi), happesuse regulaatorid (sidrunhape, naatriumtsitraat), juuretis.",
     "brand" : "ALMA"
   }
 }

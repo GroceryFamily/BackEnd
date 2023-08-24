@@ -9,6 +9,8 @@
     "products" : "Groceries"
   },
   "details" : {
-    "ean" : "6408652225088"
+    "ean" : "6408652225088",
+    "origin" : "Finland",
+    "ingredients" : "pastöriseeritud piim (Soome), suhkur, vanill, vanilliin, juuretis (atsidofiil- ja bifidobakterid), säilitusaine (kaaliumsorbaat)"
   }
 }

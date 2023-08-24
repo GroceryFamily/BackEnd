@@ -9,6 +9,9 @@
     "jogurtid-ja-desserdid" : "Yoghurts and desserts"
   },
   "details" : {
+    "origin" : "Estonia",
+    "description" : "Eesti armastatuimaid Alma Muah! koorejogurteid iseloomustab siidine konsistents ja hõrgud maitsekombinatsioonid, mis ei jäta ühtegi jogurtigurmaani külmaks. See õige koorejogurt.",
+    "ingredients" : "RÕÕSK KOOR 84%, suhkur, vesi, LÕSSIPULBER, modifitseeritud tärklis, looduslikud lõhna- ja maitseained, toiduvärv (safloori ja vetikate kontsentraat), paksendaja (pektiin), happesuse regulaatorid (sidrunhape, naatriumtsitraadid), tardaine (kaltsiumtsitraadid), juuretis.",
     "brand" : "ALMA"
   }
 }

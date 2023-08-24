@@ -8,5 +8,8 @@
     "aiakaubad" : "Gardening",
     "kodukaubad-ja-vaba-aeg" : "Home and leisure"
   },
-  "details" : { }
+  "details" : {
+    "origin" : "Lithuania",
+    "description" : "Õied on läbimõõduga 3 cm. Õues kasvava taime kõrgus on 20-25 cm, laius 35 cm. Õitseb kevadest sügiseni."
+  }
 }
