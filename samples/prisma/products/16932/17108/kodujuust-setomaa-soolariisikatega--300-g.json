@@ -1,0 +1,17 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "kodujuust-setomaa-soolariisikatega--300-g",
+  "name" : "Kodujuust Setomaa soolariisikatega, 300 g",
+  "url" : "https://prismamarket.ee/entry/17108/kodujuust-setomaa-soolariisikatega--300-g/4740036014409",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "4740036014409",
+    "origin" : "Estonia",
+    "ingredients" : "Koostisosad: kodujuust 44%, hapukoor, riisikad 10%, valge sibul, sool, suhkur, äädikas, rapsiõli.",
+    "brand" : "TERE"
+  }
+}

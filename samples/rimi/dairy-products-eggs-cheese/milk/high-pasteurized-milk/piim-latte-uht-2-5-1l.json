@@ -1,0 +1,16 @@
+{
+  "namespace" : "rimi.ee",
+  "code" : "piim-latte-uht-2-5-1l",
+  "name" : "Piim Latte UHT 2,5% 1l",
+  "url" : "https://rimi.ee/epood/en/products/dairy-products-eggs-cheese/milk/high-pasteurized-milk/piim-latte-uht-2-5-1l/p/286666",
+  "prices" : [ ],
+  "categories" : {
+    "milk" : "Milk",
+    "dairy-products-eggs-cheese" : "Dairy products, eggs, cheese"
+  },
+  "details" : {
+    "origin" : "Estonia",
+    "ingredients" : "PIIM",
+    "brand" : "Tere"
+  }
+}

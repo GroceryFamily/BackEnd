@@ -1,0 +1,17 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "kohvikoor-10---200-ml",
+  "name" : "Kohvikoor 10%, 200 ml",
+  "url" : "https://prismamarket.ee/entry/17106/kohvikoor-10---200-ml/4740036000624",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "4740036000624",
+    "origin" : "Estonia",
+    "ingredients" : "rõõsk KOOR",
+    "brand" : "TERE"
+  }
+}

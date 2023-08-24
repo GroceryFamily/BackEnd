@@ -1,0 +1,17 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "hapendatud-pett--1-kg",
+  "name" : "Hapendatud pett, 1 kg",
+  "url" : "https://prismamarket.ee/entry/17103/hapendatud-pett--1-kg/4740113092306",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "4740113092306",
+    "origin" : "Estonia",
+    "ingredients" : "pastöriseeritud väherasvane piim, juuretis",
+    "brand" : "FARMI"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "namespace" : "barbora.ee",
+  "code" : "kookosejook-alpro-riisiga-1-l",
+  "name" : "Kookosejook ALPRO riisiga, 1L",
+  "url" : "https://barbora.ee/toode/kookosejook-alpro-riisiga-1-l",
+  "prices" : [ ],
+  "categories" : {
+    "piimatooted-ja-munad" : "Dairy and eggs",
+    "piimad" : "Milk"
+  },
+  "details" : {
+    "origin" : "Belgium",
+    "description" : "100% taimne kookosjook riisiga.",
+    "ingredients" : "Vesi, kookospiim (5,3%) (kookoskoor, vesi), riis (3,3%), trikaltsiumfosfaat, stabilisaatorid (karrageen, guarkummi, ksantaankummi), meresool, vitamiinid (B12, D2), maitseained Võib sisaldada mandlite ja sarapuupähklite jääke.",
+    "brand" : "ALPRO"
+  }
+}

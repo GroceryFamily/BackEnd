@@ -1,0 +1,18 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "kaltsiumiga-sojajook--1-l",
+  "name" : "Kaltsiumiga sojajook, 1 l",
+  "url" : "https://prismamarket.ee/entry/17104/kaltsiumiga-sojajook--1-l/5411188543381",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "5411188543381",
+    "origin" : "Belgium",
+    "description" : "Proteiini allikas. Madala küllastunud rasvhapete sisaldusega. Piima- ja gluteenivaba.",
+    "ingredients" : "Vesi, lüditud sojaoad 5,9%, suhkur, trikaltsiumfosfaat, happesuse regulaator : monokaaliumdivesinikfosfaat, meresool, maitseained, stabilisaator : gellankummi, vitamiinid B2, B12, D2.",
+    "brand" : "ALPRO"
+  }
+}

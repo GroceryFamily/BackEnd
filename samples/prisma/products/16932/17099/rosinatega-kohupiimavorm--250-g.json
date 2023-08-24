@@ -1,0 +1,17 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "rosinatega-kohupiimavorm--250-g",
+  "name" : "Rosinatega kohupiimavorm, 250 g",
+  "url" : "https://prismamarket.ee/entry/17099/rosinatega-kohupiimavorm--250-g/4740113090029",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "4740113090029",
+    "origin" : "Estonia",
+    "ingredients" : "kohupiim (42%), hapukoor, munamass, suhkur, maitsestamata jogurt, rosinad (10%), manna, vanilliin",
+    "brand" : "FARMI"
+  }
+}

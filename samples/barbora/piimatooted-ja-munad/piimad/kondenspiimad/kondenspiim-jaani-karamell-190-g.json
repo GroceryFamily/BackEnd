@@ -1,0 +1,17 @@
+{
+  "namespace" : "barbora.ee",
+  "code" : "kondenspiim-jaani-karamell-190-g",
+  "name" : "Kondenspiim JAANI karamell, 190g",
+  "url" : "https://barbora.ee/toode/kondenspiim-jaani-karamell-190-g",
+  "prices" : [ ],
+  "categories" : {
+    "piimatooted-ja-munad" : "Dairy and eggs",
+    "piimad" : "Milk"
+  },
+  "details" : {
+    "origin" : "Estonia",
+    "description" : "Klassikalise kondenspiima retsepti järgi valmistatud ainuke kodumaine kondenspiim.",
+    "ingredients" : "Pastöriseeritud PIIM, suhkur. Rasvata PIIMAkuivaine sisaldus 20%.",
+    "brand" : "JAANI"
+  }
+}

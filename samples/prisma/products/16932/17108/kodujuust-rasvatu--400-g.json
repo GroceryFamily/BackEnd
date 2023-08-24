@@ -1,0 +1,17 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "kodujuust-rasvatu--400-g",
+  "name" : "Kodujuust rasvatu, 400 g",
+  "url" : "https://prismamarket.ee/entry/17108/kodujuust-rasvatu--400-g/6414893385832",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "6414893385832",
+    "origin" : "Finland",
+    "ingredients" : "pastöriseeritud rasvatu piim, juuretis, sool, laap, säilitusaine (E202). Piima päritolumaa: Rootsi.",
+    "brand" : "RAINBOW"
+  }
+}

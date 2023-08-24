@@ -1,0 +1,18 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "laktoosivaba-hapukoor--120g",
+  "name" : "Laktoosivaba hapukoor, 120g",
+  "url" : "https://prismamarket.ee/entry/17106/laktoosivaba-hapukoor--120g/6414893385351",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "6414893385351",
+    "origin" : "Finland",
+    "description" : "Soome piimast valmistatud suure rasvasisaldusega hapukoor. Mitmekülgne hapukoor talub hästi kuumutamist, kuid sobib ka külmalt kasutamiseks. Hapukoort võib ka kergelt vahustada. Soolasisaldus tuleneb ainult piimas esinevast looduslikust naatriumist.",
+    "ingredients" : "pastöriseeritud koor ja juuretis",
+    "brand" : "KOTIMAISTA"
+  }
+}

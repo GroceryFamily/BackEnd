@@ -1,0 +1,18 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "jogurt-kitsepiimast-500g",
+  "name" : "Jogurt kitsepiimast 500g",
+  "url" : "https://prismamarket.ee/entry/17097/jogurt-kitsepiimast-500g/4742852010207",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "4742852010207",
+    "origin" : "Estonia",
+    "description" : "Preserve in cool place",
+    "ingredients" : "KITSEPIIM",
+    "brand" : "KALAMATSI MEIEREI"
+  }
+}

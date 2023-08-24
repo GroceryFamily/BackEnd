@@ -1,0 +1,16 @@
+{
+  "namespace" : "barbora.ee",
+  "code" : "kookose-mandlijook-alpro-1-l",
+  "name" : "Kookose-mandlijook ALPRO, 1L",
+  "url" : "https://barbora.ee/toode/kookose-mandlijook-alpro-1-l",
+  "prices" : [ ],
+  "categories" : {
+    "piimatooted-ja-munad" : "Dairy and eggs",
+    "piimad" : "Milk"
+  },
+  "details" : {
+    "origin" : "Denmark",
+    "ingredients" : "Vesi, kookospiim (3,3%) (kookoskoor, vesi), suhkur, MANDEL (1,3%), trikaltsiumfosfaat, meresool, happesuse regulaator (kaaliumdivesinikfosfaat), stabilisaatorid (gellankummi, jaanikaunajahu), emulgaator (päevalilleletsitiin), lõhna- ja maitseaine, vitamiinid (E, D2, riboflaviin (B2), B12).",
+    "brand" : "ALPRO"
+  }
+}

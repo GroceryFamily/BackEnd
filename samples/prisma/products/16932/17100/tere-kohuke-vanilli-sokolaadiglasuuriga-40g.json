@@ -1,0 +1,17 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "tere-kohuke-vanilli-sokolaadiglasuuriga-40g",
+  "name" : "Tere Kohuke vanilli šokolaadiglasuuriga 40g",
+  "url" : "https://prismamarket.ee/entry/17100/tere-kohuke-vanilli-sokolaadiglasuuriga-40g/47430051",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "47430051",
+    "origin" : "Estonia",
+    "ingredients" : "kohupiim 66%, šokolaadiglasuur 18% (suhkur, kakaomass, kakaovõi, piimarasv, emulgaator (sojaletsitiin, E476), vanilliin), suhkur, vanilliin.",
+    "brand" : "TERE"
+  }
+}

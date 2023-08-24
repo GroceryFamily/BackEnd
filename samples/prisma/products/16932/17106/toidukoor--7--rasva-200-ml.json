@@ -1,0 +1,17 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "toidukoor--7--rasva-200-ml",
+  "name" : "Toidukoor, 7% rasva 200 ml",
+  "url" : "https://prismamarket.ee/entry/17106/toidukoor--7--rasva-200-ml/6414893074255",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "6414893074255",
+    "origin" : "Finland",
+    "ingredients" : "lõss (Soome), vesi, rüpsiõli (Soome), osaliselt tahkestatud taimne rasv, stabilisaatorid (E1442, E412), emulgaator (E472e), lõssipulber, maisi maltodekstriin, suhkur, happesuse regulaator (E331), lõhna- ja maitseaine, toiduvärv (E160a).",
+    "brand" : "KOTIMAISTA"
+  }
+}

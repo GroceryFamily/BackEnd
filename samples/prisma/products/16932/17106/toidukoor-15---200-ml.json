@@ -1,0 +1,18 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "toidukoor-15---200-ml",
+  "name" : "Toidukoor 15%, 200 ml",
+  "url" : "https://prismamarket.ee/entry/17106/toidukoor-15---200-ml/6414893358836",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "6414893358836",
+    "origin" : "Finland",
+    "description" : "Väikese laktoosisisaldusega toidukoor. Sobib kasutamiseks toiduvalmistamisel ja küpsetamisel. Ei vahustu.",
+    "ingredients" : "koor, happesuse regulaator (E331), stabilisaatorid (E1450, E412).",
+    "brand" : "KOTIMAISTA"
+  }
+}

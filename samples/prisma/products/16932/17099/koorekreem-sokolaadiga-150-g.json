@@ -1,0 +1,17 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "koorekreem-sokolaadiga-150-g",
+  "name" : "Koorekreem šokolaadiga 150 g",
+  "url" : "https://prismamarket.ee/entry/17099/koorekreem-sokolaadiga-150-g/4750050010066",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "4750050010066",
+    "origin" : "Latvia",
+    "ingredients" : "Piim, rõõsk koor 17%, suhkur, vesi, lõssipulber, kakaopulber, toiduželatiin, modifitseeritud tärklis, stabilisaatorid: karrageen, rasvhapete mono- ja diglütseriidid; toiduvärv raudoksiidid ja raudhüdroksiidid, šokolaadi ja vanilli lõhna- ja maitseaine",
+    "brand" : "KARUMS"
+  }
+}

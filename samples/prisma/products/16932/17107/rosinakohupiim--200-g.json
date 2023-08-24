@@ -1,0 +1,18 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "rosinakohupiim--200-g",
+  "name" : "Rosinakohupiim, 200 g",
+  "url" : "https://prismamarket.ee/entry/17107/rosinakohupiim--200-g/4740036007135",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "4740036007135",
+    "origin" : "Estonia",
+    "description" : "Rasvata magus kohupiim rosinatega. Rikas valgu ja kaltsiumi poolest. Ei sisalda säilitusaineid",
+    "ingredients" : "Rasvata kohupiim, suhkur, rosinad 7,0%, želatiin, vanilliin",
+    "brand" : "TERE"
+  }
+}

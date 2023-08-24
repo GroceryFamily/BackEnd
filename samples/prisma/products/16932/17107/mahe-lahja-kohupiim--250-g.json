@@ -1,0 +1,18 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "mahe-lahja-kohupiim--250-g",
+  "name" : "Mahe lahja kohupiim, 250 g",
+  "url" : "https://prismamarket.ee/entry/17107/mahe-lahja-kohupiim--250-g/4743135002100",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "4743135002100",
+    "origin" : "Estonia",
+    "description" : "Pajumäe lahja kohupiim sisaldab parajalt valku ja üldse mitte palju rasva. Värske maitsega kohupiim sobib otse lusikaga söömiseks kui ka teiste toitude sisse. See on puhas, naturaalne toit, mis on ühteaegu maitsev kui ka tervislik - tegemist on sertifitseeritud mahetootega. x",
+    "ingredients" : "mahe-KOHUPIIM",
+    "brand" : "PAJUMÄE TALU"
+  }
+}

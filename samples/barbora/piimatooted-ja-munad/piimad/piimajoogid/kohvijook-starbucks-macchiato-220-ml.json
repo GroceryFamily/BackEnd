@@ -1,0 +1,17 @@
+{
+  "namespace" : "barbora.ee",
+  "code" : "kohvijook-starbucks-macchiato-220-ml",
+  "name" : "Kohvijook STARBUCKS Macchiato, 220ml",
+  "url" : "https://barbora.ee/toode/kohvijook-starbucks-macchiato-220-ml",
+  "prices" : [ ],
+  "categories" : {
+    "piimatooted-ja-munad" : "Dairy and eggs",
+    "piimad" : "Milk"
+  },
+  "details" : {
+    "origin" : "Denmark",
+    "description" : "Kreemjas karamellimaitseline kohvijook röstitud Starbucks® kohviubadest. Starbucks kasutab oma toodangus vaid Fairtrade-sertifitseeritud kohviube.",
+    "ingredients" : "1,8% rasvasisaldusega PIIM (75%), Starbucks® araabika kohv (vesi ja kohviekstrakt) (20%), suhkur (5%), karamelli lõhna- ja maitseaine (sisaldab PIIMA), happesuse regulaator (kaaliumkarbonaat), stabilisaatorid (karrageen, guargummi), emulgaatorid (taimsete rasvhapete mono- ja diglütseriidid).",
+    "brand" : "STARBUCKS"
+  }
+}

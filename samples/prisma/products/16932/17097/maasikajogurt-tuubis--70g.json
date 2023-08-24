@@ -10,6 +10,9 @@
   },
   "details" : {
     "ean" : "59055853",
+    "origin" : "Poland",
+    "description" : "Danonki maasikajogurt, rikastatud kaltsiumi ja D-vitamiiniga, 70 g. Ei ole lisatud säilitusaineid, värvaineid ega mittelooduslike lõhna- ja maitseaineid.",
+    "ingredients" : "piim, suhkur, maasikad 6,15 % (püreekontsentraadist), tärklis, piimavalk, modifitseeritud tärklis, kaltsium (kaltsiumtsitraat), lõssipulber, looduslik lõhnaja maitseaine, peedimahla kontsentraat, happesuse regulaator: trinaatriumtsitraat, jogurtibakterid, vitamiin D.",
     "brand" : "DANONKI"
   }
 }

@@ -1,0 +1,16 @@
+{
+  "namespace" : "rimi.ee",
+  "code" : "piim-laktoosivaba-uht-3-2-1l",
+  "name" : "Piim laktoosivaba UHT 3,2% 1l",
+  "url" : "https://rimi.ee/epood/en/products/dairy-products-eggs-cheese/milk/high-pasteurized-milk/piim-laktoosivaba-uht-3-2-1l/p/913705",
+  "prices" : [ ],
+  "categories" : {
+    "milk" : "Milk",
+    "dairy-products-eggs-cheese" : "Dairy products, eggs, cheese"
+  },
+  "details" : {
+    "origin" : "Poland",
+    "ingredients" : "täisPIIM, ensüüm laktaas",
+    "brand" : "Mlekovita"
+  }
+}

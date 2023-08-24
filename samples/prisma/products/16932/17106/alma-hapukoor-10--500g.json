@@ -1,0 +1,17 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "alma-hapukoor-10--500g",
+  "name" : "Alma hapukoor 10% 500g",
+  "url" : "https://prismamarket.ee/entry/17106/alma-hapukoor-10--500g/4740125410013",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "4740125410013",
+    "origin" : "Estonia",
+    "ingredients" : "rõõsk koor 10%, juuretis",
+    "brand" : "ALMA"
+  }
+}

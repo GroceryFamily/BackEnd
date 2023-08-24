@@ -10,6 +10,9 @@
   },
   "details" : {
     "ean" : "6414893096172",
+    "origin" : "Finland",
+    "description" : "Maitsestamata jogurt",
+    "ingredients" : "Pastöriseeritud piim, juuretis.",
     "brand" : "KOTIMAISTA"
   }
 }

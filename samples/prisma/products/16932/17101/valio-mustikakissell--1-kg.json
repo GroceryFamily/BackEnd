@@ -1,0 +1,17 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "valio-mustikakissell--1-kg",
+  "name" : "Valio Mustikakissell, 1 kg",
+  "url" : "https://prismamarket.ee/entry/17101/valio-mustikakissell--1-kg/6408430062119",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "6408430062119",
+    "origin" : "Finland",
+    "ingredients" : "vesi, suhkur, mustikad (6,4%),mustikamahl (2,6%), paksendaja( guarkummi), modifitseeritud tärklis, happesuse regulaator (sidrunhape), C-vitamiin",
+    "brand" : "VALIO"
+  }
+}

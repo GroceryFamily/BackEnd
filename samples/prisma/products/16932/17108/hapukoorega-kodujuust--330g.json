@@ -1,0 +1,18 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "hapukoorega-kodujuust--330g",
+  "name" : "Hapukoorega kodujuust, 330g",
+  "url" : "https://prismamarket.ee/entry/17108/hapukoorega-kodujuust--330g/4740572004360",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "4740572004360",
+    "origin" : "Estonia",
+    "description" : "Piimameister Otto kodujuust hapukoorega on mõnusalt kreemjas ja sametine tänu sellele, et toode sisaldab just paraja koguse hapukoort. Piimameister Otto kodujuust on suurte tervete teradega ja maitseb nagu üks õige kodujuust maitsema peab.",
+    "ingredients" : "kodujuust, hapukoor 40%, sool",
+    "brand" : "PIIMAMEISTER OTTO"
+  }
+}

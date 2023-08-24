@@ -7,5 +7,8 @@
   "categories" : {
     "pre-order-festivity-meals" : "Pre-order festivity meals"
   },
-  "details" : { }
+  "details" : {
+    "origin" : "Estonia",
+    "ingredients" : "Viinamari, sini-valgehallitusJUUST (PIIM, sool, juuretis, laap, sini-ja valgehallituskultuurid), toorJUUST ananassiga [PIIM, KOOR, MANDLI-papaia mix (MANDEL, suhkrustatud papaia (papaia, roosuhkur, riisijahu, happesuse regulaator: E330)), ananass, ananassi kontsentraat, suhkut, PIIMAvalk, želatiin, sool, stabilisaator: E410; tsitruseviljade kiud, säilitusaine: E200], täissuitsuvorst [sealiha, Emmentali JUUST (sh PIIM, LAKTOOS), vesi, seakamar, sool, stabilisaator: E450; vürtsid, lõhna- ja maitseained, suitsu lõhna- ja maitseaine, glükoos, suhkur, antioksüdant: E316, seavalk, toiduvärv: E120; säilitusaine: E250], suitsutatud vorstisnäkk [sealiha, seakamar, seasüda, seapekk, Parmigiano Reggiano KPN JUUST, kõva JUUST (sh PIIM, juuretis, meresool, säilitusaine MUNAlüsotsüüm), tärklis, kuivikupuru (sh NISUjahu), sool, stabilisaator: E450; happesuse regulaator: E262, E330, E451, E575; lõhna-ja maitseained, vürtsid, glükoos, pärmiekstrakt, antioksüdant: E300, E316; maltodekstriin, suitsu lõhna- ja maitseaine, säilitusaine: E250; lambasool], JUUSTUamps päikesekuivatatud tomatiga [JUUST (PIIM, tardaine: E509; sool, juuretis, laap), Mojo-Rocho (päikesekuivatatud tomatid, paprika, meresool, küüslauk, röstitud sibul, vürtsid, maitsetaimed)], kumkvaat (kääbusapelsin), petersell."
+  }
 }

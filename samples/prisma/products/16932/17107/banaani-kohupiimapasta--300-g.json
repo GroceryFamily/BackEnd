@@ -1,0 +1,18 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "banaani-kohupiimapasta--300-g",
+  "name" : "Banaani kohupiimapasta, 300 g",
+  "url" : "https://prismamarket.ee/entry/17107/banaani-kohupiimapasta--300-g/4740036007340",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "4740036007340",
+    "origin" : "Estonia",
+    "description" : "Hea kreemjas ja küllusliku banaani maitsega kohupiimapasta, mis on nüüdsest rikastatud ka D-vitamiiniga",
+    "ingredients" : "Rasvata kohupiimapasta, suhkur, rõõsk koor, banaanid 3,4%, paksendaja (pektiin), lõhna- ja maitseaine, happesuse regulaator (sidrunhape), toiduvärv (beetakaroteen), D-vitamiin",
+    "brand" : "TERE"
+  }
+}

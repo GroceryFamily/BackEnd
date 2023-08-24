@@ -9,6 +9,8 @@
     "products" : "Groceries"
   },
   "details" : {
-    "ean" : "2060400700007"
+    "ean" : "2060400700007",
+    "origin" : "Ecuador",
+    "description" : "Pilt on illustreeriv. Tootele kehtib hulgimüügi piirang 8 KG.На товар распространяется ограничение оптовой продажи 8 KG."
   }
 }

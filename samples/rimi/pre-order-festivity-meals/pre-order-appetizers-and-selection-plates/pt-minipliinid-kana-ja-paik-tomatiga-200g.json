@@ -7,5 +7,8 @@
   "categories" : {
     "pre-order-festivity-meals" : "Pre-order festivity meals"
   },
-  "details" : { }
+  "details" : {
+    "origin" : "Estonia",
+    "ingredients" : "Kana-päikesekuivatatud tomatikreem 49,9% [toorJUUST (kohuPIIM, modifitseeritud tärklis, sool, paksendaja: E410, E412), broilerifilee (broilerifilee, vesi, tapiokitärklis, sool, maltodekstriin), päikesekuivatatud tomat õlis 6,5% (päikesekuivatatud tomat, päevalilleõli, vesi, sool, kappar, veiniäädikas, petersell, pune, küüslauk, tšillipipar, happesuse regulaator: E330; antioksüdant: E300), majoneesivõie (rapsiõli, vesi, LÕSSIpulber, suhkur, modifitseeritud maisitärklis, sool, MUNApulber, paksendaja: E415, E412, E410; SINEPIpulber, happesuse regulaator: E260; toiduvärv: E160a; säilitusaine: E211, E202)], minipliin 30,7% (NISUjahu, täisPIIM, vesi, vabapidamise kanaMUNA, kontsentreeritud VÕI, kergitusained: E450, E500; roosuhkur, sool, NISUtärklis, päevalilleõli), kirsstomat, petersell."
+  }
 }

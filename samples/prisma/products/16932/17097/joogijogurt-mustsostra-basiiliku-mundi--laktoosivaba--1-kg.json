@@ -10,6 +10,9 @@
   },
   "details" : {
     "ean" : "4740125523126",
+    "origin" : "Estonia",
+    "description" : "Valio Gefilus jogurtid sisaldavad LGG piimhappebakterit ning pimedal ajal üliolulist D-vitamiini. D-vitamiin aitab kaasa immuunsüsteemi normaalsele talitlusele ning on meile, kes me elame päikesevaeses kliimas, tervise seisukohalt väga oluline.",
+    "ingredients" : "piim, suhkur, vesi, mustasõstramahl 0,81%, basiilikuekstrakt 0,06%, looduslikud lõhna- ja maitseained, porgandikontsentraat, hibisk, piparmündiekstrakt 0,02%, happesuse regulaator (sidrunhape), juuretis, piimhappebakterid Lactobacillus rhamnosus gg 5x10 9 pmü / 100g, vitamiin D (1 µg 20% päevasest võrdluskogusest).",
     "brand" : "VALIO GEFILUS"
   }
 }

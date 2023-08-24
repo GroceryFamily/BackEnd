@@ -1,0 +1,17 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "laktoosivaba-keefir--1-kg",
+  "name" : "Laktoosivaba keefir, 1 kg",
+  "url" : "https://prismamarket.ee/entry/17103/laktoosivaba-keefir--1-kg/4740036014034",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "4740036014034",
+    "origin" : "Estonia",
+    "ingredients" : "piim, juuretis (sisaldab Lactobacillus fermentum me-3)",
+    "brand" : "HELLUS"
+  }
+}

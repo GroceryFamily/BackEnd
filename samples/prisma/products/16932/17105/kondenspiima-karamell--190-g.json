@@ -1,0 +1,18 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "kondenspiima-karamell--190-g",
+  "name" : "Kondenspiima karamell, 190 g",
+  "url" : "https://prismamarket.ee/entry/17105/kondenspiima-karamell--190-g/4740502001728",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "4740502001728",
+    "origin" : "Estonia",
+    "description" : "Klassikalise kondenspiima retsepti järgi valmistatud ainuke kodumaine kondenspiim",
+    "ingredients" : "Pastöriseeritud piim, suhkur. Rasvata piimakuivaine sisaldus 20%",
+    "brand" : "JAANI"
+  }
+}

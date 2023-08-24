@@ -1,0 +1,17 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "tere-karamellkissell-laktoosivaba-1-kg",
+  "name" : "Tere karamellkissell laktoosivaba 1 kg",
+  "url" : "https://prismamarket.ee/entry/17099/tere-karamellkissell-laktoosivaba-1-kg/4740036011507",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "4740036011507",
+    "origin" : "Estonia",
+    "ingredients" : "piim, suhkur, modifitseeritud tärklis, karamelli lõhna- ja maitseaine, toiduvärv (karoteenid, E 150c), sool.",
+    "brand" : "TERE"
+  }
+}

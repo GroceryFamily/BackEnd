@@ -19,6 +19,9 @@ class BarboraProductView extends View implements ProductView {
     public Product product() {
         var details = new HashMap<String, String>();
         brand().ifPresent(brand -> details.put(Detail.BRAND, brand));
+        origin().ifPresent(origin -> details.put(Detail.ORIGIN, origin));
+        description().ifPresent(description -> details.put(Detail.DESCRIPTION, description));
+        ingredients().ifPresent(ingredients -> details.put(Detail.INGREDIENTS, ingredients));
 
         return Product
                 .builder()
@@ -35,5 +38,20 @@ class BarboraProductView extends View implements ProductView {
     private Optional<String> brand() {
         var brand = document.select("dt:contains(brand)").next().text();
         return isBlank(brand) ? Optional.empty() : Optional.of(brand);
+    }
+
+    private Optional<String> origin() {
+        var origin = document.select("dt:contains(origin)").next().text();
+        return isBlank(origin) ? Optional.empty() : Optional.of(origin);
+    }
+
+    private Optional<String> description() {
+        var description = document.select("dd[itemprop=description]").text();
+        return isBlank(description) ? Optional.empty() : Optional.of(description);
+    }
+
+    private Optional<String> ingredients() {
+        var ingredients = document.select("dt:contains(ingredients)").next().text();
+        return isBlank(ingredients) ? Optional.empty() : Optional.of(ingredients);
     }
 }

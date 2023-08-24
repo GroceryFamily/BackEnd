@@ -9,6 +9,9 @@
     "jogurtid-ja-desserdid" : "Yoghurts and desserts"
   },
   "details" : {
+    "origin" : "Estonia",
+    "description" : "Fitnessmaailmas kiiresti tuntuse ja südamed võitnud Valio PROfeel proteiinikohupiimakreemide seeria sai täiendust proteiinijogurtite näol. Tegemist on eriti siidise ja mahlase tekstuuriga valgurikaste jogurtitega (200g topsis 18,4g valku), mis ei sisalda lisatud suhkrut ning on seega ideaalseks toidukorraks sportlikke eluviise harrastavale inimesele. Valikus on kolm isuäratavat maitset – karamell, maasikas ja ahjuõun. Valio PROfeel proteiinijogurtid on välja töötatud koostöös Eesti absoluutse fitnesstipu Ott Kiivikasega.",
+    "ingredients" : "PIIM, maasikad 3,4%, maltodekstriin, modifitseeritud tärklis, lõhna- ja maitseained, toidu-värv (antotsüaanid), magusained (atsesulfaam K, sukraloos), paksendaja (karrageen), juuretis.",
     "brand" : "VALIO PROFEEL"
   }
 }

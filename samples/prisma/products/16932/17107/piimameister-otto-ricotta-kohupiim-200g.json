@@ -1,0 +1,17 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "piimameister-otto-ricotta-kohupiim-200g",
+  "name" : "Piimameister Otto Ricotta kohupiim 200g",
+  "url" : "https://prismamarket.ee/entry/17107/piimameister-otto-ricotta-kohupiim-200g/4740572006036",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "4740572006036",
+    "origin" : "Estonia",
+    "ingredients" : "Ricotta KOHUPIIM",
+    "brand" : "PIIMAMEISTER OTTO"
+  }
+}

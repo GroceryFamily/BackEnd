@@ -1,0 +1,17 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "president-vahukoor-pihustiga-250g",
+  "name" : "PRESIDENT Vahukoor pihustiga 250g",
+  "url" : "https://prismamarket.ee/entry/17106/president-vahukoor-pihustiga-250g/3228021000190",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "3228021000190",
+    "origin" : "France",
+    "ingredients" : "vahukoor, suhkur, emulgaatorid E471, E472b, paksendaja karrageen, vanilli aroom",
+    "brand" : "PRESIDENT"
+  }
+}

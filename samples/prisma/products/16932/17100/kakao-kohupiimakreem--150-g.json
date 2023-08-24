@@ -1,0 +1,18 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "kakao-kohupiimakreem--150-g",
+  "name" : "Kakao kohupiimakreem, 150 g",
+  "url" : "https://prismamarket.ee/entry/17100/kakao-kohupiimakreem--150-g/4740036004967",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "4740036004967",
+    "origin" : "Estonia",
+    "description" : "Hõrk ja traditsiooniline kakao kohupiimakreem, mille mõnusalt pehme ja siidine maitse köidab igas vanuses inimesi. Emma kohupiimakreemid on aegumatu maitseelamus. Tooted sobivad nii magustoidu asemel või toidukordade vahel kergeks vahepalaks.",
+    "ingredients" : "Rasvata kohupiimapasta, rõõsk koor, suhkur, kakaopulber 1,5%, paksendaja (modifitseeritud tärklis, pektiin), happesuse regulaator (sidrunhape).",
+    "brand" : "EMMA"
+  }
+}

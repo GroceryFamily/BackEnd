@@ -1,0 +1,17 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "murakamoosiga-kodujuust--200-g",
+  "name" : "Murakamoosiga kodujuust, 200 g",
+  "url" : "https://prismamarket.ee/entry/17108/murakamoosiga-kodujuust--200-g/4740125633023",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "4740125633023",
+    "origin" : "Estonia",
+    "ingredients" : "kodujuust, murakamoos 14% (suhkur, murakad 20%, modifitseeritud tärklis, lõhna ja maitseained, säilitusaine (kaaliumsorbaat), toiduvärv (beeta- karoteen)), rõõsk koor, sool max 0,5%.",
+    "brand" : "ALMA"
+  }
+}

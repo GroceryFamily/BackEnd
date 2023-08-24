@@ -1,0 +1,17 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "vahukoor-35-",
+  "name" : "Vahukoor 35%",
+  "url" : "https://prismamarket.ee/entry/17106/vahukoor-35-/4740125220025",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "4740125220025",
+    "origin" : "Estonia",
+    "ingredients" : "35% pastöriseeritud rõõsk KOOR",
+    "brand" : "ALMA"
+  }
+}

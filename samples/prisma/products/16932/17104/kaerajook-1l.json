@@ -1,0 +1,18 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "kaerajook-1l",
+  "name" : "kaerajook 1l",
+  "url" : "https://prismamarket.ee/entry/17104/kaerajook-1l/6408659990460",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "6408659990460",
+    "origin" : "Finland",
+    "description" : "Friendly Viking kaerajook, sobilik veganitele X",
+    "ingredients" : "vesi, kaer (10%), rapsiseemneõli, kaltsium, sool, vitamiin B2, foolhape, vitamiin D2, vitamiin B12.",
+    "brand" : "FRIENDLY VIKING'S"
+  }
+}

@@ -8,5 +8,8 @@
     "aiakaubad" : "Gardening",
     "kodukaubad-ja-vaba-aeg" : "Home and leisure"
   },
-  "details" : { }
+  "details" : {
+    "origin" : "Lithuania",
+    "description" : "Karikakar (mitmeaastane), segu. Armastab päikesepaistelist või poolvarjulist kasvukohta ja viljakat, parasniisket mulda. Sageli nimetatakse \"ristikuks\". Õied on valged, roosad, punased. Sobib haljasalale, lillepeenrale, kalmistule."
+  }
 }

@@ -1,0 +1,18 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "tere-kohupiim-0-1--200g-vanilli",
+  "name" : "Tere kohupiim 0,1% 200g vanilli",
+  "url" : "https://prismamarket.ee/entry/17107/tere-kohupiim-0-1--200g-vanilli/4740036007142",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "4740036007142",
+    "origin" : "Estonia",
+    "description" : "Rasvata magus vanillikohupiim. Rikas valgu ja kaltsiumi poolest. Ei sisalda säilitusaineid",
+    "ingredients" : "Rasvata kohupiim, suhkur, želatiin, vanilliin",
+    "brand" : "TERE"
+  }
+}

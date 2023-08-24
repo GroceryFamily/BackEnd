@@ -9,6 +9,9 @@
     "products" : "Groceries"
   },
   "details" : {
-    "ean" : "4742024310074"
+    "ean" : "4742024310074",
+    "origin" : "Estonia",
+    "description" : "Pilt on illustreeriv.",
+    "ingredients" : "Arbuus 50%, melon 25%, kantaluup (cantaloupe-melon) 25%"
   }
 }

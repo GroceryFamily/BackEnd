@@ -1,0 +1,17 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "passioni-sojadessert--150-g",
+  "name" : "Passioni sojadessert, 150 g",
+  "url" : "https://prismamarket.ee/entry/17101/passioni-sojadessert--150-g/5411188121237",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "5411188121237",
+    "origin" : "Belgium",
+    "ingredients" : "Vesi, kooritud sojaoad (14%), granadill (10%) (kontsentreeritud mahl (6%) ja püree (4%)), suhkur, stabilisaatorid (pektiin, guarkummi), maisitärklis, happesuse regulaatorid (naatriumtsitraat, sidrunhape), trikaltsiumtsitraat, looduslik lõhna- ja maitseaine, meresool, puu- ja köögiviljamahlade kontsentraadid (värvisafloor, sidrun), antioksüdandid (tokoferooliekstrakt, askorbiinhappe rasvhappeestrid), vitamiinid (B12, D2), juuretis (S.thermophilus, L.bulgaricus).",
+    "brand" : "ALPRO"
+  }
+}

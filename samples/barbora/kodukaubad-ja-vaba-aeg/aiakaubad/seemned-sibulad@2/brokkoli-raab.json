@@ -8,5 +8,8 @@
     "aiakaubad" : "Gardening",
     "kodukaubad-ja-vaba-aeg" : "Home and leisure"
   },
-  "details" : { }
+  "details" : {
+    "origin" : "Poland",
+    "description" : "Spargelkapsa idud kasvavad lihtsalt ja kiirelt. Idud on maheda, kergelt mõrkja maitsega, krõmpsuvate, erkroheliste lehtede ja roosakate vartega. Külvatud seemneid hoida kaetult 3-4 päeva, algab idanemine 1-2 päeva pärast. Idusid kasutada 7-10 päeva pärast."
+  }
 }

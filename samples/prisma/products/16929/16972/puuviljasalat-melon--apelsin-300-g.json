@@ -9,6 +9,9 @@
     "products" : "Groceries"
   },
   "details" : {
-    "ean" : "4742024310067"
+    "ean" : "4742024310067",
+    "origin" : "Estonia",
+    "description" : "Pilt on illustreeriv.",
+    "ingredients" : "Kollane melon 33,3%, Cantaloupe’i melon 33,3%, apelsin 33,3%"
   }
 }

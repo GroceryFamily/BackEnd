@@ -1,0 +1,17 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "kodujuust-madaroikaga--300-g",
+  "name" : "Kodujuust mädarõikaga, 300 g",
+  "url" : "https://prismamarket.ee/entry/17108/kodujuust-madaroikaga--300-g/4740036014416",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "4740036014416",
+    "origin" : "Estonia",
+    "ingredients" : "Koostisosad: kodujuust 46%, hapukoor, mädarõigas 1,6%, riisitärklis, maltodekstriin, sool.",
+    "brand" : "TERE"
+  }
+}

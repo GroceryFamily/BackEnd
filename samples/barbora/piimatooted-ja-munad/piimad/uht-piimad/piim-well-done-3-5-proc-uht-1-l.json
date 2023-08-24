@@ -1,0 +1,17 @@
+{
+  "namespace" : "barbora.ee",
+  "code" : "piim-well-done-3-5-proc-uht-1-l",
+  "name" : "Piim WELL DONE 3,5% UHT, 1L",
+  "url" : "https://barbora.ee/toode/piim-well-done-3-5-proc-uht-1-l",
+  "prices" : [ ],
+  "categories" : {
+    "piimatooted-ja-munad" : "Dairy and eggs",
+    "piimad" : "Milk"
+  },
+  "details" : {
+    "origin" : "Poland",
+    "description" : "Piim, 3,5% rasva (kõrgpastöriseeritud).",
+    "ingredients" : "PIIM",
+    "brand" : "WELL DONE"
+  }
+}

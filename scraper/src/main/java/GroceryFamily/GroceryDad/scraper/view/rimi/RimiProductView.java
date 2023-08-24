@@ -18,6 +18,8 @@ class RimiProductView extends View implements ProductView {
     public Product product() {
         var details = new HashMap<String, String>();
         brand().ifPresent(brand -> details.put(Detail.BRAND, brand));
+        origin().ifPresent(origin -> details.put(Detail.ORIGIN, origin));
+        ingredients().ifPresent(ingredients -> details.put(Detail.INGREDIENTS, ingredients));
 
         return Product
                 .builder()
@@ -34,5 +36,15 @@ class RimiProductView extends View implements ProductView {
     private Optional<String> brand() {
         var brand = document.select("#details span:contains(brand)").next().text();
         return isBlank(brand) ? Optional.empty() : Optional.of(brand);
+    }
+
+    private Optional<String> origin() {
+        var origin = document.select("span:contains(origin)").next().text();
+        return isBlank(origin) ? Optional.empty() : Optional.of(origin);
+    }
+
+    private Optional<String> ingredients() {
+        var ingredients = document.select("p:contains(ingredients)").next().text();
+        return isBlank(ingredients) ? Optional.empty() : Optional.of(ingredients);
     }
 }

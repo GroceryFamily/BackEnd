@@ -1,0 +1,17 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "oatly-hapendatud-kaerakreem--200-ml",
+  "name" : "Oatly hapendatud kaerakreem, 200 ml",
+  "url" : "https://prismamarket.ee/entry/17106/oatly-hapendatud-kaerakreem--200-ml/7394376616020",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "7394376616020",
+    "origin" : "Sweden",
+    "ingredients" : "Hapendatud kaerapõhi (vesi, kaer, juuretised), taimsed õlid (palm, raps), kartulitärklis, emulgaator (E472e), stabilisaator (E407), happed (õunhape, piimhape), kaltsium.",
+    "brand" : "OATLY"
+  }
+}

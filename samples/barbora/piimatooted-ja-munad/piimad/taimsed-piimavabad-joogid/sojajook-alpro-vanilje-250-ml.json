@@ -1,0 +1,17 @@
+{
+  "namespace" : "barbora.ee",
+  "code" : "sojajook-alpro-vanilje-250-ml",
+  "name" : "Sojajook ALPRO vanilje, 250ml",
+  "url" : "https://barbora.ee/toode/sojajook-alpro-vanilje-250-ml",
+  "prices" : [ ],
+  "categories" : {
+    "piimatooted-ja-munad" : "Dairy and eggs",
+    "piimad" : "Milk"
+  },
+  "details" : {
+    "origin" : "Belgium",
+    "description" : "100% taimne vanillimaitseline sojajook.",
+    "ingredients" : "Vesi, lüditud SOJAOAD (5,8%), suhkur, dekstroos, kaltsiumkarbonaat, looduslikud lõhna-ja maitseained, meresool, happesuse regulaator (monokaaliumdivesinikfosfaat), porgandi ekstrakt, stabilisaator (gellankummi), vitamiiine (riboflaviin (B2), B12, D2).",
+    "brand" : "ALPRO"
+  }
+}

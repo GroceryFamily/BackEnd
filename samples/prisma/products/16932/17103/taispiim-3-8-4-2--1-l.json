@@ -1,0 +1,18 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "taispiim-3-8-4-2--1-l",
+  "name" : "Täispiim 3,8-4,2% 1 l",
+  "url" : "https://prismamarket.ee/entry/17103/taispiim-3-8-4-2--1-l/4740153600042",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "4740153600042",
+    "origin" : "Estonia",
+    "description" : "Preserve in cool place",
+    "ingredients" : "pastörseeritud täisPIIM",
+    "brand" : "MO SAAREMAA"
+  }
+}

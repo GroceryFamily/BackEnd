@@ -1,0 +1,18 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "harilik-kohupiim--500-g",
+  "name" : "Harilik kohupiim, 500 g",
+  "url" : "https://prismamarket.ee/entry/17107/harilik-kohupiim--500-g/4740464710508",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "4740464710508",
+    "origin" : "Estonia",
+    "description" : "Praktiliselt valge, pehme mass. Õige pisut hapukas, keskmiselt täidlase hoiakuga, täispiima maitsega",
+    "ingredients" : "täispiim, juuretis, laap",
+    "brand" : "SAIDAFARM"
+  }
+}

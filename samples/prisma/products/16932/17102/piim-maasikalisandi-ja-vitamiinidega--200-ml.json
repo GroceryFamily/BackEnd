@@ -1,0 +1,16 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "piim-maasikalisandi-ja-vitamiinidega--200-ml",
+  "name" : "Piim maasikalisandi ja vitamiinidega, 200 ml",
+  "url" : "https://prismamarket.ee/entry/17102/piim-maasikalisandi-ja-vitamiinidega--200-ml/4740093333314",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "4740093333314",
+    "ingredients" : "piim, suhkur, maasikalisand 2% (invertsuhkur, vesi, looduslik maasika lõhna- ja maitseaine, maasikamahla kontsentraat 1%, paksendaja - karrageen), vitamiinid A, B6, B12, D, foolhape.",
+    "brand" : "VÄIKE TOM"
+  }
+}

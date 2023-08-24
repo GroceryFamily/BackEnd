@@ -1,0 +1,18 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "rohke-koorega-kodujuust--330-g",
+  "name" : "Rohke koorega kodujuust, 330 g",
+  "url" : "https://prismamarket.ee/entry/17108/rohke-koorega-kodujuust--330-g/4740113090388",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "4740113090388",
+    "origin" : "Estonia",
+    "description" : "Valmistatakse kodujuustu terast (rasvata piim hapendatakse juuretise ja laapfermendi kaasabil, kalkend on edaspidi töödeldud juustuteraks), rõõsast koorest ja soolast.",
+    "ingredients" : "kodujuust, rõõsk koor, sool",
+    "brand" : "FARMI"
+  }
+}

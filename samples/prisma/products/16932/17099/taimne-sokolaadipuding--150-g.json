@@ -1,0 +1,17 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "taimne-sokolaadipuding--150-g",
+  "name" : "Taimne šokolaadipuding, 150 g",
+  "url" : "https://prismamarket.ee/entry/17099/taimne-sokolaadipuding--150-g/4740036015888",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "4740036015888",
+    "origin" : "Estonia",
+    "ingredients" : "vesi, täisterakaer 7%, suhkur, mangopüree 3%, rapsiõli, kookosrasv, tärklis, kartulivalk, paksendaja (ksantaankummi, pektiin), toiduvärv (karoteenid), lõhna- ja maitseained, antioksüdant (alfa-tokoferool), juuretis.",
+    "brand" : "DEARY"
+  }
+}

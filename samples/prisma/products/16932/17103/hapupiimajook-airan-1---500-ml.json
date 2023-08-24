@@ -1,0 +1,18 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "hapupiimajook-airan-1---500-ml",
+  "name" : "Hapupiimajook Airan 1%, 500 ml",
+  "url" : "https://prismamarket.ee/entry/17103/hapupiimajook-airan-1---500-ml/4742749000021",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "4742749000021",
+    "origin" : "Estonia",
+    "description" : "Idamaine hapupiimajook",
+    "ingredients" : "vesi, täispiimapulber, sool, juuretis (sisaldab piimhappebaktereid Streptococcus thermophilus).",
+    "brand" : "AIRAN"
+  }
+}

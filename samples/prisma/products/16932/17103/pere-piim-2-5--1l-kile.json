@@ -1,0 +1,17 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "pere-piim-2-5--1l-kile",
+  "name" : "Pere piim 2,5% 1L kile",
+  "url" : "https://prismamarket.ee/entry/17103/pere-piim-2-5--1l-kile/4740125110036",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "4740125110036",
+    "origin" : "Estonia",
+    "ingredients" : "PIIM",
+    "brand" : "PERE"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "tere-kohuke-juustukoogi-sokolaadiglasuuriga-40-g",
+  "name" : "Tere Kohuke juustukoogi šokolaadiglasuuriga 40 g",
+  "url" : "https://prismamarket.ee/entry/17100/tere-kohuke-juustukoogi-sokolaadiglasuuriga-40-g/47433052",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "47433052",
+    "origin" : "Estonia",
+    "ingredients" : "kohupiim 58%, šokolaadiglasuur 18% (suhkur, kakaomass, kakaovõi, piimarasv, emulgaator (sojaletsitiin, E476), vanilliin), suhkur, apelsinid, rosinad, modifitseeritud tärklis, lõhna- ja maitseaine, paksendaja (pektiin), happesuse regulaator (sidrunhape, naatriumtsitraat, kaltsiumtsitraat), värvisafloori ja sidruni kontsentraat, toiduvärv (karoteenid).",
+    "brand" : "TERE"
+  }
+}

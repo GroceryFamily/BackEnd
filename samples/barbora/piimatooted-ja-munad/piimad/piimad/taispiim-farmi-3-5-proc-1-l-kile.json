@@ -1,0 +1,17 @@
+{
+  "namespace" : "barbora.ee",
+  "code" : "taispiim-farmi-3-5-proc-1-l-kile",
+  "name" : "Täispiim FARMI 3,5%, 1L kile",
+  "url" : "https://barbora.ee/toode/taispiim-farmi-3-5-proc-1-l-kile",
+  "prices" : [ ],
+  "categories" : {
+    "piimatooted-ja-munad" : "Dairy and eggs",
+    "piimad" : "Milk"
+  },
+  "details" : {
+    "origin" : "Estonia",
+    "description" : "Farmi 3,5% rasvasisaldusega täispiim, 1l.",
+    "ingredients" : "PIIM",
+    "brand" : "FARMI"
+  }
+}

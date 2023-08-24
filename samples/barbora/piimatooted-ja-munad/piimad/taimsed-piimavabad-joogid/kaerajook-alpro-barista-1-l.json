@@ -1,0 +1,17 @@
+{
+  "namespace" : "barbora.ee",
+  "code" : "kaerajook-alpro-barista-1-l",
+  "name" : "Kaerajook ALPRO Barista, 1L",
+  "url" : "https://barbora.ee/toode/kaerajook-alpro-barista-1-l",
+  "prices" : [ ],
+  "categories" : {
+    "piimatooted-ja-munad" : "Dairy and eggs",
+    "piimad" : "Milk"
+  },
+  "details" : {
+    "origin" : "Belgium",
+    "description" : "100% taimne kaerajook.",
+    "ingredients" : "KAERApõhine (vesi, KAER (10%)), päevalilleõli, hernevalk, meresool, vitamiinid (B2, B12, D2).",
+    "brand" : "ALPRO"
+  }
+}

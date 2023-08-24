@@ -1,0 +1,16 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "puding-sokolaadi--190-g",
+  "name" : "Puding Šokolaadi, 190 g",
+  "url" : "https://prismamarket.ee/entry/17099/puding-sokolaadi--190-g/4002971253207",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "4002971253207",
+    "ingredients" : "pastöriseeritud lõss, koor (20%), vadak (piim), glükoosi-fruktoosisiirup, suhkur, modifitseeritud maisitärklis, väherasvane kakao (1,7%), šokolaad (1%) (suhkur, kakaopulber, kakaovõi), paksendajad (E407, E412), želatiin, emulgaator (E472b), lõhna- ja maitseaine.",
+    "brand" : "EHRMANN"
+  }
+}

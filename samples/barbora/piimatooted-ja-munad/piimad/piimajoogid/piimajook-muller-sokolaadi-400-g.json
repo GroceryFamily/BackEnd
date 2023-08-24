@@ -1,0 +1,17 @@
+{
+  "namespace" : "barbora.ee",
+  "code" : "piimajook-muller-sokolaadi-400-g",
+  "name" : "Piimajook MÜLLER šokolaadi, 400g",
+  "url" : "https://barbora.ee/toode/piimajook-muller-sokolaadi-400-g",
+  "prices" : [ ],
+  "categories" : {
+    "piimatooted-ja-munad" : "Dairy and eggs",
+    "piimad" : "Milk"
+  },
+  "details" : {
+    "origin" : "Poland",
+    "description" : "Pudel sisaldab päevast annust vitamiine E, B1, B2 ja B6 ning kaltsiumi - mis on oluline igas vanuses inimestele.",
+    "ingredients" : "PIIM, LÕSSIPULBER, VADAK ( PIIMAST ), suhkur, glükoos, 3,8% šokolaadipulber (suhkur, kakaopulber), 0,03% kuivatatud kookospähkli ekstrakt (sh piim ), modifitseeritud tärklisevärvaine E 141, stabilisaator karrageeni, aroomained, E-vitamiin, tiamiin, riboflavin, B6-vitamiin",
+    "brand" : "MÜLLER"
+  }
+}

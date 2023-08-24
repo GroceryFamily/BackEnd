@@ -8,5 +8,8 @@
     "aiakaubad" : "Gardening",
     "kodukaubad-ja-vaba-aeg" : "Home and leisure"
   },
-  "details" : { }
+  "details" : {
+    "origin" : "Lithuania",
+    "description" : "Suurepärased maitseomadused. Keskvarajase peasalati sort (tõusmetest valmimiseni 55-60 päeva), mis annab stabiilselt kõrge saagi. Salati pea kaalub 300-330 g."
+  }
 }

@@ -1,0 +1,18 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "parm--50-g",
+  "name" : "Pärm, 50 g",
+  "url" : "https://prismamarket.ee/entry/17109/parm--50-g/73500384",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "73500384",
+    "origin" : "Sweden",
+    "description" : "Kontsentreeritud küpsetuspärm",
+    "ingredients" : "Presspärm",
+    "brand" : "NORDIC"
+  }
+}

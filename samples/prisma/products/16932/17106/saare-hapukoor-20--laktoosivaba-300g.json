@@ -1,0 +1,17 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "saare-hapukoor-20--laktoosivaba-300g",
+  "name" : "Saare hapukoor 20% laktoosivaba 300g",
+  "url" : "https://prismamarket.ee/entry/17106/saare-hapukoor-20--laktoosivaba-300g/4742231005312",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "4742231005312",
+    "origin" : "Estonia",
+    "ingredients" : "pastöriseeritud rõõsk koor, pastöriseeritud piim, juuretis.",
+    "brand" : "SAARE"
+  }
+}

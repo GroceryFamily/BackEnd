@@ -1,0 +1,18 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "alma-kohupiimahorgutis-muraka-150g",
+  "name" : "Alma kohupiimahõrgutis muraka 150g",
+  "url" : "https://prismamarket.ee/entry/17100/alma-kohupiimahorgutis-muraka-150g/4740125632460",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "4740125632460",
+    "origin" : "Estonia",
+    "description" : "Kihiline kohupiimamagustoit koos maitsva moosilisandiga. Kohupiima maitsestab kerge vanillinoot. Sobib ideaalselt magustoiduks, kuid ka vahepalaks. Preserve in cool place",
+    "ingredients" : "kohupiim 76%, suhkur, vesi, murakad 1,5%, modifitseeritud tärklis, lõhna-ja maitseained, happesuse regulaatorid (sidrunhape, naatriumtsitraadid), toiduvärv (beetakaroteenid).",
+    "brand" : "ALMA"
+  }
+}

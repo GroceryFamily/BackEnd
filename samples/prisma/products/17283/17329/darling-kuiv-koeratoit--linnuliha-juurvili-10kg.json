@@ -9,6 +9,9 @@
     "products" : "Groceries"
   },
   "details" : {
-    "ean" : "7613032933814"
+    "ean" : "7613032933814",
+    "origin" : "Hungary",
+    "description" : "Linnulihaga, lisatud valitud aedviljad. Maitsev, tänu hoolikalt valitud koostisosadele. 100% täisväärtuslik ja tasakaalustatud toit.",
+    "ingredients" : "Koostisosad: teraviljad, liha ja loomsed saadused (8%*), taimse päritoluga saadused (kuivatatud peedi viljaliha 2.5%), õlid ja rasvad, aedviljaproteiini ekstraktid, mineraalid ja aedviljad (0.08% kuivatatud aedvilju, võrdne 0.5% aedviljadega) * võrdne 16% rehüdreeritud liha ja loomsete saadustega, min. 4% linnulihaga."
   }
 }

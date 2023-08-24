@@ -1,0 +1,18 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "klassikaline-kodujuust--330-g",
+  "name" : "Klassikaline kodujuust, 330 g",
+  "url" : "https://prismamarket.ee/entry/17108/klassikaline-kodujuust--330-g/4740572005190",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "4740572005190",
+    "origin" : "Estonia",
+    "description" : "Piimameister Otto klassikaline kodujuust on ebatavaliselt siidine ja pehmete tervete teradega ning maitseb nagu üks õige kodujuust maitsema peab. Suurepärase toote saladus on tervetes terades ning kodujuustule lisatud rõõsas koores, mis annab tootele sametise ja maheda maitse ning mahlase konsistentsi. Preserve in cool place",
+    "ingredients" : "kodujuust, rõõsk koor, sool",
+    "brand" : "PIIMAMEISTER OTTO"
+  }
+}

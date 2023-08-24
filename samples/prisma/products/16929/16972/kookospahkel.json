@@ -9,6 +9,8 @@
     "products" : "Groceries"
   },
   "details" : {
-    "ean" : "2060491300001"
+    "ean" : "2060491300001",
+    "origin" : "Ivory coast",
+    "description" : "Kookospähkel"
   }
 }

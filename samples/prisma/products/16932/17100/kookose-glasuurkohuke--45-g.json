@@ -1,0 +1,17 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "kookose-glasuurkohuke--45-g",
+  "name" : "Kookose glasuurkohuke, 45 g",
+  "url" : "https://prismamarket.ee/entry/17100/kookose-glasuurkohuke--45-g/4750050341412",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "4750050341412",
+    "origin" : "Latvia",
+    "ingredients" : "kohupiim 57%, suhkur, glasuur 18% (või, suhkur, kakaopulber), kookoshelbed 6,6%, lõhna- ja maitseaine.",
+    "brand" : "KARUMS"
+  }
+}

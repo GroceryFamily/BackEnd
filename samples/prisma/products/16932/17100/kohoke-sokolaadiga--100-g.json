@@ -1,0 +1,17 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "kohoke-sokolaadiga--100-g",
+  "name" : "Kohoke šokolaadiga, 100 g",
+  "url" : "https://prismamarket.ee/entry/17100/kohoke-sokolaadiga--100-g/4740426000401",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "4740426000401",
+    "origin" : "Estonia",
+    "ingredients" : "kohupiim, rõõsk koor, suhkur, vanilliin, šokolaad (suhkur, kakaomass, kakaovõi, vanilje, emulgaator-sojaletsitiin)",
+    "brand" : "NOPRI"
+  }
+}

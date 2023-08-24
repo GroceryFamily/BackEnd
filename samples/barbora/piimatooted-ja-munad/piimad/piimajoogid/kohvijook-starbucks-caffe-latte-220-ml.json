@@ -1,0 +1,17 @@
+{
+  "namespace" : "barbora.ee",
+  "code" : "kohvijook-starbucks-caffe-latte-220-ml",
+  "name" : "Kohvijook STARBUCKS Caffe Latte, 220ml",
+  "url" : "https://barbora.ee/toode/kohvijook-starbucks-caffe-latte-220-ml",
+  "prices" : [ ],
+  "categories" : {
+    "piimatooted-ja-munad" : "Dairy and eggs",
+    "piimad" : "Milk"
+  },
+  "details" : {
+    "origin" : "Denmark",
+    "description" : "Rikkalik espresso ja kreemjas piim. Parim jahutatult tarbides. Starbucks kasutab oma toodangus vaid Fairtrade-sertifitseeritud kohviube.",
+    "ingredients" : "3,1% rasvasisaldusega PIIM (75%), Starbucks® araabika kohv (vesi ja kohviekstrakt) (20%), suhkur (5%), looduslik kohvi lõhna- ja maitseaine, happesuse regulaator (kaaliumkarbonaat), stabilisaatorid (karrageen, guargummi), emulgaatorid (taimset päritolu rasvhapete mono- ja diglütseriidid).",
+    "brand" : "STARBUCKS"
+  }
+}

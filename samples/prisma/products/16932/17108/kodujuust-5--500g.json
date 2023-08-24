@@ -1,0 +1,17 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "kodujuust-5--500g",
+  "name" : "Kodujuust 5% 500g",
+  "url" : "https://prismamarket.ee/entry/17108/kodujuust-5--500g/4740125633511",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "4740125633511",
+    "origin" : "Estonia",
+    "ingredients" : "kodujuust, rõõsk koor, sool.",
+    "brand" : "ALMA"
+  }
+}

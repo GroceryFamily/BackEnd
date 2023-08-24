@@ -1,0 +1,18 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "mango-jogurt-kitsepiimast-500g",
+  "name" : "Mango Jogurt kitsepiimast 500g",
+  "url" : "https://prismamarket.ee/entry/17097/mango-jogurt-kitsepiimast-500g/4742852010627",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "4742852010627",
+    "origin" : "Estonia",
+    "description" : "Preserve in cool place",
+    "ingredients" : "kitsepiim, mango, kardemon",
+    "brand" : "KALAMATSI MEIEREI"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "namespace" : "barbora.ee",
+  "code" : "piim-tere-capuccino-3-2-proc-1-l",
+  "name" : "Piim TERE Capuccino 3,2%, 1L",
+  "url" : "https://barbora.ee/toode/piim-tere-capuccino-3-2-proc-1-l",
+  "prices" : [ ],
+  "categories" : {
+    "piimatooted-ja-munad" : "Dairy and eggs",
+    "piimad" : "Milk"
+  },
+  "details" : {
+    "origin" : "Estonia",
+    "description" : "Veidi kõrgema rasvaprotsendiga ja rammusam kõrgkuumutatud piim. Kuna piim on kuumutatud tavapärasest kõrgemal temperatuuril ning pakitud väga steriilses keskkonnas, siis säilib kõrgkuumutatud piim kinnisena ka toatemperatuuril ning pikka aega. Kõrgkuumutatud piim sobib hästi erinevate kohvide valmistamiseks.",
+    "ingredients" : "Pastöriseeritud PIIM.",
+    "brand" : "TERE"
+  }
+}

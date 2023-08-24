@@ -1,0 +1,17 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "mustika-keefir--300-g",
+  "name" : "Mustika keefir, 300 g",
+  "url" : "https://prismamarket.ee/entry/17103/mustika-keefir--300-g/4740125383034",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "4740125383034",
+    "origin" : "Estonia",
+    "ingredients" : "piim 88%, suhkur, mustikad 2,4%, modifitseeritud tärklis, lõhna- ja maitseained, happesuse regulaator (naatriumtsitraadid), toiduvärv (antotsüaaniinid), juuretis, piimhappebakter Lactobacillus rhamnosus gg, D-vitamiin.",
+    "brand" : "GEFILUS"
+  }
+}

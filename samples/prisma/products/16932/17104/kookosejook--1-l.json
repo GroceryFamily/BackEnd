@@ -1,0 +1,17 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "kookosejook--1-l",
+  "name" : "Kookosejook, 1 L",
+  "url" : "https://prismamarket.ee/entry/17104/kookosejook--1-l/5411188128311",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "5411188128311",
+    "description" : "Joogile pole lisatud suhkruid ega magusaineid. Õigupoolest pole joogi maitse ja Teie maitsemeele vahele lisatud midagi liigset ning tänu kookosveele maitseb see kergelt ja värskendavalt. Kuna jook on täielikult taimne, teete heateo nii endale kui ka planeedile.",
+    "ingredients" : "vesi, kookospiim (7%) (kookoskoor, vesi), kookosvesi (2,6%), trikaltsiumfosfaat, looduslik kookose lõhna- ja maitseaine, stabilisaatorid (guarkummi, ksantaankummi, gellankummi), meresool, vitamiinid (B12, D2).",
+    "brand" : "ALPRO"
+  }
+}

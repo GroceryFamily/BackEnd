@@ -1,0 +1,17 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "kohupiim-5---200-g",
+  "name" : "Kohupiim 5%, 200 g",
+  "url" : "https://prismamarket.ee/entry/17107/kohupiim-5---200-g/4740113091026",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "4740113091026",
+    "origin" : "Estonia",
+    "ingredients" : "Rasvata kohupiim, rõõsk KOOR",
+    "brand" : "FARMI"
+  }
+}

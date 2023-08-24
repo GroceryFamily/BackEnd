@@ -8,5 +8,8 @@
     "aiakaubad" : "Gardening",
     "kodukaubad-ja-vaba-aeg" : "Home and leisure"
   },
-  "details" : { }
+  "details" : {
+    "origin" : "Poland",
+    "description" : "Vürtsbasiilik – mahe, aromaatne vürts. Idud on tumerohelised. Külvatud seemneid hoida kaetult 4-5 päeva, idanemine algab 2-3 päeva pärast. Idusid kasutada 10-13 päeva pärast."
+  }
 }

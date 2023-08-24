@@ -1,0 +1,16 @@
+{
+  "namespace" : "rimi.ee",
+  "code" : "taispiim-alma-3-8-4-2-1-5l",
+  "name" : "Täispiim Alma 3,8-4,2% 1,5l",
+  "url" : "https://rimi.ee/epood/en/products/dairy-products-eggs-cheese/milk/milk/taispiim-alma-3-8-4-2-1-5l/p/932404",
+  "prices" : [ ],
+  "categories" : {
+    "milk" : "Milk",
+    "dairy-products-eggs-cheese" : "Dairy products, eggs, cheese"
+  },
+  "details" : {
+    "origin" : "Estonia",
+    "ingredients" : "pastöriseeritud PIIM",
+    "brand" : "Alma"
+  }
+}

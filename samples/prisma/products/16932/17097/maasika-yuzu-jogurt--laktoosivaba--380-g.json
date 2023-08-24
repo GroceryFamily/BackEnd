@@ -10,6 +10,9 @@
   },
   "details" : {
     "ean" : "4740125536256",
+    "origin" : "Estonia",
+    "description" : "Valio Gefilus jogurtid sisaldavad maailmas enimuuritud LGG piimhappebakterit ja eluliselt tähtsat D-vitamiini. Kõik Valio Gefilus jogurtid on laktoosivabad ja valmistatud kvaliteetsest kodumaisest piimast.",
+    "ingredients" : "piim, suhkur, maasikad 2,5%, yuzu mahl 0,13%, modifitseeritud tärklis, želatiin, paksendajad (pektiinid, guarkummi), lõhna- ja maitseaine, porgandikontsentraat, happesuse regulaatorid (sidrunhape, naatriumtsitraadid, kaltsiumtsitraadid), toiduvärv (peedipunane), juuretis, Lactobacillus rhamnosus gg 5x107 cfug, D-vitamiin (*20% päevasest võrdluskogusest).",
     "brand" : "GEFILUS"
   }
 }

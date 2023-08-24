@@ -1,0 +1,17 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "sokolaadi-kaerajook--1-l",
+  "name" : "Šokolaadi kaerajook, 1 l",
+  "url" : "https://prismamarket.ee/entry/17104/sokolaadi-kaerajook--1-l/7394376616211",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "7394376616211",
+    "origin" : "Sweden",
+    "ingredients" : "Kaerapõhi (vesi, kaer (10%)), suhkur (3,5%), kakaopulber (1%), rapsiõli, kaltsiumkarbonaat, kaltsiumfosfaadid, jodeeritud sool, lõhna- ja maitseaine, vitamiinid (D2, riboflaviin ja B12). Piima- ja sojavaba. Laktoosivaba. Kaerajook ei ole mõeldud alla 1-aastastele lastele.",
+    "brand" : "OATLY"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "namespace" : "barbora.ee",
+  "code" : "taispiim-alma-3-8-4-2-proc-0-5-l",
+  "name" : "Täispiim ALMA 3,8-4,2%, 0.5L",
+  "url" : "https://barbora.ee/toode/taispiim-alma-3-8-4-2-proc-0-5-l",
+  "prices" : [ ],
+  "categories" : {
+    "piimatooted-ja-munad" : "Dairy and eggs",
+    "piimad" : "Milk"
+  },
+  "details" : {
+    "origin" : "Estonia",
+    "description" : "Alma pastöriseeritud maapiim on vaba rasvasisaldusega täispiim otse Kesk- ja Lõuna-Eesti farmidest, sest rasvaprotsent on täpselt nagu farmist tulles - 3,8-4,2%.",
+    "ingredients" : "PIIM",
+    "brand" : "ALMA"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "namespace" : "rimi.ee",
+  "code" : "piimajook-banaani-aasa-450ml",
+  "name" : "Piimajook banaani Aasa 450ml",
+  "url" : "https://rimi.ee/epood/en/products/dairy-products-eggs-cheese/milk/flavored-milk/piimajook-banaani-aasa-450ml/p/962391",
+  "prices" : [ ],
+  "categories" : {
+    "milk" : "Milk",
+    "dairy-products-eggs-cheese" : "Dairy products, eggs, cheese"
+  },
+  "details" : {
+    "origin" : "Lithuania",
+    "ingredients" : "PIIM 95%, suhkur, banaanisiirup 1,1% (suhkur, glükoosi-fruktoosisiirup, banaanipüree 2%, toiduvärv: beetakaroteen, lõhna- ja maitseained), stabilisaatorid: rasvhapete mono- ja diglütseriidide estrid, karrageen, guarkummi",
+    "brand" : "Aasa"
+  }
+}

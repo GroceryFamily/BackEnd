@@ -10,6 +10,9 @@
   },
   "details" : {
     "ean" : "4740125582789",
+    "origin" : "Estonia",
+    "description" : "Täiusliku maitse ja mõnusa pehmusega Alma jogurtismuuti on just nagu koduses blenderis valmistatud - hulgaliselt maitsvaid lemmikvilju segatud puhtast kodumaisest piimast valmistatud jogurtiga. Lisaks on uus Alma jogurtismuuti mugavalt käepärases pakendis. Haara lennult, pista kotti ja naudi, kus iganes parajasti soovid.",
+    "ingredients" : "piim, suhkur 8,5%, banaan 4,6%, porgand 4,5%, astelpajumarjad 2,9%, tärklis, looduslikud lõhna- ja maitseained, sidrunimahla kontsentraat, juuretis.",
     "brand" : "ALMA"
   }
 }

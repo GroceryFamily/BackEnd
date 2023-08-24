@@ -1,0 +1,18 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "pastoriseerimata-toorpiim--1-l",
+  "name" : "Pastöriseerimata toorpiim, 1 l",
+  "url" : "https://prismamarket.ee/entry/17103/pastoriseerimata-toorpiim--1-l/4740218000763",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "4740218000763",
+    "origin" : "Estonia",
+    "description" : "Nopri piim tuleb otse meierei kõrvalt, farmist. Me ei transpordi piima pikki kilomeetreid, vaid toodame piima ise, kohapeal. Seega omame otsest kontrolli, et piim oleks alati kõrge kvaliteediga, puhas, tervislik ja kontrollitud! Piim hoiab arstid-ravimid meist üsna kindlasti eemal. Terve ja puhas nagu meie vastse lauda lehm on ka ennast hästi tundva veise piim. Ja sealt edasi tema tarbija. Et igale maitsele oleks sobiv tegelane meie perekonnast Piim on tal rida eesnimesid: Toor, Täis, Hapu, Kodutunne või Keefir. Väidetavalt on meie lehmad sama rõõmsa ja rahuliku olekuga nagu väikeste talude kodused vissid. Me ei kujuta teistmoodi koheldud karja ettegi – seepärast võrrelda ei saa – aga stressi hõngu päris kindlasti meie piimas pole. Sellepärast ka, et meierei rahvas on õnnelik ja Oma.",
+    "ingredients" : "pastöriseerimata piim",
+    "brand" : "NOPRI"
+  }
+}

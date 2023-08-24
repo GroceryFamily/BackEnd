@@ -9,6 +9,8 @@
     "products" : "Groceries"
   },
   "details" : {
-    "ean" : "2060160500008"
+    "ean" : "2060160500008",
+    "origin" : "Dominican republic",
+    "description" : "Pilt on illustreeriv."
   }
 }

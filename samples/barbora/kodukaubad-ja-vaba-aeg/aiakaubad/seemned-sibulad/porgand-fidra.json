@@ -8,5 +8,8 @@
     "aiakaubad" : "Gardening",
     "kodukaubad-ja-vaba-aeg" : "Home and leisure"
   },
-  "details" : { }
+  "details" : {
+    "origin" : "Lithuania",
+    "description" : "Hiline porgandisort, viljakas, säilitamisel säilib hästi. Sobib pesemiseks ja pakendamiseks, vegetatsiooniperiood 110-120 päeva. Juurikad on silindrikujulised, ereoranži värvi. Sobib mehhaaniliseks koristamiseks."
+  }
 }

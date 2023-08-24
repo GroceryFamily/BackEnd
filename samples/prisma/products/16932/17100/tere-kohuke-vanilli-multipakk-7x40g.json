@@ -1,0 +1,17 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "tere-kohuke-vanilli-multipakk-7x40g",
+  "name" : "Tere Kohuke vanilli multipakk 7x40g",
+  "url" : "https://prismamarket.ee/entry/17100/tere-kohuke-vanilli-multipakk-7x40g/4740036016410",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "4740036016410",
+    "origin" : "Estonia",
+    "ingredients" : "kohupiim 66%, šokolaadiglasuur 18% (suhkur, kakaomass, kakaovõi, piimarasv, emulgaator (sojaletsitiin, E476), vanilliin), suhkur, vanilliin.",
+    "brand" : "TERE"
+  }
+}

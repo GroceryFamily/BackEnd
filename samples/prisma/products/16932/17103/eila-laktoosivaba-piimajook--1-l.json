@@ -1,0 +1,17 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "eila-laktoosivaba-piimajook--1-l",
+  "name" : "Eila laktoosivaba piimajook, 1 l",
+  "url" : "https://prismamarket.ee/entry/17103/eila-laktoosivaba-piimajook--1-l/6408430011681",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "6408430011681",
+    "origin" : "Finland",
+    "ingredients" : "piim,D-vitamiin",
+    "brand" : "VALIO"
+  }
+}

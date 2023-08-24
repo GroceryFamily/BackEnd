@@ -1,0 +1,16 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "mandlijook--250-ml",
+  "name" : "Mandlijook, 250 ml",
+  "url" : "https://prismamarket.ee/entry/17104/mandlijook--250-ml/5411188122586",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "5411188122586",
+    "ingredients" : "Vesi, suhkur, MANDEL (2%), trikaltisumfosfaat, meresool, stabilisaatorid (jaanileivapuujahu, gellankummi), emulsioon (päevalille letsitiin), Vitamiiinid (riboflaviin B2, B12, E, D2).",
+    "brand" : "ALPRO"
+  }
+}

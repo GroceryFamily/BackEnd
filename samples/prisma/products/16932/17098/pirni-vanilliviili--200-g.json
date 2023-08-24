@@ -1,0 +1,17 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "pirni-vanilliviili--200-g",
+  "name" : "Pirni-vanilliviili, 200 g",
+  "url" : "https://prismamarket.ee/entry/17098/pirni-vanilliviili--200-g/6414893095892",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "6414893095892",
+    "origin" : "Finland",
+    "ingredients" : "pastöriseeritud piim, suhkur, pirn (4%), lõhna- ja maitseained (sh vanilliin), toiduvärv (E141), paksendaja (E440), happesuse regulaator (E330), säilitusaine (E202), juuretis.",
+    "brand" : "RAINBOW"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "eesti-dipikaste--soolakurgi-kuuslaugu--200-g",
+  "name" : "Eesti dipikaste, soolakurgi-küüslaugu, 200 g",
+  "url" : "https://prismamarket.ee/entry/17106/eesti-dipikaste--soolakurgi-kuuslaugu--200-g/4740125637083",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "4740125637083",
+    "origin" : "Estonia",
+    "ingredients" : "kohupiimapasta, hapukoor, vesi, soolakurgid (7,2 %), küüslauk (1,1 %), suhkur, sool, modifitseeritud maisitärklis, lõhna-ja maitseained, söögiäädikas.",
+    "brand" : "ALMA"
+  }
+}

@@ -8,5 +8,8 @@
     "koogiviljad-puuviljad" : "Vegetables and fruits",
     "puuviljad-ja-marjad" : "Fruits and berries"
   },
-  "details" : { }
+  "details" : {
+    "origin" : "Ecuador",
+    "description" : "100 g tootes: energiasisaldus 408kJ/97kcal, rasvad 0. 3 g, sh küllastunud rasvhapped 0. 1 g, süsivesikud 23. 1 g, sh suhkrud 13. 5 g, valgud 1. 2 g, sool 0 g."
+  }
 }

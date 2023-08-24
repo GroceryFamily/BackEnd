@@ -1,0 +1,17 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "kakao-kirsi-talumaius-150g",
+  "name" : "Kakao-Kirsi talumaius 150g",
+  "url" : "https://prismamarket.ee/entry/17099/kakao-kirsi-talumaius-150g/4740218003665",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "4740218003665",
+    "origin" : "Estonia",
+    "ingredients" : "kohupiim, rõõsk koor, küpsisepuru (nisujahu, suhkur, rapsiõli, kakaopulber 4,5%, nisutärklis, munamass, glükoos-fruktoosisiirup, kergitusained (kaaliumkarbonaadid), sool, emulgaator (sojaletsitiin), lõhna- ja maitseaine), kirsimoos 5% (kirsid 40%, suhkur, vesi, paksendaja pektiin, happesuse regulaator – sidrunhape), suhkur, kakao 1,5%, vanilliin",
+    "brand" : "NOPRI"
+  }
+}

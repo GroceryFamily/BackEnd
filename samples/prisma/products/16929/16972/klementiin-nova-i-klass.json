@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
-    "ean" : "2060876700006"
+    "ean" : "2060876700006",
+    "origin" : "South africa"
   }
 }

@@ -1,0 +1,18 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "piim-1-8---1-5-l",
+  "name" : "Piim 1,8%, 1,5 l",
+  "url" : "https://prismamarket.ee/entry/17103/piim-1-8---1-5-l/4740036014690",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "4740036014690",
+    "origin" : "Estonia",
+    "description" : "x",
+    "ingredients" : "piim, D-vitamiin",
+    "brand" : "TERE"
+  }
+}

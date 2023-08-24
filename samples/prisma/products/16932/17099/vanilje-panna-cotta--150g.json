@@ -1,0 +1,17 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "vanilje-panna-cotta--150g",
+  "name" : "Vanilje Panna Cotta, 150g",
+  "url" : "https://prismamarket.ee/entry/17099/vanilje-panna-cotta--150g/4740113093709",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "4740113093709",
+    "origin" : "Estonia",
+    "ingredients" : "rõõsk koor, vesi, suhkur, modifitseeritud tärklis, lõssipulber, looduslikud lõhna- ja maitseained, želatiin, stabilisaator (karrageen), sool, vaniljeseemned 0,015%.",
+    "brand" : "FARMI"
+  }
+}

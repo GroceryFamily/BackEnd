@@ -9,6 +9,9 @@
     "products" : "Groceries"
   },
   "details" : {
-    "ean" : "5997690707874"
+    "ean" : "5997690707874",
+    "origin" : "Hungary",
+    "description" : "Pilt on illustreeriv. Preserve in dry and dark place",
+    "ingredients" : "Jonathan õun,sidrunhape"
   }
 }

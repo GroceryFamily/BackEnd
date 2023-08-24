@@ -1,0 +1,17 @@
+{
+  "namespace" : "prismamarket.ee",
+  "code" : "maasikaviili--200-g",
+  "name" : "Maasikaviili, 200 g",
+  "url" : "https://prismamarket.ee/entry/17098/maasikaviili--200-g/6414893095205",
+  "prices" : [ ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
+  "details" : {
+    "ean" : "6414893095205",
+    "origin" : "Finland",
+    "ingredients" : "pastöriseeritud piim, suhkur, maasikas (6%), lõhna- ja maitseained (sh vanilliin, vanill), toiduvärv (E120), paksendaja (E440), happesuse regulaator (E330), säilitusaine (E202), juuretis.",
+    "brand" : "RAINBOW"
+  }
+}

@@ -8,5 +8,8 @@
     "aiakaubad" : "Gardening",
     "kodukaubad-ja-vaba-aeg" : "Home and leisure"
   },
-  "details" : { }
+  "details" : {
+    "origin" : "Lithuania",
+    "description" : "Aedkannike on varakevadel õitsev, 10-15 cm kõrgune lill. Kasvatatakse kaheaastasena. Õie läbimõõt 3,7-7 cm, erikujuline. Kõige paremini kasvab päikeselises või poolvarjulises kohas."
+  }
 }
