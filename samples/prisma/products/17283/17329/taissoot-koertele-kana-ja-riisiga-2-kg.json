@@ -12,5 +12,9 @@
     "code" : "products",
     "name" : "Groceries",
     "url" : "https://prismamarket.ee/products/selection"
-  } ]
+  } ],
+  "details" : {
+    "ean" : "4742189000476",
+    "brand" : "DR.STERN"
+  }
 }

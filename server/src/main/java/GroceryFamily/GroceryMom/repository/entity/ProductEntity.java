@@ -3,18 +3,25 @@ package GroceryFamily.GroceryMom.repository.entity;
 import GroceryFamily.GroceryElders.domain.Page;
 import GroceryFamily.GroceryElders.domain.Product;
 import GroceryFamily.GroceryMom.model.PageToken;
+import com.fasterxml.jackson.databind.JavaType;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import jakarta.persistence.*;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
+import lombok.SneakyThrows;
 
 import java.time.Instant;
 import java.util.List;
+import java.util.Map;
 import java.util.Optional;
 
 @Data
 @EqualsAndHashCode
 @Entity(name = "product")
 public class ProductEntity {
+    private static ObjectMapper MAPPER = new ObjectMapper();
+    private static final JavaType DETAILS = MAPPER.getTypeFactory().constructMapLikeType(Map.class, String.class, String.class);
+
     @Id
     private String id;
     private String namespace;
@@ -30,6 +37,20 @@ public class ProductEntity {
     @OneToMany(mappedBy = "product", cascade = CascadeType.ALL)
     @EqualsAndHashCode.Exclude
     private List<CategoryEntity> categories;
+    @EqualsAndHashCode.Exclude
+    @Column(columnDefinition = "text")
+    private String details;
+
+    @SneakyThrows
+    public Map<String, String> getDetails() {
+        return MAPPER.readValue(details, DETAILS);
+    }
+
+    @SneakyThrows
+    public ProductEntity setDetails(Map<String, String> details) {
+        this.details = MAPPER.writeValueAsString(details);
+        return this;
+    }
 
     public Product toDomainProduct() {
         return Product
@@ -40,6 +61,7 @@ public class ProductEntity {
                 .url(getUrl())
                 .prices(PriceEntity.toDomainPrices(getPrices()))
                 .categories(CategoryEntity.toDomainCategories(getCategories()))
+                .details(getDetails())
                 .build();
     }
 
@@ -68,6 +90,7 @@ public class ProductEntity {
                 .setTs(ts)
                 .setVersion(0)
                 .setPrices(PriceEntity.fromDomainPrices(product.identifiablePrices(), ts, entity))
-                .setCategories(CategoryEntity.fromDomainCategories(product.identifiableCategories(), ts, entity));
+                .setCategories(CategoryEntity.fromDomainCategories(product.identifiableCategories(), ts, entity))
+                .setDetails(product.details);
     }
 }
