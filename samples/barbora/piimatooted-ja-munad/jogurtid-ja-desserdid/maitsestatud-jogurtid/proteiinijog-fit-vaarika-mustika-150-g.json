@@ -13,5 +13,7 @@
     "name" : "Dairy and eggs",
     "url" : "https://barbora.ee/piimatooted-ja-munad"
   } ],
-  "details" : { }
+  "details" : {
+    "brand" : "TERE"
+  }
 }

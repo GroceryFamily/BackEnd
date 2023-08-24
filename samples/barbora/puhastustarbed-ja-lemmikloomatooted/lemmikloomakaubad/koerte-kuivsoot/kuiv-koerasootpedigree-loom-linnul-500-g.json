@@ -13,5 +13,7 @@
     "name" : "Household and pets",
     "url" : "https://barbora.ee/puhastustarbed-ja-lemmikloomatooted"
   } ],
-  "details" : { }
+  "details" : {
+    "brand" : "PEDIGREE"
+  }
 }
