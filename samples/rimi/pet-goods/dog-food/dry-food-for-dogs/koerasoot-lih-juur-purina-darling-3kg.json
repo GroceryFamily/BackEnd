@@ -13,5 +13,7 @@
     "name" : "Dog food",
     "url" : "https://rimi.ee/epood/en/products/pet-goods/dog-food/c/SH-7-2"
   } ],
-  "details" : { }
+  "details" : {
+    "brand" : "Purina Darling"
+  }
 }

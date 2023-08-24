@@ -9,5 +9,7 @@
     "name" : "Pre-order festivity meals",
     "url" : "https://rimi.ee/epood/en/products/pre-order-festivity-meals/c/SH-20"
   } ],
-  "details" : { }
+  "details" : {
+    "brand" : "Rimi"
+  }
 }
