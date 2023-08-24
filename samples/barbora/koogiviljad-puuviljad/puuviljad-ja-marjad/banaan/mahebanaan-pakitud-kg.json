@@ -4,14 +4,9 @@
   "name" : "Mahebanaan pakitud, kg",
   "url" : "https://barbora.ee/toode/mahebanaan-pakitud-kg",
   "prices" : [ ],
-  "categories" : [ {
-    "code" : "koogiviljad-puuviljad",
-    "name" : "Vegetables and fruits",
-    "url" : "https://barbora.ee/koogiviljad-puuviljad"
-  }, {
-    "code" : "puuviljad-ja-marjad",
-    "name" : "Fruits and berries",
-    "url" : "https://barbora.ee/koogiviljad-puuviljad/puuviljad-ja-marjad"
-  } ],
+  "categories" : {
+    "koogiviljad-puuviljad" : "Vegetables and fruits",
+    "puuviljad-ja-marjad" : "Fruits and berries"
+  },
   "details" : { }
 }

@@ -4,15 +4,10 @@
   "name" : "Täissööt koertele HÄME 2 kg",
   "url" : "https://prismamarket.ee/entry/17329/taissoot-koertele--hame-2-kg/6430066380008",
   "prices" : [ ],
-  "categories" : [ {
-    "code" : "17283",
-    "name" : "Pets",
-    "url" : "https://prismamarket.ee/products/17283"
-  }, {
-    "code" : "products",
-    "name" : "Groceries",
-    "url" : "https://prismamarket.ee/products/selection"
-  } ],
+  "categories" : {
+    "17283" : "Pets",
+    "products" : "Groceries"
+  },
   "details" : {
     "ean" : "6430066380008",
     "brand" : "DAGSMARK"

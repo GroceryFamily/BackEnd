@@ -4,15 +4,10 @@
   "name" : "Võileivamari must Sudrablinis 100g",
   "url" : "https://rimi.ee/epood/en/products/meat-and-fish-products/fish-roe-and-seafood/fish-roe/voileivamari-must-sudrablinis-100g/p/209357",
   "prices" : [ ],
-  "categories" : [ {
-    "code" : "meat-and-fish-products",
-    "name" : "Meat and fish products",
-    "url" : "https://rimi.ee/epood/en/products/meat-and-fish-products/c/SH-8"
-  }, {
-    "code" : "fish-roe-and-seafood",
-    "name" : "Fish roe and seafood",
-    "url" : "https://rimi.ee/epood/en/products/meat-and-fish-products/fish-roe-and-seafood/c/SH-8-3"
-  } ],
+  "categories" : {
+    "fish-roe-and-seafood" : "Fish roe and seafood",
+    "meat-and-fish-products" : "Meat and fish products"
+  },
   "details" : {
     "brand" : "Silverfish"
   }

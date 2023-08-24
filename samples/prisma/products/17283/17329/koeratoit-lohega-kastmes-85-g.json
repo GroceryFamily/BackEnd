@@ -4,15 +4,10 @@
   "name" : "Koeratoit lõhega kastmes 85 G",
   "url" : "https://prismamarket.ee/entry/17329/koeratoit-lohega-kastmes-85-g/6430069586766",
   "prices" : [ ],
-  "categories" : [ {
-    "code" : "17283",
-    "name" : "Pets",
-    "url" : "https://prismamarket.ee/products/17283"
-  }, {
-    "code" : "products",
-    "name" : "Groceries",
-    "url" : "https://prismamarket.ee/products/selection"
-  } ],
+  "categories" : {
+    "17283" : "Pets",
+    "products" : "Groceries"
+  },
   "details" : {
     "ean" : "6430069586766",
     "brand" : "HAUHAU CHAMPION"

@@ -1,11 +1,10 @@
 package GroceryFamily.GroceryDad.scraper.model;
 
-import GroceryFamily.GroceryElders.domain.Category;
 import lombok.Builder;
 import lombok.ToString;
 
-import java.util.HashSet;
-import java.util.Set;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.function.Function;
 
 @Builder
@@ -36,17 +35,12 @@ public class Source {
         return path;
     }
 
-    public Set<Category> categories() {
-        var categories = new HashSet<Category>();
+    public Map<String, String> categories() {
+        var categories = new HashMap<String, String>();
         var source = this;
         while (source.parent != null) {
             if (source.type == SourceType.CATEGORY) {
-                categories.add(Category
-                        .builder()
-                        .code(source.code)
-                        .name(source.name)
-                        .url(source.url)
-                        .build());
+                categories.put(source.code, source.name);
             }
             source = source.parent;
         }

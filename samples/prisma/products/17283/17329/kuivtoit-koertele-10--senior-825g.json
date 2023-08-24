@@ -4,15 +4,10 @@
   "name" : "Kuivtoit koertele 10+ Senior 825g",
   "url" : "https://prismamarket.ee/entry/17329/kuivtoit-koertele-10--senior-825g/4008429113291",
   "prices" : [ ],
-  "categories" : [ {
-    "code" : "17283",
-    "name" : "Pets",
-    "url" : "https://prismamarket.ee/products/17283"
-  }, {
-    "code" : "products",
-    "name" : "Groceries",
-    "url" : "https://prismamarket.ee/products/selection"
-  } ],
+  "categories" : {
+    "17283" : "Pets",
+    "products" : "Groceries"
+  },
   "details" : {
     "ean" : "4008429113291",
     "brand" : "PERFECT FIT"

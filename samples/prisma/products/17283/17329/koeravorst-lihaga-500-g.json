@@ -4,15 +4,10 @@
   "name" : "Koeravorst lihaga 500 g",
   "url" : "https://prismamarket.ee/entry/17329/koeravorst-lihaga-500-g/4008429046414",
   "prices" : [ ],
-  "categories" : [ {
-    "code" : "17283",
-    "name" : "Pets",
-    "url" : "https://prismamarket.ee/products/17283"
-  }, {
-    "code" : "products",
-    "name" : "Groceries",
-    "url" : "https://prismamarket.ee/products/selection"
-  } ],
+  "categories" : {
+    "17283" : "Pets",
+    "products" : "Groceries"
+  },
   "details" : {
     "ean" : "4008429046414",
     "brand" : "PEDIGREE"

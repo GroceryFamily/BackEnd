@@ -4,15 +4,10 @@
   "name" : "Cesar Country koeratoiduvalik 4x150 g",
   "url" : "https://prismamarket.ee/entry/17329/cesar-country-koeratoiduvalik-4x150-g/3065890148550",
   "prices" : [ ],
-  "categories" : [ {
-    "code" : "17283",
-    "name" : "Pets",
-    "url" : "https://prismamarket.ee/products/17283"
-  }, {
-    "code" : "products",
-    "name" : "Groceries",
-    "url" : "https://prismamarket.ee/products/selection"
-  } ],
+  "categories" : {
+    "17283" : "Pets",
+    "products" : "Groceries"
+  },
   "details" : {
     "ean" : "3065890148550",
     "brand" : "CESAR"

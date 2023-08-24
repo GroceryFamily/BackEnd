@@ -4,15 +4,10 @@
   "name" : "Metsmaasikamaitseline joogijogurt, 1 kg",
   "url" : "https://prismamarket.ee/entry/17097/metsmaasikamaitseline-joogijogurt--1-kg/4740036006275",
   "prices" : [ ],
-  "categories" : [ {
-    "code" : "16932",
-    "name" : "Milk",
-    "url" : "https://prismamarket.ee/products/16932"
-  }, {
-    "code" : "products",
-    "name" : "Groceries",
-    "url" : "https://prismamarket.ee/products/selection"
-  } ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
   "details" : {
     "ean" : "4740036006275",
     "brand" : "TERE"

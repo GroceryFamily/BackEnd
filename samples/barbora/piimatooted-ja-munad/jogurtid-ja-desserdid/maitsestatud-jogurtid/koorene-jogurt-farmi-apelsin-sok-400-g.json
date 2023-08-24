@@ -4,15 +4,10 @@
   "name" : "Koorene jogurt FARMI apelsin&šok., 400g",
   "url" : "https://barbora.ee/toode/koorene-jogurt-farmi-apelsin-sok-400-g",
   "prices" : [ ],
-  "categories" : [ {
-    "code" : "jogurtid-ja-desserdid",
-    "name" : "Yoghurts and desserts",
-    "url" : "https://barbora.ee/piimatooted-ja-munad/jogurtid-ja-desserdid"
-  }, {
-    "code" : "piimatooted-ja-munad",
-    "name" : "Dairy and eggs",
-    "url" : "https://barbora.ee/piimatooted-ja-munad"
-  } ],
+  "categories" : {
+    "piimatooted-ja-munad" : "Dairy and eggs",
+    "jogurtid-ja-desserdid" : "Yoghurts and desserts"
+  },
   "details" : {
     "brand" : "FARMI"
   }

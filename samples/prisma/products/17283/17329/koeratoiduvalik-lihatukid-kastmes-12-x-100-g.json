@@ -4,15 +4,10 @@
   "name" : "Koeratoiduvalik lihatükid kastmes 12 × 100 g",
   "url" : "https://prismamarket.ee/entry/17329/koeratoiduvalik-lihatukid-kastmes-12-x-100-g/5900951249341",
   "prices" : [ ],
-  "categories" : [ {
-    "code" : "17283",
-    "name" : "Pets",
-    "url" : "https://prismamarket.ee/products/17283"
-  }, {
-    "code" : "products",
-    "name" : "Groceries",
-    "url" : "https://prismamarket.ee/products/selection"
-  } ],
+  "categories" : {
+    "17283" : "Pets",
+    "products" : "Groceries"
+  },
   "details" : {
     "ean" : "5900951249341",
     "brand" : "PEDIGREE"

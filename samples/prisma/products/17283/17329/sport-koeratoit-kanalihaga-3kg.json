@@ -4,15 +4,10 @@
   "name" : "Sport koeratoit kanalihaga 3kg",
   "url" : "https://prismamarket.ee/entry/17329/sport-koeratoit-kanalihaga-3kg/8595602526666",
   "prices" : [ ],
-  "categories" : [ {
-    "code" : "17283",
-    "name" : "Pets",
-    "url" : "https://prismamarket.ee/products/17283"
-  }, {
-    "code" : "products",
-    "name" : "Groceries",
-    "url" : "https://prismamarket.ee/products/selection"
-  } ],
+  "categories" : {
+    "17283" : "Pets",
+    "products" : "Groceries"
+  },
   "details" : {
     "ean" : "8595602526666",
     "brand" : "BRIT PREMIUM"

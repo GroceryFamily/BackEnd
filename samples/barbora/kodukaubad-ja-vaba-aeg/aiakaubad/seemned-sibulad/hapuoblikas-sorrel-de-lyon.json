@@ -4,15 +4,10 @@
   "name" : "Hapuoblikas Sorrel De Lyon",
   "url" : "https://barbora.ee/toode/hapuoblikas-sorrel-de-lyon",
   "prices" : [ ],
-  "categories" : [ {
-    "code" : "aiakaubad",
-    "name" : "Gardening",
-    "url" : "https://barbora.ee/kodukaubad-ja-vaba-aeg/aiakaubad"
-  }, {
-    "code" : "kodukaubad-ja-vaba-aeg",
-    "name" : "Home and leisure",
-    "url" : "https://barbora.ee/kodukaubad-ja-vaba-aeg"
-  } ],
+  "categories" : {
+    "aiakaubad" : "Gardening",
+    "kodukaubad-ja-vaba-aeg" : "Home and leisure"
+  },
   "details" : {
     "brand" : "DELUXE GARDEN A"
   }

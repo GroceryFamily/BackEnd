@@ -4,15 +4,10 @@
   "name" : "Brit Premium koeravorst kana- ja lambalihaga 800g",
   "url" : "https://prismamarket.ee/entry/17329/brit-premium-koeravorst-kana--ja-lambalihaga-800g/8595602525898",
   "prices" : [ ],
-  "categories" : [ {
-    "code" : "17283",
-    "name" : "Pets",
-    "url" : "https://prismamarket.ee/products/17283"
-  }, {
-    "code" : "products",
-    "name" : "Groceries",
-    "url" : "https://prismamarket.ee/products/selection"
-  } ],
+  "categories" : {
+    "17283" : "Pets",
+    "products" : "Groceries"
+  },
   "details" : {
     "ean" : "8595602525898",
     "brand" : "BRIT PREMIUM"

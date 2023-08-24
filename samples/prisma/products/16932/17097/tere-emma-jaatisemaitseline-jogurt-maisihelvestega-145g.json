@@ -4,15 +4,10 @@
   "name" : "Tere Emma jäätisemaitseline jogurt maisihelvestega 145g",
   "url" : "https://prismamarket.ee/entry/17097/tere-emma-jaatisemaitseline-jogurt-maisihelvestega-145g/4740036016373",
   "prices" : [ ],
-  "categories" : [ {
-    "code" : "16932",
-    "name" : "Milk",
-    "url" : "https://prismamarket.ee/products/16932"
-  }, {
-    "code" : "products",
-    "name" : "Groceries",
-    "url" : "https://prismamarket.ee/products/selection"
-  } ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
   "details" : {
     "ean" : "4740036016373",
     "brand" : "EMMA"

@@ -4,15 +4,10 @@
   "name" : "Dr.Stern konserv koertele lambaliha tükid kastmes 1,25kg",
   "url" : "https://prismamarket.ee/entry/17329/dr-stern-konserv-koertele-lambaliha-tukid-kastmes-1-25kg/4744355019206",
   "prices" : [ ],
-  "categories" : [ {
-    "code" : "17283",
-    "name" : "Pets",
-    "url" : "https://prismamarket.ee/products/17283"
-  }, {
-    "code" : "products",
-    "name" : "Groceries",
-    "url" : "https://prismamarket.ee/products/selection"
-  } ],
+  "categories" : {
+    "17283" : "Pets",
+    "products" : "Groceries"
+  },
   "details" : {
     "ean" : "4744355019206",
     "brand" : "DR.STERN"

@@ -4,15 +4,10 @@
   "name" : "Dog täissööt kanalihaga, 10 kg",
   "url" : "https://prismamarket.ee/entry/17329/dog-taissoot-kanalihaga--10-kg/5700553111059",
   "prices" : [ ],
-  "categories" : [ {
-    "code" : "17283",
-    "name" : "Pets",
-    "url" : "https://prismamarket.ee/products/17283"
-  }, {
-    "code" : "products",
-    "name" : "Groceries",
-    "url" : "https://prismamarket.ee/products/selection"
-  } ],
+  "categories" : {
+    "17283" : "Pets",
+    "products" : "Groceries"
+  },
   "details" : {
     "ean" : "5700553111059",
     "brand" : "DOG"

@@ -4,15 +4,10 @@
   "name" : "FARMI Koorene jogurt põldmarjadega 150g",
   "url" : "https://prismamarket.ee/entry/17097/farmi-koorene-jogurt-poldmarjadega-150g/4740113097141",
   "prices" : [ ],
-  "categories" : [ {
-    "code" : "16932",
-    "name" : "Milk",
-    "url" : "https://prismamarket.ee/products/16932"
-  }, {
-    "code" : "products",
-    "name" : "Groceries",
-    "url" : "https://prismamarket.ee/products/selection"
-  } ],
+  "categories" : {
+    "16932" : "Milk",
+    "products" : "Groceries"
+  },
   "details" : {
     "ean" : "4740113097141",
     "brand" : "FARMI"

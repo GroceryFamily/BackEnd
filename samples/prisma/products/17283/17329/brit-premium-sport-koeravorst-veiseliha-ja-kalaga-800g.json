@@ -4,15 +4,10 @@
   "name" : "Brit Premium Sport koeravorst veiseliha ja kalaga 800g",
   "url" : "https://prismamarket.ee/entry/17329/brit-premium-sport-koeravorst-veiseliha-ja-kalaga-800g/8595602525935",
   "prices" : [ ],
-  "categories" : [ {
-    "code" : "17283",
-    "name" : "Pets",
-    "url" : "https://prismamarket.ee/products/17283"
-  }, {
-    "code" : "products",
-    "name" : "Groceries",
-    "url" : "https://prismamarket.ee/products/selection"
-  } ],
+  "categories" : {
+    "17283" : "Pets",
+    "products" : "Groceries"
+  },
   "details" : {
     "ean" : "8595602525935",
     "brand" : "BRIT PREMIUM"
