@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/2d23a173c7bcab35a05ffc088422d107.png",
     "ean" : "4740125632248",
     "origin" : "Estonia",
     "description" : "Eestlaste poolt armastatud magustoit ja vahepala nüüd Alma kvaliteediga! Marjane ja hõrgutav metsamarjakissell annab täiendust pehmele ning siidisele kohupiimakreemile. Meelepärane nii lastele kui ka täiskasvanutele.",

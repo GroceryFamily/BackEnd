@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/b68f4b10014a7ee8deb58e439eae8128.png",
     "ean" : "4742231005039",
     "origin" : "Estonia",
     "ingredients" : "Pastöriseeritud rasvatu piim, pastöriseeritud rõõsk koor, suhkur, ploom 4,8%, piimavalk, vesi, paksendaja modifitseeritud maisitärklis, looduslikud lõhna- ja maitseained musta porgandi kontsentraat, happesuse regulaator sidrunhape, jäätise lõhna- ja maitseaine, juuretis",

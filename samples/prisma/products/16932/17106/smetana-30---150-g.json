@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/f699c850ebd5d30c3f32d8c2cba15160.png",
     "ean" : "4742231004018",
     "origin" : "Estonia",
     "description" : "Hapendatud piimatoode",

@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/e1a29cf014a402fe288d24b528844511.png",
     "ean" : "6408430102068",
     "origin" : "Finland",
     "ingredients" : "kaerapõhi (vesi, gluteenivaba kaerajahu, kaltsium, sool), vesi, rapsiõli, happesuse regulaator (kaaliumfosfaadid), jood, vitamiinid (riboflaviin (B2), B12 ja D2). Sisadab kaera 10%.",

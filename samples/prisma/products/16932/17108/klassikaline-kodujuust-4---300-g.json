@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/21ab73fd8fcbe6913a56b913f89931e9.png",
     "ean" : "4740065003177",
     "origin" : "Estonia",
     "description" : "Tere kodujuust on mahlane, mõnusa konsistentsi ja suurepärase maitsega. Pakendatud 300 grammi suurustesse topsidesse. Kodujuust on loomult mahe ja hea konsistentsiga, süüa võib seda eraldi või kasutada toiduvalmistamisel",

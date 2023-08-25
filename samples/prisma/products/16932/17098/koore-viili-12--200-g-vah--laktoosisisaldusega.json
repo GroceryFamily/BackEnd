@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/59164b5dcc5a0b9e9897532dd50cd53e.png",
     "ean" : "6414893386181",
     "origin" : "Finland",
     "ingredients" : "pastöriseeritud koor, juuretis",

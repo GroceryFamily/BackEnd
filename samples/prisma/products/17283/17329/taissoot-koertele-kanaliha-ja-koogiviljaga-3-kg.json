@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/9ea526f2c9fef0901a0a9f35f261aaf2.png",
     "ean" : "7613033800092",
     "origin" : "Germany",
     "description" : "Tasakaalustatud täissööt üle 7-aastastele koertele kanaliha ja köögiviljaga. Friskies Senior on tasakaalustatud täissööt, mis aitab Teie koera liigeseid korras hoida ja parandab tema liikuvust. Hõlpsasti näritavad graanulid. Friskies Senior koeratoit kanaliha ja köögiviljaga, 3 kg",

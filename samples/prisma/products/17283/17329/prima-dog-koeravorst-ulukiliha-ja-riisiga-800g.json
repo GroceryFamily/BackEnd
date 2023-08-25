@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/6605b027b571b6b55ce691afe3fad600.png",
     "ean" : "6430062460933",
     "brand" : "PRIMA DOG"
   }

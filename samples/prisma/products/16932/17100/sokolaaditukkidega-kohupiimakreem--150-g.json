@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/68ea08493087bfbb0eb539e6a5453c09.png",
     "ean" : "4740125631319",
     "origin" : "Estonia",
     "ingredients" : "kohupiimapasta 52%,rõõsk koor, suhkur, vesi, šokolaaditükid 1,6% (kakaomass, kakaovõi, suhkur), modifitseeritud tärklis, paksendajad (pektiinid, guarkummi), lõhna- ja maitseained, happesuse regulaatorid (sidrunhape, naatriumtsitraadid, kaltsiumtsitraadid).",

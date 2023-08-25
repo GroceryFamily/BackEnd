@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/f6e89f6ba6af54472bb7d95f0c136d2d.png",
     "ean" : "4740113093709",
     "origin" : "Estonia",
     "ingredients" : "rõõsk koor, vesi, suhkur, modifitseeritud tärklis, lõssipulber, looduslikud lõhna- ja maitseained, želatiin, stabilisaator (karrageen), sool, vaniljeseemned 0,015%.",

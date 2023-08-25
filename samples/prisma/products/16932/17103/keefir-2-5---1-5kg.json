@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/ff8c916d89955a6782ba98d1043f25ce.png",
     "ean" : "4740125321203",
     "origin" : "Estonia",
     "ingredients" : "piim, juuretis, piimhappebakter Lactobacillus rhamnosus gg, D-vitamiin",

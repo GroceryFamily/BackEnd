@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/01eac7bd06ec2d1140061183c18e8253.png",
     "ean" : "5900643047101",
     "origin" : "Poland",
     "description" : "Metsamarjamaitseline joogijogurt Actiregularis® bakteritega, 280 g. Preserve in cool place",

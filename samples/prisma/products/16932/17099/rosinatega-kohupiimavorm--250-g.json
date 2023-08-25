@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/7e53362346dea0cdd9e7e4f43876dbc3.png",
     "ean" : "4740113090029",
     "origin" : "Estonia",
     "ingredients" : "kohupiim (42%), hapukoor, munamass, suhkur, maitsestamata jogurt, rosinad (10%), manna, vanilliin",

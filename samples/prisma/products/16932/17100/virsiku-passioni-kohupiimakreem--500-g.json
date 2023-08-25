@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/c1d2b21c1be84f169f2fd3b3e7e601bd.png",
     "ean" : "7340011454540",
     "ingredients" : "kohupiim 47% (pastöriseeritud piim, piimhappebakterid, mikrobioloogiline juustulaap), jogurt (pastöriseeritud piim, pastöriseeritud rõõsk koor, piimhappebakterid), virsik 10%, suhkur, glükoosi-fruktoosisiirup, granadillimahl kontsentraadist, modifitseeritud maisitärklis, lõhnaaine.",
     "brand" : "RAINBOW"

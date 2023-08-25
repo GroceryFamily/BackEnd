@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/d9f139ef9a709ccce41ff4bf0f918916.png",
     "ean" : "4742749000021",
     "origin" : "Estonia",
     "description" : "Idamaine hapupiimajook",

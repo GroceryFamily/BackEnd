@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/cc004deca534d136ed5690f382d39d4e.png",
     "ean" : "6414893095205",
     "origin" : "Finland",
     "ingredients" : "pastöriseeritud piim, suhkur, maasikas (6%), lõhna- ja maitseained (sh vanilliin, vanill), toiduvärv (E120), paksendaja (E440), happesuse regulaator (E330), säilitusaine (E202), juuretis.",

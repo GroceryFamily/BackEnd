@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/893eaf8ca62e04cd0210a9f1b32d5ee5.png",
     "ean" : "4002334107673",
     "origin" : "Germany",
     "ingredients" : "jogurt, suhkur, mandariin, laimimahl, vesi, modifitseeritud tärklis, paksendaja: pektiin, värvaine kontsentraat porgand, happesuse regulaator: naatriumtsitraat",

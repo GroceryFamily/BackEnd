@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/3e347402cd9a3c76c0b51845aa392d9a.png",
     "ean" : "4740125612059",
     "origin" : "Estonia",
     "description" : "Figuurisõpradele teada-tuntud Alma rasvatu kohupiimakreem on hoolimata olematule rasvasisaldusele meeldivalt pehme maitsega. See sobib ideaalselt kõiksugu kergete kookide, tortide ja muude hõrgutiste valmistamiseks",

@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/40fe46ad944fc8663c36553559619a48.png",
     "ean" : "5902021230457",
     "origin" : "South africa",
     "description" : "Pilt on illustreeriv."

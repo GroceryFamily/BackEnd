@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/bfa0a0485c605498373167ce356ac664.png",
     "ean" : "4750050342211",
     "origin" : "Latvia",
     "description" : "Vanillimaitselised kohukesed šokolaadiglasuuris. Pakis 6 tk + 1 tk tasuta. Säilitusainete ja taimerasvavaba",

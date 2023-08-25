@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/8c560ef6b830565b5f66db68d4199ba6.png",
     "ean" : "6414893148901",
     "origin" : "Finland",
     "description" : "Rainbow maasikajogurt maitseb hästi hommikusöögina või vahepalana. Selles on maasikaid 5% ja rasvu 2%.",

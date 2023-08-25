@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/249a27c3fb5cc7d888469aa78b696281.png",
     "ean" : "4740572005190",
     "origin" : "Estonia",
     "description" : "Piimameister Otto klassikaline kodujuust on ebatavaliselt siidine ja pehmete tervete teradega ning maitseb nagu üks õige kodujuust maitsema peab. Suurepärase toote saladus on tervetes terades ning kodujuustule lisatud rõõsas koores, mis annab tootele sametise ja maheda maitse ning mahlase konsistentsi. Preserve in cool place",

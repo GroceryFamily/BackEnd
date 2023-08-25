@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/75c7062406bb10072a3d192644bcdb65.png",
     "ean" : "4740218002323",
     "origin" : "Estonia",
     "ingredients" : "piim, mustika-maasika püree (maasikas, mustikas, suhkur, modifitseeritud tärklis), juuretis",

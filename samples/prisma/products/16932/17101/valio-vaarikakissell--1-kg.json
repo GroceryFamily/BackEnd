@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/692c2f54577c1a99a548aeaadc26286f.png",
     "ean" : "6408430062157",
     "origin" : "Finland",
     "ingredients" : "vesi, suhkur, vaarikamahl 11,5%, vaarikad (5,5%), paksendaja( guarkummi), modifitseeritud maisitärklis, happesuse regulaator (sidrunhape), C-vitamiin",

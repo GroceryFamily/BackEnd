@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/3625f4650ad9051443b8d0caf408446a.png",
     "ean" : "4740125582789",
     "origin" : "Estonia",
     "description" : "Täiusliku maitse ja mõnusa pehmusega Alma jogurtismuuti on just nagu koduses blenderis valmistatud - hulgaliselt maitsvaid lemmikvilju segatud puhtast kodumaisest piimast valmistatud jogurtiga. Lisaks on uus Alma jogurtismuuti mugavalt käepärases pakendis. Haara lennult, pista kotti ja naudi, kus iganes parajasti soovid.",

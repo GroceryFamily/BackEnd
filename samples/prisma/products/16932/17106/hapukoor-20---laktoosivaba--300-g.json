@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/7d44fa78a2ba71f7f97fbf6196264c5e.png",
     "ean" : "4740036011156",
     "origin" : "Estonia",
     "description" : "Klassikaline hapukoor kõige levinuma rasvaprotsendiga ja mõnusa konsistentsiga, mis on nüüdsest ka laktoosivaba ja mugavas topsis",

@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/db17c01076ab8b691ae3149e462503bc.png",
     "ean" : "4740036015833",
     "origin" : "Estonia",
     "ingredients" : "kohupiim 80%, suhkur, mustikad 3%, vaarikad 3%, modifitseeritud tärklis, pohlad 0,5%, looduslikud lõhna- ja maitseained, happesuse regulaator (naatriumtsitraat).",

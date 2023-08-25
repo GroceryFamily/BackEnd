@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/0e25a5f7b6546e3f5d9ff3428585e1ab.png",
     "ean" : "4740464730506",
     "origin" : "Estonia",
     "description" : "Kakaovärvi pruun, kreemjas, poolpaks šokolaadi maitsega magus kohupiimamass. Iseseisev magustoit. Sobib hästi kiselliga",

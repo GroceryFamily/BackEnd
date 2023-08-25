@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/c0c00e058ade226fd3876f4e992a2c60.png",
     "ean" : "6438460181733",
     "origin" : "Spain"
   }

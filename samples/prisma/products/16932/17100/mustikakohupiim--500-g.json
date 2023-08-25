@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/1f039fa410d73ef21d6d4a712b77bfb7.png",
     "ean" : "6414893096035",
     "origin" : "Germany",
     "description" : "X-tra mustikakohupiimas on rasva ainult 0,2%. Mustikakohupiim sobib hästi vahepalaks või magustoiduks.",

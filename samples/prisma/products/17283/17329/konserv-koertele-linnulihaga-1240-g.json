@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/483bdbbc4c19ad1d37b0558e4095db8d.png",
     "ean" : "7340011336334",
     "origin" : "France",
     "description" : "Täissööt, mis sisaldab kõiki koerale vajalikke toitaineid. Täiskonserv, kasutusvalmis.",

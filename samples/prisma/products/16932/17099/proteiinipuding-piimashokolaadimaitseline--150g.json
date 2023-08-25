@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/7281554c20c6b19e37417748f5d51ac9.png",
     "ean" : "4740125534245",
     "origin" : "Estonia",
     "ingredients" : "piim, piimavalk, väherasvane kakaopulber 1,6%, modifitseeritud tärklis, stabilisaatorid( naatriumfosfaat, naatriumkarbonaat), lõhna-ja maitseained, paksendajad (ksantaankummi, karrageen), magusained (atsesulfaam K, sukraloos), looduslik lõhna-ja maitseaine.",

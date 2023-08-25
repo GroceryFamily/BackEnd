@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/637105d48b1885d43ff595f18e7f6c7f.png",
     "ean" : "5900951249426",
     "origin" : "Poland",
     "brand" : "PEDIGREE"

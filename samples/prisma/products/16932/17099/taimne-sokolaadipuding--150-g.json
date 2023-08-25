@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/2dbcbc5bd7836256c43c21676d17ccb8.png",
     "ean" : "4740036015888",
     "origin" : "Estonia",
     "ingredients" : "vesi, täisterakaer 7%, suhkur, mangopüree 3%, rapsiõli, kookosrasv, tärklis, kartulivalk, paksendaja (ksantaankummi, pektiin), toiduvärv (karoteenid), lõhna- ja maitseained, antioksüdant (alfa-tokoferool), juuretis.",

@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/682c53f39ffa730c1aa3b96463ce5175.png",
     "ean" : "5700553111066",
     "brand" : "DOG"
   }

@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/8d79939e8fa90cbb58ec75757fda44de.png",
     "ean" : "6430015537163",
     "description" : "Taimne fermenteeritud kaeravahepala, sisaldab piimhappebaktereid. Suurepärane taimne alternatiiv jogurtile.",
     "ingredients" : "vesi, kaer (8%), suhkur, pohlad, maasikad, mustikad, vaarikad, paksendaja (pektiin), lõhna- ja maitseained, toiduvärv (betaniin), jodeeritud sool, juuretis. Marjasisaldus 6%. Võib sisaldada gluteeni.",

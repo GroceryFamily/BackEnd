@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/fc054bfb9125497fafbe972c7243622b.png",
     "ean" : "4740125636123",
     "origin" : "Estonia",
     "ingredients" : "kohupiimapasta 90%, vesi, vaarikad 1,5%, paksendaja (modifitseeritud tärklis), toiduvärv (peedipunane), lõhna- ja maitseained, hap-pesuse regulaator (naatriumtsitraat), magusained (atsesulfaam-K, sukraloos).",

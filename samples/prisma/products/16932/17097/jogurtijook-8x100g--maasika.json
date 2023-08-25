@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/64917385533d15aa66740b86f5474901.png",
     "ean" : "4751008971026",
     "origin" : "Belgium",
     "description" : "Actimel maasika jogurtijook. Fermenteeritud piiim L. Casei Danone ning B6 ja D vitamiinidega.",

@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/bedcbcddfe05fd108617e5447a79884b.png",
     "ean" : "6410180045717",
     "origin" : "Finland",
     "description" : "Oscar koerte pikkpoiss, 1 kg",

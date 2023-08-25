@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/aee0be1780119fb5ba42ecf6c7f08b22.png",
     "ean" : "4740113035631",
     "origin" : "Estonia",
     "ingredients" : "rõõsk koor, juuretis",

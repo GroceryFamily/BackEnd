@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/200f81a67a5c249b9898c0048a27ebe9.png",
     "ean" : "4770265048029",
     "origin" : "Lithuania",
     "ingredients" : "piim, juuretis, piimhappebakterid",

@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/5347b309f16bac2af3a50bb47372094f.png",
     "ean" : "40338637",
     "origin" : "Germany",
     "ingredients" : "vadak, piim, suhkur, modifitseeritud tärklis, lahja kakaopulber (1,1%),tärklis, kooritud piimapulber, vadakuvalk,stabilisaator E407,lõhna ja maitseained.",

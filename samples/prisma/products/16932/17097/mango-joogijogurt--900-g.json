@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/7d2484c9657e85320e101511bb23bf45.png",
     "ean" : "4740125525243",
     "origin" : "Estonia",
     "ingredients" : "piim, suhkur, mangomahl 0,5%, porgandikontsentraat, lõhna- ja maitseained, paksendaja (pektiinid), happesuse regulaatorid (sidrunhape, naatriumtsitraadid), juuretis, D-vitamiin.",

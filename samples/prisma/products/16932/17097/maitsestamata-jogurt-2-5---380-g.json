@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/ab44081df31e94d5e998fe363ae8dddf.png",
     "ean" : "4740125536096",
     "origin" : "Estonia",
     "ingredients" : "piim, juuretis, piimhappebakter Lactobacillus rhamnosus gg.",

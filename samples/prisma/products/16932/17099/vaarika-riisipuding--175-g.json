@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/45d8b4ee964717248e201c3d66640f50.png",
     "ean" : "7340011457121",
     "description" : "Rainbow riisimagustoit sisaldab maitsvat vanillimaitselist riisi ja värsket vaarikamoosi. See on valmis söömiseks: vahepalaks või magustoiduks.",
     "ingredients" : "piim (Tšehhi), koor, riis (7,7%) (Prantsusmaa), vaarikad (6,8%), suhkur, glükoosi-fruktoosisiirup, modifitseeritud maisitärklis, paksendaja (E440), sidrunikontsentraat, mustaporgandikontsentraat, happesuse regulaatorid (E330, E331), lõhna- ja maitseained, glükoos, vadakupulber (piim), lõhna- ja maitseaine, sool, stabilisaator (E407), kanamunapulber.",

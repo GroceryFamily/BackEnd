@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/ba7500145fb3bd004137b37e40f86fa0.png",
     "ean" : "4740036013143",
     "origin" : "Estonia",
     "ingredients" : "kreeka jogurt 78%, mustikamoos 12% [suhkur, mustikad 30%, glükoosi- fruktoosisiirup, paksendajad (modifitseeritud tärklis, pektiin), lõhna- ja maitseaine, happesuse regulaatorid (naatriumtsitraadid, kaltsiumtsitraadi d)], jõhvikamüsli 10% [krõbe müsli 80% (täisterakaerahelbed, glükoosisiirup, jahu (kaeraterad, oder, mais), taimne rasv (palmiõli), kookoshelbed, emulgaator: letsitiin (soja), meresool, lõhna- ja maitseaine), jõhvika tükid 20% (jõhvikad, suhkur, päevalilleõli, riisijahu)]",

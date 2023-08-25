@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/3bc09a3717069a158ba7e57501102443.png",
     "ean" : "4770265211652",
     "origin" : "Lithuania",
     "ingredients" : "kohupiim 57%, Belgia šokolaad 18% (suhkur, kakaomass, kakaovõi, piimarasv, täispiimapulber, emulgaator: sojaletsitiin, vanilliini maitse-ja lõhnaaine), mustikalisand 13% (suhkur, mustikad 40%, paksendaja: pektiin, maitse-ja lõhnaained, happesuse regulaatorid: sidrunhape, naatriumtsitraat, värvaine: antotsüaniin), suhkur, või.",

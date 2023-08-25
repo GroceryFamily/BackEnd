@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/bf8597b70b85060ab5cbf8dfc33c4723.png",
     "ean" : "7394376614798",
     "origin" : "Sweden",
     "ingredients" : "kaerapõhi (vesi, kaer 10%), rapsiõli, sool, vitamiinid (D, riboflaviin ja B12), kaltsium.",

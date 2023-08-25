@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/cdc0885f0d9cfc4ad9bc5582b1cc52b5.png",
     "ean" : "4740036013709",
     "origin" : "Estonia",
     "ingredients" : "piim, piimašokolaadi kommid 10% [suhkur, kakaomass, kakaovõi, täispiimapulber, tärklis, emulgaator (letsitiinid), glaseerained (kummiaraabik, karnaubavaha, meevaha (valge ja kollane)), viinamarjamahla kontsentraat, vetikate kontsentraat, odralinnaseekstrakt, toiduvärvid (kurkumiin, riboflaviinid, klorofülli ja klorofülliini vaskkompleksid, karoteenid, peedipunane, betaniin)], suhkur, paksendajad (modifitseeritud tärklis, želatiin, pektiin), lõssipulber, lõhna- ja maitseaine, toiduvärv (karoteenid), juuretis.",

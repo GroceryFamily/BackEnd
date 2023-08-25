@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/605deede09646ae464a97c676e37db7d.png",
     "ean" : "2060560700008",
     "origin" : "Moldova",
     "description" : "Pilt on illustreeriv. Murel I klass"

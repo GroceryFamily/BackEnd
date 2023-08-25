@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/6d1ec34f482ddcaa270cbd795127c20a.png",
     "ean" : "4002971301601",
     "origin" : "Germany",
     "description" : "Sisaldab rohkelt valku. Laktoosivaba. Soovitatav enne söömist külmikus jahutada.",

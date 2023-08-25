@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/a3037db3154a32369821f5ab26b007d4.png",
     "ean" : "4740125638530",
     "origin" : "Estonia",
     "description" : "Eestlaste poolt palavalt armastatud traditsiooniline kohupiim Alma kvaliteediga! Pehme tekstuuriga valgurikas kohupiim, millele on lisatud mahlaseid rosinaid. Alma kohupiim sobib ideaalselt maitsvate kookide, tortide ja küpsetiste valmistamiseks ning ka puhtalt nautimiseks. Alma kohupiimad on Alma toodetele omaselt säilitusainetevabad, hea valguallikas ning mõistagi tehtud puhtast kodumaisest Eesti piimast.",

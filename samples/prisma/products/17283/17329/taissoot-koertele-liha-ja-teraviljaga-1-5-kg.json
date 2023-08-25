@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/658a97dd50ff60c6ed0a03e805b1bad8.png",
     "ean" : "6415712301224",
     "origin" : "Sweden",
     "description" : "Rainbow krõbinad on koerale mõeldud poolniiske täisväärtuslik toit, mida on mugav süüa. Toote tasakaalustatud koostise puhul on arvestatud täiskasvanud koera toitainetevajadusega, mida mõjutavad mh koera aktiivsus, vanus ja tõug. Esineb mõningasi erinevusi ja koera toitmine peab sõltuma Sinu koera vajadustest. Toode sobib eraldi eineks.",

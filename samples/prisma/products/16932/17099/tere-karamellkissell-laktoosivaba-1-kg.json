@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/6f5cbec8dd79b9ac4baff1d27173f513.png",
     "ean" : "4740036011507",
     "origin" : "Estonia",
     "ingredients" : "piim, suhkur, modifitseeritud tärklis, karamelli lõhna- ja maitseaine, toiduvärv (karoteenid, E 150c), sool.",

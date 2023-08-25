@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/9da58a1a38172d00a77530f344cb8934.png",
     "ean" : "8001220136557",
     "origin" : "France",
     "description" : "Täissööt täiskasvanud koertele. Pedigree Meaty Apetite koeratoit ulukiliha ja porgandiga, 400 g",

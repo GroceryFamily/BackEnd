@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/65bacdd09f596431f9d96fc8206ba057.png",
     "ean" : "5411188082637",
     "origin" : "Belgium",
     "description" : "100% taimne šokolaadimaitseline sojajook.",

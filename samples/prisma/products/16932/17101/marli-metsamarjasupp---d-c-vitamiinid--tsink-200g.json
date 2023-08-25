@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/d1f0647b7a64f4cb8232fc880d707f0c.png",
     "ean" : "6415130038863",
     "ingredients" : "vesi, püreestatud maasikad, mustikad, vaarikad, suhkur, paksendajad (modifitseeritud tärklis ja pektiin), mustikamahl kontsentreeritud mahlast, happesuse regulaator (sidrunhape), lõhna- ja maitseaine, tsinklaktaat, C- ja D-vitamiin. Marjasisaldus 9%.",
     "brand" : "MARLI TARHURIN"

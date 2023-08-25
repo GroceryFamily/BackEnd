@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/c8e121866fa38529155203394b049450.png",
     "ean" : "4740113090470",
     "origin" : "Estonia",
     "ingredients" : "Pastöriseeritud piim, juuretis",

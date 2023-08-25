@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/ca94ffe0e360ecd8c93bc595e071a8f5.png",
     "ean" : "7340011419785",
     "ingredients" : "vadak (piim), piim, suhkur, modifitseeritud maisitärklis, vähendatud rasvasisaldusega kakaopulber* 1,2%, maisitärklis, stabilisaatorid (E 407, E 410), lõhna- ja maitseained. Vadaku päritolu: Saksamaa. *Rainforest Alliance sertifitseeritud, ra.org",
     "brand" : "X-TRA"

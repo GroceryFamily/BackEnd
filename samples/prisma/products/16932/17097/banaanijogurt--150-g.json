@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/5b75b831706995761fedb39ae7a673b1.png",
     "ean" : "6414893095687",
     "origin" : "Finland",
     "description" : "Rainbow banaanijogurt maitseb hästi hommikusöögina või vahepalana. Jogurtis on 3% banaani ja rasvu 2%.",

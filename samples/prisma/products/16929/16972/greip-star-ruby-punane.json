@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/20afbc1a6e304127405e06971eee2f40.png",
     "ean" : "2060400600000",
     "origin" : "South africa"
   }

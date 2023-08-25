@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/e5c50a923e0383a05a9d01cf673a8826.png",
     "ean" : "6414893503236",
     "ingredients" : "vesi, mustikapüree (Soome), suhkur, modifitseeritud maisitärklis, paksendaja (E440), happesuse regulaator (E330), C-vitamiin. Mustikaid 11%.",
     "brand" : "KOTIMAISTA"

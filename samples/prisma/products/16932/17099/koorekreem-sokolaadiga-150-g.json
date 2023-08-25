@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://prismamarket.ee/images/entry-no-image.png",
     "ean" : "4750050010066",
     "origin" : "Latvia",
     "ingredients" : "Piim, rõõsk koor 17%, suhkur, vesi, lõssipulber, kakaopulber, toiduželatiin, modifitseeritud tärklis, stabilisaatorid: karrageen, rasvhapete mono- ja diglütseriidid; toiduvärv raudoksiidid ja raudhüdroksiidid, šokolaadi ja vanilli lõhna- ja maitseaine",

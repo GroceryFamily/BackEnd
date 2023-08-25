@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/60ca565deb5a70668a20dfb2bc5f4e5f.png",
     "ean" : "5900951263316",
     "description" : "Täissööt täiskasvanud koertele Pedigree Adult koeratoit härja- ja linnulihaga, 2,6 kg",
     "ingredients" : "Koostis: teravili, liha ja loomsed saadused (18%, millest 4% linnuliha pruunides graanulites, millest 4% härjaliha punakaspruunides graanulites), rasvad ja õlid (millest 0,4% päevalilleõli), taimsed saadused (millest 1% kuivatatud peedipulpi), mineraaltoitained. Analüütiline koostis: valk (21%), rasv (13%), anorgaaniline aine (7,5%), toorkiud (1,8%). Söödalisandid kg kohta. Antioksüdandid / toitainelised lisandid: A-vitamiin (11 900 iu), D3-vitamiin (1312 iu), E-vitamiin (390 mg), vask(ii)sulfaatpentahüdraat (19,2 mg), kaaliumjodiid (1,6 mg), naatriumseleniit (0,58 mg), tsinksulfaatmonohüdraat (625 mg).",

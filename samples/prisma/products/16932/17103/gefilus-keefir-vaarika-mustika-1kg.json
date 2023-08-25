@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/34b1aac62b3a1b6f99ae04d4dcd9f807.png",
     "ean" : "4740125321197",
     "origin" : "Estonia",
     "description" : "Valio Gefilus vaarika-mustika maitsekeefiris saavad kokku kodused marjad vaarikad ja mustikad – mõlemad eestlaste poolt palavalt armastatud. Rääkimata tervislikust LGG piimhappebakterist ja eestimaalastele vajalikust D-vitamiinist. Loomulikult on Valio Gefilus vaarika-mustika keefir valmistatud 100% eestimaistest puhtast piimast ning suures 1kg pakendis ei ole ohtu, et maitsev keefir liiga kiiresti otsa saaks!",

@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/c9e236b0fd7d9567588ebc2d2599c503.png",
     "ean" : "5900951017261",
     "origin" : "Poland",
     "description" : "Tükid tarrendis Preserve at room temperature",

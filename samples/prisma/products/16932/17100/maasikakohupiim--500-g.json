@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/57640abf7aa7a88c6f21e8104c0c99b8.png",
     "ean" : "6414893095991",
     "origin" : "Germany",
     "description" : "X-tra maasikakohupiimas on rasva ainult 0,2%. Maasikakohupiim sobib hästi vahepalaks või magustoiduks.",

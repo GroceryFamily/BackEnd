@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/70a6097c07814308934e932a9ab05844.png",
     "ean" : "4742117001711",
     "origin" : "Estonia",
     "description" : "Õuna ja kirsi loomuliku magususega, ehtsate jogurtibakteritega kaerajook, laktoosi- ja kaseiinivaba.",

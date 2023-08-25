@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/372a64c9e92100b027a6c441aec30ce4.png",
     "ean" : "4740036011927",
     "origin" : "Estonia",
     "ingredients" : "kohupiimakreem 53% (rasvata kohupiimapasta, rõõsk koor, suhkur, vanilliin), jõhvikakissell 47% [vesi, suhkur, jõhvikad 10,2%, glükoosi- fruktoosisiirup, stabilisaator (modifitseeritud tärklis, pektiin), happesuse regulaator (sidrunhape, naatriumtsitraat, kaltsiumtsitraat), lõhna- ja maitseaine].",

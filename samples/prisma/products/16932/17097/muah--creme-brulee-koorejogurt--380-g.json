@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/aacae21aaaf31586ce000020a71a79ee.png",
     "ean" : "4740125535839",
     "origin" : "Estonia",
     "ingredients" : "rõõsk koor 82%, créme brulée maitseline lisand 18% (suhkur, vesi, modifitseeritud tärklis, lõhna-ja maitseained, paksendaja (guarkummi), happesuse regulaatorid (sidrunhape, naatriumtsitraadid), toiduvärv (karoteenid)), juuretis.",

@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/c041efcb2c4224f50be241b8ca8d0e02.png",
     "ean" : "4740036013280",
     "origin" : "Estonia",
     "ingredients" : "piim, suhkur, paksendaja (tärklis), želatiin, põldmarjad 1,5%, vaarikad 1,2%, mustikad 1,0%, lõssipulber, pohlad 0,2%, lõhna- ja maitseaine, looduslik lõhna- ja maitseaine, happesuse regulaator (naatriumtsitraatid), vitamiinide segu (A-120 μg, B1 - 0,165 mg, B2 - 0,21 mg, B5 - 0,9 mg, B6 - 0,21 mg, B12 - 0,375 μg, C - 12 mg, D - 0,75μg, E - 1,8 mg, biotiin - 7,5 μg, foolhape - 30 μg, niatsiin - 2,4 mg)*, juuretis (sisaldab Lactobacillus fermentum me-3). *15% võrdluskogusest 100 g tootes.",

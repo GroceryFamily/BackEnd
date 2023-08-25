@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/1118fd9a37322c6577264d9353878944.png",
     "ean" : "4740125638073",
     "origin" : "Estonia",
     "ingredients" : "kohupiimapasta, rosina-vanillilisand (suhkur, rosinad, vesi, paksendajad (pektiin, ksantaankummi), lõhna-ja maitseained (vanill), happesuse regulaator (sidrunhape)), rõõskkoor. Tootes on 6% rosinaid",

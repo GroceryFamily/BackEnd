@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/c1489e11af0e39b92c5dc7aa4d2de693.png",
     "ean" : "4740125582000",
     "origin" : "Estonia",
     "ingredients" : "piim 87%, suhkur, mango 2%, maasikad 1,3%, lõhna- ja maitseained, happesuse regulaator (sidrunhape), toiduvärvid (karoteenid, betaniin), juuretis",

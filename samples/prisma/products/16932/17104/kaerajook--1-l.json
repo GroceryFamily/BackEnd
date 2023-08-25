@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/00b41350332f35915a9575b77a047c65.png",
     "ean" : "6414893397019",
     "description" : "Rikastatud vitamiinide ja kaltsiumiga. Laktoosivaba. 100% taimne. Homogeniseeritud ja UHT-töödeldud. Preserve in cool place",
     "ingredients" : "Vesi, kaer 10%, päevalilleõli, mineraalaine (kaltsiumkarbonaat), meresool, vitamiinid (E-vitamiin, B6-vitamiin, riboflaviin, A-vitamiin, foolhape, D2-vitamiin, B12-vitamiin).",

@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/99e07a5ce6b1594544ac2789a2d41d5e.png",
     "ean" : "4740036007340",
     "origin" : "Estonia",
     "description" : "Hea kreemjas ja küllusliku banaani maitsega kohupiimapasta, mis on nüüdsest rikastatud ka D-vitamiiniga",

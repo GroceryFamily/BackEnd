@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/b9aa477050cc33db6bd12cc5a7f71e0e.png",
     "ean" : "5411188115434",
     "ingredients" : "vesi, kooritud sojaoad (8,7%), õunaekstrakt, happesuse regulaatorid (kaaliumdivesinikfosfaat, dikaaliumvesinikfosfaat), kaltsiumkarbonaat, meresool, stabilisaator (gellankummi), vitamiinid (D2, riboflaviin, B12).",
     "brand" : "ALPRO"

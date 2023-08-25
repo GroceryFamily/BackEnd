@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/c9f14bf9cf937309ae5ea83c7e773aed.png",
     "ean" : "4742231002151",
     "origin" : "Estonia",
     "ingredients" : "kohupiim 51% (rõõsk koor, rasvatu piim, juuretis, laap), toffee glasuur 19% (taimne rasv (palmiõli, palmituumaõli, sheaõli, rapsiõli, kookosõli), suhkur, lõssipulber, või, emulgaator päevalille letsitiin, sorbitaantristearaat; toiduvärv karamell iii, sool, lõhna- ja maitseaine), suhkur, piimavalk, muraka-sidruni täidis 6% (suhkur, murakad (25%), sidrunid (10%), vesi, paksendaja: pektiin, happesuse regulaator: piimhape, looduslikud lõhna- ja maitseained), lõhna- ja maitseaine vanilliin 0,01%",

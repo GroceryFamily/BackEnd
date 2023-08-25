@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/1f16e7bfc77ef3d06b44e6f15815a28f.png",
     "ean" : "5411188543381",
     "origin" : "Belgium",
     "description" : "Proteiini allikas. Madala küllastunud rasvhapete sisaldusega. Piima- ja gluteenivaba.",

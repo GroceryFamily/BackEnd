@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/f71786aa9e2cf45fc05d36cc2b9aa527.png",
     "ean" : "4740036007357",
     "origin" : "Estonia",
     "description" : "Mõnusalt kreemjas klassikaline rosinatega kohupiimapasta, mis on nüüdsest rikastatud ka D-vitamiiniga",

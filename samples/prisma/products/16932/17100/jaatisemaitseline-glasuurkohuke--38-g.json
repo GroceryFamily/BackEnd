@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/20830ddd086c86a62a50fee632cd9279.png",
     "ean" : "4740093111127",
     "ingredients" : "kohupiim 61%, suhkur, kakaoglasuur 18% (või, suhkur, vähendatud rasvasisaldusega kakaopulber 9%), jäätisemaitseline lisand 1,6% (suhkur, vesi, lõhna- ja maitseained, looduslik lõhna- ja maitseaine (vanillijäätis), geelistav aine karrageen, sidrunimahla kontsentraat), lõhna- ja maitseaine vanilliin.",
     "brand" : "VÄIKE TOM"

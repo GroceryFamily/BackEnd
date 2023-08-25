@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/83d875abf34ff4212d0585f494cffc8c.png",
     "ean" : "4750050341405",
     "origin" : "Latvia",
     "ingredients" : "kohupiim 63%, suhkur, glasuur 18% (või, suhkur, kakaopulber), lõhnaaine vanilliin",

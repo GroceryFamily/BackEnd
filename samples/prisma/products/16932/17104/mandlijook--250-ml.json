@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/0fec4d5c96c564d5e0169686f3ca94ac.png",
     "ean" : "5411188122586",
     "ingredients" : "Vesi, suhkur, MANDEL (2%), trikaltisumfosfaat, meresool, stabilisaatorid (jaanileivapuujahu, gellankummi), emulsioon (päevalille letsitiin), Vitamiiinid (riboflaviin B2, B12, E, D2).",
     "brand" : "ALPRO"

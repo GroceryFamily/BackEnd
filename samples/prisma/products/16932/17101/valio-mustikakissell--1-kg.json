@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/295cd3df6764889378506a2391e2ad3f.png",
     "ean" : "6408430062119",
     "origin" : "Finland",
     "ingredients" : "vesi, suhkur, mustikad (6,4%),mustikamahl (2,6%), paksendaja( guarkummi), modifitseeritud tärklis, happesuse regulaator (sidrunhape), C-vitamiin",

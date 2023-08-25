@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/022944ff695acdf4973e0af84ed436f7.png",
     "ean" : "59094494",
     "origin" : "Poland",
     "description" : "Kakaobiskviit (17%) kakaoglasuuris (34%), piima-(38%) ja karamellitäidisega (11%), 27g Preserve in cool place",

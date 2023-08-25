@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/4434a2cb2d2808b55ecb8bd986bebc96.png",
     "ean" : "4740125536232",
     "origin" : "Estonia",
     "ingredients" : "piim, suhkur 8%, mangod 2,6%, banaanid 2,2%, modifitseeritud tärklis, chia seemned 0,3%, paksendajad (karrageen) naturaalsed lõhna- ja maitseained, toiduvärv (beetakaroteen), happesuse regulaator ( sidrunhape), želatiin, starterkultuur, Lactobacillus rhamnosus gg, D- vitamiin.",

@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/7e5071f228ae0e2f8197e5f1cfac3c91.png",
     "ean" : "7340011443513",
     "origin" : "Denmark",
     "description" : "Kala sisaldav Rainbow koeratoit on täisväärtuslik toit, mis ei sisalda nisu. See on mõeldud õrna seedimisega koertele. Toote tasakaalustatud koostis vastab kõikidele koera toitainete vajadustele. Toodet võib serveerida kuivalt, aga ka vette segatuna. Igapäevane doseerimine sõltub koera aktiivsusest, tõust ja vanusest. Vaata doseerimisjuhist. Preserve in cool and dry place",

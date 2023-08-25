@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/bd5aabf41211689a14710f77f4cf0f77.png",
     "ean" : "2060400700007",
     "origin" : "Ecuador",
     "description" : "Pilt on illustreeriv. Tootele kehtib hulgimüügi piirang 8 KG.На товар распространяется ограничение оптовой продажи 8 KG."

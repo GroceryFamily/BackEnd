@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/f9bc3b1a60c22945011b4335416ec693.png",
     "ean" : "4740093333314",
     "ingredients" : "piim, suhkur, maasikalisand 2% (invertsuhkur, vesi, looduslik maasika lõhna- ja maitseaine, maasikamahla kontsentraat 1%, paksendaja - karrageen), vitamiinid A, B6, B12, D, foolhape.",
     "brand" : "VÄIKE TOM"

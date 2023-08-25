@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/c81a344f9e698d5085ac85c58e0ba416.png",
     "ean" : "4740036016267",
     "origin" : "Estonia",
     "description" : "Deary taimsed desserdid on valmistatud kookosõli baasil ja rikastatud herne ja mandli valguga, et hoida Sinu kõht peale maiustamist kauem täis püsiks. Taimsed desserdid sisaldavad ka triljoneid probiootilisi baktereid (L.acidophilus, Bifidobacterium, L.paracasei), mis hoiavad seedimise korras ja kõhubakterid õnnelikuna. Ja kui kõhubakterid on õnnelikud, oled ka Sina õnnelik! Suurepärane näide sellest, et midagi kasulikku võib olla ka nii maitsev!",

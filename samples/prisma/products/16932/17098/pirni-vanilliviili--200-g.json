@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/73d015040c50b8870f869f0192fe90c2.png",
     "ean" : "6414893095892",
     "origin" : "Finland",
     "ingredients" : "pastöriseeritud piim, suhkur, pirn (4%), lõhna- ja maitseained (sh vanilliin), toiduvärv (E141), paksendaja (E440), happesuse regulaator (E330), säilitusaine (E202), juuretis.",

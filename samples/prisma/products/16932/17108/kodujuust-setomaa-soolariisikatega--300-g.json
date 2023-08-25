@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/e46eccd29830a684a1432f68b1a86548.png",
     "ean" : "4740036014409",
     "origin" : "Estonia",
     "ingredients" : "Koostisosad: kodujuust 44%, hapukoor, riisikad 10%, valge sibul, sool, suhkur, äädikas, rapsiõli.",

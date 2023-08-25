@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/94767f774d511b9dda5cec35671fe3f6.png",
     "ean" : "4740125638349",
     "origin" : "Estonia",
     "description" : "Alma Kreeka kohupiimakreemid sisaldavad ehtsat kreeka juuretist, mis pärineb Kreeta saarelt. Kreeka kohupiimakreemid valmistatakse autentsel separeerimismeetodil. Tootel on siidine, tihke ja sametine konsistents ning puhas koostis - säilitusainetevaba retsept ning parim kodumaine piim. Tootele annab maitset magus šokolaad ja eksootiline kookos.",

@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/12009fbd74cb814dcfc2ba52c073e078.png",
     "ean" : "47500891",
     "origin" : "Belgium",
     "description" : "Preserve in cool place",

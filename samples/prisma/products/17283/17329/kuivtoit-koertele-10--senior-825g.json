@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/560da00c9cdf5cfdec31ad0561d7ed14.png",
     "ean" : "4008429113291",
     "brand" : "PERFECT FIT"
   }

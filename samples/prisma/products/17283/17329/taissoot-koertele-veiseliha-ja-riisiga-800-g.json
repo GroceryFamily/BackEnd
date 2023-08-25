@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/c045d1772e6ec4f11d0f4e6e4364b73a.png",
     "ean" : "7613034746344",
     "origin" : "Italy",
     "description" : "Purina ONE Adult koeratoit veiseliha ja riisiga, 800 g",

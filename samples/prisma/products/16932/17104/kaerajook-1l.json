@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/cc44ea503e6d0847dc4880f2bd0c49ce.png",
     "ean" : "6408659990460",
     "origin" : "Finland",
     "description" : "Friendly Viking kaerajook, sobilik veganitele X",

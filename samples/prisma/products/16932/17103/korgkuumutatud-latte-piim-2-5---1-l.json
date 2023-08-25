@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/ea73026e7b080f353a0fb958f8cc0017.png",
     "ean" : "4740036009122",
     "origin" : "Estonia",
     "description" : "Eestlastele kõige harjumuspärasema rasvaprotsendiga kõrgkuumutatud piim. Kuna piim on kuumutatud tavapärasest kõrgemal temperatuuril ning pakitud väga steriilses keskkonnas, siis säilib kõrgkuumutatud piim kinnisena ka toatemperatuuril ning pikka aega. Kõrgkuumutatud piim sobib hästi erinevate kohvide valmistamiseks",

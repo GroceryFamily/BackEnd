@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/e9756a04eaf721f26230377cbb6e2d73.png",
     "ean" : "4744355018001",
     "origin" : "Estonia",
     "description" : "Dr. Stern vasikalihavorst koerale",

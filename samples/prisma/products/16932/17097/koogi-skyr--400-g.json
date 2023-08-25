@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/640f323e927adadc541cb1fe3ac9780c.png",
     "ean" : "4740113091415",
     "origin" : "Estonia",
     "ingredients" : "väherasvane piim, juuretis",

@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/300252acb4405a08995ce7ea77eb74f1.png",
     "ean" : "4740113091101",
     "origin" : "Estonia",
     "ingredients" : "Pastöriseeritud lõss, mustikad (11%), suhkur, vesi, modifitseeritud tärklis, lõhna- ja maitseaine, happesuse regulaator: naatriumtsitraadid, juuretis",

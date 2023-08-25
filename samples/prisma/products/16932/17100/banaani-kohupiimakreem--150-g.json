@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/2b2ec003ad2cb018381a99dfb5920157.png",
     "ean" : "4740294011219",
     "origin" : "Estonia",
     "description" : "Hõrk ja traditsiooniline banaani kohupiimakreem, mille mõnusalt pehme ja siidine maitse köidab igas vanuses inimesi. Emma kohupiimakreemid on aegumatu maitseelamus. Tooted sobivad nii magustoidu asemel või toidukordade vahel kergeks vahepalaks.",

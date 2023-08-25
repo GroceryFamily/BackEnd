@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/d712d7b26c03831d00b936b3137355e0.png",
     "ean" : "40338576",
     "origin" : "Germany",
     "ingredients" : "piim, koor, suhkur, modifitseeritud tärklis, puuviljad, paksendaja: karrageen, jaanileivapuujahu, kaltsiumtsitraat, lõhna-ja maitseained",

@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/3cfb1aca76884bc2400d5298d1ad390e.png",
     "ean" : "47430051",
     "origin" : "Estonia",
     "ingredients" : "kohupiim 66%, šokolaadiglasuur 18% (suhkur, kakaomass, kakaovõi, piimarasv, emulgaator (sojaletsitiin, E476), vanilliin), suhkur, vanilliin.",

@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/19c520de81251bfc27775c9fe7e7b71d.png",
     "ean" : "4740036007142",
     "origin" : "Estonia",
     "description" : "Rasvata magus vanillikohupiim. Rikas valgu ja kaltsiumi poolest. Ei sisalda säilitusaineid",

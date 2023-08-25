@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/6e0f701ca93b526f63498d95ee2cfce1.png",
     "ean" : "4744355019220",
     "origin" : "Estonia",
     "description" : "Dr.Stern konserv koertele veiseliha tükid kastmes",

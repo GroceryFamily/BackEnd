@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/26ac0e3fea86345d79384231d7881c81.png",
     "ean" : "4750025000528",
     "origin" : "Latvia",
     "ingredients" : "kohupiim 60%, glasuur 18% (või, suhkur, vesi, lõssipulber, kontsentraadid: maguskartuli, õunamahla, safloori; looduslik lõhna- ja maitseaine, happesuse regulaator sidrunhape, emulgaator naatriumfosfaadid), suhkur, maasikad 3,4%, maisikiud, vesi, paksendaja pektiin, looduslikud lõhna- ja maitseained, puu- ja köögivilja kontsentraadid: redise, õuna, mustsõstra.",

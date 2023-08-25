@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/25a87d57fdfca03927f8e2ec8f56a1b8.png",
     "ean" : "4740113034269",
     "origin" : "Estonia",
     "ingredients" : "Pastöriseeritud piim, suhkur, rõõsk koor, maasikad 3,5%, vesi, lõssipulber, modifitseeritud tärklis, musta porgandi mahlakontsentraat, paksendajad: pektiin, želatiin, happesuse regulaator: sidrunhape, lõhna- ja maitseained, juuretis (sisaldab lisaks jogurtibakteritele ka piimhappebaktereid Lactobacillus acidophilus, Bifidobacterium, Lactobacillus paracasei).",

@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/06728ce33a61c07558a42b779fa9412e.png",
     "ean" : "4740125537208",
     "origin" : "Estonia",
     "description" : "Alma Vita+ laktoosivabad jogurtid valmivad puhtast kodumaisest piimast ja sellele on lisatud 20 miljardit L. rhamonosus GG piimhappebakterit ja D-vitamiini. D vitamiin aitab kaasa immuunsüsteemi normaalsele talitlusele. Lisaks on Alma Vita+ jogurt suurepärane kiudaineallikas. Alma Vita+ jogurtites on 30 % vähem suhkruid võrreldes turul olevate topsijogurtite keskmise suhkrusisaldusega. Magustamiseks on kasutatud datlisuhkurt.",

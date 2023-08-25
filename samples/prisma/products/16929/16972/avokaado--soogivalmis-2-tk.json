@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/b27e9b64dfc52c9be1b50fb6e8a94edd.png",
     "ean" : "8718366857269",
     "origin" : "Peru",
     "description" : "Pilt on illustreeriv."

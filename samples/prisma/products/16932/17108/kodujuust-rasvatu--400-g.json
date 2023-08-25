@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/6a9a04f5f83bd5a371802cb71cd10f47.png",
     "ean" : "6414893385832",
     "origin" : "Finland",
     "ingredients" : "pastöriseeritud rasvatu piim, juuretis, sool, laap, säilitusaine (E202). Piima päritolumaa: Rootsi.",

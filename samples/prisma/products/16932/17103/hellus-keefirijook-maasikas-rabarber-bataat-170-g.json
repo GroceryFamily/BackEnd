@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/9d6e2fa3b70029b1e6270228c333e61b.png",
     "ean" : "4740036016595",
     "origin" : "Estonia",
     "ingredients" : "piim, suhkur, maasikad 3,1%, rabarberid 1,4%, bataadid 1,1%, modifitseeritud tärklis, looduslikud lõhna- ja maitseained, musta porgandi kontsentraat, happesuse regulaatorid (naatriumtsitraat, sidrunhape), juuretis (sisaldab Lactobacillus fermentum me-3), D-vitamiin.",

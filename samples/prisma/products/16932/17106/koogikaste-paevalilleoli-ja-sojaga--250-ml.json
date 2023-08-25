@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/24dad140f13281eb6abc78de8921438c.png",
     "ean" : "5411188080039",
     "origin" : "Belgium",
     "ingredients" : "Vesi, taimne õli (päevalille), lüditud sojaoad (4%), fruktoosi- glükoosisiirup, emulgaatorid (rasvhapete sahharoos-estrid), stabilisaatorid (ksataankumm, guarkummi, karrageen), meresool, lõhna- ja maitseained.",

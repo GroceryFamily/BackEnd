@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/8f4cd619396e8bfc0c7eb367ac3b40db.png",
     "ean" : "4008429046414",
     "origin" : "Austria",
     "description" : "Koeravorst lihaga Pedigree koeravorst lihaga, 500 g",

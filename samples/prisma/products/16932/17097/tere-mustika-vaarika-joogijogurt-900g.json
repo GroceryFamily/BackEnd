@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/5904de1cd4a3c3e81a92b0302b500240.png",
     "ean" : "4740036016298",
     "origin" : "Estonia",
     "ingredients" : "piim, suhkur, lõssipulber, mustikad 0,2%, vaarikad 0,2%, lõhna- ja maitseained, toiduvärv (antotsüaniinid), happesuse regulaatorid (naatriumtsitraat, sidrunhape), juuretis.",

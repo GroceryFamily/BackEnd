@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/97289aa1f8f017df14789402ea8df974.png",
     "ean" : "5000166074049",
     "origin" : "Poland",
     "description" : "Täissööt täiskasvanud väikestele koertele. Pedigree Mini < 10 kg koeratoit kanaliha ja köögiviljaga, 2 kg",

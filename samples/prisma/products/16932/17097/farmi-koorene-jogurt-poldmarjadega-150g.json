@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/2ff4cca0e7698233cc46e102de3f0e78.png",
     "ean" : "4740113097141",
     "origin" : "Estonia",
     "ingredients" : "rõõsk koor, suhkur, põldmarjad 5,4%, lõssipulber, piimavalk, tärklis, porgandi, aroonia ja viinamarja kontsentraat, looduslik lõhna- ja maitseaine, juuretis",

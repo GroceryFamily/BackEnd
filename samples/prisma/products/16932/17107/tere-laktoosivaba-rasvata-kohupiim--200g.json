@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/b390ee3e06f5351bb3143db4f17ab01b.png",
     "ean" : "4740036016359",
     "origin" : "Estonia",
     "ingredients" : "Laktoosivaba rasvata KOHUPIIM",

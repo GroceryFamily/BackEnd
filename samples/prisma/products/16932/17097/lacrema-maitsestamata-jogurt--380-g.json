@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/1603552f5b50cc63a5b0546f9a2163b7.png",
     "ean" : "4740036009238",
     "origin" : "Estonia",
     "description" : "Maitselt mahedad Tere Natural jogurtid on valmistatud ainult naturaalsetest koostisosadest. Tooted on mõeldud inimestele, kes pööravad tähelepanu toiduainete koostisosadele, eelistades järjest enam võimalikult naturaalset ja eestimaist toitu. Natural toodetes ei ole kasutatud ühtegi E-ainet. Tere Natural jogurtid on laktoosivabad",

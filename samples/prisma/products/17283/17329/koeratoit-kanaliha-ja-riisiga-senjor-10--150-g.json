@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/5101635e2b29de3f9dae2e31935e28a0.png",
     "ean" : "4008429006296",
     "origin" : "Germany",
     "description" : "Cesar Senior 10+ koeratoit kanaliha ja riisiga, 150 g",

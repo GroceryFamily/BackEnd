@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/2b99ebf68f3b5f7412bfe6b6f1d98eb3.png",
     "ean" : "5997690707874",
     "origin" : "Hungary",
     "description" : "Pilt on illustreeriv. Preserve in dry and dark place",

@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/f844191efa09dcf8b615601c76f0094a.png",
     "ean" : "4740113034955",
     "origin" : "Estonia",
     "ingredients" : "rasvata kohupiim, suhkur, vanilliin",

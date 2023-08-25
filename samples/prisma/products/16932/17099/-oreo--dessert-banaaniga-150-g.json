@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/6145facff4d6f80bffdcac7f0a3efd50.png",
     "ean" : "4740218003016",
     "origin" : "Estonia",
     "ingredients" : "Kohupiim, \"Oreo\" küpsisepuru 7% (nisujahu, suhkur, rapsiõli, kakaopulber 4,5%, nisutärklis, glükoos-fruktoosisiirup, kergitusained (kaaliumkarbonaadid), sool, emulgaator (sojaletsitiin), lõhna- ja maitseaine), banaanilisand 5% (suhkur, banaani püree 25%, vesi, paksendaja tärklis, banaani lõhna ja maitseaine), suhkur",

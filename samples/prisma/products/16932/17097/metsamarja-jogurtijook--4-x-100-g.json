@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/2ec3f7177f2e78eacd971a14b54b2f7c.png",
     "ean" : "4740036009795",
     "origin" : "Austria",
     "description" : "Marjade mahlu sisaldav jogurtijook, mis sisaldab lisaks muudele kasulikele elus piimhappebakteritele ka Eesti teadlaste poolt avastatud ja välja töötatud ning rahvusvaheliselt tunnustatud Lactobacillus fermentum ME-3 ehk Hellus piimhappebaktereid ning lisaks ka Lactobacillus acidophilus LA-5®, Bifidobacterium BB-12® ja L. casei piimhappebaktereid. Jogurtijook on madala rasvasisaldusega, seega sobib hästi tarbijatele, kes ei eelista suure rasvasisaldusega piimatooteid oma toidusedelis",

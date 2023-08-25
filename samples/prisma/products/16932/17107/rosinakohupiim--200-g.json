@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/6fcc8d947306bd6e70b0d390cb54ef70.png",
     "ean" : "4740036007135",
     "origin" : "Estonia",
     "description" : "Rasvata magus kohupiim rosinatega. Rikas valgu ja kaltsiumi poolest. Ei sisalda säilitusaineid",

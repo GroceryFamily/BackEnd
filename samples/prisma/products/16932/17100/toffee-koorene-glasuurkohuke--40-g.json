@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/cbb2bdb9f389af995fdebf31fb6ed60d.png",
     "ean" : "4742231002038",
     "origin" : "Estonia",
     "ingredients" : "kohupiim 51% (rõõsk koor, rasvatu piim, juuretis, laap), toffee glasuur 19% (taimne rasv (palmiõli, palmituumaõli, sheaõli, rapsiõli, kookosõli), suhkur, lõssipulber, või, emulgaator päevalille letsitiin, sorbitaantristearaat; toiduvärv karamell iii, sool, lõhna- ja maitseaine), suhkur, piimavalk, toffee täidis 6% (glükoosi siirup, kondenspiim, vesi, taimne rasv (palmiõli, palmituumaõli), koor, fariinsuhkur, piim, või, sool, emulgaator rasvhapete mono ja- diglütseriidid, paksendaja pektiin, suhkur, lõhna- ja maitseaine), lõhna- ja maitseaine vanilliin 0,01%",

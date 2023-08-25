@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/87bcb83e298b7456ab31edecc1f4e505.png",
     "ean" : "4740036015598",
     "origin" : "Estonia",
     "ingredients" : "piim, mustsõstrad 8%, suhkur, modifitseeritud tärklis, zelatiin, lõssipulber, looduslikud lõhna-ja maitseained, happesuse regulaator: naatriumtsitraat; musta porgandi kontsentraat, juuretis (sisaldab Lactobacillus fermentum me-3)",

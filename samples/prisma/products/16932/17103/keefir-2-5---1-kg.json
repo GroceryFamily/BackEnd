@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/64db7569c6cc7463018d76de833c0d30.png",
     "ean" : "4740125321043",
     "origin" : "Estonia",
     "description" : "Keerulise Lactobacillus rhamnosus GG nime taha on peitunud enimuuritud piimhappebakter, mis muudab Valio Gefilus keefiri eriliseks. Lõuna-Eestis Laeva meiereis valmistatud keefir on number 1 keefir Eestis, mõistagi peitub põhjus tema imelises maitses",

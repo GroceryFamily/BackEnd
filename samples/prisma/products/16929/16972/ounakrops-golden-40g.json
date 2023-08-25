@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/47917492de4d30798d7fc87490277d60.png",
     "ean" : "5997690711574",
     "origin" : "Hungary",
     "description" : "Preserve in dry and dark place",

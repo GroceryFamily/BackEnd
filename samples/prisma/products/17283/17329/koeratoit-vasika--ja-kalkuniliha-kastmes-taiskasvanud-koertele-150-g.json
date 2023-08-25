@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/3e72c382b53b61be5f6da9cf397d66c8.png",
     "ean" : "4008429094521",
     "ingredients" : "Liha ja loomsed saadused (45%, millest 4% vasikaliha, 4% kalkuniliha), teravili, taimsete valkude kontsentraadid, mineraaltoitained, taimsed saadused, köögiviljad. Toitainelised lisandid: D3-vitamiin (150 iu), veevaba kaltsiumjodaat (0,39 mg), vask(ii)sulfaatpentahüdraat (4,1 mg), raudsulfaatmonohüdraat (10 mg), mangaan(ii)sulfaatmonohüdraat (5,6 mg), tsinksulfaatmonohüdraat (44,5 mg). Analüütiline koostis: valk (9%), rasvasisaldus: 5,5%, anorgaaniline aine (2%), toorkiud (0,3%), niiskus (81%).",
     "brand" : "CESAR"

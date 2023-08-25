@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/b894c1cd1f258e162f3a0c162b821336.png",
     "ean" : "4742231002533",
     "origin" : "Estonia",
     "ingredients" : "kohupiim 51%(pastöriseeritud koor, pastöriseeritud piim, juuretis, laap), maasikamaitseline glasuur 19%(suhkur, taimsed rasvad (kookosõli, kakaovõi, rapsiõli), lõssipulber, emulgaator letsitiin(päevalille), mahlakontsentraat(redis), happesuse regulaator sidrunhape, looduslik maasika lõhna-ja maitseaine, looduslik lõhna-ja maitseaine, toiduvärv paprikaekstarkt), suhkur, piimavalgud, metsamarjatäidis 6%(suhkur, vaarikas(15%), mustikas(10%), pohl(5%), jõhvikas(5%), vesi, paksendaja pektiin, happesuse regulaator piimhape, lõhna-ja maitseained), vanilliin.",

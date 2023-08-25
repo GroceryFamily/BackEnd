@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/06ce1033c7307fe97d360798f98de458.png",
     "ean" : "4740125535419",
     "origin" : "Estonia",
     "brand" : "ALMA"

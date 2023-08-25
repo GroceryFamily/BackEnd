@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/88186fa34f906679af5636f50451f626.png",
     "ean" : "6410328143688",
     "description" : "Racinel Nordic, kanaga koeratoit kutsikatele, 3 kg Ei sisalda teravilja",
     "ingredients" : "Koostis: töödeldud loomsed valgud (linnuliha/kana 24%), hernes, kartul, kartulitärklis, kanarasv, hernetärklis, lõheõli (külmpressitud), peedipulp (2%), kuivatatud muna, mineraalained, letsitiinid, frukto- oligosahhariidid (0,1%), glükoosamiin, kondroitiinsulfaat. Analüütiline koostis: valgud (30%), rasv (15%), toorkiud (2%), toortuhk (7%), kaltsium (1,2%), fosfor (0,9%).",

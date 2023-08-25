@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/99f9af910413686c3aeca6e1e6cc338f.png",
     "ean" : "7340011485537",
     "brand" : "RAINBOW"
   }

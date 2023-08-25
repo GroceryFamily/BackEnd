@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/e2924ab700e00506a4d0f311c4b4c4a6.png",
     "ean" : "4740125582048",
     "origin" : "Estonia",
     "ingredients" : "piim, suhkur 7,2%, maasikad, metsmaasikad 0,6%, modifitseeritud tärklis, toiduvärv (peedipunane), lõhna- ja maitseained, juuretis",

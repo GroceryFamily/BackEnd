@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/0dd38a088706dc1c911c7a51898eb4db.png",
     "ean" : "6415712300043",
     "origin" : "Finland",
     "brand" : "RAINBOW"

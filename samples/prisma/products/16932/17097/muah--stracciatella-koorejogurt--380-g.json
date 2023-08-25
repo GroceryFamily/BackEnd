@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/665928434a4f5a5a8c42e2495ed11fad.png",
     "ean" : "4740125535853",
     "origin" : "Estonia",
     "description" : "Mõnusad suussulavad šokolaaditükid siidise koorejogurtiga on tõeline maiuspala ka kõige nõudlikumale gurmaanile. Lisaks sobib stracciatella jogurt suurepäraselt ka erinevates küpsisekoogiretseptides kasutamiseks ning miks mitte ka niisama maasikatega maiustamiseks",

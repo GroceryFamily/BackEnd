@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/60f17f29c8de8b31ad8caba316f06a5e.png",
     "ean" : "4740113097011",
     "origin" : "Estonia",
     "description" : "Spordirahva poolt palavalt armastatud rasvavabade ja naturaalselt kõrge valgusisaldusega Islandilt pärit uus maitse. Pehme ja pisut hapuka maitsega skyr koos hõrgu ning parjalt magusa apelsini-stracciatella lisandiga moodustab täiusliku kombinatsiooni, mis sobib hästi nii hommikusöögiks, valgurikkaks vahepalaks kui tervislikuks desserdiks. X",

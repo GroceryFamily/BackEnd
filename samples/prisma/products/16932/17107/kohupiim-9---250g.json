@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/babe79b1a43e721ba95a3d66bf53b46c.png",
     "ean" : "4750072014189",
     "origin" : "Latvia",
     "description" : "teraline kohupiim Preserve in cool place",

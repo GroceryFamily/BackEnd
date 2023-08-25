@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/41a47dcdbde35aefeff2030313033bfd.png",
     "ean" : "4740113093549",
     "origin" : "Estonia",
     "ingredients" : "kodujuust (pastöriseeritud rasvatu piim, juuretis), rõõsk koor, sool",

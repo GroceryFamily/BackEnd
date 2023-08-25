@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/08683d6e83a917e620ddb7477440ad73.png",
     "ean" : "4770265211638",
     "origin" : "Lithuania",
     "ingredients" : "Kohupiim 56,7 %, Belgia šokolaad 20 % *, suhkur, mooniseemned 6,4 %.٭ kakao: vähemalt 50 %, suhkur, kakaomass, kakaovõi, piimarasv, täispiimapulber, emulgaator: sojaletsitiin, naturaalne maitse-ja lõhnaaine: vanilliini",

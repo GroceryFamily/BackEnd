@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/27f9716b3ebbec03c987142d9be74d4f.png",
     "ean" : "4740125532425",
     "origin" : "Estonia",
     "ingredients" : "piim, maasikad 3,4%, maltodekstriin, modifitseeritud tärklis, lõhna- ja maitseained, toiduvärv (antotsüaanid), magusained (atsesulfaam K, sukraloos), paksendaja (karrageen), juuretis.",

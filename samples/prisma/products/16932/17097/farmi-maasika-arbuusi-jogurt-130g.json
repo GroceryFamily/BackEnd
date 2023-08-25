@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/8041f347ed31afca1a2a6ad48f9ca784.png",
     "ean" : "4740113097134",
     "origin" : "Estonia",
     "ingredients" : "piim, viinamarjamahla kontsentraat, maasikapüree kontsentraadist 6%, arbuusimahl kontsentraadist 6%, piimavalk, lõssipulber, modifitseeritud tärklis, paksendaja (pektiin), porgandikontsentraat, looduslikud lõhna- ja maitseained, hape (sidrunhape), juuretis. Laktoosivaba. Puuviljade suhkrusisaldus 8%",

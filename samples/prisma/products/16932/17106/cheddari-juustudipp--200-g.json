@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/f4420ab316d1cda0b0d1d62b84a75ef4.png",
     "ean" : "4740036013877",
     "origin" : "Estonia",
     "brand" : "MEREVAIK"

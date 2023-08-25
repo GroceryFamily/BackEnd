@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/9054ccf35aff935609a5c6212fce6870.png",
     "ean" : "5902921300274",
     "origin" : "Poland",
     "description" : "Kvaliteetne toit, mis sisaldab kõrge kvaliteetseid proteiine, väga head liha ja muid loomseid tooteid. PIPER on just seda tüüpi toit. Proteiine sisaldavad koostisosad on valitud, et tagada kõrgeim võimalik aminohapete sisaldus. Vajalikud on ka süsivesikud, kuna aitavad proteiine seedida ja aminohappetel imenduda. Seetõtu on PIPER toit kergesti seeditav ja ei kurna koera seedetrakti. Täiuslik toit täiskasvnaud koertele, sest: katab 100% mineraalide ja vitamiinide vajadusest tagab luude ja hammaste õige mineralisatsiooni aitab luua normaalsed ainevahetuse protsesse tänu n-3 ja n-6 rasvhapetele hoiab koera naha heas seisukorras Ulukiliha sisaldus mõjutab kergesti seeditava valkude hulka, vitamiinid lahustuvad rasvades, nii ka tsink, magneesium ja seleen. Rasvhapete sisaldus varieerub tänu linaseemneõlile. Mitteküllastumata rasvhapete sisaldus mõjutab põletikuvastase homeoestaasi protsessi korrashoidu. Kõrge kartuli sisaldus parandab toidu seeditavust ja annab toidule suure boonuse reguleerides seedimisprotsessi.",

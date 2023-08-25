@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/ad1e7b0d74c128d8cebb6f99d0630f1c.png",
     "ean" : "4743135002100",
     "origin" : "Estonia",
     "description" : "Pajumäe lahja kohupiim sisaldab parajalt valku ja üldse mitte palju rasva. Värske maitsega kohupiim sobib otse lusikaga söömiseks kui ka teiste toitude sisse. See on puhas, naturaalne toit, mis on ühteaegu maitsev kui ka tervislik - tegemist on sertifitseeritud mahetootega. x",

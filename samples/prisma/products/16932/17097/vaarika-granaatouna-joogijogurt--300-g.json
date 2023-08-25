@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/4c0a96d03d8804d21107413143058d04.png",
     "ean" : "5900643029831",
     "origin" : "Poland",
     "description" : "Activia vaarika- ja granaatõunamaitseline joogijogurt Actiregularis® bakteritega Preserve in cool place",

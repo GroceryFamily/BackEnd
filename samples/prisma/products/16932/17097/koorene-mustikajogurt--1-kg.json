@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/784e7844604faf019aa334f0bd436d8e.png",
     "ean" : "4740113090272",
     "origin" : "Estonia",
     "ingredients" : "pastöriseeritud piim, suhkur, mustikad 7,7%, rõõsk koor 5,5%, lõssipulber, modifitseeritud tärklis, paksendaja: pektiin, želatiin, happesuse regulaator: naatriumtsitraadid, lõhna- ja maitseaine, juuretis (sisaldab lisaks jogurtibakteritele ka piimhappebaktereid Lactobacillus acidophilus, Bifidobacterium, Lactobacillus paracasei).",

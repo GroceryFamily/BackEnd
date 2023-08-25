@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/d41f72891465235fcbea557f92355e40.png",
     "ean" : "6410328143701",
     "description" : "Racinel Nordic, lambalihaga koeratoit täiskasvanud koertele, 3 kg Ei sisalda teravilja.",
     "ingredients" : "Koostis: töödeldud loomsed valgud (linnuliha/kana 28%), hernes, kartul, hernetärklis, kanarasv, lambalihajahu (4%), peedipulp, searasv, lõheõli (külmpressitud), kuivatatud muna (0,5%), mineraalained, frukto- oligosahhariidid, letsitiinid. Analüütiline koostis: valgud (28%), rasv (16%), toorkiud (2,5%), toortuhk (7%), kaltsium (1,2%), fosfor (0,9%).",

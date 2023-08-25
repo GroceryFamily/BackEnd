@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/0237349dec3a6b1a7c1221bec2c1f2e3.png",
     "ean" : "4740125633078",
     "origin" : "Estonia",
     "ingredients" : "kodujuust, rõõsk koor, soolakurgi-tillilisand (soolakurk, sibul, sool, till, suhkur, modifitseeritud tärklis, äädikas, lõhna ja maitseained, säilitusaine (kaaliumsorbaat)). Tootes on 6% soolakurke ja 1% tilli. Soola max 1,2%.",

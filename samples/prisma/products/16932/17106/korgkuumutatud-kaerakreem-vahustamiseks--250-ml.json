@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/d8f6aef1611001ca615268a86ee0c821.png",
     "ean" : "4740036014669",
     "origin" : "Estonia",
     "ingredients" : "vesi, osaliselt hüdrogeenitud taimeõli (palm), suhkur, kaeraekstrakt 1%, emulgaatorid (E471, E481), stabilisaatorid (E464, gellankummi), happesuse regulaatorid (naatriumfosfaadid, naatriumtsitraadid), sool, toiduvärv (karoteenid). Enne tarvitamist lokustada. Sobib veganitele. Laktoosivaba.",

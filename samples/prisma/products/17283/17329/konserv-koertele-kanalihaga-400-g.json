@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/eed1dc0347cc414c53f575af2f8a067b.png",
     "ean" : "4008429614019",
     "origin" : "Spain",
     "description" : "Täissööt täiskasvanud koertele. Pedigree koeratoit kanalihaga, 400 g",

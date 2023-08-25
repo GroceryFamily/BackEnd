@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/17ac5e570177629f95c83062fae47581.png",
     "ean" : "4740125632446",
     "origin" : "Estonia",
     "description" : "Kihiline kohupiimamagustoit koos maitsva moosilisandiga. Kohupiima maitsestab kerge vanillinoot. Sobib ideaalselt magustoiduks, kuid ka vahepalaks. Preserve in cool place",

@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/75f7e1d55edbcbdb22d3a35ae8ec6599.png",
     "ean" : "6430062465884",
     "ingredients" : "Liha ja loomsed kõrvalsaadused 65 % (veiseliha min 10 %), riis, taimse päritoluga saadused. Analüütilised koostisosad: Toorproteiin 10 %, toorrasv 6,5 %, toortuhk 0,2 %, toorkiud 0,1 %, niiskus 80 %, kaltsium 0,2 %, fosfor 0,15 %, naatrium 0,25 %.",
     "brand" : "HAUHAU CHAMPION"

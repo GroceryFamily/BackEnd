@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/9fc01228e045593273445a01661821c8.png",
     "ean" : "4740218001920",
     "origin" : "Estonia",
     "ingredients" : "kohupiim, suhkur, vaarikamoos, vanilliin, PIIM",

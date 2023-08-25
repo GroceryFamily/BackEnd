@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/aac6266e195fdaf095711abd12722424.png",
     "ean" : "4740113091514",
     "origin" : "Estonia",
     "ingredients" : "pastöriseeritud PIIM",

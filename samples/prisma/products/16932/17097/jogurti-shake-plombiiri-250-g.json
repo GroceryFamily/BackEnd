@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/8374196d58b524c407219e0752d3d6eb.png",
     "ean" : "4750072515815",
     "origin" : "Latvia",
     "ingredients" : "piim, plombiirilisand, 9% (suhkur, modifiteeritud tärklis, lõhna-ja maitseaine, (vaniljekkreemi-plombiiri) paksendaja (ksantaankummi, guarkummi), happesuse regulaator (sidrunihape, naatriumtsitraat), suhkur,emulgaator(E 472b) piimavalgud, toiduželatiin, juuretis",

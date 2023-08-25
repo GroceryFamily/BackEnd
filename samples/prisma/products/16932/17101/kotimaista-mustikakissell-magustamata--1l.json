@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/634c34120832bfa9a3266814d98e9c33.png",
     "ean" : "6414893503267",
     "ingredients" : "vesi, mustikapüree, mustikamahl kontsentreeritud mahlast, paksendajad (E1442, E412), toiduvärv (E163), happesuse regulaator (E330), C-vitamiin, magusained (E951, E950), sisaldab aspartaami (fenüülalaniini allikas). Mustikaid 10%.",
     "brand" : "KOTIMAISTA"

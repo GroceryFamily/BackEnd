@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/b6261ca87706821684f2d4717b8f92a4.png",
     "ean" : "4740036013167",
     "origin" : "Estonia",
     "ingredients" : "kreeka jogurt 78%, aprikoosimoos 12% [suhkur, glükoosi-fruktoosisiirup, aprikoosid 18%, aprikoosi mahl (kontsentraadist), paksendajad (pektiin, modifitseeritud tärklis), lõhna- ja maitseaine, happesuse regulaatorid (naatriumtsitraadid, kaltsiumtsitraadid), toiduvärvid (karoteenid, paprikaekstrakt)], jõhvikamüsli 10% [krõbe müsli 80% (täisterakaerahelbed, glükoosisiirup, jahu (kaeraterad, oder, mais), taimne rasv (palmiõli), kookoshelbed, emulgaator: letsitiin (soja), meresool, lõhna- ja maitseaine), jõhvika tükid 20% (jõhvikad, suhkur, päevalilleõli, riisijahu)]",

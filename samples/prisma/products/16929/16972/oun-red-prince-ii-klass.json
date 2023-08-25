@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/048ef22b0be67636587ce9dc007141cb.png",
     "ean" : "2060430400007",
     "origin" : "Poland"
   }
