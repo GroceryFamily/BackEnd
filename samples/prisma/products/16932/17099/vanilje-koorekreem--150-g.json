@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/d1dff6b4430f3dd4a0981294fbf0e9f1.png",
     "ean" : "4750050010059",
     "origin" : "Latvia",
     "description" : "Vanillimaitseline vahustatud koorekreem. Säilitusainete vaba",

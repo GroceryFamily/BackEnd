@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/8a6280cd3d55435faac8d7ef9bffcd6f.png",
     "ean" : "6430069586742",
     "brand" : "HAUHAU CHAMPION"
   }

@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/c68a30c5fb7fa2f632290469f59bf85a.png",
     "ean" : "73500384",
     "origin" : "Sweden",
     "description" : "Kontsentreeritud küpsetuspärm",

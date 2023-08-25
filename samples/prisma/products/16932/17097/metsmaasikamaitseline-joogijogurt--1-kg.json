@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/9dcc6be361150306b4c8593d2964fb1d.png",
     "ean" : "4740036006275",
     "origin" : "Estonia",
     "ingredients" : "piim, suhkur, lõssipulber, glükoosi-fruktoosisiirup, maasikad 0,05%, peedimahla kontsentraat, lõhna- ja maitseaine, paksendaja (pektiin), happesuse regulaator (sidrunhape), juuretis.",

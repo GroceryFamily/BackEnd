@@ -9,6 +9,7 @@
     "dairy-products-eggs-cheese" : "Dairy products, eggs, cheese"
   },
   "details" : {
+    "image" : "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_fit,f_auto,h_480,q_auto,w_480/d_ecommerce:backend-fallback.png/MAT_993108_PCE_EE",
     "origin" : "Latvia",
     "ingredients" : "PIIM, suhkur, maasikalisand 2% (invertsuhkur, vesi, looduslik maasika lõhna- ja maitseaine, maasikamahla kontsentraat 1%, paksendaja - karrageen), vitamiinid A 120 g (15%*), B6 21mg (15%*), B12 0,38 g (15%*), D 0,75 g (15%*), foolhape 30 g (15%*), kaltsium 103,7mg (13%*). *NRV - võrdluskogusest",
     "brand" : "Väike Tom"

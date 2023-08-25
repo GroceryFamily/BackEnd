@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/d05e1a44f2f22ab79b84184267ecbdd0.png",
     "ean" : "5900951134876",
     "origin" : "Poland",
     "description" : "Lihavalik kastmes: härjaliha ja aedviljad, kanaliha ja aedviljad, härjaliha ja jäneseliha, kalkuniliha ja porgand. Pedigree koeratoiduvalik, tükid kastmes, 12 × 100 g",

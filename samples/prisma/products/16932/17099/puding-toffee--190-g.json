@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/0f961701ee7eef16c323dfc591193fc2.png",
     "ean" : "4002971253603",
     "ingredients" : "lõss, koor (20%), vadak (piim), suhkur, modifitseeritud maisitärklis, glükoosi-fruktoosisiirup, karamellistatud suhkrusiirup, karamell (suhkur, vesi, lõssipulber, glükoosisiirup), paksendajad (E407, E412), želatiin (veis), lõhna- ja maitseaine, emulgaator (E472b), täispiimapulber, sool, toiduvärv (E160a). Vahukreem vahustatud lämmastikuga.",
     "brand" : "EHRMANN"

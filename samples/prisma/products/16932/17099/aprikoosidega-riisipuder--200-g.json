@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/d9ea4dbf73795252c286f2a325ebfc9b.png",
     "ean" : "4770265048043",
     "origin" : "Lithuania",
     "ingredients" : "piim, rõõsk koor, vesi, 12% aprikoosilisand (suhkur, aprikoos, tahkestusained: modifitseeritud tärklis, pektiin; lõhnaained, värvaine E162, happesust reguleerivad ained: E331, sidrunhape), 9,6% riisi, suhkur, lõssipulber, paksendajad: E410, karrageen; sool, vanilliin",

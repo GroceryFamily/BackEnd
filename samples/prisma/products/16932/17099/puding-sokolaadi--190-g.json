@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/a2f74c5086e5cc5b2ecf6b130113b5a1.png",
     "ean" : "4002971253207",
     "ingredients" : "pastöriseeritud lõss, koor (20%), vadak (piim), glükoosi-fruktoosisiirup, suhkur, modifitseeritud maisitärklis, väherasvane kakao (1,7%), šokolaad (1%) (suhkur, kakaopulber, kakaovõi), paksendajad (E407, E412), želatiin, emulgaator (E472b), lõhna- ja maitseaine.",
     "brand" : "EHRMANN"

@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/94a1dd9619648f8da914a5c4e8696008.png",
     "ean" : "4740036004967",
     "origin" : "Estonia",
     "description" : "Hõrk ja traditsiooniline kakao kohupiimakreem, mille mõnusalt pehme ja siidine maitse köidab igas vanuses inimesi. Emma kohupiimakreemid on aegumatu maitseelamus. Tooted sobivad nii magustoidu asemel või toidukordade vahel kergeks vahepalaks.",

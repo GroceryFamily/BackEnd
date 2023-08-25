@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/5a8241e764b323ae677745c8404cb272.png",
     "ean" : "4740093333321",
     "ingredients" : "piim, suhkur, šokolaadilisand 2% (invertsuhkur, vesi, kakaopulber 8%, šokolaadi ja vanilje looduslik lõhna- ja maitseaine, paksendaja – karrageen), kakaopulber, šokolaadipulber 0,2%, stabilisaator – karrageen, vitamiinid A, B6, B12, D, foolhape",
     "brand" : "VÄIKE TOM"

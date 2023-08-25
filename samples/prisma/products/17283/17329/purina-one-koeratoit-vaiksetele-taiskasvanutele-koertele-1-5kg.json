@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/edfcb1a4d92d3920ed5b0688fbf2a2b8.png",
     "ean" : "7613287034540",
     "brand" : "PURINA ONE"
   }

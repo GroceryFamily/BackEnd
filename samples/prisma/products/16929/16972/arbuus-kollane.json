@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/ba90848873b7fe3962c70aa1deeeae42.png",
     "ean" : "2060490400009",
     "origin" : "Spain",
     "description" : "Pilt on illustreeriv. Arbuus"

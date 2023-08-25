@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/dedc452608370ffec97bf13f63c09965.png",
     "ean" : "4740125631326",
     "origin" : "Estonia",
     "ingredients" : "kohupiimapasta 52%, rõõsk koor, crème brulée maitseline lisand 20% (suhkur, vesi, modifitseeritud tärklis, lõhna- ja maitseained, paksendaja (guarkummi), happesuse regulaatorid (sidrunhape, naatriumtsitraadid), toiduvärv (karoteenid)).",

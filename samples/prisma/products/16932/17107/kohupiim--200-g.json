@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/0ea39d13d6a6a712fa572dbb43a7b712.png",
     "ean" : "4740036007128",
     "origin" : "Estonia",
     "description" : "Meeldivalt pehme traditsiooniline kohupiim. Rikas valgu ja kaltsiumi poolest. Ei sisalda lisaaineid ega säilitusaineid",

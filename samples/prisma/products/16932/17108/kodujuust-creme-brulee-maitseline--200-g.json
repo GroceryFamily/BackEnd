@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/767651197f24ca250728dd881c5924d7.png",
     "ean" : "4740125633184",
     "origin" : "Estonia",
     "ingredients" : "kodujuust, rõõsk koor, crème brulée maitseline lisand (suhkur, vesi, modifitseeritud tärklis, lõhna- ja maitseained, paksendaja (guarkummi), happesuse regulaatorid (sidrunhape, naatriumtsitraadid), toiduvärv (karoteenid)), sool.",

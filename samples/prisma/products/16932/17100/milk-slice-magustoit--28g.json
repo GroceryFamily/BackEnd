@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/683c4b24297b3ca0c3a77f067ba2d1e6.png",
     "ean" : "40084725",
     "origin" : "Germany",
     "description" : "Piimatäidisega biskviitkook. Preserve in cool place",

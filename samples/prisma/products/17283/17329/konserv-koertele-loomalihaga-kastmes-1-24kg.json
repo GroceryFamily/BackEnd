@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/93d8fab2eda4940b73db556a955a387f.png",
     "ean" : "7340011336730",
     "origin" : "France",
     "description" : "Täiskonserv, kasutusvalmis. Preserve at room temperature",

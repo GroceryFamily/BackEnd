@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/1efcd557d04abe2b9f87d3db72ec24fd.png",
     "ean" : "6414893385672",
     "origin" : "Finland",
     "description" : "Laktoosivaba väherasvane piimajook. Kõrgpastöriseeritud.",

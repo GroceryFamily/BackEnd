@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/cef12c6a6f1fe1faec0d5586363e250e.png",
     "ean" : "4740113093440",
     "origin" : "Estonia",
     "ingredients" : "Pastöriseeritud piim, suhkur, banaanid 1,6%, piimavalk, modifitseeritud tärklis, paksendaja pektiin, lõhna- ja maitseaine, happesuse regulaator: sidrunhape, toiduvärv karoteenid, juuretis (sisaldab lisaks jogurtibakteritele ka piimhappebaktereid: Lactobacillus acidophilus, Bifidobacterium)",

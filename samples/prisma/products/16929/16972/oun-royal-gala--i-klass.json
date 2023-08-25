@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/98eaf986c89372ace8d76775a9f72fa3.png",
     "ean" : "2060515100006",
     "origin" : "Poland",
     "description" : "Pilt on illustreeriv."

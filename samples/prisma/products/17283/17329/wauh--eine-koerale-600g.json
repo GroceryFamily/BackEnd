@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/49a1028d72678f56e3c7b12a4ba1e629.png",
     "ean" : "4740234007036",
     "origin" : "Estonia",
     "description" : "Eine koertele mugavas doy pakendis , EESTI TOODANG",

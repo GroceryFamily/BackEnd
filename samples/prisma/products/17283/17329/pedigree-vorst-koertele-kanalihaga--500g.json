@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/2c1207dbc72a6717d2efe4ff989b9e0b.png",
     "ean" : "4008429046322",
     "origin" : "Austria",
     "description" : "Pedigree koeravorst kanalihaga, 500 g",

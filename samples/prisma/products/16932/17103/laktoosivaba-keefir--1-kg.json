@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/67180d12da9f36c3d3eb4a15b7a10096.png",
     "ean" : "4740036014034",
     "origin" : "Estonia",
     "ingredients" : "piim, juuretis (sisaldab Lactobacillus fermentum me-3)",

@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/b3b607b1f67e6124889a3ffb1b6d695f.png",
     "ean" : "4740125631302",
     "origin" : "Estonia",
     "description" : "Alma kirsi-maasika kohupiimakreem 150 g",

@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/67f3abca1fea5c9b22e2880db75b4075.png",
     "ean" : "5708147002875",
     "origin" : "Iran"
   }

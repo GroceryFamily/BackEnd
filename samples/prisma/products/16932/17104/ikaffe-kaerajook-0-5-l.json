@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/a9ffe217c64582395fe8b7496c23a2eb.png",
     "ean" : "7394376618048",
     "ingredients" : "Kaerapõhi (vesi, kaer 10%), rapsiõli, happesuse regulaator (dikaaliumfosfaat), kaltsiumkarbonaat, kaltsiumfosfaadid, jodeeritud sool, vitamiinid (D2, riboflaviin ja B12)",
     "brand" : "OATLY"

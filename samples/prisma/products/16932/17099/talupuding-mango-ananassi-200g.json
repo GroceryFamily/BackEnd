@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/a22cafa3fafc0998e0b351e289473190.png",
     "ean" : "4740218003825",
     "origin" : "Estonia",
     "description" : "Talupudingus on kasutatud tekstuuri lisamiseks chia seemneid, mis on üks maailma tuntumaid supertoite. Mõnusalt kooresele naudingule annab maitsenüantse juurde mango ja ananass. Tegemist on magustoiduga, mis valmib puhtaimast kodumaisest piimast.",

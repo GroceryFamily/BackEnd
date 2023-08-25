@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/9dbfa296fd081bf7de34ee0e3167b125.png",
     "ean" : "4008429092107",
     "ingredients" : "kuivatatud linnulihavalk (millest 20% kanaliha), mais, nisu, linnurasv, maksahüdrolüsaat, kuivatatud peedipulp (3%), hernevalk, naatriumkloriid, siguriekstrakt (1%), kanamunapulber, trinaatriumpolüsulfaat (0,7%), koliinkloriid, päevalilleõli (0,4%), kaaliumkloriid. Analüütiline koostis: valk (27%), rasv (17%), anorgaaniline aine (7,7%), toorkiud (2%), kaltsium (1,3%), fosfor (1,1%), raud (11,7 mg / 100 g), naatrium (0,74 mg / 100 g).",
     "brand" : "PERFECT FIT"

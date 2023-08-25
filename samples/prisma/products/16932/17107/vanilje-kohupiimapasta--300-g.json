@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/a50e25f95c65983c3c917a4bc2bb05dd.png",
     "ean" : "4740036008989",
     "origin" : "Estonia",
     "description" : "Mõnusalt kreemjas ja looduslikku vaniljeekstrakti sisaldav kohupiimapasta, mis on nüüdsest rikastatud ka D-vitamiiniga",

@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/838947644d6eb4f08ce4035a57d9229d.png",
     "ean" : "7394376616068",
     "origin" : "Sweden",
     "description" : "Hapendatud maitsestamata kaeravahepala",

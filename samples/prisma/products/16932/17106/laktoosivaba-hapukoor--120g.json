@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/217ad6c8207e64f49d99cef2bce79724.png",
     "ean" : "6414893385351",
     "origin" : "Finland",
     "description" : "Soome piimast valmistatud suure rasvasisaldusega hapukoor. Mitmekülgne hapukoor talub hästi kuumutamist, kuid sobib ka külmalt kasutamiseks. Hapukoort võib ka kergelt vahustada. Soolasisaldus tuleneb ainult piimas esinevast looduslikust naatriumist.",

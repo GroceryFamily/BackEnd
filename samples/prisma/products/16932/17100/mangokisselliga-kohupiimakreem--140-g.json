@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/76c13fdc7a5447d9daf50ffe623fcddc.png",
     "ean" : "4740125632255",
     "origin" : "Estonia",
     "description" : "Eestlaste poolt armastatud magustoit ja vahepala nüüd Alma kvaliteediga! Maitseküllane mangokissell annab täiendust pehmele ning siidisele kohupiimakreemile. Meelepärane nii lastele kui ka täiskasvanutele.",

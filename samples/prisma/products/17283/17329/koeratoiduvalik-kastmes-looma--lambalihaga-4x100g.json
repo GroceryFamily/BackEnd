@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/cfa6ed109e73762ad5e2b0af88b1dbe9.png",
     "ean" : "8410136023293",
     "brand" : "PEDIGREE"
   }

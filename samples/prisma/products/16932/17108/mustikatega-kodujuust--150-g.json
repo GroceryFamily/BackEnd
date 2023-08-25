@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/1a7940862d4c88f24e831cd240924ac6.png",
     "ean" : "4770237043304",
     "origin" : "Lithuania",
     "ingredients" : "Curd grains, cream, blueberry preparation 20% (sugar, blueberry 35%, glucose-fructose syrup, lemon juice concentrate, thickener pectin, acidity regulator citric acid, natural flavouring), salt",

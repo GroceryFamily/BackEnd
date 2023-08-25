@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/24e26fc0d4bcc422341e618099279b92.png",
     "ean" : "4740125523096",
     "origin" : "Estonia",
     "ingredients" : "piim, suhkur, maasikad 0,75%, pohlad 0,75%, modifitseeritud tärklis, lõhna-ja maitseained, toiduvärv (peedipunane), happesuse regulaator (naatriumtsitraat), juuretis, piimhappebakterid Lactobacillus rhamnosus gg 5x10 9 pmü / 100g, vitamiin D(1 µg /100g-20% täiskasvanu võrdluskogusest).",

@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/28ead1a0af4c272b455ec2caef0df698.png",
     "ean" : "4740125321067",
     "origin" : "Estonia",
     "description" : "Suvises maitses on tunda jahutavat piparmünti ning värsket rohelist õuna. Valio Gefilus piparmündimaitseline õunakeefir sisaldab LGG piimhappebakterit ning meie organismile vajalikku D-vitamiini. Valio Gefilus piparmündimaitseline õunakeefir sobib hommikuseks kiireks turgutajaks, soojal päeval mõnusaks jahutuseks ning kergeks, ent täitvaks vahepalaks. Ideaalne ka lastele.",

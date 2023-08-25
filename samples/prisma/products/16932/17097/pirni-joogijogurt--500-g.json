@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/c99b2f52da884faedd4022659d5f0a92.png",
     "ean" : "7340011497585",
     "ingredients" : "piim 82%, suhkur, pirnimahl kontsentraadist 4,6%, pirnipüree 4%, vesi, stabilisaator (E 440), lõhnaaine, sidrunimahlakontsentraat, piimhappekul tuur.",
     "brand" : "RAINBOW"

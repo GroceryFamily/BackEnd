@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/a5529225c3f8358d60d21dbd2808626b.png",
     "ean" : "4740125534184",
     "origin" : "Estonia",
     "description" : "Alma pudingut iseloomustab hõrgutav maitse ning kreemine konsistents. Tegemist on magustoiduga, mis valmib puhtaimast kodumaisest piimast. Nauding igas lusikatäies!",

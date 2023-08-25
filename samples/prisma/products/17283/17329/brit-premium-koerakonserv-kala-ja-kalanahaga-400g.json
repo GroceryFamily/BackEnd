@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/07d8d73a058aa7a8e93e9f5e3937f872.png",
     "ean" : "8595602561889",
     "brand" : "BRIT PREMIUM"
   }

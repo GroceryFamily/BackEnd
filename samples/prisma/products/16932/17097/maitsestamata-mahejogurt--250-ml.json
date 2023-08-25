@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/8c571e65d22a3af0830e379912b90046.png",
     "ean" : "4743135000755",
     "origin" : "Estonia",
     "description" : "Pajumäe mahejogurt on kreemjalt paks, aga sellegipoolest voolava konsistentsiga. Värske maitsega jogurt sobib nii joomiseks kui teiste toitude sisse. See on puhas, naturaalne jogurt, mis on ühteaegu maitsev kui ka tervislik - tegemist on sertifitseeritud mahetootega.",

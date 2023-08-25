@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://prismamarket.ee/images/entry-no-image.png",
     "ean" : "8718963049722",
     "origin" : "Chile"
   }

@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/f43b273c6e1f7ad53a35579516430f89.png",
     "ean" : "4740218003665",
     "origin" : "Estonia",
     "ingredients" : "kohupiim, rõõsk koor, küpsisepuru (nisujahu, suhkur, rapsiõli, kakaopulber 4,5%, nisutärklis, munamass, glükoos-fruktoosisiirup, kergitusained (kaaliumkarbonaadid), sool, emulgaator (sojaletsitiin), lõhna- ja maitseaine), kirsimoos 5% (kirsid 40%, suhkur, vesi, paksendaja pektiin, happesuse regulaator – sidrunhape), suhkur, kakao 1,5%, vanilliin",

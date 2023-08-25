@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/937a06f0e4399bec4009955447c569be.png",
     "ean" : "4740125539080",
     "origin" : "Italy",
     "description" : "Jogurt on laktoosivaba ning kreemise tekstuuriga jogurti muudab maitsvaks müsli ja šokolaadiküpsise segu. Jogurt sobib ideaalselt hommikusöögiks kui ka magustoiduks.",

@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/b9b4f0b46e6c8d58a0611560c1d011a8.png",
     "ean" : "6408620005377",
     "ingredients" : "vesi, vaarikad (13%), suhkur, paksendajad (modifitseeritud maisitärklis ja pektiin), happesuse regulaator (sidrunhape), C-vitamiin.",
     "brand" : "RIITAN HERKKU"

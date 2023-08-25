@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/254919c334e35683476bac824c112a30.png",
     "ean" : "6415712301491",
     "origin" : "Finland",
     "description" : "Rainbow koertele mõeldud vorst sisaldab lõhet ja on täisväärtuslik toit. Võib pakkuda eraldi toidukorrana, kuid ka muu toidu hulka segatuna. Sobib igas vanuses koertele. Koor ei ole söödav. Ei sisalda nisu ega verd.",

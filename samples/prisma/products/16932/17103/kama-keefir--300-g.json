@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/f22dc37f1c3714030de654bf36ed63a4.png",
     "ean" : "4740125383041",
     "origin" : "Estonia",
     "description" : "Rahvustoit kama kohtub maailma enimuuritud piimhappebakteriga LGG, vajaliku D-vitamiini ning puhtast Eesti piimast valmistatud keefiriga, tehes Valio Gefilus kamakeefirist modernse klassika. Käepärases pudelis maitsekeefireid on lihtne janu või nälja kustutamiseks kaasa haarata",

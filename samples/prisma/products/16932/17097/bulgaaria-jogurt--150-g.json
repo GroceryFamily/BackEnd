@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/bcfe8d0fbaca297929174a34f52d769f.png",
     "ean" : "6414893096172",
     "origin" : "Finland",
     "description" : "Maitsestamata jogurt",

@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/73704d6562a786265d0bb333f63a7c70.png",
     "ean" : "4771459041390",
     "origin" : "Poland",
     "brand" : "MARGE"

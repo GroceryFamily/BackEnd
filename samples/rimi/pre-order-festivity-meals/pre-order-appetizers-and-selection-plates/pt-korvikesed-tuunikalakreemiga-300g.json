@@ -8,6 +8,7 @@
     "pre-order-festivity-meals" : "Pre-order festivity meals"
   },
   "details" : {
+    "image" : "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_fit,f_auto,h_480,q_auto,w_480/d_ecommerce:backend-fallback.png/MAT_982463_PCE_EE",
     "origin" : "Estonia",
     "ingredients" : "TuuniKALAmääre 47% [toorJUUST (kohuPIIM, modifitseeritud tärklis, sool, paksendaja: E410, E412), tuuniKALA 24,6% (tuuniKALA, päevalilleõli, sool), kapparid (kapparid, vesi, veiniäädikas (SULFIT), sool)], korvike 44,9% [NISUjahu, margariin (palmirasv, vesi, sool, emulgaator: E471; happesuse regulaator: E330; toiduvärv: E160a; lõhna- ja maitseained), vesi, sool, PIIM, rapsiõli, PIIMAvalk, hernevalk], KALAmari (KALAmari, vesi, sool, stabilisaator: E415; happesuse regulaator: E330; säilitusaine: E211; toiduvärv: E102, E110, E124, E151), petersell.",
     "brand" : "Rimi"

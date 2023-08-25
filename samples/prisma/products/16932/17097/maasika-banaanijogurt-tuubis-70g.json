@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/89e2ae0f87515209bc386e5b4ffa6cfa.png",
     "ean" : "59005322",
     "origin" : "Poland",
     "description" : "Danonki banaanijogurt maasikatega, rikastatud kaltsiumi ja D vitamiiniga. Ei ole lisatud säilitusaineid, värvaineid ega mittelooduslike lõhna- ja maitseaineid.",

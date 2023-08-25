@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/6f51fb92736316a35c813becc2630b86.png",
     "ean" : "7340011474180",
     "description" : "Lisatud B2-, B12- ja D2-vitamiini ja kaltsiumi. Homogeenitud ja kõrgkuumutatud. Laktoosivaba. Veganlik.",
     "ingredients" : "vesi, mandlid (2%), mineraaltoitaine (kaltsiumkarbonaat), paksendajad (E418, E412), emulgaator (E322), sool, vitamiinid (B2, B12, D2). Võib sisaldada vähesel määral sarapuupähkleid, kašupähkleid ja pistaatsiapähkleid. Mandlite päritolumaa: vt kuupäeva juurde märgitud koodi. us = Ameerika Ühendriigid. au = Austraalia. es = Hispaania.",

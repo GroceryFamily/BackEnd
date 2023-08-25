@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/c2a8e24191ccb0501c0615b1ef223c56.png",
     "ean" : "4740125633023",
     "origin" : "Estonia",
     "ingredients" : "kodujuust, murakamoos 14% (suhkur, murakad 20%, modifitseeritud tärklis, lõhna ja maitseained, säilitusaine (kaaliumsorbaat), toiduvärv (beeta- karoteen)), rõõsk koor, sool max 0,5%.",

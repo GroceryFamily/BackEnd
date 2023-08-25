@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/17c460fe005e45a40bc9869eefadcebd.png",
     "ean" : "4740572004353",
     "origin" : "Estonia",
     "ingredients" : "kodujuust, rõõsk koor, sool",

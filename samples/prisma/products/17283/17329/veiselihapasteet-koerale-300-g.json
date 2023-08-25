@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/1642ddc90866c501492ba52aec1bd385.png",
     "ean" : "6415711912902",
     "origin" : "Finland",
     "description" : "Rainbow koeratele mõeldud lihapasteet sobib koerale eraldi söögikorraks.",

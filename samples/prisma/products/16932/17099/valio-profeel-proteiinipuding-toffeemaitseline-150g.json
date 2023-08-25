@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/0e7e6c691c44578a57afffdf608c2996.png",
     "ean" : "4740125534276",
     "origin" : "Estonia",
     "description" : "Valio PROfeel pudingud on magustoit, mida võib endale lubada. Eriti siidise ja pehme tekstuuriga valgurikkad Valio PROfeel pudingud (150g topsis 16,5 g valku) ei sisalda lisatud suhkrut ning on seega ideaalseks vahepalaks sportlikke eluviise harrastavale inimesele. Valio PROfeel pudingud on välja töötatud koostöös Eesti absoluutse fitnesstipu Ott Kiivikasega.",

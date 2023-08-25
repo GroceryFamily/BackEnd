@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/105195264a5a816965d85fca2e3178d2.png",
     "ean" : "4740113091583",
     "origin" : "Estonia",
     "ingredients" : "pastöriseeritud piim, suhkur, vesi, metsamarjad 1% (mustikad, pohlad, metsmaasikad, põldmarjad), rukki kama 1% (rukis, oder, hernes), modifitseeritud tärklis, piimavalk, paksendaja: pektiin, lõhna-ja maitseained, musta porgandi- ja leedrimahlakontsentraat, apelsini viljaliha, hape: sidrunhape, juuretis (sisaldab lisaks jogurtibakteritele ka piimhappebaktereid Lactobacillus acidophilus, Bifidobacterium, Lactobacillus paracasei), vitamiinid: A, E, D, tiamiin. A-vitamiini 120 μg*, E-vitamiini 1,8 mg*, D-vitamiini 0,75 μg*, tiamiin 0,17 mg*,",

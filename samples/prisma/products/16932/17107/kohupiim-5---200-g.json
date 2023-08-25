@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/263f01c77ef5ee2db6d2e967a18303c7.png",
     "ean" : "4740113091026",
     "origin" : "Estonia",
     "ingredients" : "Rasvata kohupiim, rõõsk KOOR",

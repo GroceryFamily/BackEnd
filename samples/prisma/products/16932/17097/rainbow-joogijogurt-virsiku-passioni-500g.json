@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/9ef89f2caa352beb6aad460dbb5e85a9.png",
     "ean" : "6414893097063",
     "origin" : "Austria",
     "ingredients" : "piim 83%, suhkur, vesi, virsikud 3,5%, virsikumahl kontsentraadist 2,4%, virsikupüree 1,4%, granadillimahl kontsentraadist 1,4%, stabilisaator (E 440), sidrunimahlakontsentraat, piimhappekultuur.",

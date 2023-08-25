@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/b87d4e04953a4a6a92d3350d09a28b8d.png",
     "ean" : "4740502001728",
     "origin" : "Estonia",
     "description" : "Klassikalise kondenspiima retsepti järgi valmistatud ainuke kodumaine kondenspiim",

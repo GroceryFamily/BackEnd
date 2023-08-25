@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/35d0a9546e0b30849f9a687009da41c6.png",
     "ean" : "7340011479048",
     "ingredients" : "piim 81%, mangopüree 9,6%, suhkur, vesi, stabilisaator (E 440), piimhappekultuur.",
     "brand" : "RAINBOW"

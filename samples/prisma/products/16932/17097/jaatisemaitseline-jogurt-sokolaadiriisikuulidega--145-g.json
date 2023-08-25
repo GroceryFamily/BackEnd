@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/d211c49f02b73b37d86ab937f1f6b462.png",
     "ean" : "4740065013237",
     "origin" : "Estonia",
     "description" : "Lõbus lapsemeelne toode, mis on ka paljude täiskasvanute lemmik! Sisaldab kasulikke elus piimhappebaktereid. Hea, tasakaalus maitsega jogurt, mis sobib hästi vahepalaks. Sisaldab kasulikest bakteritest ka Lactobacillus acidophilus ja Bifidobacteriumi",

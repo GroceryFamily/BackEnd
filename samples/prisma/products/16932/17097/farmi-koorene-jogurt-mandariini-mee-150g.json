@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/d227bc8b3dff55cc137bbbdfc476fc71.png",
     "ean" : "4740113019150",
     "origin" : "Estonia",
     "ingredients" : "rõõsk koor, suhkur, mandariinid 5,9%, lõssipulber, tärklis, õiemesi 0,4%, piimavalgud, porgandi kontsentraat, looduslik lõhna- ja maitseaine, juuretis.",

@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/769c9bcad2f9eb47f6067725711c6192.png",
     "ean" : "4743135000502",
     "origin" : "Estonia",
     "ingredients" : "jogurt, kohupiim, suhkur, vanillisuhkur, pralineekaste (suhkur, pähkel, sojaletsitiin,naturaalne vanilje)",

@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/dedcf8c4cfdef364b5d0e88e6c7a5dca.png",
     "ean" : "4740036009818",
     "origin" : "Austria",
     "description" : "Magusa maasikaga jogurtijook, mis sisaldab lisaks muudele kasulikele elus piimhappebakteritele ka Eesti teadlaste poolt avastatud ja välja töötatud ning rahvusvaheliselt tunnustatud Lactobacillus fermentum ME-3 ehk Hellus piimhappebaktereid ning lisaks ka Lactobacillus acidophilus LA-5®, Bifidobacterium BB-12® ja L. casei piimhappebaktereid",

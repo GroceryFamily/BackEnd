@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/9ef40bbf5ac9dc2288b99ca4bc3edbf9.png",
     "ean" : "6438460181719"
   }
 }

@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/b884b240e04d8dababd0c7216d9cbc72.png",
     "ean" : "4744355019206",
     "origin" : "Estonia",
     "description" : "Dr.Stern konserv koertele lambaliha tükid kastmes",

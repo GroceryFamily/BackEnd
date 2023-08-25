@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/2981b8ccef565a5dc98eb5f12c37d1f9.png",
     "ean" : "4740036015857",
     "origin" : "Estonia",
     "ingredients" : "piim, viinamarjamahla kontsentraat, kiudained 5,4%, kookosvesi 4,5%, piimavalk, lõssipulber, apelsinimahla kontsentraat 0,8%, modifitseeritud tärklis, paksendaja (pektiin), kõrvitsa ja õuna kontsentraat, looduslikud lõhna-ja maitseained, guarana ekstrakt, D-vitamiin, juuretis *",

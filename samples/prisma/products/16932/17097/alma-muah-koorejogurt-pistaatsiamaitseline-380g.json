@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/1be79bc5e95cfc8f42d3b4c43176fc87.png",
     "ean" : "4740125535952",
     "origin" : "Estonia",
     "description" : "Alma Muah! koorejogurteid iseloomustab siidine konsistents ja hõrgud maitsekombinatsioonid, mis ei jäta ühtegi jogurtigurmaani külmaks. See õige koorejogurt. Preserve in cool place",

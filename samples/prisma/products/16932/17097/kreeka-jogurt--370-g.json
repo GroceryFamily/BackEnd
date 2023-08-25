@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/f803301188db5d1364319a88b801ba0b.png",
     "ean" : "4740125531213",
     "origin" : "Estonia",
     "ingredients" : "piim, rõõsk koor, juuretis",

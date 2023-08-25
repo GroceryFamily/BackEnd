@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/ba24d3efc91e02a7024df713cc9867e4.png",
     "ean" : "6430062469387",
     "brand" : "PRIMADOG"
   }

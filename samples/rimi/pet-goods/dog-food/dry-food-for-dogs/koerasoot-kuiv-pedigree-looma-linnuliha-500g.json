@@ -9,6 +9,7 @@
     "pet-goods" : "Pet goods"
   },
   "details" : {
+    "image" : "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_fit,f_auto,h_480,q_auto,w_480/d_ecommerce:backend-fallback.png/MAT_648853_PCE_EE",
     "origin" : "Poland",
     "ingredients" : "teravili, liha ja loomsed kõrvalsaadused (s.h 4% loomaliha punakas-pruunides graanulites, 4% linnuliha beežides graanulites), õlid ja rasvad (sh 0,5% päevalilleõli), mineraalained, taimset päritolu kõrvalsaadused",
     "brand" : "Pedigree"

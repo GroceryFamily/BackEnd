@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/c8ec28383402c75af6a8f9f6daf46456.png",
     "ean" : "6408620005438",
     "description" : "loksutada",
     "ingredients" : "vesi, maasikad (12%), suhkur, modifitseeritud maisitärklis, mustasõstramahl, paksendaja (pektiin), happesuse regulaator (sidrunhape), C-vitamiin.",

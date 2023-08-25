@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/482f71aac881580da490343a094c3b52.png",
     "ean" : "6430062465846",
     "description" : "Hau-Hau Championi liha- ja kanatükid kastmes on hõrk ja liharikas täiendsööt koerale. Tetrapakend on 100% ringlussevõetav ning mugav kasutada. Looduslik toit ei sisalda nisu, soja, säilitusaineid ega toiduvärve.",
     "ingredients" : "liha ja loomsed saadused (kanaliha 26%, veis 8%), riisijahu. Analüütiline koostis: toorvalk (6,3%), toorrasv (3,5%), tuhastunud jäägid (1,7%), toorkiud (0,2%), niiskus (82%).",

@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/0c12a4253aa34228c902baea2661fbcd.png",
     "ean" : "4740125775006",
     "origin" : "Italy",
     "description" : "Piimatäidisega biskviitkook piimašokolaadiglasuuris",

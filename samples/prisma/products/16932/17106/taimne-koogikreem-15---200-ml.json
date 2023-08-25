@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/a2c3b7c0382b0642d7f5f25e2d6f077e.png",
     "ean" : "7311440601157",
     "origin" : "Finland",
     "description" : "Kaeratoode toiduvalmistamiseks.",

@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/4119a456a46fd9d286c240d2703da3e8.png",
     "ean" : "4740125383034",
     "origin" : "Estonia",
     "ingredients" : "piim 88%, suhkur, mustikad 2,4%, modifitseeritud tärklis, lõhna- ja maitseained, happesuse regulaator (naatriumtsitraadid), toiduvärv (antotsüaaniinid), juuretis, piimhappebakter Lactobacillus rhamnosus gg, D-vitamiin.",

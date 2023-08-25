@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/5a830c7d314e36ffe804d5d5cbdd272c.png",
     "ean" : "4740036016366",
     "origin" : "Estonia",
     "ingredients" : "piim, puuviljasuhkrud õunamahlast, maasikad 6%, kiudained 5,4%, piimavalk, lõssipulber, kibuvitsamarjad 0,2%, modifitseeritud tärklis, lõhna-ja maitseained, pataadikontsentraat, paksendaja (pektiinid), happesuse regulaator (sidrunhape, naatriumtsitraatid), tardaine (kaltsiumtsitraadid), D-vitamiin, juuretis",

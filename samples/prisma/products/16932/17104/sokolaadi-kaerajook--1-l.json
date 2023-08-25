@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/a6ede5737a874226d5bb9561abb1e1be.png",
     "ean" : "7394376616211",
     "origin" : "Sweden",
     "ingredients" : "Kaerapõhi (vesi, kaer (10%)), suhkur (3,5%), kakaopulber (1%), rapsiõli, kaltsiumkarbonaat, kaltsiumfosfaadid, jodeeritud sool, lõhna- ja maitseaine, vitamiinid (D2, riboflaviin ja B12). Piima- ja sojavaba. Laktoosivaba. Kaerajook ei ole mõeldud alla 1-aastastele lastele.",

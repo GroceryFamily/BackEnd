@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/a2dfe2e9d4ea61748043ee29b970469f.png",
     "ean" : "4008429079382",
     "origin" : "Poland",
     "description" : "Cesar koeratoit, kanaliha ja köögiviljaraguu kastmes, 100 g",

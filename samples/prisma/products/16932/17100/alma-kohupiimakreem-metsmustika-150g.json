@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/2d81a27aaf412076822386ae2f21b494.png",
     "ean" : "4740125631432",
     "origin" : "Estonia",
     "description" : "Alma metsmustika kohupiimakreem on tõeline maiuspala marjasõpradele. Selles kohtuvad maitsvad metsast korjatud mustikad ja Alma puhta maitsega kohupiimakreem. Alma metsmustika kohupiimakreem on nagu kõik Alma kohupiimakreemid säilitusainetevaba ning valmistatud puhtast Eesti piimast. Alma kohupiimakreemidele omaselt on ka see maitse hea valguallikas. Head nautimist!",

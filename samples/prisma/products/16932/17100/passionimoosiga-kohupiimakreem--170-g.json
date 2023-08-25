@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/04c74a386bb65da4137124100101ced8.png",
     "ean" : "4743135000526",
     "origin" : "Estonia",
     "ingredients" : "jogurt, kohupiim, suhkur, vanillisuhkur, passionikaste (glükoossiirup, suhkur, vesi, passionimahla konsentraat, modifitseeritud tärklis, sidrunhape, aroom)",

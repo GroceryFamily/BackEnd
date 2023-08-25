@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/9fd4d8bd6b13f23fdc649124506afe32.png",
     "ean" : "4740036015529",
     "origin" : "Estonia",
     "ingredients" : "piim, suhkur, banaanid 2,7%, piimavalk, lõssipulber, paksendaja (pektiin), lõhna- ja maitseained, happesuse regulaator (sidrunhape), toiduvärv (karoteenid), juuretis",

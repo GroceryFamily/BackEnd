@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/c2255553946704800db1ea87c11ecb82.png",
     "ean" : "7340191127104",
     "ingredients" : "rõõsk koor* (el), piimpappebakter laktaas. *Pastöriseeritud.",
     "brand" : "RAINBOW"

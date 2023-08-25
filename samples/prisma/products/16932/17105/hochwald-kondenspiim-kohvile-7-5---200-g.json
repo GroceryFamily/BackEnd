@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://prismamarket.ee/images/entry-no-image.png",
     "ean" : "4003490041634",
     "origin" : "Germany",
     "description" : "Hochwald kondenspiim kohvile 7,5%",

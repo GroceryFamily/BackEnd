@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/8a83a8fd9c3b732f5c7e3dc489ab872f.png",
     "ean" : "4740125220025",
     "origin" : "Estonia",
     "ingredients" : "35% pastöriseeritud rõõsk KOOR",

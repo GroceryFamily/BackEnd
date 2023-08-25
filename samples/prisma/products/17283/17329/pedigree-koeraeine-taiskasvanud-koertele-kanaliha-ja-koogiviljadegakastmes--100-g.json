@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/d74e6ec089c9742dfa11fae176a47d55.png",
     "ean" : "5900951017322",
     "origin" : "Poland",
     "description" : "Täissööt täiskasvanud koertele.",

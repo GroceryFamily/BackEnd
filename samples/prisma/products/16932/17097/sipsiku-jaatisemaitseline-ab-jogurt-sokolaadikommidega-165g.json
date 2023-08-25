@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/50ee9aa502c86d528d9ff38026cf932a.png",
     "ean" : "4742231005206",
     "origin" : "Estonia",
     "ingredients" : "pastöriseeritud rasvatu piim, pastöriseeritud täispiim, pastöriseeritud koor, šokolaadikommid 9%[(suhkur, kakaomass, kakaovõi, täispiimapulber, riisitärklis, emulgaator letsitiin(päevalille), glaseerained(kummiaraabik, karnaubavaha, meevaha), mahlakontsentraadid: viinamari, mustsõstar, sidrun, punapeet; värvohakaekstrakt, odralinnaseekstrakt, vetikakontsentraat. Sisaldab 60% piimašokolaadi (kakaosisaldus vähemalt 35%)], suhkur, piimavalk, paksendaja pektiin, lõhna-ja maitseaine(jäätise), juuretis(sh Lactobacillus acidophilus la-5, Bifidobacterium bb-12).",

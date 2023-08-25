@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/408e8472cacb03749d5228e79a7677b3.png",
     "ean" : "2060400800004",
     "origin" : "Egypt",
     "description" : "Pilt on illustreeriv."

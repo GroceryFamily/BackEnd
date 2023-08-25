@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/ebd617ab5fb3c29f793f0bd6ca203ae8.png",
     "ean" : "6415711411191",
     "ingredients" : "vesi, maasikapüree (maasikas: el), suhkur, paksendajad (E1442, E412), happesuse regulaator (E330), lõhna- ja maitseained, C-vitamiini 40 mg, toiduvärv (E163).",
     "brand" : "RAINBOW"

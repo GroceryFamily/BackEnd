@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/9c3e6eaebee7fd4760d0b5796b829f31.png",
     "ean" : "4740113091453",
     "origin" : "Estonia",
     "ingredients" : "pastöriseeritud rasvatu piim, kirsid 9,4%, suhkur, modifitseeritud tärklis, puu- ja juurvilja kontsentraat (porgand, aroonia, viinamari), paksendajad: pektiin, ksantaankummi, happesuse regulaatorid: sidrunhape, naatriumtsitraadid, kaltsiumtsitraadid; lõhna- ja maitseained, juuretis.",

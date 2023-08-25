@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/df16274e0141c93680272409b51bda79.png",
     "ean" : "4740036009009",
     "origin" : "Estonia",
     "description" : "Meeldiva ürdiseguga hapukoorekaste, valmis serveerimiseks",

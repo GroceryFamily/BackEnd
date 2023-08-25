@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/a9b8c87517c461305e2e0469538b969d.png",
     "ean" : "4740036016373",
     "origin" : "Estonia",
     "ingredients" : "jogurt (93,1%) (piim, suhkur, lõssipulber, modifitseeritud tärklis, lõhna ja -maitseained, paksendaja (pektiin), želatiin, toiduvärv (karoteenid), juuretis), maisihelbed (2,3%) piimašokolaadis (4,8%) (suhkur, mais, kakaovõi, täispiimapulber, kakaomass, glükoosisiirup, laktoos, odralinnaseekstrakt, sool, paksendaja (kummiaraabik), emulgaator (letsitiinid (soja)), kookosõli, hape (sidrunhape)).",

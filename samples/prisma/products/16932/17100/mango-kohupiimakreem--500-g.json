@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/fcf5eb8f1ea3861ebca2cb549779955d.png",
     "ean" : "7340011461722",
     "origin" : "Germany",
     "ingredients" : "kohupiim 51% (pastöriseeritud piim, piimhappebakter, mikrobioloogiline juustulaap), jogurt (pastöriseeritud piim, pastöriseeritud rõõsk koor, piimhappebakter), suhkur, mango 7%, glükoosi-fruktoosisiirup, mangopüree 1%, modifitseeritud maisitärklis, lõhna- ja maitseaine.",

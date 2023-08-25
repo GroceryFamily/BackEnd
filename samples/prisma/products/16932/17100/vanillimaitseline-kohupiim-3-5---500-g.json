@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/2533f42e94bf62c36303d6e17268ba02.png",
     "ean" : "7340011454533",
     "origin" : "Germany",
     "ingredients" : "kohupiim 51 % (pastöriseeritud piim (el), juuretis, mikrobioloogiline laap), jogurt (pastöriseeritud piim (el), pastöriseeritud koor (el), juuretis), suhkur, vesi, modifitseeritud maisitärklis, porgandiekstrakt, Bourboni vanilli ekstrakt, looduslik vanilli lõhna- ja maitseaine koos teiste looduslike lõhna- ja maitseainetega, ekstraheeritud vanilliseemned.",

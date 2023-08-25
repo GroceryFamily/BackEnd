@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/772a6d7a9bd8f9e44d719f2188e59580.png",
     "ean" : "6414893095021",
     "description" : "X-tra kakaopuding vahukoorega on suussulav magustoit või vahepala.",
     "ingredients" : "Pastöriseeritud rasvavaba piim, vadak, glükoosi- ja fruktoosisiirup, koor (8%), modifitseeritud tärklis, nisutärklis, väherasvane kakaopulber (1,4%), paksendajad (E 407, E 412), emulgaator (E 472b), želatiin, lõhnaaine.",

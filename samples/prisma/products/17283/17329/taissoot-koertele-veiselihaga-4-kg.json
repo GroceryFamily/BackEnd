@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/f0f017d23fddf6591f1537bedd8e2056.png",
     "ean" : "7336012955001",
     "origin" : "France",
     "description" : "Täielikult tasakaalustatud valgurikas täissööt energilistele ja mänguhimulistele koertele. Sisaldab veiseliha. FRISKIES Adult on täielikult tasakaalustatud täissööt, mis on loodud energilistele ja alati mänguhimulistele koertele. Sisaldab kvaliteetset valku, mis hoiab koera heas vormis ning kõiki toitaineid, mida ta iga päev vajab. Friskies Adult koeratoit veiselihaga, 4 kg",

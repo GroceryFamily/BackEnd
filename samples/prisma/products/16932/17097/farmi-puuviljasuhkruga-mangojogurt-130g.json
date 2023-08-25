@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/49a1b59d803df08a464896c8e1721769.png",
     "ean" : "4740113097127",
     "origin" : "Estonia",
     "ingredients" : "piim, mangopüree kontsentraadist 12%, viinamarjamahla kontsentraat, piimavalk, lõssipulber, modifitseeritud tärklis, paksendaja (pektiin), kõrvitsa ja õuna kontsentraat, looduslikud lõhna- ja maitseained, hape (sidrunhape), juuretis. Laktoosivaba. Puuviljade suhkrusisaldus 7,7%.",

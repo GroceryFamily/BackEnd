@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/02602ca8e21a4b54358a03587fe57131.png",
     "ean" : "5411188119098",
     "origin" : "Belgium",
     "ingredients" : "Vesi, kooritud sojaoad (7,8%), kookospiim (4,3%) (kookoskoor, vesi), suhkur, trikaltsiumtsitraat, happesuse regulaatorid (naatriumtsitraat, sidrunhape), stabilisaator (pektiin), looduslik lõhna- ja maitseaine, meresool, vitamiinid (B12, D2), antioksüdant (tokoferoolikontsentraat, rasvhapete askorbüülestrid), jogurtibakterid (S. thermophilus, L. bulgaricus).",

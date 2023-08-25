@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/0d9e4b4a013f1e0786175efefd71787f.png",
     "ean" : "4008429029110",
     "origin" : "Germany",
     "description" : "Täissööt täiskasvanud koertele Frolic Complete koeratoit härjaliha, köögi- ja teraviljaga, 1,5 kg",

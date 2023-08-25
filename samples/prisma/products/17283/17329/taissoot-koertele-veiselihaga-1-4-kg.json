@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/2fc43f64f7338daf947b0ce787d6e330.png",
     "ean" : "7613035215955",
     "origin" : "United kingdom",
     "description" : "Friskies® Nutri Soft on täielikult tasakaalustatud täissööt, mis koosneb maitsvatest pehmetest veiseliha sisaldavatest paladest. Friskies Nutri Soft koeratoit veiselihaga, 1,4 kg",

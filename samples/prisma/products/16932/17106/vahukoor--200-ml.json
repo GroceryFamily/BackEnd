@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/0b6a1a896711f9211bd16907a922f0d5.png",
     "ean" : "6414893386082",
     "origin" : "Finland",
     "ingredients" : "kõrgpastöriseeritud koor, stabilisaator (E407).",

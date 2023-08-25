@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/afd00c6977c2b230c1c30c3123f7d9df.png",
     "ean" : "6408430102334",
     "origin" : "Finland",
     "description" : "Kõrgtemperatuuril pastöriseeritud ja maitsestatud kaerajook. Rikastatud vitamiinide ja mineraalidega, gluteenivaba. Sobib toiduvalmistamiseks, puhtalt kasutamiseks ning erinevate jookide valmistamiseks. Ideaalne piima asendaja külmade ja kuumade jookide jaoks. Oddlygood Barista kaerajook sobib hästi soojale kohvile (75-85 °C). Vahustub hästi. Vahtu on lihtne kujundada ja valada kohvi või muude jookide peale. Enne kasutamist loksutada korralikult. Sobib veganitele. Preserve in cool place",

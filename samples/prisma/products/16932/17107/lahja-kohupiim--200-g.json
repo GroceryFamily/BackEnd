@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/e5948e41f6a8aac1b748f98c23a58bc9.png",
     "ean" : "4740113034948",
     "origin" : "Estonia",
     "ingredients" : "rasvata KOHUPIIM",

@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/15e6683667b3dfea4b50aa67fab268e3.png",
     "ean" : "4740125632262",
     "origin" : "Estonia",
     "description" : "Eestlaste poolt armastatud magustoit ja vahepala nüüd Alma kvaliteediga! Suvise maitsega metsmaasikakissell annab täiendust pehmele ning siidisele kohupiimakreemile. Meelepärane nii lastele kui ka täiskasvanutele.",

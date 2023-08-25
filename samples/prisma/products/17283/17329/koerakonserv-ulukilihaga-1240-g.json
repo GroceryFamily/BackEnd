@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/f995fa018d536be1b3226e5a7226ec46.png",
     "ean" : "7340011458937",
     "origin" : "Netherland",
     "description" : "X-tra koeratoit ulukilihaga on täissööt, mis sisaldab kõiki koerale vajalikke toitaineid. Kasutamine: täiskonserv, kasutusvalmis. X-tra koeratoit ulukilihaga, 1240 g",

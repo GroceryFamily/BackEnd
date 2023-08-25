@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/b53abf7d4411eaa5b11552649b3f69fb.png",
     "ean" : "7613036307390",
     "ingredients" : "kana (17%, millest min 5% kanaliha), nisu, mais, kuivatatud linnulihavalk, nisugluteen, loomne rasv, maisitangud, kuivatatud peedikiud, riis (4%), ekstrakt, mineraaltoitained, propüleenglükool, kuivatatud kanamuna, kalaõli, linnasejahu. Analüütiline koostis: valk (25%), rasv (15%), tuhastunud jäägid (7,0%), toorkiud (2,5%), oomega-3-rasvhapped (0,25%), oomega-6-rasvhapped (1,7%).",
     "brand" : "PURINA ONE"

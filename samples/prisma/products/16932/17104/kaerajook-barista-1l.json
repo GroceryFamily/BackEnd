@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/295d6786d12b411001a848be6d469d89.png",
     "ean" : "6408659990422",
     "origin" : "Finland",
     "description" : "Friendly Viking kaerajook Barista kohviga tarbimiseks, sobilik veganitele X",

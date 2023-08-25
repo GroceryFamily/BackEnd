@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/d62a39acd835c46160d53e35680bb2bc.png",
     "ean" : "6408430062195",
     "origin" : "Finland",
     "ingredients" : "vesi, karusmarjamahl 7,5%, põldmarjamahl 7%, kiudaine (oligofruktoosid), paksendaja (guarkummi), modifitseeritud maisitärklis, happesuse regulaator (sidrunhape), magusained (aspartaam, atsesulfaam K), punapeedivärv. Sisaldab looduslikke suhkruid. Sisaldab fenüülalaniini allikat",

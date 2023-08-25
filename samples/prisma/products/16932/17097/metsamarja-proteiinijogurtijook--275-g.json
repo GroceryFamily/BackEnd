@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/ced47c2569e93a2536746db0c8e77783.png",
     "ean" : "4740125582130",
     "origin" : "Estonia",
     "ingredients" : "rasvatu piim, vesi, kollageen peptiidid 4,1%, piimavalgud, vaarikamahl 1%, pohlamahl 0,5%, mustikamahl 0,5%, lõhna-ja maitseained, toiduvärv (peedipunane), happesuse regulaator (sidrunhape), magusained (steviool glükosiid, sukraloos), juuretis.",

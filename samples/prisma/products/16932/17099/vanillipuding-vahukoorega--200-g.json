@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/9b3ce10a597046353e70a649cfd10388.png",
     "ean" : "6414893095861",
     "description" : "X-tra vanillipuding vahukoorega on suussulav magustoit või vahepala.",
     "ingredients" : "Pastöriseeritud rasvavaba piim, vadak, glükoosi- ja fruktoosisiirup, koor (8%), modifitseeritud tärklis, suhkur, paksendajad (E 407, E 412), nisutärklis, želatiin, emulgaator (E 472b), lõhnaaine, toiduvärv (E 160a).",

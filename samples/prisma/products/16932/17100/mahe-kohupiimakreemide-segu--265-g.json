@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/e64349ba3e7357028e00c7cf92ab332f.png",
     "ean" : "4743135000618",
     "origin" : "Estonia",
     "ingredients" : "jogurt, kohupiim, suhkur, rosinad, vanillisuhkur, kakao",

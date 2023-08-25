@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/6c2440f2762dd80b05874bf32c5b8e4e.png",
     "ean" : "5410146410581",
     "origin" : "Belgium",
     "description" : "PASTÖRISEERITUD PIIM, metsamarjad (8%) (maasikas, must sõstar, mustikas, aedmurakas, kirss, vaarikas), suhkur, LÖSSIPULBER, PIIMAVALK, modifitseeritud maisitärklis, paksendaja (pektiin), looduslik lõhna- ja maitseaine, mahlakontsentraat (leedrimari, porgand), happesuse regulaator (naatriumtsitraat), jogurtijuuretis, Bifidobacterium animalis subsp.lactis CNCM I-2494 (ACTIREGULARIS® juuretis). Võib sisaldada GLUTEENI jääke. Preserve in cool place",

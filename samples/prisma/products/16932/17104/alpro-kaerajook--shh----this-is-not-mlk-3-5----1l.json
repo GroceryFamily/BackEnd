@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://prismamarket.ee/images/entry-no-image.png",
     "ean" : "5411188134985",
     "origin" : "France",
     "description" : "Kaerajook, millele on lisatud kaltsiumi ja D-vitamiini. Hoida temperatuuril +1°C kuni +25°C. Pärast avamist hoida külmkapis (max 7°C) ja tarbida 5 päeva jooksul. Preserve in dry place",

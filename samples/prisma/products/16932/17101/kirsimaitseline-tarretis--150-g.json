@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/358571b805d6ba70f8c144a80778df94.png",
     "ean" : "4740113070106",
     "origin" : "Estonia",
     "ingredients" : "vesi, suhkur, želatiin, hape: sidrunhape, musta porgandi mahla kontsentraat, lõhna- ja maitseaine, toiduvärv: ammooniumkaramell",

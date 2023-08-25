@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/e1f08c39e60b410fe35f13f42f47c4b4.png",
     "ean" : "4740036004998",
     "origin" : "Estonia",
     "description" : "Hõrk ja traditsiooniline vanilje kohupiimakreem, mille mõnusalt pehme ja siidine maitse köidab igas vanuses inimesi. Emma kohupiimakreemid on aegumatu maitseelamus. Tooted sobivad nii magustoidu asemel või toidukordade vahel kergeks vahepalaks",

@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/d37659cf609b9915c9f67577409846ea.png",
     "ean" : "6414893358812",
     "origin" : "Estonia",
     "description" : "Rainbow virsikukohupiim sobib vahepalaks või magustoiduks. Serveeri ka marjade või puuviljadega",

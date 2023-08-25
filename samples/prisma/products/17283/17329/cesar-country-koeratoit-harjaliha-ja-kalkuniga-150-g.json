@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/b8249cf6daf8c7ba994b8d7465b5764e.png",
     "ean" : "4008429139055",
     "brand" : "CESAR"
   }

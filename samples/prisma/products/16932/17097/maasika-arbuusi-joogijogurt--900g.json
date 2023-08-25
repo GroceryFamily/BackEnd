@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/cbeaab7955d6695da32a9647b23370e0.png",
     "ean" : "4740113096908",
     "origin" : "Estonia",
     "ingredients" : "piim, viinamarjamahla kontsentraat, maasikapüree kontsentraadist 6%, arbuusimahl kontsentraadist 6%, modifitseeritud tärklis, paksendaja (pektiin), porgandikontsentraat, looduslikud lõhna- ja maitseained, hape (sidrunhape), juuretispiim, viinamarjamahla kontsentraat, maasikapüree kontsentraadist 6%, arbuusimahl kontsentraadist 6%, modifitseeritud tärklis, paksendaja (pektiin), porgandikontsentraat, looduslikud lõhna- ja maitseained, hape (sidrunhape), juuretis",

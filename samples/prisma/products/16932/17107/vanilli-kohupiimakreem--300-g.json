@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/53cec7a36f89eaecc1a15d1a78a26043.png",
     "ean" : "4740125612028",
     "origin" : "Estonia",
     "ingredients" : "kohupiimapasta, vanillilisand (suhkur, vesi, modifitseeritud tärklis, lõhna-ja maitseained, vanilliuba, paksendaja (jaanileivapuujahu), toiduvärv (karoteenid), happesuse regulaator (sidrunhape)), rõõsk koor.",

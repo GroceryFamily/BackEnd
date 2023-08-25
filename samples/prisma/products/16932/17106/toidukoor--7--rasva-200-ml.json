@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/5fd46aed9c11a98f246655df468f8e3e.png",
     "ean" : "6414893074255",
     "origin" : "Finland",
     "ingredients" : "lõss (Soome), vesi, rüpsiõli (Soome), osaliselt tahkestatud taimne rasv, stabilisaatorid (E1442, E412), emulgaator (E472e), lõssipulber, maisi maltodekstriin, suhkur, happesuse regulaator (E331), lõhna- ja maitseaine, toiduvärv (E160a).",

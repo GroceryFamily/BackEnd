@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/ae0e372bb1c78651e449d8d92304e2e0.png",
     "ean" : "2060491300001",
     "origin" : "Ivory coast",
     "description" : "Kookospähkel"

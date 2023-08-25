@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/964ffb495ca9e5d4e836e6a5f4d12c92.png",
     "ean" : "6430062460889",
     "origin" : "Estonia",
     "ingredients" : "Liha ja lihasaadused 95% (min 10% loomaliha), riis 4%",

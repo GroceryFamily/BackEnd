@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/a5a9036490e88a56876d39301355653f.png",
     "ean" : "4740572006043",
     "origin" : "Estonia",
     "ingredients" : "Ricotta kohupiim, suhkur, happesuse regulator: sidrunhape, vanilliin",

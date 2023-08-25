@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/ea081098d4f816a4afdd27d3e337e040.png",
     "ean" : "6414893504462",
     "ingredients" : "vesi, vaarikapüree (Saksamaa), vaarikamahl kontsentreeritud mahlast (Austria), paksendajad (E1442, E412), happesuse regulaator (E330), C-vitamiin, magusained (E951, E950). Sisaldab aspartaami (fenüülalaniini allikas). Vaarikat 8%.",
     "brand" : "X-TRA"

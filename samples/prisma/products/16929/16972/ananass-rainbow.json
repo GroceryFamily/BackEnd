@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/09e2e65c67141366940d35b188d3341a.png",
     "ean" : "2060490800007",
     "origin" : "Costa rica"
   }

@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/bb40ba3c207c04dd70b800239d086a5a.png",
     "ean" : "4740218001081",
     "origin" : "Estonia",
     "description" : "Nagu vanasti tehtud kodune hapupiim. Vanaemade traditsioonide kohaselt valmistatud",

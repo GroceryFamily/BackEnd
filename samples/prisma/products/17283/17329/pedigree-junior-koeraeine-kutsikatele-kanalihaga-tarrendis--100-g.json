@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/85f9183bf54e4fe6d3e77d7782ee9fa7.png",
     "ean" : "5900951017247",
     "origin" : "Poland",
     "description" : "Täisväärtuslik toit kutsikatele. Preserve at room temperature",

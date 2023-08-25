@@ -8,6 +8,7 @@
     "pre-order-festivity-meals" : "Pre-order festivity meals"
   },
   "details" : {
+    "image" : "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_fit,f_auto,h_480,q_auto,w_480/d_ecommerce:backend-fallback.png/MAT_985038_PCE_EE",
     "origin" : "Estonia",
     "ingredients" : "broilerifilee 23% (broilerifilee, vesi, tapiokitärklis, sool, maltodekstriin), RUKKI lavašš 18% (NISUjahu, RUKKIjahu, vesi, linnasejahu, linnaseekstrakt, köömnepulber, maitsepärm, sool), toorJUUST (kohuPIIM, modifitseeritud tärklis, sool, paksendaja: E410, E412), punane peakapsas, kimchi majonees [rapsiõli, vesi, kimchi kaste 20% ((küüslauk, tšilli pipar, modifitseeritud kassavatärklis, äädikas (sis. NISU), happesuse regulaator:E330)), LÕSSIpulber, suhkur, sool, SINEPIpulber, modifitseeritud maisitärklis, paksendajad: E415, E412; MUNAkollasepulber, happesuse regulaator: E260; säilitusaine: E202], rukola, petersell",
     "brand" : "Rimi"

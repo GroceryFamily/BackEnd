@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/d4764a914a043e0612c7f6a79a92bb59.png",
     "ean" : "4742189000339",
     "origin" : "Estonia",
     "description" : "Täissööt koertele Preserve in dry place",

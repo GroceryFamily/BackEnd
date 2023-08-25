@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/2e226b13002d6f28f2a6fce5860c8fc7.png",
     "ean" : "4740036009504",
     "origin" : "Estonia",
     "description" : "Kõrgema rasvasisaldusega ja rammus hapukoor, mis on ka kõige paksema konsistentsiga",

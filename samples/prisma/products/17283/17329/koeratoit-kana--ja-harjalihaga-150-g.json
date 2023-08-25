@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/90c69abaada3dc89385fbd84f7da2119.png",
     "ean" : "4008429511219",
     "origin" : "Germany",
     "description" : "Cesar Classics koeratoit kana- ja härjalihaga, 150 g",

@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/2e2314be2aa4b6541b247932f26cea3c.png",
     "ean" : "4740125581089",
     "origin" : "Estonia",
     "ingredients" : "piim 67%, vesi, suhkur, maasikad 0,9%, banaanilõhna ja maitseaine, happesuse regulaator (sidrunhape), toiduvärv (peedipunane), juuretis, piimhappebakter Lactobacillus rhamnosus gg, D-vitamiin, B₁₂-vitamiin",

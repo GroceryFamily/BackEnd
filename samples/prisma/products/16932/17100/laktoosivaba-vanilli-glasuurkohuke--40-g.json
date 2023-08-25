@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/cbf02cb2285bd1720aded973c2b09d21.png",
     "ean" : "4742231002298",
     "origin" : "Estonia",
     "ingredients" : "kohupiim 53%(pastöriseeritud rõõsk koor, pastöriseeritud rasvatu piim, juuretis, laap), kakaoglasuur 19%(suhkur, täielikult hüdrogeenitud taimne rasv(palmi), vähendatud rasvasisaldusega kakaopulber, taimne rasv (palmi), kakao kiudaine, emulgaator letsitiin(rapsi), lõhna-ja maitseaine, emulgaator E476), suhkur, piimavalgud, lõhna- ja maitseaine vanilliin 0,01%. Toode võib sisaldada pähkleid, sojat.",

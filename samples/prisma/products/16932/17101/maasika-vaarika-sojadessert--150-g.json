@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/b038d6bed8e653f1b3e5d72a9d893cda.png",
     "ean" : "5411188124191",
     "origin" : "Belgium",
     "ingredients" : "Vesi, kooritud sojaoad (13,5%), marjad (10%) (maasikad (5%), vaarikad (5%)), suhkur, stabilisaator (pektiin, guarkummi), tärklis, trikaltsiumtsitraat, happesuse regulaatorid (naatriumtsitraat, sidrunhape), looduslik lõhna- ja maitseaine, meresool, punapeedimahlakontsentraat, porgandikontsentraat, antioksüdandid (tokoferooliekstrakt, askorbiinhappe rasvhappeestrid), juuretis (S.thermophilus, L.bulgaricus), vitamiinid (B12, D2). Võib sisaldada sarapuupähkleid ja sarapuupähklitooteid, mandleid ja mandlitooteid. Laktoosivaba. Gluteenivaba, alla 20 mg / 1 kg.",

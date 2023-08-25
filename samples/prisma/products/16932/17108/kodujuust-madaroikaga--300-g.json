@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/52c990d85216d2b6a64b42cba66c406f.png",
     "ean" : "4740036014416",
     "origin" : "Estonia",
     "ingredients" : "Koostisosad: kodujuust 46%, hapukoor, mädarõigas 1,6%, riisitärklis, maltodekstriin, sool.",

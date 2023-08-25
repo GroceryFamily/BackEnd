@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/64ee32ccb92436842f4262bcb27c6372.png",
     "ean" : "4740464781201",
     "origin" : "Estonia",
     "ingredients" : "Täispiim, kamajahu 3,5%, suhkur, juuretis, laap",

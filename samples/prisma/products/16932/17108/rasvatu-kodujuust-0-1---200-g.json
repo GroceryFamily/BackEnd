@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/e06f4a4607d4389aa911a0ac22989a54.png",
     "ean" : "4740125633047",
     "origin" : "Estonia",
     "ingredients" : "kodujuust, rasvatu piim, sool (max 1%)",

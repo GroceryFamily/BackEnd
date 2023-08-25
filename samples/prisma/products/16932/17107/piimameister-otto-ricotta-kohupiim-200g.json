@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/e76256caa79a0e77003d57c122dfdb39.png",
     "ean" : "4740572006036",
     "origin" : "Estonia",
     "ingredients" : "Ricotta KOHUPIIM",
