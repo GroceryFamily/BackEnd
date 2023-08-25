@@ -9,6 +9,7 @@
     "dairy-products-eggs-cheese" : "Dairy products, eggs, cheese"
   },
   "details" : {
+    "image" : "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_fit,f_auto,h_480,q_auto,w_480/d_ecommerce:backend-fallback.png/MAT_989365_PCE_EE",
     "origin" : "Germany",
     "ingredients" : "LÕSS 94%, PIIMavalgu toode 5%, lõhna- ja maitseaine, laktaas, värviv taimekontsentraat (safloor), tirštiklis (karrageen), magusained (kaaliumatsesulfaam, sukraloos), toiduvärv (E 131, kurkumiin)",
     "brand" : "Ehrmann"

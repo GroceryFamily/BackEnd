@@ -9,6 +9,7 @@
     "meat-and-fish-products" : "Meat and fish products"
   },
   "details" : {
+    "image" : "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_fit,f_auto,h_480,q_auto,w_480/d_ecommerce:backend-fallback.png/MAT_209357_PCE_EE",
     "origin" : "Latvia",
     "ingredients" : "LÕHE (SALMO SALAR. KASVATATUD - NORRA), VESI, MUNAD,ŽELATIIN, SOOL, MAITSEAINED, HAPPESUSE REGULAATOR - SIDRUNHAPE, SÄILITUSAINED: NAATRIUMBENSOAAT, NATURAALNE VÄRVAINE - TAIMNE (MEDITSIINILINE) SÜSIKAALIUMSORBAAT,",
     "brand" : "Silverfish"

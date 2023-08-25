@@ -9,6 +9,7 @@
     "pet-goods" : "Pet goods"
   },
   "details" : {
+    "image" : "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_fit,f_auto,h_480,q_auto,w_480/d_ecommerce:backend-fallback.png/MAT_104006_PCE_EE",
     "origin" : "Hungary",
     "ingredients" : "teraviljad, liha ja loomsed saadused (võrdväärne 16% rehüdreeritud liha ja loomsete saadustega), taimset päritolu saadused, õlid ja rasvad, aedviljaproteiinide ekstraktid, mineraalained, aedviljad (0,06% kuivatatud porgandit ja 0,06% kuivatatud herneid, võrdväärne 0,8% aedviljadega)",
     "brand" : "Purina Darling"

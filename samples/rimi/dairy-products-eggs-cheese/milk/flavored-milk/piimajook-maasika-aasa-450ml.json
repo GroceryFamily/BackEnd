@@ -9,6 +9,7 @@
     "dairy-products-eggs-cheese" : "Dairy products, eggs, cheese"
   },
   "details" : {
+    "image" : "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_fit,f_auto,h_480,q_auto,w_480/d_ecommerce:backend-fallback.png/MAT_962392_PCE_EE",
     "origin" : "Lithuania",
     "ingredients" : "PIIM 95%, suhkur, maasikasiirup 1,1% (suhkur, glükoosi-fruktoosisiirup, maasika mahlakontsentraat 3,5%, toiduvärv: beetakaroteen, lõhna-ja maitseained), stabilisaatorid: rasvhapete mono- ja diglütseriidide estrid, karrageen, guarkummi",
     "brand" : "Aasa"

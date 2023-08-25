@@ -8,6 +8,7 @@
     "pre-order-festivity-meals" : "Pre-order festivity meals"
   },
   "details" : {
+    "image" : "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_fit,f_auto,h_480,q_auto,w_480/d_ecommerce:backend-fallback.png/MAT_981324_PCE_EE",
     "origin" : "Estonia",
     "ingredients" : "SinihallitusJUUSTU kreem 39,2% [toorJUUST (kohuPIIM, modifitseeritud tärklis, sool, paksendaja: E410, E412), sinihallitusJUUST 12% (PIIM, sool piimhappe klutuurid, sinise hallituse kultuurid, laap), majoneesivõie (rapsiõli, vesi, LÕSSIpulber, suhkur, modifitseeritud maisitärklis, sool, MUNApulber, paksendaja: E415, E412, E410; SINEPIpulber, happesuse regulaator: E260; toiduvärv: E160a; säilitusaine: E211, E202), till], minisai 20,6% [NISUjahu, vesi, PIIMApulber (VADAKUpulber, LÕSSIpulber, sool), rapsiõli, pärm, suhkur, jodeeritud sool], suitsupart 16,5% (pardiliha, sool, dekstroos, maltodekstriin, glükoosisiirup, säilitusaine: E202, E250; emulgaator: E450, E452; antioksüdant: E301; pärm, lõhna-ja maitseained), kirsstomat, marineritud sibul (punane sibul, vesi, suhkur, äädikhape, sool), kurk, röstsibul (sibul, palmiõli, NISUjahu, sool), petersell.",
     "brand" : "Rimi"
