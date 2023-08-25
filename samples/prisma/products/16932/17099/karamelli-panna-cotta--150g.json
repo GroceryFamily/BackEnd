@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/0a7d22e9ca5ceff823ebdbc4bc081ae4.png",
     "ean" : "4740113093716",
     "origin" : "Estonia",
     "ingredients" : "rõõsk koor, jahvatatud koorekaramelli kommid 9,2% (suhkur, glükoosisiirup, rõõsk koor (7,4%), kondenseeritud vadak, või (4,8%), roosuhkrusiirup, sool, lõhna- ja maitseained, emulgaator sojaletsitiin), vesi, modifitseeritud tärklis, lõssipulber, zelatiin, glükoos, karamelli suhkrusiirup, looduslik lõhna- ja maitseaine, stabilisaator (karrageen), sool",

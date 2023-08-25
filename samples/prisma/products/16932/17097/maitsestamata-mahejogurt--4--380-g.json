@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/18b91bba8057aac55e8bfc4d89f18ab2.png",
     "ean" : "4742231005008",
     "origin" : "Estonia",
     "ingredients" : "Pastöriseeritud mahepiim, mahe piimavalk, juuretis, laap",

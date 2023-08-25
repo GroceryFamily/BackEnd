@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/f27d4aef1ac22b67986913b0638f4a3e.png",
     "ean" : "6414893358836",
     "origin" : "Finland",
     "description" : "Väikese laktoosisisaldusega toidukoor. Sobib kasutamiseks toiduvalmistamisel ja küpsetamisel. Ei vahustu.",

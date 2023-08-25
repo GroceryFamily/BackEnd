@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/0bc43b2894d51cc8dd23acc7a0f9a984.png",
     "ean" : "4740125220094",
     "origin" : "Estonia",
     "ingredients" : "20% rõõsk KOOR",

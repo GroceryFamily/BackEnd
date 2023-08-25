@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/0b2f78f40cbb69064f4739d298856dc3.png",
     "ean" : "2060494500002",
     "origin" : "Azerbaijan",
     "description" : "Pilt on illustreeriv. Tellida saab tervet arbuusi."

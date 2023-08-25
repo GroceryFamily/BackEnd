@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/2f60401dd079971bf2baa1192aea25ad.png",
     "ean" : "6414893385511",
     "description" : "Rikastatud kaltsiumiga. Laktoosivaba. 100% taimne. Homogeniseeritud ja UHT-töödeldud. Preserve in cool place",
     "ingredients" : "Vesi, riis 11%, päevalilleõli, mineraalaine (kaltsiumkarbonaat), meresool.",

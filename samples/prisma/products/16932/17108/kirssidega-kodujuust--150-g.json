@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/6acb803089a1fb63b3c5c9acb112953e.png",
     "ean" : "4770237043328",
     "origin" : "Lithuania",
     "ingredients" : "kodujuustu terad, koor, kirsi valmissegu 20% (suhkur, kirsid 35%, paksendaja pektiin, happesuse regulaator sidrunihape, antioksüdant askorbiinhape, maitseained), sool.",

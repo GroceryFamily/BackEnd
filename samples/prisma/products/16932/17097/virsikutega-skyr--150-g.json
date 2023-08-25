@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/bf95adebfa32c84fca32b4c6f322a1ce.png",
     "ean" : "4740113091446",
     "origin" : "Estonia",
     "ingredients" : "pastöriseeritud rasvatu piim, virsikud 9,4%, suhkur, modifitseeritud tärklis, looduslikud lõhna- ja maitseained, porgandikontsentraat, paksendaja: pektiin; happesuse regulaatorid: sidrunhape, kaltsiumtsitraat, naatriumtsitraat; juuretis.",

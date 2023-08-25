@@ -8,6 +8,7 @@
     "pre-order-festivity-meals" : "Pre-order festivity meals"
   },
   "details" : {
+    "image" : "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_fit,f_auto,h_480,q_auto,w_480/d_ecommerce:backend-fallback.png/MAT_954973_PCE_EE",
     "origin" : "Estonia",
     "ingredients" : "Porgand 19,8%, tomat 19,8%, paprika 19,8%, kurk 19,8%, Caesari kaste 19,8% [rapsiõli, vesi, JUUST, oliivijääkõli, veiniäädikas (sh SULFITID), SINEPIpulber, SINEPIseemned, modifitseeritud tärklis, suhkur, pestokaste ((päevalilleõli, basiilik, INDIA PÄHKEL, JUUST (sh säilitusaine: E1105 (MUNA)), sool, JUUST (lambaPIIM, sool, laap), kartulitärklis, seedriseemned, küüslauk, happesuse regulaator: E270), KALAkaste ((ANŠOOVISE ekstrakt (KALA), happesuse regulaator: E330)), Worcestershire’i kaste ((LINNASEäädikas, vürtsid (SOJAvalk), pärmiekstrakt, lõhna- ja maitseained, tamarind, toiduvärv: E150c)), pipar, LÕSSIpulber, sool, paksendaja: E415, E412; MUNAkollasepulber, toiduvärv: E160a], petersell."
   }

@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/094e1588e4c5accb0da421143913e328.png",
     "ean" : "7340011497264",
     "brand" : "X-TRA"
   }

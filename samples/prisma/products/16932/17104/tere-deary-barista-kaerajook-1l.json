@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/c4b3eb6956934efdf531eb0a5212ba85.png",
     "ean" : "4740036016229",
     "origin" : "Finland",
     "description" : "Deary taimne barista kaerajook on valmistatud spetsiaalselt kohvi jaoks. Toode on välja töötatud oma valdkonna ekspertidega, tagamaks toote suurepärase vahustuvuse ning pehme ja täidlase maitseelamuse.",

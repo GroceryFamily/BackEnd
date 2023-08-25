@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/e75c630344218e96ab3bb3e33cdc2aa4.png",
     "ean" : "4740153600004",
     "origin" : "Estonia",
     "description" : "ESIMENE 100% taaskasutatavas purepakendis. Piim on naturaalne pastöriseeritud mahe maapiim, mistõttu selle rasvaprotsent kõigub vahemikus 4,0-4,4% Saaremaa PT mahepiim on pärit Saaremaa ja Hiiumaa mahetootjatelt. Preserve in cool place",

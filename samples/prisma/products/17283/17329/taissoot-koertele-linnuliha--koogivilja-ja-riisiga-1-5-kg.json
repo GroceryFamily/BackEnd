@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/ae89c35fe7ecb7bf23163414cb8fc56a.png",
     "ean" : "4008429033810",
     "origin" : "Germany",
     "description" : "Täissööt täiskasvanud koertele Frolic Complete koeratoit linnuliha, köögivilja ja riisiga, 1,5 kg",

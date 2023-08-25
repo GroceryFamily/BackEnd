@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/06d04822f8a360930de2a04a8108bdfc.png",
     "ean" : "4740036009719",
     "origin" : "Estonia",
     "ingredients" : "piim, D-vitamiin",

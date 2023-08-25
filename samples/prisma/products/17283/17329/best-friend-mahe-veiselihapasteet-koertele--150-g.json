@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/2c116d39987ae5e1699eec187823c936.png",
     "ean" : "5700551111006",
     "brand" : "BEST FRIEND"
   }

@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://prismamarket.ee/images/entry-no-image.png",
     "ean" : "4032549003378",
     "description" : "Preserve at room temperature",
     "ingredients" : "piim (täispiim ja lõss), suhkur (48%), stabilisaator (dinaatriumdivesinikdifosfaat). Rasvu 6%, lõssi kuivainesisaldus 13,9%, kuumtöödeldud, paks.",

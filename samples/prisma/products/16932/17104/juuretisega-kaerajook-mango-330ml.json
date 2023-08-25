@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/b308c5515672824b40eadff36d0cd108.png",
     "ean" : "4742117001698",
     "origin" : "Estonia",
     "description" : "Mango kaerajook ehtsa jogurtijuuretisega sisaldab ainult mango loomulikku suhkrut. Imemaitsev kaerajook on suurepärane loommulikult laktoosivaba alternatiiv piimast.Valmistatud Eestis. Preserve in cool place",

@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/4dd49ade82e594acab24cb0d39f32087.png",
     "ean" : "4740036007319",
     "origin" : "Estonia",
     "ingredients" : "Rasvata kohupiimapasta, rõõsk koor, suhkur, looduslik lõhna- ja maitseaine, D-vitamiin",

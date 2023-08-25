@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/15cadf9b5ad3197a6413d9a63b3f5f89.png",
     "ean" : "4740125523126",
     "origin" : "Estonia",
     "description" : "Valio Gefilus jogurtid sisaldavad LGG piimhappebakterit ning pimedal ajal üliolulist D-vitamiini. D-vitamiin aitab kaasa immuunsüsteemi normaalsele talitlusele ning on meile, kes me elame päikesevaeses kliimas, tervise seisukohalt väga oluline.",

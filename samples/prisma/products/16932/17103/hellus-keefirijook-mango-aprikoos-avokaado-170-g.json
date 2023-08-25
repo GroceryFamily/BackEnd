@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/24b4f160ed3346150ca018f974b3f3db.png",
     "ean" : "4740036016601",
     "origin" : "Estonia",
     "ingredients" : "piim, suhkur, mangopüree 1,2%, aprikoosipüree kontsentraadist 1,2%, avokaadopüree 1,2%, modifitseeritud tärklis, looduslikud lõhna-ja maitseained, sidrunimahla kontsentraat, paksendaja (pektiin, guarkummi), toiduvärv (karoteenid), juuretis (sisaldab Lactobacillus fermentum me-3), D-vitamiin.",

@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/0263bb47797c4b65176bbcd72e6e6651.png",
     "ean" : "4740036016427",
     "origin" : "Estonia",
     "description" : "Deary taimsed glasuuritud desserdid on valmistatud tofu baasil. Kreemja tekstuuriga, glasuuritud dessert on hea valguallikas.",

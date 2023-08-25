@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/47e98cc5df6044068ce61714e4099fb5.png",
     "ean" : "7312134704017",
     "brand" : "HARMONY"
   }

@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/bfe16ddc34145f311e0ad7a1371b4050.png",
     "ean" : "4740113091132",
     "origin" : "Estonia",
     "ingredients" : "kohupiim (lõss, rõõsk koor, juuretis), suhkur, vesi, rukkikama 1% (rukis, oder, hernes), metsamarjad 1% (mustikad, pohlad, metsmaasikad, põldmarjad), paksendaja: pektiin, lõhna-ja maitseained, porgandi- ja leedrimahlakontsentraat, apelsini viljaliha, happesuse regulaator: sidrunhape, vanilliin",

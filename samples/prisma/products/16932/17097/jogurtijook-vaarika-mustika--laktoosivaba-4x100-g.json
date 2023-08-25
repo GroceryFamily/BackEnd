@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/76c05d3ff4e3e76a2990057053ca62c8.png",
     "ean" : "4740125581218",
     "origin" : "Estonia",
     "ingredients" : "piim, vesi, suhkur, mustikad 0,6%, vaarikad 0,4%, lõhna-ja maitseained, toiduvärv (antotsüaniinid), happesuse regulaator (sidrunhape), juuretis, piimhappebakter L. rhamnosus gg 20X10 9 pmü/100g, D-vitamiin (20% võrdluskogusest), B₁₂-vitamiin(16% võrdluskogusest)",

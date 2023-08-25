@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/8daec2eca086cd8d7df18b662fec9204.png",
     "ean" : "4008429015885",
     "origin" : "Germany",
     "description" : "Täissööt väikestele ja keskmise suurusega koertele Frolic Mini koeratoit linnuliha, köögi- ja teraviljaga, 1 kg",

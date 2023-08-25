@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/a4d3cfb908244f8ba217be0f20975416.png",
     "ean" : "6415712614485",
     "origin" : "Finland",
     "ingredients" : "pastöriseeritud piim, piimavalk, D-vitamiin, juuretis. Säilitusaineteta.",

@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/c7fc095970bacf096a01d5248cdb8510.png",
     "ean" : "4740502003302",
     "origin" : "Estonia",
     "description" : "Toode sobib nii edasiseks toidu valmistamiseks kui ka vahetult tarvitamiseks",

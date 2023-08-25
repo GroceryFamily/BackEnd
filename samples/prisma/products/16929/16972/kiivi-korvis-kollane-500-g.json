@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/ce65ecda1670b36756132df812e8c758.png",
     "ean" : "5415191166278",
     "origin" : "New zealand",
     "description" : "Pilt on illustreeriv."

@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/f87aa2d1bd3ce2950a375e5172c96570.png",
     "ean" : "4740113093693",
     "origin" : "Estonia",
     "ingredients" : "vesi, suhkur, želatiin, hape (sidrunhape), lõhna- ja maitseained, toiduvärv annaato.",

@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/6ace82bd95fd4549bf6b10244800bf25.png",
     "ean" : "6408430102297",
     "origin" : "Finland",
     "description" : "Valio Oddlygood kaneeli- ja kardemonimaitseline kaerajook on taimne toode, mis ei sisalda gluteeni ega laktoosi. Kaerajook on väljatöötatud koos baristadega ja sobib hästi nii filtrikohvi kui ka espresso baasil kohvijookidele lisamiseks. Sisaldab vitamiine (B2, B12 ja D2) ja kaera 10%.",

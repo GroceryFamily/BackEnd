@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://prismamarket.ee/images/entry-no-image.png",
     "ean" : "3228021000190",
     "origin" : "France",
     "ingredients" : "vahukoor, suhkur, emulgaatorid E471, E472b, paksendaja karrageen, vanilli aroom",

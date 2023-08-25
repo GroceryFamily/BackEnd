@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/449156e13d55ffe5d29e91040f3c510f.png",
     "ean" : "5411188128649",
     "description" : "Maasikamaitseline Alpro Greek Style hõrgu maasikamaitse ning paksu ja sileda tekstuuriga. Looduslikult vähe rasva ja rohkelt valku! Naudi niisama või koos oma lemmiklisanditega.",
     "ingredients" : "sojapõhi (vesi, kooritud sojaoad (13,9%)), maasikad (9%) (puuviljad (5%), mahl puuviljamahlakontsentraadist (4%)), suhkur, stabilisaator (pektiin), happesuse regulaatorid (naatriumtsitraadid, õunhape, sidrunhape), trikaltsiumfosfaat, looduslikud lõhna- ja maitseained, peediekstrakt, porgandiekstrakt, meresool, antioksüdandid (tokoferooliekstrakt, askorbiinhappe rasvhappeestrid), vitamiinid (B2, B12, D2), jogurtikultuurid (S. thermophilus, L. bulgaricus).",

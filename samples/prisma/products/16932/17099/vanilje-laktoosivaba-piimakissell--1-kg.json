@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/8ab464c5ccb05d1d8ef1bb51cb1f59d7.png",
     "ean" : "4740036011842",
     "origin" : "Estonia",
     "ingredients" : "piim, suhkur, modifitseeritud tärklis, sool, vanilliin, looduslik lõhna- ja maitseaine, vanilliin.",

@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/cd5963ca1d7d68966c08a2810ad29fb2.png",
     "ean" : "5997536304588",
     "origin" : "Belgium",
     "description" : "Põldmuraka- mustika jogurtijook L. Casei Danone ning C, B6 ja D vitamiinidega. 4x100g = 400g.",

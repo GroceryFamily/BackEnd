@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/359b01ab736b91599f785730ad49f5da.png",
     "ean" : "6430015538825",
     "ingredients" : "kaerapõhi (vesi, gluteenivaba täisterakaer (8,5%)), marjavalmistis (maasikad (5%), suhkur, vesi, punapeedikontsentraat, stabilisaator (pektiin), looduslik maasika lõhna- ja maitseaine), modifitseeritud tärklis, rüpsiõli, stabilisaator (pektiin), sool, säilitusaine (kaaliumsorbaat), juuretis.",
     "brand" : "FAZER"

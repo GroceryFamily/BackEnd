@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/9441a36b824be0ae997a48d293d6234c.png",
     "ean" : "6414893385498",
     "origin" : "Finland",
     "description" : "Laktoosivaba toidukoor. Sobib toiduvalmistamiseks ja küpsetamiseks. Ei vahustu.",

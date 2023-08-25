@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/d869cbc69ab4f030565417eee81bce69.png",
     "ean" : "3222270146142",
     "origin" : "France",
     "description" : "Maitsvad graanulid väikestele, alla 12 kg koertele. Sisaldab kanaliha, köögivilja, kiudu, vitamiine, mineraaltoitaineid ja antioksüdante. Friskies Mini Menu on väikeste koerte jaoks loodud maitsev väikeste graanulitega toit. Kiud soodustab seedimist, D-vitamiin ja mineraaltoitained hoiavad hambad ja igemed korras ning antioksüdandid toetavad looduslikku vastupanuvõimet. Friskies Mini Menu koeratoit kanaliha ja köögiviljaga, 1,5 kg",

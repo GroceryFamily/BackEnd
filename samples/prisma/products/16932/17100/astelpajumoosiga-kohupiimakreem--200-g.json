@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/e5ceeff3a4013f39b0db98e7cb9d8988.png",
     "ean" : "4740464901029",
     "origin" : "Estonia",
     "description" : "100% mahetoode. Valmistatud täispiimast",

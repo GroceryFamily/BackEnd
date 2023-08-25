@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/f537938b25863d1582aacd7cfcb943d4.png",
     "ean" : "4740036011149",
     "origin" : "Estonia",
     "ingredients" : "piim, juuretis, piimhappebakterid Lactobacillus fermentum me-3 (lisatud Tartu Ülikooli litsentsi alusel",

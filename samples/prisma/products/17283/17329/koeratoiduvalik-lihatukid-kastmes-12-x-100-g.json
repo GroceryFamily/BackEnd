@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/bdaf5bc016792fb2c4b778830a9db353.png",
     "ean" : "5900951249341",
     "origin" : "Poland",
     "description" : "Tarrendivalik kanaliha, lambaliha, linnuliha ja härjalihaga, täissööt täiskasvanud koertele. Pedigree koeratoiduvalik, tükid tarrendis, 12 × 100 g",

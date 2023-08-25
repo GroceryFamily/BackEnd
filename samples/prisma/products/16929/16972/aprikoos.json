@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/3b8157ebcc648fd4a1e743b5bee3dda4.png",
     "ean" : "2060470100004",
     "origin" : "Moldova",
     "description" : "Pilt on illustreeriv. Aprikoos I klass"

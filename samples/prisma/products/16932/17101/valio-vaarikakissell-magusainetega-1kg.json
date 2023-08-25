@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/912fca42bfec30c74bd54b0ecad87786.png",
     "ean" : "6408430062171",
     "origin" : "Finland",
     "ingredients" : "Vesi, vaarikamahl (10%, kontsentraadist), vaarikad (5%), paksendaja (guarkummi), modifitseeritud maisitärklis, happesuse regulaator (sidrunhape), toiduvärv (peedipunane), magusained (aspartaam*, atsesulfaam K). * Sisaldab fenüülalaniini allikat.",

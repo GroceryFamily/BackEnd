@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/8142a247b9a60fb1466a8f93a252bd3b.png",
     "ean" : "5020411111732",
     "ingredients" : "värske pastöriseeritud piim (24%), tume šokolaad (21%), (suhkur, kakaomass, kakaovõi, emulgaator (sojaletsitiin), vanilliin), suhkur, palmiõli, lõssipulber, nisujahu, kakaovõi, võiõli, dekstroos, piimašokolaad (suhkur, täispiimapulber, kakaovõi, kakaomass, emulgaator (sojaletsitiin), vanilliin), väherasvane kakao, kanamunapulber, pärm, lõhna- ja maitseained, emulgaator (rasvhapete mono- ja diglütseriidid), sool, odralinnasepulber.",
     "brand" : "KINDER"

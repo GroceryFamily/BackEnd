@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/c674ffee054f2ed6e608795f7008fed2.png",
     "ean" : "6414893504844",
     "ingredients" : "vesi, apelsinimahl kontsentreeritud mahlast (11%), mangopüree (6%), paksendaja (E1442, E412), happesuse regulaator (E330), C-vitamiini 40 mg, magusained (E951, E950). Sisaldab aspartaami (fenüülalaniini allikas).",
     "brand" : "RAINBOW"

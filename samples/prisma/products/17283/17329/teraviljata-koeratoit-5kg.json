@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/04d75f3877dd0c79b3938a4da33aa693.png",
     "ean" : "6429810236043",
     "brand" : "WERRATON"
   }

@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/7127637afa3772b5a66999305b4fadd7.png",
     "ean" : "5900951254963",
     "origin" : "Poland",
     "description" : "Täissööt täiskasvanud väikest tõugu koertele. Pedigree Mini < 10 kg koeratoit härjaliha ja köögiviljaga, 2 kg",

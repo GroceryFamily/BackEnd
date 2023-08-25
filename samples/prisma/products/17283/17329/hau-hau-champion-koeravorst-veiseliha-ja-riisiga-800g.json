@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/454be6b76841a3efecc61f0248bfe5d3.png",
     "ean" : "6430056889955",
     "origin" : "Estonia",
     "description" : "Hau-Hau Champion koeravorst liha ja riisiga, 800 g Preserve at room temperature",

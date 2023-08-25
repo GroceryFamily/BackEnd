@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/5074ff5770488d8da7e07d22f82cbb10.png",
     "ean" : "4740125637083",
     "origin" : "Estonia",
     "ingredients" : "kohupiimapasta, hapukoor, vesi, soolakurgid (7,2 %), küüslauk (1,1 %), suhkur, sool, modifitseeritud maisitärklis, lõhna-ja maitseained, söögiäädikas.",

@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/0c73a0b4ca3f9f5b568fa68f47fbdc8e.png",
     "ean" : "7394376616020",
     "origin" : "Sweden",
     "ingredients" : "Hapendatud kaerapõhi (vesi, kaer, juuretised), taimsed õlid (palm, raps), kartulitärklis, emulgaator (E472e), stabilisaator (E407), happed (õunhape, piimhape), kaltsium.",

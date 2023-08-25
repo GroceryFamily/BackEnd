@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/8a0ff72d02fa505a6d31482f2d44111d.png",
     "ean" : "4740036015895",
     "origin" : "Estonia",
     "ingredients" : "kaerapõhi (vesi, kaer 9%), rapsiõli, kaltsiumkarbonaat, sool, stabilisaator (gellankummi), vitamiinid (B2, foolhape, D2, B12), jood.",

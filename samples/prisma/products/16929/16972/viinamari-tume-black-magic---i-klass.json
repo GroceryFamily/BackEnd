@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/769b955982b5ccfc25d17b10f9f6e628.png",
     "ean" : "2060460800006",
     "origin" : "Italy",
     "description" : "Pilt on illustreeriv."

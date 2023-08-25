@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/3c4a3b932954212cda83d41c7e627705.png",
     "ean" : "7340011419792",
     "description" : "Sametpehme, X-tra vanillimaitseline puding sobib suurepäraselt vahepalaks või magustoiduks. Puding on pakendatud neljakaupa suurde pakendisse.",
     "ingredients" : "Vadak (piim), piim, suhkur, modifitseeritud maisitärklis, rasvavaba piimapulber, maisitärklis, stabilisaator (E 407), lõhnaaine, toiduvärv (E 160a).",

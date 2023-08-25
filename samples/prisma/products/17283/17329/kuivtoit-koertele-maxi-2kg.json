@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/af055e7f68903086ff15c8a5fd5536d3.png",
     "ean" : "6438411009093",
     "brand" : "SAAGA"
   }

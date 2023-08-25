@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/6e94ced4515a78f0827fc6006981c272.png",
     "ean" : "4008429114892",
     "brand" : "CRAVE"
   }

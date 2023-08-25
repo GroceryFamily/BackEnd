@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/c45ed453394dda8659cdfd8965619995.png",
     "ean" : "4740113096878",
     "origin" : "Estonia",
     "description" : "Rasvavaba ja rohke valguga",

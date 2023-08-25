@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/ffe8088cb052d607358448fd01375818.png",
     "ean" : "4740125510072",
     "origin" : "Estonia",
     "ingredients" : "piim, suhkur, banaan 0,5%, maasikad 0,3%, modifitseeritud tärklis, lõhna- ja maitseained, punapeedimahla kontsentraat, toiduvärv (beeta-karoteen), happesuse regulaator (sidrunhape), juuretis, D-vitamiin.",

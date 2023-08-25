@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/2edda6230893a96bfda19fc8b2330f7b.png",
     "ean" : "4740036015543",
     "origin" : "Estonia",
     "ingredients" : "piim, maasikad (8%), magusained (maltitool, stevioolglükosiid E960a), piimavalk, lõssipulber, dekstriin, inuliin, lõhna- ja maitseained, paksendaja (pektiin), hape (sidrunhape), musta porgandi mahla kontsentraat, juuretis",

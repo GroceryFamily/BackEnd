@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/e801a26ddc8a80a273ad5671dc3555fb.png",
     "ean" : "4740125525236",
     "origin" : "Estonia",
     "description" : "Parajalt vedel konsistents ning puhas maitse teevad jogurtist ideaalse kaaslase hommikusöögihelvestele, jogurt sobib suurepäraselt ka lihtsalt kosutavaks vahepalaks. Alma joogijogurtid ei sisalda säilitusaineid ning on valmistatud puhtast Eestimaa piimast",

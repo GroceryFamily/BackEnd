@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/33f18295725ed4ed8cab16b46b92a266.png",
     "ean" : "5411188121237",
     "origin" : "Belgium",
     "ingredients" : "Vesi, kooritud sojaoad (14%), granadill (10%) (kontsentreeritud mahl (6%) ja püree (4%)), suhkur, stabilisaatorid (pektiin, guarkummi), maisitärklis, happesuse regulaatorid (naatriumtsitraat, sidrunhape), trikaltsiumtsitraat, looduslik lõhna- ja maitseaine, meresool, puu- ja köögiviljamahlade kontsentraadid (värvisafloor, sidrun), antioksüdandid (tokoferooliekstrakt, askorbiinhappe rasvhappeestrid), vitamiinid (B12, D2), juuretis (S.thermophilus, L.bulgaricus).",

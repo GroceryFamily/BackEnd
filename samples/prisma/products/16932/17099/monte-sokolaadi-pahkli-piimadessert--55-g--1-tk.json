@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/4305be4709c8c8b777f5f1adb4ad09dc.png",
     "ean" : "4014500005966",
     "origin" : "Germany",
     "ingredients" : "piim (49%), koor, suhkur, modifitseeritud tärklis, vähendatud rasvasisaldusega kakaopulber (0,8%), pähklimass (0,5%), šokolaadipulber (0,5%), paksendaja: karrageen, jaanileivapuujahu, kaltsiumtsitraat, lõhna-ja maitseained",

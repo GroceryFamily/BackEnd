@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/98f5b68e6306e40c6fbb5bc6e384af5d.png",
     "ean" : "4744355019190",
     "origin" : "Estonia",
     "description" : "Dr.Stern konserv koertele kanaliha tükid kastmes",

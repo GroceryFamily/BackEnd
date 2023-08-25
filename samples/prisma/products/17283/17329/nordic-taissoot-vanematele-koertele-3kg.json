@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/ee00d4db11e1d2c007a03223de8d5790.png",
     "ean" : "6410328143718",
     "description" : "Racinel Nordic, kanaga koeratoit eakatele koertele, 3 kg Ei sisalda teravilja.",
     "ingredients" : "Koostis: töödeldud loomsed valgud (linnuliha/kana 26%), hernes, hernetärklis, kartul, kartulitärklis, kanarasv, peedipulp, lõheõli (külmpressitud), frukto-oligosahhariidid, letsitiinid, psülliumikestad, glükoosamiin (0,076%), kondroitiinsulfaat (0,024%). Analüütiline koostis: valgud (25%), rasv (12%), toorkiud (3%), toortuhk (5,5%), kaltsium (0,9%), fosfor (0,7%).",

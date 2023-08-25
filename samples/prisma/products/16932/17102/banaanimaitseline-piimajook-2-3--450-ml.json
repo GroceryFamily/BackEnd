@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/3d22dc1b01baed2f7efb5494d7b9145e.png",
     "ean" : "4770237052955",
     "origin" : "Lithuania",
     "ingredients" : "Mahepiim 94%, suhkur, banaanisiirup 1.1% (suhkur, banaanipüree 2%, värvaine beetakaroteen, lõhna-ja maitseained), stabilisaatorid: rasvhapete mono -ja diglütseriidide estrid, karageen, guarkummi",

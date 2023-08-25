@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/a3e251eb2b77e22dea4bcd0ce5d5af16.png",
     "ean" : "4002971283808",
     "description" : "Sisaldab rohkelt valku. Väherasvane. Laktoosi- ja gluteenivaba. Ehrmann proteiinimousse šokolaadi 200 g",
     "ingredients" : "lõss, piimavalk (6,5%), kakaopulber (4%), koor (3,2%), želatiin, modifitseeritud tärklis, looduslik lõhna- ja maitseaine, paksendajad (E407, E412), laktaasiensüüm, magusained (E950, E955). Sisaldab looduslikult esinevaid suhkruid. Vahustatud lämmastikuga.",

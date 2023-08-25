@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/118c3963df3fc6febc7340e4ba993edb.png",
     "ean" : "6414893397002",
     "description" : "Rikastatud E-, B2- ja B12-vitamiini ning kaltsiumiga. Laktoosivaba. 100% taimne. Homogeniseeritud ja UHT-töödeldud. Preserve in cool place",
     "ingredients" : "Vesi, sojaoad 7,2%, suhkur, mineraalaine (kaltsiumkarbonaat), stabilisaatorid (E418), meresool, happesuse regulaator (E340), vitamiinid (E-vitamiin, riboflaviin, B12-vitamiin), aroom.",

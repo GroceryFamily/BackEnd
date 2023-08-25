@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/34146f046045a0a462db0937c0daa4b6.png",
     "ean" : "4740572004360",
     "origin" : "Estonia",
     "description" : "Piimameister Otto kodujuust hapukoorega on mõnusalt kreemjas ja sametine tänu sellele, et toode sisaldab just paraja koguse hapukoort. Piimameister Otto kodujuust on suurte tervete teradega ja maitseb nagu üks õige kodujuust maitsema peab.",

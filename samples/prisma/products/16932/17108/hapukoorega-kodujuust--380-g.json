@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/489ffcd4170fac9a19264c06d4324a0c.png",
     "ean" : "4740125633160",
     "origin" : "Estonia",
     "ingredients" : "kodujuust, hapukoor 35%, sool.",

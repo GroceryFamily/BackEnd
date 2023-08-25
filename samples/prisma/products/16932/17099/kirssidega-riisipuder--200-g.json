@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/31d474baba25589f399551cc79fd08fc.png",
     "ean" : "4770265048050",
     "origin" : "Lithuania",
     "ingredients" : "piim, rõõsk koor, vesi, 12% kirsilisandit (suhkur, kirsse, tahkestusained: modifitseeritud tärklis, pektiin; lõhnaained, värvaine E162, happesust regulleerivad ained: E331, sidrunhape), 9,6% riisi, suhkur, lõssipulber, paksendajad: E410, karrageen; sool, vanilliin",

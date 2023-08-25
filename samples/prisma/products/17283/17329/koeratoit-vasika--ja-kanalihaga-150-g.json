@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/223a0399dbb4beb93ed07cc975c0d4b4.png",
     "ean" : "4008429012617",
     "origin" : "Germany",
     "description" : "Cesar Classics koeratoit vasika- ja kanalihaga, 150 g",

@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/a938fdd06347cbdd32946d0392d21192.png",
     "ean" : "5411188110835",
     "origin" : "Belgium",
     "description" : "Sobib tervisliku toitumise osaks üle 1-aastastele. Looduslikult laktoosi- ja piimavaba. Gluteenivaba. Lisatud B12-vitamiini, riboflaviini, D-vitamiini, E-vitamiini. Ei sisalda toiduvärve. Säilitusaineteta.",

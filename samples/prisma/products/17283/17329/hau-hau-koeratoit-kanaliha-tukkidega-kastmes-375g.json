@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/b7d6fc9661a94fb9989c828dbc6bf9b0.png",
     "ean" : "6430062465877",
     "description" : "Hau-Hau Championi kanatükid tarrendis on hõrk ja liharikas täiendsööt Teie koerale.",
     "ingredients" : "liha ja loomsed saadused (kanaliha 34%), riisijahu. Analüütiline koostis: toorvalk (6%), toorrasv (2,7%), tuhastunud jäägid (2%), toorkiud (0,2%), niiskus (84%).",

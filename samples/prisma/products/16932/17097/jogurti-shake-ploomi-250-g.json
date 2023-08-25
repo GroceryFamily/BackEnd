@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/48e6217148468cbbaa5bc1fe05375e68.png",
     "ean" : "4750072515822",
     "origin" : "Latvia",
     "ingredients" : "piim, ploomilisand (suhkur, ploomimahla konsendraat, 30%), modifitseeritud maisitärklis, värvaine (porgandimahla konsentraat) aroomiaine, paksendaja, (guarkummi, ksantaankummi), happesuse regulaator (sidrunihape, naatriumtsitraat), suhkur, emulgaator (E472b) piimavalgud, toiduželatiin, juuretis",

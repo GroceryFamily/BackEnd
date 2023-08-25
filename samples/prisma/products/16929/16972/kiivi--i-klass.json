@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/cddefce7e380d1aa676736676e8a30cc.png",
     "ean" : "2060492900002",
     "origin" : "Chile",
     "description" : "Pilt on illustreeriv."

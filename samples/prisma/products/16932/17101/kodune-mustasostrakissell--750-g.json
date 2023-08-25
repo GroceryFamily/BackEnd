@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/ec94f7ac627c050b0a202e1776003d0d.png",
     "ean" : "4740153700025",
     "origin" : "Estonia",
     "description" : "Preserve in cool place",

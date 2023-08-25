@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/d981eb83c03703fd1c68ff7769da74b2.png",
     "ean" : "4008400290423",
     "origin" : "Germany",
     "description" : "Šokolaadiga kaetud, piimatäidisega biskviitkook",

@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/e76db310ca2fcc638f5b6febe29c5586.png",
     "ean" : "4742022670033",
     "origin" : "Tunisia",
     "description" : "Pilt on illustreeriv."

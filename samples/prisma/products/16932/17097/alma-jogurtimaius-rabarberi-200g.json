@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/6fd5462877a0a63fdb44efae4cbe7da6.png",
     "ean" : "4740125532265",
     "origin" : "Estonia",
     "description" : "Alma jogurtimaiused on kõrge marjasisaldusega jogurtid, millele annavad ehtsa maitse mahlased puuvilja- või marjatükid. Jogurtit iseloomustab kreemiselt siidine konsistents ja Clean Label ehk puhta koostisega retsept (lisa-ja säilitusainetevaba). Sobivad ideaalselt maitsvaks vahepalaks või hommikusöögiks. Preserve in cool place",

@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/fa184c93723e997e12196bd91ddf5b7e.png",
     "ean" : "2060250600007",
     "origin" : "Sweden"
   }

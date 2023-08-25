@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/6de9379da1d816900be649ad0bb90080.png",
     "ean" : "4008429713316",
     "origin" : "Spain",
     "description" : "Koeratoit härjalihaga Pedigree koeratoit härjalihaga, 400 g",

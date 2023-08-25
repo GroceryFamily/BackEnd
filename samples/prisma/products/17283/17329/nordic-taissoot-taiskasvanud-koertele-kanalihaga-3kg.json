@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/c334a10676669b97e4259841ab1993b7.png",
     "ean" : "6410328143695",
     "description" : "Racinel Nordic, kanaga koeratoit täiskasvanud koertele, 3 kg Ei sisalda teravilja.",
     "ingredients" : "Koostis: töödeldud loomsed valgud (linnuliha/kana 31%), hernes, kartulitärklis, kartul, kanarasv, hernetärklis, peedipulp, searasv, lõheõli (külmpressitud), kuivatatud muna (0,5%), mineraalained, frukto- oligosahhariidid, letsitiinid. Analüütiline koostis: valgud (28%), rasv (16%), toorkiud (2,5%), toortuhk (7%), kaltsium (1,2%), fosfor (0,9%).",

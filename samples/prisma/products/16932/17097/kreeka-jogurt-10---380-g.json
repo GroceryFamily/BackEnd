@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/829491cef7133f0f423ff3c0db30aba5.png",
     "ean" : "4742231004551",
     "origin" : "Estonia",
     "ingredients" : "pett, rasvatu piim, rõõskkoor, piimavalk, juuretis, laap.",

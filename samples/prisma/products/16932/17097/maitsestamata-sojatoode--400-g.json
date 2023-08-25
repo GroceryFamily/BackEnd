@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/9b8933e7053ca6e0556ef5309e1eec96.png",
     "ean" : "5411188121213",
     "origin" : "Belgium",
     "description" : "Gluteenivaba. Laktoosivaba. Ei sisalda toiduvärve. Piimavaba. Munavaba. Nisuvaba.",

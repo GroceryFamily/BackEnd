@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/1e3d7a548920bdaf50b6e8ae9657a26b.png",
     "ean" : "6414893209855",
     "origin" : "Finland",
     "description" : "Rainbow traditsiooniline koertevorst on täisväärtuslik toit, mis sobib erinevas vanuses koertele. See sobib serveerimiseks eraldi toiduga ning ka segatuna muu toidu sisse. Koor ei ole söödav. Ei sisalda nisu ega verd.",

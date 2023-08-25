@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://prismamarket.ee/images/entry-no-image.png",
     "ean" : "4742852010092",
     "origin" : "Estonia",
     "description" : "Preserve in cool place",

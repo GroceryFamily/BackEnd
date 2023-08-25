@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/da413c0d74cd959cce3a283669bc56c6.png",
     "ean" : "4740294010731",
     "origin" : "Estonia",
     "description" : "ME-3 piimhappebaktereid sisaldavad Helluse tooted aitavad mitmekesistada toidulauda ning toetada organismi võitluses kahjulike bakterite ja viirustega. Helluse tooted sisaldavad rohkelt uuritud probiootilisi piimhappebaktereid Lactobacillus fermentum ME-3, L.acidofilus LA-5®, Bifidobacterium BB-12® ja L.casei",

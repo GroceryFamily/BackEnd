@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/020b720fa96095b5b23aa6c2d276f45e.png",
     "ean" : "47433052",
     "origin" : "Estonia",
     "ingredients" : "kohupiim 58%, šokolaadiglasuur 18% (suhkur, kakaomass, kakaovõi, piimarasv, emulgaator (sojaletsitiin, E476), vanilliin), suhkur, apelsinid, rosinad, modifitseeritud tärklis, lõhna- ja maitseaine, paksendaja (pektiin), happesuse regulaator (sidrunhape, naatriumtsitraat, kaltsiumtsitraat), värvisafloori ja sidruni kontsentraat, toiduvärv (karoteenid).",

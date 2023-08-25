@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/43e77892770f1646ccde70ab64019b18.png",
     "ean" : "4740125633214",
     "origin" : "Estonia",
     "description" : "Valgurikas kodujuust on vallutanud paljude eestimaalaste südamed just vahepalana, hommikuse võileivakatte ja salatimaterjalina. Et kerget kehakinnitust vajav kodujuustusõber pääseks hakkimise ja segamise vaevast ning ideaalne värskendav soolane amps oleks vaid topsikaane avamise kaugusel, lisasid Laeva meierei meistrid kodujuustule rukolat ja karulauku. Sobib ka kõikidele, kes ei soovi või ei saa tarbida laktoosi, sest maitsev kodujuust on laktoosivaba. Alma kodujuust on puhta ja maheda maitsega ning valmistatud kvaliteetsest Eesti piimast.",

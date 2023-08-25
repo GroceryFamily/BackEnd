@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/2377ca8267e99ce464fe5e7ecfccec8c.png",
     "ean" : "5411188133759",
     "ingredients" : "sojapõhi (vesi, kooritud sojaoad (9,7%)), ananass (15,8%) (mahl kontsentreeritud mahlast (12,8%), vili (3%)), granadill (2%), happesuse regulaatorid (sidrunhape, naatriumtsitraadid), stabilisaator (pektiin), trikaltsiumfosfaat, looduslik lõhna- ja maitseaine, meresool, antioksüdandid (tokoferoolikontsentraat, rasvhapete askorbüülestrid), porgandiekstrakt, vitamiinid (B2, B12, D2), juuretised (S. thermophilus, L. bulgaricus). Võib sisaldada pähklite (V.A maapähklite) jääke. Piima- ja gluteenivaba. Looduslikult laktoosivaba.",
     "brand" : "ALPRO"

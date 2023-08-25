@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/da311fc325b0985fc42f72b2a8f485d3.png",
     "ean" : "4740113093556",
     "origin" : "Estonia",
     "ingredients" : "rõõsk koor, paksendajad (modifitseeritud tärklis, guarkummi, E472e)",

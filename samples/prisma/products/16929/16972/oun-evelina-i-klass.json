@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/77a237a3de714eb523caa3269459fef6.png",
     "ean" : "2060214400001",
     "origin" : "Italy"
   }

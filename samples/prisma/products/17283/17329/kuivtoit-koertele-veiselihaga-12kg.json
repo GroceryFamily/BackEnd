@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/c6a79518dfdfb4a9fd7aafcc2d6f62a4.png",
     "ean" : "5902921304142",
     "origin" : "Poland",
     "description" : "Piper on täisväärtuslik kuivtoit sinu koerale, mis katab kõik koera päevase toitainete, vitamiinide ja mineraalide vajaduse. Piper kuivtoit on:• teraviljavaba;• ei ole lisatud palmiõli;• ei sisalda säilitusaineid ega kunstlikke maitsetugevdajaid;• oomega-6 ja -3 rasvhapped tagavad terve naha ning läikiva karva;• E-vitamiin toetab koera immuunsüsteemi;• toetab liigeste tervist;• GMO vaba.",

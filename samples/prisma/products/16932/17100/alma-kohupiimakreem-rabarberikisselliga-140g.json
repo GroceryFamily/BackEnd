@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/f0f36f8a914257b5e8776daa45e9d1c4.png",
     "ean" : "4740125632279",
     "origin" : "Estonia",
     "description" : "Eestlaste poolt armastatud magustoit ja vahepala Alma kvaliteediga! Kodudest teada-tuntud rabarberikissell on leidnud koos siidise kohupiimakreemiga tee topsi ning on nüüd valmis maitsmiseks! Meelepärane nii lastele kui ka täiskasvanutele. Alma kohupiimakreemidele omaselt on see säilitusainetevaba ning tehtud Eestimaa puhtast piimast.",

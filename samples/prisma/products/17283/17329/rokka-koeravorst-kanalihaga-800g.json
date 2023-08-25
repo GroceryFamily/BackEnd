@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/4c4805071a2f04bc01c95015dd83daca.png",
     "ean" : "6438411008942",
     "brand" : "ROKKA"
   }

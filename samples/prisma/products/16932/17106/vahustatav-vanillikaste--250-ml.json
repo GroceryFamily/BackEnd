@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/6d501dcbce17df17efb094bb02e4f05b.png",
     "ean" : "6414893386983",
     "origin" : "Finland",
     "ingredients" : "lõss, tahkestatud palmituumarasv, suhkur, lõssipulber, emulgaatorid (E472b, E471), vanilli lõhna- ja maitseaine, stabilsaatorid (E410, E407), toiduvärv (E160a).",

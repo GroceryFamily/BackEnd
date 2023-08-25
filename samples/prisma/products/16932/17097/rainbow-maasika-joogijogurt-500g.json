@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/9a6210fcb25596851f2561afd849142a.png",
     "ean" : "6414893097049",
     "origin" : "Austria",
     "ingredients" : "piim 80%, maasikad 9,7%, suhkur, vesi, stabilisaator (E 440), porgandi- ja sidrunikontsentraat, piimhappekultuur.",

@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/1843e569b5c201e810d3a01be4953818.png",
     "ean" : "7340011341611",
     "origin" : "Sweden",
     "brand" : "XTRA"

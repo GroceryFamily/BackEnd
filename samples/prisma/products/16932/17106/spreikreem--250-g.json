@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/d371fd335e7fe2160a16e14d30849c00.png",
     "ean" : "8711900021010",
     "origin" : "Netherland",
     "ingredients" : "koor 53%, rasvavaba piim, taimeõli, suhkur 6,5%, hüdrogeenitud taimeõli, glükoosisiirup, propellent N2O, emulgaator E471, stabilisaator E407, lõhnaaine",

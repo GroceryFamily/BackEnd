@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/1370bedd3774fb94a7f9d7102efd11bd.png",
     "ean" : "4744355018100",
     "origin" : "Estonia",
     "description" : "Dr. Stern linnu- ja loomalihavorst koerale",

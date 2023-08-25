@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/a2386871a00e3ba7296a43b99cae6410.png",
     "ean" : "4740036015901",
     "origin" : "Estonia",
     "ingredients" : "piim, suhkur, modifitseeritud tärklis, paksendajad (guarkummi, karrageen), lõssipulber, sool, vanilliin",

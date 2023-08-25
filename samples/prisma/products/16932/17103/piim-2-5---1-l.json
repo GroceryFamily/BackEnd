@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/f2353d736c8b7ffb3b75565872837416.png",
     "ean" : "4740125110012",
     "origin" : "Estonia",
     "ingredients" : "PIIM",

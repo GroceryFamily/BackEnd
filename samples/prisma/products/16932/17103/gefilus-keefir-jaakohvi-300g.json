@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/18204eb02919a8ef6d284f82edea6f2f.png",
     "ean" : "4740125383119",
     "origin" : "Estonia",
     "description" : "Valio Gefilus jääkohvi keefir on ideaalne kooslus, mis täidab kõhtu ning samal ajal aitab kaasa immuunsüsteemi normaalsele talitlusele. Jääkohvi joogid on viimastel aastatel muutunud aina populaarsemaks ning antud toote puhul toetab populaarset maitset keefiri kasulikkus. Toode sisaldab ka LGG piimhappebakterid ja eestimaalastele vajalikku D-vitamiini. Valmistatud 100% eestimaistest puhtast piimast.",

@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/146351152b90ff5c1ce3941b3fc9eadc.png",
     "ean" : "4008400551920",
     "origin" : "European union",
     "ingredients" : "piimašokolaad 28,5% (kakaovõi, suhkur, täispiimapulber, kakaomass, emulgaator: letsitiinid (soja); vanilliin), pastöriseeritud piim (14,5%), suhkur, karamell 11% (kondenspiim, suhkur, sarapuupähkel, palmiõli, lõhna- ja maitseaine), sarapuupähkel (10,5%), palmiõli, lõssipulber, nisujahu, vee sisalduseta või, riisijahu, maniokitärklis, emulgaatorid (rasvahapete mono-, diglütseriidid, letsitiinid (soja)), vanilliin, sool, kergitusaine (naatriumvesinikkarbonaat), ti(tarakummi).",

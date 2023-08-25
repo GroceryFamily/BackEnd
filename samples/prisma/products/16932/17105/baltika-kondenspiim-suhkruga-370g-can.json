@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/a2bdb4e6cb67855512a07e11826e56cc.png",
     "ean" : "4745011024374",
     "origin" : "Ukraine",
     "ingredients" : "piim (78,17%), suhkur (13,98%), rõsk koor, LAKTOOS",

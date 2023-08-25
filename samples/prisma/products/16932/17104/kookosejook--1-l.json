@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/eb3e15bf686e9e34a2d5f57486cbb23b.png",
     "ean" : "5411188128311",
     "description" : "Joogile pole lisatud suhkruid ega magusaineid. Õigupoolest pole joogi maitse ja Teie maitsemeele vahele lisatud midagi liigset ning tänu kookosveele maitseb see kergelt ja värskendavalt. Kuna jook on täielikult taimne, teete heateo nii endale kui ka planeedile.",
     "ingredients" : "vesi, kookospiim (7%) (kookoskoor, vesi), kookosvesi (2,6%), trikaltsiumfosfaat, looduslik kookose lõhna- ja maitseaine, stabilisaatorid (guarkummi, ksantaankummi, gellankummi), meresool, vitamiinid (B12, D2).",

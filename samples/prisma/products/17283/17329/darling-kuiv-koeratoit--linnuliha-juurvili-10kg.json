@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/2b56e62d6f6cb81d98254acc22150920.png",
     "ean" : "7613032933814",
     "origin" : "Hungary",
     "description" : "Linnulihaga, lisatud valitud aedviljad. Maitsev, tänu hoolikalt valitud koostisosadele. 100% täisväärtuslik ja tasakaalustatud toit.",

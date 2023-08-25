@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/742e847ab0cb0658d081cac5e684720f.png",
     "ean" : "4740113090067",
     "origin" : "Estonia",
     "ingredients" : "kohupiimapasta, rõõsk koor, suhkur, kirsid 11%, modifitseeritud tärklis, puu- ja juurvilja kontsentraat (porgand, aroonia, viinamari), paksendajad: pektiin, ksantaankummi; happesuse regulaatorid: sidrunhape, naatriumtsitraadid, kaltsiumtsitraadid; looduslik lõhna- ja maitseaine, vanilliin",

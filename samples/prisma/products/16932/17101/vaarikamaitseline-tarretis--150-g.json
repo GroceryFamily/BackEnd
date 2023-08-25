@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/49fb9c6513f60fac243885b4523ebd9d.png",
     "ean" : "4740113070014",
     "origin" : "Estonia",
     "ingredients" : "vesi, suhkur, želatiin, happesuse regulaator sidrunhape, vaarika lõhna- ja maitseaine, mustsõstra mahl",

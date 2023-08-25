@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/da784aada6f97d39c4fe093767e0db5f.png",
     "ean" : "6414893096097",
     "origin" : "Austria",
     "ingredients" : "Vesi, mahesoja (11%), mahemaisitärklis, jogurtijuuretis.",

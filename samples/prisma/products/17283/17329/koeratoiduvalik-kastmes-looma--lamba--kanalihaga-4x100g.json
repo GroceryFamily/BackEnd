@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/949b4fe6d556b3002e88c2e2b37c086a.png",
     "ean" : "7613035808294",
     "brand" : "FRISKIES"
   }

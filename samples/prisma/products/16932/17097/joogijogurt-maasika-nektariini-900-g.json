@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/d7c7150e71ca7f00d3614fa625776786.png",
     "ean" : "4740125525144",
     "origin" : "Estonia",
     "ingredients" : "piim, suhkur, nektariini püree 0,1%, maasikamahlakontsentraat 0,05%, naturaalsed lõhna- ja maitseained, toiduvärv (antotsüaniinid), happesuse regulaatorid (sidrunhape, trinaatriumtsitraat), juuretis, D-vitamiin.",

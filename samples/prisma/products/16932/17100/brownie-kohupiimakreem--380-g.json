@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/d68d84a941777eeb1b7bd24a08b2a3c7.png",
     "ean" : "4740125638110",
     "origin" : "Estonia",
     "ingredients" : "kohupiimapasta 64 %, rõõsk koor, suhkur, brownie küpsisetükid 1,6 % (suhkur, nisujahu, riisijahu, oajahu, munavalge, kakao, nisutärklis, kartulitärklis, päevalilleõli, looduslik lõhna- ja maitseaine, paksendaja: naatriumalginaat, sool), tume šokolaad 0,8 % (kakaomass, suhkur, kakaovõi), modifitseeritud tärklis, lõhna-ja maitseaine, karamellsiirup, paksendajad: pektiin, guarkummi; happesuse regulaatorid: piimhape, kaltsiumtsitraat, naatriumtsitraat).",

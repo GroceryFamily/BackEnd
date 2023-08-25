@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/c5aa0bf6d1a8b331471ba463071b58a0.png",
     "ean" : "8718366803136",
     "origin" : "Ivory coast",
     "description" : "Pilt on illustreeriv."

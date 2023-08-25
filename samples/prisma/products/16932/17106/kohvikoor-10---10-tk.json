@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/9da3074377d237428d6285b2b5e388a3.png",
     "ean" : "40145037",
     "origin" : "Germany",
     "description" : "Rasva 10%",

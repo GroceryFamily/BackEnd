@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/c815eff88a121c057d88feb5d304f32f.png",
     "ean" : "4740036014690",
     "origin" : "Estonia",
     "description" : "x",

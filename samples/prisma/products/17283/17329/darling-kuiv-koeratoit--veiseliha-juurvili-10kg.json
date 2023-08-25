@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/cbaa648d855f1b056d4e771f20aa7b37.png",
     "ean" : "7613032933807",
     "origin" : "Hungary",
     "description" : "Lihaga, lisatud valitud aedviljad. Maitsev, tänu hoolikalt valitud koostisosadele. 100% täisväärtuslik ja tasakaalustatud toit. Proteiinid toetavad tugevaid lihaseid ja annavad energiat. Kiudained terve seedimise heaks. Lipiidid annavad särava karva. Olulised mineraalid ja D vitamin tugevate luude heaks. Purina kvaliteediga toode.",

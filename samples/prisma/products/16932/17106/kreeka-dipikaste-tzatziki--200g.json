@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/eda61faec64d8e6cf07ec8eabfad0dea.png",
     "ean" : "4740125637106",
     "origin" : "Estonia",
     "description" : "Kreeka stiilis DIP! on inspireeritud kreekapärasest tzatziki kastmest. Alma DIP! kastmete põhikomponendiks on kohupiimakreem (mitte hapukoor nagu enamikel valmis dipikastmetel) ning tänu sellele on Alma DIP! tervislikum alternatiiv valmissegatud dipikastmetele, kuna sisaldab 2,5 korda vähem rasva ja 2 korda rohkem valku.DIP! kastmete konsistents on mõnusalt kreemine ja tihe, tänu millele jääb dippides kaste kurgile, porgandile, krõpsudele jms. Sobib hästi dippimiseks ja külmaks kastmeks.",

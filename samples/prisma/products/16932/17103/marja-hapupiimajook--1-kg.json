@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/76ab3588af3d5bd46b2c52282d451d89.png",
     "ean" : "4740036007791",
     "origin" : "Estonia",
     "description" : "Värskendav ja magusa marja maitsega hapupiimajook, mis sisaldab lisaks muudele kasulikele elus piimhappebakteritele ka Eesti teadlaste poolt avastatud ja välja töötatud ning rahvusvaheliselt tunnustatud Lactobacillus fermentum ME-3 ehk Hellus piimhappebaktereid ning piimhappebaktereid L. acidophilus LA-5® ja Bifidobacterium BB-12®",

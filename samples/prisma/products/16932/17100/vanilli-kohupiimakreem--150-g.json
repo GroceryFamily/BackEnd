@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/6ac2704c59b01a53a109a649dc68f736.png",
     "ean" : "6414893074156",
     "origin" : "Estonia",
     "description" : "Rainbow vanillikohupiim on hea vahepala või magustoit. Serveeri marjade või puuviljadega",

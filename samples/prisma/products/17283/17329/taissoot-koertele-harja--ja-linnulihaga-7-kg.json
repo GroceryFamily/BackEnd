@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/d8af480d4e0a0577b1fefb5064b11444.png",
     "ean" : "5900951024214",
     "origin" : "Poland",
     "description" : "Täissööt täiskasvanud koertele Pedigree Adult koeratoit härja- ja linnulihaga, 7 kg",

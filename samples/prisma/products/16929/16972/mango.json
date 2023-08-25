@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/02f596a84c8834911c69ba6350f58904.png",
     "ean" : "2060160500008",
     "origin" : "Dominican republic",
     "description" : "Pilt on illustreeriv."

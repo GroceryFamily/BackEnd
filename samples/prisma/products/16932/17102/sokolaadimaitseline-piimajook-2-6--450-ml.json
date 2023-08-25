@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/e79b8dd0fd57c46a9a52a778d71c621b.png",
     "ean" : "4770237054959",
     "origin" : "Lithuania",
     "ingredients" : "Mahepiim 91%, suhkur, vähendatud rasvasissaldusega kakaopulbe 1.1%,šokolaadipulber 0.5%, stabilisaatorid: rasvhapete mono -ja diglütseriidide estrid, karageen, guarkummi, šokolaadi lõhna-ja maitseained",

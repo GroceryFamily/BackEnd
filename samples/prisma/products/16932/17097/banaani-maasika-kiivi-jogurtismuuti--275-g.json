@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/cc62c7f37d3ff6a69f83b2313b77a4fe.png",
     "ean" : "4740125582703",
     "origin" : "Estonia",
     "description" : "Täiusliku maitse ja mõnusa pehmusega jogurtismuuti on just nagu koduses blenderis valmistatud - hulgaliselt maitsvaid lemmikvilju segatud puhtast kodumaisest piimast valmistatud jogurtiga. Alma jogurtismuutis on lausa 12% vilju, mis on kolm korda rohkem kui teistes sarnastes toodetes ja säilitusaineid pole üldse",

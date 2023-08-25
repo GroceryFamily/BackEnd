@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/08d217f9d1d658008ed25da91d246571.png",
     "ean" : "6414893096950",
     "origin" : "Finland",
     "description" : "Rainbow mango-apelsinijogurt maitseb hästi hommikusöögina või vahepalana. Jogurtis on puuvilja 4,5% ja rasvu 2%.",

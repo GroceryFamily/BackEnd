@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/ce57d234dde22d928fb234ef43b9ab90.png",
     "ean" : "4740464710508",
     "origin" : "Estonia",
     "description" : "Praktiliselt valge, pehme mass. Õige pisut hapukas, keskmiselt täidlase hoiakuga, täispiima maitsega",

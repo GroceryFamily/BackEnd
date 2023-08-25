@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/18ee123a8b8d29c93c575fd044d06ffe.png",
     "ean" : "4740125582147",
     "origin" : "Estonia",
     "ingredients" : "rasvatu piim, vesi, kollageen peptiidid 4,1%, piimavalgud, apelsin 1,5%, mango 1,5%, modifitseeritud tärklis, lõhna-ja maitseained, magusained (atsesulfaam K, sukraloos), toiduvärv (karoteenid), happesuse regulaator (sidrunhape), juuretis.",

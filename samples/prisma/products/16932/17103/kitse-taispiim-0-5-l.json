@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/00318e947d6b9532ccf3ff0c4fd93310.png",
     "ean" : "8026523000077",
     "origin" : "Italy",
     "description" : "kitse täispiim Preserve in dry place Pärast avamist hoida külmikus ja tarbida 3-4 päeva jooksul.",

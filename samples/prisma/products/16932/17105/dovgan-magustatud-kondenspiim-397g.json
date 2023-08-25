@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://prismamarket.ee/images/entry-no-image.png",
     "ean" : "4032549001770",
     "description" : "Preserve at room temperature",
     "ingredients" : "täispiim, suhkur. Rasvu 8%, lõssi kuivainesisaldus 20%, kuumtöödeldud.",

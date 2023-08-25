@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/e5e9ae243e8a44aafa7e687834edf2ed.png",
     "ean" : "4740125637069",
     "origin" : "Estonia",
     "ingredients" : "kohupiimapasta, hapukoor, sibul 3%, suhkur, sool, küüslauk 1%, modifitseeritud tärklis, äädikas, murulauk 0,4%, lõhna- ja maitseained.",

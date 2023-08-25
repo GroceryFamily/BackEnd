@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/a9204d7e83b8735cfa3bd4ad953a8be1.png",
     "ean" : "4740113035976",
     "origin" : "Estonia",
     "ingredients" : "Pastöriseeritud piim, rõõsk koor, suhkur, modifitseeritud tärklis, lõssipulber, stabilisaatorid: ksantaankummi, karrageen; lõhna- ja maitseaine, sool, toiduvärv: beeta-karoteen, vaniljeseemned 0,012%, looduslik vanilje lõhna- ja maitseaine",

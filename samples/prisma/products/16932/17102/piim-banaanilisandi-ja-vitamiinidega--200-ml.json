@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/2b610bfbeab1a4b0dfd89b7ff617e169.png",
     "ean" : "4740093333307",
     "ingredients" : "piim, suhkur, banaanilisand 2% (invertsuhkur, vesi, looduslik banaani lõhna- ja maitseaine, banaan 1%, paksendaja - karrageen), vitamiinid A, B6, B12, D, foolhape.",
     "brand" : "VÄIKE TOM"

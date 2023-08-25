@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/b20f3db202d6c5be3f9b8e6170d8dfe4.png",
     "ean" : "4740125539059",
     "origin" : "Italy",
     "ingredients" : "jogurt täispiimast, suhkur, vesi, piimavalgud, modifitseeritud tärklis, vanilliekstrakt 0,1%, lõhna- ja maitseained, paksendaja (pektiin), happesuse regulaator (piimhape). suhkur, täispiimapulber, kakaovõi, kakaomass, riisijahu, maisimanna, täistera nisujahu, vadakupulber (piim), laktoos (piim), emulgaator (sojaletsitiin), glaseeraine (kummiaraabik, lõhna- ja maitseained, kakaovõi, emulgaator (sojaletsitiin)), odralinnased, sool, lõhna- ja maitseained.Šokolaadirõngastes on 78% šokolaadi. Tootes on 10% šokolaadirõngaid.",

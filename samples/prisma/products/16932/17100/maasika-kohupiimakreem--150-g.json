@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/4582ebe8531f7f1457c4b19c0099b42c.png",
     "ean" : "6414893358805",
     "origin" : "Estonia",
     "description" : "Rainbow maasikakohupiim sobib vahepalaks või magustoiduks. Serveeri ka marjade või puuviljadega",

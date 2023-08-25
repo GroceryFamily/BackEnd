@@ -9,6 +9,7 @@
     "dairy-products-eggs-cheese" : "Dairy products, eggs, cheese"
   },
   "details" : {
+    "image" : "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_fit,f_auto,h_480,q_auto,w_480/d_ecommerce:backend-fallback.png/MAT_160569_PCE_EE",
     "origin" : "Netherlands",
     "ingredients" : "LEHMAPIIM 55%, suhkur 45%",
     "brand" : "Nostalgiya"

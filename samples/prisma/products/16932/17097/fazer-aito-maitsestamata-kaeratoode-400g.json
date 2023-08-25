@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/09a7fa3bc312e9e6d94d466f123ea87f.png",
     "ean" : "6430015537286",
     "description" : "Taimne fermenteeritud kaeravahepala. Suurepärane taimne alternatiiv jogurtile.",
     "ingredients" : "vesi, täisterakaer (8,5%), kookosrasv, rüpsiõli, kartulitärklis, kartulivalk, paksendaja (ksantaan), antioksüdant (alfa-tokoferool), juuretis. Võib sisaldada gluteeni.",

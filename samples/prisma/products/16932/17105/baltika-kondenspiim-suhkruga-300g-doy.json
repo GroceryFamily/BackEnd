@@ -9,6 +9,7 @@
     "products" : "Groceries"
   },
   "details" : {
+    "image" : "https://s3-eu-west-1.amazonaws.com/balticsimages/images/180x220/6dcbe4e274f93f601c9eb03c181d9291.png",
     "ean" : "4745011024398",
     "origin" : "Ukraine",
     "ingredients" : "piim (78,17%), suhkru(13,98%), rõsk koor, LAKTOOS",
