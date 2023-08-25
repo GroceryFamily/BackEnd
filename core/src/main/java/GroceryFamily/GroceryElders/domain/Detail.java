@@ -5,5 +5,6 @@ public interface Detail {
     String ORIGIN = "origin";
     String DESCRIPTION = "description";
     String INGREDIENTS = "ingredients";
+    String IMAGE = "image";
     String EAN = "ean";
 }

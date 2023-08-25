@@ -6,23 +6,18 @@ import GroceryFamily.GroceryElders.domain.Detail;
 import GroceryFamily.GroceryElders.domain.Namespace;
 import GroceryFamily.GroceryElders.domain.Product;
 import lombok.experimental.SuperBuilder;
+import org.apache.commons.lang3.StringUtils;
 
 import java.util.HashMap;
+import java.util.Map;
 import java.util.Optional;
 
 import static GroceryFamily.GroceryDad.scraper.view.barbora.BarboraView.productCode;
-import static org.apache.commons.lang3.StringUtils.isBlank;
 
 @SuperBuilder
 class BarboraProductView extends View implements ProductView {
     @Override
     public Product product() {
-        var details = new HashMap<String, String>();
-        brand().ifPresent(brand -> details.put(Detail.BRAND, brand));
-        origin().ifPresent(origin -> details.put(Detail.ORIGIN, origin));
-        description().ifPresent(description -> details.put(Detail.DESCRIPTION, description));
-        ingredients().ifPresent(ingredients -> details.put(Detail.INGREDIENTS, ingredients));
-
         return Product
                 .builder()
                 .namespace(Namespace.BARBORA)
@@ -31,27 +26,27 @@ class BarboraProductView extends View implements ProductView {
                 .url(selected.url)
                 // todo: set prices
                 .categories(selected.categories())
-                .details(details)
+                .details(details())
                 .build();
     }
 
-    private Optional<String> brand() {
-        var brand = document.select("dt:contains(brand)").next().text();
-        return isBlank(brand) ? Optional.empty() : Optional.of(brand);
-    }
+    private Map<String, String> details() {
+        var details = new HashMap<String, String>();
+        var container = Optional.ofNullable(document.select("div[class*=page-container]").first());
+        container.map(e -> e.select("img[itemprop=image]").attr("src")).filter(StringUtils::isNotBlank)
+                .ifPresent(detail -> details.put(Detail.IMAGE, detail));
 
-    private Optional<String> origin() {
-        var origin = document.select("dt:contains(origin)").next().text();
-        return isBlank(origin) ? Optional.empty() : Optional.of(origin);
-    }
+        var info1 = container.map(e -> e.select("dl[class*=b-product-info--info1]").first());
+        info1.map(e -> e.select("dt:contains(brand)").next().text()).filter(StringUtils::isNotBlank)
+                .ifPresent(detail -> details.put(Detail.BRAND, detail));
+        info1.map(e -> e.select("dt:contains(origin)").next().text()).filter(StringUtils::isNotBlank)
+                .ifPresent(detail -> details.put(Detail.ORIGIN, detail));
 
-    private Optional<String> description() {
-        var description = document.select("dd[itemprop=description]").text();
-        return isBlank(description) ? Optional.empty() : Optional.of(description);
-    }
-
-    private Optional<String> ingredients() {
-        var ingredients = document.select("dt:contains(ingredients)").next().text();
-        return isBlank(ingredients) ? Optional.empty() : Optional.of(ingredients);
+        var info2 = container.map(e -> e.select("dl[class*=b-product-info--info-2]").first());
+        info2.map(e -> e.select("dd[itemprop=description]").text()).filter(StringUtils::isNotBlank)
+                .ifPresent(detail -> details.put(Detail.DESCRIPTION, detail));
+        info2.map(e -> e.select("dt:contains(ingredients)").next().text()).filter(StringUtils::isNotBlank)
+                .ifPresent(detail -> details.put(Detail.INGREDIENTS, detail));
+        return details;
     }
 }
