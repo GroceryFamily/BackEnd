@@ -27,8 +27,12 @@ public class ImageCache {
         this.directory = config.cacheDirectory;
     }
 
+    public Path file(String platform, Link link) {
+        return subdirectory(platform, link).resolve(FILE_NAME);
+    }
+
     public boolean exists(String platform, Link link) {
-        return Files.exists(subdirectory(platform, link).resolve(FILE_NAME));
+        return Files.exists(file(platform, link));
     }
 
     @SneakyThrows
