@@ -2,8 +2,10 @@ package GroceryFamily.GroceryDad.scraper.worker;
 
 import GroceryFamily.GroceryDad.GroceryDadConfig;
 import GroceryFamily.GroceryDad.scraper.cache.HTMLCache;
+import GroceryFamily.GroceryDad.scraper.cache.ImageCache;
 import GroceryFamily.GroceryDad.scraper.model.*;
 import GroceryFamily.GroceryDad.scraper.view.ViewFactory;
+import GroceryFamily.GroceryElders.domain.Detail;
 import lombok.Builder;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
@@ -15,6 +17,7 @@ public class Worker {
     private final String platform;
     private final GroceryDadConfig.Platform config;
     private final HTMLCache htmlCache;
+    private final ImageCache imageCache;
     private final ViewFactory viewFactory;
     private final Allowlist allowlist;
     private final WorkerEventListener listener;
@@ -77,7 +80,12 @@ public class Worker {
 
     private void handleProduct(Document document, Source selected, WorkerState state) {
         var productView = viewFactory.productView(document, selected);
-        listener.product(platform, selected.link(), productView.product());
+        var product = productView.product();
+        listener.product(platform, selected.link(), product);
+        var image = product.details.get(Detail.IMAGE);
+        if (image != null && !imageCache.exists(platform, selected.link())) {
+            imageCache.save(platform, selected.link(), image);
+        }
         state.visited.put(selected.namePath(), selected);
     }
 

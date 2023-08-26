@@ -14,7 +14,7 @@ public class HTMLCache {
 
     private final Path directory;
 
-    public HTMLCache(GroceryDadConfig config) {
+    HTMLCache(GroceryDadConfig config) {
         this.directory = config.cacheDirectory;
     }
 
