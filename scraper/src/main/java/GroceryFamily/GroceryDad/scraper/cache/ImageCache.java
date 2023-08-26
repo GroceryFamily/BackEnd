@@ -24,7 +24,7 @@ public class ImageCache {
     }
 
     public boolean exists(String platform, Link link) {
-        return Files.exists(subdirectory(platform, link).resolve("image.jpg"));
+        return Files.exists(subdirectory(platform, link).resolve("image.png"));
     }
 
     @SneakyThrows
