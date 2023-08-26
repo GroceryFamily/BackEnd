@@ -17,6 +17,10 @@ import static org.apache.commons.lang3.StringUtils.substringAfter;
 
 @Component
 public class ImageCache {
+    private static final String FORMAT = "png";
+    private static final String FILE_NAME = "image." + FORMAT;
+
+
     private final Path directory;
 
     ImageCache(GroceryDadConfig config) {
@@ -24,7 +28,7 @@ public class ImageCache {
     }
 
     public boolean exists(String platform, Link link) {
-        return Files.exists(subdirectory(platform, link).resolve("image.png"));
+        return Files.exists(subdirectory(platform, link).resolve(FILE_NAME));
     }
 
     @SneakyThrows
@@ -34,10 +38,10 @@ public class ImageCache {
         final BufferedImage convertedImage = new BufferedImage(image.getWidth(), image.getHeight(), image.getType());
         convertedImage.createGraphics().drawImage(image, 0, 0, Color.WHITE, null);
 
-        Path file = subdirectory(platform, link).resolve("image.png");
-        boolean canWrite = ImageIO.write(convertedImage, "png", file.toFile());
+        Path file = subdirectory(platform, link).resolve(FILE_NAME);
+        boolean canWrite = ImageIO.write(convertedImage, FORMAT, file.toFile());
         if (!canWrite) {
-            throw new RuntimeException("Oops");
+            throw new RuntimeException("Failed to find image writer");
         }
     }
 
