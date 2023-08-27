@@ -43,6 +43,14 @@ class Image {
         return new Image(resized, bgColor);
     }
 
+    Image gray() {
+        var newImage = new BufferedImage(image.getWidth(), image.getHeight(), BufferedImage.TYPE_BYTE_GRAY);
+        Graphics g = newImage.getGraphics();
+        g.drawImage(image, 0, 0, null);
+        g.dispose();
+        return new Image(newImage, bgColor);
+    }
+
     private int x0Trimmed() {
         var x = 0;
         while (x < image.getWidth()) {

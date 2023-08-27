@@ -19,6 +19,7 @@ public class GrocerySisConfig {
     public final Path trimmedImages;
     public final Path squaredImages;
     public final Path resizedImages;
+    public final Path grayedImages;
 
     @Builder
     public static class OpenFoodFacts {

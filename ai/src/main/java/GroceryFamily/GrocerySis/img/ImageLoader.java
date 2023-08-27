@@ -17,12 +17,14 @@ public class ImageLoader {
     private final ImageStorage trimmedStorage;
     private final ImageStorage squaredStorage;
     private final ImageStorage resizedStorage;
+    private final ImageStorage grayedStorage;
 
     ImageLoader(GrocerySisConfig config) {
         rawStorage = new ImageStorage(config.rawImages);
         trimmedStorage = new ImageStorage(config.trimmedImages);
         squaredStorage = new ImageStorage(config.squaredImages);
         resizedStorage = new ImageStorage(config.resizedImages);
+        grayedStorage = new ImageStorage(config.grayedImages);
     }
 
     public boolean exists(Product product) {
@@ -70,5 +72,15 @@ public class ImageLoader {
             resizedStorage.save(product.namespace, product.code, resized);
         }
         return resizedStorage.load(product.namespace, product.code);
+    }
+
+    public BufferedImage grayed(Product product) {
+        if (!grayedStorage.exists(product.namespace, product.code)) {
+            var resized = resized(product);
+            if (resized == null) return null;
+            var grayed = new Image(resized, Color.WHITE.getRGB()).gray().image;
+            grayedStorage.save(product.namespace, product.code, grayed);
+        }
+        return grayedStorage.load(product.namespace, product.code);
     }
 }
