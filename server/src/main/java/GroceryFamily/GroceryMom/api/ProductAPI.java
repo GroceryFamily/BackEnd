@@ -14,7 +14,7 @@ import static org.springframework.http.HttpStatus.*;
 @Slf4j
 @RestController
 @RequestMapping("products")
-public class ProductAPI {
+public class ProductAPI { // todo: request/response type
     private final ProductService service;
 
     ProductAPI(ProductService service) {
@@ -22,8 +22,14 @@ public class ProductAPI {
     }
 
     @ResponseStatus(OK)
+    @GetMapping("count")
+    long count() {
+        return service.count();
+    }
+
+    @ResponseStatus(OK)
     @GetMapping(params = "!pageToken")
-    Page<Product> list(@RequestParam int pageSize) {
+    Page<Product> list(@RequestParam int pageSize) { // todo: default page size
         return service.list(pageSize);
     }
 

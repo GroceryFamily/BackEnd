@@ -49,6 +49,13 @@ public class ProductAPIClient {
         api.setErrorHandler(ERROR_HANDLER);
     }
 
+    public long count() {
+        var url = format("%s/products/count", uri);
+        var request = new HttpEntity<>(headers());
+        return body(api.exchange(url, GET, request, Long.class));
+
+    }
+
     public Stream<Product> listAll() {
         var iterator = new PageIterator<>(this::list, this::list);
         return stream(spliteratorUnknownSize(iterator, ORDERED), false)

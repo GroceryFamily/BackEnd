@@ -26,6 +26,18 @@
             <artifactId>spring-boot-starter</artifactId>
         </dependency>
 
+        <!-- https://github.com/FasterXML -->
+        <dependency>
+            <groupId>com.fasterxml.jackson.dataformat</groupId>
+            <artifactId>jackson-dataformat-csv</artifactId>
+        </dependency>
+
+        <!-- https://github.com/antivoland/simple-file-cache -->
+        <dependency>
+            <groupId>io.github.antivoland</groupId>
+            <artifactId>simple-file-cache</artifactId>
+        </dependency>
+
         <!-- https://github.com/deeplearning4j -->
         <dependency>
             <groupId>org.deeplearning4j</groupId>
@@ -40,6 +52,18 @@
             <artifactId>deeplearning4j-nlp</artifactId>
         </dependency>
 
+        <!-- https://github.com/antivoland/console-progress-bar -->
+        <dependency>
+            <groupId>io.github.antivoland</groupId>
+            <artifactId>console-progress-bar</artifactId>
+        </dependency>
+
+        <!-- https://github.com/apache/commons-lang -->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+        </dependency>
+
         <!-- https://github.com/spring-projects :: test -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -49,6 +73,13 @@
     </dependencies>
 
     <build>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+            </resource>
+        </resources>
+
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>

@@ -6,6 +6,7 @@ import lombok.ToString;
 import lombok.extern.jackson.Jacksonized;
 
 import java.util.Map;
+import java.util.Optional;
 import java.util.Set;
 
 import static java.util.stream.Collectors.toSet;
@@ -35,5 +36,9 @@ public class Product {
                 .stream()
                 .map(price -> Identifiable.identify(price, id(), price.unit, price.currency))
                 .collect(toSet());
+    }
+
+    public Optional<String> brand() {
+        return Optional.ofNullable(details.get(Detail.BRAND));
     }
 }

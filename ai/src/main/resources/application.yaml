@@ -1,2 +1,20 @@
+spring.profiles.active: img
+
 GrocerySis:
   api.uri: http://localhost:8080
+
+  OpenFoodFacts:
+    dataset: @project.basedir@/../data/en.openfoodfacts.org.products.csv
+#    dataset: @project.basedir@/../data/est.csv
+
+  labeled: @project.basedir@/../data/labeled
+  unlabeled: @project.basedir@/../data/unlabeled
+
+  rawImages: @project.basedir@/../images
+  trimmedImages: @project.basedir@/../data/trimmed-images
+  squaredImages: @project.basedir@/../data/squared-images
+  resizedImages: @project.basedir@/../data/resized-images
+  grayedImages: @project.basedir@/../data/grayed-images
+
+logging.level:
+  org.springframework.core: ERROR
