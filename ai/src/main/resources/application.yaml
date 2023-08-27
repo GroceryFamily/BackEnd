@@ -11,7 +11,8 @@ GrocerySis:
   unlabeled: @project.basedir@/../data/unlabeled
 
   rawImages: @project.basedir@/../images
-  transformedImages: @project.basedir@/../data/transformed-images
+  trimmedImages: @project.basedir@/../data/trimmed-images
+  squaredImages: @project.basedir@/../data/squared-images
 
 logging.level:
   org.springframework.core: ERROR

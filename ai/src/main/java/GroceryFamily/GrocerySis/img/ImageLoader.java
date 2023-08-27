@@ -14,11 +14,13 @@ import java.net.URI;
 @Component
 public class ImageLoader {
     private final ImageStorage rawStorage;
-    private final ImageStorage transformedStorage;
+    private final ImageStorage trimmedStorage;
+    private final ImageStorage squaredStorage;
 
     ImageLoader(GrocerySisConfig config) {
         rawStorage = new ImageStorage(config.rawImages);
-        transformedStorage = new ImageStorage(config.transformedImages);
+        trimmedStorage = new ImageStorage(config.trimmedImages);
+        squaredStorage = new ImageStorage(config.squaredImages);
     }
 
     public boolean exists(Product product) {
@@ -27,22 +29,34 @@ public class ImageLoader {
 
     @SneakyThrows
     public BufferedImage raw(Product product) {
-        var url = product.details.get(Detail.IMAGE);
-        if (url == null) return null;
         if (!rawStorage.exists(product.namespace, product.code)) {
-            var image = ImageIO.read(new URI(url).toURL());
-            var convertedImage = new BufferedImage(image.getWidth(), image.getHeight(), image.getType());
-            convertedImage.createGraphics().drawImage(image, 0, 0, Color.WHITE, null);
-            rawStorage.save(product.namespace, product.code, convertedImage);
+            var url = product.details.get(Detail.IMAGE);
+            if (url == null) return null;
+            var raw = ImageIO.read(new URI(url).toURL());
+            var convertedImage = new BufferedImage(raw.getWidth(), raw.getHeight(), raw.getType());
+            convertedImage.createGraphics().drawImage(raw, 0, 0, Color.WHITE, null);
+            rawStorage.save(product.namespace, product.code, raw);
         }
         return rawStorage.load(product.namespace, product.code);
     }
 
-    public BufferedImage transformed(Product product) {
-        var image = raw(product);
-        if (image == null) return null;
-        var transformed = new Image(image, image.getRGB(0, 0)).trim().image;
-        transformedStorage.save(product.namespace, product.code, transformed);
-        return transformed;
+    public BufferedImage trimmed(Product product) {
+        if (!trimmedStorage.exists(product.namespace, product.code)) {
+            var raw = raw(product);
+            if (raw == null) return null;
+            var trimmed = new Image(raw, raw.getRGB(0, 0)).trim().image;
+            trimmedStorage.save(product.namespace, product.code, trimmed);
+        }
+        return trimmedStorage.load(product.namespace, product.code);
+    }
+
+    public BufferedImage squared(Product product) {
+        if (!squaredStorage.exists(product.namespace, product.code)) {
+            var trimmed = trimmed(product);
+            if (trimmed == null) return null;
+            var squared = new Image(trimmed, Color.WHITE.getRGB()).square().image;
+            squaredStorage.save(product.namespace, product.code, squared);
+        }
+        return squaredStorage.load(product.namespace, product.code);
     }
 }

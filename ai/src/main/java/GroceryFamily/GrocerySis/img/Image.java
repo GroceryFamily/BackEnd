@@ -1,5 +1,6 @@
 package GroceryFamily.GrocerySis.img;
 
+import java.awt.*;
 import java.awt.image.BufferedImage;
 
 class Image {
@@ -17,6 +18,19 @@ class Image {
         int y0 = y0Trimmed();
         int y1 = y1Trimmed();
         var newImage = image.getSubimage(x0, y0, x1 - x0, y1 - y0);
+        return new Image(newImage, bgColor);
+    }
+
+    Image square() {
+        int w = image.getWidth();
+        int h = image.getHeight();
+        int s = Math.max(w, h);
+        var newImage = new BufferedImage(s, s, BufferedImage.TYPE_INT_ARGB);
+        var drawer = newImage.createGraphics();
+        drawer.setBackground(new Color(bgColor));
+        drawer.clearRect(0, 0, s, s);
+        drawer.drawImage(image, (s - w) / 2, (s - h) / 2, new Color(bgColor), null);
+//        drawer.drawImage(image, 0, 0, new Color(bgColor, false), null);
         return new Image(newImage, bgColor);
     }
 
