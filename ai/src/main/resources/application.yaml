@@ -10,7 +10,8 @@ GrocerySis:
   labeled: @project.basedir@/../data/labeled
   unlabeled: @project.basedir@/../data/unlabeled
 
-  images: @project.basedir@/../images
+  rawImages: @project.basedir@/../images
+  transformedImages: @project.basedir@/../data/transformed-images
 
 logging.level:
   org.springframework.core: ERROR

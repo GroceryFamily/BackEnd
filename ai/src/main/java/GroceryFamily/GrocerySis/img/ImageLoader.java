@@ -9,57 +9,40 @@ import org.springframework.stereotype.Component;
 import javax.imageio.ImageIO;
 import java.awt.*;
 import java.awt.image.BufferedImage;
-import java.io.IOException;
 import java.net.URI;
-import java.nio.file.Files;
-import java.nio.file.Path;
-
-import static java.lang.String.format;
 
 @Component
 public class ImageLoader {
-    private static final String FORMAT = "png";
-
-    private final Path directory;
+    private final ImageStorage rawStorage;
+    private final ImageStorage transformedStorage;
 
     ImageLoader(GrocerySisConfig config) {
-        this.directory = config.images;
+        rawStorage = new ImageStorage(config.rawImages);
+        transformedStorage = new ImageStorage(config.transformedImages);
     }
 
     public boolean exists(Product product) {
-        return Files.exists(file(product, false));
+        return rawStorage.exists(product.namespace, product.code);
     }
 
     @SneakyThrows
-    public BufferedImage load(Product product) {
+    public BufferedImage raw(Product product) {
         var url = product.details.get(Detail.IMAGE);
         if (url == null) return null;
-        var file = file(product, false);
-        if (!Files.exists(file)) {
-            file = file(product, true);
+        if (!rawStorage.exists(product.namespace, product.code)) {
             var image = ImageIO.read(new URI(url).toURL());
             var convertedImage = new BufferedImage(image.getWidth(), image.getHeight(), image.getType());
             convertedImage.createGraphics().drawImage(image, 0, 0, Color.WHITE, null);
-            boolean canWrite = ImageIO.write(convertedImage, FORMAT, file.toFile());
-            if (!canWrite) throw new RuntimeException(format("Failed to persist image '%s", url));
+            rawStorage.save(product.namespace, product.code, convertedImage);
         }
-        return ImageIO.read(file.toFile());
+        return rawStorage.load(product.namespace, product.code);
     }
 
-    private Path file(Product product, boolean provideDirectory) {
-        var subdirectory = directory.resolve(product.namespace);
-        var fileName = product.code + "." + FORMAT;
-        return (provideDirectory ? provideDirectory(subdirectory) : subdirectory).resolve(fileName);
-    }
-
-    private static Path provideDirectory(Path directory) {
-        if (!Files.exists(directory)) {
-            try {
-                Files.createDirectories(directory);
-            } catch (IOException e) {
-                throw new RuntimeException(format("Failed to create directory '%s'", directory), e);
-            }
-        }
-        return directory;
+    public BufferedImage transformed(Product product) {
+        var image = raw(product);
+        if (image == null) return null;
+        var transformed = new Image(image, image.getRGB(0, 0)).trim().image;
+        transformedStorage.save(product.namespace, product.code, transformed);
+        return transformed;
     }
 }

@@ -15,7 +15,8 @@ public class GrocerySisConfig {
     public final OpenFoodFacts openFoodFacts;
     public final Path labeled;
     public final Path unlabeled;
-    public final Path images;
+    public final Path rawImages;
+    public final Path transformedImages;
 
     @Builder
     public static class OpenFoodFacts {
