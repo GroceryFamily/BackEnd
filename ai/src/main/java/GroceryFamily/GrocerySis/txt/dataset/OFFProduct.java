@@ -1,6 +1,6 @@
-package GroceryFamily.GrocerySis.dataset;
+package GroceryFamily.GrocerySis.txt.dataset;
 
-import GroceryFamily.GrocerySis.model.Code;
+import GroceryFamily.GrocerySis.txt.model.Code;
 import lombok.Builder;
 import lombok.ToString;
 

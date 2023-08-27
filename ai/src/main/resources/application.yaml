@@ -1,3 +1,5 @@
+spring.profiles.active: txt
+
 GrocerySis:
   api.uri: http://localhost:8080
 

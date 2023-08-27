@@ -1,8 +1,8 @@
-package GroceryFamily.GrocerySis.model;
+package GroceryFamily.GrocerySis.txt.model;
 
 import GroceryFamily.GroceryElders.domain.Product;
 import GroceryFamily.GrocerySis.GrocerySisConfig;
-import GroceryFamily.GrocerySis.dataset.OFFProduct;
+import GroceryFamily.GrocerySis.txt.dataset.OFFProduct;
 import io.github.antivoland.sfc.FileCache;
 import io.github.antivoland.sfc.FileType;
 import org.springframework.stereotype.Component;

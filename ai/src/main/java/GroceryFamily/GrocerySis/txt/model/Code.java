@@ -1,4 +1,4 @@
-package GroceryFamily.GrocerySis.model;
+package GroceryFamily.GrocerySis.txt.model;
 
 import lombok.EqualsAndHashCode;
 

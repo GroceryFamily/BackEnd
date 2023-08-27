@@ -1,4 +1,4 @@
-package GroceryFamily.GrocerySis.model;
+package GroceryFamily.GrocerySis.txt.model;
 
 import GroceryFamily.GroceryElders.domain.Product;
 import GroceryFamily.GrocerySis.GrocerySisConfig;

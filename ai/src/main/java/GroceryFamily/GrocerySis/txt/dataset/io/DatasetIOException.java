@@ -1,4 +1,4 @@
-package GroceryFamily.GrocerySis.dataset.io;
+package GroceryFamily.GrocerySis.txt.dataset.io;
 
 public class DatasetIOException extends RuntimeException {
     DatasetIOException(String message, Throwable cause) {

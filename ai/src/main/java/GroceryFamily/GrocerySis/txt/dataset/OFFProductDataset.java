@@ -1,9 +1,9 @@
-package GroceryFamily.GrocerySis.dataset;
+package GroceryFamily.GrocerySis.txt.dataset;
 
 import GroceryFamily.GrocerySis.GrocerySisConfig;
-import GroceryFamily.GrocerySis.dataset.io.CSVDatasetIO;
-import GroceryFamily.GrocerySis.dataset.io.progress.ProgressBarFactory;
-import GroceryFamily.GrocerySis.model.Code;
+import GroceryFamily.GrocerySis.txt.dataset.io.CSVDatasetIO;
+import GroceryFamily.GrocerySis.txt.dataset.io.progress.ProgressBarFactory;
+import GroceryFamily.GrocerySis.txt.model.Code;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 

@@ -1,7 +1,7 @@
-package GroceryFamily.GrocerySis.dataset.io;
+package GroceryFamily.GrocerySis.txt.dataset.io;
 
-import GroceryFamily.GrocerySis.dataset.io.progress.ProgressBar;
-import GroceryFamily.GrocerySis.dataset.io.progress.ProgressBarFactory;
+import GroceryFamily.GrocerySis.txt.dataset.io.progress.ProgressBar;
+import GroceryFamily.GrocerySis.txt.dataset.io.progress.ProgressBarFactory;
 import lombok.Builder;
 
 import java.io.IOException;

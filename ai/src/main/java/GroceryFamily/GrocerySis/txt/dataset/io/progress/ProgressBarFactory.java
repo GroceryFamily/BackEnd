@@ -1,4 +1,4 @@
-package GroceryFamily.GrocerySis.dataset.io.progress;
+package GroceryFamily.GrocerySis.txt.dataset.io.progress;
 
 import io.github.antivoland.cpb.ConsoleProgressBar;
 
