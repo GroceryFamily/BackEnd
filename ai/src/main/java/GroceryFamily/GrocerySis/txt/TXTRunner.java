@@ -37,7 +37,7 @@ import static java.util.stream.Collectors.toSet;
 @Slf4j
 @Component
 @Profile("txt")
-public class TXTRunner implements CommandLineRunner {
+class TXTRunner implements CommandLineRunner {
     private final OFFProductDataset dataset;
     private final Labeled documents;
     private final Unlabeled unlabeled;

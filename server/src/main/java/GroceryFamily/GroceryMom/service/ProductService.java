@@ -32,6 +32,10 @@ public class ProductService {
         this.repository = repository;
     }
 
+    public long count() {
+        return repository.count();
+    }
+
     public Page<Product> list(int pageSize) {
         var entities = repository.list(pageSize + 1);
         return ProductEntity.toDomainProductPage(entities, pageSize);

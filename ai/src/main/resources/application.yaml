@@ -1,4 +1,4 @@
-spring.profiles.active: txt
+spring.profiles.active: img
 
 GrocerySis:
   api.uri: http://localhost:8080
@@ -9,6 +9,8 @@ GrocerySis:
 
   labeled: @project.basedir@/../data/labeled
   unlabeled: @project.basedir@/../data/unlabeled
+
+  images: @project.basedir@/../images
 
 logging.level:
   org.springframework.core: ERROR

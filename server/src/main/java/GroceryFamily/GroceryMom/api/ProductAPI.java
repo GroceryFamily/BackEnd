@@ -22,6 +22,12 @@ public class ProductAPI { // todo: request/response type
     }
 
     @ResponseStatus(OK)
+    @GetMapping("count")
+    long count() {
+        return service.count();
+    }
+
+    @ResponseStatus(OK)
     @GetMapping(params = "!pageToken")
     Page<Product> list(@RequestParam int pageSize) { // todo: default page size
         return service.list(pageSize);
