@@ -23,7 +23,10 @@ class IMGRunner implements CommandLineRunner {
     public void run(String... args) {
         log.info("Load images...");
         try (var bar = new ConsoleProgressBar(client.count())) {
-            client.listAll().peek(product -> bar.step()).forEach(loader::load);
+            client.listAll()
+                    .peek(product -> bar.step())
+                    .filter(product -> !loader.exists(product))
+                    .forEach(loader::load);
         }
     }
 }

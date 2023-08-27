@@ -26,6 +26,10 @@ public class ImageLoader {
         this.directory = config.images;
     }
 
+    public boolean exists(Product product) {
+        return Files.exists(file(product, false));
+    }
+
     @SneakyThrows
     public BufferedImage load(Product product) {
         var url = product.details.get(Detail.IMAGE);
