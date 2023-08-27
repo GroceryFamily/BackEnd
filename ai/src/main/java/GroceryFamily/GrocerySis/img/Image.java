@@ -34,6 +34,15 @@ class Image {
         return new Image(newImage, bgColor);
     }
 
+    Image resize(int newSize) {
+        var resized = new BufferedImage(newSize, newSize, image.getType());
+        var g = resized.createGraphics();
+        g.setRenderingHint(RenderingHints.KEY_INTERPOLATION, RenderingHints.VALUE_INTERPOLATION_BILINEAR);
+        g.drawImage(image, 0, 0, newSize, newSize, 0, 0, image.getWidth(), image.getHeight(), null);
+        g.dispose();
+        return new Image(resized, bgColor);
+    }
+
     private int x0Trimmed() {
         var x = 0;
         while (x < image.getWidth()) {

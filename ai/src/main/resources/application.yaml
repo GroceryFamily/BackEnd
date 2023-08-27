@@ -13,6 +13,7 @@ GrocerySis:
   rawImages: @project.basedir@/../images
   trimmedImages: @project.basedir@/../data/trimmed-images
   squaredImages: @project.basedir@/../data/squared-images
+  resizedImages: @project.basedir@/../data/resized-images
 
 logging.level:
   org.springframework.core: ERROR
