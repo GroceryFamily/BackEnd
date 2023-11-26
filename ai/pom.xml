@@ -46,6 +46,12 @@
             <artifactId>opencv</artifactId>
         </dependency>
 
+        <!-- https://github.com/openimaj/openimaj -->
+        <dependency>
+            <groupId>org.openimaj</groupId>
+            <artifactId>core</artifactId>
+        </dependency>
+
         <!-- https://github.com/spring-projects :: test -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
