@@ -40,6 +40,28 @@
             <artifactId>deeplearning4j-nlp</artifactId>
         </dependency>
 
+        <!-- https://github.com/openpnp/opencv -->
+        <dependency>
+            <groupId>org.openpnp</groupId>
+            <artifactId>opencv</artifactId>
+        </dependency>
+
+        <!-- https://github.com/openimaj/openimaj -->
+<!--        <dependency>-->
+<!--            <groupId>org.openimaj</groupId>-->
+<!--            <artifactId>core</artifactId>-->
+<!--        </dependency>-->
+        <dependency>
+            <groupId>org.openimaj</groupId>
+            <artifactId>core-image</artifactId>
+            <version>${openimaj.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.openimaj</groupId>
+            <artifactId>image-local-features</artifactId>
+            <version>${openimaj.version}</version>
+        </dependency>
+
         <!-- https://github.com/spring-projects :: test -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
