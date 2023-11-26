@@ -30,6 +30,7 @@
         <jsoup.version>1.16.1</jsoup.version>
         <commons-lang3.version>3.13.0</commons-lang3.version>
         <deeplearning4j.version>1.0.0-M2.1</deeplearning4j.version>
+        <opencv.version>4.7.0-0</opencv.version>
         <lombok.version>1.18.28</lombok.version>
 
         <maven-compiler-plugin.version>3.11.0</maven-compiler-plugin.version>
@@ -105,6 +106,13 @@
                 <groupId>org.deeplearning4j</groupId>
                 <artifactId>deeplearning4j-nlp</artifactId>
                 <version>${deeplearning4j.version}</version>
+            </dependency>
+
+            <!-- https://github.com/openpnp/opencv -->
+            <dependency>
+                <groupId>org.openpnp</groupId>
+                <artifactId>opencv</artifactId>
+                <version>${opencv.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

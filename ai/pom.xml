@@ -40,6 +40,12 @@
             <artifactId>deeplearning4j-nlp</artifactId>
         </dependency>
 
+        <!-- https://github.com/openpnp/opencv -->
+        <dependency>
+            <groupId>org.openpnp</groupId>
+            <artifactId>opencv</artifactId>
+        </dependency>
+
         <!-- https://github.com/spring-projects :: test -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
