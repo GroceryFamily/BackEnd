@@ -5,146 +5,148 @@ import GroceryFamily.GroceryElders.domain.Price;
 import GroceryFamily.GroceryElders.domain.Product;
 import GroceryFamily.GroceryMom.service.ProductService;
 import GroceryFamily.GroceryMom.service.exception.ProductNotFoundException;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
-import org.springframework.test.web.servlet.MockMvc;
-import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
-import org.springframework.test.web.servlet.setup.MockMvcBuilders;
-import org.springframework.web.client.HttpServerErrorException;
-
 
 import java.math.BigDecimal;
-import java.util.*;
+import java.time.Instant;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
 
-import static org.hamcrest.Matchers.is;
+import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.ArgumentMatchers.*;
-import static org.mockito.Mockito.*;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.when;
 
 class ProductAPITest {
 
-    private MockMvc mockMvc;
     @InjectMocks
     private ProductAPI productAPI;
     @Mock
-    private ProductService service;
-    private List<Product> products;
+    private ProductService mockService;
 
     @BeforeEach
     void setUp() {
+
         MockitoAnnotations.openMocks(this);
 
-        this.mockMvc = MockMvcBuilders.standaloneSetup(productAPI).build();
-
-        Set<Price> prices = new HashSet<>();
-        Price price = Price.builder()
-                .unit("pc")
-                .currency("aden")
-                .amount(new BigDecimal(100))
-                .build();
-        prices.add(price);
-        Product product = Product.builder()
-                .namespace("zoo.buy")
-                .code("32133")
-                .name("Tiger 100 kg")
-                .prices(prices)
-                .build();
-        Product product1 = Product.builder()
-                .namespace("zoo.gou")
-                .code("42123")
-                .name("Rock 100 kg")
-                .prices(prices)
-                .build();
-        this.products = new ArrayList<>();
-        products.add(product);
-        products.add(product1);
+        productAPI = new ProductAPI(mockService);
 
     }
 
     @Test
     void testListProductsByPageSize() throws Exception {
 
-        Page<Product> testPage = Page.<Product>builder()
-                .content(products)
-                .nextPageToken("some_Token")
-                .build();
+//region creating Products and Page
+        Product apple = Product.builder().namespace("Apple").name("Golden").code("202").url("www.barbora.ee").prices(Set.of(Price.builder().unit("t").currency("$").amount(new BigDecimal("1.99")).build())).categories(Map.of("categoryKey", "categoryValue")).details(Map.of("detailKey", "detailValue")).build();
+        Product banana = Product.builder().namespace("Banana").name("Diamond Big Banana").code("1").url("www.barbora.ee").prices(Set.of(Price.builder().unit("st").currency("$").amount(new BigDecimal("4.60")).build())).categories(Map.of("categoryKey", "categoryValue")).details(Map.of("detailKey", "detailValue")).build();
 
-        when(service.list(anyInt())).thenReturn(testPage);
+        List<Product> productList = List.of(apple, banana);
+        Page<Product> barboraPage = Page.<Product>builder().content(productList).nextPageToken("fruitsToken").build();
+        //endregion
 
-        mockMvc.perform(MockMvcRequestBuilders.get("/products?pageSize=10"))
-                .andExpect(status().isOk())
-                .andExpect(jsonPath("$.nextPageToken", is("some_Token")));
+        when(productAPI.list(2)).thenReturn(barboraPage);
+
+        var products = productAPI.list(2);
+
+        assertEquals(barboraPage, products, "checking for the correct size");
+        assertNotEquals(barboraPage, 3, "checking for wrong number");
+        assertNotEquals(barboraPage, -1, "check for negative number");
+
 
     }
 
     @Test
     void testListProductsByPageToken() throws Exception {
 
-        Page<Product> testPage = Page.<Product>builder()
-                .content(products)
-                .nextPageToken("some_Token")
-                .build();
+//region creating Products and Page
+        Product apple = Product.builder().namespace("Apple").name("Golden").code("202").url("www.barbora.ee").prices(Set.of(Price.builder().unit("t").currency("$").amount(new BigDecimal("1.99")).build())).categories(Map.of("categoryKey", "categoryValue")).details(Map.of("detailKey", "detailValue")).build();
+        Product banana = Product.builder().namespace("Banana").name("Diamond Big Banana").code("1").url("www.barbora.ee").prices(Set.of(Price.builder().unit("st").currency("$").amount(new BigDecimal("4.60")).build())).categories(Map.of("categoryKey", "categoryValue")).details(Map.of("detailKey", "detailValue")).build();
 
-        when(service.list(anyString())).thenReturn(testPage);
+        List<Product> productList = List.of(apple, banana);
+        Page<Product> barboraPage = Page.<Product>builder().content(productList).nextPageToken("fruitsToken").build();
+        //endregion
 
-        mockMvc.perform(MockMvcRequestBuilders.get("/products?pageToken=some_token"))
-                .andExpect(status().isOk())
-                .andExpect(jsonPath("$.nextPageToken", is("some_Token")))
-                .andExpect(jsonPath("$.content.length()", is(2)));
+        when(productAPI.list(anyString())).thenReturn(barboraPage);
+
+        var token = productAPI.list("fruitsToken");
+
+        assertEquals(barboraPage, token, "must be fruitToken");
+        assertNotEquals(barboraPage, 2, "check for number");
+        assertNotEquals(barboraPage, "token", "check for wrong string");
+
     }
 
     @Test
     void getProductByIdTest() {
 
-        when(service.get("zoo.buy:32133")).thenReturn(products.get(0));
-
-        Product actualProduct = productAPI.get("zoo.buy:32133");
-
-        Assertions.assertEquals(products.get(0), actualProduct);
-
-    }
-
-    @Test
-    void postProductByIdTest() throws Exception {
-
-        Product product = products.get(0);
-
-        ObjectMapper objectMapper = new ObjectMapper();
-        String productJson = objectMapper.writeValueAsString(product);
-
-        mockMvc.perform(MockMvcRequestBuilders.post("/products/{id}", "zoo.buy:32133")
-                        .contentType("application/json")
-                        .content(productJson))
-                .andExpect(status().isOk());
+//region creating Products
+        Product apple = Product.builder().namespace("Apple").name("Golden").code("202").url("www.barbora.ee").prices(Set.of(Price.builder().unit("t").currency("$").amount(new BigDecimal("1.99")).build())).categories(Map.of("categoryKey", "categoryValue")).details(Map.of("detailKey", "detailValue")).build();
 
 
-        when(service.get("zoo.buy:32133")).thenReturn(product);
-    }
+        Product banana = Product.builder().namespace("Banana").name("Diamond Big Banana").code("1").url("www.barbora.ee").prices(Set.of(Price.builder().unit("st").currency("$").amount(new BigDecimal("4.60")).build())).categories(Map.of("categoryKey", "categoryValue")).details(Map.of("detailKey", "detailValue")).build();
+//endregion
 
-    @Test
-    void ifProductNotFound_then_comes_Exception() throws Exception {
+        String bananaId = banana.id();
+        String appleId = apple.id();
 
-        when(service.get("some_id")).thenThrow(new ProductNotFoundException("some_id"));
+        when(productAPI.get(bananaId)).thenReturn(banana);
 
-        mockMvc.perform(MockMvcRequestBuilders.get("/products/{id}", "some_id"))
-                .andExpect(status().isNotFound())
-                .andExpect(content().string("Product 'some_id' not found"));
+        Product actualProduct = productAPI.get(bananaId);
+
+        assertEquals(banana, actualProduct, "check true productId");
+        assertNotEquals(banana, appleId, "check another id");
+        assertNotEquals(banana, "Banana::goAway", "check another string");
+        assertNotEquals(banana, 2, "check for number");
+        assertNotEquals(banana, -2, "check for negative number");
 
     }
 
     @Test
-    void internalServerError_Test() throws Exception {
+    void postProductByIdTest() {
 
-        when(service.get("some_id")).thenThrow(HttpServerErrorException.InternalServerError.class);
+        //region creating Product
+        Product banana = Product.builder().namespace("Banana").name("Diamond Big Banana").code("1").url("www.barbora.ee").prices(Set.of(Price.builder().unit("st").currency("$").amount(new BigDecimal("4.60")).build())).categories(Map.of("categoryKey", "categoryValue")).details(Map.of("detailKey", "detailValue")).build();
+//endregion
+        String bananaId = banana.id();
 
-        mockMvc.perform(MockMvcRequestBuilders.get("/products/{id}", "some_id"))
-                .andExpect(status().isInternalServerError())
-                .andReturn();
+
+        productAPI.update(bananaId, banana);
+        verify(mockService).update(eq(bananaId), eq(banana), any(Instant.class));
+
     }
+
+    @Test
+    void ifProductNotFoundException() {
+
+        String productId = "some::id";
+
+        when(productAPI.get(productId)).thenThrow(new ProductNotFoundException("Product not found"));
+
+        ProductNotFoundException thrown = assertThrows(ProductNotFoundException.class, () -> productAPI.get(productId)
+                , "There were no exceptions");
+
+        assertTrue(thrown.getMessage().contains("Product not found"));
+
+    }
+
+    @Test
+    void internalServerErrorTest() {
+
+        String productId = "Product::Id";
+
+        when(mockService.get(productId)).thenThrow(new RuntimeException("Internal server error"));
+
+        Exception exception = assertThrows(RuntimeException.class,
+                () -> productAPI.get(productId));
+
+        assertEquals("Internal server error", exception.getMessage());
+
+    }
+
 }
 
