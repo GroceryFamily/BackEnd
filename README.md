@@ -2,6 +2,26 @@
 
 [![Build Status](https://github.com/GroceryFamily/BackEnd/workflows/build/badge.svg)](https://github.com/GroceryFamily/BackEnd/actions/workflows/build.yml)
 
+The project currently utilizes Java 17. Install SDKMAN! and install the same version that is used for automatic builds:
+
+```shell
+sdk install java 17.0.11-tem
+```
+
+You can set is as default version or switch to it manually:
+
+```shell
+sdk use java 17.0.11-tem
+```
+
+TBD
+
+Now everything is ready to start application server:
+
+```shell
+mvn -pl server -am spring-boot:run
+```
+
 ## News
 
 * `GroceryDad` now talks to `GroceryMom` via the API client, so the server must be running when scraping
