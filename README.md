@@ -14,7 +14,7 @@ You can set is as default version or switch to it manually:
 sdk use java 17.0.11-tem
 ```
 
-TBD
+Install and run MySQL server TBD
 
 Now everything is ready to start application server:
 
