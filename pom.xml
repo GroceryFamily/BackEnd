@@ -21,16 +21,24 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
-        <java.version>17</java.version>
+        <java.version>21</java.version>
 
-        <spring-boot.version>3.1.2</spring-boot.version>
-        <simple-file-cache.version>0.1.1-SNAPSHOT</simple-file-cache.version>
-        <selenium.version>4.11.0</selenium.version>
-        <selenide.version>6.17.0</selenide.version>
-        <jsoup.version>1.16.1</jsoup.version>
+        <!-- https://github.com/spring-projects/spring-boot/tags -->
+        <spring-boot.version>3.3.1</spring-boot.version>
+        <!-- https://github.com/SeleniumHQ/selenium/tags -->
+        <selenium.version>4.22.0</selenium.version>
+        <!-- https://github.com/selenide/selenide/tags -->
+        <selenide.version>7.3.3</selenide.version>
+        <!-- https://github.com/jhy/jsoup/tags -->
+        <jsoup.version>1.17.2</jsoup.version>
+        <!-- https://github.com/apache/commons-lang/tags -->
         <commons-lang3.version>3.13.0</commons-lang3.version>
+        <!-- https://github.com/deeplearning4j/deeplearning4j/tags -->
         <deeplearning4j.version>1.0.0-M2.1</deeplearning4j.version>
-        <lombok.version>1.18.28</lombok.version>
+        <!-- https://github.com/projectlombok/lombok/tags -->
+        <lombok.version>1.18.34</lombok.version>
+
+        <simple-file-cache.version>0.1.1-SNAPSHOT</simple-file-cache.version>
 
         <maven-compiler-plugin.version>3.11.0</maven-compiler-plugin.version>
         <maven-surefire-plugin.version>3.1.2</maven-surefire-plugin.version>
@@ -53,13 +61,6 @@
                 <version>${spring-boot.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
-            </dependency>
-
-            <!-- https://github.com/antivoland/simple-file-cache -->
-            <dependency>
-                <groupId>io.github.antivoland</groupId>
-                <artifactId>simple-file-cache</artifactId>
-                <version>${simple-file-cache.version}</version>
             </dependency>
 
             <!-- https://github.com/SeleniumHQ/selenium -->
@@ -105,6 +106,13 @@
                 <groupId>org.deeplearning4j</groupId>
                 <artifactId>deeplearning4j-nlp</artifactId>
                 <version>${deeplearning4j.version}</version>
+            </dependency>
+
+            <!-- https://github.com/antivoland/simple-file-cache -->
+            <dependency>
+                <groupId>io.github.antivoland</groupId>
+                <artifactId>simple-file-cache</artifactId>
+                <version>${simple-file-cache.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
