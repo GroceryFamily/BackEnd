@@ -30,6 +30,8 @@
         <jsoup.version>1.16.1</jsoup.version>
         <commons-lang3.version>3.13.0</commons-lang3.version>
         <deeplearning4j.version>1.0.0-M2.1</deeplearning4j.version>
+        <opencv.version>4.7.0-0</opencv.version>
+        <openimaj.version>1.3.10</openimaj.version>
         <lombok.version>1.18.28</lombok.version>
 
         <maven-compiler-plugin.version>3.11.0</maven-compiler-plugin.version>
@@ -106,6 +108,20 @@
                 <artifactId>deeplearning4j-nlp</artifactId>
                 <version>${deeplearning4j.version}</version>
             </dependency>
+
+            <!-- https://github.com/openpnp/opencv -->
+            <dependency>
+                <groupId>org.openpnp</groupId>
+                <artifactId>opencv</artifactId>
+                <version>${opencv.version}</version>
+            </dependency>
+
+            <!-- https://github.com/openimaj/openimaj -->
+            <dependency>
+                <groupId>org.openimaj</groupId>
+                <artifactId>core</artifactId>
+                <version>${openimaj.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
@@ -174,6 +190,14 @@
         <repository>
             <id>ossrh</id>
             <url>https://s01.oss.sonatype.org/content/repositories/snapshots</url>
+        </repository>
+        <repository>
+            <id>OpenIMAJ releases</id>
+            <url>https://maven.openimaj.org</url>
+        </repository>
+        <repository>
+            <id>OpenIMAJ snapshots</id>
+            <url>https://snapshots.openimaj.org</url>
         </repository>
     </repositories>
 </project>
