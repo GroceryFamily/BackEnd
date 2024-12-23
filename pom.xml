@@ -26,7 +26,7 @@
         <spring-boot.version>3.1.2</spring-boot.version>
         <simple-file-cache.version>0.1.1-SNAPSHOT</simple-file-cache.version>
         <selenium.version>4.11.0</selenium.version>
-        <selenide.version>6.17.0</selenide.version>
+        <selenide.version>6.19.1</selenide.version>
         <jsoup.version>1.16.1</jsoup.version>
         <commons-lang3.version>3.13.0</commons-lang3.version>
         <deeplearning4j.version>1.0.0-M2.1</deeplearning4j.version>
