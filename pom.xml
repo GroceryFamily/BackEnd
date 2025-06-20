@@ -23,7 +23,7 @@
 
         <java.version>17</java.version>
 
-        <spring-boot.version>3.1.2</spring-boot.version>
+        <spring-boot.version>3.5.3</spring-boot.version>
         <simple-file-cache.version>0.1.1-SNAPSHOT</simple-file-cache.version>
         <selenium.version>4.27.0</selenium.version>
         <selenide.version>7.6.1</selenide.version>
